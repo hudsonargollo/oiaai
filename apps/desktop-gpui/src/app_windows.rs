@@ -1284,7 +1284,7 @@ pub fn open_settings(page: Page, cx: &mut App) {
             // repositions them. (The main window returns `None` there and
             // hand-draws its own.)
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Settings".into()),
+                title: Some("Oiaai Settings".into()),
                 appears_transparent: true,
                 traffic_light_position: Some(settings_window::TRAFFIC_LIGHTS),
             }),
@@ -1470,7 +1470,7 @@ pub fn open_onboarding(cx: &mut App) {
             ..Default::default()
         },
         |window, cx| {
-            window.set_window_title("Welcome to Cap");
+            window.set_window_title("Welcome to Oiaai");
             cx.new(|cx| OnboardingWindow::new(window, cx))
         },
     );
@@ -1620,7 +1620,7 @@ pub fn open_mode_select(cx: &mut App) -> bool {
             // puts them and only the title is hidden (`hidden_title(true)` +
             // `TitleBarStyle::Overlay`).
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Mode Selection".into()),
+                title: Some("Oiaai Mode Selection".into()),
                 appears_transparent: true,
                 traffic_light_position: mode_select_window::TRAFFIC_LIGHTS,
             }),
@@ -1741,7 +1741,7 @@ pub fn open_teleprompter(cx: &mut App) {
             // true`, `trafficLightPosition: (14, 14)` -- the real AppKit
             // buttons, moved, as on the settings window.
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Teleprompter".into()),
+                title: Some("Oiaai Teleprompter".into()),
                 appears_transparent: true,
                 traffic_light_position: Some(teleprompter_window::TRAFFIC_LIGHTS),
             }),
@@ -2835,16 +2835,16 @@ impl OwnWindow {
 
     pub fn title(self) -> &'static str {
         match self {
-            Self::Main => "Cap",
-            Self::Settings => "Cap Settings",
-            Self::Controls => "Cap Recording Controls",
-            Self::Camera => "Cap Camera",
-            Self::ModeSelect => "Cap Mode Selection",
-            Self::Teleprompter => "Cap Teleprompter",
-            Self::TargetSelect => "Cap Target Select",
-            Self::Editor => "Cap Editor",
-            Self::ScreenshotEditor => "Cap Screenshot Editor",
-            Self::Onboarding => "Welcome to Cap",
+            Self::Main => "Oiaai",
+            Self::Settings => "Oiaai Settings",
+            Self::Controls => "Oiaai Recording Controls",
+            Self::Camera => "Oiaai Camera",
+            Self::ModeSelect => "Oiaai Mode Selection",
+            Self::Teleprompter => "Oiaai Teleprompter",
+            Self::TargetSelect => "Oiaai Target Select",
+            Self::Editor => "Oiaai Editor",
+            Self::ScreenshotEditor => "Oiaai Screenshot Editor",
+            Self::Onboarding => "Welcome to Oiaai",
         }
     }
 }
@@ -4209,7 +4209,7 @@ pub fn open_camera_window(cx: &mut App) {
             titlebar: None,
             #[cfg(target_os = "linux")]
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Camera".into()),
+                title: Some("Oiaai Camera".into()),
                 ..Default::default()
             }),
             #[cfg(target_os = "linux")]
@@ -5165,7 +5165,7 @@ fn open_editor_window(
             // `Some(Some(LogicalPosition::new(20.0, 32.0)))`, and the header's
             // left group reserves an `h-full w-16` spacer for them.
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Editor".into()),
+                title: Some("Oiaai Editor".into()),
                 appears_transparent: true,
                 traffic_light_position: editor_window::TRAFFIC_LIGHTS,
             }),
@@ -6529,7 +6529,7 @@ pub(crate) fn request_editor_deletion(
             platform::alert_dialog(tr::dialog::delete_recording::retained_title(), &error);
             return;
         }
-        if !platform::confirm_dialog("Cap", tr::main::delete_recording_confirm(), tr::common::yes(), tr::common::no(), false) {
+        if !platform::confirm_dialog("Oiaai", tr::main::delete_recording_confirm(), tr::common::yes(), tr::common::no(), false) {
             return;
         }
         let prepared = cx.update(|cx| {
@@ -7173,7 +7173,7 @@ pub fn open_screenshot_editor(path: PathBuf, cx: &mut App) {
             window_bounds: Some(WindowBounds::Windowed(bounds)),
             display_id,
             titlebar: Some(gpui::TitlebarOptions {
-                title: Some("Cap Screenshot Editor".into()),
+                title: Some("Oiaai Screenshot Editor".into()),
                 appears_transparent: true,
                 traffic_light_position: None,
             }),
@@ -8341,16 +8341,16 @@ mod tests {
     #[test]
     fn own_window_titles_match_cap_window_id() {
         let expected = [
-            (OwnWindow::Main, "Cap"),
-            (OwnWindow::Settings, "Cap Settings"),
-            (OwnWindow::Controls, "Cap Recording Controls"),
-            (OwnWindow::Camera, "Cap Camera"),
-            (OwnWindow::ModeSelect, "Cap Mode Selection"),
-            (OwnWindow::Teleprompter, "Cap Teleprompter"),
-            (OwnWindow::TargetSelect, "Cap Target Select"),
-            (OwnWindow::Editor, "Cap Editor"),
-            (OwnWindow::ScreenshotEditor, "Cap Screenshot Editor"),
-            (OwnWindow::Onboarding, "Welcome to Cap"),
+            (OwnWindow::Main, "Oiaai"),
+            (OwnWindow::Settings, "Oiaai Settings"),
+            (OwnWindow::Controls, "Oiaai Recording Controls"),
+            (OwnWindow::Camera, "Oiaai Camera"),
+            (OwnWindow::ModeSelect, "Oiaai Mode Selection"),
+            (OwnWindow::Teleprompter, "Oiaai Teleprompter"),
+            (OwnWindow::TargetSelect, "Oiaai Target Select"),
+            (OwnWindow::Editor, "Oiaai Editor"),
+            (OwnWindow::ScreenshotEditor, "Oiaai Screenshot Editor"),
+            (OwnWindow::Onboarding, "Welcome to Oiaai"),
         ];
         assert_eq!(OwnWindow::ALL.len(), expected.len());
         for (kind, title) in expected {
@@ -8362,7 +8362,7 @@ mod tests {
     /// How the table lines up with `DEFAULT_EXCLUDED_WINDOW_TITLES`
     /// (`general_settings.rs:104-114`): the defaults name three windows this
     /// app does not have, and four of ours are deliberately not in the defaults
-    /// -- "Cap Target Select" carries a comment over there explaining why it
+    /// -- "Oiaai Target Select" carries a comment over there explaining why it
     /// must not be added (a Windows ghost-overlay bug), and the editors and
     /// onboarding are simply not excluded by default.
     #[test]
@@ -8376,12 +8376,12 @@ mod tests {
         assert_eq!(
             shared,
             vec![
-                &"Cap",
-                &"Cap Settings",
-                &"Cap Recording Controls",
-                &"Cap Camera",
-                &"Cap Mode Selection",
-                &"Cap Teleprompter",
+                &"Oiaai",
+                &"Oiaai Settings",
+                &"Oiaai Recording Controls",
+                &"Oiaai Camera",
+                &"Oiaai Mode Selection",
+                &"Oiaai Teleprompter",
             ]
         );
 
@@ -8392,9 +8392,9 @@ mod tests {
         assert_eq!(
             defaults_without_a_window,
             vec![
-                &"Cap Window Capture Occluder",
-                &"Cap Capture Area",
-                &"Cap Recordings Overlay",
+                &"Oiaai Window Capture Occluder",
+                &"Oiaai Capture Area",
+                &"Oiaai Recordings Overlay",
             ]
         );
 
@@ -8452,15 +8452,15 @@ mod tests {
     #[test]
     fn the_teleprompter_rule_is_always_present_and_never_duplicated() {
         let from_nothing = own_window_exclusion_rules(Vec::new(), RecordingMode::Instant);
-        assert_eq!(from_nothing, vec![title_rule("Cap Teleprompter")]);
+        assert_eq!(from_nothing, vec![title_rule("Oiaai Teleprompter")]);
         assert_eq!(
             excluded_own_windows(&from_nothing),
             vec![OwnWindow::Teleprompter]
         );
 
         let already_configured =
-            own_window_exclusion_rules(vec![title_rule("Cap Teleprompter")], RecordingMode::Studio);
-        assert_eq!(already_configured, vec![title_rule("Cap Teleprompter")]);
+            own_window_exclusion_rules(vec![title_rule("Oiaai Teleprompter")], RecordingMode::Studio);
+        assert_eq!(already_configured, vec![title_rule("Oiaai Teleprompter")]);
     }
 
     /// Our own windows are matched on title *alone*

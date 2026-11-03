@@ -402,7 +402,7 @@ vi.mock("@/components/Screen", async () => {
 	};
 });
 
-describe("Cap detail screen", () => {
+describe("Oiaai detail screen", () => {
 	beforeEach(() => {
 		vi.clearAllMocks();
 		videoViewState.renderCount = 0;
@@ -410,7 +410,7 @@ describe("Cap detail screen", () => {
 		authState.value = createAuth();
 	});
 
-	it("announces Cap detail load errors with a retry action", async () => {
+	it("announces Oiaai detail load errors with a retry action", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.reject(new Error("Network unavailable")),
@@ -423,7 +423,7 @@ describe("Cap detail screen", () => {
 		const tree = renderer.toJSON();
 		const text = getTextNodes(tree);
 
-		expect(text).toContain("Unable to load Cap");
+		expect(text).toContain("Unable to load Oiaai");
 		expect(text).toContain("Network unavailable");
 		expect(hasProp(tree, "accessibilityRole", "alert")).toBe(true);
 		expect(hasProp(tree, "accessibilityLiveRegion", "polite")).toBe(true);
@@ -431,7 +431,7 @@ describe("Cap detail screen", () => {
 			hasProp(
 				tree,
 				"accessibilityLabel",
-				"Cap detail error: Network unavailable",
+				"Oiaai detail error: Network unavailable",
 			),
 		).toBe(true);
 
@@ -439,8 +439,8 @@ describe("Cap detail screen", () => {
 			accessibilityLabel: "Try again",
 		});
 		if (!retryButton)
-			throw new Error("Cap detail retry action was not rendered");
-		expect(retryButton.props.accessibilityHint).toBe("Reloads this Cap");
+			throw new Error("Oiaai detail retry action was not rendered");
+		expect(retryButton.props.accessibilityHint).toBe("Reloads this recording");
 
 		await act(async () => {
 			retryButton.props.onPress();
@@ -466,7 +466,7 @@ describe("Cap detail screen", () => {
 		expect(text).toContain("Copy link");
 		expect(text).toContain("Save video");
 		expect(text).toContain("View analytics");
-		expect(hasProp(tree, "accessibilityHint", "Copies this Cap link")).toBe(
+		expect(hasProp(tree, "accessibilityHint", "Copies this recording link")).toBe(
 			true,
 		);
 		expect(
@@ -517,7 +517,7 @@ describe("Cap detail screen", () => {
 		});
 	});
 
-	it("keeps another space member's Cap controls read-only", async () => {
+	it("keeps another space member's Oiaai controls read-only", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.resolve({
@@ -587,7 +587,7 @@ describe("Cap detail screen", () => {
 		);
 	});
 
-	it("blocks another Cap owner from the content safety menu", async () => {
+	it("blocks another Oiaai owner from the content safety menu", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.resolve({
@@ -702,7 +702,7 @@ describe("Cap detail screen", () => {
 		expect(headerAction.props.accessibilityState).toEqual({
 			disabled: false,
 		});
-		expect(headerAction.props.accessibilityHint).toBe("Opens Cap settings");
+		expect(headerAction.props.accessibilityHint).toBe("Opens Oiaai settings");
 		expect(headerAction.props.hitSlop).toBe(10);
 		expect(resolveStyle(headerAction.props.style, true)).toMatchObject({
 			backgroundColor: "#f0f0f0",
@@ -924,7 +924,7 @@ describe("Cap detail screen", () => {
 		);
 		expect(sheet?.props.visibilityDisabled).toBe(true);
 		expect(sheet?.props.visibilityDisabledHint).toBe(
-			"Current Cap action is in progress",
+			"Current Oiaai action is in progress",
 		);
 		expect(sheet?.props.visibilityDisabledValue).toBeUndefined();
 
@@ -977,7 +977,7 @@ describe("Cap detail screen", () => {
 		expect(saveButton.props.loading).toBe(false);
 		expect(saveButton.props.disabled).toBe(true);
 		expect(saveButton.props.accessibilityHint).toBe(
-			"Current Cap action is in progress",
+			"Current Oiaai action is in progress",
 		);
 		expect(getTextNodes(renderer.toJSON())).not.toContain("Saving...");
 
@@ -1006,7 +1006,7 @@ describe("Cap detail screen", () => {
 		const [sheet] = renderer.root.findAllByProps({
 			testID: "cap-settings-sheet",
 		});
-		if (!sheet) throw new Error("Cap settings sheet was not rendered");
+		if (!sheet) throw new Error("Oiaai settings sheet was not rendered");
 
 		await act(async () => {
 			sheet.props.onVisibilityChange(detail.cap, false);
@@ -1050,7 +1050,7 @@ describe("Cap detail screen", () => {
 	});
 });
 
-describe("overlapping Cap settings changes", () => {
+describe("overlapping Oiaai settings changes", () => {
 	beforeEach(() => {
 		vi.clearAllMocks();
 	});

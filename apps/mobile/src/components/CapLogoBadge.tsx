@@ -8,7 +8,7 @@ type CapLogoBadgeProps = {
 export function CapLogoBadge({ size = 48 }: CapLogoBadgeProps) {
 	return (
 		<Svg
-			accessibilityLabel="Cap logo"
+			accessibilityLabel="Oiaai logo"
 			accessibilityRole="image"
 			width={size}
 			height={size}

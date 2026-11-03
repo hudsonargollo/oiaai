@@ -152,7 +152,7 @@ fn editor_panels_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::panel::text_preset::sample::title(),
-            "Introducing Cap",
+            "Introducing Oiaai",
         ),
         (
             tr::editor::panel::text_preset::sample::headline(),
@@ -172,7 +172,7 @@ fn editor_panels_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::panel::text_preset::sample::caption(),
-            "Recorded with Cap",
+            "Recorded with Oiaai",
         ),
         (
             tr::editor::panel::text_preset::sample::kicker(),

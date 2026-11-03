@@ -1,4 +1,4 @@
-# Cap Status
+# Oiaai Status
 
 An independent Next.js app for `status.cap.so`. It reuses the current landing page’s Instrument Sans, Source Serif 4, DM Mono, cloud artwork, and colour palette. It has no dependency on the main web app, its database, or its deployment.
 
@@ -26,14 +26,14 @@ All endpoints must be direct HTTPS URLs returning 2xx; redirects are intentional
 | `STATUS_MEDIA_URL` | GET; required | Media server `/health`, including `status === "ok"` rather than HTTP status alone |
 | `STATUS_RENDER_URL` | GET; required | Render coordinator `/health`, requiring `ok`, active workers, and render slots |
 
-Missing or invalid configuration is shown as unknown, never operational. Add other services to `lib/services.ts` and their environment variables to `.env.example`. Each service gets its own history and automatic incidents. The `/health` URLs are existing endpoints; this app adds no instrumentation, middleware, migrations, or code to Cap’s production services.
+Missing or invalid configuration is shown as unknown, never operational. Add other services to `lib/services.ts` and their environment variables to `.env.example`. Each service gets its own history and automatic incidents. The `/health` URLs are existing endpoints; this app adds no instrumentation, middleware, migrations, or code to Oiaai’s production services.
 
 These are availability checks, not end-to-end recording/upload/playback tests. A cache-served canary confirms the serving path, not every downstream dependency. Keep functional synthetic tests and provider alerting alongside this page.
 
 ## Monitoring and persistence
 
 - Vercel cron runs every five minutes **only on production**. `/api/cron/check` rejects unauthenticated calls. Preview deployments cannot run the collector.
-- Six lightweight probes run concurrently, each with an eight-second deadline. Healthy responses over three seconds are degraded. An unhealthy probe is retried once immediately. Normally 72 requests per hour reach Cap; retries can increase that to 144 per hour, independent of page traffic. HEAD probes do not download recordings; GET probes use only small health JSON.
+- Six lightweight probes run concurrently, each with an eight-second deadline. Healthy responses over three seconds are degraded. An unhealthy probe is retried once immediately. Normally 72 requests per hour reach Oiaai; retries can increase that to 144 per hour, independent of page traffic. HEAD probes do not download recordings; GET probes use only small health JSON.
 - A 55-second Redis lease prevents overlapping collectors. The function deadline is 50 seconds. Saving observations and releasing the lease is one atomic Lua operation conditional on lease ownership. A crashed collector’s lease expires. Duplicate invocations in the same five-minute UTC interval do not double-count.
 - A first confirmed unhealthy sample shows degraded/unknown status. Two consecutive unhealthy samples open an incident, typically 5–10 minutes after a failure begins; two consecutive successful samples close it. After a monitoring gap, consecutive counters reset. An unobserved gap never resolves an incident.
 - Redis stores 90 UTC calendar days of daily observed success/degradation/failure counts and all ongoing incidents and up to 500 recently resolved incidents. Empty days remain empty. Uptime is successful observed checks divided by all observed checks; it is not a promise about unobserved time. Hover, focus, or tap a day to see the sample count.

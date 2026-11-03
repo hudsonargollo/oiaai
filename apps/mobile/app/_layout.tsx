@@ -53,7 +53,7 @@ function AppShell() {
 
 	return (
 		<Stack screenOptions={{ headerShown: false }}>
-			<Stack.Screen name="(tabs)" options={{ title: "My Caps" }} />
+			<Stack.Screen name="(tabs)" options={{ title: "My Library" }} />
 			<Stack.Screen name="caps/[id]" />
 			<Stack.Screen name="analytics" />
 			<Stack.Screen name="organization-settings" />

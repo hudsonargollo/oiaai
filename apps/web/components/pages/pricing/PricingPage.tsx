@@ -27,13 +27,13 @@ import { EnterpriseCard } from "./EnterpriseCard";
 import { ProCard } from "./ProCard";
 
 const PRICING_FAQ = [
-	"What is the difference between Cap Pro and Desktop License?",
+	"What is the difference between Oiaai Pro and Desktop License?",
 	"Is there a free version?",
 	"What happens to my recordings if I cancel?",
-	"Can I use Cap for commercial purposes?",
+	"Can I use Oiaai for commercial purposes?",
 	"Do you offer team plans?",
 	"What about SOC 2, ISO 27001, GDPR, and HIPAA compliance?",
-	"How does Cap AI work?",
+	"How does Oiaai AI work?",
 ];
 
 const faqItems = PRICING_FAQ.map((question) =>
@@ -127,7 +127,7 @@ const Plans = () => {
 					<p
 						className={`${BODY_TEXT} text-[15.5px] text-[rgba(17,17,17,0.65)]`}
 					>
-						Just want to try it? Cap is free for personal use, with no time
+						Just want to try it? Oiaai is free for personal use, with no time
 						limit on local recordings.
 					</p>
 					<Link
@@ -159,7 +159,7 @@ const Closing = () => (
 			<p
 				className={`${BODY_TEXT} mt-6 max-w-[520px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[18px]`}
 			>
-				Record locally today. Move to Cap Pro the moment you need unlimited
+				Record locally today. Move to Oiaai Pro the moment you need unlimited
 				sharing, AI, or a team workspace.
 			</p>
 			<div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
@@ -168,7 +168,7 @@ const Closing = () => (
 					onClick={() => scrollTo("plans")}
 					className={`${BTN_PRIMARY} cursor-pointer`}
 				>
-					Get Cap Pro
+					Get Oiaai Pro
 				</button>
 				<Link href="/download" className={BTN_SECONDARY}>
 					Download for free

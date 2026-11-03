@@ -1187,7 +1187,7 @@ pub async fn request_wayland_screenshot_permission() -> anyhow::Result<()> {
         .await
         .context("Request Wayland screenshot from desktop portal")?
         .response()
-        .context("The desktop did not allow Cap to take screenshots")?;
+        .context("The desktop did not allow Oiaai to take screenshots")?;
     let uri = screenshot.uri();
     if is_local_wayland_screenshot_uri(uri.scheme(), uri.host_str())
         && let Ok(path) = uri.to_file_path()

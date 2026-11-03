@@ -190,7 +190,7 @@ const LiveLink = ({
 				<span className="tabular-nums text-[#1C1D21]">
 					{formatClock(landed * CHUNK_MS)}
 				</span>{" "}
-				already on Cap.so
+				already on cap.so
 			</div>
 		</div>
 	);
@@ -263,7 +263,7 @@ const Notification = ({ k }: { k: number }) => {
 				}}
 			>
 				<span className="flex items-center gap-2 text-[12px] text-[#5C5C5C]">
-					<CapLogoMark className="size-4" /> Cap
+					<CapLogoMark className="size-4" /> Oiaai
 					<span className="flex-1" />
 					now
 				</span>
@@ -357,7 +357,7 @@ const ChatWindow = ({
 								</span>
 								<span className="flex flex-col justify-center gap-1 px-3">
 									<span className="flex items-center gap-1.5 text-[11.5px] text-[#6B7079]">
-										<CapLogoMark className="size-3.5" /> Cap
+										<CapLogoMark className="size-3.5" /> Oiaai
 									</span>
 									<span className="text-[13px] font-semibold leading-tight text-[#1C1D21]">
 										{CAP_TITLE}

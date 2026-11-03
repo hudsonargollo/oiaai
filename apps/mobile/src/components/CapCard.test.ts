@@ -258,7 +258,7 @@ describe("getCapCardViewModel", () => {
 });
 
 describe("CapCard", () => {
-	it("uses a branded thumbnail placeholder when a Cap has no thumbnail", async () => {
+	it("uses a branded thumbnail placeholder when a recording has no thumbnail", async () => {
 		const tree = await renderTree(
 			React.createElement(CapCard, {
 				cap,
@@ -379,7 +379,7 @@ describe("CapCard", () => {
 		expect(
 			hasProp(tree, "accessibilityLabel", "Copy link for Launch review"),
 		).toBe(true);
-		expect(hasProp(tree, "accessibilityHint", "Copies this Cap link")).toBe(
+		expect(hasProp(tree, "accessibilityHint", "Copies this recording link")).toBe(
 			true,
 		);
 		expect(hasProp(tree, "accessibilityLabel", "Share Launch review")).toBe(
@@ -391,10 +391,10 @@ describe("CapCard", () => {
 		expect(
 			hasProp(tree, "accessibilityLabel", "More actions for Launch review"),
 		).toBe(true);
-		expect(hasProp(tree, "accessibilityHint", "Opens Cap actions")).toBe(true);
+		expect(hasProp(tree, "accessibilityHint", "Opens Oiaai actions")).toBe(true);
 	});
 
-	it("uses the Cap web neutral button surface for card actions", async () => {
+	it("uses the Oiaai web neutral button surface for card actions", async () => {
 		const renderer = await renderComponent(
 			React.createElement(CapCard, {
 				cap,

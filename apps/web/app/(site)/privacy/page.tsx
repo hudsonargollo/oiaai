@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Privacy Policy — Cap",
+	title: "Privacy Policy — Oiaai",
 	path: "/privacy",
 	ogTitle: "Privacy policy",
 	ogTag: "Legal",
@@ -22,7 +22,7 @@ export default function App() {
 				</p>
 				<div className="text-left legal-body fade-in-up animate-delay-2">
 					<p>
-						At Cap Software, Inc. ("Cap," "we," "us," or "our"), we are
+						At Oiaai Software, Inc. ("Oiaai," "we," "us," or "our"), we are
 						committed to protecting your privacy and ensuring the security of
 						your personal information. This Privacy Policy explains how we
 						collect, use, disclose, and safeguard your information when you use
@@ -142,7 +142,7 @@ export default function App() {
 						By using our Services, you acknowledge that you have read and
 						understood this Privacy Policy and agree to be bound by its terms.
 					</p>
-					<p>Privacy Policy for Cap Software, Inc.</p>
+					<p>Privacy Policy for Oiaai Software, Inc.</p>
 					<p>Last Updated: 24th April 2024</p>
 				</div>
 			</div>

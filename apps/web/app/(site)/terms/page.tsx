@@ -3,7 +3,7 @@ import { TermsPage } from "@/components/pages/TermsPage";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Terms of Service — Cap",
+	title: "Terms of Service — Oiaai",
 	path: "/terms",
 	ogTitle: "Terms of service",
 	ogTag: "Legal",

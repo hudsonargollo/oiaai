@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		title: agentsSeo.title,
 		description: agentsSeo.description,
 		path: agentsSeo.path,
-		ogTitle: "Cap for Agents",
+		ogTitle: "Oiaai for Agents",
 		ogDescription:
 			"The screen recorder your agent can run. CLI and MCP for Claude Code, Codex, Cursor, and OpenCode.",
 		ogTag: "Agents",
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
 const schemas = [
 	createBreadcrumbSchema([
 		{ name: "Home", url: "https://cap.so" },
-		{ name: "Cap for Agents", url: agentsSeo.url },
+		{ name: "Oiaai for Agents", url: agentsSeo.url },
 	]),
 	createHowToSchema({
-		name: "How to use Cap from an AI agent",
+		name: "How to use Oiaai from an AI agent",
 		description:
-			"Set up the Cap screen recorder inside Claude Code, Codex, Cursor, OpenCode, or any shell-capable agent with one pasted prompt.",
+			"Set up the Oiaai screen recorder inside Claude Code, Codex, Cursor, OpenCode, or any shell-capable agent with one pasted prompt.",
 		totalTime: "PT3M",
 		steps: setupSteps.map((step) => ({ name: step.name, text: step.text })),
 	}),

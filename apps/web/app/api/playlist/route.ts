@@ -285,7 +285,7 @@ const getPlaylistResponse = (
 						: 202;
 				const headers: Record<string, string> = {
 					...CACHE_CONTROL_HEADERS,
-					"X-Cap-Recording-Complete": playbackState === "ready" ? "1" : "0",
+					"X-Oiaai-Recording-Complete": playbackState === "ready" ? "1" : "0",
 				};
 				if (earlyPlayback && status === 204) {
 					const complete = playbackState === "ready";
@@ -314,9 +314,9 @@ const getPlaylistResponse = (
 									),
 									Effect.catchAll(() => Effect.succeed(null)),
 								);
-					headers["X-Cap-Ready-Duration"] = readyDuration.toFixed(3);
+					headers["X-Oiaai-Ready-Duration"] = readyDuration.toFixed(3);
 					if (recordedDuration !== null)
-						headers["X-Cap-Recorded-Duration"] = recordedDuration.toFixed(3);
+						headers["X-Oiaai-Recorded-Duration"] = recordedDuration.toFixed(3);
 				}
 				return HttpServerResponse.empty({ status, headers });
 			}

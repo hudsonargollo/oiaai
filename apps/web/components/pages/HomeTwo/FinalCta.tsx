@@ -24,7 +24,7 @@ export const FinalCta = () => (
 			</p>
 			<div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
 				<Link href="/pricing" className={HALLOWEEN ? BTN_PUMPKIN : BTN_PRIMARY}>
-					Upgrade to Cap Pro
+					Upgrade to Oiaai Pro
 				</Link>
 				<Link href="/download" className={BTN_SECONDARY}>
 					Download for free

@@ -21,7 +21,7 @@ export function CapEmbed({
 	return (
 		<iframe
 			src={src}
-			title="Cap video player"
+			title="Oiaai video player"
 			className={className}
 			style={{
 				border: "none",

@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { INVOICE, InvoicePage, PRESENTER, Webcam } from "./subjects";
 
 export const SHARE_W = 1200;
-export const SHARE_URL = "Cap.so/s/m4k8x2qz";
+export const SHARE_URL = "cap.so/s/m4k8x2qz";
 export const CAP_TITLE = "Sending an invoice in Ledgerly";
 export const DURATION_S = 24;
 

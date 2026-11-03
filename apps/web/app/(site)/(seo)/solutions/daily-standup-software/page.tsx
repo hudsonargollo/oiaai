@@ -8,21 +8,21 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
+	title: "Daily Standup Software: Streamline Your Agile Meetings with Oiaai",
 	description:
-		"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+		"Looking for daily standup software? Discover how Oiaai helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
 	openGraph: {
-		title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
+		title: "Daily Standup Software: Streamline Your Agile Meetings with Oiaai",
 		description:
-			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how Oiaai helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
 		url: "https://cap.so/solutions/daily-standup-software",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: Daily Standup Software",
+				alt: "Oiaai: Daily Standup Software",
 			},
 		],
 		locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Daily Standup Software: Streamline Your Agile Meetings with Cap",
+		title: "Daily Standup Software: Streamline Your Agile Meetings with Oiaai",
 		description:
-			"Looking for daily standup software? Discover how Cap helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how Oiaai helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
 		images: [ogImage],
 	},
 	alternates: {

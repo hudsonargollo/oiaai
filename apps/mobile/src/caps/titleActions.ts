@@ -8,7 +8,7 @@ type CapTitleActionsInput = {
 };
 
 const getTitleErrorMessage = (error: unknown) =>
-	error instanceof Error ? error.message : "Unable to rename this Cap.";
+	error instanceof Error ? error.message : "Unable to rename this recording.";
 
 const saveTitle = async ({
 	cap,
@@ -26,12 +26,12 @@ const saveTitle = async ({
 
 export const showCapTitleActions = (input: CapTitleActionsInput) => {
 	if (Platform.OS !== "ios") {
-		Alert.alert("Rename Cap", "Title editing is available on iOS.");
+		Alert.alert("Rename Oiaai", "Title editing is available on iOS.");
 		return;
 	}
 
 	Alert.prompt(
-		"Rename Cap",
+		"Rename Oiaai",
 		undefined,
 		[
 			{ text: "Cancel", style: "cancel" },
@@ -40,7 +40,7 @@ export const showCapTitleActions = (input: CapTitleActionsInput) => {
 				onPress: (value?: string) => {
 					const title = value?.trim() ?? "";
 					if (!title) {
-						Alert.alert("Title required", "Enter a title for this Cap.");
+						Alert.alert("Title required", "Enter a title for this recording.");
 						return;
 					}
 					void saveTitle({ ...input, title });

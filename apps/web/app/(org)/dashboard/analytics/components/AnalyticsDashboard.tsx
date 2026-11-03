@@ -95,7 +95,7 @@ export function AnalyticsDashboard() {
 			}
 
 			if (data.subscription === true) {
-				toast.success("You are already on the Cap Pro plan");
+				toast.success("You are already on the Oiaai Pro plan");
 				return;
 			}
 
@@ -228,7 +228,7 @@ export function AnalyticsDashboard() {
 								rel="noreferrer"
 								className="inline-flex gap-2 items-center px-5 h-10 text-sm font-medium rounded-full transition-colors bg-gray-12 text-gray-1 hover:bg-gray-11"
 							>
-								Open Cap
+								Open Oiaai
 							</a>
 						) : undefined
 					}
@@ -264,7 +264,7 @@ export function AnalyticsDashboard() {
 								<div className="flex relative flex-col flex-1 justify-center items-center py-6 w-full bg-gray-2 bg-opacity-75 backdrop-blur-md">
 									<div className="flex flex-col items-center">
 										<h1 className="text-3xl font-medium text-gray-12">
-											Upgrade to unlock Cap Analytics
+											Upgrade to unlock Oiaai Analytics
 										</h1>
 									</div>
 									<p className="mt-1 text-lg text-center text-gray-11">
@@ -347,7 +347,7 @@ export function AnalyticsDashboard() {
 									>
 										{proCheckoutMutation.isPending
 											? "Loading..."
-											: "Upgrade to Cap Pro"}
+											: "Upgrade to Oiaai Pro"}
 									</Button>
 								</div>
 							</div>

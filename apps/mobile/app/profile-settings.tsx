@@ -43,7 +43,7 @@ const openPhotoSettings = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Cap to choose a profile image from Settings.",
+				message: "Allow Oiaai to choose a profile image from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -58,7 +58,7 @@ const openPhotoSettings = () => {
 
 	Alert.alert(
 		"Photos access needed",
-		"Allow Cap to choose a profile image from Settings.",
+		"Allow Oiaai to choose a profile image from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{ text: "Open Settings", onPress: () => void Linking.openSettings() },
@@ -274,7 +274,7 @@ export default function ProfileSettingsScreen() {
 				<View style={styles.heading}>
 					<Text style={styles.title}>Your profile</Text>
 					<Text style={styles.subtitle}>
-						Your name and image appear on shared Caps and comments.
+						Your name and image appear on shared recordings and comments.
 					</Text>
 				</View>
 				{!profile ? (

@@ -40,7 +40,7 @@ const promptForPassword = (input: CapPasswordActionsInput) => {
 
 	Alert.prompt(
 		title,
-		"Set a password for this Cap link.",
+		"Set a password for this recording link.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{
@@ -48,7 +48,7 @@ const promptForPassword = (input: CapPasswordActionsInput) => {
 				onPress: (value?: string) => {
 					const password = value?.trim() ?? "";
 					if (!password) {
-						Alert.alert("Password required", "Enter a password for this Cap.");
+						Alert.alert("Password required", "Enter a password for this recording.");
 						return;
 					}
 					void savePassword({ ...input, password });

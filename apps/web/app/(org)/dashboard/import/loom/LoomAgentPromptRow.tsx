@@ -68,7 +68,7 @@ export function LoomAgentPromptRow({
 						</p>
 						<p className="text-xs text-gray-10">
 							Copy a prompt with everything Claude Code, Codex or Cursor needs
-							to run the whole migration with the Cap CLI.
+							to run the whole migration with the Oiaai CLI.
 						</p>
 					</div>
 				</div>

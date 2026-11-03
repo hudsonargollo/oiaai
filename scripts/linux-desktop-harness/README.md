@@ -18,7 +18,7 @@ Each run (`run-desktop.sh <desktop> <package> <out-dir> [KEY=VALUE...]`):
 2. starts the desktop (`gnome-up.sh` or `arch-up.sh`) and installs the package
    (`.deb` on GNOME, AppImage anywhere) or mounts a local build with
    `DEV_BIN=<cap-gpui> DEV_LIBS=<FFmpeg lib dir>`;
-3. runs `scenario-start-stop.sh`: launch Cap in a launcher-style systemd scope,
+3. runs `scenario-start-stop.sh`: launch Oiaai in a launcher-style systemd scope,
    start a Display recording from the overlay, approve the shortcut
    (`atspi-press.py`, the dialog's Add button) or click the tray item from a
    long-lived host connection (`sni-click.py`), approve the screen share, record
@@ -28,23 +28,23 @@ Each run (`run-desktop.sh <desktop> <package> <out-dir> [KEY=VALUE...]`):
    `mutter-pointer.py`);
 4. writes `result.txt`, which `check-results.sh` turns into pass or fail.
 
-`SCENARIO=clipboard` (niri, Hyprland) opens Cap's teleprompter, pastes text
+`SCENARIO=clipboard` (niri, Hyprland) opens Oiaai's teleprompter, pastes text
 another app copied with Ctrl+V and copies it back out with Ctrl+A, Ctrl+C,
 pressed through the compositor's virtual keyboard (`wtype`).
 `GNOME_TRAY=0` runs GNOME in its plain session without the AppIndicator
 extension and without the harness's own tray host, as Fedora ships it. With
 `CAP_GPUI_PORTAL_APP_ID=0` and `LAUNCH=terminal` the portal grants no shortcut
-either, and the scenario expects Cap to record with its controls visible
+either, and the scenario expects Oiaai to record with its controls visible
 (`attempt1_control=visible`): it finds the controls window and clicks their red Stop button with the pointer (needs `GNOME_UNSAFE=1`).
-`SCENARIO=reopen` launches Cap from a terminal and again from the app grid,
+`SCENARIO=reopen` launches Oiaai from a terminal and again from the app grid,
 which must hand over to the running instance. `SCENARIO=raise` (with
-`GNOME_UNSAFE=1`) focuses Cap's settings, then has GNOME Shell launch Cap the
+`GNOME_UNSAFE=1`) focuses Oiaai's settings, then has GNOME Shell launch Oiaai the
 way the app grid does; the activation token the relaunch hands over must bring
 onboarding, or the main window with `RAISE_WINDOW=main`, to the front.
 `MUTTER_DEBUG=focus,startup` writes mutter's reasoning to
-`compositor.debug.log`. `SCENARIO=settings-close` instead opens Cap's settings and closes it with the
+`compositor.debug.log`. `SCENARIO=settings-close` instead opens Oiaai's settings and closes it with the
 window's own close button (GNOME draws no title bar for it). Clicks go through
-`mutter-pointer.py`, one virtual pointer that exists before Cap starts: gpui
+`mutter-pointer.py`, one virtual pointer that exists before Oiaai starts: gpui
 binds the seat's pointer once, so a pointer created per click never reaches it.
 `SCENARIO=pick-background` (with `GNOME_UNSAFE=1`) records a clip, opens it in
 the editor and presses the Image background's picker
@@ -53,17 +53,17 @@ portal's file chooser through `mutter-keys.py --type` and presses Select.
 Mutter's RemoteDesktop drops the first key of each session, so `mutter-keys.py`
 leads every session with a Shift tap.
 `SCENARIO=screenshot` takes a screenshot of the display the way the
-screenshot mode does, with Cap focused as after a click, and allows it when
+screenshot mode does, with Oiaai focused as after a click, and allows it when
 the portal asks (GNOME Shell's question is answered from the Shell, so it needs
 `GNOME_UNSAFE=1`; elsewhere the permission is granted up front because the GTK
 portal's dialog aborts in the container). It checks a PNG of the display's size (`SCREEN`, 1920x1080) was saved.
-`PRELAUNCH=1` runs Cap once before, so a `LAUNCH=terminal` run finds the
-`so.cap.Cap.desktop` entry GNOME matches Cap's windows to.
+`PRELAUNCH=1` runs Oiaai once before, so a `LAUNCH=terminal` run finds the
+`so.cap.Cap.desktop` entry GNOME matches Oiaai's windows to.
 `SCENARIO=wallpaper` records a clip, opens it in the editor and imports the
 desktop's wallpaper as its background (`CAP_GPUI_AUTO_DESKTOP_BACKGROUND=1`).
 GNOME keeps its default JPEG XL wallpaper; `WALLPAPER=swaybg` starts swaybg
 with a PNG first, as Omarchy does on Hyprland.
-`SCENARIO=register` launches Cap from a shell `ROUNDS` times, each time once
+`SCENARIO=register` launches Oiaai from a shell `ROUNDS` times, each time once
 with its `so.cap.Cap.desktop` entry removed and once with it in place, and
 counts the launches that registered the app id with the portals.
 `AREA=x,y,width,height` makes the start-stop scenario record that area of the
@@ -72,7 +72,7 @@ display and check the video is its size.
 MP4 and to a GIF (`CAP_GPUI_AUTO_EXPORT`), checking the length each file
 declares.
 
-`report.sh <out-dir>` prints the results with Cap's own log lines. The
+`report.sh <out-dir>` prints the results with Oiaai's own log lines. The
 Hyprland image needs `modprobe vkms` on the host. With `GNOME_UNSAFE=1`,
 `shot.sh` takes a screenshot of the GNOME session.
 
@@ -86,7 +86,7 @@ real login activates.
 - `x11-camera.sh <cap-gpui> <ffmpeg lib dir> <out-dir>` records the display on
   Xvfb (X11 capture, no portal) with a camera: a v4l2loopback device that
   ffmpeg feeds a 1280x720 test pattern, as YUYV, NV12 or MJPEG
-  (`CAMERA_FORMAT`; CI runs all three). Cap waits for the Stop shortcut to start
+  (`CAMERA_FORMAT`; CI runs all three). Oiaai waits for the Stop shortcut to start
   and to stop, pressed with real X input (xdotool), well before its 60 s
   automatic stop. It checks the camera track is 1280x720 and as long as the
   display track, about five seconds, and fails if any result is missing. It
@@ -94,17 +94,17 @@ real login activates.
   can build the module.
 - `x11-capture.sh <cap-gpui> <ffmpeg lib dir> <out-dir>` records the display,
   an area and another app's window on Xvfb (MIT-SHM capture, no portal),
-  pressing the Stop shortcut with real X input where Cap waits for it, records
+  pressing the Stop shortcut with real X input where Oiaai waits for it, records
   the microphone and system audio from a tone a private PulseAudio plays, takes
   a screenshot, and checks the size, length and loudness of each result. It also
   checks the window picker offers the other app's window rather than one of
-  Cap's own.
-- `x11-stale-wayland.sh <cap-gpui> <ffmpeg lib dir> <out-dir>` starts Cap on
+  Oiaai's own.
+- `x11-stale-wayland.sh <cap-gpui> <ffmpeg lib dir> <out-dir>` starts Oiaai on
   Xvfb with `WAYLAND_DISPLAY` naming a socket nothing listens on, as a systemd
-  user environment keeps it after a Wayland session ends, and checks Cap falls
+  user environment keeps it after a Wayland session ends, and checks Oiaai falls
   back to the X display instead of failing to start.
 
-- `niri-screencast/run.sh` records through Cap's PipeWire capture loop from a
+- `niri-screencast/run.sh` records through Oiaai's PipeWire capture loop from a
   producer that negotiates and shares frames the way niri 26.04 does: a
   mandatory DMA-BUF modifier, DMA-BUF buffers the consumer must map itself,
   and a chunk size of 1 (GitHub #2941). It needs a host with PipeWire and
@@ -112,7 +112,7 @@ real login activates.
 - `appimage-pipewire/run.sh <Cap.AppImage> <out-dir>` connects a screen
   capture stream inside NixOS's `appimage-run`, through the AppImage's real
   launchers, with the AppDir as the given AppImage shipped it and as
-  `scripts/finalize-linux-appimage.mjs` lays it out now. A stand-in for Cap
-  links the bundled FFmpeg the way Cap does, so the bundled libva loads ahead
+  `scripts/finalize-linux-appimage.mjs` lays it out now. A stand-in for Oiaai
+  links the bundled FFmpeg the way Oiaai does, so the bundled libva loads ahead
   of the host's PipeWire plugins, as in Cap.
 

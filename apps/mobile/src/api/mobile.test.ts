@@ -35,7 +35,7 @@ describe("createMobileApiClient", () => {
 					organizations: [
 						{
 							id: "org_123",
-							name: "Cap",
+							name: "Oiaai",
 							iconUrl: null,
 							role: "owner",
 						},
@@ -45,7 +45,7 @@ describe("createMobileApiClient", () => {
 					spaces: [
 						{
 							id: "org_123",
-							name: "All Cap",
+							name: "All Oiaai",
 							iconUrl: null,
 							kind: "organization",
 							privacy: "Public",
@@ -229,7 +229,7 @@ describe("createMobileApiClient", () => {
 		}
 	});
 
-	it("loads Caps from a selected space", async () => {
+	it("loads recordings from a selected space", async () => {
 		const calls: RequestInfo[] = [];
 		const originalFetch = globalThis.fetch;
 		globalThis.fetch = (async (input: RequestInfo | URL) => {
@@ -388,7 +388,7 @@ describe("createMobileApiClient", () => {
 		);
 	});
 
-	it("updates Cap sharing with the authenticated PATCH endpoint", async () => {
+	it("updates Oiaai sharing with the authenticated PATCH endpoint", async () => {
 		const calls: Array<{ input: RequestInfo | URL; init?: RequestInit }> = [];
 		const originalFetch = globalThis.fetch;
 		globalThis.fetch = (async (
@@ -490,7 +490,7 @@ describe("createMobileApiClient", () => {
 		}
 	});
 
-	it("updates Cap titles with the authenticated PATCH endpoint", async () => {
+	it("updates Oiaai titles with the authenticated PATCH endpoint", async () => {
 		const calls: Array<{ input: RequestInfo | URL; init?: RequestInit }> = [];
 		const originalFetch = globalThis.fetch;
 		globalThis.fetch = (async (
@@ -603,7 +603,7 @@ describe("createMobileApiClient", () => {
 		}
 	});
 
-	it("updates Cap passwords with the authenticated PATCH endpoint", async () => {
+	it("updates Oiaai passwords with the authenticated PATCH endpoint", async () => {
 		const calls: Array<{ input: RequestInfo | URL; init?: RequestInit }> = [];
 		const originalFetch = globalThis.fetch;
 		globalThis.fetch = (async (
@@ -846,7 +846,7 @@ describe("createMobileApiClient", () => {
 			return new Response(
 				JSON.stringify({
 					id: "org_123",
-					name: "Cap",
+					name: "Oiaai",
 					role: "owner",
 					canManage: true,
 					iconUrl: null,
@@ -864,7 +864,7 @@ describe("createMobileApiClient", () => {
 			});
 			await client.getCapAnalytics("video_123", "30d");
 			await client.updateOrganizationSettings({
-				name: "Cap",
+				name: "Oiaai",
 				allowedEmailDomain: null,
 			});
 			await client.updateOrganizationIcon({

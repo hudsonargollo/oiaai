@@ -12,7 +12,7 @@ const INTERRUPTED_GRACE_SECS: i64 = 30 * 60;
 const SWEEP_INTERVAL: Duration = Duration::from_secs(5 * 60);
 const MEDIA_SCAN_DEPTH: usize = 3;
 const CRASHED_ADOPTION_AGE_SECS: i64 = 10 * 60;
-const CRASHED_ERROR: &str = "Cap closed before this recording captured anything.";
+const CRASHED_ERROR: &str = "Oiaai closed before this recording captured anything.";
 
 static JOURNAL_LOCK: Mutex<()> = Mutex::new(());
 static SESSION: OnceLock<String> = OnceLock::new();

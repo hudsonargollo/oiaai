@@ -174,7 +174,7 @@ export const DownloadPage = ({
 					</div>
 				)}
 				<h1 className="text-2xl fade-in-down animate-delay-1 md:text-4xl">
-					Download Cap
+					Download Oiaai
 				</h1>
 				{nativeReleaseLive ? (
 					<p className="px-4 mx-auto max-w-xl text-sm fade-in-down text-gray-11 animate-delay-2 md:text-base md:px-0">
@@ -236,7 +236,7 @@ export const DownloadPage = ({
 									}
 									className="underline underline-offset-2 hover:text-gray-12"
 								>
-									Cap {LAST_TAURI_VERSION}
+									Oiaai {LAST_TAURI_VERSION}
 								</Link>{" "}
 								is still available.
 							</p>
@@ -255,8 +255,8 @@ export const DownloadPage = ({
 									style={{ maxWidth: "300px" }}
 								/>
 								<p className="mt-2 text-sm text-gray-8">
-									Whilst Cap for Windows is in early beta, after downloading and
-									running the app, follow the steps above to whitelist Cap on
+									Whilst Oiaai for Windows is in early beta, after downloading and
+									running the app, follow the steps above to whitelist Oiaai on
 									your PC.
 								</p>
 							</div>
@@ -273,10 +273,10 @@ export const DownloadPage = ({
 						<div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 							<div>
 								<h3 className="text-sm font-medium text-gray-12">
-									Install the Cap CLI
+									Install the Oiaai CLI
 								</h3>
 								<p className="mt-1 text-xs leading-5 text-gray-10">
-									Already have Cap Desktop? Link the bundled CLI for agents,
+									Already have Oiaai Desktop? Link the bundled CLI for agents,
 									scripts, and terminals.
 								</p>
 							</div>

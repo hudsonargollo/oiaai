@@ -186,7 +186,7 @@ impl StopItem {
 
     #[zbus(property)]
     fn title(&self) -> &str {
-        "Stop Cap recording"
+        "Stop Oiaai recording"
     }
 
     #[zbus(property)]

@@ -131,7 +131,7 @@ export function CheckoutForm({
 						</h2>
 						<p className="mt-2.5 text-[15px] leading-[1.5] text-[rgba(17,17,17,0.66)]">
 							{complete
-								? "Your Cap Pro subscription is set up. Head to your dashboard to get started."
+								? "Your Oiaai Pro subscription is set up. Head to your dashboard to get started."
 								: "Checkouts close after a while for your security. Start a fresh one below."}
 						</p>
 					</div>
@@ -260,7 +260,7 @@ function OrderSummary({
 
 			<dl className="mt-6 flex flex-col gap-2.5 border-t border-[#E1E7EE] pt-5 text-[14px]">
 				<Row
-					label={`Cap Pro × ${lineItem.quantity} ${lineItem.quantity === 1 ? "user" : "users"}`}
+					label={`Oiaai Pro × ${lineItem.quantity} ${lineItem.quantity === 1 ? "user" : "users"}`}
 					value={checkout.total.subtotal.amount}
 				/>
 				{checkout.discountAmounts?.map((discount) => (
@@ -310,7 +310,7 @@ export function PlanHeading({ tag }: { tag: string }) {
 		<>
 			<div className="flex items-start justify-between gap-3">
 				<h2 className="text-[22px] font-normal leading-[1.1] tracking-[-0.02em]">
-					Cap Pro
+					Oiaai Pro
 				</h2>
 				<span
 					className="shrink-0 rounded-full px-2.5 py-[6px] text-[12px] font-medium leading-none tracking-[-0.01em]"
@@ -639,7 +639,7 @@ function PaymentForm({
 		if (signedIn) return true;
 		const value = guestEmail.trim().toLowerCase();
 		if (!EMAIL_PATTERN.test(value)) {
-			setEmailError("Enter the email you'd like to use for Cap.");
+			setEmailError("Enter the email you'd like to use for Oiaai.");
 			return false;
 		}
 		if (value === checkout.email) return true;
@@ -718,7 +718,7 @@ function PaymentForm({
 						Payment
 					</h2>
 					<p className="mt-2 text-[14px] leading-[1.5] text-[rgba(17,17,17,0.6)] max-sm:hidden">
-						Cap Pro turns on the moment your payment goes through.
+						Oiaai Pro turns on the moment your payment goes through.
 					</p>
 				</div>
 				{checkout.livemode ? null : (
@@ -808,7 +808,7 @@ function PaymentForm({
 						>
 							{emailError ?? (
 								<>
-									You'll sign in to Cap with this email. Already have an
+									You'll sign in to Oiaai with this email. Already have an
 									account?{" "}
 									<Link
 										href={loginHref}
@@ -918,7 +918,7 @@ function PaymentForm({
 			</button>
 
 			<p className="mt-4 text-[12.5px] leading-[1.55] text-[rgba(17,17,17,0.55)]">
-				By subscribing you agree to Cap's{" "}
+				By subscribing you agree to Oiaai's{" "}
 				<Link href="/terms" className="underline underline-offset-2">
 					Terms
 				</Link>{" "}

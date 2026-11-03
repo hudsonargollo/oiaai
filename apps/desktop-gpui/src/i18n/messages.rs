@@ -1,6 +1,6 @@
 //! Recording and upload errors stay English where they are made: they are
 //! logged, matched to classify failures and saved with the upload state.
-//! `localize` translates the ones Cap writes itself where they are shown.
+//! `localize` translates the ones Oiaai writes itself where they are shown.
 //! Text it does not know, such as an engine error, passes through unchanged.
 
 use super::tr;
@@ -61,7 +61,7 @@ const EXACT: &[(&str, fn() -> &'static str)] = &[
         tr::message::recording::discard_unconfirmed,
     ),
     (
-        "Cap closed before this recording captured anything.",
+        "Oiaai closed before this recording captured anything.",
         tr::message::recording::crashed_before_capture,
     ),
     ("offline", tr::message::upload::offline),
@@ -205,14 +205,14 @@ const WRAPPED: &[Wrapped] = &[
         translate: |error| tr::message::recording::control_task_failed(error),
     },
     Wrapped {
-        prefix: "Restart could not hide Cap windows: ",
+        prefix: "Restart could not hide Oiaai windows: ",
         suffix: "",
         nested: true,
         translate: |error| tr::message::recording::restart_hide_failed(error),
     },
     Wrapped {
         prefix: "Low storage. Your recording files are preserved at ",
-        suffix: ". Free up space, then recover the recording in Cap.",
+        suffix: ". Free up space, then recover the recording in Oiaai.",
         nested: false,
         translate: |path| tr::message::recording::low_storage_preserved(path),
     },

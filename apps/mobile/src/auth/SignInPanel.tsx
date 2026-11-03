@@ -31,7 +31,7 @@ const getEmailRequestErrorMessage = (error: unknown) => {
 	if (error instanceof MobileApiError) {
 		if (error.status === 400) return "Enter a valid email address.";
 		if (error.status === 403) {
-			return "This email cannot be used to sign in to Cap.";
+			return "This email cannot be used to sign in to Oiaai.";
 		}
 		if (error.status === 429) {
 			return "Too many codes requested. Try again in a few minutes.";
@@ -85,7 +85,7 @@ function GoogleMark() {
 }
 
 export function SignInPanel({
-	title = "Sign in to Cap",
+	title = "Sign in to Oiaai",
 	subtitle = "Your videos, organized and ready to share.",
 }: SignInPanelProps) {
 	const auth = useAuth();
@@ -872,8 +872,8 @@ export function SignInPanel({
 					)}
 					<Text style={styles.legalText}>
 						{isCodeStep
-							? "By entering your email, you acknowledge that you have both read and agree to Cap's "
-							: "By typing your email and clicking continue, you acknowledge that you have both read and agree to Cap's "}
+							? "By entering your email, you acknowledge that you have both read and agree to Oiaai's "
+							: "By typing your email and clicking continue, you acknowledge that you have both read and agree to Oiaai's "}
 						<Text
 							accessibilityHint={termsLinkHint}
 							accessibilityRole="link"

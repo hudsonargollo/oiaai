@@ -10,7 +10,7 @@ export class PhotosPermissionDeniedError extends Error {
 }
 
 const safeFileName = (fileName: string) =>
-	fileName.replace(/[^\w.\- ]+/g, "").trim() || "Cap.mp4";
+	fileName.replace(/[^\w.\- ]+/g, "").trim() || "Oiaai.mp4";
 
 export const saveCapVideoToPhotos = async (
 	client: MobileApiClient,

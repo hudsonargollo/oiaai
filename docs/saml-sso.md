@@ -1,16 +1,16 @@
 # SAML SSO
 
-Cap uses WorkOS Single Sign-On with its existing NextAuth sessions. Each Cap organization has its own paid SSO entitlement and an explicit WorkOS organization mapping. SSO billing is independent of Cap Pro seats and the Signed BAA add-on.
+Oiaai uses WorkOS Single Sign-On with its existing NextAuth sessions. Each Oiaai organization has its own paid SSO entitlement and an explicit WorkOS organization mapping. SSO billing is independent of Oiaai Pro seats and the Signed BAA add-on.
 
 ## Customer flow
 
 1. An organization owner opens **Settings → Organization → Security & Compliance** and purchases the monthly SAML SSO add-on. Existing subscribers use their current Stripe billing currency automatically, without a currency picker. Owners without a current subscription can choose the configured USD, GBP, or EUR amount. Checkout validates the owner's billing currency again before opening a payment session.
-2. Once payment is confirmed, owners and admins can use **Verify domain**. Cap creates or reuses that organization's WorkOS organization and opens the hosted domain-verification flow. Organizations whose domains are already verified skip this step.
+2. Once payment is confirmed, owners and admins can use **Verify domain**. Oiaai creates or reuses that organization's WorkOS organization and opens the hosted domain-verification flow. Organizations whose domains are already verified skip this step.
 3. After domain verification, **Set up SAML SSO** opens WorkOS's SSO setup flow for the IT administrator to configure the identity provider. **Verify domains** remains available if additional domains need verification. Payment alone never verifies a domain.
 4. Team members choose SAML SSO on the sign-in page, enter their work email/domain, or follow the organization's sign-in link. An IdP-initiated visit to `/login?connection_id=...` starts the same protected authorization flow.
-5. Successful sign-in links the verified identity and adds the user to that specific Cap organization. New members receive the `member` role without a Pro seat. Existing roles, seats, and default organizations are preserved; the SSO organization becomes active.
+5. Successful sign-in links the verified identity and adds the user to that specific Oiaai organization. New members receive the `member` role without a Pro seat. Existing roles, seats, and default organizations are preserved; the SSO organization becomes active.
 
-An existing Cap account can enter SSO explicitly using `/login?sso=1`. Organization and IdP sign-in links also work while already signed in, but an SSO identity cannot be attached to a different currently signed-in account. That user must sign out first.
+An existing Oiaai account can enter SSO explicitly using `/login?sso=1`. Organization and IdP sign-in links also work while already signed in, but an SSO identity cannot be attached to a different currently signed-in account. That user must sign out first.
 
 ## Configuration
 
@@ -35,7 +35,7 @@ Configure WorkOS redirect settings for the same environment:
 | SSO sign-in / initiate-login endpoint | `https://cap.so/login`                                    |
 | Admin Portal return/success base      | `https://cap.so/dashboard/settings/organization/security` |
 
-Cap supplies organization-scoped Admin Portal return and success URLs. API-generated links are short-lived bearer capabilities and should be opened immediately, never stored or logged. Use an HTTPS preview origin for a full Admin Portal test.
+Oiaai supplies organization-scoped Admin Portal return and success URLs. API-generated links are short-lived bearer capabilities and should be opened immediately, never stored or logged. Use an HTTPS preview origin for a full Admin Portal test.
 
 Configure the Vercel Firewall SDK rule `rl_auth_sso_start`, for example 20 attempts per minute per IP. The shared rate-limit helper is best-effort and fails open when the rule is missing or the firewall is unavailable; merely deploying the rule ID does not enable rate limiting. Self-hosted deployments should provide equivalent perimeter protection.
 
@@ -53,25 +53,25 @@ Checkout retries reuse the persisted attempt and Stripe idempotency key. A curre
 
 For a previously paid, unlinked customer:
 
-1. Independently identify the exact Cap owner and organization. A matching email domain alone is not enough, and must not bulk-join existing domain users.
+1. Independently identify the exact Oiaai owner and organization. A matching email domain alone is not enough, and must not bulk-join existing domain users.
 2. Verify the Stripe subscription/customer, supported SAML price, quantity, paid invoice, and paid-through period. Preserve the agreed price. A historical payment-link customer may differ from the owner's Pro customer.
 3. Verify the exact WorkOS organization and its domain proof. Do not adopt a similarly named organization or mark a pending domain verified from an untrusted request.
 4. After the schema and safe webhook code are deployed, create the explicit `organization_sso` binding and set `organizations.workosOrganizationId`, then reconcile the subscription. Use compare-and-set predicates and verify the resulting rows.
 5. If the old webhook overwrote the owner's Pro reference, independently verify the original Pro subscription, customer, and seat quantity before restoring those fields. Never place the SAML subscription in the user's Pro subscription fields.
 
-New WorkOS organizations use the Cap organization ID as `externalId`. An explicitly verified legacy mapping can retain its existing WorkOS external ID. Billing ownership/customer changes require support reconciliation; the application refuses to silently transfer an earlier payment to a different payer. Do not add SSO metadata to a legacy subscription while the old Pro-only webhook is still deployed.
+New WorkOS organizations use the Oiaai organization ID as `externalId`. An explicitly verified legacy mapping can retain its existing WorkOS external ID. Billing ownership/customer changes require support reconciliation; the application refuses to silently transfer an earlier payment to a different payer. Do not add SSO metadata to a legacy subscription while the old Pro-only webhook is still deployed.
 
 ## Security boundaries
 
-The authorization start signs the Cap organization, WorkOS organization, connection, current user, and safe return path into a ten-minute HttpOnly cookie. NextAuth also validates OAuth state and PKCE. The callback checks the raw WorkOS profile IDs, live connection state, verified email domain, existing account binding, and paid organization before issuing a session.
+The authorization start signs the Oiaai organization, WorkOS organization, connection, current user, and safe return path into a ten-minute HttpOnly cookie. NextAuth also validates OAuth state and PKCE. The callback checks the raw WorkOS profile IDs, live connection state, verified email domain, existing account binding, and paid organization before issuing a session.
 
-WorkOS authorization receives only the verified `connection` selector. Its `connection`, `organization`, and `provider` selectors are mutually exclusive; organization ownership remains bound and validated in Cap's signed intent rather than adding a second selector to the provider request.
+WorkOS authorization receives only the verified `connection` selector. Its `connection`, `organization`, and `provider` selectors are mutually exclusive; organization ownership remains bound and validated in Oiaai's signed intent rather than adding a second selector to the provider request.
 
 Membership provisioning is transactional and repeatable, using organization/user row locks and a deterministic WorkOS account key. Only invitations for the SSO organization are accepted. SSO-created users do not receive an unrelated personal organization or Stripe customer during signup. Membership is committed before the session token is issued.
 
 An ambiguous default connection blocks domain-based discovery but leaves settings accessible for repair; an explicit active IdP connection is still checked against the mapped organization. Settings and sign-in query WorkOS directly, so disabling/resetting a connection is recognized without a connection webhook cache.
 
-This feature does **not** enforce SSO-only login, implement SCIM/deprovisioning, revoke existing Cap sessions when a user leaves the IdP, or provide SAML single logout. Standard Cap sign-in remains available. Do not present these as delivered enterprise controls.
+This feature does **not** enforce SSO-only login, implement SCIM/deprovisioning, revoke existing Oiaai sessions when a user leaves the IdP, or provide SAML single logout. Standard Oiaai sign-in remains available. Do not present these as delivered enterprise controls.
 
 ## Rollout and verification
 
@@ -88,7 +88,7 @@ FROM (
 ) AS duplicate_mappings;
 ```
 
-The result **must be zero immediately before any schema deployment**. This checks all organizations, including tombstoned rows and empty-string bindings, because the unique constraint applies to them too. If the query fails or returns a nonzero count, stop before applying any migration DDL. Independently verify the conflicting Cap and WorkOS identities and reconcile their bindings with compare-and-set updates; never automatically delete, merge, or reassign organizations. Repeat the query after reconciliation, and keep binding writes paused until the unique constraint is installed.
+The result **must be zero immediately before any schema deployment**. This checks all organizations, including tombstoned rows and empty-string bindings, because the unique constraint applies to them too. If the query fails or returns a nonzero count, stop before applying any migration DDL. Independently verify the conflicting Oiaai and WorkOS identities and reconcile their bindings with compare-and-set updates; never automatically delete, merge, or reassign organizations. Repeat the query after reconciliation, and keep binding writes paused until the unique constraint is installed.
 
 After that gate passes, deploy the additive migration before the application changes. Reconcile existing mapped organizations rather than silently granting them unpaid access. A successful preflight in one environment or at an earlier time does not authorize another deployment. Do not push schema directly to a shared local or production database as part of a test.
 

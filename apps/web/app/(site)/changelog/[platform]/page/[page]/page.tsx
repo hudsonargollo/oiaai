@@ -42,12 +42,12 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 	if (!platform || page <= 1) return {};
 
 	return buildMarketingMetadata({
-		title: `${PLATFORM_TITLES[platform]} Changelog — Page ${page} — Cap`,
-		description: `New features, improvements, and fixes in Cap for ${PLATFORM_TITLES[
+		title: `${PLATFORM_TITLES[platform]} Changelog — Page ${page} — Oiaai`,
+		description: `New features, improvements, and fixes in Oiaai for ${PLATFORM_TITLES[
 			platform
 		].toLowerCase()}.`,
 		path: `/changelog/${platform}/page/${page}`,
-		ogTitle: `Cap ${PLATFORM_TITLES[platform]} Changelog`,
+		ogTitle: `Oiaai ${PLATFORM_TITLES[platform]} Changelog`,
 		ogTag: "Changelog",
 	});
 }

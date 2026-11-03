@@ -59,7 +59,7 @@ impl OSPermission {
     /// it where it is shown.
     pub fn unavailable_message(self) -> String {
         format!(
-            "{} access is unavailable. Allow Cap in System Settings > Privacy & Security > {}, then select the device again.",
+            "{} access is unavailable. Allow Oiaai in System Settings > Privacy & Security > {}, then select the device again.",
             self.label(),
             self.label()
         )

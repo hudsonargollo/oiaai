@@ -11,33 +11,33 @@ import {
 
 const homePageFAQs = [
 	{
-		question: "What is Cap?",
+		question: "What is Oiaai?",
 		answer:
-			"Cap is an open-source screen recording software that offers beautiful, lightweight recordings with instant sharing capabilities. It's the privacy-focused alternative to Loom.",
+			"Oiaai is an open-source screen recording software that offers beautiful, lightweight recordings with instant sharing capabilities. It's the privacy-focused alternative to Loom.",
 	},
 	{
-		question: "How much does Cap cost?",
-		answer: `Cap offers a generous free plan with Studio mode for personal use and 5-minute shareable links. The Pro plan starts at just $${PRICING.pro.annualPerMonth}/month per user, which is less than half the price of Loom.`,
+		question: "How much does Oiaai cost?",
+		answer: `Oiaai offers a generous free plan with Studio mode for personal use and 5-minute shareable links. The Pro plan starts at just $${PRICING.pro.annualPerMonth}/month per user, which is less than half the price of Loom.`,
 	},
 	{
-		question: "Is Cap available for Windows and Mac?",
+		question: "Is Oiaai available for Windows and Mac?",
 		answer:
-			"Yes, Cap is available for both macOS and Windows, providing consistent performance and features across both platforms.",
+			"Yes, Oiaai is available for both macOS and Windows, providing consistent performance and features across both platforms.",
 	},
 	{
-		question: "Can I use my own storage with Cap?",
+		question: "Can I use my own storage with Oiaai?",
 		answer:
-			"Yes, Cap allows you to connect your own Google Drive or S3 storage and a custom domain, giving you 100% ownership and control over your content.",
+			"Yes, Oiaai allows you to connect your own Google Drive or S3 storage and a custom domain, giving you 100% ownership and control over your content.",
 	},
 	{
-		question: "What makes Cap different from other screen recorders?",
+		question: "What makes Oiaai different from other screen recorders?",
 		answer:
-			"Cap is fully open-source, privacy-focused, and offers unique features like Studio mode (free for personal use), 4K recording at 60fps, built-in thread commenting, and the ability to use your own storage and domain.",
+			"Oiaai is fully open-source, privacy-focused, and offers unique features like Studio mode (free for personal use), 4K recording at 60fps, built-in thread commenting, and the ability to use your own storage and domain.",
 	},
 	{
-		question: "Does Cap support team collaboration?",
+		question: "Does Oiaai support team collaboration?",
 		answer:
-			"Yes, Cap includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback directly on your recordings.",
+			"Yes, Oiaai includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback directly on your recordings.",
 	},
 ];
 

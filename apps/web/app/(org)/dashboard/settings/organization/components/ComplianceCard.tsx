@@ -61,7 +61,7 @@ const certifications: {
 	{
 		label: "HIPAA",
 		description:
-			"HIPAA compliance verified through Comp AI, with every vendor in Cap's production infrastructure covered by a BAA.",
+			"HIPAA compliance verified through Comp AI, with every vendor in Oiaai's production infrastructure covered by a BAA.",
 		badge: (
 			<text
 				x="22"
@@ -85,7 +85,7 @@ export function ComplianceCard() {
 				<CardHeader>
 					<CardTitle>Security & Compliance</CardTitle>
 					<CardDescription>
-						Cap is SOC 2 Type II, ISO 27001, and HIPAA compliant. Our compliance
+						Oiaai is SOC 2 Type II, ISO 27001, and HIPAA compliant. Our compliance
 						program is completed and continuously monitored through Comp AI.
 					</CardDescription>
 				</CardHeader>

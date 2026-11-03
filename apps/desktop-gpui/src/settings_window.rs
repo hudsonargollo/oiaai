@@ -1183,7 +1183,7 @@ impl SettingsWindow {
     fn delete_recording(&mut self, path: PathBuf, window: &mut Window, cx: &mut Context<Self>) {
         cx.spawn_in(window, async move |_, cx| {
             let confirmed = crate::platform::confirm_dialog(
-                "Cap",
+                "Oiaai",
                 tr::main::delete_recording_confirm(),
                 tr::common::yes(),
                 tr::common::no(),
@@ -1317,7 +1317,7 @@ impl SettingsWindow {
     fn delete_screenshot(&mut self, path: PathBuf, window: &mut Window, cx: &mut Context<Self>) {
         cx.spawn_in(window, async move |this, cx| {
             let confirmed = crate::platform::confirm_dialog(
-                "Cap",
+                "Oiaai",
                 tr::main::delete_screenshot_confirm(),
                 tr::common::yes(),
                 tr::common::no(),

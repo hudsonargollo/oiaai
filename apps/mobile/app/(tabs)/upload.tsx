@@ -37,7 +37,7 @@ import { formatDuration, formatFileSize } from "@/utils/format";
 
 const processingPollDelaysMs = [1500, 3000, 5000, 8000] as const;
 const photosAccessNeededMessage =
-	"Allow Cap to read videos from Photos before uploading.";
+	"Allow Oiaai to read videos from Photos before uploading.";
 const uploadAcceptedFormats = "MP4, MOV, AVI, MKV, WebM, or M4V";
 type UploadSourceLoading = "files" | "loom" | "photos" | null;
 type UploadSource = Exclude<UploadSourceLoading, null>;
@@ -219,7 +219,7 @@ export default function UploadScreen() {
 		(activeId !== null
 			? activeUploadPreparing
 				? "Preparing your video for upload."
-				: "Keep Cap open while your video uploads."
+				: "Keep Oiaai open while your video uploads."
 			: "Upload a video file from your device");
 	const loomImportTitle = loomImportError
 		? "Loom import unavailable"
@@ -234,7 +234,7 @@ export default function UploadScreen() {
 				? activeUploadPreparing
 					? "Finish preparing this upload before importing from Loom."
 					: "Finish the current upload before importing from Loom."
-				: "Import a Loom share link without leaving Cap");
+				: "Import a Loom share link without leaving Oiaai");
 	const activeUploadAccessibilityLabel = activeUploadFileName
 		? activeUploadPreparing
 			? `Preparing upload ${activeUploadFileName}`
@@ -488,7 +488,7 @@ export default function UploadScreen() {
 			});
 			if (result.canceled || !result.assets[0]) return;
 			const asset = result.assets[0];
-			const name = asset.fileName ?? `Cap Upload ${Date.now()}.mov`;
+			const name = asset.fileName ?? `Oiaai Upload ${Date.now()}.mov`;
 			endUploadSource();
 			await uploadFile({
 				uri: asset.uri,
@@ -1039,7 +1039,7 @@ export default function UploadScreen() {
 													accessibilityHint={
 														queueActionsDisabled
 															? "Another upload is in progress"
-															: "Opens the uploaded Cap"
+															: "Opens the uploaded Oiaai"
 													}
 													accessibilityValue={
 														queueActionsDisabled

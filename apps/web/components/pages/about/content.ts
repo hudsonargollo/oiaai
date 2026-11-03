@@ -19,8 +19,8 @@ export const story = [
 		label: "The idea",
 		paragraphs: [
 			"We did not set out to build another screen recorder. We wanted to build the one that should have always existed. One that respects your privacy, works beautifully, and gives you full ownership of everything you create.",
-			"Cap is built around a simple principle: your recordings are yours. You should be able to record, edit, and share without sacrificing privacy or flexibility. Whether you are explaining a bug, walking through a design, or recording a demo, the tool should get out of your way.",
-			"So we built Cap as a native desktop app with a powerful web companion. Record in Instant Mode for quick shares, or use Studio Mode for high fidelity captures with separate screen and camera tracks. Add captions, zooms, and backgrounds, then share with a single link or export however you want.",
+			"Oiaai is built around a simple principle: your recordings are yours. You should be able to record, edit, and share without sacrificing privacy or flexibility. Whether you are explaining a bug, walking through a design, or recording a demo, the tool should get out of your way.",
+			"So we built Oiaai as a native desktop app with a powerful web companion. Record in Instant Mode for quick shares, or use Studio Mode for high fidelity captures with separate screen and camera tracks. Add captions, zooms, and backgrounds, then share with a single link or export however you want.",
 		],
 	},
 ] as const;
@@ -35,13 +35,13 @@ export type Principle = {
 export const principles: Principle[] = [
 	{
 		title: "Open source, by design",
-		body: "Cap is open source. Most of the code is licensed under AGPLv3, while the cap-camera* and scap-* crate families use MIT. From the Rust recording engine to the web sharing platform, the source is public and auditable. This is not a marketing decision. It is a belief about how software should be built.",
+		body: "Oiaai is open source. Most of the code is licensed under AGPLv3, while the cap-camera* and scap-* crate families use MIT. From the Rust recording engine to the web sharing platform, the source is public and auditable. This is not a marketing decision. It is a belief about how software should be built.",
 		mode: "instant",
 		link: { label: "View on GitHub", href: GITHUB_URL },
 	},
 	{
 		title: "Privacy as a feature",
-		body: "Privacy is not a checkbox on our features page. It is the foundation of everything we build. Cap does not track you, does not sell your data, and does not require you to use our servers.",
+		body: "Privacy is not a checkbox on our features page. It is the foundation of everything we build. Oiaai does not track you, does not sell your data, and does not require you to use our servers.",
 		mode: "studio",
 	},
 	{
@@ -51,7 +51,7 @@ export const principles: Principle[] = [
 	},
 	{
 		title: "Built with the community",
-		body: "Features are shaped by real users, not boardroom decisions. Open roadmap, open issues, open conversations. When closed tools change their pricing or shut down, workflows break. With Cap, you can fork the code or trust the thousands of developers watching it.",
+		body: "Features are shaped by real users, not boardroom decisions. Open roadmap, open issues, open conversations. When closed tools change their pricing or shut down, workflows break. With Oiaai, you can fork the code or trust the thousands of developers watching it.",
 		mode: "share",
 	},
 ];
@@ -68,37 +68,37 @@ export const milestones: Milestone[] = [
 	{
 		date: "Nov 2023",
 		title: "First commit",
-		body: "Cap starts life on GitHub as an open source alternative to Loom.",
+		body: "Oiaai starts life on GitHub as an open source alternative to Loom.",
 		href: GITHUB_URL,
 		external: true,
 	},
 	{
 		date: "Apr 2024",
 		title: "Public beta",
-		body: "After six months of development, Cap launches publicly to anyone who wants to try it.",
+		body: "After six months of development, Oiaai launches publicly to anyone who wants to try it.",
 		href: "/blog/cap-public-beta-launch",
 	},
 	{
 		date: "Sep 2024",
-		title: "Cap v0.3",
+		title: "Oiaai v0.3",
 		body: "Rebuilt from the ground up as a local first app with editing, one click sharing, and screenshots.",
 		href: "/blog/cap-v03-launch",
 	},
 	{
 		date: "May 2026",
-		title: "Cap v0.5",
+		title: "Oiaai v0.5",
 		body: "Google Drive storage, merged recordings, screenshot OCR, camera background blur, and a sturdier recorder.",
 		href: "/blog/cap-v05",
 	},
 	{
 		date: "Aug 2026",
 		title: "SOC 2 Type II, ISO 27001, and HIPAA",
-		body: "Independently audited controls behind Cap Cloud, and signed BAAs for teams handling health data.",
+		body: "Independently audited controls behind Oiaai Cloud, and signed BAAs for teams handling health data.",
 		href: "/blog/soc2-type-ii-iso-27001",
 	},
 	{
 		date: "Sep 2026",
-		title: "Cap v0.6",
+		title: "Oiaai v0.6",
 		body: "A redesigned editor, 3D scenes, animated text, Studio Sound, and a first look at the native GPUI app.",
 		href: "/blog/cap-v06",
 	},
@@ -128,6 +128,6 @@ export const quote = {
 	handle: "Founder, Dub.co",
 	image: "/testimonials/steven_tey.jpg",
 	content:
-		"Cap is one of my favorite pieces of software I've used in the recent years. Best part is you get to own your data since they're fully open-source + via their S3 integration.",
+		"Oiaai is one of my favorite pieces of software I've used in the recent years. Best part is you get to own your data since they're fully open-source + via their S3 integration.",
 	url: "https://www.producthunt.com/products/cap-3?comment=4174427#cap-4",
 } as const;

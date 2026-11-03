@@ -59,7 +59,7 @@ const configureTargetAttributes = (
 		([key]) => !key.endsWith("_comment"),
 	)?.[1];
 	if (!projectObject) {
-		throw new Error("Cap screen recording could not find the iOS project.");
+		throw new Error("Oiaai screen recording could not find the iOS project.");
 	}
 	projectObject.attributes ??= {};
 	projectObject.attributes.TargetAttributes ??= {};
@@ -284,7 +284,7 @@ module.exports = (
 		infoConfig.modResults.CapScreenBroadcastExtensionBundleIdentifier =
 			extensionBundleIdentifier;
 		infoConfig.modResults.NSScreenCaptureUsageDescription =
-			"Cap records your screen after you confirm Start Broadcast.";
+			"Oiaai records your screen after you confirm Start Broadcast.";
 		return infoConfig;
 	});
 	config = withDangerousMod(config, [

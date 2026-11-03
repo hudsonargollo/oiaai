@@ -12,7 +12,7 @@ export const discordLinkPreview = {
 				components: [
 					{
 						type: 10,
-						content: `# [Cap](${homepageSeo.url})\n${homepageSeo.description}`,
+						content: `# [Oiaai](${homepageSeo.url})\n${homepageSeo.description}`,
 					},
 				],
 				accessory: {

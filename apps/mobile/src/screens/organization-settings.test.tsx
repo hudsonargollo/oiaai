@@ -16,7 +16,7 @@ type JsonNode = ReactTestRendererJSON | ReactTestRendererJSON[] | string | null;
 
 const settings = {
 	id: "org_123",
-	name: "Cap",
+	name: "Oiaai",
 	role: "owner" as const,
 	canManage: true,
 	iconUrl: null,
@@ -172,7 +172,7 @@ describe("OrganizationSettingsScreen", () => {
 		auth.value.client.updateOrganizationSettings.mockReset();
 		auth.value.client.updateOrganizationSettings.mockResolvedValue({
 			...settings,
-			name: "Cap Studio",
+			name: "Oiaai Studio",
 		});
 		auth.value.refresh.mockReset();
 		auth.value.refresh.mockResolvedValue(undefined);
@@ -200,7 +200,7 @@ describe("OrganizationSettingsScreen", () => {
 		if (!nameInput) throw new Error("Organization name input was not rendered");
 
 		await act(async () => {
-			nameInput.props.onChangeText("Cap Studio");
+			nameInput.props.onChangeText("Oiaai Studio");
 		});
 		const [saveButton] = renderer.root.findAllByProps({
 			accessibilityLabel: "Save changes",
@@ -214,7 +214,7 @@ describe("OrganizationSettingsScreen", () => {
 		});
 
 		expect(auth.value.client.updateOrganizationSettings).toHaveBeenCalledWith({
-			name: "Cap Studio",
+			name: "Oiaai Studio",
 			allowedEmailDomain: null,
 		});
 		expect(auth.value.refresh).toHaveBeenCalledTimes(1);

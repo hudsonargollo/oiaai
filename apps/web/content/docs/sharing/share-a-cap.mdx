@@ -1,10 +1,10 @@
 ---
-title: "Share a Cap"
-summary: "Share recordings with Cap links and access controls"
+title: "Share a recording"
+summary: "Share recordings with Oiaai links and access controls"
 tags: "Sharing"
 ---
 
-A shared Cap uses a URL in this form:
+A shared recording uses a URL in this form:
 
 ```text
 https://cap.so/s/<video-id>
@@ -14,27 +14,27 @@ Self-hosted installations use their configured web URL instead of `cap.so`.
 
 ## Create and copy a link
 
-Instant Mode creates a shareable Cap as part of its recording flow. Studio Mode creates one when you choose **Shareable Link** from the export screen.
+Instant Mode creates a shareable recording as part of its workflow. Studio Mode creates one when you choose **Shareable Link** from the export screen.
 
-After Cap finishes the required upload and processing, copy the returned link from Cap Desktop or the recording's dashboard and share it anywhere a URL is accepted.
+After Oiaai finishes the required upload and processing, copy the returned link from Oiaai Desktop or the recording's dashboard and share it anywhere a URL is accepted.
 
 ## Choose who can watch
 
-Cap supports different access states:
+Oiaai supports different access states:
 
 - **Public:** anyone with the link can watch in a browser without an account.
 - **Private:** the viewer must sign in and have access through the owner, organization, space, folder, or a recording-specific email invitation.
 - **Password protected:** the viewer must enter the recording or effective space password before playback.
 
-Sharing a link does not bypass private, organization, space, or password rules. If a Cap belongs to several containers, Cap resolves the effective viewer settings for those locations.
+Sharing a link does not bypass private, organization, space, or password rules. If a recording belongs to several containers, Oiaai resolves the effective viewer settings for those locations.
 
-The recording owner can open **Manage access** and invite a viewer by email. The viewer opens the usual Cap link and signs in with a Cap account using the invited address. An external viewer does not need to join the owner's organization or use a Pro seat. The owner can remove that invitation later. Access through a public link or a shared organization or space still applies independently.
+The recording owner can open **Manage access** and invite a viewer by email. The viewer opens the recording link and signs in with an Oiaai account using the invited address. An external viewer does not need to join the owner's organization or use a Pro seat. The owner can remove that invitation later. Access through a public link or a shared organization or space still applies independently.
 
 Owners and admins can turn on **Start new recordings private** under **Dashboard → Settings → Organization → Preferences**. This changes how new recordings start in that organization. Existing recordings keep their current access setting, and the allowed email domain setting continues to govern link access separately. Review existing public recordings before removing an allowed domain restriction.
 
 ## What appears on the share page
 
-The share page provides video playback, scrubbing, fullscreen, volume, and Cap's configured playback speeds. Depending on the recording's processing state and effective settings, it can also show:
+The share page provides video playback, scrubbing, fullscreen, volume, and Oiaai's configured playback speeds. Depending on the recording's processing state and effective settings, it can also show:
 
 - Captions and a transcript
 - A summary and chapters
@@ -44,13 +44,13 @@ The share page provides video playback, scrubbing, fullscreen, volume, and Cap's
 
 Captions and AI output are not guaranteed to exist for every recording. They depend on the audio, processing result, plan, and organization settings. Posting comments, replies, or reactions requires a signed-in account.
 
-## Organize a shared Cap
+## Organize a shared recording
 
-A Cap can be placed in an organization, space, or folder. Moving it changes its library location and can change the access or viewer settings inherited from that location, but it does not create a new recording URL.
+An Oiaai can be placed in an organization, space, or folder. Moving it changes its library location and can change the access or viewer settings inherited from that location, but it does not create a new recording URL.
 
 See [Working With Your Team](/docs/teams) for roles, spaces, folders, and organization-wide controls.
 
-## Embed a Cap
+## Embed a recording
 
 Use the dedicated embed route when the recording should play inside a site or documentation page:
 
@@ -62,4 +62,4 @@ The embed enforces the same effective access and viewer rules. Screenshots do no
 
 ## Revoke access or delete
 
-Change the Cap's access settings when you need to restrict future viewing while keeping the recording. Deleting the Cap removes it from the supported library surfaces and makes its share route unavailable after deletion is processed.
+Change the recording's access settings when you need to restrict future viewing. Deleting the recording removes it from the supported library surfaces and makes its share route unavailable after deletion is processed.

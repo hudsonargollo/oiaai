@@ -97,11 +97,11 @@ const uploadsMatch = (
 const getCapsErrorMessage = (error: unknown) => {
 	if (error instanceof MobileApiError) {
 		if (error.status === 401) return "Your session expired. Sign in again.";
-		return "Cap could not load your library. Try again.";
+		return "Oiaai could not load your library. Try again.";
 	}
 	return error instanceof Error
 		? error.message
-		: "Cap could not load your library. Try again.";
+		: "Oiaai could not load your library. Try again.";
 };
 
 const showPhotosSettingsAlert = () => {
@@ -109,7 +109,7 @@ const showPhotosSettingsAlert = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Cap to save videos to Photos from Settings.",
+				message: "Allow Oiaai to save videos to Photos from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -124,7 +124,7 @@ const showPhotosSettingsAlert = () => {
 
 	Alert.alert(
 		"Photos access needed",
-		"Allow Cap to save videos to Photos from Settings.",
+		"Allow Oiaai to save videos to Photos from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{
@@ -153,12 +153,12 @@ function SpaceSwitcher({
 }) {
 	const [open, setOpen] = useState(false);
 	const selectedSpace = spaces.find((space) => space.id === selectedSpaceId);
-	const selectedLabel = selectedSpace?.name ?? "My Caps";
+	const selectedLabel = selectedSpace?.name ?? "My Library";
 	const capCountLabel =
-		capCount === null ? null : `${capCount} ${capCount === 1 ? "cap" : "caps"}`;
+		capCount === null ? null : `${capCount} ${capCount === 1 ? "recording" : "recordings"}`;
 	const options = useMemo(
 		() => [
-			{ id: null, label: "My Caps" },
+			{ id: null, label: "My Library" },
 			...spaces.map((space) => ({
 				id: space.id,
 				label: `${space.name}${space.hasPassword ? " · Locked" : ""}${formatSpaceRole(space.role) ? ` · ${formatSpaceRole(space.role)}` : ""}`,
@@ -198,7 +198,7 @@ function SpaceSwitcher({
 			<Pressable
 				accessibilityRole="button"
 				accessibilityLabel="Switch space"
-				accessibilityHint="Shows My Caps and available spaces"
+				accessibilityHint="Shows My Library and available spaces"
 				accessibilityValue={{
 					text: capCountLabel
 						? `${selectedLabel}, ${capCountLabel}`
@@ -344,7 +344,7 @@ export default function CapsScreen() {
 	const loadRequestId = useRef(0);
 	const spaces = auth.bootstrap?.spaces ?? [];
 	const selectedSpace = spaces.find((space) => space.id === selectedSpaceId);
-	const selectedCollectionName = selectedSpace?.name ?? "My Caps";
+	const selectedCollectionName = selectedSpace?.name ?? "My Library";
 	const canManageSelectedCollection = selectedSpace?.canManage ?? true;
 	const thumbnailAuthorization = auth.apiKey
 		? `Bearer ${auth.apiKey}`
@@ -550,8 +550,8 @@ export default function CapsScreen() {
 						cancelButtonIndex: 1,
 						destructiveButtonIndex: 0,
 						message: `${cap.title} will be removed from your library.`,
-						options: ["Delete Cap", "Cancel"],
-						title: "Delete Cap",
+						options: ["Delete Oiaai", "Cancel"],
+						title: "Delete Oiaai",
 						tintColor: colors.blue11,
 						userInterfaceStyle: "light",
 					},
@@ -563,7 +563,7 @@ export default function CapsScreen() {
 			}
 
 			Alert.alert(
-				"Delete Cap",
+				"Delete Oiaai",
 				`${cap.title} will be removed from your library.`,
 				[
 					{ text: "Cancel", style: "cancel" },
@@ -605,7 +605,7 @@ export default function CapsScreen() {
 					"Sharing update failed",
 					error instanceof Error
 						? error.message
-						: "Unable to update sharing for this Cap.",
+						: "Unable to update sharing for this recording.",
 				);
 			} finally {
 				setUpdatingSharingId(null);
@@ -851,7 +851,7 @@ export default function CapsScreen() {
 
 	const folderCreationHint = creatingFolder
 		? "Folder creation is in progress"
-		: "Creates a folder for organizing Caps";
+		: "Creates a folder for organizing recordings";
 	const folderCreationStatus = creatingFolder
 		? `Creating folder ${creatingFolderName ?? ""}`.trim()
 		: null;
@@ -885,11 +885,11 @@ export default function CapsScreen() {
 	const saveDisabledHint =
 		savingId !== null
 			? "Save is in progress"
-			: "Current Cap action is in progress";
+			: "Current Oiaai action is in progress";
 	const visibilityDisabledHint =
 		updatingSharingId !== null
 			? "Sharing update is in progress"
-			: "Current Cap action is in progress";
+			: "Current Oiaai action is in progress";
 	const saveDisabledAccessibilityValue = savingCap
 		? `Saving video for ${savingCap.title}`
 		: undefined;
@@ -1064,12 +1064,12 @@ export default function CapsScreen() {
 									/>
 								</View>
 								<View style={styles.errorCopy}>
-									<Text style={styles.errorTitle}>Unable to load Caps</Text>
+									<Text style={styles.errorTitle}>Unable to load recordings</Text>
 									<Text style={styles.errorText}>{item.message}</Text>
 								</View>
 								<ActionButton
 									label="Try again"
-									accessibilityHint="Reloads your Cap library"
+									accessibilityHint="Reloads your Oiaai library"
 									onPress={() => {
 										void load();
 									}}
@@ -1125,15 +1125,15 @@ export default function CapsScreen() {
 								</View>
 								<Text style={styles.emptyTitle}>
 									{isEmptyMyCaps
-										? "Welcome! Record or Import your first Cap"
+										? "Welcome! Record or Import your first recording"
 										: folder
-											? `No Caps in ${folder.name}`
-											: `No Caps in ${selectedCollectionName}`}
+											? `No recordings in ${folder.name}`
+											: `No recordings in ${selectedCollectionName}`}
 								</Text>
 								<Text style={styles.emptyText}>
 									{isEmptyMyCaps
-										? "Bring videos into Cap and share them instantly."
-										: "Caps added to this space will appear here."}
+										? "Bring videos into Oiaai and share them instantly."
+										: "recordings added to this space will appear here."}
 								</Text>
 								{isEmptyMyCaps ? (
 									<View style={styles.emptyActions}>

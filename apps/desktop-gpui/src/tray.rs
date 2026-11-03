@@ -2169,7 +2169,7 @@ mod tests {
         let menu = build_onboarding_menu("0.1.0");
         assert_eq!(
             titles(&menu),
-            vec!["Request Permissions", "-", "Cap v0.1.0", "Quit Cap",]
+            vec!["Request Permissions", "-", "Oiaai v0.1.0", "Quit Oiaai",]
         );
     }
 
@@ -2202,9 +2202,9 @@ mod tests {
         // The version row is a section header below Quit on macOS and a
         // disabled row above it everywhere else.
         if cfg!(target_os = "macos") {
-            expected.extend(["Quit Cap", "Cap v0.1.0"]);
+            expected.extend(["Quit Oiaai", "Oiaai v0.1.0"]);
         } else {
-            expected.extend(["Cap v0.1.0", "Quit Cap"]);
+            expected.extend(["Oiaai v0.1.0", "Quit Oiaai"]);
         }
         assert_eq!(titles(&menu), expected);
     }
@@ -2326,7 +2326,7 @@ mod tests {
             if cfg!(target_os = "macos") {
                 vec!["Upload Logs"]
             } else {
-                vec!["Upload Logs", "Cap v0.1.0"]
+                vec!["Upload Logs", "Oiaai v0.1.0"]
             }
         );
     }

@@ -25,7 +25,7 @@ export async function waitForSegmentPlayback({
 			});
 			void response.body?.cancel().catch(() => {});
 			if (response.status === 204) {
-				if (response.headers.get("X-Cap-Recording-Complete") === "1")
+				if (response.headers.get("X-Oiaai-Recording-Complete") === "1")
 					onComplete?.();
 				return "ready";
 			}

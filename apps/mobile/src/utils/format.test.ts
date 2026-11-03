@@ -7,7 +7,7 @@ import {
 } from "./format";
 
 describe("mobile formatters", () => {
-	it("formats card dates like Cap web", () => {
+	it("formats card dates like Oiaai web", () => {
 		const now = new Date("2026-05-18T11:00:00.000Z");
 
 		expect(formatRelativeDate("2026-05-18T10:30:00.000Z", now)).toBe(
@@ -21,7 +21,7 @@ describe("mobile formatters", () => {
 		);
 	});
 
-	it("formats card durations like Cap web thumbnails", () => {
+	it("formats card durations like Oiaai web thumbnails", () => {
 		expect(formatDuration(0)).toBe("< 1 sec");
 		expect(formatDuration(8)).toBe("8 secs");
 		expect(formatDuration(61)).toBe("1 min");

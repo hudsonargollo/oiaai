@@ -8,22 +8,22 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Employee Onboarding Platform: Streamline New-Hire Training with Cap",
+	title: "Employee Onboarding Platform: Streamline New-Hire Training with Oiaai",
 	description:
-		"Looking for a powerful employee onboarding platform? Discover how Cap's open-source screen recorder and asynchronous features simplify new-hire training.",
+		"Looking for a powerful employee onboarding platform? Discover how Oiaai's open-source screen recorder and asynchronous features simplify new-hire training.",
 	openGraph: {
 		title:
-			"Employee Onboarding Platform: Streamline New-Hire Training with Cap",
+			"Employee Onboarding Platform: Streamline New-Hire Training with Oiaai",
 		description:
-			"Looking for a powerful employee onboarding platform? Discover how Cap's open-source screen recorder and asynchronous features simplify new-hire training.",
+			"Looking for a powerful employee onboarding platform? Discover how Oiaai's open-source screen recorder and asynchronous features simplify new-hire training.",
 		url: "https://cap.so/solutions/employee-onboarding-platform",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: Employee Onboarding Platform",
+				alt: "Oiaai: Employee Onboarding Platform",
 			},
 		],
 		locale: "en_US",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Employee Onboarding Platform | Cap Screen Recorder",
+		title: "Employee Onboarding Platform | Oiaai Screen Recorder",
 		description:
-			"Discover how Cap's open-source screen recorder simplifies new-hire training with asynchronous video and built-in feedback.",
+			"Discover how Oiaai's open-source screen recorder simplifies new-hire training with asynchronous video and built-in feedback.",
 		images: [ogImage],
 	},
 	alternates: {

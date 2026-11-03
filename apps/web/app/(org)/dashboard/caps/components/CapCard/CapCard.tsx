@@ -332,7 +332,7 @@ export const CapCard = ({
 	const handleCopy = (text: string) => {
 		copyRichVideoLink({
 			url: text,
-			title: cap.name || "Cap Recording",
+			title: cap.name || "Oiaai Recording",
 			previewImageUrl: videoPreviewImageUrl(webUrl, cap.id),
 		});
 		setCopyPressed(true);
@@ -595,8 +595,8 @@ export const CapCard = ({
 										onClick={() => {
 											toast.promise(duplicateMutation.mutateAsync(), {
 												loading: "Duplicating cap...",
-												success: "Cap duplicated successfully",
-												error: "Failed to duplicate cap",
+												success: "Oiaai duplicated successfully",
+												error: "Failed to duplicate recording",
 											});
 										}}
 										disabled={
@@ -642,7 +642,7 @@ export const CapCard = ({
 										className="flex gap-2 items-center rounded-lg"
 									>
 										<FontAwesomeIcon className="size-3" icon={faTrash} />
-										<p className="text-sm text-gray-12">Delete Cap</p>
+										<p className="text-sm text-gray-12">Delete Oiaai</p>
 									</DropdownMenuItem>
 								</>
 							)}
@@ -652,8 +652,8 @@ export const CapCard = ({
 					<ConfirmationDialog
 						open={confirmOpen}
 						icon={<FontAwesomeIcon icon={faVideo} />}
-						title="Delete Cap"
-						description={`Are you sure you want to delete the cap "${cap.name}"? This action cannot be undone.`}
+						title="Delete Oiaai"
+						description={`Are you sure you want to delete the recording "${cap.name}"? This action cannot be undone.`}
 						confirmLabel={deleteMutation.isPending ? "Deleting..." : "Delete"}
 						cancelLabel="Cancel"
 						loading={deleteMutation.isPending}
@@ -665,7 +665,7 @@ export const CapCard = ({
 				{!sharedCapCard && onSelectToggle && (
 					<button
 						type="button"
-						aria-label={isSelected ? "Deselect cap" : "Select cap"}
+						aria-label={isSelected ? "Deselect recording" : "Select recording"}
 						className={clsx(
 							"absolute top-2 left-2 z-[49] duration-200",
 							isSelected || anyCapSelected || isDropdownOpen

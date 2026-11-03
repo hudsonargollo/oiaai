@@ -46,7 +46,7 @@ describe("showCapPasswordActions", () => {
 		reactNativeMock.Alert.prompt.mockClear();
 	});
 
-	it("uses a native secure prompt to add a Cap password", async () => {
+	it("uses a native secure prompt to add a recording password", async () => {
 		const updated = { ...cap, protected: true };
 		const updateCapPassword = vi.fn(async () => updated);
 		const onUpdated = vi.fn();
@@ -59,7 +59,7 @@ describe("showCapPasswordActions", () => {
 
 		expect(reactNativeMock.Alert.prompt).toHaveBeenCalledWith(
 			"Add password",
-			"Set a password for this Cap link.",
+			"Set a password for this recording link.",
 			expect.any(Array),
 			"secure-text",
 		);

@@ -39,7 +39,7 @@ const openPhotoSettings = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Cap to choose an organization icon from Settings.",
+				message: "Allow Oiaai to choose an organization icon from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -53,7 +53,7 @@ const openPhotoSettings = () => {
 	}
 	Alert.alert(
 		"Photos access needed",
-		"Allow Cap to choose an organization icon from Settings.",
+		"Allow Oiaai to choose an organization icon from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{ text: "Open Settings", onPress: () => void Linking.openSettings() },

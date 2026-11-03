@@ -52,7 +52,7 @@ export const markdownNotFoundBody = (origin: string, pathname: string) =>
 	[
 		"# Page not found",
 		"",
-		`There is no page at \`${displayPath(pathname)}\` on Cap.so.`,
+		`There is no page at \`${displayPath(pathname)}\` on cap.so.`,
 		"",
 		"Where to go instead:",
 		"",

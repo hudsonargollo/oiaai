@@ -8,7 +8,7 @@ export const LogoBadge = ({ className }: { className: string }) => {
 			xmlns="http://www.w3.org/2000/svg"
 			className={className}
 			role="img"
-			aria-label="Cap"
+			aria-label="Oiaai"
 			fill="none"
 			viewBox="0 0 40 40"
 			preserveAspectRatio="xMidYMid meet"

@@ -1644,8 +1644,8 @@ fn caps_json_errors_include_the_standard_error_field() {
             .unwrap();
         assert_eq!(output.status.code(), Some(1));
         let error = parse_json(&output);
-        assert_eq!(error["error"], "Cap ID contains invalid characters");
-        assert_eq!(error["message"], "Cap ID contains invalid characters");
+        assert_eq!(error["error"], "recording ID contains invalid characters");
+        assert_eq!(error["message"], "recording ID contains invalid characters");
         assert_eq!(error["code"], "INVALID_REQUEST");
         assert_eq!(error["retryable"], false);
     }

@@ -54,7 +54,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "ask",
-				text: "Recorded 0:20 and validated the project. Upload it to Cap as “Checkout bug repro”?",
+				text: "Recorded 0:20 and validated the project. Upload it to Oiaai as “Checkout bug repro”?",
 				reply: "Yes, upload it",
 			},
 			{
@@ -118,7 +118,7 @@ const TASKS: readonly Task[] = [
 		beats: [
 			{
 				type: "prompt",
-				text: "Find my Caps about onboarding from the last month and brief me",
+				text: "Find my recordings about onboarding from the last month and brief me",
 			},
 			{
 				type: "plan",
@@ -138,7 +138,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Four Caps. The v3 flow removed the org step, but the invite email still mentions it.",
+				text: "Four recordings. The v3 flow removed the org step, but the invite email still mentions it.",
 				card: {
 					kind: "rows",
 					rows: [
@@ -175,7 +175,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Posted at 04:32. I re-read the Cap and the comment is there.",
+				text: "Posted at 04:32. I re-read the recording and the comment is there.",
 			},
 		],
 	},
@@ -185,7 +185,7 @@ const TASKS: readonly Task[] = [
 		beats: [
 			{
 				type: "prompt",
-				text: "Move this Cap into the Product space's Releases folder",
+				text: "Move this recording into the Product space's Releases folder",
 			},
 			{
 				type: "plan",
@@ -218,7 +218,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Moved and verified. The Cap now sits in Product / Releases.",
+				text: "Moved and verified. The Oiaai now sits in Product / Releases.",
 			},
 		],
 	},
@@ -255,7 +255,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Imported and verified. The Cap has its title, a transcript, and chapters.",
+				text: "Imported and verified. The Oiaai has its title, a transcript, and chapters.",
 				card: {
 					kind: "link",
 					title: "Q3 roadmap walkthrough",

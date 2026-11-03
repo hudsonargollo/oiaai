@@ -503,6 +503,14 @@ jobs:
               echo "::error::$app does not launch $executable_name."
               exit 1
             fi
+            if [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleName' "$plist")" != "Oiaai" ]]; then
+              echo "::error::$app does not present the Oiaai app-menu name."
+              exit 1
+            fi
+            if [[ "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleDisplayName' "$plist")" != "Oiaai" ]]; then
+              echo "::error::$app does not present the Oiaai display name."
+              exit 1
+            fi
             for binary in "$executable_name" "$@"; do
               executable="$app/Contents/MacOS/$binary"
               if [[ ! -x "$executable" ]]; then

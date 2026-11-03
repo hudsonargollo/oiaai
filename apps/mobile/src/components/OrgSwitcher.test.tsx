@@ -115,7 +115,7 @@ const bootstrap: MobileBootstrapResponse = {
 	organizations: [
 		{
 			id: Organisation.OrganisationId.make("org_123"),
-			name: "Cap",
+			name: "Oiaai",
 			iconUrl: "https://cap.so/icon.png",
 			role: "owner",
 		},
@@ -169,7 +169,7 @@ describe("OrgSwitcher", () => {
 				cancelButtonIndex: 2,
 				disabledButtonIndices: [0],
 				disabledButtonTintColor: "#8d8d8d",
-				options: ["Cap (Owner)", "Design (Member)", "Cancel"],
+				options: ["Oiaai (Owner)", "Design (Member)", "Cancel"],
 				title: "Organization",
 				userInterfaceStyle: "light",
 			}),

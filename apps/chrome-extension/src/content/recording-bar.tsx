@@ -643,7 +643,7 @@ export function RecordingBarOverlay({
 						isDragging && "is-dragging",
 					)}
 					role="toolbar"
-					aria-label="Cap recording controls"
+					aria-label="Oiaai recording controls"
 					style={{
 						left: `${position?.x ?? EDGE_PADDING}px`,
 						top: position ? `${position.y}px` : "50%",
@@ -688,7 +688,7 @@ export function RecordingBarOverlay({
 										? "Choose what to share"
 										: startError !== null
 											? startError
-											: "Cap"}
+											: "Oiaai"}
 								</span>
 							</span>
 						</div>

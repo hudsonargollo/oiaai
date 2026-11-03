@@ -1,12 +1,12 @@
-# Cap Mobile
+# Oiaai Mobile
 
-Cap Mobile is an iOS Expo app built with Expo Router and Continuous Native Generation. Native projects are generated locally or by EAS and are not committed.
+Oiaai Mobile is an iOS Expo app built with Expo Router and Continuous Native Generation. Native projects are generated locally or by EAS and are not committed.
 
 Run every command in this directory unless noted otherwise.
 
 ## Local development
 
-From the repository root, `bun run dev:mobile` starts the Cap web stack and launches the iOS simulator:
+From the repository root, `bun run dev:mobile` starts the Oiaai web stack and launches the iOS simulator:
 
 ```sh
 bun run dev:mobile
@@ -18,7 +18,7 @@ To start the web stack and install the development build on a connected iPhone, 
 bun run dev:mobile:physical
 ```
 
-The physical-device command discovers the Mac's current private LAN address and uses it for both the Cap API and Metro. Override it with `CAP_MOBILE_DEVICE_API_URL` only when the iPhone should use a different backend.
+The physical-device command discovers the Mac's current private LAN address and uses it for both the Oiaai API and Metro. Override it with `CAP_MOBILE_DEVICE_API_URL` only when the iPhone should use a different backend.
 
 To run only the mobile client against an already-running backend:
 

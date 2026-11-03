@@ -28,7 +28,7 @@ export function ClientMyCapsLink({
 
 			try {
 				if (!capData || !capData.id) {
-					console.error("Invalid cap data");
+					console.error("Invalid recording data");
 					return;
 				}
 
@@ -43,7 +43,7 @@ export function ClientMyCapsLink({
 				if (activeSpace) {
 					toast.success(`Moved "${capData.name}" to "${activeSpace.name}"`);
 				} else {
-					toast.success(`Moved "${capData.name}" to My Caps`);
+					toast.success(`Moved "${capData.name}" to My Library`);
 				}
 			} catch (error) {
 				console.error("Error moving video:", error);
@@ -68,7 +68,7 @@ export function ClientMyCapsLink({
 					const capData = JSON.parse(e.dataTransfer.getData("application/cap"));
 
 					if (!capData || !capData.id) {
-						console.error("Invalid cap data");
+						console.error("Invalid recording data");
 						return;
 					}
 
@@ -132,7 +132,7 @@ export function ClientMyCapsLink({
 					className="relative flex-shrink-0 size-5"
 				/>
 			)}
-			{activeSpace ? activeSpace.name : "My Caps"}
+			{activeSpace ? activeSpace.name : "My Library"}
 		</Link>
 	);
 }

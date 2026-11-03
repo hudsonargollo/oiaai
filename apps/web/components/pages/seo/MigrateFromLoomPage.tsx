@@ -63,7 +63,7 @@ const ImportPreview = () => (
 					<span
 						className={`${MONO} text-[10.5px] uppercase tracking-[0.05em] text-[rgba(17,17,17,0.45)]`}
 					>
-						Fetched from Loom · Re-hosted on Cap
+						Fetched from Loom · Re-hosted on Oiaai
 					</span>
 					<span className="h-px flex-1 bg-[#E1E7EE]" />
 				</div>
@@ -130,12 +130,12 @@ const Hero = ({ signedIn }: { signedIn: boolean }) => (
 				<h1
 					className={`${H_HERO} mt-6 max-w-[640px] text-balance text-[clamp(38px,5vw,66px)]`}
 				>
-					Import your Loom videos into Cap
+					Import your Loom videos into Oiaai
 				</h1>
 				<p
 					className={`${BODY_TEXT} mt-6 max-w-[560px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[18.5px]`}
 				>
-					Paste a share link or upload a CSV of your whole library. Cap fetches
+					Paste a share link or upload a CSV of your whole library. Oiaai fetches
 					each recording, keeps the title, adds a transcript and chapters, and
 					stores it somewhere you own.
 				</p>
@@ -147,7 +147,7 @@ const Hero = ({ signedIn }: { signedIn: boolean }) => (
 					className="mt-6"
 				/>
 				<p className="mt-4 max-w-[560px] text-[13.5px] leading-[1.55] text-[rgba(17,17,17,0.55)]">
-					Free account, no credit card. Loom import is part of Cap Pro, from $
+					Free account, no credit card. Loom import is part of Oiaai Pro, from $
 					{PRICING.pro.annualPerMonth} per user per month. Enter the code at
 					checkout and the discount applies to every renewal.
 				</p>
@@ -185,7 +185,7 @@ const HowItWorks = () => (
 				<h2
 					className={`${H_SECTION} mt-6 text-balance text-[clamp(34px,3.9vw,48px)]`}
 				>
-					From Loom link to Cap link in three steps
+					From Loom link to Oiaai link in three steps
 				</h2>
 			</div>
 			<ol className="mt-12 grid gap-4 md:grid-cols-3">
@@ -307,8 +307,8 @@ const Teams = () => (
 					className={`${BODY_TEXT} mt-6 max-w-[520px] text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)]`}
 				>
 					Upload a CSV of up to 500 Loom links mapped to teammate emails and
-					spaces, and Cap imports each video for the right owner. Bigger
-					libraries run in controlled batches through the Cap CLI or MCP server,
+					spaces, and Oiaai imports each video for the right owner. Bigger
+					libraries run in controlled batches through the Oiaai CLI or MCP server,
 					or we run the migration with you. We have moved organizations with
 					hundreds of users and tens of thousands of recordings.
 				</p>
@@ -375,7 +375,7 @@ const Comparison = () => (
 	<section className="px-5 pb-20 lg:pb-28">
 		<div className="mx-auto max-w-[1000px]">
 			<div className="max-w-[640px]">
-				<Eyebrow accent={MODE_THEME.screenshot.accent}>Cap vs Loom</Eyebrow>
+				<Eyebrow accent={MODE_THEME.screenshot.accent}>Oiaai vs Loom</Eyebrow>
 				<h2
 					className={`${H_SECTION} mt-6 text-balance text-[clamp(34px,3.9vw,48px)]`}
 				>
@@ -396,7 +396,7 @@ const Comparison = () => (
 								scope="col"
 								className="px-6 py-4 text-[15px] font-medium text-[#111111]"
 							>
-								Cap
+								Oiaai
 							</th>
 							<th
 								scope="col"
@@ -441,7 +441,7 @@ const Comparison = () => (
 					href="/loom-alternative"
 					className="text-[#111111] underline decoration-[rgba(17,17,17,0.3)] underline-offset-[5px] transition-colors duration-200 hover:decoration-[#111111]"
 				>
-					Read why Cap is the open source Loom alternative
+					Read why Oiaai is the open source Loom alternative
 				</Link>
 				.
 			</p>
@@ -527,7 +527,7 @@ const FinalCta = ({ signedIn }: { signedIn: boolean }) => (
 					Import your Loom videos
 				</LoomImportLink>
 				<Link href="/loom-alternative" className={BTN_SECONDARY}>
-					Compare Cap vs Loom
+					Compare Oiaai vs Loom
 				</Link>
 			</div>
 			<MigratePromoBadge

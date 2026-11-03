@@ -83,14 +83,14 @@ pub async fn wait_operation(
                         .get("error")
                         .and_then(|error| error.get("message"))
                         .and_then(Value::as_str)
-                        .unwrap_or("Cap operation failed");
+                        .unwrap_or("recording operation failed");
                     return Err(local_error("OPERATION_FAILED", message));
                 }
                 Some("queued" | "running") => {}
                 _ => {
                     return Err(local_error(
                         "TEMPORARY_UNAVAILABLE",
-                        "Cap returned an invalid operation state",
+                        "Oiaai returned an invalid operation state",
                     ));
                 }
             }
@@ -104,7 +104,7 @@ pub async fn wait_operation(
         .unwrap_or_else(|_| {
             Err(AgentApiError {
                 code: "NOT_READY".to_string(),
-                message: "Timed out waiting for the Cap operation".to_string(),
+                message: "Timed out waiting for the recording operation".to_string(),
                 retryable: true,
                 retry_after_ms: Some(2_000),
                 request_id,

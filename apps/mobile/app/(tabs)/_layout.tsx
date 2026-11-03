@@ -16,7 +16,7 @@ export default function TabsLayout() {
 				/>
 			)}
 		>
-			<Tabs.Screen name="index" options={{ title: "My Caps" }} />
+			<Tabs.Screen name="index" options={{ title: "My Library" }} />
 			<Tabs.Screen name="upload" options={{ href: null }} />
 			<Tabs.Screen name="account" options={{ title: "Account" }} />
 		</Tabs>

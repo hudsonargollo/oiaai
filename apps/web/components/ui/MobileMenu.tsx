@@ -202,7 +202,7 @@ const MobileMenu = ({ stars }: MobileMenuProps) => {
 								<div className="flex shrink-0 justify-between items-center px-5 h-[72px] pt-[env(safe-area-inset-top)]">
 									<Link
 										href="/home"
-										aria-label="Cap home"
+										aria-label="Oiaai home"
 										onClick={() => setOpen(false)}
 									>
 										<Logo

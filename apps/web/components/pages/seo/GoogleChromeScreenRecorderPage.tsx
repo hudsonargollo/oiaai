@@ -7,9 +7,9 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 	title:
 		"Google Chrome Screen Recorder: Record Your Screen Right From the Browser",
 	description:
-		"Cap is a free, open-source screen recorder for Google Chrome. Add the extension, click record, and get an instant shareable link — no downloads, no watermarks, no sign-up required.",
+		"Oiaai is a free, open-source screen recorder for Google Chrome. Add the extension, click record, and get an instant shareable link — no downloads, no watermarks, no sign-up required.",
 
-	featuresTitle: "Why Cap Is the Best Chrome Screen Recorder",
+	featuresTitle: "Why Oiaai Is the Best Chrome Screen Recorder",
 	featuresDescription:
 		"Professional screen recording built right into Google Chrome — lightweight, private, and 100% free locally.",
 
@@ -17,12 +17,12 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		{
 			title: "One-Click Recording in Chrome",
 			description:
-				"Pin the Cap extension, click the icon, and start capturing your screen in seconds. No app install or setup needed to record a quick video.",
+				"Pin the Oiaai extension, click the icon, and start capturing your screen in seconds. No app install or setup needed to record a quick video.",
 		},
 		{
 			title: "Instant Shareable Links",
 			description:
-				"The moment you stop recording, Cap gives you a link you can paste into Slack, email, or a ticket. Viewers watch in their browser — no extension required on their end.",
+				"The moment you stop recording, Oiaai gives you a link you can paste into Slack, email, or a ticket. Viewers watch in their browser — no extension required on their end.",
 		},
 		{
 			title: "Record Tab, Window, or Full Screen",
@@ -37,38 +37,38 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		{
 			title: "No Watermarks, No Time Limits",
 			description:
-				"Unlike most browser recorders, Cap never stamps a watermark on your video and never cuts you off. Record as long as you need, for free.",
+				"Unlike most browser recorders, Oiaai never stamps a watermark on your video and never cuts you off. Record as long as you need, for free.",
 		},
 		{
 			title: "Free & Open Source",
 			description:
-				"Cap is fully <a href='/open-source-screen-recorder'>open source</a>. Your recordings stay yours — keep them local, use your own storage, or self-host.",
+				"Oiaai is fully <a href='/open-source-screen-recorder'>open source</a>. Your recordings stay yours — keep them local, use your own storage, or self-host.",
 		},
 	],
 
 	video: {
-		title: "See the Cap Chrome Extension in Action",
+		title: "See the Oiaai Chrome Extension in Action",
 	},
 
 	comparisonTitle: "Does Chrome Have a Built-In Screen Recorder?",
 	comparisonDescription:
-		"Google Chrome has no native screen recorder. You can capture screenshots and share your screen on a call, but to <a href='/record-screen'>record and save a video</a> you need an extension. Here's how Cap stacks up.",
+		"Google Chrome has no native screen recorder. You can capture screenshots and share your screen on a call, but to <a href='/record-screen'>record and save a video</a> you need an extension. Here's how Oiaai stacks up.",
 	comparison: [
 		{
 			title: "Built Into Your Browser",
 			description:
-				"Cap lives in your Chrome toolbar, so recording is always one click away — no switching apps, no juggling windows.",
+				"Oiaai lives in your Chrome toolbar, so recording is always one click away — no switching apps, no juggling windows.",
 		},
 		{
 			title: "Own Your Recordings",
 			description:
-				"Most Chrome recorders lock your videos behind their cloud. Cap lets you keep recordings local, connect your own storage, or share with a link on your terms.",
+				"Most Chrome recorders lock your videos behind their cloud. Oiaai lets you keep recordings local, connect your own storage, or share with a link on your terms.",
 		},
 	],
 
 	comparisonTable: {
-		title: "Cap vs. Other Chrome Screen Recorders",
-		headers: ["Feature", "Cap", "Loom", "Screencastify"],
+		title: "Oiaai vs. Other Chrome Screen Recorders",
+		headers: ["Feature", "Oiaai", "Loom", "Screencastify"],
 		rows: [
 			[
 				"Free with no watermark",
@@ -115,9 +115,9 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		],
 	},
 
-	useCasesTitle: "What People Record With Cap on Chrome",
+	useCasesTitle: "What People Record With Oiaai on Chrome",
 	useCasesDescription:
-		"From quick bug reports to polished demos, Cap fits how teams work in the browser.",
+		"From quick bug reports to polished demos, Oiaai fits how teams work in the browser.",
 
 	useCases: [
 		{
@@ -138,7 +138,7 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		{
 			title: "Tutorials & Demos",
 			description:
-				"Show your product, design, or web app in action. Cap makes <a href='/screen-recorder'>screen recordings</a> look polished without any editing.",
+				"Show your product, design, or web app in action. Oiaai makes <a href='/screen-recorder'>screen recordings</a> look polished without any editing.",
 		},
 	],
 
@@ -147,22 +147,22 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		{
 			question: "Does Google Chrome have a built-in screen recorder?",
 			answer:
-				"No. Chrome can take screenshots and share your screen during a video call, but it has no native tool to record and save a screen video. To record your screen in Chrome you need an extension like Cap, which adds one-click recording and instant shareable links to your browser.",
+				"No. Chrome can take screenshots and share your screen during a video call, but it has no native tool to record and save a screen video. To record your screen in Chrome you need an extension like Oiaai, which adds one-click recording and instant shareable links to your browser.",
 		},
 		{
 			question: "How do I record my screen on Google Chrome?",
 			answer:
-				"Add the Cap extension from the Chrome Web Store, pin it to your toolbar, then click the Cap icon and choose what to record — a tab, a window, or your full screen. Click stop when you're done and Cap instantly generates a shareable link.",
+				"Add the Oiaai extension from the Chrome Web Store, pin it to your toolbar, then click the Oiaai icon and choose what to record — a tab, a window, or your full screen. Click stop when you're done and Oiaai instantly generates a shareable link.",
 		},
 		{
-			question: "Is the Cap Chrome extension free?",
+			question: "Is the Oiaai Chrome extension free?",
 			answer:
-				"Yes. Cap's Chrome extension is free to use with no watermarks and no recording time limits. Cap Pro is available if you want custom domains, longer cloud sharing, and advanced collaboration features, but recording and sharing work without it.",
+				"Yes. Oiaai's Chrome extension is free to use with no watermarks and no recording time limits. Oiaai Pro is available if you want custom domains, longer cloud sharing, and advanced collaboration features, but recording and sharing work without it.",
 		},
 		{
 			question: "Can I record a single tab instead of my whole screen?",
 			answer:
-				"Yes. Cap lets you choose a specific Chrome tab, an individual application window, or your entire desktop before you start recording, so you only capture what you want to show.",
+				"Yes. Oiaai lets you choose a specific Chrome tab, an individual application window, or your entire desktop before you start recording, so you only capture what you want to show.",
 		},
 		{
 			question: "Do viewers need the extension to watch my recording?",
@@ -172,20 +172,20 @@ export const googleChromeScreenRecorderContent: SeoPageContent = {
 		{
 			question: "Can I record my webcam and screen at the same time?",
 			answer:
-				"Yes. Cap can capture your webcam alongside your screen, so you can add a personal face-to-camera layer to demos, updates, and onboarding videos.",
+				"Yes. Oiaai can capture your webcam alongside your screen, so you can add a personal face-to-camera layer to demos, updates, and onboarding videos.",
 		},
 		{
 			question:
 				"Does it work on Edge, Brave, Arc, and other Chromium browsers?",
 			answer:
-				"Yes. Because Cap is a Chromium extension, it installs and runs on Chrome and other Chromium-based browsers including Microsoft Edge, Brave, Arc, Opera, and Vivaldi. Prefer a native app? Cap also has a free desktop app for Mac and Windows.",
+				"Yes. Because Oiaai is a Chromium extension, it installs and runs on Chrome and other Chromium-based browsers including Microsoft Edge, Brave, Arc, Opera, and Vivaldi. Prefer a native app? Oiaai also has a free desktop app for Mac and Windows.",
 		},
 	],
 
 	cta: {
 		title: "Start Recording in Chrome — Free",
 		subtitle:
-			"Add Cap to Chrome and capture your first recording in seconds. No account required.",
+			"Add Oiaai to Chrome and capture your first recording in seconds. No account required.",
 		buttonText: "Add to Chrome",
 		buttonHref: CAP_CHROME_EXTENSION_URL,
 		buttonTarget: "_blank",

@@ -59,23 +59,23 @@ const Links: NavItem[] = [
 			},
 			{
 				label: "Migrate from Loom",
-				sub: "Bring your Loom library into Cap",
+				sub: "Bring your Loom library into Oiaai",
 				href: "/migrate-from-loom",
 				icon: <LoomMark size={16} />,
 			},
 			{
 				label: "Open Source",
-				sub: "Cap is open source and available on GitHub",
+				sub: "Oiaai is open source and available on GitHub",
 				href: "https://github.com/CapSoftware/Cap",
 			},
 			{
-				label: "Self-host Cap",
-				sub: "Self-host Cap on your own infrastructure",
+				label: "Self-host Oiaai",
+				sub: "Self-host Oiaai on your own infrastructure",
 				href: "/self-hosting",
 			},
 			{
 				label: "Join the community",
-				sub: "Join the Cap community on Discord",
+				sub: "Join the Oiaai community on Discord",
 				href: "https://cap.link/discord",
 			},
 			{
@@ -108,12 +108,12 @@ const Links: NavItem[] = [
 			},
 			{
 				label: "Documentation",
-				sub: "Documentation for using Cap",
+				sub: "Documentation for using Oiaai",
 				href: "/docs",
 			},
 			{
 				label: "FAQs",
-				sub: "Frequently asked questions about Cap",
+				sub: "Frequently asked questions about Oiaai",
 				href: "/faq",
 			},
 			{

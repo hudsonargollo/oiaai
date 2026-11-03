@@ -1,5 +1,5 @@
-//! Runs Cap automation rules from the CLI, sharing the exact rule model and engine the desktop app
-//! uses (`cap_automation`). Rules are authored in Cap Desktop and persisted to its JSON store
+//! Runs Oiaai automation rules from the CLI, sharing the exact rule model and engine the desktop app
+//! uses (`cap_automation`). Rules are authored in Oiaai Desktop and persisted to its JSON store
 //! file; the CLI reads that file directly (same approach as `credentials.rs`) so a rule like
 //! "on screenshot, save to ~/Shots" is honored whether the capture came from the app or `cap`.
 
@@ -31,7 +31,7 @@ pub fn load_store() -> Option<AutomationsStore> {
     cap_automation::load_store_from_json(&load_desktop_store_value()?)
 }
 
-/// `(total_rules, enabled_rules)` configured in Cap Desktop, for `cap doctor`.
+/// `(total_rules, enabled_rules)` configured in Oiaai Desktop, for `cap doctor`.
 pub fn rule_counts() -> (usize, usize) {
     let store = load_store().unwrap_or_default();
     let enabled = store.rules.iter().filter(|r| r.enabled).count();
@@ -363,12 +363,12 @@ impl AutomationHost for CliAutomationHost {
             .as_ref()
             .ok_or("No project path for preset")?;
 
-        let store = load_desktop_store_value().ok_or("Cap Desktop store not found")?;
+        let store = load_desktop_store_value().ok_or("Oiaai Desktop store not found")?;
         let presets = store
             .get("presets")
             .and_then(|p| p.get("presets"))
             .and_then(Value::as_array)
-            .ok_or("No presets found in Cap Desktop store")?;
+            .ok_or("No presets found in Oiaai Desktop store")?;
 
         let preset = presets
             .iter()
@@ -622,7 +622,7 @@ pub async fn run_upload_completed(project_path: &Path, link: &str, id: &str) {
     run_trigger(Trigger::UploadCompleted, ctx).await;
 }
 
-/// `cap automations list` — print the automation rules shared with Cap Desktop.
+/// `cap automations list` — print the automation rules shared with Oiaai Desktop.
 pub fn list(format: crate::OutputFormat) -> Result<(), String> {
     let store = load_store().unwrap_or_default();
 
@@ -631,7 +631,7 @@ pub fn list(format: crate::OutputFormat) -> Result<(), String> {
         crate::OutputFormat::Text => {
             if store.rules.is_empty() {
                 println!(
-                    "No automations configured. Add them in Cap Desktop under Settings > Automations."
+                    "No automations configured. Add them in Oiaai Desktop under Settings > Automations."
                 );
                 return Ok(());
             }

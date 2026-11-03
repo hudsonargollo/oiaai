@@ -53,7 +53,7 @@ const webRadixColors = {
 };
 
 describe("mobile theme", () => {
-	it("matches the Radix color scales imported by Cap web", () => {
+	it("matches the Radix color scales imported by Oiaai web", () => {
 		expect(colors).toMatchObject({
 			...webRadixColors.gray,
 			...webRadixColors.blue,

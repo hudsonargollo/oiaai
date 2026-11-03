@@ -887,7 +887,7 @@ mod fixture {
         let recording_meta = RecordingMeta {
             platform: Some(Platform::default()),
             project_path: project_dir.to_path_buf(),
-            pretty_name: "Cap Playback Selftest Fixture".to_string(),
+            pretty_name: "Oiaai Playback Selftest Fixture".to_string(),
             sharing: None,
             inner: RecordingMetaInner::Studio(Box::new(meta)),
             upload: None,

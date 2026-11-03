@@ -63,8 +63,8 @@ const checkAuthStartRoute = async (
 		const message = error instanceof Error ? error.message : String(error);
 		throw new Error(
 			isLocalApi(url)
-				? `Could not reach Cap extension auth at ${url.origin}. Start the local web server with bun run dev:extension and make sure the extension Options Cap URL is ${settings.apiBaseUrl}. Redirect URI: ${redirectUri}. ${message}`
-				: `Could not reach Cap at ${url.origin}. Check your connection and the Cap URL in the extension's options, then try again. (${message})`,
+				? `Could not reach Oiaai extension auth at ${url.origin}. Start the local web server with bun run dev:extension and make sure the extension Options Oiaai URL is ${settings.apiBaseUrl}. Redirect URI: ${redirectUri}. ${message}`
+				: `Could not reach Oiaai at ${url.origin}. Check your connection and the Oiaai URL in the extension's options, then try again. (${message})`,
 		);
 	}
 };

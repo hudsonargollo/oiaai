@@ -36,7 +36,7 @@ import { requireOrganizationSettingsManager } from "./authorization";
 const googleDriveProvider = "googleDrive";
 const settingsPath = "/dashboard/settings/organization/integrations";
 const proRequiredMessage =
-	"Cap Pro is required to manage organization integrations";
+	"Oiaai Pro is required to manage organization integrations";
 
 type OrganizationStorageProvider = "s3" | "googleDrive";
 

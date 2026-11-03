@@ -1,26 +1,26 @@
-# Cap Contributor Guide
+# Oiaai Contributor Guide
 
 ## Introduction
 
-### What is Cap?
+### What is Oiaai?
 
-Cap is an open source and privacy focused alternative to Loom. It's a video messaging tool that allows you to record, edit and share videos in seconds.
+Oiaai is an open source and privacy focused alternative to Loom. It's a video messaging tool that allows you to record, edit and share videos in seconds.
 
-The development of Cap is still in its early stages, so please bare with us as we build out this guide.
+The development of Oiaai is still in its early stages, so please bare with us as we build out this guide.
 
 ### What is this guide?
 
-This guide is for anyone who wants to contribute to Cap. It's a work in progress, and will be updated regularly.
+This guide is for anyone who wants to contribute to Oiaai. It's a work in progress, and will be updated regularly.
 
 ### How can I contribute?
 
-There are many ways to contribute to Cap. You can:
+There are many ways to contribute to Oiaai. You can:
 
 - [Report a bug](https://github.com/CapSoftware/cap/issues/new)
 - [Suggest a feature (via Discord)](https://discord.com/invite/y8gdQ3WRN3)
 - Submit a PR
 
-## Running Cap
+## Running Oiaai
 
 ### Development Requirements
 
@@ -53,17 +53,17 @@ To run only one of them, use `bun run dev:desktop` or `bun run dev:web` respecti
 The desktop app lives in `apps/desktop-gpui`. It is native Rust with a [GPUI](https://www.gpui.rs/) interface,
 and [its README](apps/desktop-gpui/README.md) covers how it is built, packaged, and updated.
 
-`bun run dev:desktop` checks out Cap's patched gpui next to this repository (`../zed-cap`) on first run,
+`bun run dev:desktop` checks out Oiaai's patched gpui next to this repository (`../zed-cap`) on first run,
 then starts the app. On macOS it rebuilds on save and relaunches the app where you left it (`apps/desktop-gpui/dev.sh`);
 on Windows and Linux it builds and runs the app once. The first build takes around ten minutes.
 
 When running the desktop app from a terminal on macOS,
-you will need to grant permissions (screen recording, microphone, etc.) to the terminal, not the Cap app.
+you will need to grant permissions (screen recording, microphone, etc.) to the terminal, not the Oiaai app.
 For example, if you run `bun run dev:desktop` in the macOS `Terminal.app`, grant the permissions to `Terminal.app`.
 
 #### Where are my recordings stored?
 
-Development builds use the same data directory as an installed Cap:
+Development builds use the same data directory as an installed Oiaai:
 `~/Library/Application Support/so.cap.desktop/recordings` on macOS,
 `%APPDATA%\so.cap.desktop\recordings` on Windows,
 and `~/.local/share/so.cap.desktop/recordings` on Linux.

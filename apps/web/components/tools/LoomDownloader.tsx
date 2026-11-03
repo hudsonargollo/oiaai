@@ -98,7 +98,7 @@ function MigrationBanner() {
 						Switch
 					</span>
 					<p className="text-sm font-semibold text-gray-900 sm:text-base">
-						Switch from Loom to Cap — save 20%
+						Switch from Loom to Oiaai — save 20%
 					</p>
 				</div>
 				<p className="text-xs leading-relaxed text-gray-600 sm:text-sm">
@@ -106,7 +106,7 @@ function MigrationBanner() {
 					<span className="font-mono font-semibold text-blue-700">
 						{MIGRATE_PROMO_CODE}
 					</span>{" "}
-					at checkout for 20% off Cap Pro.
+					at checkout for 20% off Oiaai Pro.
 				</p>
 			</div>
 			<div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:gap-3">
@@ -117,7 +117,7 @@ function MigrationBanner() {
 					href={MIGRATE_CHECKOUT_HREF}
 					className="whitespace-nowrap"
 				>
-					Switch to Cap
+					Switch to Oiaai
 				</Button>
 			</div>
 		</div>
@@ -190,11 +190,11 @@ function MigrationSuccessState({
 						Next step
 					</span>
 					<h3 className="text-lg font-semibold text-gray-900 sm:text-xl">
-						Bring your whole Loom library to Cap
+						Bring your whole Loom library to Oiaai
 					</h3>
 					<p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-						Skip the one-by-one downloads. Cap Pro's built-in Loom importer
-						transfers your entire Loom workspace to Cap in a single click —
+						Skip the one-by-one downloads. Oiaai Pro's built-in Loom importer
+						transfers your entire Loom workspace to Oiaai in a single click —
 						titles, transcripts, and all. Use{" "}
 						<span className="font-mono font-semibold text-blue-700">
 							{MIGRATE_PROMO_CODE}
@@ -211,7 +211,7 @@ function MigrationSuccessState({
 							href={MIGRATE_CHECKOUT_HREF}
 							className="w-full sm:w-auto"
 						>
-							Migrate with Cap Pro — save 20%
+							Migrate with Oiaai Pro — save 20%
 						</Button>
 						<Button
 							variant="white"
@@ -219,7 +219,7 @@ function MigrationSuccessState({
 							href="/download"
 							className="w-full sm:w-auto"
 						>
-							Download Cap free
+							Download Oiaai free
 						</Button>
 					</div>
 					<div className="flex items-center gap-2">
@@ -561,7 +561,7 @@ export function LoomDownloader() {
 					href={MIGRATE_CHECKOUT_HREF}
 					className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline"
 				>
-					Import Loom videos with Cap Pro
+					Import Loom videos with Oiaai Pro
 					<svg
 						className="w-3 h-3"
 						fill="none"

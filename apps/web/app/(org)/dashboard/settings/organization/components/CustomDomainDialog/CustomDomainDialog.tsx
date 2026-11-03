@@ -471,7 +471,7 @@ const CustomDomainDialog = ({
 											handleClose();
 										}}
 									>
-										Upgrade to Cap Pro
+										Upgrade to Oiaai Pro
 									</Button>
 								))}
 						</DialogFooter>

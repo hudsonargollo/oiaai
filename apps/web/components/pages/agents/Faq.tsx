@@ -15,7 +15,7 @@ export const Faq = () => (
 				<h2
 					className={`${H_SECTION} mt-6 text-balance text-[clamp(34px,3.9vw,48px)]`}
 				>
-					Questions about Cap for agents
+					Questions about Oiaai for agents
 				</h2>
 				<p
 					className={`${BODY_TEXT} mt-5 max-w-[320px] text-[16px] leading-[1.5] text-[rgba(17,17,17,0.72)]`}

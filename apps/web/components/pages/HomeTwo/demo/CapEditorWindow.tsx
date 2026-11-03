@@ -272,7 +272,7 @@ export const CapEditorWindow = ({
 							</EditorButton>
 							<EditorButton>
 								<LucideBuilding2 className="size-4" />
-								<span>Cap</span>
+								<span>Oiaai</span>
 								<LucideChevronDown
 									className="size-3.5"
 									style={{ color: C.gray11 }}

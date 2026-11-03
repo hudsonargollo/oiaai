@@ -93,9 +93,9 @@ export const sendEmail = async ({
 	const from = fromOverride
 		? fromOverride
 		: marketing
-			? "Richie from Cap <richie@send.cap.so>"
+			? "Richie from Oiaai <richie@send.cap.so>"
 			: isCap
-				? "Cap Auth <no-reply@auth.cap.so>"
+				? "Oiaai Auth <no-reply@auth.cap.so>"
 				: env.RESEND_FROM_DOMAIN?.trim()
 					? `auth@${env.RESEND_FROM_DOMAIN.trim()}`
 					: undefined;

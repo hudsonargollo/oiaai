@@ -7,7 +7,7 @@ from English, and `cargo test -p cap-i18n-build` fails while any key is missing.
 
 ## Never translate
 
-- Product and feature names: Cap, Cap Web, Cap Pro, Studio, Instant,
+- Product and feature names: Oiaai, Oiaai Web, Oiaai Pro, Studio, Instant,
   Studio Sound. Join them the way the language joins words: enregistrements
   Instant, Instant-Aufnahmen, Instant 录制, Instant録画.
 - Release channel names: Stable, Nightly. The channel picker still shows them
@@ -29,7 +29,7 @@ from English, and `cargo test -p cap-i18n-build` fails while any key is missing.
 | es | tú | Sentence case. Opening `¿` and `«»` quotes. |
 | de | Sie | Sentence case after the first word; nouns capitalized. `„…“` quotes. |
 | ja | です/ます in descriptions, plain form in labels | No spaces between Japanese and Latin text. Full-width `（）` and `「」`. |
-| zh-CN | 你 | One space between Chinese and Latin letters or digits (`10 秒`, `关于 Cap`). Full-width `（）`, `：` and `“”`. |
+| zh-CN | 你 | One space between Chinese and Latin letters or digits (`10 秒`, `关于 Oiaai`). Full-width `（）`, `：` and `“”`. |
 | hi | आप | Devanagari with common English loanwords in Devanagari (रिकॉर्डिंग, स्क्रीनशॉट); product names stay in Latin script. |
 
 Menu bar items follow the wording macOS itself uses in each language, so they
@@ -51,7 +51,7 @@ Instant-Modus, Instantモード).
 Error messages that end in `{error}` show a technical message from the
 recording engine, which stays in English.
 
-Recording and upload errors that Cap writes in English (they are also logged,
+Recording and upload errors that Oiaai writes in English (they are also logged,
 matched and saved) live under `message.*` and are translated where they are
 shown, by `i18n::messages::localize`. A new error sentence the user can see
 goes into its table and the catalog together; the tests fail if the English

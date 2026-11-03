@@ -119,11 +119,11 @@ const developerVideoSchema = {
 export const developerOpenApiSpec = (baseUrl: string) => ({
 	openapi: "3.1.0",
 	info: {
-		title: "Cap Developer API",
+		title: "Oiaai Developer API",
 		version: "1.0.0",
-		summary: "Create, upload and manage videos recorded through Cap.",
+		summary: "Create, upload and manage videos recorded through Oiaai.",
 		description: [
-			"The Cap Developer API lets your product record, upload and manage videos with Cap.",
+			"The Oiaai Developer API lets your product record, upload and manage videos with Oiaai.",
 			"",
 			"Use the SDK operations (public `cpk_` key, safe in browsers) to create a video and upload it with S3 multipart upload: createSdkVideo, initiateSdkUpload, presignSdkUploadPart for each part, then completeSdkUpload.",
 			"Use the REST operations (secret `csk_` key, server-side only) to list, inspect and delete videos and read credit usage.",
@@ -133,10 +133,10 @@ export const developerOpenApiSpec = (baseUrl: string) => ({
 			"Authentication, origin, rate-limit, unknown-route and unexpected errors include `error`, `code`, `message`, `hint` and `docs` fields. Other handler errors may include only `error`; request-body validation errors return `success: false` with the failing fields. Each key is limited to 60 requests per minute; a 429 response carries Retry-After.",
 		].join("\n"),
 		termsOfService: "https://cap.so/terms",
-		contact: { name: "Cap", email: "hello@cap.so", url: "https://cap.so" },
+		contact: { name: "Oiaai", email: "hello@cap.so", url: "https://cap.so" },
 	},
 	externalDocs: { description: "REST API guide", url: API_DOCS_URL },
-	servers: [{ url: baseUrl, description: "Cap" }],
+	servers: [{ url: baseUrl, description: "Oiaai" }],
 	tags: [
 		{
 			name: "Videos",

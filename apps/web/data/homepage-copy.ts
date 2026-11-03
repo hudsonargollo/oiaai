@@ -144,7 +144,7 @@ export const homepageCopy: HomePageCopy = {
 			default: {
 				title: "The only screen recording app you need",
 				description:
-					"Cap is the only screen recording tool you need — three modes in one app that replace your recorder, editor, screenshot tool, and video host. Fully open source, and you can connect your own Google Drive or S3 bucket, so you own every recording.",
+					"Oiaaí means “check this out.” Oiaai is the only screen recording tool you need — three modes in one app that replace your recorder, editor, screenshot tool, and video host. Fully open source, and you can connect your own Google Drive or S3 bucket, so you own every recording.",
 			},
 		},
 		modes: [
@@ -171,7 +171,7 @@ export const homepageCopy: HomePageCopy = {
 			{ label: "Open source", href: "/open-source-screen-recorder" },
 		],
 		cta: {
-			primaryButton: "Upgrade to Cap Pro",
+			primaryButton: "Upgrade to Oiaai Pro",
 			secondaryButton: "View on GitHub",
 			freeVersionText:
 				"No credit card required. Record locally, share when you choose.",
@@ -204,7 +204,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				title: "Your Storage, Your Rules",
 				description:
-					"Connect your own Google Drive or S3 bucket, use Cap Cloud, or keep everything local. You're never locked into our infrastructure, perfect for teams with compliance requirements or anyone who values data sovereignty.",
+					"Connect your own Google Drive or S3 bucket, use Oiaai Cloud, or keep everything local. You're never locked into our infrastructure, perfect for teams with compliance requirements or anyone who values data sovereignty.",
 			},
 			{
 				title: "Privacy by Default, Sharing by Choice",
@@ -229,22 +229,22 @@ export const homepageCopy: HomePageCopy = {
 			{
 				title: "Truly Open Source",
 				description:
-					"See exactly how Cap works, contribute features you need, or self-host for complete control. Join a community of builders who believe great tools should be transparent, extensible, and respect their users.",
+					"See exactly how Oiaai works, contribute features you need, or self-host for complete control. Join a community of builders who believe great tools should be transparent, extensible, and respect their users.",
 			},
 			{
-				title: "Speed Up Your Workflow With Cap AI",
+				title: "Speed Up Your Workflow With Oiaai AI",
 				description:
 					"Auto-generated titles, summaries, clickable chapters, and transcriptions for every recording. AI features that actually save time instead of creating more work.",
 			},
 			{
 				title: "Import Your Loom Videos",
 				description:
-					"Switching from Loom? Import your existing recordings directly into Cap with our built-in importer. Keep all your content in one place without starting from scratch.",
+					"Switching from Loom? Import your existing recordings directly into Oiaai with our built-in importer. Keep all your content in one place without starting from scratch.",
 			},
 		],
 	},
 	bento: {
-		eyebrow: "Why Cap",
+		eyebrow: "Why Oiaai",
 		title: "Built To Be Yours",
 		subtitle:
 			"Every feature respects how you actually work — your storage, your platform, your workflow. No vendor lock-in, no compromises.",
@@ -253,11 +253,11 @@ export const homepageCopy: HomePageCopy = {
 				key: "storage",
 				title: "Bring Your Own Storage",
 				description:
-					"Plug in your own Google Drive or S3 bucket, route to Cap Cloud, or keep recordings entirely local. Your videos, your storage, your bill, with no vendor lock-in, ever.",
+					"Plug in your own Google Drive or S3 bucket, route to Oiaai Cloud, or keep recordings entirely local. Your videos, your storage, your bill, with no vendor lock-in, ever.",
 			},
 			{
 				key: "ai",
-				title: "Cap AI Does The Busywork",
+				title: "Oiaai AI Does The Busywork",
 				description:
 					"Every recording gets an AI-generated title, summary, clickable chapters, and a fully searchable transcript — so the work after the recording is already done.",
 			},
@@ -294,7 +294,7 @@ export const homepageCopy: HomePageCopy = {
 	testimonials: {
 		title: "Loved By Builders, Trusted By Teams",
 		subtitle:
-			"Join thousands who've made Cap their daily driver for visual communication.",
+			"Join thousands who've made Oiaai their daily driver for visual communication.",
 		cta: "Read More Testimonials",
 	},
 	pricing: {
@@ -305,7 +305,7 @@ export const homepageCopy: HomePageCopy = {
 		commercial: {
 			title: "Desktop License",
 			description:
-				"A commercial license for the Cap desktop app — unlimited local recording and editing.",
+				"A commercial license for the Oiaai desktop app — unlimited local recording and editing.",
 			features: [
 				"Commercial usage rights",
 				"Unlimited local recordings & editing",
@@ -327,7 +327,7 @@ export const homepageCopy: HomePageCopy = {
 		},
 		pro: {
 			badge: "Best value",
-			title: "Cap Pro",
+			title: "Oiaai Pro",
 			description:
 				"Everything in Desktop plus unlimited cloud features for seamless sharing and collaboration.",
 			features: [
@@ -359,14 +359,14 @@ export const homepageCopy: HomePageCopy = {
 		title: "Questions? We've Got Answers.",
 		items: [
 			{
-				question: "What is the difference between Cap Pro and Desktop License?",
+				question: "What is the difference between Oiaai Pro and Desktop License?",
 				answer:
-					"Cap Pro is a paid plan that includes all the features of the Desktop License plus cloud features for seamless sharing and collaboration. Desktop License grants you commercial usage rights for a single user.",
+					"Oiaai Pro is a paid plan that includes all the features of the Desktop License plus cloud features for seamless sharing and collaboration. Desktop License grants you commercial usage rights for a single user.",
 			},
 			{
 				question: "Is there a free version?",
 				answer:
-					"Yes! Cap is 100% free for personal use. You can record and share locally with Studio Mode. A paid plan is required for commercial usage.",
+					"Yes! Oiaai is 100% free for personal use. You can record and share locally with Studio Mode. A paid plan is required for commercial usage.",
 			},
 			{
 				question: "How long can I record for on the free version?",
@@ -374,14 +374,14 @@ export const homepageCopy: HomePageCopy = {
 					"Studio Mode lets you record locally without a time limit. Free cloud shareable links are limited to 5 minutes each.",
 			},
 			{
-				question: "How does Cap AI work?",
+				question: "How does Oiaai AI work?",
 				answer:
-					"Cap AI is a powerful tool that can be used to generate titles, summaries, clickable chapters, and transcriptions for your recordings. It's available for all Cap Pro users and has no usage limits.",
+					"Oiaai AI is a powerful tool that can be used to generate titles, summaries, clickable chapters, and transcriptions for your recordings. It's available for all Oiaai Pro users and has no usage limits.",
 			},
 			{
-				question: "How is Cap different from Loom?",
+				question: "How is Oiaai different from Loom?",
 				answer:
-					"Cap gives you the best of both worlds: the simplicity of Loom with the power of professional tools. We're open source, support custom storage, offer better pricing, and our desktop app works offline. Plus, you actually own your content. Already using Loom? Our built-in Loom video importer makes switching effortless.",
+					"Oiaai gives you the best of both worlds: the simplicity of Loom with the power of professional tools. We're open source, support custom storage, offer better pricing, and our desktop app works offline. Plus, you actually own your content. Already using Loom? Our built-in Loom video importer makes switching effortless.",
 			},
 			{
 				question: "What happens to my recordings if I cancel?",
@@ -391,7 +391,7 @@ export const homepageCopy: HomePageCopy = {
 			{
 				question: "Do you offer team plans?",
 				answer:
-					"Yes! Cap Pro includes team workspaces where you can organize recordings, manage permissions, and collaborate. Volume discounts available for teams over 10 users. Contact us for custom enterprise features.",
+					"Yes! Oiaai Pro includes team workspaces where you can organize recordings, manage permissions, and collaborate. Volume discounts available for teams over 10 users. Contact us for custom enterprise features.",
 			},
 			{
 				question: "Which platforms do you support?",
@@ -399,26 +399,26 @@ export const homepageCopy: HomePageCopy = {
 					"Native desktop apps for macOS (Apple Silicon & Intel), Windows, and Linux, plus a Chrome extension. View your shareable links from anywhere.",
 			},
 			{
-				question: "Can I use Cap for commercial purposes?",
+				question: "Can I use Oiaai for commercial purposes?",
 				answer:
-					"Absolutely! Any paid plan (Desktop License or Cap Pro) includes full commercial usage rights. Use Cap for client work, sell courses, or embed recordings anywhere. The free version is for personal use only.",
+					"Absolutely! Any paid plan (Desktop License or Oiaai Pro) includes full commercial usage rights. Use Oiaai for client work, sell courses, or embed recordings anywhere. The free version is for personal use only.",
 			},
 			{
 				question: "Is my data secure?",
 				answer:
-					"Security is core to Cap. Cap is SOC 2 Type II, ISO 27001, and HIPAA compliant, and as an open source project, our code is fully auditable and transparent — you can see exactly how your data is handled. You can connect your own storage or self-host Cap for more control over your recordings.",
+					"Security is core to Oiaai. Oiaai is SOC 2 Type II, ISO 27001, and HIPAA compliant, and as an open source project, our code is fully auditable and transparent — you can see exactly how your data is handled. You can connect your own storage or self-host Oiaai for more control over your recordings.",
 			},
 			{
 				question: "What about SOC 2, ISO 27001, GDPR, and HIPAA compliance?",
 				answer:
-					"Cap is SOC 2 Type II, ISO 27001, and HIPAA compliant, with signed BAAs available for organizations handling PHI. Cap Pro also lets you bring your own storage, including custom S3 buckets in any region or your own Google Drive, for GDPR compliance. For teams that want complete control, our self-hosted option keeps everything on your own infrastructure.",
+					"Oiaai is SOC 2 Type II, ISO 27001, and HIPAA compliant, with signed BAAs available for organizations handling PHI. Oiaai Pro also lets you bring your own storage, including custom S3 buckets in any region or your own Google Drive, for GDPR compliance. For teams that want complete control, our self-hosted option keeps everything on your own infrastructure.",
 			},
 		],
 	},
 	readyToGetStarted: {
 		title: "Ready To Upgrade How You Communicate?",
 		buttons: {
-			primary: "Upgrade to Cap Pro",
+			primary: "Upgrade to Oiaai Pro",
 			secondary: "Download For Free",
 		},
 	},

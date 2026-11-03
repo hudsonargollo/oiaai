@@ -72,7 +72,7 @@ export async function createVideoForServerProcessing({
 	})} ${date.getFullYear()}`;
 
 	const rawFileKey = `${user.id}/${videoId}/raw-upload.mp4`;
-	const videoTitle = `Cap Upload - ${formattedDate}`;
+	const videoTitle = `Oiaai Upload - ${formattedDate}`;
 
 	const uploadResult = await StorageService.createUploadTargetForUser(
 		user.id,

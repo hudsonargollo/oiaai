@@ -111,7 +111,7 @@ export function EarlyUploadOverlay({
 				)}
 				{stalled && (
 					<p className={styles.hint}>
-						Keep Cap open on the computer that recorded this so the rest can
+						Keep Oiaai open on the computer that recorded this so the rest can
 						upload.
 					</p>
 				)}

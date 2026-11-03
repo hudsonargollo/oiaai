@@ -3,11 +3,11 @@ import { buildMarketingMetadata } from "@/lib/og/url";
 import { ChangelogView } from "./_components/ChangelogView";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Changelog — Cap",
+	title: "Changelog — Oiaai",
 	description:
-		"New features, improvements, and fixes across the Cap desktop app, web, mobile, and browser extension.",
+		"New features, improvements, and fixes across the Oiaai desktop app, web, mobile, and browser extension.",
 	path: "/changelog",
-	ogTitle: "Cap Changelog",
+	ogTitle: "Oiaai Changelog",
 	ogTag: "Changelog",
 });
 

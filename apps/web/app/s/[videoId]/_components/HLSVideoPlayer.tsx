@@ -575,8 +575,8 @@ export function HLSVideoPlayer({
 		canRetryFailedProcessing(uploadProgress, canRetryProcessing);
 	const uploadFailureMessage = sourceIsIncomplete
 		? canRetryProcessing
-			? "This recording is missing some video or audio. Reopen Cap on the recording computer to resume the upload."
-			: "This recording is missing some video or audio. Ask the owner to reopen Cap and finish the upload."
+			? "This recording is missing some video or audio. Reopen Oiaai on the recording computer to resume the upload."
+			: "This recording is missing some video or audio. Ask the owner to reopen Oiaai and finish the upload."
 		: sourceFailure === "unavailable" || hlsInitFailed
 			? "This video could not load. Check your connection and try again."
 			: getUploadFailureMessage(uploadProgress, canRetryProcessing);

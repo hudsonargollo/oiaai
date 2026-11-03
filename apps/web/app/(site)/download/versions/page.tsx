@@ -14,11 +14,11 @@ import {
 } from "@/utils/releases";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "All Versions — Cap",
+	title: "All Versions — Oiaai",
 	description:
-		"Download previous versions of Cap for macOS, Windows, and Linux.",
+		"Download previous versions of Oiaai for macOS, Windows, and Linux.",
 	path: "/download/versions",
-	ogTitle: "All Cap versions",
+	ogTitle: "All Oiaai versions",
 	ogTag: "Download",
 });
 
@@ -282,17 +282,17 @@ export default async function VersionsPage() {
 						All Versions
 					</h1>
 					<p className="text-gray-10">
-						Download previous versions of Cap for macOS, Windows, and Linux.
+						Download previous versions of Oiaai for macOS, Windows, and Linux.
 					</p>
 				</div>
 
 				{nativeReleaseLive && (
 					<div className="p-4 rounded-lg border border-gray-5 bg-gray-2">
 						<h2 className="text-sm font-medium text-gray-12">
-							Cap is now a fully native app
+							Oiaai is now a fully native app
 						</h2>
 						<p className="mt-1 text-sm leading-6 text-gray-11">
-							From 0.6.1, Cap is built natively for macOS, Windows, and Linux.
+							From 0.6.1, Oiaai is built natively for macOS, Windows, and Linux.
 							Version {LAST_TAURI_VERSION} is the last release of the original
 							app, which was built with Tauri. It stays available below, along
 							with every earlier version.

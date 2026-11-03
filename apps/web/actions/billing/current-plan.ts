@@ -79,19 +79,19 @@ export async function getCurrentPlan(): Promise<CurrentPlan> {
 	try {
 		const details = await getSubscriptionDetails(organizationId);
 		if (details) return { type: "managed", details };
-		console.error("Cap Pro subscription is not in a manageable state", {
+		console.error("Oiaai Pro subscription is not in a manageable state", {
 			userId: user.id,
 		});
 		return { type: "unavailable" };
 	} catch (error) {
-		console.error("Failed to load the current Cap Pro plan:", error);
+		console.error("Failed to load the current Oiaai Pro plan:", error);
 		return { type: "unavailable" };
 	}
 }
 
 async function currentQuantity(organizationId: Organisation.OrganisationId) {
 	const details = await getSubscriptionDetails(organizationId);
-	if (!details) throw new Error("No active Cap Pro subscription found.");
+	if (!details) throw new Error("No active Oiaai Pro subscription found.");
 	return details.currentQuantity;
 }
 
@@ -101,7 +101,7 @@ export async function previewAddSeats(
 	try {
 		const organizationId = await ownedOrganizationId();
 		if (!organizationId) {
-			return { ok: false, message: "No active Cap Pro subscription found." };
+			return { ok: false, message: "No active Oiaai Pro subscription found." };
 		}
 		if (quantity <= (await currentQuantity(organizationId))) {
 			return { ok: false, message: "Choose more seats than you have now." };
@@ -126,7 +126,7 @@ export async function addSeats(quantity: number): Promise<AddSeatsResult> {
 	try {
 		const organizationId = await ownedOrganizationId();
 		if (!organizationId) {
-			return { ok: false, message: "No active Cap Pro subscription found." };
+			return { ok: false, message: "No active Oiaai Pro subscription found." };
 		}
 		if (quantity <= (await currentQuantity(organizationId))) {
 			return { ok: false, message: "Choose more seats than you have now." };

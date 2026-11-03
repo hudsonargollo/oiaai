@@ -12,25 +12,25 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "OBS Alternative — Easier Screen Recording with Instant Sharing | Cap",
+	title: "OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
 	description:
-		"Cap is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+		"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 	alternates: {
 		canonical: "https://cap.so/obs-alternative",
 	},
 	openGraph: {
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Cap",
+			"OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
 		description:
-			"Cap is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+			"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		url: "https://cap.so/obs-alternative",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: OBS Alternative for Async Screen Recording",
+				alt: "Oiaai: OBS Alternative for Async Screen Recording",
 			},
 		],
 		locale: "en_US",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Cap",
+			"OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
 		description:
-			"Cap is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+			"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		images: [ogImage],
 	},
 };

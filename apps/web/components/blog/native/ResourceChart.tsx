@@ -50,7 +50,7 @@ export function ResourceChart() {
 
 	return (
 		<Chart
-			title="Three builds of Cap, one recording"
+			title="Three builds of Oiaai, one recording"
 			subtitle={
 				workload === "playback"
 					? "While playing back in the editor"

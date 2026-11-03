@@ -8,21 +8,21 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Online Classroom Tools: Empower Remote Teaching with Cap",
+	title: "Online Classroom Tools: Empower Remote Teaching with Oiaai",
 	description:
-		"Searching for online classroom tools? Learn how Cap's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
+		"Searching for online classroom tools? Learn how Oiaai's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
 	openGraph: {
-		title: "Online Classroom Tools: Empower Remote Teaching with Cap",
+		title: "Online Classroom Tools: Empower Remote Teaching with Oiaai",
 		description:
-			"Learn how Cap's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
+			"Learn how Oiaai's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
 		url: "https://cap.so/solutions/online-classroom-tools",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: Online Classroom Tools",
+				alt: "Oiaai: Online Classroom Tools",
 			},
 		],
 		locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Online Classroom Tools | Cap Screen Recorder",
+		title: "Online Classroom Tools | Oiaai Screen Recorder",
 		description:
-			"Learn how Cap's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
+			"Learn how Oiaai's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
 		images: [ogImage],
 	},
 	alternates: {

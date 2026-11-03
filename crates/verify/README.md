@@ -25,7 +25,7 @@ The suites are listed in `scripts/verify/suites.json`:
 | `decoder-model-avf` | AVAssetReader decoder decisions on scripted media | macos | macos |
 
 The upload fault suite (`apps/desktop-gpui/src/upload/verify_tests.rs` and
-`upload/queue/verify_resume_tests.rs`: a mock Cap API with scripted 5xx,
+`upload/queue/verify_resume_tests.rs`: a mock Oiaai API with scripted 5xx,
 resets, outages, hangs and quits, byte-identical objects and request and byte
 budgets) lives in the GPUI app's own workspace. It runs inside
 `cargo test --bin cap-gpui`, which the `CI / Build GPUI Desktop` job already
@@ -121,7 +121,7 @@ platforms = ["macos"]                  # optional, absent = every platform
 seeds = "0 3-7"                        # optional, seeded suites only
 flaky = true                           # optional; state the measured rate
 reason = "what is wrong"
-link = "https://github.com/CapSoftware/Cap/pull/2595"   # empty = no fix yet
+link = "https://github.com/CapSoftware/Oiaai/pull/2595"   # empty = no fix yet
 ```
 
 - A failure that is not listed fails the run.

@@ -57,7 +57,7 @@ vi.mock("expo-symbols", async () => {
 });
 
 describe("ActionButton", () => {
-	it("matches the Cap web dark button surface and clips the inset highlight", async () => {
+	it("matches the Oiaai web dark button surface and clips the inset highlight", async () => {
 		const renderer = await renderComponent(
 			<ActionButton
 				label="Upload"
@@ -94,7 +94,7 @@ describe("ActionButton", () => {
 		});
 	});
 
-	it("uses the Cap web gray button token pair", async () => {
+	it("uses the Oiaai web gray button token pair", async () => {
 		const renderer = await renderComponent(
 			<ActionButton label="Photos" onPress={vi.fn()} variant="gray" />,
 		);

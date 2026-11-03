@@ -52,7 +52,7 @@ type TabDefinition = {
 
 const leftTab: TabDefinition = {
 	name: "index",
-	label: "My Caps",
+	label: "My Library",
 	icon: "folder",
 	iconActive: "folder.fill",
 };

@@ -76,7 +76,7 @@ describe("CapLoadingIndicator", () => {
 		vi.clearAllMocks();
 	});
 
-	it("renders the untouched Cap icon at splash-icon proportions", async () => {
+	it("renders the untouched Oiaai icon at splash-icon proportions", async () => {
 		const renderer = await renderComponent(<CapLoadingIndicator size={64} />);
 
 		const outer = flattenStyle(

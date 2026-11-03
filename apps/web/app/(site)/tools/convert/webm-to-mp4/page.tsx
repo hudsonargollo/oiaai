@@ -11,7 +11,7 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "WebM to MP4 Converter — Free Online Video Converter | Cap",
+	title: "WebM to MP4 Converter — Free Online Video Converter | Oiaai",
 	description:
 		"Convert WebM videos to MP4 format directly in your browser. Free, private, no upload needed. Works with browser screen recordings, OBS exports, and any WebM video file.",
 	keywords: [
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
 		"screen recording webm to mp4",
 	],
 	openGraph: {
-		title: "WebM to MP4 Converter — Free Online Video Converter | Cap",
+		title: "WebM to MP4 Converter — Free Online Video Converter | Oiaai",
 		description:
 			"Convert WebM videos to the universally compatible MP4 format directly in your browser. No uploads, no installs, 100% private. Works with browser screen recordings and any WebM file.",
 		url: "https://cap.so/tools/convert/webm-to-mp4",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "WebM to MP4 Converter — Free Online Video Converter | Cap",
+		title: "WebM to MP4 Converter — Free Online Video Converter | Oiaai",
 		description:
 			"Convert WebM to MP4 directly in your browser. No uploads, no installs, 100% private.",
 		images: [ogImage],
@@ -57,7 +57,7 @@ const faqs = [
 	{
 		question: "How do I convert WebM to MP4 online?",
 		answer:
-			"Open Cap's WebM to MP4 converter, drag and drop your WebM file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+			"Open Oiaai's WebM to MP4 converter, drag and drop your WebM file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
 	},
 	{
 		question: "Is the WebM to MP4 converter free?",
@@ -82,7 +82,7 @@ const faqs = [
 	{
 		question: "Does this work with screen recording WebM files?",
 		answer:
-			"Yes. Browser-based screen recorders, Chrome extensions, and tools using the MediaRecorder API typically produce VP8 or VP9 WebM files. Cap's converter handles both VP8 and VP9 WebM files and outputs a universally compatible H.264 MP4.",
+			"Yes. Browser-based screen recorders, Chrome extensions, and tools using the MediaRecorder API typically produce VP8 or VP9 WebM files. Oiaai's converter handles both VP8 and VP9 WebM files and outputs a universally compatible H.264 MP4.",
 	},
 	{
 		question: "Does the converter work on mobile?",
@@ -99,7 +99,7 @@ const faqs = [
 const howToSteps = [
 	{
 		name: "Upload your WebM file",
-		text: "Open Cap's WebM to MP4 converter and drag and drop your WebM file into the upload area, or click to browse your files. Supports WebM files up to 500 MB, including VP8 and VP9 encoded files from screen recorders.",
+		text: "Open Oiaai's WebM to MP4 converter and drag and drop your WebM file into the upload area, or click to browse your files. Supports WebM files up to 500 MB, including VP8 and VP9 encoded files from screen recorders.",
 	},
 	{
 		name: "Start the conversion",
@@ -129,7 +129,7 @@ const howToStructuredData = {
 	"@type": "HowTo",
 	name: "How to Convert WebM to MP4 Online",
 	description:
-		"Convert WebM video files to MP4 format for free using Cap's browser-based converter. No upload required.",
+		"Convert WebM video files to MP4 format for free using Oiaai's browser-based converter. No upload required.",
 	step: howToSteps.map((step, index) => ({
 		"@type": "HowToStep",
 		position: index + 1,
@@ -169,7 +169,7 @@ export default function WebmToMp4Page() {
 			{
 				title: "Works with Screen Recording Output",
 				description:
-					"Most browser-based screen recorders, Chrome extensions, and MediaRecorder tools output WebM files. Cap's converter handles VP8 and VP9 WebM files and turns them into shareable MP4s.",
+					"Most browser-based screen recorders, Chrome extensions, and MediaRecorder tools output WebM files. Oiaai's converter handles VP8 and VP9 WebM files and turns them into shareable MP4s.",
 			},
 			{
 				title: "Universal MP4 Output",
@@ -194,10 +194,10 @@ export default function WebmToMp4Page() {
 		],
 		faqs,
 		cta: {
-			title: "Cap is the open source Loom alternative",
+			title: "Oiaai is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused. Records directly to MP4 — no conversion needed.",
-			buttonText: "Download Cap Free",
+				"Record, edit, and share video messages with Oiaai. 100% open source and privacy focused. Records directly to MP4 — no conversion needed.",
+			buttonText: "Download Oiaai Free",
 		},
 	};
 

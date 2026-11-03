@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "OSS Friends — Cap",
+	title: "OSS Friends — Oiaai",
 	description:
 		"Discover amazing open source projects and tools built by our friends in the community.",
 	path: "/oss-friends",
@@ -34,7 +34,7 @@ async function fetchOSSFriends(): Promise<OSSFriendsResponse> {
 
 	const filteredData = {
 		...data,
-		data: data.data.filter((friend: any) => friend.name !== "Cap"),
+		data: data.data.filter((friend: any) => friend.name !== "Oiaai"),
 	};
 
 	return filteredData;

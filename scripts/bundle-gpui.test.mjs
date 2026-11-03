@@ -42,6 +42,9 @@ test("targets map to their packaging platform and main binary", () => {
 test("the GPUI app keeps the identity every existing install updates into", () => {
 	assert.equal(gpuiConfig.productName, "Cap");
 	assert.equal(gpuiConfig.mainBinaryName, "Cap");
+	// The menu bar reads CFBundleName, which must not fall back to the product
+	// name; the bundle path stays Cap.app so installs update in place.
+	assert.equal(gpuiConfig.bundle.macOS.bundleName, "Oiaai");
 	assert.equal(gpuiConfig.identifier, "so.cap.desktop");
 	assert.equal(gpuiConfig.plugins.updater.pubkey, shippedUpdaterPubkey);
 	assert.deepEqual(gpuiConfig.plugins.updater.endpoints, [

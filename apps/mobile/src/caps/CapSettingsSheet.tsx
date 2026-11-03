@@ -214,8 +214,8 @@ export function CapSettingsSheet({
 						</Text>
 					</View>
 					<Pressable
-						accessibilityLabel="Close Cap settings"
-						accessibilityHint="Dismisses Cap settings"
+						accessibilityLabel="Close Oiaai settings"
+						accessibilityHint="Dismisses Oiaai settings"
 						accessibilityRole="button"
 						hitSlop={8}
 						onPress={onClose}
@@ -235,7 +235,7 @@ export function CapSettingsSheet({
 
 				<SettingsSection title="Details">
 					<SettingsRow
-						accessibilityHint="Renames this Cap"
+						accessibilityHint="Renames this recording"
 						label="Title"
 						onPress={() => onRename(cap)}
 						symbol="textformat"
@@ -293,7 +293,7 @@ export function CapSettingsSheet({
 
 				<SettingsSection title="Actions">
 					<SettingsRow
-						accessibilityHint="Copies this Cap link"
+						accessibilityHint="Copies this recording link"
 						label="Copy link"
 						onPress={() => onCopyLink(cap)}
 						symbol="doc.on.doc"
@@ -323,9 +323,9 @@ export function CapSettingsSheet({
 
 				<SettingsSection title="Danger Zone">
 					<SettingsRow
-						accessibilityHint="Deletes this Cap"
+						accessibilityHint="Deletes this recording"
 						danger
-						label="Delete Cap"
+						label="Delete Oiaai"
 						onPress={() => onDelete(cap)}
 						symbol="trash"
 					/>

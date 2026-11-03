@@ -58,9 +58,9 @@ export default function DeleteAccountScreen() {
 					cancelButtonIndex: 1,
 					destructiveButtonIndex: 0,
 					message:
-						"This starts permanent deletion of your Cap account and associated data. This cannot be undone.",
+						"This starts permanent deletion of your Oiaai account and associated data. This cannot be undone.",
 					options: ["Request permanent deletion", "Cancel"],
-					title: "Delete your Cap account?",
+					title: "Delete your Oiaai account?",
 					tintColor: colors.blue11,
 					userInterfaceStyle: "light",
 				},
@@ -72,8 +72,8 @@ export default function DeleteAccountScreen() {
 		}
 
 		Alert.alert(
-			"Delete your Cap account?",
-			"This starts permanent deletion of your Cap account and associated data. This cannot be undone.",
+			"Delete your Oiaai account?",
+			"This starts permanent deletion of your Oiaai account and associated data. This cannot be undone.",
 			[
 				{ text: "Cancel", style: "cancel" },
 				{
@@ -124,10 +124,10 @@ export default function DeleteAccountScreen() {
 					<Text style={styles.cardTitle}>What will be deleted</Text>
 					<View style={styles.list}>
 						<Text style={styles.listItem}>
-							• Your Cap account, profile, and personal data
+							• Your Oiaai account, profile, and personal data
 						</Text>
 						<Text style={styles.listItem}>
-							• Caps, videos, comments, and other content associated with your
+							• recordings, videos, comments, and other content associated with your
 							account
 						</Text>
 						<Text style={styles.listItem}>
@@ -137,7 +137,7 @@ export default function DeleteAccountScreen() {
 					</View>
 					<Text style={styles.detail}>
 						You will be signed out immediately and cannot sign in while we
-						process deletion. Within 30 days, we cancel any direct Cap
+						process deletion. Within 30 days, we cancel any direct Oiaai
 						subscription and email you when deletion is complete.
 					</Text>
 				</GlassSurface>

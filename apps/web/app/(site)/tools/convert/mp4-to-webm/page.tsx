@@ -11,7 +11,7 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "MP4 to WebM Converter | Free Online Video Converter | Cap",
+	title: "MP4 to WebM Converter | Free Online Video Converter | Oiaai",
 	description:
 		"Convert MP4 videos to WebM format for better web compatibility directly in your browser. Free online tool with no uploads required.",
 	openGraph: {
@@ -91,10 +91,10 @@ export default function MP4ToWebMPage() {
 			},
 		],
 		cta: {
-			title: "Cap is the open source Loom alternative",
+			title: "Oiaai is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused.",
-			buttonText: "Download Cap Free",
+				"Record, edit, and share video messages with Oiaai. 100% open source and privacy focused.",
+			buttonText: "Download Oiaai Free",
 		},
 	};
 

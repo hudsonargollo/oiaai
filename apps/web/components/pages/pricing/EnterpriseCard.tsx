@@ -35,13 +35,13 @@ export const EnterpriseCard = ({ collapsed, onToggle }: PlanToggle) => {
 			name="Enterprise"
 			tag="Self-serve"
 			theme={theme}
-			summary="Cap Pro price + optional add-ons"
+			summary="Oiaai Pro price + optional add-ons"
 			collapsed={collapsed}
 			onToggle={onToggle}
-			blurb="Cap Pro for organizations with thousands of members, with optional extras when you need them."
+			blurb="Oiaai Pro for organizations with thousands of members, with optional extras when you need them."
 			lede={
 				<p className="text-[16px] leading-[1.4] tracking-[-0.01em] text-[#111111] lg:text-[17px]">
-					Everything in Cap Pro, at the Cap Pro price.
+					Everything in Oiaai Pro, at the Oiaai Pro price.
 					<span className="text-[rgba(17,17,17,0.55)]">
 						{" "}
 						Add SAML SSO for your whole organization, or a signed BAA, only if

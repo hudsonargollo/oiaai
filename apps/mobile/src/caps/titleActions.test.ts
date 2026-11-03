@@ -40,7 +40,7 @@ describe("showCapTitleActions", () => {
 		reactNativeMock.Platform.OS = "ios";
 	});
 
-	it("uses a native prompt to rename a Cap", async () => {
+	it("uses a native prompt to rename a recording", async () => {
 		const updated = { ...cap, title: "Roadmap review" };
 		const updateCapTitle = vi.fn(async () => updated);
 		const onUpdated = vi.fn();
@@ -52,7 +52,7 @@ describe("showCapTitleActions", () => {
 		});
 
 		expect(reactNativeMock.Alert.prompt).toHaveBeenCalledWith(
-			"Rename Cap",
+			"Rename Oiaai",
 			undefined,
 			expect.any(Array),
 			"plain-text",
@@ -71,7 +71,7 @@ describe("showCapTitleActions", () => {
 		expect(onUpdated).toHaveBeenCalledWith(updated);
 	});
 
-	it("rejects blank Cap titles before calling the API", () => {
+	it("rejects blank Oiaai titles before calling the API", () => {
 		const updateCapTitle = vi.fn();
 
 		showCapTitleActions({
@@ -87,7 +87,7 @@ describe("showCapTitleActions", () => {
 		expect(updateCapTitle).not.toHaveBeenCalled();
 		expect(reactNativeMock.Alert.alert).toHaveBeenCalledWith(
 			"Title required",
-			"Enter a title for this Cap.",
+			"Enter a title for this recording.",
 		);
 	});
 });

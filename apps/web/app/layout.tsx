@@ -44,30 +44,30 @@ const defaultFont = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://cap.so"),
-	title: "Cap — Beautiful screen recordings, owned by you.",
+	title: "Oiaai — Check this out.",
 	description:
-		"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 	openGraph: {
-		title: "Cap — Beautiful screen recordings, owned by you.",
+		title: "Oiaai — Check this out.",
 		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+			"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 		type: "website",
 		url: "https://cap.so",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: "/api/og",
 				width: 1200,
 				height: 630,
-				alt: "Cap — Beautiful screen recordings, owned by you.",
+				alt: "Oiaai — Check this out.",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Cap — Beautiful screen recordings, owned by you.",
+		title: "Oiaai — Check this out.",
 		description:
-			"Cap is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+			"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 		images: ["/api/og"],
 	},
 };

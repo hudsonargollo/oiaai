@@ -4,13 +4,13 @@ import { SeoPageTemplate } from "@/components/seo/SeoPageTemplate";
 import type { SeoPageContent } from "@/components/seo/types";
 
 export const employeeOnboardingContent: SeoPageContent = {
-	title: "Employee Onboarding Platform: Streamline New-Hire Training with Cap",
+	title: "Employee Onboarding Platform: Streamline New-Hire Training with Oiaai",
 	description:
-		"Looking for a powerful employee onboarding platform? Discover how Cap's open-source screen recorder and asynchronous features simplify new-hire training.",
+		"Looking for a powerful employee onboarding platform? Discover how Oiaai's open-source screen recorder and asynchronous features simplify new-hire training.",
 
-	featuresTitle: "Why Cap is the Ideal Employee Onboarding Platform",
+	featuresTitle: "Why Oiaai is the Ideal Employee Onboarding Platform",
 	featuresDescription:
-		"Cap provides everything HR and People Ops teams need to create an efficient, engaging onboarding experience",
+		"Oiaai provides everything HR and People Ops teams need to create an efficient, engaging onboarding experience",
 
 	features: [
 		{
@@ -26,7 +26,7 @@ export const employeeOnboardingContent: SeoPageContent = {
 		{
 			title: "Security & Privacy",
 			description:
-				"Ensure sensitive HR content and company information remains secure with Cap's open-source approach and custom S3 storage options for complete data ownership.",
+				"Ensure sensitive HR content and company information remains secure with Oiaai's open-source approach and custom S3 storage options for complete data ownership.",
 		},
 		{
 			title: "Time-Saving Onboarding",
@@ -36,7 +36,7 @@ export const employeeOnboardingContent: SeoPageContent = {
 		{
 			title: "Cost-Effective Solution",
 			description:
-				"Cap offers a powerful onboarding tool at a fraction of the cost of specialized HR platforms, with a free tier that's perfect for smaller organizations.",
+				"Oiaai offers a powerful onboarding tool at a fraction of the cost of specialized HR platforms, with a free tier that's perfect for smaller organizations.",
 		},
 		{
 			title: "Cross-Platform Accessibility",
@@ -48,7 +48,7 @@ export const employeeOnboardingContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Recording Modes for Different Onboarding Needs",
 		description:
-			"Cap adapts to your organization's onboarding requirements with flexible recording options",
+			"Oiaai adapts to your organization's onboarding requirements with flexible recording options",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -71,7 +71,7 @@ export const employeeOnboardingContent: SeoPageContent = {
 		],
 	},
 
-	useCasesTitle: "How HR Teams Use Cap for Onboarding",
+	useCasesTitle: "How HR Teams Use Oiaai for Onboarding",
 	useCasesDescription:
 		"Real solutions for common employee onboarding challenges",
 
@@ -101,38 +101,38 @@ export const employeeOnboardingContent: SeoPageContent = {
 	faqsTitle: "Employee Onboarding Platform FAQs",
 	faqs: [
 		{
-			question: "Is Cap secure enough for confidential HR data?",
+			question: "Is Oiaai secure enough for confidential HR data?",
 			answer:
-				"Yes, Cap prioritizes security with its open-source approach that provides complete transparency about data handling. You can connect your own S3 storage and custom domain for complete data ownership, ensuring sensitive HR information and company procedures remain under your control.",
+				"Yes, Oiaai prioritizes security with its open-source approach that provides complete transparency about data handling. You can connect your own S3 storage and custom domain for complete data ownership, ensuring sensitive HR information and company procedures remain under your control.",
 		},
 		{
 			question: "How do we organize multiple training sessions for new hires?",
 			answer:
-				"Cap makes organizing training content simple with customizable folders and collections. HR teams can create dedicated onboarding libraries with categorized videos for different departments or roles, making it easy for new hires to find the right training materials when they need them.",
+				"Oiaai makes organizing training content simple with customizable folders and collections. HR teams can create dedicated onboarding libraries with categorized videos for different departments or roles, making it easy for new hires to find the right training materials when they need them.",
 		},
 		{
 			question: "Can new hires comment in real-time on training videos?",
 			answer:
-				"Yes, Cap's built-in threaded comment system allows new employees to ask questions or provide feedback directly on specific timestamps of training videos. HR teams and managers receive notifications and can respond asynchronously, creating a seamless Q&A experience without scheduling additional meetings.",
+				"Yes, Oiaai's built-in threaded comment system allows new employees to ask questions or provide feedback directly on specific timestamps of training videos. HR teams and managers receive notifications and can respond asynchronously, creating a seamless Q&A experience without scheduling additional meetings.",
 		},
 		{
 			question:
-				"Does Cap integrate with Slack or Teams for onboarding updates?",
+				"Does Oiaai integrate with Slack or Teams for onboarding updates?",
 			answer:
-				"Cap provides easy-to-share links that work seamlessly with all major communication platforms including Slack, Microsoft Teams, and HR tools. Simply copy the link to your onboarding video and paste it into your company's preferred communication channels for immediate access.",
+				"Oiaai provides easy-to-share links that work seamlessly with all major communication platforms including Slack, Microsoft Teams, and HR tools. Simply copy the link to your onboarding video and paste it into your company's preferred communication channels for immediate access.",
 		},
 		{
-			question: "How can Cap reduce our onboarding time and costs?",
+			question: "How can Oiaai reduce our onboarding time and costs?",
 			answer:
-				"Cap typically reduces onboarding time by 40-60% by eliminating repetitive live training sessions and creating reusable video resources. HR teams save 5-10 hours per new hire, while also improving training consistency and reducing the time managers spend answering the same questions repeatedly.",
+				"Oiaai typically reduces onboarding time by 40-60% by eliminating repetitive live training sessions and creating reusable video resources. HR teams save 5-10 hours per new hire, while also improving training consistency and reducing the time managers spend answering the same questions repeatedly.",
 		},
 	],
 
 	comparisonTable: {
-		title: "Cap vs. Traditional Employee Onboarding Platforms",
+		title: "Oiaai vs. Traditional Employee Onboarding Platforms",
 		headers: [
 			"Feature",
-			"Cap",
+			"Oiaai",
 			"Traditional HR Platforms",
 			"Basic Screen Recorders",
 		],
@@ -183,9 +183,9 @@ export const employeeOnboardingContent: SeoPageContent = {
 	},
 
 	migrationGuide: {
-		title: "How to Implement Cap for Employee Onboarding",
+		title: "How to Implement Oiaai for Employee Onboarding",
 		steps: [
-			"Download Cap for your HR team (available on Mac and Windows)",
+			"Download Oiaai for your HR team (available on Mac and Windows)",
 			"Set up shared S3 storage (optional) for secure onboarding content",
 			"Create an onboarding content structure with key training categories",
 			"Record essential system walkthroughs and company introductions",
@@ -197,13 +197,13 @@ export const employeeOnboardingContent: SeoPageContent = {
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Cap screen recording demo",
+			title: "Oiaai screen recording demo",
 		},
 	},
 
 	cta: {
 		title: "Ready to Transform Your Employee Onboarding Experience?",
-		buttonText: "Download Cap Free",
+		buttonText: "Download Oiaai Free",
 	},
 };
 

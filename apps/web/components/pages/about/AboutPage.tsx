@@ -58,19 +58,19 @@ const Hero = ({ stars }: { stars: string }) => (
 		<div className="mx-auto max-w-[1200px]">
 			<div className="relative mx-auto flex max-w-[860px] flex-col items-center text-center">
 				<h1 className={`${H_HERO} text-balance text-[clamp(42px,6.4vw,84px)]`}>
-					Why we started Cap
+					Why we started Oiaai
 				</h1>
 				<p
 					className={`${BODY_TEXT} mt-8 max-w-[680px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[19px]`}
 				>
-					Cap started in 2023 as the open source alternative to Loom. It has
+					Oiaai started in 2023 as the open source alternative to Loom. It has
 					grown into a screen recording and sharing platform built on three
 					things we refuse to compromise on: privacy, transparency, and
 					community.
 				</p>
 				<div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
 					<Link href="/download" className={BTN_PRIMARY}>
-						Download Cap
+						Download Oiaai
 					</Link>
 					<GitHubButton stars={stars} className={BTN_SECONDARY} />
 				</div>
@@ -93,7 +93,7 @@ const Hero = ({ stars }: { stars: string }) => (
 						playsInline
 						preload="metadata"
 						poster="/videos/about/laptop-open-poster.jpg"
-						aria-label="Opening a laptop and launching Cap from the dock"
+						aria-label="Opening a laptop and launching Oiaai from the dock"
 						className="aspect-video w-full object-cover"
 					>
 						<source src="/videos/about/laptop-open.webm" type="video/webm" />
@@ -365,13 +365,13 @@ const FinalCta = ({ stars }: { stars: string }) => (
 			<p
 				className={`${BODY_TEXT} mt-7 max-w-[560px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[18px]`}
 			>
-				We are building Cap because the tools people use every day should be
-				open, honest, and designed to last. If that resonates, try Cap,
+				We are building Oiaai because the tools people use every day should be
+				open, honest, and designed to last. If that resonates, try Oiaai,
 				contribute to the project, or follow along as we build in public.
 			</p>
 			<div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
 				<Link href="/download" className={BTN_PRIMARY}>
-					Download Cap
+					Download Oiaai
 				</Link>
 				<GitHubButton stars={stars} className={BTN_SECONDARY} />
 			</div>
@@ -400,7 +400,7 @@ const FinalCta = ({ stars }: { stars: string }) => (
 				))}
 			</ul>
 			<p className={`${BODY_TEXT} mt-12 text-[16px] text-[rgba(17,17,17,0.5)]`}>
-				The Cap Team
+				The Oiaai Team
 			</p>
 		</div>
 	</section>

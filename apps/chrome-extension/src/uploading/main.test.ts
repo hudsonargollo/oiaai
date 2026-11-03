@@ -154,7 +154,7 @@ it("still updates and completes the matching recording", () => {
 		updatedAt: 0,
 	});
 	expect(document.getElementById("upload-title")?.textContent).toBe(
-		"Uploading your Cap",
+		"Uploading your recording",
 	);
 	broadcast({
 		phase: "completed",
@@ -162,7 +162,7 @@ it("still updates and completes the matching recording", () => {
 		shareUrl: "https://cap.test/s/video-a",
 	});
 	expect(document.getElementById("upload-title")?.textContent).toBe(
-		"Your Cap is ready",
+		"Your Oiaai is ready",
 	);
 	expect(document.getElementById("share-link")?.getAttribute("href")).toBe(
 		"https://cap.test/s/video-a",
@@ -186,6 +186,6 @@ it("ignores a poll for B while the page is tracking A", async () => {
 	};
 	await vi.advanceTimersByTimeAsync(2000);
 	expect(document.getElementById("upload-title")?.textContent).toBe(
-		"Uploading your Cap",
+		"Uploading your recording",
 	);
 });

@@ -174,7 +174,7 @@ describe("AnalyticsScreen", () => {
 		});
 	});
 
-	it("loads native Cap analytics on demand", async () => {
+	it("loads native Oiaai analytics on demand", async () => {
 		const renderer = await renderComponent(
 			React.createElement(AnalyticsScreen),
 		);

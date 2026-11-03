@@ -28,7 +28,7 @@ export function LoomMigrationRequestEmail({
 				<Container className="mx-auto my-10 max-w-[500px] px-6">
 					<Heading>New Loom migration request</Heading>
 					<Text>
-						{organizationName} requested a Cap Pro concierge migration.
+						{organizationName} requested an Oiaai Pro concierge migration.
 					</Text>
 					<Text>Requested by: {requesterEmail}</Text>
 					{workspaceName && <Text>Loom workspace: {workspaceName}</Text>}

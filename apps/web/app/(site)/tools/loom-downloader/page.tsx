@@ -13,9 +13,9 @@ const ogImage = ogImageUrl({
 
 export const metadata: Metadata = {
 	title:
-		"Loom Video Downloader — Download Loom Videos Free + Migrate to Cap | Cap",
+		"Loom Video Downloader — Download Loom Videos Free + Migrate to Oiaai | Oiaai",
 	description:
-		"Download any Loom video for free with Cap's online Loom video downloader. Then migrate your entire Loom library to Cap — the open source Loom alternative — with 20% off using code MIGRATE20.",
+		"Download any Loom video for free with Oiaai's online Loom video downloader. Then migrate your entire Loom library to Oiaai — the open source Loom alternative — with 20% off using code MIGRATE20.",
 	keywords: [
 		"loom video downloader",
 		"download loom video",
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
 		"import loom videos",
 		"loom video importer",
 		"migrate from loom",
-		"loom to cap migration",
+		"loom to Oiaai migration",
 		"loom alternative",
 		"switch from loom",
 	],
 	openGraph: {
-		title: "Loom Video Downloader — Free Download + Migrate to Cap",
+		title: "Loom Video Downloader — Free Download + Migrate to Oiaai",
 		description:
-			"Download any Loom video for free. Then migrate your whole Loom library to Cap and save 20% with MIGRATE20. Built by Cap, the open source Loom alternative.",
+			"Download any Loom video for free. Then migrate your whole Loom library to Oiaai and save 20% with MIGRATE20. Built by Oiaai, the open source Loom alternative.",
 		url: "https://cap.so/tools/loom-downloader",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		type: "website",
 		images: [
 			{
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Loom Video Downloader — Free Download + Migrate to Cap",
+		title: "Loom Video Downloader — Free Download + Migrate to Oiaai",
 		description:
-			"Download any Loom video for free — then migrate your whole library to Cap with 20% off using MIGRATE20.",
+			"Download any Loom video for free — then migrate your whole library to Oiaai with 20% off using MIGRATE20.",
 		images: [ogImage],
 	},
 	alternates: {
@@ -65,10 +65,10 @@ export const metadata: Metadata = {
 const pageContent: ToolPageContent = {
 	title: "Loom Video Downloader",
 	description:
-		"Download any public Loom video as an MP4 — or skip the one-by-one downloads and migrate your whole Loom library to Cap with 20% off using code MIGRATE20.",
-	featuresTitle: "Download Loom videos, then move your whole library to Cap",
+		"Download any public Loom video as an MP4 — or skip the one-by-one downloads and migrate your whole Loom library to Oiaai with 20% off using code MIGRATE20.",
+	featuresTitle: "Download Loom videos, then move your whole library to Oiaai",
 	featuresDescription:
-		"Cap's Loom downloader is free, fast, and requires zero setup. When you're ready to leave Loom for good, Cap Pro's built-in <a href=\"/migrate-from-loom\">Loom video importer</a> moves your entire workspace in one click.",
+		"Oiaai's Loom downloader is free, fast, and requires zero setup. When you're ready to leave Loom for good, Oiaai Pro's built-in <a href=\"/migrate-from-loom\">Loom video importer</a> moves your entire workspace in one click.",
 	features: [
 		{
 			title: "Instant Downloads",
@@ -83,21 +83,21 @@ const pageContent: ToolPageContent = {
 		{
 			title: "100% Free to Download",
 			description:
-				"Completely free with no limits on downloads. Save as many Loom videos as you need — then switch to Cap to stop paying Loom's $18/user/month.",
+				"Completely free with no limits on downloads. Save as many Loom videos as you need — then switch to Oiaai to stop paying Loom's $18/user/month.",
 		},
 		{
 			title: "Import Your Whole Loom Library",
 			description:
-				'Cap Pro includes a built-in <a href="/loom-alternative">Loom video importer</a> that transfers every Loom video you\'ve recorded — titles, transcripts, and chapters included — without manual re-uploads.',
+				'Oiaai Pro includes a built-in <a href="/loom-alternative">Loom video importer</a> that transfers every Loom video you\'ve recorded — titles, transcripts, and chapters included — without manual re-uploads.',
 		},
 		{
 			title: "Half the Price of Loom",
-			description: `Cap Pro starts from just $${PRICING.pro.annualPerMonth}/user/month vs Loom's $18/user/month. Use code <strong>MIGRATE20</strong> at checkout for an extra 20% off your first year.`,
+			description: `Oiaai Pro starts from just $${PRICING.pro.annualPerMonth}/user/month vs Loom's $18/user/month. Use code <strong>MIGRATE20</strong> at checkout for an extra 20% off your first year.`,
 		},
 		{
 			title: "Open Source & Privacy-First",
 			description:
-				'Cap is the <a href="/">open source Loom alternative</a>. Bring your own S3 bucket, connect your own domain, and own 100% of your video data.',
+				'Oiaai is the <a href="/">open source Loom alternative</a>. Bring your own S3 bucket, connect your own domain, and own 100% of your video data.',
 		},
 	],
 	faqs: [
@@ -114,16 +114,16 @@ const pageContent: ToolPageContent = {
 		{
 			question: "What is MIGRATE20 and how do I use it?",
 			answer:
-				'<strong>MIGRATE20</strong> is a 20% discount code for new Cap Pro subscribers who are switching from Loom. Just apply it at <a href="/pricing">checkout on the pricing page</a> to take 20% off your first year of Cap Pro — including the built-in Loom video importer.',
+				'<strong>MIGRATE20</strong> is a 20% discount code for new Oiaai Pro subscribers who are switching from Loom. Just apply it at <a href="/pricing">checkout on the pricing page</a> to take 20% off your first year of Oiaai Pro — including the built-in Loom video importer.',
 		},
 		{
-			question: "Can I import all my Loom videos into Cap at once?",
+			question: "Can I import all my Loom videos into Oiaai at once?",
 			answer:
-				'Yes. Cap Pro\'s built-in <a href="/loom-alternative">Loom video importer</a> connects to your Loom workspace and transfers every video in one go — titles, transcripts, chapters, and all — without you having to download and re-upload anything manually.',
+				'Yes. Oiaai Pro\'s built-in <a href="/loom-alternative">Loom video importer</a> connects to your Loom workspace and transfers every video in one go — titles, transcripts, chapters, and all — without you having to download and re-upload anything manually.',
 		},
 		{
-			question: "Why migrate from Loom to Cap?",
-			answer: `Cap is the open source Loom alternative built for teams that care about data ownership and price. You get unlimited cloud storage, instant shareable links, AI captions, custom domains, and your own S3 bucket — all from $${PRICING.pro.annualPerMonth}/user/month vs Loom's $18/user/month. Use MIGRATE20 for an additional 20% off.`,
+			question: "Why migrate from Loom to Oiaai?",
+			answer: `Oiaai is the open source Loom alternative built for teams that care about data ownership and price. You get unlimited cloud storage, instant shareable links, AI captions, custom domains, and your own S3 bucket — all from $${PRICING.pro.annualPerMonth}/user/month vs Loom's $18/user/month. Use MIGRATE20 for an additional 20% off.`,
 		},
 		{
 			question: "Can I download private Loom videos?",
@@ -138,22 +138,22 @@ const pageContent: ToolPageContent = {
 		{
 			question: "Do you store my downloaded videos?",
 			answer:
-				"No. The free downloader resolves public Loom videos in your browser and saves the MP4 to your device. Cap Pro's Loom importer uses Cap's server-side import pipeline when you choose to migrate videos into your Cap workspace.",
+				"No. The free downloader resolves public Loom videos in your browser and saves the MP4 to your device. Oiaai Pro's Loom importer uses Oiaai's server-side import pipeline when you choose to migrate videos into your Oiaai workspace.",
 		},
 		{
-			question: "What is Cap?",
+			question: "What is Oiaai?",
 			answer:
-				'Cap is the <a href="/">open source alternative to Loom</a>. It\'s a privacy-focused screen recorder that lets you record, edit, and share videos instantly — with unlimited storage, custom domains, and a built-in Loom video importer. <a href="/download">Download Cap for free</a>.',
+				'Oiaai is the <a href="/">open source alternative to Loom</a>. It\'s a privacy-focused screen recorder that lets you record, edit, and share videos instantly — with unlimited storage, custom domains, and a built-in Loom video importer. <a href="/download">Download Oiaai for free</a>.',
 		},
 	],
 	cta: {
 		title: "Ready to leave Loom for good?",
 		description:
-			"Skip the one-by-one downloads. Cap Pro imports your entire Loom library in one click — and costs half what Loom charges. Use MIGRATE20 at checkout for an extra 20% off your first year.",
-		buttonText: "Migrate to Cap Pro — save 20%",
+			"Skip the one-by-one downloads. Oiaai Pro imports your entire Loom library in one click — and costs half what Loom charges. Use MIGRATE20 at checkout for an extra 20% off your first year.",
+		buttonText: "Migrate to Oiaai Pro — save 20%",
 		buttonHref:
 			"/pricing?promo=MIGRATE20&utm_source=loom-downloader&utm_campaign=migrate20",
-		secondaryButtonText: "Download Cap free",
+		secondaryButtonText: "Download Oiaai free",
 		secondaryButtonHref: "/download",
 	},
 };

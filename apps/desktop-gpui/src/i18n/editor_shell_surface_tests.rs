@@ -100,7 +100,7 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         (tr::editor::canvas::text_item(), "Text"),
         (tr::editor::clips::append_error_title(), "Recording Error"),
         (tr::editor::clips::back(), "Back to editor"),
-        (tr::editor::clips::cap_filter(), "Cap Recording"),
+        (tr::editor::clips::cap_filter(), "Oiaai Recording"),
         (
             tr::editor::clips::empty_description(),
             "Record or import a clip and it will show up here.",
@@ -125,19 +125,19 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::clips::error::not_a_project(),
-            "Select a Cap project folder",
+            "Select a Oiaai project folder",
         ),
         (
             tr::editor::clips::error::source_empty(),
-            "Source Cap project has no recording segments",
+            "Source Oiaai project has no recording segments",
         ),
         (
             tr::editor::clips::error::source_recording(),
-            "Source Cap project is still recording",
+            "Source Oiaai project is still recording",
         ),
         (
             tr::editor::clips::error::source_unimportable(),
-            "Source Cap project has no importable recording segments",
+            "Source Oiaai project has no importable recording segments",
         ),
         (
             tr::editor::clips::error::unfinished_target(),
@@ -208,7 +208,7 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::export::done::uploaded(),
-            "Your Cap has been uploaded successfully",
+            "Your Oiaai has been uploaded successfully",
         ),
         (tr::editor::export::estimate::under_megabyte(), "< 1 MB"),
         (tr::editor::export::estimate::under_second(), "< 1s"),
@@ -477,7 +477,7 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::tabs::captions::highlight_note(),
-            "This is the first version of captions in Cap. Active word highlighting may be inaccurate in some situations. We're working on a fix for this and it will be released in upcoming versions.",
+            "This is the first version of captions in Oiaai. Active word highlighting may be inaccurate in some situations. We're working on a fix for this and it will be released in upcoming versions.",
         ),
         (
             tr::editor::tabs::captions::highlight_style(),
@@ -493,7 +493,7 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::tabs::captions::keep_open(),
-            "Keep Cap open while the model downloads. Editor reloads will reconnect automatically.",
+            "Keep Oiaai open while the model downloads. Editor reloads will reconnect automatically.",
         ),
         (tr::editor::tabs::captions::language::ar(), "Arabic"),
         (tr::editor::tabs::captions::language::auto(), "Auto Detect"),
@@ -719,7 +719,7 @@ fn editor_shell_surfaces_match_the_literals_they_replaced() {
         (tr::editor::tabs::position::top_right(), "Top Right"),
         (
             tr::editor::tabs::sync::auto_description(),
-            "Cap calculated these offsets automatically to keep audio in sync with the video. Adjust them if anything still sounds off.",
+            "Oiaai calculated these offsets automatically to keep audio in sync with the video. Adjust them if anything still sounds off.",
         ),
         (tr::editor::tabs::sync::auto_synced(), "Auto-synced"),
         (tr::editor::tabs::sync::camera(), "Camera Offset"),
@@ -1231,7 +1231,7 @@ fn derived_track_copy_matches_the_sentences_it_replaced() {
 fn editor_shell_messages_format_like_the_code_they_replaced() {
     let error = "disk full".to_string();
     let path = std::path::Path::new("/tmp/Demo.cap");
-    let message = "Source Cap project is still recording".to_string();
+    let message = "Source Oiaai project is still recording".to_string();
 
     for seconds in [0.25, 0.5, 1.0] {
         assert_eq!(
@@ -1284,7 +1284,7 @@ fn editor_shell_messages_format_like_the_code_they_replaced() {
     );
     assert_eq!(
         tr::editor::clips::error::source_failed(&error),
-        format!("Source Cap project failed: {error}")
+        format!("Source Oiaai project failed: {error}")
     );
     assert_eq!(
         tr::editor::clips::error::unsupported_video(path.display()),

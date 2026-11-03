@@ -170,7 +170,7 @@ mod tests {
     fn requests_round_trip_through_the_command_line() {
         let request = Request {
             title: "Run diagnostic?".into(),
-            message: "Cap will \"take over\" your screen\nfor a while.".into(),
+            message: "Oiaai will \"take over\" your screen\nfor a while.".into(),
             accept: "Run Diagnostic".into(),
             cancel: Some("Cancel".into()),
         };

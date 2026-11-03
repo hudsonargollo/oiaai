@@ -22,9 +22,9 @@ type BackLink = { href: string; label: string };
 const PRICING_BACK: BackLink = { href: "/pricing", label: "Pricing" };
 
 const PURCHASE_COPY = {
-	title: "Get Cap Pro",
+	title: "Get Oiaai Pro",
 	subtitle:
-		"Unlimited cloud sharing, Cap AI and team workspaces. Cancel anytime, and your recordings stay yours.",
+		"Unlimited cloud sharing, Oiaai AI and team workspaces. Cancel anytime, and your recordings stay yours.",
 };
 
 export const purchaseCopy = (onboarding: boolean) => ({

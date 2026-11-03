@@ -12,24 +12,24 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Cap",
+	title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Oiaai",
 	description:
-		"Record your screen in HD on Mac or Windows with Cap. Capture audio, webcam overlay, and share with a link instantly. Free, open-source, no watermarks, no time limits in Studio Mode.",
+		"Record your screen in HD on Mac or Windows with Oiaai. Capture audio, webcam overlay, and share with a link instantly. Free, open-source, no watermarks, no time limits in Studio Mode.",
 	alternates: {
 		canonical: "https://cap.so/record-screen",
 	},
 	openGraph: {
-		title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Cap",
+		title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Oiaai",
 		description:
 			"Record your screen in HD on Mac or Windows. Capture audio and webcam, then share with a link instantly. Free, open-source, no watermarks.",
 		url: "https://cap.so/record-screen",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: Record Your Screen for Free",
+				alt: "Oiaai: Record Your Screen for Free",
 			},
 		],
 		locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Cap",
+		title: "Record Screen — Free HD Screen Recorder with Instant Sharing | Oiaai",
 		description:
 			"Record your screen in HD on Mac or Windows. Capture audio and webcam, then share with a link instantly. Free, open-source, no watermarks.",
 		images: [ogImage],

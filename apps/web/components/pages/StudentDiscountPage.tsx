@@ -85,7 +85,7 @@ export const StudentDiscountPage = () => {
 						variants={fadeIn}
 						custom={2}
 					>
-						Level up your presentations and portfolio with 30% off Cap's premium
+						Level up your presentations and portfolio with 30% off Oiaai's premium
 						features. Perfect for students, researchers, and future creators.
 					</motion.p>
 
@@ -190,7 +190,7 @@ export const StudentDiscountPage = () => {
 							size="lg"
 							className="flex justify-center items-center font-medium"
 						>
-							Download Cap Free
+							Download Oiaai Free
 						</Button>
 					</motion.div>
 				</motion.div>
@@ -221,7 +221,7 @@ export const StudentDiscountPage = () => {
 						</h2>
 						<p className="text-lg text-gray-600 max-w-2xl mx-auto">
 							Whether you're presenting, building your portfolio, or
-							collaborating with classmates, Cap helps you create professional
+							collaborating with classmates, Oiaai helps you create professional
 							content that stands out.
 						</p>
 					</div>
@@ -297,7 +297,7 @@ export const StudentDiscountPage = () => {
 								Ready to elevate your student projects?
 							</h2>
 							<p className="text-lg text-gray-10">
-								Join thousands of students already using Cap to create amazing
+								Join thousands of students already using Oiaai to create amazing
 								content
 							</p>
 						</div>
@@ -316,7 +316,7 @@ export const StudentDiscountPage = () => {
 								size="lg"
 								className="font-medium transform hover:-translate-y-[2px] transition-all duration-300"
 							>
-								Try Cap Free First
+								Try Oiaai Free First
 							</Button>
 						</div>
 					</div>

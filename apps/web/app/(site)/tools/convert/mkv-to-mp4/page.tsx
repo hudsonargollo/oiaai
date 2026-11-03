@@ -11,7 +11,7 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "MKV to MP4 Converter | Free Online Video Converter | Cap",
+	title: "MKV to MP4 Converter | Free Online Video Converter | Oiaai",
 	description:
 		"Convert MKV videos to widely supported MP4 format directly in your browser. Free online converter with no uploads needed for maximum privacy.",
 	openGraph: {
@@ -91,10 +91,10 @@ export default function MKVToMP4Page() {
 			},
 		],
 		cta: {
-			title: "Cap is the open source Loom alternative",
+			title: "Oiaai is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Cap. 100% open source and privacy focused.",
-			buttonText: "Download Cap Free",
+				"Record, edit, and share video messages with Oiaai. 100% open source and privacy focused.",
+			buttonText: "Download Oiaai Free",
 		},
 	};
 

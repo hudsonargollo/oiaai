@@ -140,14 +140,14 @@ export const Caps = ({
 			} else {
 				return yield* Effect.fail(
 					new Error(
-						`Failed to delete ${errorCount} cap${errorCount === 1 ? "" : "s"}`,
+						`Failed to delete ${errorCount} recording${errorCount === 1 ? "" : "s"}`,
 					),
 				);
 			}
 		}),
 		onMutate: (ids: Video.VideoId[]) => {
 			toast.loading(
-				`Deleting ${ids.length} cap${ids.length === 1 ? "" : "s"}...`,
+				`Deleting ${ids.length} recording${ids.length === 1 ? "" : "s"}...`,
 			);
 		},
 		onSuccess: (data: { success: number; error?: number }) => {
@@ -155,15 +155,15 @@ export const Caps = ({
 			router.refresh();
 			if (data.error) {
 				toast.success(
-					`Successfully deleted ${data.success} cap${
+					`Successfully deleted ${data.success} recording${
 						data.success === 1 ? "" : "s"
-					}, but failed to delete ${data.error} cap${
+					}, but failed to delete ${data.error} recording${
 						data.error === 1 ? "" : "s"
 					}`,
 				);
 			} else {
 				toast.success(
-					`Successfully deleted ${data.success} cap${
+					`Successfully deleted ${data.success} recording${
 						data.success === 1 ? "" : "s"
 					}`,
 				);
@@ -173,7 +173,7 @@ export const Caps = ({
 			const message =
 				error instanceof Error
 					? error.message
-					: "An error occurred while deleting caps";
+					: "An error occurred while deleting recordings";
 			toast.error(message);
 		},
 	});
@@ -183,10 +183,10 @@ export const Caps = ({
 			yield* rpc.VideoDelete(id);
 		}),
 		onSuccess: () => {
-			toast.success("Cap deleted successfully");
+			toast.success("Oiaai deleted successfully");
 			router.refresh();
 		},
-		onError: (_error: unknown) => toast.error("Failed to delete cap"),
+		onError: (_error: unknown) => toast.error("Failed to delete recording"),
 	});
 
 	useEffect(() => {
@@ -282,7 +282,7 @@ export const Caps = ({
 				scope="personal"
 				folders={folders}
 				canMove
-				moveRootLabel="My Caps"
+				moveRootLabel="My Library"
 			/>
 			{visibleVideos.length > 0 && (
 				<>
@@ -318,7 +318,7 @@ export const Caps = ({
 										onSelectToggle={() => handleCapSelection(video.id)}
 										canMove
 										moveLocation={moveLocation}
-										moveRootLabel="My Caps"
+										moveRootLabel="My Library"
 									/>
 								);
 							})}
@@ -337,7 +337,7 @@ export const Caps = ({
 				deleteSelectedCaps={() => deleteCaps(selectedCaps)}
 				isDeleting={isDeletingCaps || isDeletingCap}
 				moveLocation={moveLocation}
-				moveRootLabel="My Caps"
+				moveRootLabel="My Library"
 			/>
 			{isDraggingCap && (
 				<div className="fixed inset-0 z-50 pointer-events-none">

@@ -1882,7 +1882,7 @@ impl MainWindow {
         };
         if !recover
             && !crate::platform::confirm_dialog(
-                "Cap",
+                "Oiaai",
                 tr::main::delete_recording_confirm(),
                 tr::common::yes(),
                 tr::common::no(),
@@ -5173,7 +5173,7 @@ impl MainWindow {
     ) {
         cx.spawn_in(window, async move |_, cx| {
             if !crate::platform::confirm_dialog(
-                "Cap",
+                "Oiaai",
                 tr::main::delete_recording_confirm(),
                 tr::common::yes(),
                 tr::common::no(),
@@ -5205,7 +5205,7 @@ impl MainWindow {
     ) {
         cx.spawn_in(window, async move |this, cx| {
             if !crate::platform::confirm_dialog(
-                "Cap",
+                "Oiaai",
                 tr::main::delete_screenshot_confirm(),
                 tr::common::yes(),
                 tr::common::no(),

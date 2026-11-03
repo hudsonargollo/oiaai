@@ -110,7 +110,7 @@ const cap: MobileCapSummary = {
 };
 
 describe("CapSettingsSheet", () => {
-	it("renders native settings rows for Cap actions", async () => {
+	it("renders native settings rows for Oiaai actions", async () => {
 		const renderer = await renderComponent(
 			<CapSettingsSheet
 				cap={cap}
@@ -139,7 +139,7 @@ describe("CapSettingsSheet", () => {
 				"Copy link",
 				"Share",
 				"Save video",
-				"Delete Cap",
+				"Delete Oiaai",
 			]),
 		);
 		expect(
@@ -150,16 +150,16 @@ describe("CapSettingsSheet", () => {
 				.allowSwipeDismissal,
 		).toBe(true);
 		const closeButton = renderer.root.findByProps({
-			accessibilityLabel: "Close Cap settings",
+			accessibilityLabel: "Close Oiaai settings",
 		});
-		expect(closeButton.props.accessibilityHint).toBe("Dismisses Cap settings");
+		expect(closeButton.props.accessibilityHint).toBe("Dismisses Oiaai settings");
 		expect(closeButton.props.hitSlop).toBe(8);
 		expect(
-			renderer.root.findByProps({ accessibilityHint: "Renames this Cap" }),
+			renderer.root.findByProps({ accessibilityHint: "Renames this recording" }),
 		).toBeTruthy();
 		expect(
 			renderer.root.findByProps({
-				accessibilityHint: "Copies this Cap link",
+				accessibilityHint: "Copies this recording link",
 			}),
 		).toBeTruthy();
 		expect(
@@ -168,7 +168,7 @@ describe("CapSettingsSheet", () => {
 			}),
 		).toBeTruthy();
 		expect(
-			renderer.root.findByProps({ accessibilityHint: "Deletes this Cap" }),
+			renderer.root.findByProps({ accessibilityHint: "Deletes this recording" }),
 		).toBeTruthy();
 	});
 

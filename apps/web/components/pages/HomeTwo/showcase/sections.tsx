@@ -97,22 +97,22 @@ export const InstantSection = () => (
 				{
 					lead: "Password protected links.",
 					icon: <Lock />,
-					body: "Lock a Cap behind a password, keep it to your organization, or make it public.",
+					body: "Lock a recording behind a password, keep it to your organization, or make it public.",
 				},
 				{
 					lead: "Viewer analytics.",
 					icon: <ChartNoAxesColumn />,
-					body: "Views, comments, and reactions on every Cap, broken down by country, city, browser, and device.",
+					body: "Views, comments, and reactions on every recording, broken down by country, city, browser, and device.",
 				},
 				{
 					lead: "Custom domains.",
 					icon: <Globe />,
-					body: "Share from cap.yourcompany.com instead of Cap.so on Cap Pro.",
+					body: "Share from cap.yourcompany.com instead of cap.so on Oiaai Pro.",
 				},
 				{
 					lead: "Embed anywhere.",
 					icon: <Code />,
-					body: "Drop a Cap into docs, a help center, or your site with an embed code.",
+					body: "Drop a recording into docs, a help center, or your site with an embed code.",
 				},
 			]}
 		/>
@@ -162,7 +162,7 @@ export const StudioSection = () => (
 				{
 					lead: "4K export at 60fps.",
 					icon: <Download />,
-					body: "Export an MP4 or a GIF, or share it as a Cap.so link like everything else.",
+					body: "Export an MP4 or a GIF, or share it as a cap.so link like everything else.",
 				},
 				{
 					lead: "Camera background blur.",
@@ -211,7 +211,7 @@ export const ScreenshotSection = () => (
 			{
 				lead: "Copy to clipboard.",
 				icon: <ClipboardCheck />,
-				body: "Your screenshot is copied the moment you let go, or saved as a PNG or shared as a Cap.so link.",
+				body: "Your screenshot is copied the moment you let go, or saved as a PNG or shared as a cap.so link.",
 			},
 			{
 				lead: "Any window or area.",
@@ -234,7 +234,7 @@ export const AiSection = () => (
 	<Section anchor="ai" tone={TONES.ai}>
 		<SectionHead
 			title="Every recording, understood"
-			badge={<Badge icon={<ScrollText />}>Cap AI</Badge>}
+			badge={<Badge icon={<ScrollText />}>Oiaai AI</Badge>}
 		>
 			Titles, summaries, chapters, and a transcript arrive with every recording,
 			right on the share page, so{" "}
@@ -248,7 +248,7 @@ export const AiSection = () => (
 				{
 					lead: "No prompts needed.",
 					icon: <Zap />,
-					body: "AI runs on every Cap automatically. There is nothing to write and no button to press.",
+					body: "AI runs on every recording automatically. There is nothing to write and no button to press.",
 				},
 				{
 					lead: "Edit the transcript and summary.",
@@ -268,7 +268,7 @@ export const AiSection = () => (
 				{
 					lead: "Readable by your AI agents.",
 					icon: <Bot />,
-					body: "Transcripts and summaries come back as data from the Cap CLI and MCP server.",
+					body: "Transcripts and summaries come back as data from the Oiaai CLI and MCP server.",
 				},
 				{
 					lead: "Works with imported Loom videos.",
@@ -286,8 +286,8 @@ export const OwnershipSection = () => (
 			title="Your recordings. Actually yours."
 			badge={<Badge icon={<HardDrive />}>Storage you own</Badge>}
 		>
-			Cap is open source, and every recording goes{" "}
-			<Em>exactly where you say</Em>. Use Cap Cloud, point it at your own bucket
+			Oiaai is open source, and every recording goes{" "}
+			<Em>exactly where you say</Em>. Use Oiaai Cloud, point it at your own bucket
 			or Drive, or self host the whole thing.
 		</SectionHead>
 		<Stage
@@ -308,7 +308,7 @@ export const OwnershipSection = () => (
 				{
 					lead: "SOC 2 Type II and ISO 27001.",
 					icon: <ShieldCheck />,
-					body: "Independently audited controls behind Cap Cloud.",
+					body: "Independently audited controls behind Oiaai Cloud.",
 				},
 				{
 					lead: "HIPAA compliant.",
@@ -328,10 +328,10 @@ export const OwnershipSection = () => (
 export const AgentsSection = () => (
 	<Section anchor="agents" tone={TONES.agents}>
 		<SectionHead
-			title="Your agent can record, share, and read Caps"
-			badge={<Badge icon={<SquareTerminal />}>Cap for Agents</Badge>}
+			title="Your agent can record, share, and read recordings"
+			badge={<Badge icon={<SquareTerminal />}>Oiaai for Agents</Badge>}
 		>
-			Cap ships a CLI and a local MCP server, so{" "}
+			Oiaai ships a CLI and a local MCP server, so{" "}
 			<Em>Claude Code, Cursor, Codex, or any shell capable agent</Em> can record
 			your screen, upload it, and read back the transcript.
 		</SectionHead>
@@ -348,7 +348,7 @@ export const AgentsSection = () => (
 				{
 					lead: "One prompt setup.",
 					icon: <Wand />,
-					body: "Your agent installs the CLI, the Cap skill, and the MCP server for Claude Code, Cursor, or Codex.",
+					body: "Your agent installs the CLI, the Oiaai skill, and the MCP server for Claude Code, Cursor, or Codex.",
 				},
 				{
 					lead: "JSON output on every command.",
@@ -358,7 +358,7 @@ export const AgentsSection = () => (
 				{
 					lead: "MCP server with 76 tools.",
 					icon: <Plug />,
-					body: "Read and manage Caps, comments, and sharing. Capture and upload stay in the CLI, so no secret passes through the model.",
+					body: "Read and manage recordings, comments, and sharing. Capture and upload stay in the CLI, so no secret passes through the model.",
 				},
 				{
 					lead: "Permission prompts.",
@@ -369,7 +369,7 @@ export const AgentsSection = () => (
 		/>
 		<div className="mt-10 flex justify-center">
 			<Link href="/agents" className={classNames(BTN_SECONDARY, "gap-2")}>
-				Explore Cap for Agents
+				Explore Oiaai for Agents
 				<ArrowUpRight className="size-4" />
 			</Link>
 		</div>

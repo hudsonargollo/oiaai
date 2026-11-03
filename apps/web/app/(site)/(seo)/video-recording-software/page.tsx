@@ -12,24 +12,24 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Video Recording Software — Free HD Capture, Instant Sharing | Cap",
+	title: "Video Recording Software — Free HD Capture, Instant Sharing | Oiaai",
 	description:
-		"Cap is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
+		"Oiaai is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 	alternates: {
 		canonical: "https://cap.so/video-recording-software",
 	},
 	openGraph: {
-		title: "Video Recording Software — Free HD Capture, Instant Sharing | Cap",
+		title: "Video Recording Software — Free HD Capture, Instant Sharing | Oiaai",
 		description:
-			"Cap is free video recording software for Mac and Windows. Record in HD with audio and webcam, then share with a link instantly. Open-source, no watermarks.",
+			"Oiaai is free video recording software for Mac and Windows. Record in HD with audio and webcam, then share with a link instantly. Open-source, no watermarks.",
 		url: "https://cap.so/video-recording-software",
-		siteName: "Cap",
+		siteName: "Oiaai",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Cap: Video Recording Software",
+				alt: "Oiaai: Video Recording Software",
 			},
 		],
 		locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Video Recording Software — Free HD Capture, Instant Sharing | Cap",
+		title: "Video Recording Software — Free HD Capture, Instant Sharing | Oiaai",
 		description:
-			"Cap is free video recording software for Mac and Windows. Record in HD with audio and webcam, then share with a link instantly. Open-source, no watermarks.",
+			"Oiaai is free video recording software for Mac and Windows. Record in HD with audio and webcam, then share with a link instantly. Open-source, no watermarks.",
 		images: [ogImage],
 	},
 };

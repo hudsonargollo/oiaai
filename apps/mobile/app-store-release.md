@@ -1,20 +1,20 @@
-# Cap iOS App Store release
+# Oiaai iOS App Store release
 
 Status date: 23 July 2026
 
-Cap Mobile is currently an iPhone-only Expo app. Android remains outside this release because the native recorder has no Android implementation and the Expo configuration intentionally includes only iOS.
+Oiaai Mobile is currently an iPhone-only Expo app. Android remains outside this release because the native recorder has no Android implementation and the Expo configuration intentionally includes only iOS.
 
 ## Release blockers
 
 - [x] Create the `cap-software-inc` Expo organization with `richiemcilroy` as its owner.
-- [x] Link the app to the Cap-owned `cap-software-inc/cap-mobile` EAS project and commit its public project ID in `app.config.js`.
+- [x] Link the app to the Oiaai-owned `cap-software-inc/cap-mobile` EAS project and commit its public project ID in `app.config.js`.
 - [ ] Confirm that Apple Team `47B7FCLL43` owns bundle ID `so.cap.mobile`, then create or select the matching App Store Connect app.
 - [ ] Configure Sign in with Apple for `cap.so`, set the production `APPLE_CLIENT_ID` and `APPLE_CLIENT_SECRET`, and verify the complete mobile OAuth callback on TestFlight.
-- [x] Remove the external Cap Pro checkout action from the iOS account screen before review. Existing entitlements remain available in version 1.0.
+- [x] Remove the external Oiaai Pro checkout action from the iOS account screen before review. Existing entitlements remain available in version 1.0.
 - [x] Remove external purchase calls to action from Pro-gated Analytics and Loom Import states.
 - [x] Let a signed-in user initiate permanent account deletion from Account settings.
 - [x] Enforce the advertised five-minute free recording limit in both the recorder and the authenticated mobile API.
-- [x] Let users report a Cap and block another Cap owner in-app.
+- [x] Let users report a recording and block another recording owner in-app.
 - [ ] Deploy the mobile API changes before distributing the release build.
 - [ ] Provide App Review contact details, a durable review account, and reviewer instructions in App Store Connect. Do not commit review credentials.
 - [ ] Complete the current App Store age-rating, content-rights, Digital Services Act, export-compliance, and privacy questionnaires.
@@ -34,7 +34,7 @@ Cap Mobile is currently an iPhone-only Expo app. Android remains outside this re
 - [x] Required-reason API declarations are present in the generated privacy manifest.
 - [x] The iOS login surface offers Google, Apple, email-code, and enterprise SSO; Apple uses the system-provided button with the native capability enabled, and provider buttons appear only when their server credentials are available.
 - [x] Help, support, privacy, and terms pages are available to signed-in users from Account settings.
-- [x] Content reports are stored durably for support review, and blocked owners' Caps and comments are removed from the blocking user's mobile results.
+- [x] Content reports are stored durably for support review, and blocked owners' recordings and comments are removed from the blocking user's mobile results.
 - [x] The unused background-processing mode is removed.
 - [x] Associated Domains are omitted by default while `cap.so` has no production association file.
 - [x] Non-exempt encryption is declared false and the release Team ID is explicit in Expo configuration.
@@ -60,35 +60,35 @@ Cap Mobile is currently an iPhone-only Expo app. Android remains outside this re
 3. Give the submitting Apple account App Manager or Admin access plus Certificates, Identifiers & Profiles access.
 4. Create the App Store Connect record and provide its numeric Apple ID for `eas.json` as `ascAppId`.
 5. Provide the App Review contact name, email, and international-format phone number.
-6. Create a durable review account containing safe sample Caps. Store its credentials only in App Store Connect.
+6. Create a durable review account containing safe sample recordings. Store its credentials only in App Store Connect.
 7. Enable Sign in with Apple on App ID `so.cap.mobile`, create a Services ID for the web OAuth flow, associate it with the primary App ID, and register `https://cap.so/api/auth/callback/apple` as the return URL.
 8. Generate an Apple client-secret JWT for the Services ID, store the Services ID as `APPLE_CLIENT_ID` and the JWT as `APPLE_CLIENT_SECRET` in the production web environment, and rotate the JWT before it expires.
 
 ### Account deletion operations
 
 1. Assign an owner to monitor `hello@cap.so` and human-mode Messenger conversations for subjects named `[PENDING] Account deletion request`.
-2. Complete deletion within 30 days: cancel any direct Cap subscription, remove the account and associated personal data and content, handle solely owned organizations, and remove access to shared organizations.
+2. Complete deletion within 30 days: cancel any direct Oiaai subscription, remove the account and associated personal data and content, handle solely owned organizations, and remove access to shared organizations.
 3. Email the user after completion, then change the durable request subject from `[PENDING]` to `[COMPLETED]`. Pending requests intentionally block every new mobile login.
 4. Test the full process with a disposable account before App Review. Do not delete the durable review account.
 
-### Cap Pro purchase
+### Oiaai Pro purchase
 
-Version 1.0 should display the user's server-authoritative Free or Cap Pro status without offering external Stripe checkout. This is the smallest compliant release path and preserves features for customers who already subscribe on another Cap platform.
+Version 1.0 should display the user's server-authoritative Free or Oiaai Pro status without offering external Stripe checkout. This is the smallest compliant release path and preserves features for customers who already subscribe on another Oiaai platform.
 
 For native purchasing in a later release, the recommended Expo path is RevenueCat with `react-native-purchases`, a `pro` entitlement, monthly and yearly auto-renewable subscription products, restore purchases, and authenticated server synchronization that updates the same entitlement used by web and desktop. The owner must create the App Store subscription group and products, accept the Paid Apps agreement, and provide the public RevenueCat iOS API key through the production EAS environment. No private App Store or RevenueCat key belongs in the repository.
 
 ### Content safety operations
 
 1. Assign an owner to monitor `hello@cap.so` and human-mode Messenger conversations for subjects named `[PENDING] Mobile content report`.
-2. Review each report promptly against Cap's Terms of Service, remove violating content, respond to the reporter when appropriate, and change the durable request subject from `[PENDING]` to `[COMPLETED]`.
-3. Keep the App Review explanation accurate: the native app has no public discovery feed or anonymous chat, and Caps are visible only to the owner or authenticated members of an organization or space with access. Public share links are not browsable from a public mobile catalog.
+2. Review each report promptly against Oiaai's Terms of Service, remove violating content, respond to the reporter when appropriate, and change the durable request subject from `[PENDING]` to `[COMPLETED]`.
+3. Keep the App Review explanation accurate: the native app has no public discovery feed or anonymous chat, and recordings are visible only to the owner or authenticated members of an organization or space with access. Public share links are not browsable from a public mobile catalog.
 4. Maintain organization member-removal and content-removal procedures as the service-level moderation controls. Test report and block behavior with two disposable accounts before review.
 
 ### Product and legal approval
 
 Approve the copy in `store.config.json` and confirm:
 
-- Cap Software, Inc. owns the app and has rights to distribute its bundled assets.
+- Oiaai Software, Inc. owns the app and has rights to distribute its bundled assets.
 - Users retain responsibility and rights for videos, images, audio, comments, and Loom imports they upload.
 - The app is not made for children.
 - The privacy policy accurately covers the mobile app, its account-deletion flow, retention, processors, and subscription entitlements.
@@ -115,12 +115,12 @@ The current mobile package includes no advertising SDK and does not request App 
 
 Recommended screenshot set:
 
-1. My Caps library with personal and space navigation.
+1. My recordings library with personal and space navigation.
 2. Native camera recorder and teleprompter.
 3. Import media and upload progress.
-4. Cap playback, sharing controls, and comments.
+4. Oiaai playback, sharing controls, and comments.
 5. Viewer analytics and reactions.
-6. Account, organization, and Cap Pro status.
+6. Account, organization, and Oiaai Pro status.
 
 Use one of Apple's accepted 6.9-inch portrait sizes, remove all alpha channels, and avoid real customer names, emails, recordings, or analytics.
 
@@ -128,15 +128,15 @@ Use one of Apple's accepted 6.9-inch portrait sizes, remove all alpha channels, 
 
 Tell the reviewer:
 
-- Cap requires an account because the primary experience is a private personal or organization video library.
+- Oiaai requires an account because the primary experience is a private personal or organization video library.
 - Email-code sign-in and the supplied review account can access every reviewable feature without relying on the reviewer's personal identity provider.
 - Google and Apple login are available on iOS when their production OAuth credentials are configured; users can also sign in with email code or enterprise SSO.
 - The iPhone recorder captures camera and microphone video; it does not capture the iPhone screen.
 - Photos and Files access is requested only when the user chooses an import or save action.
 - Free accounts can record for up to five minutes.
 - Account deletion is under Account settings, signs the user out immediately, blocks re-login, and explains the 30-day deletion and direct-subscription cancellation process before confirmation.
-- Existing Cap Pro entitlements are recognized in Account settings; version 1.0 does not sell digital features in the app.
-- Cap is an authenticated collaboration tool without a public discovery feed or anonymous chat. Every Cap detail screen includes in-app reporting and blocking; reports enter the monitored support queue for prompt review.
+- Existing Oiaai Pro entitlements are recognized in Account settings; version 1.0 does not sell digital features in the app.
+- Oiaai is an authenticated collaboration tool without a public discovery feed or anonymous chat. Every Oiaai detail screen includes in-app reporting and blocking; reports enter the monitored support queue for prompt review.
 - The production API and media-processing services will remain available for the full review window.
 
 ## Final verification sequence

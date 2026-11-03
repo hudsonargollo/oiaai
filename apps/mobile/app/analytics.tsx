@@ -204,10 +204,10 @@ export default function AnalyticsScreen() {
 			<Screen scroll safeEdges={["left", "right", "bottom"]}>
 				<View style={styles.heading}>
 					<Text numberOfLines={2} style={styles.title}>
-						{data?.capName ?? "Cap analytics"}
+						{data?.capName ?? "Oiaai analytics"}
 					</Text>
 					<Text style={styles.subtitle}>
-						Views and engagement for this Cap.
+						Views and engagement for this recording.
 					</Text>
 				</View>
 				<View accessibilityRole="tablist" style={styles.rangeSelector}>
@@ -252,7 +252,7 @@ export default function AnalyticsScreen() {
 						/>
 						<Text style={styles.stateTitle}>Analytics unavailable</Text>
 						<Text style={styles.stateText}>
-							{error ?? "This Cap could not be identified."}
+							{error ?? "This Oiaai could not be identified."}
 						</Text>
 						{capId ? (
 							<ActionButton
@@ -289,7 +289,7 @@ export default function AnalyticsScreen() {
 								value={data.counts.reactions}
 							/>
 							<MetricCard
-								label="Caps"
+								label="Recordings"
 								symbol="video"
 								value={data.counts.caps}
 							/>

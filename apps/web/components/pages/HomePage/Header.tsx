@@ -228,7 +228,7 @@ const Header = ({ serverHomepageCopyVariant = "" }: HeaderProps) => {
 								<span className="text-xs font-medium text-gray-12">
 									<span className="font-semibold text-blue-500">New</span>
 									<span className="mx-1.5 text-gray-7">·</span>
-									Cap is now HIPAA compliant
+									Oiaai is now HIPAA compliant
 								</span>
 								<FontAwesomeIcon
 									icon={faArrowRight}
@@ -355,7 +355,7 @@ const Header = ({ serverHomepageCopyVariant = "" }: HeaderProps) => {
 							<div className="flex gap-2 items-center">
 								{upgradeButton}
 								<span className="max-w-[240px] text-sm leading-snug text-gray-10">
-									Cap Pro gives you unlimited cloud sharing, AI summaries &amp;
+									Oiaai Pro gives you unlimited cloud sharing, AI summaries &amp;
 									team features
 								</span>
 							</div>
@@ -412,7 +412,7 @@ const Header = ({ serverHomepageCopyVariant = "" }: HeaderProps) => {
 								}
 							/>
 							<span className="text-xs text-center text-gray-10">
-								Cap Pro gives you unlimited cloud sharing, AI summaries &amp;
+								Oiaai Pro gives you unlimited cloud sharing, AI summaries &amp;
 								team features
 							</span>
 						</div>

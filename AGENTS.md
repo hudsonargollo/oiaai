@@ -50,7 +50,7 @@ Additionally, `unused_must_use = "deny"` applies to all Rust code: every `Result
 
 ## Project Structure & Modules
 - Turborepo monorepo:
-  - `apps/desktop-gpui` (the Cap desktop app: native Rust + GPUI, its own Cargo workspace), `apps/web` (Next.js), `apps/cli` (Rust CLI).
+  - `apps/desktop-gpui` (the Oiaai desktop app: native Rust + GPUI, its own Cargo workspace), `apps/web` (Next.js), `apps/cli` (Rust CLI).
   - `packages/*` shared libs (e.g., `database`, `ui`, `utils`, `web-*`).
   - `crates/*` Rust media/recording/rendering/camera crates.
   - `scripts/*`, `infra/`, and `packages/local-docker/` for tooling and local services.

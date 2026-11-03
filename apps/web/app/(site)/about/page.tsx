@@ -5,11 +5,11 @@ import { formatStarCount, getGitHubStars } from "@/utils/github";
 import { createBreadcrumbSchema } from "@/utils/web-schema";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "About — Cap",
+	title: "About — Oiaai",
 	description:
-		"Cap is the open source alternative to Loom. Learn why we started Cap and our commitment to privacy, transparency, and community-driven development.",
+		"Oiaai is the open source alternative to Loom. Learn why we started Oiaai and our commitment to privacy, transparency, and community-driven development.",
 	path: "/about",
-	ogTitle: "Why we started Cap",
+	ogTitle: "Why we started Oiaai",
 	ogTag: "About",
 });
 

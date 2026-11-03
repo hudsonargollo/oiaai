@@ -1,0 +1,20 @@
+name: cap
+
+services:
+  cap-web:
+    image: oiaai-web:latest
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cap-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:?Set CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      cap-web:
+        condition: service_healthy
+    networks:
+      - cap-network

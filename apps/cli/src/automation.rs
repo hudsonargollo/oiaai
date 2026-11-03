@@ -1,0 +1,995 @@
+//! Runs Cap automation rules from the CLI, sharing the exact rule model and engine the desktop app
+//! uses (`cap_automation`). Rules are authored in Cap Desktop and persisted to its JSON store
+//! file; the CLI reads that file directly (same approach as `credentials.rs`) so a rule like
+//! "on screenshot, save to ~/Shots" is honored whether the capture came from the app or `cap`.
+
+use std::collections::HashMap;
+use std::path::{Path, PathBuf};
+
+use cap_automation::{
+    AutomationExportCompression, AutomationHost, AutomationRecordingMode, AutomationsStore,
+    Capability, ClipboardSource, ExportDestination, ExportFormat, ExportProfile, Trigger,
+    TriggerContext, sanitize_filename_component,
+};
+use cap_recording::screen_capture::ScreenCaptureTarget;
+use serde_json::Value;
+
+const DESKTOP_BUNDLE_IDS: [&str; 2] = ["so.cap.desktop", "so.cap.desktop.dev"];
+
+const WEBHOOK_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(30);
+const COMMAND_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(300);
+
+fn load_desktop_store_value() -> Option<Value> {
+    let data_dir = dirs::data_dir()?;
+    DESKTOP_BUNDLE_IDS.into_iter().find_map(|id| {
+        let bytes = std::fs::read(data_dir.join(id).join("store")).ok()?;
+        serde_json::from_slice::<Value>(&bytes).ok()
+    })
+}
+
+pub fn load_store() -> Option<AutomationsStore> {
+    cap_automation::load_store_from_json(&load_desktop_store_value()?)
+}
+
+/// `(total_rules, enabled_rules)` configured in Cap Desktop, for `cap doctor`.
+pub fn rule_counts() -> (usize, usize) {
+    let store = load_store().unwrap_or_default();
+    let enabled = store.rules.iter().filter(|r| r.enabled).count();
+    (store.rules.len(), enabled)
+}
+
+fn capture_target_kind(target: &ScreenCaptureTarget) -> Option<cap_automation::CaptureTargetKind> {
+    match target {
+        ScreenCaptureTarget::Window { .. } => Some(cap_automation::CaptureTargetKind::Window),
+        ScreenCaptureTarget::Display { .. } => Some(cap_automation::CaptureTargetKind::Display),
+        ScreenCaptureTarget::Area { .. } => Some(cap_automation::CaptureTargetKind::Area),
+        ScreenCaptureTarget::CameraOnly => None,
+    }
+}
+
+struct CliAutomationHost;
+
+impl AutomationHost for CliAutomationHost {
+    fn capabilities(&self) -> &[Capability] {
+        &[
+            Capability::SaveToLocation,
+            Capability::Export,
+            Capability::Upload,
+            Capability::RevealInFileManager,
+            Capability::OpenFile,
+            Capability::RunCommand,
+            Capability::Webhook,
+            Capability::ApplyPreset,
+            Capability::DeleteLocalFiles,
+        ]
+    }
+
+    async fn copy_to_clipboard(
+        &self,
+        _ctx: &TriggerContext,
+        _source: &ClipboardSource,
+    ) -> Result<(), String> {
+        Err("Clipboard is not available from the CLI".to_string())
+    }
+
+    async fn save_to_location(
+        &self,
+        ctx: &TriggerContext,
+        dir: &str,
+        filename_template: Option<&str>,
+    ) -> Result<(), String> {
+        let src = ctx
+            .image_path
+            .as_ref()
+            .or(ctx.output_path.as_ref())
+            .ok_or("No file path available for save")?;
+
+        let filename = match filename_template {
+            Some(tmpl) => apply_filename_template(tmpl, ctx),
+            None => src
+                .file_name()
+                .map(|n| n.to_string_lossy().to_string())
+                .unwrap_or_else(|| "capture".to_string()),
+        };
+
+        let dst = PathBuf::from(dir).join(filename);
+        if let Some(parent) = dst.parent() {
+            std::fs::create_dir_all(parent).map_err(|e| format!("Failed to create dir: {e}"))?;
+        }
+        if dst.exists()
+            && crate::file_identity::is_same_file(src, &dst)
+                .map_err(|e| format!("Failed to compare source and destination: {e}"))?
+        {
+            return Ok(());
+        }
+        std::fs::copy(src, &dst).map_err(|e| format!("Failed to copy file: {e}"))?;
+        tracing::info!(dst = %dst.display(), "automation: saved file");
+        Ok(())
+    }
+
+    async fn export(
+        &self,
+        ctx: &TriggerContext,
+        profile: &ExportProfile,
+        destination: &ExportDestination,
+    ) -> Result<(), String> {
+        let project_path = ctx
+            .project_path
+            .as_ref()
+            .ok_or("No project path available for export")?;
+
+        let output_path = match destination {
+            ExportDestination::ProjectFolder => None,
+            ExportDestination::CustomPath { dir } => {
+                let ext = match profile.format {
+                    ExportFormat::Mp4 => "mp4",
+                    ExportFormat::Gif => "gif",
+                    ExportFormat::Mov => "mov",
+                };
+                let name = project_path
+                    .file_stem()
+                    .map(|s| s.to_string_lossy().to_string())
+                    .unwrap_or_else(|| "export".to_string());
+                Some(PathBuf::from(dir).join(format!("{name}.{ext}")))
+            }
+        };
+
+        let mut builder = cap_export::ExporterBase::builder(project_path.clone());
+        if let Some(ref out) = output_path {
+            builder = builder.with_output_path(out.clone());
+        }
+        let base = builder.build().await.map_err(|e| format!("{e}"))?;
+
+        let result = match profile.format {
+            ExportFormat::Mp4 => {
+                cap_export::mp4::Mp4ExportSettings {
+                    fps: profile.fps,
+                    resolution_base: profile.resolution_base,
+                    compression: map_compression(profile.compression),
+                    custom_bpp: None,
+                    force_ffmpeg_decoder: false,
+                    optimize_filesize: false,
+                }
+                .export(base, |_| true)
+                .await
+            }
+            ExportFormat::Gif => {
+                cap_export::gif::GifExportSettings {
+                    fps: profile.fps,
+                    resolution_base: profile.resolution_base,
+                    quality: None,
+                }
+                .export(base, |_| true)
+                .await
+            }
+            ExportFormat::Mov => {
+                cap_export::mov::MovExportSettings {
+                    fps: profile.fps,
+                    resolution_base: profile.resolution_base,
+                    cursor_only: false,
+                }
+                .export(base, |_| true)
+                .await
+            }
+        }
+        .map_err(|e| format!("Export failed: {e}"))?;
+
+        tracing::info!(output = %result.display(), "automation: export complete");
+        Ok(())
+    }
+
+    async fn upload(
+        &self,
+        ctx: &TriggerContext,
+        organization_id: Option<&str>,
+        _copy_link: bool,
+        open_in_browser: bool,
+    ) -> Result<(), String> {
+        if let Some(link) = ctx.share_link.as_deref() {
+            tracing::info!(link = %link, "automation: recording already uploaded, reusing link");
+            if open_in_browser {
+                open_path_or_url(link)?;
+            }
+            return Ok(());
+        }
+
+        let project_path = ctx
+            .project_path
+            .as_ref()
+            .ok_or("CLI upload supports recordings only (no project path available)")?;
+
+        let meta = cap_project::RecordingMeta::load_for_project(project_path)
+            .map_err(|e| format!("Failed to load project: {e}"))?;
+        let output = meta.output_path();
+        if !output.exists() {
+            return Err(format!(
+                "No exported video at {}; add an Export action before Upload",
+                output.display()
+            ));
+        }
+
+        let link = crate::upload::upload_video_path(
+            &output,
+            Some(meta.pretty_name.clone()),
+            organization_id,
+        )
+        .await?;
+        tracing::info!(link = %link, "automation: upload complete");
+        if open_in_browser {
+            open_path_or_url(&link)?;
+        }
+        Ok(())
+    }
+
+    fn upload_is_verified(
+        &self,
+        _ctx: &TriggerContext,
+    ) -> impl std::future::Future<Output = Result<bool, String>> + Send {
+        std::future::ready(Ok(false))
+    }
+
+    async fn reveal_in_file_manager(&self, ctx: &TriggerContext) -> Result<(), String> {
+        let path = ctx
+            .image_path
+            .as_ref()
+            .or(ctx.output_path.as_ref())
+            .or(ctx.project_path.as_ref())
+            .ok_or("No path available to reveal")?;
+        reveal_path(path)
+    }
+
+    async fn open_file(&self, ctx: &TriggerContext) -> Result<(), String> {
+        let path = ctx
+            .image_path
+            .as_ref()
+            .or(ctx.output_path.as_ref())
+            .ok_or("No file path available to open")?;
+        open_path_or_url(&path.to_string_lossy())
+    }
+
+    async fn run_command(
+        &self,
+        ctx: &TriggerContext,
+        program: &str,
+        args: &[String],
+        cwd: Option<&str>,
+        env: &HashMap<String, String>,
+        use_shell: bool,
+    ) -> Result<(), String> {
+        let mut cmd = if use_shell {
+            let shell_line = cap_automation::shell_command_line(program, args);
+            #[cfg(target_os = "windows")]
+            let mut c = tokio::process::Command::new("cmd");
+            #[cfg(target_os = "windows")]
+            c.args(["/C", &shell_line]);
+            #[cfg(not(target_os = "windows"))]
+            let mut c = tokio::process::Command::new("sh");
+            #[cfg(not(target_os = "windows"))]
+            c.args(["-c", &shell_line]);
+            c
+        } else {
+            let mut c = tokio::process::Command::new(program);
+            c.args(args);
+            c
+        };
+
+        if let Some(dir) = cwd {
+            cmd.current_dir(dir);
+        }
+        for (k, v) in env {
+            cmd.env(k, v);
+        }
+        for (key, value) in context_env(ctx) {
+            cmd.env(key, value);
+        }
+
+        // Kill the child if the timeout drops the future, so a hung command can't outlive the run.
+        cmd.kill_on_drop(true);
+        let output = tokio::time::timeout(COMMAND_TIMEOUT, cmd.output())
+            .await
+            .map_err(|_| format!("Command timed out after {}s", COMMAND_TIMEOUT.as_secs()))?
+            .map_err(|e| format!("Failed to run command: {e}"))?;
+        if !output.status.success() {
+            return Err(format!(
+                "Command exited with {}: {}",
+                output.status,
+                String::from_utf8_lossy(&output.stderr)
+            ));
+        }
+        Ok(())
+    }
+
+    async fn webhook(
+        &self,
+        ctx: &TriggerContext,
+        url: &str,
+        method: &str,
+        headers: &HashMap<String, String>,
+        body_template: Option<&str>,
+    ) -> Result<(), String> {
+        let client = reqwest::Client::builder()
+            .timeout(WEBHOOK_TIMEOUT)
+            .build()
+            .map_err(|e| format!("Failed to build HTTP client: {e}"))?;
+        let method = method
+            .parse::<reqwest::Method>()
+            .map_err(|e| format!("Invalid HTTP method: {e}"))?;
+        let body = if let Some(tmpl) = body_template {
+            apply_body_template(tmpl, ctx)
+        } else {
+            serde_json::to_string(&serde_json::json!({
+                "project_path": ctx.project_path,
+                "image_path": ctx.image_path,
+                "output_path": ctx.output_path,
+                "share_link": ctx.share_link,
+            }))
+            .map_err(|e| format!("Failed to serialize webhook body: {e}"))?
+        };
+
+        let mut req = client.request(method, url).body(body);
+        for (k, v) in headers {
+            req = req.header(k, v);
+        }
+        let resp = req
+            .send()
+            .await
+            .map_err(|e| format!("Webhook request failed: {e}"))?;
+        if !resp.status().is_success() {
+            return Err(format!("Webhook returned status {}", resp.status()));
+        }
+        Ok(())
+    }
+
+    async fn recognize_text_to_clipboard(&self, _ctx: &TriggerContext) -> Result<(), String> {
+        Err("OCR is not available from the CLI".to_string())
+    }
+
+    async fn notify(
+        &self,
+        _ctx: &TriggerContext,
+        _title_template: &str,
+        _body_template: &str,
+    ) -> Result<(), String> {
+        Err("Notifications are not available from the CLI".to_string())
+    }
+
+    async fn open_editor(&self, _ctx: &TriggerContext) -> Result<(), String> {
+        Err("Opening the editor is not available from the CLI".to_string())
+    }
+
+    async fn apply_preset(&self, ctx: &TriggerContext, name: &str) -> Result<(), String> {
+        let project_path = ctx
+            .project_path
+            .as_ref()
+            .ok_or("No project path for preset")?;
+
+        let store = load_desktop_store_value().ok_or("Cap Desktop store not found")?;
+        let presets = store
+            .get("presets")
+            .and_then(|p| p.get("presets"))
+            .and_then(Value::as_array)
+            .ok_or("No presets found in Cap Desktop store")?;
+
+        let preset = presets
+            .iter()
+            .find(|p| p.get("name").and_then(Value::as_str) == Some(name))
+            .ok_or_else(|| format!("Preset '{name}' not found"))?;
+
+        let config_value = preset.get("config").ok_or("Preset has no config")?;
+        let config: cap_project::ProjectConfiguration =
+            serde_json::from_value(config_value.clone())
+                .map_err(|e| format!("Failed to parse preset config: {e}"))?;
+
+        apply_project_preset(project_path, config)
+    }
+
+    async fn delete_local_files(&self, ctx: &TriggerContext) -> Result<(), String> {
+        let path = ctx
+            .project_path
+            .as_ref()
+            .ok_or("No project path for deletion")?;
+        std::fs::remove_dir_all(path).map_err(|e| format!("Failed to delete: {e}"))
+    }
+}
+
+fn map_compression(
+    compression: Option<AutomationExportCompression>,
+) -> cap_export::mp4::ExportCompression {
+    match compression {
+        Some(AutomationExportCompression::Maximum) => cap_export::mp4::ExportCompression::Maximum,
+        Some(AutomationExportCompression::Social) => cap_export::mp4::ExportCompression::Social,
+        Some(AutomationExportCompression::Web) | None => cap_export::mp4::ExportCompression::Web,
+        Some(AutomationExportCompression::Potato) => cap_export::mp4::ExportCompression::Potato,
+    }
+}
+
+fn apply_project_preset(
+    project_path: &Path,
+    preset: cap_project::ProjectConfiguration,
+) -> Result<(), String> {
+    let current = match cap_project::ProjectConfiguration::load(project_path) {
+        Ok(current) => current,
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => Default::default(),
+        Err(error) => return Err(format!("Failed to load project config: {error}")),
+    };
+    current
+        .with_preset(preset)
+        .write(project_path)
+        .map_err(|error| format!("Failed to write project config: {error}"))
+}
+
+fn context_env(ctx: &TriggerContext) -> Vec<(&'static str, String)> {
+    let mut env = Vec::new();
+    if let Some(p) = &ctx.project_path {
+        env.push(("CAP_PROJECT_PATH", p.to_string_lossy().to_string()));
+    }
+    if let Some(p) = &ctx.image_path {
+        env.push(("CAP_IMAGE_PATH", p.to_string_lossy().to_string()));
+    }
+    if let Some(p) = &ctx.output_path {
+        env.push(("CAP_OUTPUT_PATH", p.to_string_lossy().to_string()));
+    }
+    if let Some(l) = &ctx.share_link {
+        env.push(("CAP_SHARE_LINK", l.clone()));
+    }
+    env
+}
+
+fn apply_filename_template(template: &str, ctx: &TriggerContext) -> String {
+    let now = chrono::Local::now();
+    let mut result = template.to_string();
+    result = result.replace("{date}", &now.format("%Y-%m-%d").to_string());
+    result = result.replace("{time}", &now.format("%H-%M-%S").to_string());
+    result = result.replace("{datetime}", &now.format("%Y-%m-%d_%H-%M-%S").to_string());
+    if let Some(title) = &ctx.window_title {
+        result = result.replace("{window}", &sanitize_filename_component(title));
+    }
+    result
+}
+
+fn apply_body_template(template: &str, ctx: &TriggerContext) -> String {
+    let mut result = template.to_string();
+    if let Some(p) = &ctx.project_path {
+        result = result.replace("{project_path}", &p.to_string_lossy());
+    }
+    if let Some(p) = &ctx.image_path {
+        result = result.replace("{image_path}", &p.to_string_lossy());
+    }
+    if let Some(p) = &ctx.output_path {
+        result = result.replace("{output_path}", &p.to_string_lossy());
+    }
+    if let Some(l) = &ctx.share_link {
+        result = result.replace("{share_link}", l);
+    }
+    result
+}
+
+fn open_path_or_url(target: &str) -> Result<(), String> {
+    #[cfg(target_os = "macos")]
+    let mut cmd = std::process::Command::new("open");
+    #[cfg(target_os = "windows")]
+    let mut cmd = std::process::Command::new("explorer");
+    #[cfg(target_os = "linux")]
+    let mut cmd = std::process::Command::new("xdg-open");
+
+    cmd.arg(target)
+        .spawn()
+        .map(|_| ())
+        .map_err(|e| format!("Failed to open: {e}"))
+}
+
+fn reveal_command(path: &Path) -> Result<std::process::Command, String> {
+    let path = if path.is_absolute() {
+        path.to_path_buf()
+    } else {
+        std::env::current_dir()
+            .map_err(|error| format!("Failed to resolve path: {error}"))?
+            .join(path)
+    };
+
+    #[cfg(target_os = "macos")]
+    let cmd = {
+        let mut cmd = std::process::Command::new("open");
+        cmd.arg("-R").arg(&path);
+        cmd
+    };
+    #[cfg(target_os = "windows")]
+    let cmd = {
+        let mut cmd = std::process::Command::new("explorer");
+        cmd.arg("/select,").arg(&path);
+        cmd
+    };
+    #[cfg(target_os = "linux")]
+    let cmd = {
+        let mut cmd = std::process::Command::new("xdg-open");
+        cmd.arg(path.parent().unwrap_or(&path));
+        cmd
+    };
+
+    Ok(cmd)
+}
+
+fn reveal_path(path: &Path) -> Result<(), String> {
+    reveal_command(path)?
+        .spawn()
+        .map(|_| ())
+        .map_err(|error| format!("Failed to reveal: {error}"))
+}
+
+async fn run_trigger(trigger: Trigger, ctx: TriggerContext) {
+    let Some(store) = load_store() else {
+        return;
+    };
+    run_trigger_with_store(&store, trigger, ctx).await;
+}
+
+async fn run_trigger_with_store(store: &AutomationsStore, trigger: Trigger, ctx: TriggerContext) {
+    if store.rules.is_empty() {
+        return;
+    }
+
+    let host = CliAutomationHost;
+    let results = cap_automation::run(&host, store, &trigger, &ctx).await;
+    for result in &results {
+        for action in &result.action_results {
+            if let Some(error) = &action.error {
+                tracing::warn!(
+                    rule_id = %result.rule_id,
+                    error = %error,
+                    "automation action skipped or failed"
+                );
+            }
+        }
+    }
+}
+
+pub async fn run_screenshot(path: &Path, target: &ScreenCaptureTarget) {
+    if load_store().is_none() {
+        return;
+    }
+
+    let mut ctx = TriggerContext::new().with_image_path(path.to_path_buf());
+    if let Some(kind) = capture_target_kind(target) {
+        ctx = ctx.with_capture_target(kind);
+    }
+    if let Some(title) = target.title() {
+        ctx = ctx.with_window_title(title);
+    }
+    run_trigger(Trigger::ScreenshotTaken, ctx).await;
+}
+
+pub async fn run_recording_finished(project_path: &Path, mode: AutomationRecordingMode) {
+    let Some(store) = load_store() else {
+        return;
+    };
+    let trigger = match mode {
+        AutomationRecordingMode::Studio => Trigger::StudioRecordingFinished,
+        AutomationRecordingMode::Instant => Trigger::InstantRecordingFinished,
+    };
+    let ctx = recording_finished_context(project_path, mode, &store);
+    run_trigger_with_store(&store, trigger, ctx).await;
+}
+
+fn recording_finished_context(
+    project_path: &Path,
+    mode: AutomationRecordingMode,
+    store: &AutomationsStore,
+) -> TriggerContext {
+    let mut ctx = TriggerContext::new()
+        .with_project_path(project_path.to_path_buf())
+        .with_recording_mode(mode);
+
+    let needs_duration = mode == AutomationRecordingMode::Studio
+        && store.rules.iter().any(|rule| {
+            rule.enabled
+                && rule.trigger == Trigger::StudioRecordingFinished
+                && rule.conditions.iter().any(|condition| {
+                    matches!(
+                        condition,
+                        cap_automation::Condition::DurationAtLeast { .. }
+                            | cap_automation::Condition::DurationAtMost { .. }
+                    )
+                })
+        });
+
+    if let Ok(meta) = cap_project::RecordingMeta::load_for_project(project_path) {
+        if needs_duration
+            && let Some(studio) = meta.studio_meta()
+            && let Ok(recordings) =
+                cap_rendering::ProjectRecordingsMeta::new(&project_path.to_path_buf(), studio)
+        {
+            let duration = recordings.duration();
+            if duration > 0.0 {
+                ctx = ctx.with_duration(duration);
+            }
+        }
+        if let Some(sharing) = meta.sharing {
+            ctx = ctx.with_share_link(sharing.link).with_share_id(sharing.id);
+        }
+    }
+    ctx
+}
+
+pub async fn run_upload_completed(project_path: &Path, link: &str, id: &str) {
+    if load_store().is_none() {
+        return;
+    }
+
+    let ctx = TriggerContext::new()
+        .with_project_path(project_path.to_path_buf())
+        .with_share_link(link.to_string())
+        .with_share_id(id.to_string());
+    run_trigger(Trigger::UploadCompleted, ctx).await;
+}
+
+/// `cap automations list` — print the automation rules shared with Cap Desktop.
+pub fn list(format: crate::OutputFormat) -> Result<(), String> {
+    let store = load_store().unwrap_or_default();
+
+    match format {
+        crate::OutputFormat::Json => crate::write_json(&store),
+        crate::OutputFormat::Text => {
+            if store.rules.is_empty() {
+                println!(
+                    "No automations configured. Add them in Cap Desktop under Settings > Automations."
+                );
+                return Ok(());
+            }
+            for rule in &store.rules {
+                let status = if rule.enabled { "enabled" } else { "disabled" };
+                println!("{} [{}]", rule.name, status);
+                println!("  trigger: {:?}", rule.trigger);
+                if !rule.conditions.is_empty() {
+                    println!("  conditions ({:?}):", rule.match_mode);
+                    for condition in &rule.conditions {
+                        println!("    - {condition:?}");
+                    }
+                }
+                println!("  actions:");
+                for action in &rule.actions {
+                    match action.required_capability() {
+                        Some(cap) => println!("    - {cap:?}"),
+                        None => println!("    - SkipEditor"),
+                    }
+                }
+            }
+            Ok(())
+        }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use cap_automation::{Action, AutomationRule, MatchMode};
+
+    #[tokio::test]
+    async fn cli_save_to_location_preserves_a_screenshot_already_at_the_destination() {
+        for filename_template in [None, Some("capture.png"), Some("capture-link.png")] {
+            let temp = tempfile::tempdir().unwrap();
+            let source = temp.path().join("capture.png");
+            let contents = b"owned screenshot must survive";
+            std::fs::write(&source, contents).unwrap();
+            std::fs::hard_link(&source, temp.path().join("capture-link.png")).unwrap();
+            let ctx = TriggerContext::new().with_image_path(source.clone());
+
+            CliAutomationHost
+                .save_to_location(&ctx, temp.path().to_str().unwrap(), filename_template)
+                .await
+                .unwrap();
+
+            assert_eq!(std::fs::read(&source).unwrap(), contents);
+            assert_eq!(
+                std::fs::read(temp.path().join("capture-link.png")).unwrap(),
+                contents
+            );
+        }
+    }
+
+    #[tokio::test]
+    async fn cli_save_to_location_copies_and_replaces_a_distinct_destination() {
+        let temp = tempfile::tempdir().unwrap();
+        let source = temp.path().join("capture.png");
+        let destination = temp.path().join("saved");
+        let ctx = TriggerContext::new()
+            .with_image_path(source.clone())
+            .with_window_title("Capture".to_string());
+
+        for contents in [b"original screenshot", b"updated screenshot!"] {
+            std::fs::write(&source, contents).unwrap();
+            CliAutomationHost
+                .save_to_location(&ctx, destination.to_str().unwrap(), Some("{window}.png"))
+                .await
+                .unwrap();
+
+            assert_eq!(std::fs::read(&source).unwrap(), contents);
+            assert_eq!(
+                std::fs::read(destination.join("Capture.png")).unwrap(),
+                contents
+            );
+        }
+    }
+
+    #[cfg(unix)]
+    #[tokio::test]
+    async fn cli_save_to_location_overwrites_a_write_only_destination() {
+        use std::os::unix::fs::PermissionsExt;
+
+        let temp = tempfile::tempdir().unwrap();
+        let source = temp.path().join("capture.png");
+        let destination = temp.path().join("saved.png");
+        std::fs::write(&source, b"new screenshot").unwrap();
+        std::fs::write(&destination, b"previous screenshot").unwrap();
+        std::fs::set_permissions(&destination, std::fs::Permissions::from_mode(0o200)).unwrap();
+        let ctx = TriggerContext::new().with_image_path(source.clone());
+
+        let result = CliAutomationHost
+            .save_to_location(&ctx, temp.path().to_str().unwrap(), Some("saved.png"))
+            .await;
+        std::fs::set_permissions(&destination, std::fs::Permissions::from_mode(0o600)).unwrap();
+        result.unwrap();
+
+        assert_eq!(std::fs::read(source).unwrap(), b"new screenshot");
+        assert_eq!(std::fs::read(destination).unwrap(), b"new screenshot");
+    }
+
+    #[test]
+    fn reveal_uses_file_manager_instead_of_opening_file() {
+        let file = Path::new("relative folder").join("capture.png");
+        let absolute = std::env::current_dir().unwrap().join(&file);
+        let cmd = reveal_command(&file).unwrap();
+        let args: Vec<_> = cmd.get_args().collect();
+
+        #[cfg(target_os = "linux")]
+        {
+            assert_eq!(cmd.get_program(), "xdg-open");
+            assert_eq!(args, [absolute.parent().unwrap().as_os_str()]);
+        }
+        #[cfg(target_os = "macos")]
+        {
+            assert_eq!(cmd.get_program(), "open");
+            assert_eq!(args, [std::ffi::OsStr::new("-R"), absolute.as_os_str()]);
+        }
+        #[cfg(target_os = "windows")]
+        {
+            assert_eq!(cmd.get_program(), "explorer");
+            assert_eq!(
+                args,
+                [std::ffi::OsStr::new("/select,"), absolute.as_os_str()]
+            );
+        }
+    }
+
+    #[cfg(target_os = "linux")]
+    #[test]
+    fn reveal_passes_parent_directory_as_one_argument_to_file_manager() {
+        use std::os::unix::fs::PermissionsExt;
+
+        let temp = tempfile::tempdir().unwrap();
+        let program = temp.path().join("xdg-open");
+        let log = temp.path().join("arguments");
+        std::fs::write(
+            &program,
+            "#!/bin/sh\nprintf '%s\\n' \"$#\" \"$1\" > \"$CAP_REVEAL_TEST_LOG\"\n",
+        )
+        .unwrap();
+        std::fs::set_permissions(&program, std::fs::Permissions::from_mode(0o755)).unwrap();
+        let file = temp.path().join("folder with spaces").join("capture.png");
+        let status = reveal_command(&file)
+            .unwrap()
+            .env("PATH", temp.path())
+            .env("CAP_REVEAL_TEST_LOG", &log)
+            .status()
+            .unwrap();
+
+        assert!(status.success());
+        assert_eq!(
+            std::fs::read_to_string(log).unwrap(),
+            format!("1\n{}\n", file.parent().unwrap().display())
+        );
+    }
+
+    #[test]
+    fn cli_presets_keep_caption_source_and_edits_after_reopening() {
+        let current: cap_project::ProjectConfiguration =
+            serde_json::from_value(serde_json::json!({
+                "timeline": {
+                    "segments": [{ "start": 0.0, "end": 10.0, "timescale": 1.0 }],
+                    "zoomSegments": [],
+                    "captionSegments": [{ "id": "spoken", "start": 2.0, "end": 3.0,
+                        "text": "Current recording", "colorOverride": "#123456" }]
+                },
+                "captions": {
+                    "segments": [{ "id": "spoken", "start": 2.0, "end": 3.0,
+                        "text": "Current recording",
+                        "words": [{ "text": "Current recording", "start": 2.0, "end": 3.0 }] }],
+                    "settings": { "enabled": true, "size": 32 },
+                    "sourceTimed": true
+                },
+                "clips": [{ "index": 0, "offsets": { "mic": -0.125 } }]
+            }))
+            .unwrap();
+        let mut legacy = current.clone();
+        let captions = legacy.captions.as_mut().unwrap();
+        captions.segments[0].text = "Other recording".into();
+        captions.segments[0].words[0].text = "Other recording".into();
+        captions.settings.size = 72;
+        legacy.timeline.as_mut().unwrap().segments[0].end = 5.0;
+        legacy.clips.clear();
+        let mut styling = legacy.clone();
+        styling.captions.as_mut().unwrap().segments.clear();
+        styling.timeline = None;
+
+        for preset in [legacy, styling, Default::default()] {
+            let temp = tempfile::tempdir().unwrap();
+            current.write(temp.path()).unwrap();
+            let expected_size = preset.captions.as_ref().map_or_else(
+                || cap_project::CaptionSettings::default().size,
+                |captions| captions.settings.size,
+            );
+            apply_project_preset(temp.path(), preset).unwrap();
+            let mut reopened = cap_project::ProjectConfiguration::load(temp.path()).unwrap();
+            let captions = reopened.captions.as_ref().unwrap();
+            assert_eq!(captions.segments[0].text, "Current recording");
+            assert!(captions.source_timed);
+            assert_eq!(captions.settings.size, expected_size);
+            assert_eq!(reopened.clips.len(), 1);
+            assert_eq!(reopened.clips[0].offsets.mic, -0.125);
+            assert_eq!(reopened.timeline.as_ref().unwrap().segments[0].end, 10.0);
+            cap_project::synchronize_captions(&mut reopened, &[10.0]);
+            let track = &reopened.timeline.as_ref().unwrap().caption_segments[0];
+            assert_eq!(track.text, "Current recording");
+            assert_eq!(track.color_override.as_deref(), Some("#123456"));
+        }
+    }
+
+    #[test]
+    fn cli_presets_apply_to_projects_without_a_saved_config() {
+        let temp = tempfile::tempdir().unwrap();
+        let mut preset = cap_project::ProjectConfiguration::default();
+        preset.background.padding = 24.0;
+        apply_project_preset(temp.path(), preset).unwrap();
+        let reopened = cap_project::ProjectConfiguration::load(temp.path()).unwrap();
+        assert_eq!(reopened.background.padding, 24.0);
+    }
+
+    #[test]
+    fn cli_presets_leave_unreadable_configs_untouched() {
+        let temp = tempfile::tempdir().unwrap();
+        let path = temp.path().join("project-config.json");
+        std::fs::write(&path, b"incomplete configuration").unwrap();
+        let error = apply_project_preset(temp.path(), Default::default()).unwrap_err();
+        assert!(error.starts_with("Failed to load project config:"));
+        assert_eq!(std::fs::read(path).unwrap(), b"incomplete configuration");
+    }
+
+    #[tokio::test]
+    async fn cli_upload_cleanup_retains_media_without_a_verified_receipt() {
+        for trigger in [Trigger::UploadCompleted, Trigger::InstantRecordingFinished] {
+            let temp = tempfile::tempdir().unwrap();
+            let project_path = temp.path().join("owned.cap");
+            std::fs::create_dir(&project_path).unwrap();
+            let media = project_path.join("retained-media.mp4");
+            std::fs::write(&media, b"owned recording must survive").unwrap();
+            let mut actions = Vec::new();
+            if trigger == Trigger::InstantRecordingFinished {
+                actions.push(Action::Upload {
+                    organization_id: None,
+                    copy_link: false,
+                    open_in_browser: false,
+                });
+            }
+            actions.push(Action::DeleteLocalFiles);
+            let store = AutomationsStore {
+                version: 1,
+                rules: vec![AutomationRule {
+                    id: "owned-cleanup".to_string(),
+                    name: "Upload cleanup".to_string(),
+                    enabled: true,
+                    trigger,
+                    match_mode: MatchMode::All,
+                    conditions: vec![],
+                    actions,
+                }],
+            };
+            let ctx = TriggerContext::new()
+                .with_project_path(project_path)
+                .with_share_link("https://cap.test/s/owned".to_string())
+                .with_share_id("owned".to_string());
+            let results = cap_automation::run(&CliAutomationHost, &store, &trigger, &ctx).await;
+            let deletion = results[0].action_results.last().unwrap();
+            assert!(!deletion.success);
+            assert!(
+                deletion
+                    .error
+                    .as_deref()
+                    .unwrap()
+                    .contains("remote verification is unavailable")
+            );
+            assert_eq!(
+                std::fs::read(&media).unwrap(),
+                b"owned recording must survive"
+            );
+            if trigger == Trigger::InstantRecordingFinished {
+                assert!(results[0].action_results[0].success);
+            }
+        }
+    }
+
+    #[tokio::test]
+    async fn studio_recording_duration_conditions_use_recorded_media() {
+        use cap_automation::Condition;
+
+        let temp = tempfile::tempdir().unwrap();
+        std::fs::write(
+            temp.path().join("display.mp4"),
+            include_bytes!(concat!(
+                env!("CARGO_MANIFEST_DIR"),
+                "/../../crates/video-decode/tests/fixtures/h264-no-reordering.mp4"
+            )),
+        )
+        .unwrap();
+        std::fs::write(
+            temp.path().join("recording-meta.json"),
+            serde_json::to_vec(&serde_json::json!({
+                "pretty_name": "duration test",
+                "sharing": {"id": "example", "link": "https://cap.test/s/example"},
+                "segments": [{"display": {"path": "display.mp4", "fps": 30}}]
+            }))
+            .unwrap(),
+        )
+        .unwrap();
+        let rule = |id: &str, condition| AutomationRule {
+            id: id.to_string(),
+            name: id.to_string(),
+            enabled: true,
+            trigger: Trigger::StudioRecordingFinished,
+            match_mode: MatchMode::All,
+            conditions: vec![condition],
+            actions: vec![Action::SkipEditor],
+        };
+        let store = AutomationsStore {
+            version: 1,
+            rules: vec![
+                rule("long-enough", Condition::DurationAtLeast { secs: 2.0 }),
+                rule("short-enough", Condition::DurationAtMost { secs: 4.0 }),
+                rule("too-long", Condition::DurationAtLeast { secs: 4.0 }),
+                rule("too-short", Condition::DurationAtMost { secs: 2.0 }),
+            ],
+        };
+        let ctx = recording_finished_context(temp.path(), AutomationRecordingMode::Studio, &store);
+        let matched = cap_automation::evaluate(&store, &Trigger::StudioRecordingFinished, &ctx);
+        let ids = matched
+            .iter()
+            .map(|(id, _)| id.as_str())
+            .collect::<Vec<_>>();
+        assert_eq!(ids, ["long-enough", "short-enough"]);
+        assert_eq!(ctx.share_id.as_deref(), Some("example"));
+        let results = cap_automation::run(
+            &CliAutomationHost,
+            &store,
+            &Trigger::StudioRecordingFinished,
+            &ctx,
+        )
+        .await;
+        assert_eq!(results.len(), 2);
+        assert!(
+            results
+                .iter()
+                .all(|result| result.action_results[0].success)
+        );
+
+        let mut disabled = store.clone();
+        for rule in &mut disabled.rules {
+            rule.enabled = false;
+        }
+        let ctx =
+            recording_finished_context(temp.path(), AutomationRecordingMode::Studio, &disabled);
+        assert!(ctx.duration_secs.is_none());
+        let ctx = recording_finished_context(temp.path(), AutomationRecordingMode::Instant, &store);
+        assert!(ctx.duration_secs.is_none());
+        std::fs::remove_file(temp.path().join("display.mp4")).unwrap();
+        let ctx = recording_finished_context(temp.path(), AutomationRecordingMode::Studio, &store);
+        assert!(ctx.duration_secs.is_none());
+    }
+}

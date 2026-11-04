@@ -153,7 +153,7 @@ mod tests {
 
     #[test]
     fn ordinary_text_and_plain_urls_are_untouched() {
-        let line = "opened https://cap.so/s/abc123 for the user at /Users/x/Movies/a.cap";
+        let line = "opened https://oiaai.clubemkt.digital/s/abc123 for the user at /Users/x/Movies/a.cap";
         assert_eq!(scrub_log_text(line), line);
     }
 

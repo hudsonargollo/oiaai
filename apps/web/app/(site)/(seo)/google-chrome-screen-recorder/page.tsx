@@ -27,13 +27,13 @@ export const metadata: Metadata = {
 		"browser screen recorder",
 	],
 	alternates: {
-		canonical: "https://cap.so/google-chrome-screen-recorder",
+		canonical: "https://oiaai.clubemkt.digital/google-chrome-screen-recorder",
 	},
 	openGraph: {
 		title: "Google Chrome Screen Recorder: Record & Share Free | OlhaAí",
 		description:
 			"Record your screen directly from Google Chrome with OlhaAí's free, open-source extension. Instant shareable links, no watermarks, no downloads.",
-		url: "https://cap.so/google-chrome-screen-recorder",
+		url: "https://oiaai.clubemkt.digital/google-chrome-screen-recorder",
 		siteName: "OlhaAí",
 		images: [
 			{

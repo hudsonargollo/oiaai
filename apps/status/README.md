@@ -1,13 +1,13 @@
 # OlhaAí Status
 
-An independent Next.js app for `status.cap.so`. It reuses the current landing page’s Instrument Sans, Source Serif 4, DM Mono, cloud artwork, and colour palette. It has no dependency on the main web app, its database, or its deployment.
+An independent Next.js app for `status.oiaai.clubemkt.digital`. It reuses the current landing page’s Instrument Sans, Source Serif 4, DM Mono, cloud artwork, and colour palette. It has no dependency on the main web app, its database, or its deployment.
 
 ## Deploy on Vercel
 
 1. Import this repository into a **separate Vercel project**, with root directory **`apps/status`**, framework **Next.js**, and build command **`bun run build`**. Keep access to the repository root enabled so Vercel uses the existing Bun workspace and lockfile. Use Bun 1.4.4. Do not attach the main site’s environment variables.
 2. Attach a dedicated Upstash Redis database through the Vercel Marketplace. Set `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` on the production environment. Keep preview data in a separate database, or leave preview storage unconfigured.
 3. Set a random `CRON_SECRET` of at least 32 bytes on production. Vercel sends it as the cron’s Bearer token. Do not prefix any of these variables with `NEXT_PUBLIC_`.
-4. Configure the production service URLs below. Deploy on a plan supporting **five-minute cron jobs** (Vercel Pro or higher), then add `status.cap.so` to this project and point its DNS at Vercel. The page starts with honest “no data” states until checks run.
+4. Configure the production service URLs below. Deploy on a plan supporting **five-minute cron jobs** (Vercel Pro or higher), then add `status.oiaai.clubemkt.digital` to this project and point its DNS at Vercel. The page starts with honest “no data” states until checks run.
 5. Verify the first `/api/cron/check` invocation succeeds in the Vercel logs and `/api/status` contains current observations for every configured service. Set an **external dead-man monitor** to alert when `/api/status` has an old `checkedAt` (over 15 minutes), returns non-200, or cannot be reached. This detects a failed scheduler, Redis, or the status deployment itself.
 6. Before public launch, configure a Vercel WAF rate limit for `/api/status` (GET and HEAD). Start with 300 requests per minute per IP in log mode, check expected traffic, then enforce with a 429 response. The public API rejects query parameters before accessing Redis, preventing cache-busting URLs from consuming storage requests. The WAF rule protects function usage as well and is configured on the separate status project, not the main site.
 
@@ -19,8 +19,8 @@ All endpoints must be direct HTTPS URLs returning 2xx; redirects are intentional
 
 | Environment variable | Probe | Coverage |
 | --- | --- | --- |
-| `STATUS_WEBSITE_URL` | HEAD; defaults to `https://cap.so` | Public website reachability |
-| `STATUS_API_URL` | GET; defaults to `https://cap.so/api/auth/providers` | Authentication API reachability and a real provider payload; does not simulate sign-in or prove database health |
+| `STATUS_WEBSITE_URL` | HEAD; defaults to `https://oiaai.clubemkt.digital` | Public website reachability |
+| `STATUS_API_URL` | GET; defaults to `https://oiaai.clubemkt.digital/api/auth/providers` | Authentication API reachability and a real provider payload; does not simulate sign-in or prove database health |
 | `STATUS_SHARING_URL` | HEAD; required | A permanent public test recording’s share page returning 200 |
 | `STATUS_STORAGE_URL` | HEAD; required | A small, permanent canary object on the production storage/CDN path; does not test uploads |
 | `STATUS_MEDIA_URL` | GET; required | Media server `/health`, including `status === "ok"` rather than HTTP status alone |

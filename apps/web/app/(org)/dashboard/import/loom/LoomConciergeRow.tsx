@@ -52,7 +52,7 @@ function statusCopy(request: LoomMigrationView) {
 	if (!request.invitedAt) {
 		return {
 			title: "Loom migration requested",
-			body: "Next, invite hello@cap.so to your Loom workspace with download permission.",
+			body: "Next, invite hello@oiaai.clubemkt.digital to your Loom workspace with download permission.",
 		};
 	}
 	return {
@@ -224,7 +224,7 @@ export function LoomConciergeRow({
 						<div className="flex flex-col gap-4 p-5">
 							<p className="text-sm text-gray-11">
 								We'll move your Loom videos into this organization. After you
-								request, invite hello@cap.so to your Loom workspace with
+								request, invite hello@oiaai.clubemkt.digital to your Loom workspace with
 								download permission.
 							</p>
 							<div className="flex flex-col gap-2">

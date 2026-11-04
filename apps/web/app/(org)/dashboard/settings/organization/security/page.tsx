@@ -55,8 +55,8 @@ export default async function OrganizationSecurityPage({
 						<CardDescription>
 							Unable to load SAML SSO settings. Reload this page to try again.
 							If the problem continues, contact{" "}
-							<a className="underline" href="mailto:hello@cap.so">
-								hello@cap.so
+							<a className="underline" href="mailto:hello@oiaai.clubemkt.digital">
+								hello@oiaai.clubemkt.digital
 							</a>{" "}
 							for help.
 						</CardDescription>

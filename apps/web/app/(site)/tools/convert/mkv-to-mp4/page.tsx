@@ -35,17 +35,17 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/tools/convert/mkv-to-mp4",
+		canonical: "https://oiaai.clubemkt.digital/tools/convert/mkv-to-mp4",
 	},
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
-	{ name: "Convert", url: "https://cap.so/tools/convert" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
+	{ name: "Convert", url: "https://oiaai.clubemkt.digital/tools/convert" },
 	{
 		name: "MKV to MP4 Converter",
-		url: "https://cap.so/tools/convert/mkv-to-mp4",
+		url: "https://oiaai.clubemkt.digital/tools/convert/mkv-to-mp4",
 	},
 ]);
 

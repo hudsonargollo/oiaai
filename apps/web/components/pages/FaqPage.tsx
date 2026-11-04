@@ -48,7 +48,7 @@ const faqContent: FaqItem[] = [
 			"Yes. OlhaAí is SOC 2 Type II, ISO 27001, and HIPAA compliant. You can request our reports and view our security practices in OlhaAí's Trust Portal.",
 		link: {
 			text: "Visit the Trust Portal",
-			href: "https://trust.cap.so",
+			href: "https://trust.oiaai.clubemkt.digital",
 		},
 	},
 	{

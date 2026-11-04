@@ -14,7 +14,7 @@ use serde_json::Value;
 use crate::atomic;
 use crate::{OutputFormat, write_json};
 
-pub const DEFAULT_SERVER: &str = "https://cap.so";
+pub const DEFAULT_SERVER: &str = "https://oiaai.clubemkt.digital";
 const AGENT_KEYRING_SERVICE: &str = "so.cap.cli";
 const AGENT_KEYRING_USER: &str = "agent-api";
 const AGENT_GRANTS_KEYRING_USER: &str = "agent-access-grants";
@@ -756,18 +756,18 @@ mod tests {
     #[test]
     fn agent_servers_require_https_except_for_loopback_development() {
         assert_eq!(
-            validate_agent_server("https://cap.so/".to_string()).unwrap(),
-            "https://cap.so"
+            validate_agent_server("https://oiaai.clubemkt.digital/".to_string()).unwrap(),
+            "https://oiaai.clubemkt.digital"
         );
         assert!(validate_agent_server("http://127.0.0.1:3000".to_string()).is_ok());
         assert!(validate_agent_server("http://[::1]:3000".to_string()).is_ok());
         assert!(validate_agent_server("http://localhost:3000".to_string()).is_ok());
         for server in [
-            "http://cap.so",
-            "ftp://cap.so",
-            "https://user:secret@cap.so",
-            "https://cap.so?token=secret",
-            "https://cap.so#secret",
+            "http://oiaai.clubemkt.digital",
+            "ftp://oiaai.clubemkt.digital",
+            "https://user:secret@oiaai.clubemkt.digital",
+            "https://oiaai.clubemkt.digital?token=secret",
+            "https://oiaai.clubemkt.digital#secret",
         ] {
             assert!(validate_agent_server(server.to_string()).is_err());
         }

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 			"The Ultimate Loom Alternative: Why OlhaAí is the Best Open-Source Screen Recorder",
 		description:
 			"Looking for the best Loom alternative? Discover OlhaAí with a built-in Loom video importer. Open-source, privacy-focused screen recorder for Mac & Windows.",
-		url: "https://cap.so/loom-alternative",
+		url: "https://oiaai.clubemkt.digital/loom-alternative",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/loom-alternative",
+		canonical: "https://oiaai.clubemkt.digital/loom-alternative",
 	},
 };
 

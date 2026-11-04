@@ -16,14 +16,14 @@ export const metadata: Metadata = {
 	description:
 		"OlhaAí is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 	alternates: {
-		canonical: "https://cap.so/video-recording-software",
+		canonical: "https://oiaai.clubemkt.digital/video-recording-software",
 	},
 	openGraph: {
 		title:
 			"Video Recording Software — Free HD Capture, Instant Sharing | OlhaAí",
 		description:
 			"OlhaAí is free video recording software for Mac and Windows. Record in HD with audio and webcam, then share with a link instantly. Open-source, no watermarks.",
-		url: "https://cap.so/video-recording-software",
+		url: "https://oiaai.clubemkt.digital/video-recording-software",
 		siteName: "OlhaAí",
 		images: [
 			{

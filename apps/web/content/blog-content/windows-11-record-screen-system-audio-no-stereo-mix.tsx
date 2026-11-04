@@ -52,7 +52,7 @@ export const recordScreenWindowsContent = {
 				{
 					title: "Step 1: Install OlhaAí",
 					content:
-						'Download and install OlhaAí from <a href="/download">cap.so/download</a>.',
+						'Download and install OlhaAí from <a href="/download">oiaai.clubemkt.digital/download</a>.',
 				},
 				{
 					title: "Step 2: Configure Audio (1 Minute Setup)",

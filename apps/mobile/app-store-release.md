@@ -9,7 +9,7 @@ OlhaAí Mobile is currently an iPhone-only Expo app. Android remains outside thi
 - [x] Create the `cap-software-inc` Expo organization with `richiemcilroy` as its owner.
 - [x] Link the app to the OlhaAí-owned `cap-software-inc/cap-mobile` EAS project and commit its public project ID in `app.config.js`.
 - [ ] Confirm that Apple Team `47B7FCLL43` owns bundle ID `so.cap.mobile`, then create or select the matching App Store Connect app.
-- [ ] Configure Sign in with Apple for `cap.so`, set the production `APPLE_CLIENT_ID` and `APPLE_CLIENT_SECRET`, and verify the complete mobile OAuth callback on TestFlight.
+- [ ] Configure Sign in with Apple for `oiaai.clubemkt.digital`, set the production `APPLE_CLIENT_ID` and `APPLE_CLIENT_SECRET`, and verify the complete mobile OAuth callback on TestFlight.
 - [x] Remove the external OlhaAí Pro checkout action from the iOS account screen before review. Existing entitlements remain available in version 1.0.
 - [x] Remove external purchase calls to action from Pro-gated Analytics and Loom Import states.
 - [x] Let a signed-in user initiate permanent account deletion from Account settings.
@@ -36,7 +36,7 @@ OlhaAí Mobile is currently an iPhone-only Expo app. Android remains outside thi
 - [x] Help, support, privacy, and terms pages are available to signed-in users from Account settings.
 - [x] Content reports are stored durably for support review, and blocked owners' recordings and comments are removed from the blocking user's mobile results.
 - [x] The unused background-processing mode is removed.
-- [x] Associated Domains are omitted by default while `cap.so` has no production association file.
+- [x] Associated Domains are omitted by default while `oiaai.clubemkt.digital` has no production association file.
 - [x] Non-exempt encryption is declared false and the release Team ID is explicit in Expo configuration.
 - [x] Version 1.0.0 uses a manual build-then-submit workflow.
 - [x] The production privacy and terms pages return HTTP 200.
@@ -61,12 +61,12 @@ OlhaAí Mobile is currently an iPhone-only Expo app. Android remains outside thi
 4. Create the App Store Connect record and provide its numeric Apple ID for `eas.json` as `ascAppId`.
 5. Provide the App Review contact name, email, and international-format phone number.
 6. Create a durable review account containing safe sample recordings. Store its credentials only in App Store Connect.
-7. Enable Sign in with Apple on App ID `so.cap.mobile`, create a Services ID for the web OAuth flow, associate it with the primary App ID, and register `https://cap.so/api/auth/callback/apple` as the return URL.
+7. Enable Sign in with Apple on App ID `so.cap.mobile`, create a Services ID for the web OAuth flow, associate it with the primary App ID, and register `https://oiaai.clubemkt.digital/api/auth/callback/apple` as the return URL.
 8. Generate an Apple client-secret JWT for the Services ID, store the Services ID as `APPLE_CLIENT_ID` and the JWT as `APPLE_CLIENT_SECRET` in the production web environment, and rotate the JWT before it expires.
 
 ### Account deletion operations
 
-1. Assign an owner to monitor `hello@cap.so` and human-mode Messenger conversations for subjects named `[PENDING] Account deletion request`.
+1. Assign an owner to monitor `hello@oiaai.clubemkt.digital` and human-mode Messenger conversations for subjects named `[PENDING] Account deletion request`.
 2. Complete deletion within 30 days: cancel any direct OlhaAí subscription, remove the account and associated personal data and content, handle solely owned organizations, and remove access to shared organizations.
 3. Email the user after completion, then change the durable request subject from `[PENDING]` to `[COMPLETED]`. Pending requests intentionally block every new mobile login.
 4. Test the full process with a disposable account before App Review. Do not delete the durable review account.
@@ -79,7 +79,7 @@ For native purchasing in a later release, the recommended Expo path is RevenueCa
 
 ### Content safety operations
 
-1. Assign an owner to monitor `hello@cap.so` and human-mode Messenger conversations for subjects named `[PENDING] Mobile content report`.
+1. Assign an owner to monitor `hello@oiaai.clubemkt.digital` and human-mode Messenger conversations for subjects named `[PENDING] Mobile content report`.
 2. Review each report promptly against OlhaAí's Terms of Service, remove violating content, respond to the reporter when appropriate, and change the durable request subject from `[PENDING]` to `[COMPLETED]`.
 3. Keep the App Review explanation accurate: the native app has no public discovery feed or anonymous chat, and recordings are visible only to the owner or authenticated members of an organization or space with access. Public share links are not browsable from a public mobile catalog.
 4. Maintain organization member-removal and content-removal procedures as the service-level moderation controls. Test report and block behavior with two disposable accounts before review.

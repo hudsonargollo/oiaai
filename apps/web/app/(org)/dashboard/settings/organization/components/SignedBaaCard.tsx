@@ -126,7 +126,7 @@ function SignedBaaCardContent() {
 		(paymentConfirmation.isPending || paymentConfirmation.isFetching);
 	const verificationError = isBaaRedirect
 		? !sessionId
-			? "The payment confirmation link is incomplete. Reopen the link from checkout or contact hello@cap.so."
+			? "The payment confirmation link is incomplete. Reopen the link from checkout or contact hello@oiaai.clubemkt.digital."
 			: paymentConfirmation.error?.message
 		: null;
 	const verificationBlocked =
@@ -476,7 +476,7 @@ function SignedBaaCardContent() {
 									subscription is canceled.
 								</>
 							)}{" "}
-							A countersigned PDF will be emailed to you and hello@cap.so.
+							A countersigned PDF will be emailed to you and hello@oiaai.clubemkt.digital.
 						</p>
 						<div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
 							<Button

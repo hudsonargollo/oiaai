@@ -121,7 +121,7 @@ describe("LoomImportScreen", () => {
 		auth.value.client.importLoom.mockReset();
 		auth.value.client.importLoom.mockResolvedValue({
 			id: "video_456",
-			shareUrl: "https://cap.so/s/video_456",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_456",
 		});
 		auth.value.refresh.mockReset();
 		auth.value.refresh.mockResolvedValue(undefined);

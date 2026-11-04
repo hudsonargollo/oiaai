@@ -29,10 +29,10 @@ export const Faq = () => (
 					</Link>
 					. Still stuck? Mail{" "}
 					<a
-						href="mailto:hello@cap.so"
+						href="mailto:hello@oiaai.clubemkt.digital"
 						className="underline decoration-[rgba(17,17,17,0.3)] underline-offset-[5px] transition-colors duration-200 hover:decoration-[#111111]"
 					>
-						hello@cap.so
+						hello@oiaai.clubemkt.digital
 					</a>{" "}
 					and a human answers.
 				</p>

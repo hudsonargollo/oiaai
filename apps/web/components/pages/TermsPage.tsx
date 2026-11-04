@@ -93,7 +93,7 @@ export const TermsPage = () => {
 							presentations, and promotional materials, to indicate you as a
 							user or customer of our Services. If you do not wish for your
 							company’s name or logo to be used for such purposes, you may opt
-							out by contacting us at hello@cap.so.
+							out by contacting us at hello@oiaai.clubemkt.digital.
 						</li>
 						<li>
 							<h3>Privacy</h3>
@@ -162,7 +162,7 @@ export const TermsPage = () => {
 							<h3>Contact Us</h3>
 							<br />
 							If you have any questions about these Terms, please contact us at
-							hello@cap.so.
+							hello@oiaai.clubemkt.digital.
 						</li>
 					</ol>
 					<p>Last updated: 24th April 2024</p>

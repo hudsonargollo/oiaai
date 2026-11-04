@@ -14,11 +14,11 @@ Category: Productivity → Communication
 
 Language: English
 
-Website: https://cap.so
+Website: https://oiaai.clubemkt.digital
 
-Support: https://cap.so/docs
+Support: https://oiaai.clubemkt.digital/docs
 
-Privacy policy: https://cap.so/privacy
+Privacy policy: https://oiaai.clubemkt.digital/privacy
 
 ## Detailed Description (paste as plain text)
 
@@ -54,7 +54,7 @@ HOW IT WORKS
 
 CAP EVERYWHERE
 
-The extension is part of the OlhaAí platform: native desktop apps for macOS and Windows, a web recorder, and a shared library at cap.so. Recordings stay connected to your OlhaAí account wherever you capture them.
+The extension is part of the OlhaAí platform: native desktop apps for macOS and Windows, a web recorder, and a shared library at oiaai.clubemkt.digital. Recordings stay connected to your OlhaAí account wherever you capture them.
 
 OlhaAí is free to get started. Upgrade to OlhaAí Pro for unlimited recording length, OlhaAí AI, custom domains, custom S3 storage, and team features.
 

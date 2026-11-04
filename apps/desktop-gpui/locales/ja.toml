@@ -602,7 +602,7 @@ pass = "合格"
 warn = "警告"
 
 [settings.sign_in_required]
-body = "続けるにはサインインしてください。または、hello@cap.soにメールするか、cap.link/discordからDiscordに参加してください"
+body = "続けるにはサインインしてください。または、hello@oiaai.clubemkt.digitalにメールするか、cap.link/discordからDiscordに参加してください"
 title = "サインインが必要です"
 
 [settings.changelog]
@@ -629,7 +629,7 @@ free_description = "個人利用ならローカルで録画と編集ができま
 have_key = "ライセンスキーをお持ちですか？"
 key = "ライセンスキー"
 no_instance = "インスタンスIDが見つかりません"
-opens_pricing = "ブラウザでcap.so/pricingを開きます。"
+opens_pricing = "ブラウザでoiaai.clubemkt.digital/pricingを開きます。"
 placeholder = "ライセンスキー"
 plan_title = "ご利用中のプラン"
 pro_description = "お使いのアカウントには、クラウド共有、Pro機能、商用利用できるデスクトップライセンスが含まれます。"
@@ -1174,7 +1174,7 @@ subtitle = "キーボードショートカットから保存先まで、すべ�
 title = "OlhaAíを自分仕様に"
 
 [onboarding.customize.domain]
-description = "共有リンクにcap.soではなく独自ドメインを使えます"
+description = "共有リンクにoiaai.clubemkt.digitalではなく独自ドメインを使えます"
 title = "カスタムドメイン"
 
 [onboarding.customize.preferences]
@@ -2942,13 +2942,13 @@ busy_title = "OlhaAíは処理中です"
 check_failed = "アップデートを確認できませんでした：{error}"
 download = "ダウンロード"
 download_failed = "バージョン{version}をダウンロードできませんでした：{error}"
-failed = "{message}\n\n最新バージョンはいつでもcap.so/downloadからダウンロードできます。"
+failed = "{message}\n\n最新バージョンはいつでもoiaai.clubemkt.digital/downloadからダウンロードできます。"
 install_failed = "バージョン{version}をインストールできませんでした：{error}"
 later = "後で"
 no_update = "OlhaAíはすでに最新バージョンです。"
 no_update_title = "アップデートはありません"
 not_now = "今はしない"
-package_not_installed = "パッケージはインストールされませんでした。システムの確認を承認するか、cap.so/downloadからインストールしてください。"
+package_not_installed = "パッケージはインストールされませんでした。システムの確認を承認するか、oiaai.clubemkt.digital/downloadからインストールしてください。"
 ready = "OlhaAí {version}の準備ができました。アップデートを完了するにはOlhaAíを再起動してください。"
 restart_now = "今すぐ再起動"
 title = "OlhaAíをアップデート"

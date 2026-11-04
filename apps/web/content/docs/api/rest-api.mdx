@@ -19,7 +19,7 @@ These keys do not authenticate the OlhaAí CLI. For CLI keys (`cap_cli_`), used 
 
 API keys are managed through the Developer dashboard, not the general Settings page.
 
-1. Go to [cap.so/dashboard/developers](https://cap.so/dashboard/developers).
+1. Go to [oiaai.clubemkt.digital/dashboard/developers](https://oiaai.clubemkt.digital/dashboard/developers).
 2. Click **Create App** and give it a name and environment (development or production).
 3. Two keys are generated for each app:
    - **Public key** (`cpk_...`) -- Safe to use in client-side code. Used with the SDK API.
@@ -44,23 +44,23 @@ Keep your secret key private. Never expose it in client-side code, commit it to 
 
 ## OpenAPI
 
-A machine-readable OpenAPI 3.1 description of both APIs is published at [cap.so/openapi.json](https://cap.so/openapi.json). Import it into an API client, generate a typed SDK, or give it to an agent as tool definitions.
+A machine-readable OpenAPI 3.1 description of both APIs is published at [oiaai.clubemkt.digital/openapi.json](https://oiaai.clubemkt.digital/openapi.json). Import it into an API client, generate a typed SDK, or give it to an agent as tool definitions.
 
 ## Base URL
 
 **REST API (secret key):**
 
 ```
-https://cap.so/api/developer/v1
+https://oiaai.clubemkt.digital/api/developer/v1
 ```
 
 **SDK API (public key):**
 
 ```
-https://cap.so/api/developer/sdk/v1
+https://oiaai.clubemkt.digital/api/developer/sdk/v1
 ```
 
-If you are self-hosting OlhaAí, replace `cap.so` with your custom domain.
+If you are self-hosting OlhaAí, replace `oiaai.clubemkt.digital` with your custom domain.
 
 ## Error Handling
 
@@ -71,8 +71,8 @@ All error responses return a JSON object with an `error` string. Authentication,
   "error": "Invalid secret key",
   "code": "invalid_secret_key",
   "message": "Invalid secret key",
-  "hint": "Send Authorization: Bearer csk_... with a secret key from https://cap.so/dashboard/developers.",
-  "docs": "https://cap.so/docs/api/rest-api"
+  "hint": "Send Authorization: Bearer csk_... with a secret key from https://oiaai.clubemkt.digital/dashboard/developers.",
+  "docs": "https://oiaai.clubemkt.digital/docs/api/rest-api"
 }
 ```
 
@@ -127,7 +127,7 @@ GET /api/developer/v1/videos
 **Example request:**
 
 ```bash
-curl https://cap.so/api/developer/v1/videos?limit=10 \
+curl https://oiaai.clubemkt.digital/api/developer/v1/videos?limit=10 \
   -H "Authorization: Bearer csk_your_secret_key_here"
 ```
 
@@ -173,7 +173,7 @@ GET /api/developer/v1/videos/:id
 **Example request:**
 
 ```bash
-curl https://cap.so/api/developer/v1/videos/abc123def456 \
+curl https://oiaai.clubemkt.digital/api/developer/v1/videos/abc123def456 \
   -H "Authorization: Bearer csk_your_secret_key_here"
 ```
 
@@ -217,7 +217,7 @@ GET /api/developer/v1/videos/:id/status
 **Example request:**
 
 ```bash
-curl https://cap.so/api/developer/v1/videos/abc123def456/status \
+curl https://oiaai.clubemkt.digital/api/developer/v1/videos/abc123def456/status \
   -H "Authorization: Bearer csk_your_secret_key_here"
 ```
 
@@ -257,7 +257,7 @@ DELETE /api/developer/v1/videos/:id
 **Example request:**
 
 ```bash
-curl -X DELETE https://cap.so/api/developer/v1/videos/abc123def456 \
+curl -X DELETE https://oiaai.clubemkt.digital/api/developer/v1/videos/abc123def456 \
   -H "Authorization: Bearer csk_your_secret_key_here"
 ```
 
@@ -280,7 +280,7 @@ GET /api/developer/v1/usage
 **Example request:**
 
 ```bash
-curl https://cap.so/api/developer/v1/usage \
+curl https://oiaai.clubemkt.digital/api/developer/v1/usage \
   -H "Authorization: Bearer csk_your_secret_key_here"
 ```
 
@@ -326,7 +326,7 @@ POST /api/developer/sdk/v1/videos/create
 **Example request:**
 
 ```bash
-curl -X POST https://cap.so/api/developer/sdk/v1/videos/create \
+curl -X POST https://oiaai.clubemkt.digital/api/developer/sdk/v1/videos/create \
   -H "Authorization: Bearer cpk_your_public_key_here" \
   -H "Content-Type: application/json" \
   -d '{"name": "User Recording", "userId": "user_42"}'
@@ -338,8 +338,8 @@ curl -X POST https://cap.so/api/developer/sdk/v1/videos/create \
 {
   "videoId": "abc123def456",
   "s3Key": "developer/app_789/abc123def456/result.mp4",
-  "shareUrl": "https://cap.so/dev/abc123def456",
-  "embedUrl": "https://cap.so/embed/abc123def456?sdk=1"
+  "shareUrl": "https://oiaai.clubemkt.digital/dev/abc123def456",
+  "embedUrl": "https://oiaai.clubemkt.digital/embed/abc123def456?sdk=1"
 }
 ```
 

@@ -1558,7 +1558,7 @@ async function processVideoAsync(
 			progress: 0,
 			message: "Downloading video...",
 		});
-		// Progress webhooks only update the upload row, so don't wait on cap.so between stages. sendWebhook keeps one
+		// Progress webhooks only update the upload row, so don't wait on oiaai.clubemkt.digital between stages. sendWebhook keeps one
 		// delivery in flight per job and always sends the latest state, so the awaited terminal webhook still lands last.
 		void sendWebhook(job);
 

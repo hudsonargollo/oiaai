@@ -98,7 +98,7 @@ export function getMediaTransferCacheUsage() {
 export function isInternalMediaUrl(input: string): boolean {
 	try {
 		const url = new URL(input);
-		const origins = new Set(["https://cap.so", "https://www.cap.so"]);
+		const origins = new Set(["https://oiaai.clubemkt.digital", "https://www.oiaai.clubemkt.digital"]);
 		if (process.env.MEDIA_SERVER_WEB_ORIGIN)
 			origins.add(new URL(process.env.MEDIA_SERVER_WEB_ORIGIN).origin);
 		return (

@@ -332,7 +332,7 @@ describe("recording status synchronization", () => {
 		{
 			phase: "completed",
 			videoId: "video" as VideoId,
-			shareUrl: "https://cap.so/s/video",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video",
 		},
 		{ phase: "error", message: "Upload failed", recoverable: true },
 	] satisfies RecordingStatus[])(

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		title: "Loom Video Downloader — Free Download + Migrate to OlhaAí",
 		description:
 			"Download any Loom video for free. Then migrate your whole Loom library to OlhaAí and save 20% with MIGRATE20. Built by OlhaAí, the open source Loom alternative.",
-		url: "https://cap.so/tools/loom-downloader",
+		url: "https://oiaai.clubemkt.digital/tools/loom-downloader",
 		siteName: "OlhaAí",
 		type: "website",
 		images: [
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/tools/loom-downloader",
+		canonical: "https://oiaai.clubemkt.digital/tools/loom-downloader",
 	},
 };
 
@@ -159,11 +159,11 @@ const pageContent: ToolPageContent = {
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
 	{
 		name: "Loom Video Downloader",
-		url: "https://cap.so/tools/loom-downloader",
+		url: "https://oiaai.clubemkt.digital/tools/loom-downloader",
 	},
 ]);
 

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		title: "Free Screen Recorder: High-Quality Recording at No Cost",
 		description:
 			"OlhaAí offers a top-rated, free screen recorder with high-quality video capture, making it perfect for creating tutorials, educational content, and professional demos without any hidden fees.",
-		url: "https://cap.so/free-screen-recorder",
+		url: "https://oiaai.clubemkt.digital/free-screen-recorder",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/free-screen-recorder",
+		canonical: "https://oiaai.clubemkt.digital/free-screen-recorder",
 	},
 };
 

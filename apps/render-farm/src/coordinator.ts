@@ -2075,7 +2075,7 @@ function persistFinished(job: Job) {
 
 // ---------------------------------------------------------------- callbacks ---
 
-// Host suffixes a job may name as its callback (e.g. "vercel.app,cap.so").
+// Host suffixes a job may name as its callback (e.g. "vercel.app,oiaai.clubemkt.digital").
 const CALLBACK_HOSTS = (process.env.RF_CALLBACK_HOSTS ?? "")
 	.split(",")
 	.map((host) => host.trim().toLowerCase())

@@ -10,7 +10,7 @@ const begin = () =>
 	recordingUploadQueueReducer(emptyRecordingUploadQueue, {
 		type: "begin",
 		id: "cap_123",
-		shareUrl: "https://cap.so/s/cap_123",
+		shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 	});
 
 describe("recording upload queue", () => {
@@ -129,7 +129,7 @@ describe("recording upload queue", () => {
 		const external = recordingUploadQueueReducer(emptyRecordingUploadQueue, {
 			type: "begin",
 			id: "cap_screen",
-			shareUrl: "https://cap.so/s/cap_screen",
+			shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 			uploadOwner: "external",
 		});
 
@@ -152,7 +152,7 @@ describe("recording upload queue", () => {
 		const external = recordingUploadQueueReducer(emptyRecordingUploadQueue, {
 			type: "begin",
 			id: "cap_screen",
-			shareUrl: "https://cap.so/s/cap_screen",
+			shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 			uploadOwner: "external",
 		});
 		const finishing = recordingUploadQueueReducer(external, {
@@ -187,7 +187,7 @@ describe("recording upload queue", () => {
 			jobs: [
 				{
 					id: "cap_123",
-					shareUrl: "https://cap.so/s/cap_123",
+					shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 					createdAt: "2026-07-21T12:00:00.000Z",
 					status: "recording",
 					durationSeconds: null,
@@ -230,7 +230,7 @@ describe("recording upload queue", () => {
 			jobs: [
 				{
 					id: "cap_screen",
-					shareUrl: "https://cap.so/s/cap_screen",
+					shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 					createdAt: "2026-07-23T08:00:00.000Z",
 					status: "uploading",
 					durationSeconds: 2,
@@ -259,7 +259,7 @@ describe("recording upload queue", () => {
 			jobs: [
 				{
 					id: "cap_123",
-					shareUrl: "https://cap.so/s/cap_123",
+					shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 					createdAt: "2026-07-23T08:00:00.000Z",
 					status: "processing",
 					durationSeconds: 8,

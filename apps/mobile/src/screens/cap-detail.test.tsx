@@ -47,7 +47,7 @@ const detail: MobileCapDetail = {
 	cap: {
 		id: Video.VideoId.make("video_123"),
 		ownerId: User.UserId.make("user_123"),
-		shareUrl: "https://cap.so/s/video_123",
+		shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 		title: "Launch review",
 		createdAt: "2026-05-18T10:00:00.000Z",
 		updatedAt: "2026-05-18T10:30:00.000Z",
@@ -67,13 +67,13 @@ const detail: MobileCapDetail = {
 	chapters: [],
 	transcriptionStatus: "COMPLETE",
 	comments: [],
-	shareUrl: "https://cap.so/s/video_123",
+	shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 };
 
 const playback: MobilePlaybackResponse = {
 	kind: "mp4",
 	transcriptUrl: null,
-	url: "https://cap.so/video.mp4",
+	url: "https://oiaai.clubemkt.digital/video.mp4",
 };
 
 const createdComment = (content: string): MobileComment => ({
@@ -497,7 +497,7 @@ describe("OlhaAí detail screen", () => {
 				cap: {
 					...detail.cap,
 					thumbnailUrl:
-						"https://cap.so/api/mobile/caps/video_123/thumbnail?v=1",
+						"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/thumbnail?v=1",
 					thumbnailCacheKey: "cap-thumbnail:video_123:1",
 				},
 			}),
@@ -511,7 +511,7 @@ describe("OlhaAí detail screen", () => {
 		);
 
 		expect(image?.props.source).toEqual({
-			uri: "https://cap.so/api/mobile/caps/video_123/thumbnail?v=1",
+			uri: "https://oiaai.clubemkt.digital/api/mobile/caps/video_123/thumbnail?v=1",
 			cacheKey: "cap-thumbnail:video_123:1",
 			headers: { Authorization: "Bearer api-key" },
 		});
@@ -639,7 +639,7 @@ describe("OlhaAí detail screen", () => {
 			Promise.resolve({
 				kind: "hls" as const,
 				transcriptUrl: null,
-				url: "https://cap.so/api/playlist?videoId=video_123",
+				url: "https://oiaai.clubemkt.digital/api/playlist?videoId=video_123",
 			}),
 		);
 		authState.value = auth;
@@ -650,7 +650,7 @@ describe("OlhaAí detail screen", () => {
 
 		expect(videoPlayerState.replaceAsync).toHaveBeenCalledWith({
 			contentType: "hls",
-			uri: "https://cap.so/api/playlist?videoId=video_123",
+			uri: "https://oiaai.clubemkt.digital/api/playlist?videoId=video_123",
 		});
 		const video = renderer.root.find(
 			(node) => String(node.type) === "VideoView",

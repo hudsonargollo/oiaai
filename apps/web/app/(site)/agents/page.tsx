@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
 const schemas = [
 	createBreadcrumbSchema([
-		{ name: "Home", url: "https://cap.so" },
+		{ name: "Home", url: "https://oiaai.clubemkt.digital" },
 		{ name: "OlhaAí for Agents", url: agentsSeo.url },
 	]),
 	createHowToSchema({

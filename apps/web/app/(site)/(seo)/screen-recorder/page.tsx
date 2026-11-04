@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 			"Screen Recorder: High-Quality, User-Friendly, and 100% Free Locally",
 		description:
 			"OlhaAí is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits.",
-		url: "https://cap.so/screen-recorder",
+		url: "https://oiaai.clubemkt.digital/screen-recorder",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/screen-recorder",
+		canonical: "https://oiaai.clubemkt.digital/screen-recorder",
 	},
 };
 

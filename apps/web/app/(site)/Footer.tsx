@@ -45,8 +45,8 @@ const footerLinks = {
 		{ label: "FAQs", href: "/faq" },
 		{ label: "Self-hosting", href: "/self-hosting" },
 		{ label: "Support", href: "/support" },
-		{ label: "Email Support", href: "mailto:hello@cap.so" },
-		{ label: "Trust Portal", href: "https://trust.cap.so" },
+		{ label: "Email Support", href: "mailto:hello@oiaai.clubemkt.digital" },
+		{ label: "Trust Portal", href: "https://trust.oiaai.clubemkt.digital" },
 		{
 			label: "Chat Support",
 			href: "https://discord.gg/y8gdQ3WRN3",
@@ -54,7 +54,7 @@ const footerLinks = {
 		},
 		{
 			label: "System Status",
-			href: "https://status.cap.so",
+			href: "https://status.oiaai.clubemkt.digital",
 			isExternal: true,
 		},
 	] as FooterLink[],
@@ -206,7 +206,7 @@ const ComplianceBadges = () => (
 			{complianceBadges.map(({ label, status, content }) => (
 				<Link
 					key={label}
-					href="https://trust.cap.so"
+					href="https://trust.oiaai.clubemkt.digital"
 					target="_blank"
 					rel="noopener noreferrer"
 					title={`${label} — ${status}`}

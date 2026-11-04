@@ -1916,12 +1916,12 @@ mod tests {
     #[test]
     fn accepts_ids_and_known_cap_urls() {
         assert_eq!(cap_id("cap_12345").unwrap(), "cap_12345");
-        assert_eq!(cap_id("https://cap.so/s/cap_12345").unwrap(), "cap_12345");
+        assert_eq!(cap_id("https://oiaai.clubemkt.digital/s/cap_12345").unwrap(), "cap_12345");
         assert_eq!(
             cap_id("https://videos.example.com/cap_12345").unwrap(),
             "cap_12345"
         );
-        assert!(cap_id("https://cap.so/settings/billing").is_err());
+        assert!(cap_id("https://oiaai.clubemkt.digital/settings/billing").is_err());
     }
 
     #[test]

@@ -13,14 +13,14 @@ On 23rd September we had our first major outage. We sincerely apologize for the 
 ## Summary
 
 - A local Infrastructure as Code change in SST referenced our Vercel project as a new resource instead of retrieving the existing one.
-- During `sst deploy` the Vercel project that serves cap.so was removed, which took down marketing pages, the dashboard, video sharing pages, and APIs used by OlhaAí Desktop.
+- During `sst deploy` the Vercel project that serves oiaai.clubemkt.digital was removed, which took down marketing pages, the dashboard, video sharing pages, and APIs used by OlhaAí Desktop.
 - We rebuilt the project, restored environment variables, and reattached custom domains. Service was mostly back after 90 minutes.
 - Uploads from desktop stayed broken for another 30 minutes due to a www redirect that stripped `Authorization` headers. Removing that behavior brought us back to full health.
 
 ## Impact
 
 - **Duration:** 2:30 pm to 4:30 pm AWST for full restoration, with partial restoration at 4:00 pm.
-- **Surface area:** cap.so marketing site, dashboard, video sharing, and desktop upload APIs.
+- **Surface area:** oiaai.clubemkt.digital marketing site, dashboard, video sharing, and desktop upload APIs.
 - **Customer effect:** broken links and failed API calls from OlhaAí Desktop during the incident window.
 
 ## Timeline
@@ -28,11 +28,11 @@ On 23rd September we had our first major outage. We sincerely apologize for the 
 Times in AWST.
 
 - **2:30 pm**: While configuring IaC in SST, we changed our Vercel linkage from declaration to what we thought was a retrieval pattern.
-- **Shortly after**: `sst deploy` removed the Vercel project that hosts cap.so, taking down web and API surfaces.
+- **Shortly after**: `sst deploy` removed the Vercel project that hosts oiaai.clubemkt.digital, taking down web and API surfaces.
 - **~2:40 pm**: We recognized the removal and created a new Vercel project, then began restoring environment variables and domains.
 - **~3:10 pm to 3:50 pm**: Restored required env vars from Bitwarden and SST, reconnected custom domains, redeployed.
 - **4:00 pm**: Most of the app was up again, uploads from desktop still failing.
-- **4:30 pm**: Found a redirect from `cap.so` to `www.cap.so` that swallowed `Authorization` headers. Fixed the routing and header handling. 100 percent of cap.so back online.
+- **4:30 pm**: Found a redirect from `oiaai.clubemkt.digital` to `www.oiaai.clubemkt.digital` that swallowed `Authorization` headers. Fixed the routing and header handling. 100 percent of oiaai.clubemkt.digital back online.
 
 ## Technical details
 
@@ -67,7 +67,7 @@ We immediately created a new Vercel project. Critical environment variables were
 
 ### Why uploads kept failing
 
-After most pages returned, uploads from OlhaAí Desktop still failed. We had configured cap.so to www.cap.so as recommended by Vercel, but this had a side-effect of causing the Authorization header to be stripped from any requests to cap.so. The client sent the header, the redirect hop discarded it, and the target saw an unauthenticated request. We removed this redirect and video uploads began working again.
+After most pages returned, uploads from OlhaAí Desktop still failed. We had configured oiaai.clubemkt.digital to www.oiaai.clubemkt.digital as recommended by Vercel, but this had a side-effect of causing the Authorization header to be stripped from any requests to oiaai.clubemkt.digital. The client sent the header, the redirect hop discarded it, and the target saw an unauthenticated request. We removed this redirect and video uploads began working again.
 
 ## What went wrong
 

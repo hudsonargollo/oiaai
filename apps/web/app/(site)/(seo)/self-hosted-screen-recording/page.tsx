@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source with most code under AGPLv3, free to use.",
 	alternates: {
-		canonical: "https://cap.so/self-hosted-screen-recording",
+		canonical: "https://oiaai.clubemkt.digital/self-hosted-screen-recording",
 	},
 	openGraph: {
 		title:
 			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | OlhaAí",
 		description:
 			"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source and free.",
-		url: "https://cap.so/self-hosted-screen-recording",
+		url: "https://oiaai.clubemkt.digital/self-hosted-screen-recording",
 		siteName: "OlhaAí",
 		images: [
 			{

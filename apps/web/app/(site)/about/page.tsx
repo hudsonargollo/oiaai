@@ -14,8 +14,8 @@ export const metadata: Metadata = buildMarketingMetadata({
 });
 
 const breadcrumb = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "About", url: "https://cap.so/about" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "About", url: "https://oiaai.clubemkt.digital/about" },
 ]);
 
 export default async function Page() {

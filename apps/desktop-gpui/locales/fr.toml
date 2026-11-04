@@ -602,7 +602,7 @@ pass = "RÉUSSI"
 warn = "AVERTISSEMENT"
 
 [settings.sign_in_required]
-body = "Connectez-vous pour continuer. Vous pouvez aussi écrire à hello@cap.so ou rejoindre notre Discord sur cap.link/discord"
+body = "Connectez-vous pour continuer. Vous pouvez aussi écrire à hello@oiaai.clubemkt.digital ou rejoindre notre Discord sur cap.link/discord"
 title = "Connexion requise"
 
 [settings.changelog]
@@ -629,7 +629,7 @@ free_description = "Enregistrez et montez en local pour un usage personnel. Choi
 have_key = "Vous avez une clé de licence ?"
 key = "Clé de licence"
 no_instance = "Aucun identifiant d'instance trouvé"
-opens_pricing = "Ouvre cap.so/pricing dans votre navigateur."
+opens_pricing = "Ouvre oiaai.clubemkt.digital/pricing dans votre navigateur."
 placeholder = "Clé de licence"
 plan_title = "Votre offre"
 pro_description = "Votre compte inclut le partage dans le cloud, les fonctionnalités Pro et une licence de bureau pour un usage commercial."
@@ -1174,7 +1174,7 @@ subtitle = "Personnalisez tout, des raccourcis clavier au stockage. OlhaAí s'ad
 title = "Faites de OlhaAí le vôtre"
 
 [onboarding.customize.domain]
-description = "Utilisez votre propre domaine pour les liens de partage au lieu de cap.so"
+description = "Utilisez votre propre domaine pour les liens de partage au lieu de oiaai.clubemkt.digital"
 title = "Domaine personnalisé"
 
 [onboarding.customize.preferences]
@@ -2942,13 +2942,13 @@ busy_title = "OlhaAí est occupé"
 check_failed = "Impossible de rechercher des mises à jour : {error}"
 download = "Télécharger"
 download_failed = "Impossible de télécharger la version {version} : {error}"
-failed = "{message}\n\nVous pouvez toujours télécharger la dernière version sur cap.so/download."
+failed = "{message}\n\nVous pouvez toujours télécharger la dernière version sur oiaai.clubemkt.digital/download."
 install_failed = "Impossible d'installer la version {version} : {error}"
 later = "Plus tard"
 no_update = "Vous utilisez déjà la dernière version de OlhaAí."
 no_update_title = "Aucune mise à jour disponible"
 not_now = "Plus tard"
-package_not_installed = "Le paquet n'a pas été installé. Acceptez la demande du système, ou installez-le depuis cap.so/download."
+package_not_installed = "Le paquet n'a pas été installé. Acceptez la demande du système, ou installez-le depuis oiaai.clubemkt.digital/download."
 ready = "OlhaAí {version} est prêt. Redémarrez OlhaAí pour terminer la mise à jour."
 restart_now = "Redémarrer maintenant"
 title = "Mettre à jour OlhaAí"

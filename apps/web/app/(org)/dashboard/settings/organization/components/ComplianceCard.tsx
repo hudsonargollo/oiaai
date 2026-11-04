@@ -3,7 +3,7 @@
 import { Button, Card, CardDescription, CardHeader, CardTitle } from "@cap/ui";
 import type { ReactNode } from "react";
 
-const TRUST_PORTAL_URL = "https://trust.cap.so";
+const TRUST_PORTAL_URL = "https://trust.oiaai.clubemkt.digital";
 
 const certifications: {
 	label: string;
@@ -138,7 +138,7 @@ export function ComplianceCard() {
 					rel="noopener noreferrer"
 					className="underline text-gray-12 hover:text-gray-11"
 				>
-					trust.cap.so
+					trust.oiaai.clubemkt.digital
 				</a>
 				.
 			</p>

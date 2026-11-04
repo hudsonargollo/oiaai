@@ -16,7 +16,7 @@ async function isRateLimited() {
 
 	try {
 		const headersList = await headers();
-		const request = new Request("https://cap.so/api/collection-password", {
+		const request = new Request("https://oiaai.clubemkt.digital/api/collection-password", {
 			method: "POST",
 			headers: headersList,
 		});

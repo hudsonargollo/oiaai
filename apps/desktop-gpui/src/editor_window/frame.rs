@@ -111,7 +111,7 @@ impl FrameField {
 
     fn placeholder(self) -> &'static str {
         match self {
-            Self::Url => "cap.so",
+            Self::Url => "oiaai.clubemkt.digital",
             Self::Title => tr::editor::window::frame::window_title_placeholder(),
         }
     }

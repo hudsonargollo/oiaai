@@ -19,7 +19,7 @@ const createArticleStructuredData = () => {
 		keywords: recordScreenMacContent.tags.join(","),
 		mainEntityOfPage: {
 			"@type": "WebPage",
-			"@id": "https://cap.so/blog/record-screen-mac-system-audio",
+			"@id": "https://oiaai.clubemkt.digital/blog/record-screen-mac-system-audio",
 		},
 	};
 

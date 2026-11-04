@@ -25,7 +25,7 @@ export function SsoErrorNotice({
 						GitHub
 					</a>
 					, or{" "}
-					<a className="font-semibold underline" href="mailto:richie@cap.so">
+					<a className="font-semibold underline" href="mailto:richie@oiaai.clubemkt.digital">
 						message Richie
 					</a>
 					, the founder, directly.

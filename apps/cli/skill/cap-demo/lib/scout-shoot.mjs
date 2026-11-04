@@ -47,7 +47,7 @@ function resolveCap() {
 		if (p) return p;
 	} catch {}
 	throw new Error(
-		"cap CLI not found on PATH. Install OlhaAí Desktop (https://cap.so) or set CAP_BIN.",
+		"cap CLI not found on PATH. Install OlhaAí Desktop (https://oiaai.clubemkt.digital) or set CAP_BIN.",
 	);
 }
 const CAP = resolveCap();

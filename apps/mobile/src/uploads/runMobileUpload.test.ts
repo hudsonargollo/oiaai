@@ -23,7 +23,7 @@ describe("runMobileUpload", () => {
 	it("passes native video metadata through upload creation and retry-safe progress", async () => {
 		const createUpload = vi.fn(async () => ({
 			id: Video.VideoId.make("video_123"),
-			shareUrl: "https://cap.so/s/video_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 			rawFileKey: "user_123/video_123/raw-upload.mov",
 			upload: {
 				type: "put" as const,
@@ -94,7 +94,7 @@ describe("runMobileUpload", () => {
 		);
 		const createUpload = vi.fn(async () => ({
 			id: Video.VideoId.make("video_123"),
-			shareUrl: "https://cap.so/s/video_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 			rawFileKey: "user_123/video_123/raw-upload.mov",
 			upload: {
 				type: "put" as const,
@@ -153,7 +153,7 @@ describe("runMobileUpload", () => {
 		);
 		const createUpload = vi.fn(async () => ({
 			id: Video.VideoId.make("video_123"),
-			shareUrl: "https://cap.so/s/video_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 			rawFileKey: "user_123/video_123/raw-upload.mov",
 			upload: {
 				type: "put" as const,

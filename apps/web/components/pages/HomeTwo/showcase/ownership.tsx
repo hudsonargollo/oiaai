@@ -27,7 +27,7 @@ const DESTINATIONS: Destination[] = [
 		key: "cloud",
 		label: copyOf(STORAGE_COPY, "cloud").label,
 		name: "OlhaAí Cloud",
-		path: "cap.so/s/m4k8x2qz",
+		path: "oiaai.clubemkt.digital/s/m4k8x2qz",
 		note: "Encrypted, shareable the second it lands",
 		icon: <CapLogoMark className="size-7" />,
 		tab: <CapLogoMark />,

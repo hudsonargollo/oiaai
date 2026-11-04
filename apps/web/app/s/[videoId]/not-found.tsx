@@ -18,7 +18,7 @@ export default function VideoNotFound() {
 			footnote={
 				<>
 					Think this is a mistake? Email{" "}
-					<a href="mailto:hello@cap.so">hello@cap.so</a>
+					<a href="mailto:hello@oiaai.clubemkt.digital">hello@oiaai.clubemkt.digital</a>
 				</>
 			}
 		>

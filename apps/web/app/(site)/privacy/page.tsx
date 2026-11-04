@@ -135,7 +135,7 @@ export default function App() {
 							<h3>Contact Us</h3>
 							<br />
 							If you have any questions or concerns about this Privacy Policy or
-							our privacy practices, please contact us at hello@cap.so.
+							our privacy practices, please contact us at hello@oiaai.clubemkt.digital.
 						</li>
 					</ol>
 					<p>

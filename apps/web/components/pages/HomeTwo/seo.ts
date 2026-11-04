@@ -2,7 +2,7 @@ import { homepageCopy } from "@/data/homepage-copy";
 import { PRICING } from "@/data/pricing";
 
 export const homepageSeo = {
-	url: "https://cap.so/",
+	url: "https://oiaai.clubemkt.digital/",
 	title: "OlhaAí — Free Screen Recorder & Open Source Loom Alternative",
 	description:
 		"OlhaAí is the free, open source screen recorder for Mac, Windows, and Linux. Record, edit, take screenshots, and share videos with a link.",
@@ -13,12 +13,12 @@ export const homepageSchema = {
 	"@graph": [
 		{
 			"@type": "Organization",
-			"@id": "https://cap.so/#organization",
+			"@id": "https://oiaai.clubemkt.digital/#organization",
 			name: "OlhaAí",
 			url: homepageSeo.url,
 			logo: {
 				"@type": "ImageObject",
-				url: "https://cap.so/cap-logo.png",
+				url: "https://oiaai.clubemkt.digital/cap-logo.png",
 				width: 1440,
 				height: 480,
 			},
@@ -29,39 +29,39 @@ export const homepageSchema = {
 			],
 			contactPoint: {
 				"@type": "ContactPoint",
-				email: "hello@cap.so",
+				email: "hello@oiaai.clubemkt.digital",
 				contactType: "customer support",
 			},
 		},
 		{
 			"@type": "WebSite",
-			"@id": "https://cap.so/#website",
+			"@id": "https://oiaai.clubemkt.digital/#website",
 			name: "OlhaAí",
 			url: homepageSeo.url,
-			publisher: { "@id": "https://cap.so/#organization" },
+			publisher: { "@id": "https://oiaai.clubemkt.digital/#organization" },
 			inLanguage: "en",
 		},
 		{
 			"@type": "WebPage",
-			"@id": "https://cap.so/#webpage",
+			"@id": "https://oiaai.clubemkt.digital/#webpage",
 			url: homepageSeo.url,
 			name: homepageSeo.title,
 			description: homepageSeo.description,
-			isPartOf: { "@id": "https://cap.so/#website" },
-			mainEntity: { "@id": "https://cap.so/#software" },
+			isPartOf: { "@id": "https://oiaai.clubemkt.digital/#website" },
+			mainEntity: { "@id": "https://oiaai.clubemkt.digital/#software" },
 			inLanguage: "en",
 		},
 		{
 			"@type": "SoftwareApplication",
-			"@id": "https://cap.so/#software",
+			"@id": "https://oiaai.clubemkt.digital/#software",
 			name: "OlhaAí",
 			url: homepageSeo.url,
 			description: homepageSeo.description,
 			applicationCategory: "MultimediaApplication",
 			operatingSystem: ["macOS", "Windows", "Linux"],
-			downloadUrl: "https://cap.so/download",
-			publisher: { "@id": "https://cap.so/#organization" },
-			mainEntityOfPage: { "@id": "https://cap.so/#webpage" },
+			downloadUrl: "https://oiaai.clubemkt.digital/download",
+			publisher: { "@id": "https://oiaai.clubemkt.digital/#organization" },
+			mainEntityOfPage: { "@id": "https://oiaai.clubemkt.digital/#webpage" },
 			featureList: [
 				"Screen, webcam, and audio recording",
 				"Instant share links that upload while you record",
@@ -91,7 +91,7 @@ export const homepageSchema = {
 					name: "OlhaAí Free",
 					price: 0,
 					priceCurrency: "USD",
-					url: "https://cap.so/download",
+					url: "https://oiaai.clubemkt.digital/download",
 					description: "Free local recording and editing for personal use.",
 				},
 				{
@@ -99,7 +99,7 @@ export const homepageSchema = {
 					name: "Desktop License",
 					price: PRICING.commercial.lifetime,
 					priceCurrency: "USD",
-					url: "https://cap.so/pricing",
+					url: "https://oiaai.clubemkt.digital/pricing",
 					description: "One-time desktop license for commercial use.",
 				},
 				{
@@ -107,7 +107,7 @@ export const homepageSchema = {
 					name: "OlhaAí Pro",
 					price: PRICING.pro.monthly,
 					priceCurrency: "USD",
-					url: "https://cap.so/pricing",
+					url: "https://oiaai.clubemkt.digital/pricing",
 					description:
 						"Per user, billed monthly. Annual billing is also available.",
 				},
@@ -115,8 +115,8 @@ export const homepageSchema = {
 		},
 		{
 			"@type": "FAQPage",
-			"@id": "https://cap.so/#faq",
-			isPartOf: { "@id": "https://cap.so/#webpage" },
+			"@id": "https://oiaai.clubemkt.digital/#faq",
+			isPartOf: { "@id": "https://oiaai.clubemkt.digital/#webpage" },
 			mainEntity: homepageCopy.faq.items.map((item) => ({
 				"@type": "Question",
 				name: item.question,

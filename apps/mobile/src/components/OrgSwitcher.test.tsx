@@ -108,7 +108,7 @@ const bootstrap: MobileBootstrapResponse = {
 	user: {
 		id: User.UserId.make("user_123"),
 		name: "Richie",
-		email: "richie@cap.so",
+		email: "richie@oiaai.clubemkt.digital",
 		imageUrl: null,
 		activeOrganizationId: Organisation.OrganisationId.make("org_123"),
 	},
@@ -116,7 +116,7 @@ const bootstrap: MobileBootstrapResponse = {
 		{
 			id: Organisation.OrganisationId.make("org_123"),
 			name: "OlhaAí",
-			iconUrl: "https://cap.so/icon.png",
+			iconUrl: "https://oiaai.clubemkt.digital/icon.png",
 			role: "owner",
 		},
 		{
@@ -136,7 +136,7 @@ describe("OrgSwitcher", () => {
 			<OrgSwitcher bootstrap={bootstrap} onChange={vi.fn()} />,
 		);
 
-		expect(hasImageSourceUri(tree, "https://cap.so/icon.png")).toBe(true);
+		expect(hasImageSourceUri(tree, "https://oiaai.clubemkt.digital/icon.png")).toBe(true);
 	});
 
 	it("uses a native organization action sheet with roles and disabled active org", async () => {

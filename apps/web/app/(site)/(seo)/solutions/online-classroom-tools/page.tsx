@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 		title: "Online Classroom Tools: Empower Remote Teaching with OlhaAí",
 		description:
 			"Learn how OlhaAí's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
-		url: "https://cap.so/solutions/online-classroom-tools",
+		url: "https://oiaai.clubemkt.digital/solutions/online-classroom-tools",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/solutions/online-classroom-tools",
+		canonical: "https://oiaai.clubemkt.digital/solutions/online-classroom-tools",
 	},
 };
 

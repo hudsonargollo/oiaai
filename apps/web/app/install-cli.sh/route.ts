@@ -146,8 +146,8 @@ find_linux_cli_target() {
 
 install_cap_desktop_macos() {
 	case "$(uname -m)" in
-		arm64|aarch64) DOWNLOAD_URL="https://cap.so/download/apple-silicon" ;;
-		x86_64|amd64) DOWNLOAD_URL="https://cap.so/download/apple-intel" ;;
+		arm64|aarch64) DOWNLOAD_URL="https://oiaai.clubemkt.digital/download/apple-silicon" ;;
+		x86_64|amd64) DOWNLOAD_URL="https://oiaai.clubemkt.digital/download/apple-intel" ;;
 		*)
 			echo "Unsupported Mac architecture: $(uname -m)" >&2
 			exit 1
@@ -211,7 +211,7 @@ install_cap_desktop_linux_deb() {
 	trap cleanup_desktop_install EXIT HUP INT TERM
 
 	echo "Downloading OlhaAí Desktop Debian package..."
-	curl --proto '=https' --tlsv1.2 --retry 3 --retry-delay 1 -fL "https://cap.so/download/linux-deb" -o "$DEB_PATH"
+	curl --proto '=https' --tlsv1.2 --retry 3 --retry-delay 1 -fL "https://oiaai.clubemkt.digital/download/linux-deb" -o "$DEB_PATH"
 
 	if command -v apt-get >/dev/null 2>&1; then
 		run_as_root apt-get install -y "$DEB_PATH"
@@ -258,7 +258,7 @@ install_cap_desktop() {
 			install_cap_desktop_linux
 			;;
 		*)
-			echo "OlhaAí Desktop auto-install is only supported on macOS and Linux. Install OlhaAí from https://cap.so/download, then run this script again." >&2
+			echo "OlhaAí Desktop auto-install is only supported on macOS and Linux. Install OlhaAí from https://oiaai.clubemkt.digital/download, then run this script again." >&2
 			exit 1
 			;;
 	esac

@@ -106,7 +106,7 @@ const createAuth = (): AuthStub & {
 	bootstrap: {
 		activeOrganizationId: "org_123",
 		user: {
-			email: "richie@cap.so",
+			email: "richie@oiaai.clubemkt.digital",
 			name: "Richie",
 		},
 	},
@@ -416,7 +416,7 @@ vi.mock("expo-web-browser", () => ({
 }));
 
 vi.mock("@/auth/AuthContext", () => ({
-	apiBaseUrl: "https://cap.so",
+	apiBaseUrl: "https://oiaai.clubemkt.digital",
 	useAuth: () => authState.value,
 }));
 
@@ -2792,7 +2792,7 @@ describe("upload and dashboard visibility", () => {
 			protected: false,
 			public: true,
 			reactionCount: 3,
-			shareUrl: "https://cap.so/s/video_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 			thumbnailUrl: null,
 			title: "Launch review",
 			updatedAt: "2026-05-18T10:30:00.000Z",
@@ -2876,7 +2876,7 @@ describe("upload and dashboard visibility", () => {
 			protected: false,
 			public: false,
 			reactionCount: 3,
-			shareUrl: "https://cap.so/s/video_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 			thumbnailUrl: null,
 			title: "Product review",
 			updatedAt: "2026-05-18T10:30:00.000Z",
@@ -3065,7 +3065,7 @@ describe("upload and dashboard visibility", () => {
 			const cap: MobileCapSummary = {
 				id: Video.VideoId.make("video_settings"),
 				title: "Launch review",
-				shareUrl: "https://cap.so/s/video_settings",
+				shareUrl: "https://oiaai.clubemkt.digital/s/video_settings",
 				createdAt: "2026-05-18T10:00:00.000Z",
 				updatedAt: "2026-05-18T10:30:00.000Z",
 				ownerName: "Richie",

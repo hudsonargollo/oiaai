@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"OlhaAí is a HIPAA-compliant screen recorder for healthcare teams. Sign a BAA in minutes on the Pro plan, SOC 2 Type II and ISO 27001 certified, plus self-hosting to keep PHI on your own storage.",
 	alternates: {
-		canonical: "https://cap.so/hipaa-compliant-screen-recording",
+		canonical: "https://oiaai.clubemkt.digital/hipaa-compliant-screen-recording",
 	},
 	openGraph: {
 		title:
 			"HIPAA-Compliant Screen Recording — Secure Healthcare Recordings | OlhaAí",
 		description:
 			"OlhaAí is a HIPAA-compliant screen recorder for healthcare teams. Sign a BAA in minutes on the Pro plan, SOC 2 Type II and ISO 27001 certified, plus self-hosting to keep PHI on your own storage.",
-		url: "https://cap.so/hipaa-compliant-screen-recording",
+		url: "https://oiaai.clubemkt.digital/hipaa-compliant-screen-recording",
 		siteName: "OlhaAí",
 		images: [
 			{

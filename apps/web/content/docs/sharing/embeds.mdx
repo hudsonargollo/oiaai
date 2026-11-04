@@ -7,16 +7,16 @@ tags: "Sharing, Integration"
 Video recordings have a dedicated embed route:
 
 ```text
-https://cap.so/embed/<video-id>
+https://oiaai.clubemkt.digital/embed/<video-id>
 ```
 
-For a self-hosted installation, replace `cap.so` with the configured web domain. Screenshots cannot be displayed through the video embed route.
+For a self-hosted installation, replace `oiaai.clubemkt.digital` with the configured web domain. Screenshots cannot be displayed through the video embed route.
 
 ## Basic iframe
 
 ```html
 <iframe
-  src="https://cap.so/embed/<video-id>"
+  src="https://oiaai.clubemkt.digital/embed/<video-id>"
   title="OlhaAí recording"
   width="100%"
   height="450"
@@ -25,14 +25,14 @@ For a self-hosted installation, replace `cap.so` with the configured web domain.
 ></iframe>
 ```
 
-Use the ID from the recording's share URL. For example, `https://cap.so/s/abc123` uses `abc123`.
+Use the ID from the recording's share URL. For example, `https://oiaai.clubemkt.digital/s/abc123` uses `abc123`.
 
 ## Responsive iframe
 
 ```html
 <div style="position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden; border-radius: 8px;">
   <iframe
-    src="https://cap.so/embed/<video-id>"
+    src="https://oiaai.clubemkt.digital/embed/<video-id>"
     title="OlhaAí recording"
     frameborder="0"
     allowfullscreen
@@ -57,7 +57,7 @@ OlhaAí's current embed player does not provide a documented autoplay guarantee.
 
 - **HTML, React, MDX, and documentation sites:** use the iframe directly.
 - **Notion and similar tools:** paste the embed URL into the platform's embed block.
-- **GitHub Markdown:** iframes are not supported, so link to `https://cap.so/s/<video-id>`.
+- **GitHub Markdown:** iframes are not supported, so link to `https://oiaai.clubemkt.digital/s/<video-id>`.
 - **Email:** most clients block iframes; use the share link instead.
 
 ## Troubleshooting

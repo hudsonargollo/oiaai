@@ -60,7 +60,7 @@ const getExtraString = (key: string, fallback: string) => {
 	return typeof value === "string" ? value : fallback;
 };
 
-export const apiBaseUrl = getExtraString("apiBaseUrl", "https://cap.so");
+export const apiBaseUrl = getExtraString("apiBaseUrl", "https://oiaai.clubemkt.digital");
 
 export function AuthProvider({ children }: { children: ReactNode }) {
 	const [apiKey, setApiKey] = useState<string | null>(null);

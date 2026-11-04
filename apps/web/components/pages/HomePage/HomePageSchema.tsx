@@ -47,7 +47,7 @@ const createHomePageSchema = () => {
 		createWebSiteSchema(),
 		createSoftwareApplicationSchema(testimonials),
 		createProductSchema(),
-		createBreadcrumbSchema([{ name: "Home", url: "https://cap.so" }]),
+		createBreadcrumbSchema([{ name: "Home", url: "https://oiaai.clubemkt.digital" }]),
 		createFAQSchema(homePageFAQs),
 	];
 

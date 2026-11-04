@@ -266,7 +266,7 @@ const studioModeConfig: FeaturePageConfig = {
 		video: {
 			title: "See Studio Mode in Action",
 			iframe: {
-				src: "https://cap.so/embed/qk8gt56e1q1r735",
+				src: "https://oiaai.clubemkt.digital/embed/qk8gt56e1q1r735",
 				title: "Studio Mode Demo - OlhaAí Screen Recording",
 			},
 		},

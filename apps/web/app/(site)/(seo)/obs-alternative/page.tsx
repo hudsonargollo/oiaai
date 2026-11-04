@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 	alternates: {
-		canonical: "https://cap.so/obs-alternative",
+		canonical: "https://oiaai.clubemkt.digital/obs-alternative",
 	},
 	openGraph: {
 		title:
 			"OBS Alternative — Easier Screen Recording with Instant Sharing | OlhaAí",
 		description:
 			"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
-		url: "https://cap.so/obs-alternative",
+		url: "https://oiaai.clubemkt.digital/obs-alternative",
 		siteName: "OlhaAí",
 		images: [
 			{

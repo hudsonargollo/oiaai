@@ -7,7 +7,7 @@ machine-readable, and recordings have an explicit start/stop lifecycle.
 ## Install
 
 - **From OlhaAí Desktop:** Settings → Command Line → Install CLI (links the bundled binary onto your PATH).
-- **Script:** `curl -fsSL https://cap.so/install-cli.sh | sh` (Windows PowerShell: `irm https://cap.so/install-cli.ps1 | iex`; Command Prompt: `curl.exe -fsSL https://cap.so/install-cli.cmd -o "%TEMP%\cap-install-cli.cmd" && "%TEMP%\cap-install-cli.cmd"`). If OlhaAí Desktop is missing, the script downloads and installs it first.
+- **Script:** `curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh | sh` (Windows PowerShell: `irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex`; Command Prompt: `curl.exe -fsSL https://oiaai.clubemkt.digital/install-cli.cmd -o "%TEMP%\cap-install-cli.cmd" && "%TEMP%\cap-install-cli.cmd"`). If OlhaAí Desktop is missing, the script downloads and installs it first.
 
 The desktop app and the CLI share the same binary, so the CLI is always in sync with the installed app.
 
@@ -48,14 +48,14 @@ user is signed into the desktop app, there is no key to fetch or set. Check with
 (`{"authenticated":true,"source":"desktop","server":"…","userId":"…"}`); it never prints the secret.
 
 For headless/CI (or to override), set `CAP_API_KEY` to an OlhaAí auth key from Settings. The target server
-is taken from `CAP_SERVER_URL`, else OlhaAí Desktop's configured server, else `https://cap.so`.
+is taken from `CAP_SERVER_URL`, else OlhaAí Desktop's configured server, else `https://oiaai.clubemkt.digital`.
 
 ## Environment variables
 
 | Variable                    | Used by                             | Notes                                                                                 |
 | --------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- |
 | `CAP_API_KEY`               | `upload`                            | Overrides auth with an OlhaAí auth key (Settings). Optional when signed into OlhaAí Desktop. |
-| `CAP_SERVER_URL`            | `upload`                            | OlhaAí server base URL. Defaults to OlhaAí Desktop's server, else `https://cap.so`.         |
+| `CAP_SERVER_URL`            | `upload`                            | OlhaAí server base URL. Defaults to OlhaAí Desktop's server, else `https://oiaai.clubemkt.digital`.         |
 | `CAP_NO_MODIFY_PATH`        | `desktop install-cli`               | Set to skip editing shell profiles / user PATH.                                       |
 | `CAP_DESKTOP_FORCE_INSTALL` | `install-cli.sh`, `install-cli.ps1` | Force the installer script to replace OlhaAí Desktop before linking the CLI.             |
 

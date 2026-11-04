@@ -2114,7 +2114,7 @@ impl SettingsWindow {
                     .id("settings-previous-versions")
                     .child(tr::settings::sidebar::previous_versions())
                     .hover(|style| style.text_color(theme.settings_text()))
-                    .on_click(|_, _, cx| cx.open_url("https://cap.so/download/versions")),
+                    .on_click(|_, _, cx| cx.open_url("https://oiaai.clubemkt.digital/download/versions")),
             )
             .child(
                 div()
@@ -5090,8 +5090,8 @@ mod tests {
             Some("http://localhost:3000".to_string())
         );
         // `new URL()` throws on these, and the handler never runs.
-        assert_eq!(origin_of("cap.so"), None);
-        assert_eq!(origin_of("ftp://cap.so"), None);
+        assert_eq!(origin_of("oiaai.clubemkt.digital"), None);
+        assert_eq!(origin_of("ftp://oiaai.clubemkt.digital"), None);
         assert_eq!(origin_of(""), None);
     }
 

@@ -84,7 +84,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "l.cap.so",
+				hostname: "l.oiaai.clubemkt.digital",
 				port: "",
 				pathname: "**",
 			},
@@ -121,7 +121,7 @@ const nextConfig = {
 			},
 			{
 				source: "/api/commercial/:path*",
-				destination: "https://l.cap.so/api/commercial/:path*",
+				destination: "https://l.oiaai.clubemkt.digital/api/commercial/:path*",
 			},
 			{
 				source: "/s/:videoId",
@@ -129,7 +129,7 @@ const nextConfig = {
 				has: [
 					{
 						type: "host",
-						value: "(?!cap.so|cap.link).*",
+						value: "(?!oiaai.clubemkt.digital|cap.link).*",
 					},
 				],
 			},
@@ -139,7 +139,7 @@ const nextConfig = {
 				has: [
 					{
 						type: "host",
-						value: "(?!cap.so|cap.link).*",
+						value: "(?!oiaai.clubemkt.digital|cap.link).*",
 					},
 				],
 			},

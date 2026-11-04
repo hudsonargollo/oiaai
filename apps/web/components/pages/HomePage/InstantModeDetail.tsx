@@ -229,7 +229,7 @@ const MockSharePage = () => {
 							</>
 						) : (
 							<>
-								cap.so/s/m4k92x
+								oiaai.clubemkt.digital/s/m4k92x
 								<Copy className="size-3 text-gray-9" />
 							</>
 						)}

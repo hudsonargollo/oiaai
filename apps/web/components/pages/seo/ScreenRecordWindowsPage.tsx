@@ -220,7 +220,7 @@ export const screenRecordWindowsContent: SeoPageContent = {
 		{
 			question: "How do I screen record on Windows 10?",
 			answer:
-				"Download OlhaAí from cap.so/download, install it on your Windows 10 PC, and click the record button. Choose full screen, a single window, or a custom region, toggle your microphone and system audio on or off, and hit start. When you are done, OlhaAí gives you a shareable link instantly. It is the easiest way to screen record on Windows 10 without fiddling with Game Bar or OBS settings.",
+				"Download OlhaAí from oiaai.clubemkt.digital/download, install it on your Windows 10 PC, and click the record button. Choose full screen, a single window, or a custom region, toggle your microphone and system audio on or off, and hit start. When you are done, OlhaAí gives you a shareable link instantly. It is the easiest way to screen record on Windows 10 without fiddling with Game Bar or OBS settings.",
 		},
 		{
 			question: "How do I screen record on Windows 11?",
@@ -319,8 +319,8 @@ const createSoftwareAppStructuredData = () => {
 		},
 		description:
 			"Free, open-source screen recorder for Windows with HD recording, webcam overlay, and instant link sharing.",
-		url: "https://cap.so/screen-recorder-windows",
-		downloadUrl: "https://cap.so/download",
+		url: "https://oiaai.clubemkt.digital/screen-recorder-windows",
+		downloadUrl: "https://oiaai.clubemkt.digital/download",
 	};
 
 	return JSON.stringify(softwareApp);

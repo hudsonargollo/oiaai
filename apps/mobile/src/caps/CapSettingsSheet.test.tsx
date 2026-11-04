@@ -93,7 +93,7 @@ vi.mock("@/components/GlassSurface", async () => {
 
 const cap: MobileCapSummary = {
 	id: Video.VideoId.make("video_123"),
-	shareUrl: "https://cap.so/s/video_123",
+	shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 	title: "Launch review",
 	createdAt: "2026-05-18T10:00:00.000Z",
 	updatedAt: "2026-05-18T10:30:00.000Z",

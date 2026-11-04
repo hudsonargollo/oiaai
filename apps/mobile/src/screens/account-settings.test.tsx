@@ -21,7 +21,7 @@ const auth = vi.hoisted(() => ({
 		bootstrap: {
 			activeOrganizationId: "org_123",
 			user: {
-				email: "richie@cap.so",
+				email: "richie@oiaai.clubemkt.digital",
 				imageUrl: null,
 				lastName: "McIlroy",
 				name: "Richie",
@@ -147,7 +147,7 @@ vi.mock("expo-symbols", async () => {
 vi.mock("expo-router", () => ({ router }));
 
 vi.mock("@/auth/AuthContext", () => ({
-	apiBaseUrl: "https://cap.so",
+	apiBaseUrl: "https://oiaai.clubemkt.digital",
 	useAuth: () => auth.value,
 }));
 
@@ -226,7 +226,7 @@ describe("AccountScreen", () => {
 		).toHaveLength(0);
 		expect(billing.getProPlan).toHaveBeenCalledWith({
 			apiKey: "mobile-key",
-			baseUrl: "https://cap.so",
+			baseUrl: "https://oiaai.clubemkt.digital",
 		});
 	});
 
@@ -283,9 +283,9 @@ describe("AccountScreen", () => {
 	it("opens help, privacy, and terms from the signed-in account", async () => {
 		const renderer = await renderComponent(React.createElement(AccountScreen));
 		const pages = [
-			["Help & Support", "https://cap.so/docs"],
-			["Privacy Policy", "https://cap.so/privacy"],
-			["Terms of Service", "https://cap.so/terms"],
+			["Help & Support", "https://oiaai.clubemkt.digital/docs"],
+			["Privacy Policy", "https://oiaai.clubemkt.digital/privacy"],
+			["Terms of Service", "https://oiaai.clubemkt.digital/terms"],
 		] as const;
 
 		for (const [label, url] of pages) {

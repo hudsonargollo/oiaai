@@ -95,7 +95,7 @@ export const Hero = () => {
 						<span>Or point your agent here</span>
 						<span className="inline-flex items-center gap-0.5 rounded-full bg-white py-0.5 pl-3 pr-0.5 shadow-[0_0_0_1px_rgba(17,17,17,0.08)]">
 							<span className={`${MONO} text-[13px] text-[#111111]`}>
-								cap.so/agents
+								oiaai.clubemkt.digital/agents
 							</span>
 							<CopyIconButton
 								text={POINTER_URL}

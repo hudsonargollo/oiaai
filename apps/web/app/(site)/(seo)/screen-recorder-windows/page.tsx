@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 		title: "Best Free Screen Recorder for Windows 10 & 11 | OlhaAí",
 		description:
 			"Record your screen on Windows with OlhaAí — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
-		url: "https://cap.so/screen-recorder-windows",
+		url: "https://oiaai.clubemkt.digital/screen-recorder-windows",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/screen-recorder-windows",
+		canonical: "https://oiaai.clubemkt.digital/screen-recorder-windows",
 	},
 };
 

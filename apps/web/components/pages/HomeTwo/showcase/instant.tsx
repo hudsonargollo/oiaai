@@ -190,7 +190,7 @@ const LiveLink = ({
 				<span className="tabular-nums text-[#1C1D21]">
 					{formatClock(landed * CHUNK_MS)}
 				</span>{" "}
-				already on cap.so
+				already on oiaai.clubemkt.digital
 			</div>
 		</div>
 	);

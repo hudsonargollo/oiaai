@@ -33,7 +33,7 @@ export async function sendDownloadLink(email: string) {
 	}
 
 	const headersList = await headers();
-	const request = new Request("https://cap.so/api/send-download-link", {
+	const request = new Request("https://oiaai.clubemkt.digital/api/send-download-link", {
 		method: "POST",
 		headers: headersList,
 	});

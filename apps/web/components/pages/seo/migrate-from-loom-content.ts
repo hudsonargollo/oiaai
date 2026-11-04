@@ -6,7 +6,7 @@ export const MIGRATE_PROMO_CODE = "MIGRATE20";
 
 export const migrateFromLoomSeo = {
 	path: "/migrate-from-loom",
-	url: "https://cap.so/migrate-from-loom",
+	url: "https://oiaai.clubemkt.digital/migrate-from-loom",
 	title: "Import Loom Videos to OlhaAí | Migrate from Loom in Minutes",
 	description:
 		"Paste a Loom link or upload a CSV and OlhaAí imports your Loom videos with titles, transcripts and chapters. Open source, half the price of Loom, and 20% off OlhaAí Pro with code MIGRATE20.",

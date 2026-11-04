@@ -60,7 +60,7 @@ const TASKS: readonly Task[] = [
 			{
 				type: "tool",
 				cmd: 'cap upload ./recording.cap --export --name "Checkout bug repro" --json',
-				out: '{ "type": "uploaded", "id": "x7f2k9", "link": "https://cap.so/s/x7f2k9" }',
+				out: '{ "type": "uploaded", "id": "x7f2k9", "link": "https://oiaai.clubemkt.digital/s/x7f2k9" }',
 				ms: 1200,
 			},
 			{
@@ -75,7 +75,7 @@ const TASKS: readonly Task[] = [
 				card: {
 					kind: "link",
 					title: "Checkout bug repro",
-					meta: "cap.so/s/x7f2k9 · 0:20 · AI summary ready",
+					meta: "oiaai.clubemkt.digital/s/x7f2k9 · 0:20 · AI summary ready",
 				},
 			},
 		],
@@ -86,7 +86,7 @@ const TASKS: readonly Task[] = [
 		beats: [
 			{
 				type: "prompt",
-				text: "Summarize cap.so/s/x7f2k9 and list the action items with timestamps",
+				text: "Summarize oiaai.clubemkt.digital/s/x7f2k9 and list the action items with timestamps",
 			},
 			{
 				type: "plan",
@@ -259,7 +259,7 @@ const TASKS: readonly Task[] = [
 				card: {
 					kind: "link",
 					title: "Q3 roadmap walkthrough",
-					meta: "cap.so/s/m4p2q8 · imported from Loom",
+					meta: "oiaai.clubemkt.digital/s/m4p2q8 · imported from Loom",
 				},
 			},
 		],

@@ -13,8 +13,8 @@ export const metadata: Metadata = buildMarketingMetadata({
 });
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
 ]);
 
 export default function ToolsPage() {

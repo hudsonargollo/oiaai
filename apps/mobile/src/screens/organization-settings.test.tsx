@@ -21,7 +21,7 @@ const settings = {
 	canManage: true,
 	iconUrl: null,
 	allowedEmailDomain: null,
-	customDomain: "video.cap.so",
+	customDomain: "video.oiaai.clubemkt.digital",
 	domainVerified: true,
 };
 
@@ -186,7 +186,7 @@ describe("OrganizationSettingsScreen", () => {
 
 		expect(auth.value.client.getOrganizationSettings).toHaveBeenCalledTimes(1);
 		expect(text).toContain("Organization settings");
-		expect(text).toContain("video.cap.so");
+		expect(text).toContain("video.oiaai.clubemkt.digital");
 		expect(text).toContain("Verified");
 	});
 

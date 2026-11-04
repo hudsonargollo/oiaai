@@ -1,7 +1,7 @@
 # `@cap/web`
 
 OlhaAí's NextJS web app for video sharing.
-Used for both self hosting and on [cap.so](https://cap.so).
+Used for both self hosting and on [oiaai.clubemkt.digital](https://oiaai.clubemkt.digital).
 
 ## Error monitoring
 

@@ -2,11 +2,11 @@
 
 > Cap is an open-source screen recorder and async video platform. Cap Desktop records displays, windows, selected areas, screenshots, and camera-only video with supported camera, microphone, and system-audio inputs. Instant Mode creates a shareable Cap; Studio Mode creates a local editable project. Native releases are produced for Apple Silicon and Intel macOS, 64-bit Windows, and x86_64 Linux as a Debian package.
 
-Website: https://cap.so · Source: https://github.com/CapSoftware/Cap
+Website: https://oiaai.clubemkt.digital · Source: https://github.com/CapSoftware/Cap
 
-Most of the repository is licensed under AGPLv3. The LICENSE file identifies a limited set of camera and screen-capture crates that use MIT. Distributed Cap Desktop binaries and commercial use have separate terms described at https://cap.so/docs/commercial-license.
+Most of the repository is licensed under AGPLv3. The LICENSE file identifies a limited set of camera and screen-capture crates that use MIT. Distributed Cap Desktop binaries and commercial use have separate terms described at https://oiaai.clubemkt.digital/docs/commercial-license.
 
-For the expanded machine-readable reference, see https://cap.so/llms-full.txt.
+For the expanded machine-readable reference, see https://oiaai.clubemkt.digital/llms-full.txt.
 
 ## When to Use Cap
 
@@ -23,9 +23,9 @@ Cap is not a live video calling, livestreaming, or general file hosting tool.
 How to call Cap:
 
 - **On the user's machine:** the `cap` CLI that ships with Cap Desktop. Run `cap guide --json` first for the installed command and output contract. `cap mcp serve` exposes the same actions to MCP clients over stdio.
-- **Remote MCP (read-only):** Streamable HTTP at https://cap.so/api/mcp with OAuth. Server card: https://cap.so/.well-known/mcp
-- **Developer API (HTTP):** OpenAPI 3.1 description at https://cap.so/openapi.json. Create an app and keys at https://cap.so/dashboard/developers. Development apps accept any origin, so test with one before switching to production. Errors are JSON with `error`, `code`, `hint`, and `docs` fields.
-- **Markdown:** requesting https://cap.so with `Accept: text/markdown` returns this file, and missing pages return a Markdown 404.
+- **Remote MCP (read-only):** Streamable HTTP at https://oiaai.clubemkt.digital/api/mcp with OAuth. Server card: https://oiaai.clubemkt.digital/.well-known/mcp
+- **Developer API (HTTP):** OpenAPI 3.1 description at https://oiaai.clubemkt.digital/openapi.json. Create an app and keys at https://oiaai.clubemkt.digital/dashboard/developers. Development apps accept any origin, so test with one before switching to production. Errors are JSON with `error`, `code`, `hint`, and `docs` fields.
+- **Markdown:** requesting https://oiaai.clubemkt.digital with `Accept: text/markdown` returns this file, and missing pages return a Markdown 404.
 
 ## Recording Modes
 
@@ -51,9 +51,9 @@ Captions, transcripts, titles, summaries, and chapters depend on the recording, 
 
 ## Teams, Storage, and Migration
 
-- Working with your team: https://cap.so/docs/teams
-- Google Drive storage: https://cap.so/docs/teams/google-drive
-- Migrating to Cap: https://cap.so/docs/migrating-to-cap
+- Working with your team: https://oiaai.clubemkt.digital/docs/teams
+- Google Drive storage: https://oiaai.clubemkt.digital/docs/teams/google-drive
+- Migrating to Cap: https://oiaai.clubemkt.digital/docs/migrating-to-cap
 
 Google Drive is a storage provider for new uploads, not a general Drive sync or existing-library importer. Personal connections use a private Cap folder. Organization owners and admins can select an organization-managed writable Drive location.
 
@@ -63,11 +63,11 @@ Cap has run organization migrations spanning hundreds of users and tens of thous
 
 Cap can be operated through a shell-capable agent using the `cap` CLI or its MCP server.
 
-- Cap for Agents (start here, includes the copyable setup prompt): https://cap.so/agents
-- Overview and copyable prompt: https://cap.so/docs/agents
-- Setup: https://cap.so/docs/agents/setup
-- Workflows: https://cap.so/docs/agents/workflows
-- Safety and troubleshooting: https://cap.so/docs/agents/safety
+- Cap for Agents (start here, includes the copyable setup prompt): https://oiaai.clubemkt.digital/agents
+- Overview and copyable prompt: https://oiaai.clubemkt.digital/docs/agents
+- Setup: https://oiaai.clubemkt.digital/docs/agents/setup
+- Workflows: https://oiaai.clubemkt.digital/docs/agents/workflows
+- Safety and troubleshooting: https://oiaai.clubemkt.digital/docs/agents/safety
 - Installed contract: run `cap guide --json`; do not guess command flags or output schemas.
 - Safety: begin read-only, preview the exact change, obtain explicit confirmation before every mutation or paid action, wait for asynchronous jobs, and keep passwords, API keys, storage credentials, and newly issued developer secrets out of chat and MCP.
 
@@ -75,14 +75,14 @@ For Loom imports, `--space` takes one Cap space name rather than a folder path. 
 
 ## Key Links
 
-- Home: https://cap.so
-- Current pricing: https://cap.so/pricing
-- Features: https://cap.so/features
-- Download: https://cap.so/download
-- Docs: https://cap.so/docs
-- Sharing: https://cap.so/docs/sharing/share-a-cap
-- Self-hosting: https://cap.so/docs/self-hosting
-- REST API: https://cap.so/docs/api/rest-api
-- Developer API OpenAPI description: https://cap.so/openapi.json
-- MCP server card: https://cap.so/.well-known/mcp
+- Home: https://oiaai.clubemkt.digital
+- Current pricing: https://oiaai.clubemkt.digital/pricing
+- Features: https://oiaai.clubemkt.digital/features
+- Download: https://oiaai.clubemkt.digital/download
+- Docs: https://oiaai.clubemkt.digital/docs
+- Sharing: https://oiaai.clubemkt.digital/docs/sharing/share-a-cap
+- Self-hosting: https://oiaai.clubemkt.digital/docs/self-hosting
+- REST API: https://oiaai.clubemkt.digital/docs/api/rest-api
+- Developer API OpenAPI description: https://oiaai.clubemkt.digital/openapi.json
+- MCP server card: https://oiaai.clubemkt.digital/.well-known/mcp
 - Source code: https://github.com/CapSoftware/Cap

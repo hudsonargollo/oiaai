@@ -266,7 +266,7 @@ const instantModeConfig: FeaturePageConfig = {
 		video: {
 			title: "See Instant Mode in Action",
 			iframe: {
-				src: "https://cap.so/embed/8cq21vmz12tm1zf",
+				src: "https://oiaai.clubemkt.digital/embed/8cq21vmz12tm1zf",
 				title: "See Instant Mode in Action - OlhaAí Screen Recording",
 			},
 		},

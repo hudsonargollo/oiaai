@@ -29,7 +29,7 @@ import {
 	generateSignedBaaPdf,
 } from "@/lib/baa/generate-signed-baa-pdf";
 
-const BAA_NOTICE_EMAIL = "hello@cap.so";
+const BAA_NOTICE_EMAIL = "hello@oiaai.clubemkt.digital";
 const PROCESSING_STALE_MS = 2 * 60 * 1000;
 const ENTITLED_STATUSES = new Set(["active", "trialing", "past_due"]);
 const CAP_PRO_STATUSES = new Set([
@@ -383,7 +383,7 @@ async function toSignedBaaResult(
 		return {
 			success: false,
 			error:
-				"We couldn't complete your Signed BAA. Please try again or contact hello@cap.so.",
+				"We couldn't complete your Signed BAA. Please try again or contact hello@oiaai.clubemkt.digital.",
 		};
 	}
 }
@@ -734,7 +734,7 @@ async function completeSignedBaa(
 					entityName: details.entityName,
 					effectiveDate: formatBaaDate(signedAt),
 				}),
-				fromOverride: "OlhaAí Software <richie@send.cap.so>",
+				fromOverride: "OlhaAí Software <richie@send.oiaai.clubemkt.digital>",
 				replyTo: BAA_NOTICE_EMAIL,
 				attachments: [
 					{

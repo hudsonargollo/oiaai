@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 		"connect google drive to OlhaAí",
 	],
 	alternates: {
-		canonical: "https://cap.so/google-drive-screen-recorder",
+		canonical: "https://oiaai.clubemkt.digital/google-drive-screen-recorder",
 	},
 	openGraph: {
 		title:
 			"Google Drive Screen Recorder: Save Recordings to Your Own Drive | OlhaAí",
 		description:
 			"Connect Google Drive to OlhaAí and store every shareable screen recording in your own Drive. For individuals and whole organizations. Open source, instant share links, served from your Drive.",
-		url: "https://cap.so/google-drive-screen-recorder",
+		url: "https://oiaai.clubemkt.digital/google-drive-screen-recorder",
 		siteName: "OlhaAí",
 		images: [
 			{

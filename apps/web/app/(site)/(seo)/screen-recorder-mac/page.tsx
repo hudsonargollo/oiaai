@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 		title: "Best Screen Recorder for Mac | High-Quality, Free & Easy (2026)",
 		description:
 			"OlhaAí is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
-		url: "https://cap.so/screen-recorder-mac",
+		url: "https://oiaai.clubemkt.digital/screen-recorder-mac",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/screen-recorder-mac",
+		canonical: "https://oiaai.clubemkt.digital/screen-recorder-mac",
 	},
 };
 

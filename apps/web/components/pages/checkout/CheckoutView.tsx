@@ -268,7 +268,7 @@ function HostedFallback({
 					</button>
 					{failed ? (
 						<p className="text-center text-[13px] text-[#B4322E]">
-							That didn't work either. Email hello@cap.so and we'll sort it out.
+							That didn't work either. Email hello@oiaai.clubemkt.digital and we'll sort it out.
 						</p>
 					) : null}
 				</div>

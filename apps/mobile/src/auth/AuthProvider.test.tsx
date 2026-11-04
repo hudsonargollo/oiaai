@@ -19,7 +19,7 @@ const apiMock = vi.hoisted(() => ({
 		Promise.resolve({
 			activeOrganizationId: "org_123",
 			user: {
-				email: "richie@cap.so",
+				email: "richie@oiaai.clubemkt.digital",
 				name: "Richie",
 			},
 		}),
@@ -34,7 +34,7 @@ const apiMock = vi.hoisted(() => ({
 	revokeSession: vi.fn(() => Promise.resolve({ success: true })),
 	setActiveOrganization: vi.fn(),
 	createSessionRequestUrl: vi.fn(
-		() => "https://cap.so/api/mobile/session/request",
+		() => "https://oiaai.clubemkt.digital/api/mobile/session/request",
 	),
 }));
 
@@ -130,7 +130,7 @@ describe("AuthProvider", () => {
 		apiMock.bootstrap.mockResolvedValue({
 			activeOrganizationId: "org_123",
 			user: {
-				email: "richie@cap.so",
+				email: "richie@oiaai.clubemkt.digital",
 				name: "Richie",
 			},
 		});
@@ -165,12 +165,12 @@ describe("AuthProvider", () => {
 		});
 
 		expect(apiMock.createSessionRequestUrl).toHaveBeenCalledWith(
-			"https://cap.so",
+			"https://oiaai.clubemkt.digital",
 			"cap://auth",
 			"apple",
 		);
 		expect(webBrowserMock.openAuthSessionAsync).toHaveBeenCalledWith(
-			"https://cap.so/api/mobile/session/request",
+			"https://oiaai.clubemkt.digital/api/mobile/session/request",
 			"cap://auth",
 		);
 		expect(secureStoreMock.setItemAsync).toHaveBeenCalledWith(
@@ -277,7 +277,7 @@ describe("AuthProvider", () => {
 		}>();
 		apiMock.bootstrap.mockResolvedValueOnce({
 			activeOrganizationId: "org_123",
-			user: { email: "old@cap.so", name: "Old" },
+			user: { email: "old@oiaai.clubemkt.digital", name: "Old" },
 		});
 		apiMock.bootstrap.mockReturnValueOnce(staleBootstrap.promise);
 
@@ -287,7 +287,7 @@ describe("AuthProvider", () => {
 			);
 			await flushMicrotasks();
 		});
-		expect(latestAuth?.bootstrap?.user.email).toBe("old@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("old@oiaai.clubemkt.digital");
 
 		let refreshPromise: Promise<void> | undefined;
 		await act(async () => {
@@ -302,7 +302,7 @@ describe("AuthProvider", () => {
 		await act(async () => {
 			staleBootstrap.resolve({
 				activeOrganizationId: "org_123",
-				user: { email: "old@cap.so", name: "Old" },
+				user: { email: "old@oiaai.clubemkt.digital", name: "Old" },
 			});
 			await refreshPromise;
 		});
@@ -322,7 +322,7 @@ describe("AuthProvider", () => {
 		apiMock.revokeSession.mockReturnValueOnce(revocation.promise);
 		apiMock.bootstrap.mockResolvedValueOnce({
 			activeOrganizationId: "org_123",
-			user: { email: "old@cap.so", name: "Old" },
+			user: { email: "old@oiaai.clubemkt.digital", name: "Old" },
 		});
 		apiMock.bootstrap.mockReturnValueOnce(staleBootstrap.promise);
 
@@ -332,7 +332,7 @@ describe("AuthProvider", () => {
 			);
 			await flushMicrotasks();
 		});
-		expect(latestAuth?.bootstrap?.user.email).toBe("old@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("old@oiaai.clubemkt.digital");
 
 		let signOutPromise: Promise<void> | undefined;
 		let refreshPromise: Promise<void> | undefined;
@@ -350,7 +350,7 @@ describe("AuthProvider", () => {
 		await act(async () => {
 			staleBootstrap.resolve({
 				activeOrganizationId: "org_123",
-				user: { email: "old@cap.so", name: "Old" },
+				user: { email: "old@oiaai.clubemkt.digital", name: "Old" },
 			});
 			await refreshPromise;
 		});
@@ -368,7 +368,7 @@ describe("AuthProvider", () => {
 		apiMock.bootstrap.mockReturnValueOnce(oldBootstrap.promise);
 		apiMock.bootstrap.mockResolvedValueOnce({
 			activeOrganizationId: "new_org",
-			user: { email: "new@cap.so", name: "New" },
+			user: { email: "new@oiaai.clubemkt.digital", name: "New" },
 		});
 		webBrowserMock.openAuthSessionAsync.mockResolvedValueOnce({
 			type: "success",
@@ -385,7 +385,7 @@ describe("AuthProvider", () => {
 			await latestAuth?.signInWithApple();
 			await flushMicrotasks();
 		});
-		expect(latestAuth?.bootstrap?.user.email).toBe("new@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("new@oiaai.clubemkt.digital");
 
 		await act(async () => {
 			oldBootstrap.reject(new Error("Old session expired"));
@@ -393,7 +393,7 @@ describe("AuthProvider", () => {
 		});
 		expect(latestAuth?.status).toBe("signedIn");
 		expect(latestAuth?.apiKey).toBe("new_key");
-		expect(latestAuth?.bootstrap?.user.email).toBe("new@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("new@oiaai.clubemkt.digital");
 		expect(secureStoreMock.deleteItemAsync).not.toHaveBeenCalled();
 	});
 
@@ -426,15 +426,15 @@ describe("AuthProvider", () => {
 			await latestAuth?.signInWithApple();
 			await flushMicrotasks();
 		});
-		expect(latestAuth?.bootstrap?.user.email).toBe("richie@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("richie@oiaai.clubemkt.digital");
 
 		await act(async () => {
 			oldSwitch.resolve({
 				activeOrganizationId: "old_org",
-				user: { email: "old@cap.so", name: "Old" },
+				user: { email: "old@oiaai.clubemkt.digital", name: "Old" },
 			});
 			await switchPromise;
 		});
-		expect(latestAuth?.bootstrap?.user.email).toBe("richie@cap.so");
+		expect(latestAuth?.bootstrap?.user.email).toBe("richie@oiaai.clubemkt.digital");
 	});
 });

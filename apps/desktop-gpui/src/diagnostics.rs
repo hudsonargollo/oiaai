@@ -1299,12 +1299,12 @@ mod tests {
     #[test]
     fn urls_keep_their_host_and_lose_their_credentials() {
         assert_eq!(
-            redact_url_credentials("https://cap.so"),
-            "https://cap.so".to_string()
+            redact_url_credentials("https://oiaai.clubemkt.digital"),
+            "https://oiaai.clubemkt.digital".to_string()
         );
         assert_eq!(
-            redact_url_credentials("https://user:pass@cap.so/api"),
-            "https://***@cap.so/api".to_string()
+            redact_url_credentials("https://user:pass@oiaai.clubemkt.digital/api"),
+            "https://***@oiaai.clubemkt.digital/api".to_string()
         );
     }
 

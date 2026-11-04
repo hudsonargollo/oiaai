@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 			"How to Screen Record on Mac, Windows & Chrome (2026 Guide) | OlhaAí",
 		description:
 			"Learn how to screen record with audio on any platform. Step-by-step instructions for macOS, Windows, and Chrome with free and paid options.",
-		url: "https://cap.so/how-to-screen-record",
+		url: "https://oiaai.clubemkt.digital/how-to-screen-record",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/how-to-screen-record",
+		canonical: "https://oiaai.clubemkt.digital/how-to-screen-record",
 	},
 };
 
 const howToSteps = [
 	{
 		name: "Download and install OlhaAí",
-		text: "Download OlhaAí for free from cap.so/download for Mac or Windows, or use Instant Mode in your browser for quick recordings without any installation.",
+		text: "Download OlhaAí for free from oiaai.clubemkt.digital/download for Mac or Windows, or use Instant Mode in your browser for quick recordings without any installation.",
 	},
 	{
 		name: "Choose your recording settings",

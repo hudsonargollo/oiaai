@@ -210,8 +210,8 @@ export default function DataProcessingAgreementPage() {
 							OlhaAí remains responsible for each Subprocessor's performance of
 							its data-processing obligations. OlhaAí maintains its current
 							Subprocessor list through OlhaAí's trust portal at{" "}
-							<a href="https://trust.cap.so" rel="noreferrer" target="_blank">
-								trust.cap.so
+							<a href="https://trust.oiaai.clubemkt.digital" rel="noreferrer" target="_blank">
+								trust.oiaai.clubemkt.digital
 							</a>{" "}
 							which may require access approval, or makes it available on
 							request. That list is the source of truth for OlhaAí Subprocessor
@@ -438,7 +438,7 @@ export default function DataProcessingAgreementPage() {
 							<h3>Contact</h3>
 							<br />
 							For questions about this DPA, data protection, or Subprocessor
-							information, contact OlhaAí at hello@cap.so.
+							information, contact OlhaAí at hello@oiaai.clubemkt.digital.
 						</li>
 						<li>
 							<h3>Annex I: Details of Processing</h3>
@@ -553,8 +553,8 @@ export default function DataProcessingAgreementPage() {
 							<br />
 							OlhaAí's current Subprocessor list is maintained through OlhaAí's
 							trust portal at{" "}
-							<a href="https://trust.cap.so" rel="noreferrer" target="_blank">
-								trust.cap.so
+							<a href="https://trust.oiaai.clubemkt.digital" rel="noreferrer" target="_blank">
+								trust.oiaai.clubemkt.digital
 							</a>{" "}
 							which may require access approval, or made available upon request.
 							The list is incorporated by reference into this Annex III and is

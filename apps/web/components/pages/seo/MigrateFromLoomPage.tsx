@@ -104,7 +104,7 @@ const ImportPreview = () => (
 							<span
 								className={`${MONO} truncate text-[12px] text-[rgba(17,17,17,0.75)]`}
 							>
-								cap.so/s/8k2m9x1p4qz7c
+								oiaai.clubemkt.digital/s/8k2m9x1p4qz7c
 							</span>
 							<span className="ml-auto shrink-0 rounded-full bg-[#DDF5E8] px-2 py-0.5 text-[10.5px] font-medium text-[#1B6E45]">
 								Copied
@@ -317,7 +317,7 @@ const Teams = () => (
 						Read the migration guide
 					</Link>
 					<a
-						href="mailto:hello@cap.so?subject=Loom%20team%20migration"
+						href="mailto:hello@oiaai.clubemkt.digital?subject=Loom%20team%20migration"
 						className={classNames(BTN_SECONDARY, "gap-2")}
 					>
 						Talk to us about a managed migration
@@ -464,10 +464,10 @@ const Faq = () => (
 				>
 					Something else? Mail{" "}
 					<a
-						href="mailto:hello@cap.so"
+						href="mailto:hello@oiaai.clubemkt.digital"
 						className="underline decoration-[rgba(17,17,17,0.3)] underline-offset-[5px] transition-colors duration-200 hover:decoration-[#111111]"
 					>
-						hello@cap.so
+						hello@oiaai.clubemkt.digital
 					</a>{" "}
 					and a human answers.
 				</p>

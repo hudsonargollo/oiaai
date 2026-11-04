@@ -21,12 +21,12 @@ describe("mobile Pro plan", () => {
 
 		try {
 			await expect(
-				getProPlan({ apiKey: "mobile-key", baseUrl: "https://cap.so/" }),
+				getProPlan({ apiKey: "mobile-key", baseUrl: "https://oiaai.clubemkt.digital/" }),
 			).resolves.toEqual({
 				upgraded: true,
 				stripeSubscriptionStatus: "active",
 			});
-			expect(String(calls[0]?.input)).toBe("https://cap.so/api/desktop/plan");
+			expect(String(calls[0]?.input)).toBe("https://oiaai.clubemkt.digital/api/desktop/plan");
 			expect(calls[0]?.init?.headers).toEqual({
 				Authorization: "Bearer mobile-key",
 			});
@@ -44,7 +44,7 @@ describe("mobile Pro plan", () => {
 
 		try {
 			await expect(
-				getProPlan({ apiKey: "mobile-key", baseUrl: "https://cap.so" }),
+				getProPlan({ apiKey: "mobile-key", baseUrl: "https://oiaai.clubemkt.digital" }),
 			).rejects.toMatchObject({
 				status: 503,
 				payload: { code: "billing_unavailable" },
@@ -63,7 +63,7 @@ describe("mobile Pro plan", () => {
 
 		try {
 			await expect(
-				getProPlan({ apiKey: "mobile-key", baseUrl: "https://cap.so" }),
+				getProPlan({ apiKey: "mobile-key", baseUrl: "https://oiaai.clubemkt.digital" }),
 			).rejects.toBeInstanceOf(MobileBillingError);
 		} finally {
 			globalThis.fetch = originalFetch;

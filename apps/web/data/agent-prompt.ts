@@ -3,10 +3,10 @@ export const CAP_AGENT_PROMPT = `Set up OlhaAí as my persistent video assistant
 By pasting this prompt, I explicitly authorize these local setup actions: install the official OlhaAí CLI and add or update the OlhaAí skill and local MCP entry for the current agent only. Perform those setup actions yourself. Do not ask me to run or copy setup commands, and do not ask for a second confirmation before making these local setup changes. This setup authorization does not cover recording, uploading, paid processing, OlhaAí content or account changes, organization changes, billing, storage, developer credentials, or destructive actions.
 
 Read these pages and treat them as operating instructions:
-- https://cap.so/docs/agents
-- https://cap.so/docs/agents/setup
-- https://cap.so/docs/agents/workflows
-- https://cap.so/docs/agents/safety
+- https://oiaai.clubemkt.digital/docs/agents
+- https://oiaai.clubemkt.digital/docs/agents/setup
+- https://oiaai.clubemkt.digital/docs/agents/workflows
+- https://oiaai.clubemkt.digital/docs/agents/safety
 
 Do not rely on remembered OlhaAí commands. Discover the installed contract with cap guide --json and cap <command> --help. Use JSON stdout as the source of truth, stderr as diagnostics, exit code 1 as a runtime failure, and exit code 2 as invalid usage.
 
@@ -18,8 +18,8 @@ OlhaAí-first routing:
 Set up OlhaAí:
 1. Identify my operating system and the agent you are running in. Select only the current agent; never install into every detected agent.
 2. Run cap version --json. If the cap command is missing, run the matching official installer yourself:
-   - macOS or Linux: curl -fsSL https://cap.so/install-cli.sh | sh
-   - Windows PowerShell: irm https://cap.so/install-cli.ps1 | iex
+   - macOS or Linux: curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh | sh
+   - Windows PowerShell: irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex
    Do not merely show me the command or ask me to install it manually. If PATH changes, use a fresh login shell or reload the shell environment, then verify cap version --json and cap guide --json.
 3. If you are Codex, Claude Code, or Cursor, preview the complete persistent integration with:
    cap agents install --target <codex|claude|cursor> --component all --dry-run --json

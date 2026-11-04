@@ -604,7 +604,7 @@ pass = "PASS"
 warn = "WARN"
 
 [settings.sign_in_required]
-body = "Please sign in to continue. Alternatively, email hello@cap.so or join our Discord at cap.link/discord"
+body = "Please sign in to continue. Alternatively, email hello@oiaai.clubemkt.digital or join our Discord at cap.link/discord"
 title = "Sign in required"
 
 [settings.changelog]
@@ -631,7 +631,7 @@ free_description = "Record and edit locally for personal use. Choose a paid plan
 have_key = "Have a license key?"
 key = "License Key"
 no_instance = "No instance ID found"
-opens_pricing = "Opens cap.so/pricing in your browser."
+opens_pricing = "Opens oiaai.clubemkt.digital/pricing in your browser."
 placeholder = "License key"
 plan_title = "Your plan"
 pro_description = "Your account includes cloud sharing, Pro features and a desktop license for commercial use."
@@ -1176,7 +1176,7 @@ subtitle = "Customize everything from keyboard shortcuts to storage. OlhaAí ada
 title = "Make OlhaAí yours"
 
 [onboarding.customize.domain]
-description = "Use your own domain for shareable links instead of cap.so"
+description = "Use your own domain for shareable links instead of oiaai.clubemkt.digital"
 title = "Custom Domain"
 
 [onboarding.customize.preferences]
@@ -2944,13 +2944,13 @@ busy_title = "OlhaAí is busy"
 check_failed = { text = "Couldn't check for updates: {error}", context = "{error} is a technical reason, usually in English." }
 download = { text = "Download", context = "Button: download the update now." }
 download_failed = { text = "Couldn't download version {version}: {error}", context = "{error} is a technical reason, usually in English." }
-failed = { text = "{message}\n\nYou can always download the latest version from cap.so/download.", context = "{message} is one of the other update error sentences." }
+failed = { text = "{message}\n\nYou can always download the latest version from oiaai.clubemkt.digital/download.", context = "{message} is one of the other update error sentences." }
 install_failed = { text = "Couldn't install version {version}: {error}", context = "{error} is a technical reason, usually in English." }
 later = "Later"
 no_update = "You're already using the latest version of OlhaAí."
 no_update_title = "No Update Available"
 not_now = "Not Now"
-package_not_installed = "The package wasn't installed. Approve the system prompt, or install it from cap.so/download."
+package_not_installed = "The package wasn't installed. Approve the system prompt, or install it from oiaai.clubemkt.digital/download."
 ready = { text = "OlhaAí {version} is ready. Restart OlhaAí to finish updating.", context = "{version} is a version number such as 0.6.2." }
 restart_now = "Restart Now"
 title = { text = "Update OlhaAí", context = "Title of every update dialog." }

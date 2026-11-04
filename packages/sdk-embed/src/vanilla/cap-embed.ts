@@ -1,6 +1,6 @@
 import type { EmbedOptions } from "../types";
 
-const DEFAULT_API_BASE = "https://cap.so";
+const DEFAULT_API_BASE = "https://oiaai.clubemkt.digital";
 
 export function createEmbedUrl(options: EmbedOptions): string {
 	const base = options.apiBase ?? DEFAULT_API_BASE;

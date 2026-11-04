@@ -14,7 +14,7 @@ export const canonicalVideoShareUrl = (url: string) => {
 		/^https?:\/\/(?:www\.)?cap\.link\/([^/?#]+)([?#].*)?$/,
 	);
 	if (!match) return url;
-	return `https://cap.so/s/${match[1]}${match[2] ?? ""}`;
+	return `https://oiaai.clubemkt.digital/s/${match[1]}${match[2] ?? ""}`;
 };
 
 export type RichVideoLink = {

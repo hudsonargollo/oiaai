@@ -3,9 +3,9 @@ import { createBreadcrumbSchema } from "@/utils/web-schema";
 export { metadata } from "./metadata";
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
-	{ name: "Trim Video Online", url: "https://cap.so/tools/trim" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
+	{ name: "Trim Video Online", url: "https://oiaai.clubemkt.digital/tools/trim" },
 ]);
 
 export default function TrimLayout({

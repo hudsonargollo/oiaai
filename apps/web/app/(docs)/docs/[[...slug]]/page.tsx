@@ -45,7 +45,7 @@ export async function generateMetadata(
 	return {
 		title: pageTitle,
 		description,
-		alternates: { canonical: `https://cap.so${docPath}` },
+		alternates: { canonical: `https://oiaai.clubemkt.digital${docPath}` },
 		openGraph: {
 			title: pageTitle,
 			description,

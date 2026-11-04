@@ -24,12 +24,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 		description: metadata.description,
 		keywords: metadata.keywords,
 		alternates: {
-			canonical: `https://cap.so/${params.slug}`,
+			canonical: `https://oiaai.clubemkt.digital/${params.slug}`,
 		},
 		openGraph: {
 			title: metadata.title,
 			description: metadata.description,
-			url: `https://cap.so/${params.slug}`,
+			url: `https://oiaai.clubemkt.digital/${params.slug}`,
 			images: [metadata.ogImage],
 		},
 	};

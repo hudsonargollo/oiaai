@@ -149,7 +149,7 @@ export default async function sitemap() {
 	const otherRoutes = dedupedRoutes.filter((route) => route.path !== "/");
 
 	return [...(homeRoute ? [homeRoute] : []), ...otherRoutes].map((route) => ({
-		url: `https://cap.so${route.path}`,
+		url: `https://oiaai.clubemkt.digital${route.path}`,
 		...(route.lastModified ? { lastModified: route.lastModified } : {}),
 	}));
 }

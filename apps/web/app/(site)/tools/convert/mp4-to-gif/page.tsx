@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		title: "MP4 to GIF Converter — Free Online Animated GIF Maker | OlhaAí",
 		description:
 			"Convert MP4 to animated GIF directly in your browser. No uploads, no installs, 100% private. Customize FPS, quality, and size.",
-		url: "https://cap.so/tools/convert/mp4-to-gif",
+		url: "https://oiaai.clubemkt.digital/tools/convert/mp4-to-gif",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/tools/convert/mp4-to-gif",
+		canonical: "https://oiaai.clubemkt.digital/tools/convert/mp4-to-gif",
 	},
 };
 
@@ -133,12 +133,12 @@ const howToStructuredData = {
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
-	{ name: "Convert", url: "https://cap.so/tools/convert" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
+	{ name: "Convert", url: "https://oiaai.clubemkt.digital/tools/convert" },
 	{
 		name: "MP4 to GIF Converter",
-		url: "https://cap.so/tools/convert/mp4-to-gif",
+		url: "https://oiaai.clubemkt.digital/tools/convert/mp4-to-gif",
 	},
 ]);
 

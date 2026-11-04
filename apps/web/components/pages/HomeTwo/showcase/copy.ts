@@ -16,7 +16,7 @@ export const INSTANT_COPY: StageCopy[] = [
 		key: "record",
 		label: "Record",
 		lead: "Instant share links.",
-		body: "Your cap.so link is live the moment you hit record, and the video uploads while you are still talking.",
+		body: "Your oiaai.clubemkt.digital link is live the moment you hit record, and the video uploads while you are still talking.",
 	},
 	{
 		key: "share",

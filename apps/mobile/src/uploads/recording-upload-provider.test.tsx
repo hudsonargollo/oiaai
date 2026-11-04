@@ -99,7 +99,7 @@ const flushQueue = async () => {
 
 const uploadedRecording: RecordingUploadJob = {
 	id: "cap_123",
-	shareUrl: "https://cap.so/s/cap_123",
+	shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 	createdAt: "2026-07-23T08:00:00.000Z",
 	status: "processing",
 	durationSeconds: 2,
@@ -173,7 +173,7 @@ describe("RecordingUploadProvider", () => {
 		authState.createRecording.mockReset();
 		authState.createRecording.mockResolvedValue({
 			id: "cap_123",
-			shareUrl: "https://cap.so/s/cap_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 		});
 		authState.createRecordingUploadTargets.mockReset();
 		authState.createRecordingUploadTargets.mockImplementation(
@@ -788,7 +788,7 @@ describe("RecordingUploadProvider", () => {
 				jobs: [
 					{
 						id: "cap_screen",
-						shareUrl: "https://cap.so/s/cap_screen",
+						shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 						createdAt: "2026-07-23T08:00:00.000Z",
 						status: "uploading",
 						durationSeconds: 8,
@@ -846,7 +846,7 @@ describe("RecordingUploadProvider", () => {
 				jobs: [
 					{
 						id: "cap_screen",
-						shareUrl: "https://cap.so/s/cap_screen",
+						shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 						createdAt: "2026-07-23T08:00:00.000Z",
 						status: "recording",
 						durationSeconds: null,
@@ -939,7 +939,7 @@ describe("RecordingUploadProvider", () => {
 				jobs: [
 					{
 						id: "cap_screen",
-						shareUrl: "https://cap.so/s/cap_screen",
+						shareUrl: "https://oiaai.clubemkt.digital/s/cap_screen",
 						createdAt: "2026-07-23T08:00:00.000Z",
 						status: "recording",
 						durationSeconds: null,

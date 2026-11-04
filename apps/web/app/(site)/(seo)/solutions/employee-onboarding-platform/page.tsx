@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 			"Employee Onboarding Platform: Streamline New-Hire Training with OlhaAí",
 		description:
 			"Looking for a powerful employee onboarding platform? Discover how OlhaAí's open-source screen recorder and asynchronous features simplify new-hire training.",
-		url: "https://cap.so/solutions/employee-onboarding-platform",
+		url: "https://oiaai.clubemkt.digital/solutions/employee-onboarding-platform",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/solutions/employee-onboarding-platform",
+		canonical: "https://oiaai.clubemkt.digital/solutions/employee-onboarding-platform",
 	},
 };
 

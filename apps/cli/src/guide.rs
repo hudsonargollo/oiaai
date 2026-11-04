@@ -118,7 +118,7 @@ fn build() -> Guide {
                 name: "CAP_SERVER_URL",
                 required: false,
                 used_by: "upload, auth login, caps, mcp",
-                description: "OlhaAí server base URL. Defaults to https://cap.so.",
+                description: "OlhaAí server base URL. Defaults to https://oiaai.clubemkt.digital.",
             },
             EnvVar {
                 name: "CAP_AGENT_TOKEN",

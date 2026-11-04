@@ -54,7 +54,7 @@ export const recordScreenMacContent = {
 				{
 					title: "Step 1: Install OlhaAí",
 					content:
-						'Download OlhaAí from <a href="/download">cap.so/download</a> and drag it into Applications. The first time you record, macOS asks for Screen Recording and Microphone permissions in System Settings → Privacy & Security — grant both so OlhaAí can capture your display and audio.',
+						'Download OlhaAí from <a href="/download">oiaai.clubemkt.digital/download</a> and drag it into Applications. The first time you record, macOS asks for Screen Recording and Microphone permissions in System Settings → Privacy & Security — grant both so OlhaAí can capture your display and audio.',
 				},
 				{
 					title: "Step 2: Turn on system audio and record",

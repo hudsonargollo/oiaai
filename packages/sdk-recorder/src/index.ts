@@ -20,7 +20,7 @@ export type {
 	RecordingResult,
 };
 
-const DEFAULT_API_BASE = "https://cap.so";
+const DEFAULT_API_BASE = "https://oiaai.clubemkt.digital";
 
 type EventHandler<K extends keyof RecorderEventMap> = (
 	event: RecorderEventMap[K],

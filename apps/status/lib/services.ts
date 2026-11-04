@@ -6,7 +6,7 @@ export const SERVICES: ServiceDefinition[] = [
 		name: "Website",
 		description: "The OlhaAí website and downloads.",
 		env: "STATUS_WEBSITE_URL",
-		defaultUrl: "https://cap.so",
+		defaultUrl: "https://oiaai.clubemkt.digital",
 		method: "HEAD",
 	},
 	{
@@ -14,7 +14,7 @@ export const SERVICES: ServiceDefinition[] = [
 		name: "API & authentication",
 		description: "Availability of OlhaAí’s authentication API.",
 		env: "STATUS_API_URL",
-		defaultUrl: "https://cap.so/api/auth/providers",
+		defaultUrl: "https://oiaai.clubemkt.digital/api/auth/providers",
 		method: "GET",
 		validation: "auth",
 	},

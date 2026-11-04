@@ -100,7 +100,7 @@ const RecordingModes = () => {
 							}}
 						>
 							<iframe
-								src="https://cap.so/embed/8cq21vmz12tm1zf"
+								src="https://oiaai.clubemkt.digital/embed/8cq21vmz12tm1zf"
 								frameBorder="0"
 								allowFullScreen
 								style={{
@@ -125,7 +125,7 @@ const RecordingModes = () => {
 							}}
 						>
 							<iframe
-								src="https://cap.so/embed/qk8gt56e1q1r735"
+								src="https://oiaai.clubemkt.digital/embed/qk8gt56e1q1r735"
 								frameBorder="0"
 								allowFullScreen
 								style={{

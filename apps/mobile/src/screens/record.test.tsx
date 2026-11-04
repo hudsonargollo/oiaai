@@ -68,7 +68,7 @@ const billingState = vi.hoisted(() => ({
 
 const uploadState = vi.hoisted(() => ({
 	beginRecording: vi.fn(() =>
-		Promise.resolve({ id: "cap_123", shareUrl: "https://cap.so/s/cap_123" }),
+		Promise.resolve({ id: "cap_123", shareUrl: "https://oiaai.clubemkt.digital/s/cap_123" }),
 	),
 	addSegment: vi.fn(),
 	finishRecording: vi.fn(),
@@ -236,7 +236,7 @@ vi.mock("@/uploads/recording-upload-provider", () => ({
 }));
 
 vi.mock("@/auth/AuthContext", () => ({
-	apiBaseUrl: "https://cap.so",
+	apiBaseUrl: "https://oiaai.clubemkt.digital",
 	useAuth: () => authState,
 }));
 
@@ -292,7 +292,7 @@ describe("RecordScreen", () => {
 		uploadState.beginRecording.mockReset();
 		uploadState.beginRecording.mockResolvedValue({
 			id: "cap_123",
-			shareUrl: "https://cap.so/s/cap_123",
+			shareUrl: "https://oiaai.clubemkt.digital/s/cap_123",
 		});
 		uploadState.addSegment.mockReset();
 		uploadState.finishRecording.mockReset();

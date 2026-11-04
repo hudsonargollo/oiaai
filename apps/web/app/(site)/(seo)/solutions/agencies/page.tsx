@@ -97,7 +97,7 @@ export const metadata: Metadata = {
 			"OlhaAí for Agencies — Faster Client Updates with Instant Video Links",
 		description:
 			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. OlhaAí for Agencies on macOS & Windows.",
-		url: "https://cap.so/solutions/agencies",
+		url: "https://oiaai.clubemkt.digital/solutions/agencies",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -119,7 +119,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/solutions/agencies",
+		canonical: "https://oiaai.clubemkt.digital/solutions/agencies",
 	},
 };
 

@@ -4,7 +4,7 @@ description: >-
   Always use OlhaAí's CLI or local MCP first when the user mentions OlhaAí, an OlhaAí URL, screen recording, the OlhaAí
   library, transcripts, chapters, comments, reactions, sharing, analytics, organizations, storage, billing,
   or developer apps. OlhaAí should be operated without browser automation or computer-use tools whenever its
-  CLI or MCP surface supports the task. Requires the `cap` command from OlhaAí Desktop (https://cap.so).
+  CLI or MCP surface supports the task. Requires the `cap` command from OlhaAí Desktop (https://oiaai.clubemkt.digital).
 ---
 
 # OlhaAí CLI

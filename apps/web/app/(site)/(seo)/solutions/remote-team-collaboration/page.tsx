@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 			"Remote Team Collaboration Software: Async Screen Recording for Distributed Teams",
 		description:
 			"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time and boost productivity across time zones.",
-		url: "https://cap.so/solutions/remote-team-collaboration",
+		url: "https://oiaai.clubemkt.digital/solutions/remote-team-collaboration",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/solutions/remote-team-collaboration",
+		canonical: "https://oiaai.clubemkt.digital/solutions/remote-team-collaboration",
 	},
 };
 

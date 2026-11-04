@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 	title: "Deactivate License — OlhaAí",
 	description:
 		"Deactivate your OlhaAí commercial license from its current device to use it elsewhere.",
-	alternates: { canonical: "https://cap.so/deactivate-license" },
+	alternates: { canonical: "https://oiaai.clubemkt.digital/deactivate-license" },
 };
 
 export default function App() {

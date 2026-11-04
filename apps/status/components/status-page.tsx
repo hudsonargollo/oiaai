@@ -140,7 +140,7 @@ export function StatusPage() {
 				Skip to service status
 			</a>
 			<header className="site-header">
-				<a className="brand" href="https://cap.so" aria-label="OlhaAí home">
+				<a className="brand" href="https://oiaai.clubemkt.digital" aria-label="OlhaAí home">
 					<Image
 						src="/cap-icon.svg"
 						width={34}
@@ -152,7 +152,7 @@ export function StatusPage() {
 					<span className="brand-divider" />
 					<span className="brand-context">Status</span>
 				</a>
-				<a className="back-link" href="https://cap.so">
+				<a className="back-link" href="https://oiaai.clubemkt.digital">
 					Back to OlhaAí <Arrow diagonal />
 				</a>
 			</header>
@@ -389,7 +389,7 @@ export function StatusPage() {
 							Made with care. Monitored around the clock.
 						</div>
 						<nav aria-label="Footer">
-							<a href="https://cap.so/support">
+							<a href="https://oiaai.clubemkt.digital/support">
 								Need a hand? <Arrow diagonal />
 							</a>
 							<a href="/api/status">

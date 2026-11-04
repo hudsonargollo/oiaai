@@ -107,7 +107,7 @@ export const InstantSection = () => (
 				{
 					lead: "Custom domains.",
 					icon: <Globe />,
-					body: "Share from cap.yourcompany.com instead of cap.so on OlhaAí Pro.",
+					body: "Share from cap.yourcompany.com instead of oiaai.clubemkt.digital on OlhaAí Pro.",
 				},
 				{
 					lead: "Embed anywhere.",
@@ -162,7 +162,7 @@ export const StudioSection = () => (
 				{
 					lead: "4K export at 60fps.",
 					icon: <Download />,
-					body: "Export an MP4 or a GIF, or share it as a cap.so link like everything else.",
+					body: "Export an MP4 or a GIF, or share it as a oiaai.clubemkt.digital link like everything else.",
 				},
 				{
 					lead: "Camera background blur.",
@@ -211,7 +211,7 @@ export const ScreenshotSection = () => (
 			{
 				lead: "Copy to clipboard.",
 				icon: <ClipboardCheck />,
-				body: "Your screenshot is copied the moment you let go, or saved as a PNG or shared as a cap.so link.",
+				body: "Your screenshot is copied the moment you let go, or saved as a PNG or shared as a oiaai.clubemkt.digital link.",
 			},
 			{
 				lead: "Any window or area.",

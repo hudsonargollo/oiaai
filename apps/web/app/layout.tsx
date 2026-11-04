@@ -43,7 +43,7 @@ const defaultFont = localFont({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://cap.so"),
+	metadataBase: new URL("https://oiaai.clubemkt.digital"),
 	title: "OlhaAí — Check this out.",
 	description:
 		"OlhaAí is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 		description:
 			"OlhaAí is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 		type: "website",
-		url: "https://cap.so",
+		url: "https://oiaai.clubemkt.digital",
 		siteName: "OlhaAí",
 		images: [
 			{

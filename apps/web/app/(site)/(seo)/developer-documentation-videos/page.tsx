@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. OlhaAí is free, open-source, 4K quality, and built for developers.",
 	alternates: {
-		canonical: "https://cap.so/developer-documentation-videos",
+		canonical: "https://oiaai.clubemkt.digital/developer-documentation-videos",
 	},
 	openGraph: {
 		title:
 			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | OlhaAí",
 		description:
 			"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. Free, open-source, and built for developers.",
-		url: "https://cap.so/developer-documentation-videos",
+		url: "https://oiaai.clubemkt.digital/developer-documentation-videos",
 		siteName: "OlhaAí",
 		images: [
 			{

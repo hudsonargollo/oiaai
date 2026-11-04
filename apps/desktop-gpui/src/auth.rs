@@ -12,7 +12,7 @@ use serde_json::{Value, json};
 
 use crate::store::{self, DEFAULT_SERVER_URL};
 
-pub const PRICING_URL: &str = "https://cap.so/pricing?ref=desktop";
+pub const PRICING_URL: &str = "https://oiaai.clubemkt.digital/pricing?ref=desktop";
 
 const CALLBACK_HTML: &str = r#"<!DOCTYPE html>
 <html lang="en">
@@ -831,8 +831,8 @@ mod tests {
     #[test]
     fn sign_in_url_omits_a_missing_port() {
         assert_eq!(
-            sign_in_request_url("https://cap.so", Some(4280), false),
-            "https://cap.so/api/desktop/session/request?type=api_key&port=4280&platform=desktop"
+            sign_in_request_url("https://oiaai.clubemkt.digital", Some(4280), false),
+            "https://oiaai.clubemkt.digital/api/desktop/session/request?type=api_key&port=4280&platform=desktop"
         );
         assert_eq!(
             sign_in_request_url("http://localhost:3000", None, true),
@@ -886,8 +886,8 @@ mod tests {
     #[test]
     fn local_session_for_custom_origin() {
         assert!(should_use_local_server_session("http://localhost:3000"));
-        assert!(has_same_origin("https://cap.so/", "https://cap.so"));
-        assert!(!has_same_origin("https://cap.so", "http://localhost:3000"));
+        assert!(has_same_origin("https://oiaai.clubemkt.digital/", "https://oiaai.clubemkt.digital"));
+        assert!(!has_same_origin("https://oiaai.clubemkt.digital", "http://localhost:3000"));
     }
 }
 

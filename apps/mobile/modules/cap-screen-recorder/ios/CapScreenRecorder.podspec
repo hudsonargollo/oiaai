@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description = 'Native ReplayKit broadcast picker and shared recording bridge for Cap'
   s.license = { :type => 'AGPL-3.0' }
   s.author = 'Cap'
-  s.homepage = 'https://cap.so'
+  s.homepage = 'https://oiaai.clubemkt.digital'
   s.platforms = { :ios => '15.1' }
   s.source = { :git => 'https://github.com/CapSoftware/Cap.git' }
   s.static_framework = true

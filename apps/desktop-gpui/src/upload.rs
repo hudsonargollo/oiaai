@@ -3280,7 +3280,7 @@ mod tests {
     #[test]
     fn reusable_video_id_prefers_sharing_state() {
         let sharing = SharingMeta {
-            link: "https://cap.so/s/shared".into(),
+            link: "https://oiaai.clubemkt.digital/s/shared".into(),
             id: "shared".into(),
             content_hash: None,
         };

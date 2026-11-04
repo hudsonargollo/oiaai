@@ -27,7 +27,7 @@ const isPublicAsset = (path: string) => {
 };
 
 const mainOrigins = [
-	"https://cap.so",
+	"https://oiaai.clubemkt.digital",
 	"https://cap.link",
 	"http://localhost",
 	serverEnv().WEB_URL,
@@ -58,7 +58,7 @@ const setFrameHeaders = (response: NextResponse) => {
 	response.headers.set("X-Frame-Options", "SAMEORIGIN");
 	response.headers.set(
 		"Content-Security-Policy",
-		"frame-ancestors https://cap.so",
+		"frame-ancestors https://oiaai.clubemkt.digital",
 	);
 	return response;
 };

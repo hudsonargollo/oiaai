@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 		title: "MOV to MP4 Converter — Free Online Video Converter | OlhaAí",
 		description:
 			"Convert MOV videos to the universally compatible MP4 format directly in your browser. No uploads, no installs, 100% private. Works with iPhone recordings and QuickTime files.",
-		url: "https://cap.so/tools/convert/mov-to-mp4",
+		url: "https://oiaai.clubemkt.digital/tools/convert/mov-to-mp4",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/tools/convert/mov-to-mp4",
+		canonical: "https://oiaai.clubemkt.digital/tools/convert/mov-to-mp4",
 	},
 };
 
@@ -142,12 +142,12 @@ const howToStructuredData = {
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
-	{ name: "Convert", url: "https://cap.so/tools/convert" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
+	{ name: "Convert", url: "https://oiaai.clubemkt.digital/tools/convert" },
 	{
 		name: "MOV to MP4 Converter",
-		url: "https://cap.so/tools/convert/mov-to-mp4",
+		url: "https://oiaai.clubemkt.digital/tools/convert/mov-to-mp4",
 	},
 ]);
 

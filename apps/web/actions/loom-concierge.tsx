@@ -39,7 +39,7 @@ import {
 } from "@/lib/loom-migration-state";
 import { isOrganizationOwnerPro } from "@/lib/org-pro";
 
-const SUPPORT_EMAIL = "hello@cap.so";
+const SUPPORT_EMAIL = "hello@oiaai.clubemkt.digital";
 
 function affectedRows(result: unknown) {
 	if (Array.isArray(result)) {

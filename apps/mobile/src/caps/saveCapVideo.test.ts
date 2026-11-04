@@ -35,7 +35,7 @@ describe("saveCapVideoToPhotos", () => {
 	it("saves the downloaded file to the photo library and deletes the temp file", async () => {
 		const getDownload = vi.fn(async () => ({
 			fileName: "Launch demo.mp4",
-			url: "https://cap.so/download.mp4",
+			url: "https://oiaai.clubemkt.digital/download.mp4",
 		}));
 
 		const result = await saveCapVideoToPhotos(
@@ -45,7 +45,7 @@ describe("saveCapVideoToPhotos", () => {
 
 		expect(result).toBe("Launch demo.mp4");
 		expect(fileSystemMock.downloadAsync).toHaveBeenCalledWith(
-			"https://cap.so/download.mp4",
+			"https://oiaai.clubemkt.digital/download.mp4",
 			"file:///documents/Launch demo.mp4",
 		);
 		expect(mediaLibraryMock.saveToLibraryAsync).toHaveBeenCalledWith(
@@ -60,7 +60,7 @@ describe("saveCapVideoToPhotos", () => {
 	it("deletes the temp file when saving to the photo library fails", async () => {
 		const getDownload = vi.fn(async () => ({
 			fileName: "Launch demo.mp4",
-			url: "https://cap.so/download.mp4",
+			url: "https://oiaai.clubemkt.digital/download.mp4",
 		}));
 		mediaLibraryMock.saveToLibraryAsync.mockRejectedValueOnce(
 			new Error("photo library failed"),

@@ -179,7 +179,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 	migrationGuide: {
 		title: "How to Record Your Mac Screen with Audio Using OlhaAí",
 		steps: [
-			"Download OlhaAí for free from cap.so/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted — these are needed to capture your display and audio.",
+			"Download OlhaAí for free from oiaai.clubemkt.digital/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted — these are needed to capture your display and audio.",
 			"Open OlhaAí from your menu bar. In the recording settings, toggle on Microphone and System Audio. You can enable one or both depending on whether you want narration, app sounds, or both in your recording.",
 			"Choose your recording source — full screen, a specific window, or a custom region. Click the record button to begin capturing your Mac screen with audio immediately.",
 			"When you are done, click Stop. OlhaAí processes your recording and gives you a shareable link instantly, or you can export it as an MP4 file for use in editing software or local storage.",

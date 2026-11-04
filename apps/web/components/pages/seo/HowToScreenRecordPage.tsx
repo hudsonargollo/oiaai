@@ -15,7 +15,7 @@ export const howToScreenRecordContent: SeoPageContent = {
 		{
 			title: "How to Screen Record on Mac with OlhaAí",
 			description:
-				"Getting started with screen recording on Mac is simple with OlhaAí. Here is how to do a screen recording on Mac in just a few steps: First, download OlhaAí from <a href='/download'>cap.so/download</a> and install it on your Mac. Once installed, open OlhaAí and grant the necessary screen recording and microphone permissions when prompted. Click the record button to start capturing your entire screen or select a specific window. OlhaAí records in high definition at up to 60fps, ensuring your Mac screen recordings look crisp and professional. When you are finished, click stop to end the recording. OlhaAí will process your video and give you a shareable link instantly, or you can export the file locally. For Mac users who want a quick alternative, macOS includes a built-in screenshot toolbar. Press Cmd+Shift+5 to access it and select either Record Entire Screen or Record Selected Portion. However, the built-in tool lacks audio recording, webcam overlay, and instant sharing features that OlhaAí provides.",
+				"Getting started with screen recording on Mac is simple with OlhaAí. Here is how to do a screen recording on Mac in just a few steps: First, download OlhaAí from <a href='/download'>oiaai.clubemkt.digital/download</a> and install it on your Mac. Once installed, open OlhaAí and grant the necessary screen recording and microphone permissions when prompted. Click the record button to start capturing your entire screen or select a specific window. OlhaAí records in high definition at up to 60fps, ensuring your Mac screen recordings look crisp and professional. When you are finished, click stop to end the recording. OlhaAí will process your video and give you a shareable link instantly, or you can export the file locally. For Mac users who want a quick alternative, macOS includes a built-in screenshot toolbar. Press Cmd+Shift+5 to access it and select either Record Entire Screen or Record Selected Portion. However, the built-in tool lacks audio recording, webcam overlay, and instant sharing features that OlhaAí provides.",
 		},
 		{
 			title: "How to Screen Record with Audio on Mac",
@@ -25,7 +25,7 @@ export const howToScreenRecordContent: SeoPageContent = {
 		{
 			title: "How to Screen Record on Windows with OlhaAí",
 			description:
-				"Screen recording on Windows is straightforward with OlhaAí. Download OlhaAí from <a href='/download'>cap.so/download</a> and install it on your Windows PC. Launch OlhaAí and grant the required permissions for screen and audio capture. Select whether you want to record your full screen, a specific window, or a custom region. Click record to begin capturing. OlhaAí is optimized for Windows performance, delivering smooth recordings without impacting your system. Once finished, stop the recording and share it instantly via link or export it to your preferred format. Windows also includes a built-in option called the Xbox Game Bar. Press Win+G to open it and click the record button. However, Game Bar only records the active window, does not support full-screen desktop recording, and has limited export options compared to OlhaAí.",
+				"Screen recording on Windows is straightforward with OlhaAí. Download OlhaAí from <a href='/download'>oiaai.clubemkt.digital/download</a> and install it on your Windows PC. Launch OlhaAí and grant the required permissions for screen and audio capture. Select whether you want to record your full screen, a specific window, or a custom region. Click record to begin capturing. OlhaAí is optimized for Windows performance, delivering smooth recordings without impacting your system. Once finished, stop the recording and share it instantly via link or export it to your preferred format. Windows also includes a built-in option called the Xbox Game Bar. Press Win+G to open it and click the record button. However, Game Bar only records the active window, does not support full-screen desktop recording, and has limited export options compared to OlhaAí.",
 		},
 		{
 			title: "How to Screen Record on Windows 10 and 11 with Audio",
@@ -35,7 +35,7 @@ export const howToScreenRecordContent: SeoPageContent = {
 		{
 			title: "How to Screen Record in Your Browser",
 			description:
-				"Sometimes you need to record your screen without installing any software. OlhaAí offers an Instant Mode that works directly in your browser. Visit <a href='https://cap.so'>cap.so</a> and click Record to start a browser-based recording session. Your browser will ask for permission to access your screen and microphone. Choose which screen, window, or browser tab to share, and OlhaAí begins recording immediately. Instant Mode supports recordings up to 5 minutes on the free plan, with a shareable link generated automatically when you stop recording. This is perfect for quick demos, bug reports, or feedback videos when you do not have the desktop app installed. No downloads, no extensions, and no complicated setup. Just open your browser and start recording.",
+				"Sometimes you need to record your screen without installing any software. OlhaAí offers an Instant Mode that works directly in your browser. Visit <a href='https://oiaai.clubemkt.digital'>oiaai.clubemkt.digital</a> and click Record to start a browser-based recording session. Your browser will ask for permission to access your screen and microphone. Choose which screen, window, or browser tab to share, and OlhaAí begins recording immediately. Instant Mode supports recordings up to 5 minutes on the free plan, with a shareable link generated automatically when you stop recording. This is perfect for quick demos, bug reports, or feedback videos when you do not have the desktop app installed. No downloads, no extensions, and no complicated setup. Just open your browser and start recording.",
 		},
 		{
 			title: "How to Record a Specific Window or Region",
@@ -154,7 +154,7 @@ export const howToScreenRecordContent: SeoPageContent = {
 	migrationGuide: {
 		title: "Quick Start: How to Screen Record with OlhaAí in 4 Steps",
 		steps: [
-			"Download OlhaAí for free from cap.so/download for Mac or Windows, or use Instant Mode in your browser for quick recordings without any installation.",
+			"Download OlhaAí for free from oiaai.clubemkt.digital/download for Mac or Windows, or use Instant Mode in your browser for quick recordings without any installation.",
 			"Open OlhaAí and select your recording source. Choose between full screen, specific window, or custom region capture. Toggle microphone and system audio on or off based on your needs.",
 			"Click the record button to begin capturing your screen. OlhaAí records in high definition with minimal system impact so you can present, demo, or teach without lag.",
 			"Stop the recording when finished. OlhaAí generates an instant shareable link, or you can export the video locally in your preferred format. Share your recording with anyone in seconds.",

@@ -16,14 +16,14 @@ export const metadata: Metadata = {
 	description:
 		"OlhaAí is the leading open-source screen recorder for Mac and Windows. Audit the code, self-host your recordings, and own your data. AGPLv3 and MIT crates, 4K quality, no watermarks.",
 	alternates: {
-		canonical: "https://cap.so/open-source-screen-recorder",
+		canonical: "https://oiaai.clubemkt.digital/open-source-screen-recorder",
 	},
 	openGraph: {
 		title:
 			"Open Source Screen Recorder — Free, Private, Self-Hostable | OlhaAí",
 		description:
 			"OlhaAí is the leading open-source screen recorder for Mac and Windows. AGPLv3 and MIT crates, 4K quality, instant sharing, self-hostable storage. No watermarks, no vendor lock-in.",
-		url: "https://cap.so/open-source-screen-recorder",
+		url: "https://oiaai.clubemkt.digital/open-source-screen-recorder",
 		siteName: "OlhaAí",
 		images: [
 			{

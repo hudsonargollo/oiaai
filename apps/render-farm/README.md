@@ -78,7 +78,7 @@ expiry there is only a backstop.
 | `RF_S3_ENDPOINT`, `RF_S3_BUCKET`, `RF_S3_REGION` | required | Bucket holding recordings, outputs, HLS and the journal |
 | `RF_S3_IMDS` | off | Use the instance role instead of `RF_S3_ACCESS_KEY_ID`/`RF_S3_SECRET_ACCESS_KEY` |
 | `RF_MEDIA_S3_BUCKET` (`_REGION`, `_ENDPOINT`) | the `RF_S3_*` bucket | Bucket holding recordings and receiving exports; may belong to another account whose policy grants the farm's role. Objects are written `bucket-owner-full-control`; the journal stays in `RF_S3_BUCKET` |
-| `RF_CALLBACK_HOSTS` | none | Host suffixes a job's `callbackUrl` may use (e.g. `vercel.app,cap.so`) |
+| `RF_CALLBACK_HOSTS` | none | Host suffixes a job's `callbackUrl` may use (e.g. `vercel.app,oiaai.clubemkt.digital`) |
 | `RF_CALLBACK_SECRET` | `RF_TOKEN` | HMAC key for callback signatures |
 | `RF_TRANSCODE_ENCODER` | `h264_nvenc` | Encoder for source transcodes (`libx264` without a GPU) |
 | `RF_COORDINATOR_URL` | `http://127.0.0.1:8080` | Coordinator address (workers) and its advertised URL |

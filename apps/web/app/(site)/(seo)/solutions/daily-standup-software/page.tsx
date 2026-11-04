@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 		title: "Daily Standup Software: Streamline Your Agile Meetings with OlhaAí",
 		description:
 			"Looking for daily standup software? Discover how OlhaAí helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
-		url: "https://cap.so/solutions/daily-standup-software",
+		url: "https://oiaai.clubemkt.digital/solutions/daily-standup-software",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/solutions/daily-standup-software",
+		canonical: "https://oiaai.clubemkt.digital/solutions/daily-standup-software",
 	},
 };
 

@@ -71,13 +71,13 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.bootstrap();
 			expect(result.user.email).toBe("richie@example.com");
 			expect(result.spaces?.[1]?.name).toBe("Product");
-			expect(String(calls[0])).toBe("https://cap.so/api/mobile/bootstrap");
+			expect(String(calls[0])).toBe("https://oiaai.clubemkt.digital/api/mobile/bootstrap");
 		} finally {
 			globalThis.fetch = originalFetch;
 		}
@@ -96,7 +96,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 
@@ -104,7 +104,7 @@ describe("createMobileApiClient", () => {
 				success: true,
 			});
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/user/account-deletion",
+				"https://oiaai.clubemkt.digital/api/mobile/user/account-deletion",
 			);
 			expect(calls[0]?.init?.method).toBe("POST");
 			expect(JSON.parse(String(calls[0]?.init?.body))).toEqual({
@@ -128,7 +128,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 
@@ -136,8 +136,8 @@ describe("createMobileApiClient", () => {
 			await client.blockUser("user_456");
 
 			expect(calls.map((call) => String(call.input))).toEqual([
-				"https://cap.so/api/mobile/caps/video_123/report",
-				"https://cap.so/api/mobile/user/blocks",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/report",
+				"https://oiaai.clubemkt.digital/api/mobile/user/blocks",
 			]);
 			expect(calls.map((call) => JSON.parse(String(call.init?.body)))).toEqual([
 				{ reason: "harassment" },
@@ -165,14 +165,14 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => null,
 			});
 			const result = await client.getAuthConfig();
 			expect(result.appleAuthAvailable).toBe(true);
 			expect(result.googleAuthAvailable).toBe(false);
 			expect(result.workosAuthAvailable).toBe(true);
-			expect(String(calls[0])).toBe("https://cap.so/api/mobile/session/config");
+			expect(String(calls[0])).toBe("https://oiaai.clubemkt.digital/api/mobile/session/config");
 		} finally {
 			globalThis.fetch = originalFetch;
 		}
@@ -191,7 +191,7 @@ describe("createMobileApiClient", () => {
 					id: "user_123",
 					name: "Richie",
 					lastName: "McIlroy",
-					email: "richie@cap.so",
+					email: "richie@oiaai.clubemkt.digital",
 					imageUrl: null,
 					activeOrganizationId: "org_123",
 				}),
@@ -200,7 +200,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so",
+				baseUrl: "https://oiaai.clubemkt.digital",
 				getToken: () => "api-key",
 			});
 			await client.updateProfile({ name: "Richie", lastName: "McIlroy" });
@@ -212,9 +212,9 @@ describe("createMobileApiClient", () => {
 			await client.removeProfileImage();
 
 			expect(calls.map((call) => String(call.input))).toEqual([
-				"https://cap.so/api/mobile/user/profile",
-				"https://cap.so/api/mobile/user/profile/image",
-				"https://cap.so/api/mobile/user/profile/image",
+				"https://oiaai.clubemkt.digital/api/mobile/user/profile",
+				"https://oiaai.clubemkt.digital/api/mobile/user/profile/image",
+				"https://oiaai.clubemkt.digital/api/mobile/user/profile/image",
 			]);
 			expect(calls.map((call) => call.init?.method)).toEqual([
 				"PATCH",
@@ -250,7 +250,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.listCaps({
@@ -261,7 +261,7 @@ describe("createMobileApiClient", () => {
 			});
 
 			expect(String(calls[0])).toBe(
-				"https://cap.so/api/mobile/caps?spaceId=space_123&page=1&limit=30",
+				"https://oiaai.clubemkt.digital/api/mobile/caps?spaceId=space_123&page=1&limit=30",
 			);
 			expect(result.collectionTotal).toBe(45);
 		} finally {
@@ -299,14 +299,14 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.getCapStatuses(["video_123"]);
 
 			expect(result.caps[0]?.upload?.uploaded).toBe(500);
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/caps/statuses",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/statuses",
 			);
 			expect(calls[0]?.init?.method).toBe("POST");
 			expect(JSON.parse(calls[0]?.init?.body as string)).toEqual({
@@ -326,7 +326,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 
@@ -346,7 +346,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 
@@ -361,30 +361,30 @@ describe("createMobileApiClient", () => {
 
 	it("builds Google session request URLs", () => {
 		expect(
-			createSessionRequestUrl("https://cap.so/", "cap://auth", "google"),
+			createSessionRequestUrl("https://oiaai.clubemkt.digital/", "cap://auth", "google"),
 		).toBe(
-			"https://cap.so/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=google",
+			"https://oiaai.clubemkt.digital/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=google",
 		);
 	});
 
 	it("builds Apple session request URLs", () => {
 		expect(
-			createSessionRequestUrl("https://cap.so/", "cap://auth", "apple"),
+			createSessionRequestUrl("https://oiaai.clubemkt.digital/", "cap://auth", "apple"),
 		).toBe(
-			"https://cap.so/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=apple",
+			"https://oiaai.clubemkt.digital/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=apple",
 		);
 	});
 
 	it("builds WorkOS session request URLs", () => {
 		expect(
 			createSessionRequestUrl(
-				"https://cap.so/",
+				"https://oiaai.clubemkt.digital/",
 				"cap://auth",
 				"workos",
 				"org_123",
 			),
 		).toBe(
-			"https://cap.so/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=workos&organizationId=org_123",
+			"https://oiaai.clubemkt.digital/api/mobile/session/request?redirectUri=cap%3A%2F%2Fauth&provider=workos&organizationId=org_123",
 		);
 	});
 
@@ -399,7 +399,7 @@ describe("createMobileApiClient", () => {
 			return new Response(
 				JSON.stringify({
 					id: "video_123",
-					shareUrl: "https://cap.so/s/video_123",
+					shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 					title: "Launch review",
 					createdAt: "2026-05-18T10:00:00.000Z",
 					updatedAt: "2026-05-18T10:30:00.000Z",
@@ -420,7 +420,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.updateCapSharing("video_123", {
@@ -430,7 +430,7 @@ describe("createMobileApiClient", () => {
 
 			expect(result.public).toBe(false);
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/caps/video_123/sharing",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/sharing",
 			);
 			expect(calls[0]?.init?.method).toBe("PATCH");
 			expect(calls[0]?.init?.headers).toBeInstanceOf(Headers);
@@ -466,7 +466,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.createFolder({
@@ -477,7 +477,7 @@ describe("createMobileApiClient", () => {
 			const body = calls[0]?.init?.body;
 
 			expect(result.name).toBe("Product");
-			expect(String(calls[0]?.input)).toBe("https://cap.so/api/mobile/folders");
+			expect(String(calls[0]?.input)).toBe("https://oiaai.clubemkt.digital/api/mobile/folders");
 			expect(calls[0]?.init?.method).toBe("POST");
 			expect(typeof body).toBe("string");
 			expect(JSON.parse(body as string)).toEqual({
@@ -501,7 +501,7 @@ describe("createMobileApiClient", () => {
 			return new Response(
 				JSON.stringify({
 					id: "video_123",
-					shareUrl: "https://cap.so/s/video_123",
+					shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 					title: "Roadmap review",
 					createdAt: "2026-05-18T10:00:00.000Z",
 					updatedAt: "2026-05-18T10:30:00.000Z",
@@ -522,7 +522,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.updateCapTitle("video_123", {
@@ -532,7 +532,7 @@ describe("createMobileApiClient", () => {
 
 			expect(result.title).toBe("Roadmap review");
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/caps/video_123/title",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/title",
 			);
 			expect(calls[0]?.init?.method).toBe("PATCH");
 			expect(typeof body).toBe("string");
@@ -569,7 +569,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const targets = await client.createRecordingUploadTargets("video_123", [
@@ -584,13 +584,13 @@ describe("createMobileApiClient", () => {
 
 			expect(targets.uploads["segments/video/init.mp4"]?.type).toBe("put");
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/recordings/video_123/segments/targets",
+				"https://oiaai.clubemkt.digital/api/mobile/recordings/video_123/segments/targets",
 			);
 			expect(JSON.parse(calls[0]?.init?.body as string)).toEqual({
 				subpaths: ["segments/video/init.mp4"],
 			});
 			expect(String(calls[1]?.input)).toBe(
-				"https://cap.so/api/mobile/recordings/video_123/complete",
+				"https://oiaai.clubemkt.digital/api/mobile/recordings/video_123/complete",
 			);
 			expect(JSON.parse(calls[1]?.init?.body as string)).toEqual({
 				durationSeconds: 2,
@@ -614,7 +614,7 @@ describe("createMobileApiClient", () => {
 			return new Response(
 				JSON.stringify({
 					id: "video_123",
-					shareUrl: "https://cap.so/s/video_123",
+					shareUrl: "https://oiaai.clubemkt.digital/s/video_123",
 					title: "Launch review",
 					createdAt: "2026-05-18T10:00:00.000Z",
 					updatedAt: "2026-05-18T10:30:00.000Z",
@@ -635,7 +635,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so/",
+				baseUrl: "https://oiaai.clubemkt.digital/",
 				getToken: () => "api-key",
 			});
 			const result = await client.updateCapPassword("video_123", {
@@ -645,7 +645,7 @@ describe("createMobileApiClient", () => {
 
 			expect(result.protected).toBe(true);
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/caps/video_123/password",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/password",
 			);
 			expect(calls[0]?.init?.method).toBe("PATCH");
 			expect(typeof body).toBe("string");
@@ -839,7 +839,7 @@ describe("createMobileApiClient", () => {
 				return new Response(
 					JSON.stringify({
 						id: "video_456",
-						shareUrl: "https://cap.so/s/video_456",
+						shareUrl: "https://oiaai.clubemkt.digital/s/video_456",
 					}),
 				);
 			}
@@ -859,7 +859,7 @@ describe("createMobileApiClient", () => {
 
 		try {
 			const client = createMobileApiClient({
-				baseUrl: "https://cap.so",
+				baseUrl: "https://oiaai.clubemkt.digital",
 				getToken: () => "api-key",
 			});
 			await client.getCapAnalytics("video_123", "30d");
@@ -876,7 +876,7 @@ describe("createMobileApiClient", () => {
 			await client.importLoom("https://www.loom.com/share/abcdefghij");
 
 			expect(String(calls[0]?.input)).toBe(
-				"https://cap.so/api/mobile/caps/video_123/analytics?range=30d",
+				"https://oiaai.clubemkt.digital/api/mobile/caps/video_123/analytics?range=30d",
 			);
 			expect(calls.map((call) => call.init?.method)).toEqual([
 				"GET",
@@ -886,7 +886,7 @@ describe("createMobileApiClient", () => {
 				"POST",
 			]);
 			expect(String(calls[4]?.input)).toBe(
-				"https://cap.so/api/mobile/imports/loom",
+				"https://oiaai.clubemkt.digital/api/mobile/imports/loom",
 			);
 		} finally {
 			globalThis.fetch = originalFetch;

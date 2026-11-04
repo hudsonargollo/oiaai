@@ -602,7 +602,7 @@ pass = "पास"
 warn = "चेतावनी"
 
 [settings.sign_in_required]
-body = "जारी रखने के लिए कृपया साइन इन करें। या hello@cap.so पर ईमेल करें या cap.link/discord पर हमारे Discord से जुड़ें"
+body = "जारी रखने के लिए कृपया साइन इन करें। या hello@oiaai.clubemkt.digital पर ईमेल करें या cap.link/discord पर हमारे Discord से जुड़ें"
 title = "साइन इन ज़रूरी है"
 
 [settings.changelog]
@@ -629,7 +629,7 @@ free_description = "निजी इस्तेमाल के लिए ल�
 have_key = "क्या आपके पास लाइसेंस कुंजी है?"
 key = "लाइसेंस कुंजी"
 no_instance = "कोई इंस्टेंस ID नहीं मिली"
-opens_pricing = "आपके ब्राउज़र में cap.so/pricing खोलता है।"
+opens_pricing = "आपके ब्राउज़र में oiaai.clubemkt.digital/pricing खोलता है।"
 placeholder = "लाइसेंस कुंजी"
 plan_title = "आपका प्लान"
 pro_description = "आपके खाते में क्लाउड शेयरिंग, Pro फ़ीचर और कमर्शियल इस्तेमाल के लिए डेस्कटॉप लाइसेंस शामिल है।"
@@ -1174,7 +1174,7 @@ subtitle = "कीबोर्ड शॉर्टकट से लेकर स�
 title = "OlhaAí को अपना बनाएँ"
 
 [onboarding.customize.domain]
-description = "शेयर करने लायक लिंक के लिए cap.so की जगह अपना डोमेन इस्तेमाल करें"
+description = "शेयर करने लायक लिंक के लिए oiaai.clubemkt.digital की जगह अपना डोमेन इस्तेमाल करें"
 title = "कस्टम डोमेन"
 
 [onboarding.customize.preferences]
@@ -2942,13 +2942,13 @@ busy_title = "OlhaAí व्यस्त है"
 check_failed = "अपडेट की जाँच नहीं हो सकी: {error}"
 download = "डाउनलोड करें"
 download_failed = "वर्ज़न {version} डाउनलोड नहीं हो सका: {error}"
-failed = "{message}\n\nआप सबसे नया वर्ज़न कभी भी cap.so/download से डाउनलोड कर सकते हैं।"
+failed = "{message}\n\nआप सबसे नया वर्ज़न कभी भी oiaai.clubemkt.digital/download से डाउनलोड कर सकते हैं।"
 install_failed = "वर्ज़न {version} इंस्टॉल नहीं हो सका: {error}"
 later = "बाद में"
 no_update = "आप पहले से ही OlhaAí का सबसे नया वर्ज़न इस्तेमाल कर रहे हैं।"
 no_update_title = "कोई अपडेट उपलब्ध नहीं है"
 not_now = "अभी नहीं"
-package_not_installed = "पैकेज इंस्टॉल नहीं हुआ। सिस्टम प्रॉम्प्ट को मंज़ूरी दें, या इसे cap.so/download से इंस्टॉल करें।"
+package_not_installed = "पैकेज इंस्टॉल नहीं हुआ। सिस्टम प्रॉम्प्ट को मंज़ूरी दें, या इसे oiaai.clubemkt.digital/download से इंस्टॉल करें।"
 ready = "OlhaAí {version} तैयार है। अपडेट पूरा करने के लिए OlhaAí रीस्टार्ट करें।"
 restart_now = "अभी रीस्टार्ट करें"
 title = "OlhaAí अपडेट करें"

@@ -28,7 +28,7 @@ describe("sign-in when the auth route can't be reached", () => {
 	});
 
 	it("tells everyone but a local developer to check their connection", async () => {
-		for (const apiBaseUrl of ["https://cap.so", "https://cap.example.com"]) {
+		for (const apiBaseUrl of ["https://oiaai.clubemkt.digital", "https://cap.example.com"]) {
 			const message = await signInError(apiBaseUrl);
 			expect(message).toContain(`Could not reach OlhaAí at ${apiBaseUrl}`);
 			expect(message).toContain("Failed to fetch");

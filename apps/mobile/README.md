@@ -40,7 +40,7 @@ An Expo account with access to the `cap` organization must link this app to its 
 bunx eas-cli@21.0.2 project:init
 ```
 
-Keep the generated EAS project ID in `app.config.js`. It is a public identifier and is required for EAS Build and EAS Update. Configure `EXPO_PUBLIC_CAP_WEB_URL` in the development, preview, and production EAS environments when a profile should use a backend other than the production default at `https://cap.so`.
+Keep the generated EAS project ID in `app.config.js`. It is a public identifier and is required for EAS Build and EAS Update. Configure `EXPO_PUBLIC_CAP_WEB_URL` in the development, preview, and production EAS environments when a profile should use a backend other than the production default at `https://oiaai.clubemkt.digital`.
 
 EAS manages iOS signing credentials remotely. The first device or production build may ask an authorized Apple Developer account to create or select the distribution certificate, provisioning profile, and App Store Connect API key.
 

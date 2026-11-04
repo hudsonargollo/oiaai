@@ -16,7 +16,7 @@ function createServerEnv() {
 			DATABASE_URL: z.string().describe("MySQL database URL"),
 			WEB_URL: z
 				.string()
-				.describe("Public URL of the server eg. https://cap.so"),
+				.describe("Public URL of the server eg. https://oiaai.clubemkt.digital"),
 			NEXTAUTH_SECRET: z.string().describe("32 byte base64 string"),
 			NEXTAUTH_URL: z.string().describe("Should be the same as WEB_URL"),
 			DATABASE_ENCRYPTION_KEY: z
@@ -195,7 +195,7 @@ function createServerEnv() {
 			SUPERMEMORY_KNOWLEDGE_TAG: z.string().optional(),
 
 			/// Cap Cloud
-			// These are only needed for Cap Cloud (https://cap.so)
+			// These are only needed for Cap Cloud (https://oiaai.clubemkt.digital)
 			STRIPE_SECRET_KEY: z.string().optional(),
 			STRIPE_PUBLISHABLE_KEY: z
 				.string()

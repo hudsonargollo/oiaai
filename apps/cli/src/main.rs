@@ -132,7 +132,7 @@ AUTH
 ENVIRONMENT
   CAP_API_KEY         Overrides auth (CLI API key from the OlhaAí dashboard, Settings -> Account);
                       optional when signed into OlhaAí Desktop.
-  CAP_SERVER_URL      OlhaAí server base URL; defaults to OlhaAí Desktop's server, else https://cap.so.
+  CAP_SERVER_URL      OlhaAí server base URL; defaults to OlhaAí Desktop's server, else https://oiaai.clubemkt.digital.
   CAP_NO_MODIFY_PATH  Set to skip editing shell profiles during `cap desktop install-cli`.
   CAP_DESKTOP_FORCE_INSTALL
                       Force the web installer scripts to replace OlhaAí Desktop before linking the CLI.

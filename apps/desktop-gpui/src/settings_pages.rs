@@ -3849,7 +3849,7 @@ fn markdown_paragraphs(content: &str) -> Vec<MarkdownParagraph> {
 // ---------------------------------------------------------------------------
 
 /// `licenseApiClient`'s fixed base (`utils/web-api.ts:54-57`).
-const LICENSE_API_BASE: &str = "https://l.cap.so/api";
+const LICENSE_API_BASE: &str = "https://l.oiaai.clubemkt.digital/api";
 
 impl SettingsWindow {
     /// `activateCommercialLicense`: key and instance id go as headers, and a
@@ -5086,7 +5086,7 @@ impl SettingsWindow {
                             .underline()
                             .cursor_pointer()
                             .child(tr::settings::integrations::s3::guide())
-                            .on_click(|_, _, cx| cx.open_url("https://cap.so/docs/s3-config")),
+                            .on_click(|_, _, cx| cx.open_url("https://oiaai.clubemkt.digital/docs/s3-config")),
                     )
                     .child(after_guide.to_string()),
             );
@@ -8596,8 +8596,8 @@ mod tests {
     #[test]
     fn markdown_reduces_to_clean_paragraphs() {
         let paragraphs = markdown_paragraphs(
-            "## What's new\n\nWe **shipped** a thing, see [the docs](https://cap.so/docs).\n\n\
-             ![screenshot](https://cap.so/img.png)\n\nAnd `another` line.",
+            "## What's new\n\nWe **shipped** a thing, see [the docs](https://oiaai.clubemkt.digital/docs).\n\n\
+             ![screenshot](https://oiaai.clubemkt.digital/img.png)\n\nAnd `another` line.",
         );
         assert_eq!(paragraphs.len(), 3);
         assert!(paragraphs[0].heading);

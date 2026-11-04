@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 			"Video Speed Controller Online – Speed Up or Slow Down Videos Free | OlhaAí",
 		description:
 			"Adjust video playback speed from 0.25× to 3× directly in your browser. Free, private, no uploads — works with MP4, WebM, MOV, AVI and MKV.",
-		url: "https://cap.so/tools/video-speed-controller",
+		url: "https://oiaai.clubemkt.digital/tools/video-speed-controller",
 		siteName: "OlhaAí",
 		images: [
 			{
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 		images: [ogImage],
 	},
 	alternates: {
-		canonical: "https://cap.so/tools/video-speed-controller",
+		canonical: "https://oiaai.clubemkt.digital/tools/video-speed-controller",
 	},
 };
 
@@ -145,11 +145,11 @@ const howToStructuredData = {
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
-	{ name: "Home", url: "https://cap.so" },
-	{ name: "Tools", url: "https://cap.so/tools" },
+	{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+	{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
 	{
 		name: "Video Speed Controller",
-		url: "https://cap.so/tools/video-speed-controller",
+		url: "https://oiaai.clubemkt.digital/tools/video-speed-controller",
 	},
 ]);
 

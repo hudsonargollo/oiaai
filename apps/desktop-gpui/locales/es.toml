@@ -602,7 +602,7 @@ pass = "CORRECTO"
 warn = "AVISO"
 
 [settings.sign_in_required]
-body = "Inicia sesión para continuar. También puedes escribir a hello@cap.so o unirte a nuestro Discord en cap.link/discord"
+body = "Inicia sesión para continuar. También puedes escribir a hello@oiaai.clubemkt.digital o unirte a nuestro Discord en cap.link/discord"
 title = "Es necesario iniciar sesión"
 
 [settings.changelog]
@@ -629,7 +629,7 @@ free_description = "Graba y edita en local para uso personal. Elige un plan de p
 have_key = "¿Tienes una clave de licencia?"
 key = "Clave de licencia"
 no_instance = "No se encontró el ID de instancia"
-opens_pricing = "Abre cap.so/pricing en tu navegador."
+opens_pricing = "Abre oiaai.clubemkt.digital/pricing en tu navegador."
 placeholder = "Clave de licencia"
 plan_title = "Tu plan"
 pro_description = "Tu cuenta incluye compartir en la nube, funciones Pro y una licencia de escritorio para uso comercial."
@@ -1174,7 +1174,7 @@ subtitle = "Personaliza todo, desde los atajos de teclado hasta el almacenamient
 title = "Haz que OlhaAí sea tuyo"
 
 [onboarding.customize.domain]
-description = "Usa tu propio dominio en los enlaces para compartir en lugar de cap.so"
+description = "Usa tu propio dominio en los enlaces para compartir en lugar de oiaai.clubemkt.digital"
 title = "Dominio personalizado"
 
 [onboarding.customize.preferences]
@@ -2942,13 +2942,13 @@ busy_title = "OlhaAí está ocupado"
 check_failed = "No se pudieron buscar actualizaciones: {error}"
 download = "Descargar"
 download_failed = "No se pudo descargar la versión {version}: {error}"
-failed = "{message}\n\nSiempre puedes descargar la última versión desde cap.so/download."
+failed = "{message}\n\nSiempre puedes descargar la última versión desde oiaai.clubemkt.digital/download."
 install_failed = "No se pudo instalar la versión {version}: {error}"
 later = "Más tarde"
 no_update = "Ya estás usando la última versión de OlhaAí."
 no_update_title = "No hay actualizaciones disponibles"
 not_now = "Ahora no"
-package_not_installed = "No se instaló el paquete. Acepta el aviso del sistema o instálalo desde cap.so/download."
+package_not_installed = "No se instaló el paquete. Acepta el aviso del sistema o instálalo desde oiaai.clubemkt.digital/download."
 ready = "OlhaAí {version} está listo. Reinicia OlhaAí para terminar de actualizar."
 restart_now = "Reiniciar ahora"
 title = "Actualizar OlhaAí"

@@ -154,7 +154,7 @@ const AgentView = ({ t }: { t: number; playing: boolean }) => {
 				</div>
 				<div className="p-4">
 					<div className="flex items-center gap-1.5 text-[12px] text-[#8A8F98]">
-						<CapLogoMark className="size-3.5" /> cap.so/s/m4k8x2qz
+						<CapLogoMark className="size-3.5" /> oiaai.clubemkt.digital/s/m4k8x2qz
 					</div>
 					<div className="mt-1 text-[15px] font-semibold">
 						{CAP_TITLE.replace("Sending an invoice", "Invoice bug repro")}

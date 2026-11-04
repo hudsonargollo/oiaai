@@ -169,7 +169,7 @@ vi.mock("react-native-svg", async () => {
 });
 
 vi.mock("@/auth/AuthContext", () => ({
-	apiBaseUrl: "https://cap.so",
+	apiBaseUrl: "https://oiaai.clubemkt.digital",
 	useAuth: () => ({
 		authConfig: authFns.authConfig,
 		requestEmailCode: authFns.requestEmailCode,
@@ -486,7 +486,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			void emailButton.props.onPress();
@@ -520,13 +520,13 @@ describe("SignInPanel", () => {
 		expect(getTextNodes(renderer.toJSON())).not.toContain("Sending...");
 
 		await act(async () => {
-			emailInput.props.onChangeText("changed@cap.so");
+			emailInput.props.onChangeText("changed@oiaai.clubemkt.digital");
 		});
 
 		const [unchangedEmailInput] = renderer.root.findAllByProps({
 			placeholder: "tim@apple.com",
 		});
-		expect(unchangedEmailInput?.props.value).toBe("richie@cap.so");
+		expect(unchangedEmailInput?.props.value).toBe("richie@oiaai.clubemkt.digital");
 
 		await act(async () => {
 			resolveRequest?.();
@@ -554,7 +554,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			void emailButton.props.onPress();
@@ -616,7 +616,7 @@ describe("SignInPanel", () => {
 		if (!emailInput) throw new Error("Email input was not rendered");
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 
 		const [emailButton] = renderer.root.findAllByProps({
@@ -951,7 +951,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -979,7 +979,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1013,7 +1013,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1022,10 +1022,10 @@ describe("SignInPanel", () => {
 		const tree = renderer.toJSON();
 		const text = getTextNodes(tree);
 
-		expect(authFns.requestEmailCode).toHaveBeenCalledWith("richie@cap.so");
+		expect(authFns.requestEmailCode).toHaveBeenCalledWith("richie@oiaai.clubemkt.digital");
 		expect(text).toContain("Back");
 		expect(text).toContain("Enter verification code");
-		expect(text).toContain("We sent a 6-digit code to richie@cap.so");
+		expect(text).toContain("We sent a 6-digit code to richie@oiaai.clubemkt.digital");
 		expect(text).toContain("Verify Code");
 		expect(text).toContain("Resend in 30s");
 		expect(text).toContain("Terms of Service");
@@ -1109,7 +1109,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1126,7 +1126,7 @@ describe("SignInPanel", () => {
 		});
 
 		expect(authFns.verifyEmailCode).toHaveBeenCalledWith(
-			"richie@cap.so",
+			"richie@oiaai.clubemkt.digital",
 			"123456",
 		);
 	});
@@ -1148,7 +1148,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1210,7 +1210,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1294,7 +1294,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("richie@cap.so");
+			emailInput.props.onChangeText("richie@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1346,7 +1346,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			emailInput.props.onChangeText("wrong@cap.so");
+			emailInput.props.onChangeText("wrong@oiaai.clubemkt.digital");
 		});
 		await act(async () => {
 			await emailButton.props.onPress();
@@ -1372,7 +1372,7 @@ describe("SignInPanel", () => {
 		}
 
 		await act(async () => {
-			correctedEmailInput.props.onChangeText("right@cap.so");
+			correctedEmailInput.props.onChangeText("right@oiaai.clubemkt.digital");
 		});
 
 		const [readyEmailButton] = renderer.root.findAllByProps({
@@ -1387,7 +1387,7 @@ describe("SignInPanel", () => {
 			await readyEmailButton?.props.onPress();
 		});
 
-		expect(authFns.requestEmailCode).toHaveBeenNthCalledWith(1, "wrong@cap.so");
-		expect(authFns.requestEmailCode).toHaveBeenNthCalledWith(2, "right@cap.so");
+		expect(authFns.requestEmailCode).toHaveBeenNthCalledWith(1, "wrong@oiaai.clubemkt.digital");
+		expect(authFns.requestEmailCode).toHaveBeenNthCalledWith(2, "right@oiaai.clubemkt.digital");
 	});
 });

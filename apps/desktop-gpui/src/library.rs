@@ -2070,7 +2070,7 @@ mod tests {
                 })
                 .collect();
             let sharing = if index % 4 == 0 {
-                r#"{"id":"share","link":"https://cap.so/s/share"}"#
+                r#"{"id":"share","link":"https://oiaai.clubemkt.digital/s/share"}"#
             } else {
                 "null"
             };
@@ -2281,7 +2281,7 @@ mod tests {
             &recordings,
             "studio-multi",
             &format!(
-                r#"{{"pretty_name":"Studio multi","sharing":{{"id":"abc","link":"https://cap.so/s/abc"}},"segments":[{segment},{segment},{segment}]}}"#
+                r#"{{"pretty_name":"Studio multi","sharing":{{"id":"abc","link":"https://oiaai.clubemkt.digital/s/abc"}},"segments":[{segment},{segment},{segment}]}}"#
             ),
         );
         next_timestamp();
@@ -2380,7 +2380,7 @@ mod tests {
             RecordingStatus::Complete,
             "a MultipleSegments meta with no status key is Complete"
         );
-        assert_eq!(multi.sharing.as_deref(), Some("https://cap.so/s/abc"));
+        assert_eq!(multi.sharing.as_deref(), Some("https://oiaai.clubemkt.digital/s/abc"));
         assert!(
             multi.opens_editor(),
             "studio + Complete is the clickable row"

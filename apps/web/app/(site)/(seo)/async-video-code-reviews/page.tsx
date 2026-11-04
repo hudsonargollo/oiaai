@@ -16,14 +16,14 @@ export const metadata: Metadata = {
 	description:
 		"Record screen walkthroughs of pull requests and share a timestamped link your team watches on their schedule. OlhaAí makes async code reviews faster and calendar-free.",
 	alternates: {
-		canonical: "https://cap.so/async-video-code-reviews",
+		canonical: "https://oiaai.clubemkt.digital/async-video-code-reviews",
 	},
 	openGraph: {
 		title:
 			"Async Video Code Reviews — Ship Faster Without the Meetings | OlhaAí",
 		description:
 			"Record screen walkthroughs of pull requests and share a timestamped link your team watches on their schedule. OlhaAí makes async code reviews faster and calendar-free.",
-		url: "https://cap.so/async-video-code-reviews",
+		url: "https://oiaai.clubemkt.digital/async-video-code-reviews",
 		siteName: "OlhaAí",
 		images: [
 			{

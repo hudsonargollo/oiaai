@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 const schemas = [
 	createBreadcrumbSchema([
-		{ name: "Home", url: "https://cap.so" },
+		{ name: "Home", url: "https://oiaai.clubemkt.digital" },
 		{ name: "Migrate from Loom", url: migrateFromLoomSeo.url },
 	]),
 	createHowToSchema({

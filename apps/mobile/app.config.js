@@ -107,7 +107,7 @@ module.exports = ({ config }) => ({
 		"expo-web-browser",
 	],
 	extra: {
-		apiBaseUrl: process.env.EXPO_PUBLIC_CAP_WEB_URL ?? "https://cap.so",
+		apiBaseUrl: process.env.EXPO_PUBLIC_CAP_WEB_URL ?? "https://oiaai.clubemkt.digital",
 		eas: projectId ? { projectId } : undefined,
 	},
 });

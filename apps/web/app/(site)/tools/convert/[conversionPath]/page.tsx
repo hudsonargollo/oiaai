@@ -58,7 +58,7 @@ export async function generateMetadata(
 			],
 		},
 		alternates: {
-			canonical: `https://cap.so/tools/convert/${conversionPath}`,
+			canonical: `https://oiaai.clubemkt.digital/tools/convert/${conversionPath}`,
 		},
 	};
 }
@@ -128,12 +128,12 @@ export default async function ConversionPage(props: ConversionPageProps) {
 	};
 
 	const breadcrumbSchema = createBreadcrumbSchema([
-		{ name: "Home", url: "https://cap.so" },
-		{ name: "Tools", url: "https://cap.so/tools" },
-		{ name: "Convert", url: "https://cap.so/tools/convert" },
+		{ name: "Home", url: "https://oiaai.clubemkt.digital" },
+		{ name: "Tools", url: "https://oiaai.clubemkt.digital/tools" },
+		{ name: "Convert", url: "https://oiaai.clubemkt.digital/tools/convert" },
 		{
 			name: config.title(sourceFormat, targetFormat),
-			url: `https://cap.so/tools/convert/${conversionPath}`,
+			url: `https://oiaai.clubemkt.digital/tools/convert/${conversionPath}`,
 		},
 	]);
 

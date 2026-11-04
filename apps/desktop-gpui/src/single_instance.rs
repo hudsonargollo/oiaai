@@ -1674,7 +1674,7 @@ mod tests {
     fn forwarded_deep_links_only_accept_cap_schemes() {
         assert!(is_forwardable_deep_link("cap-desktop://auth?token=test"));
         assert!(is_forwardable_deep_link("cap://action?value=test"));
-        assert!(!is_forwardable_deep_link("https://cap.so"));
+        assert!(!is_forwardable_deep_link("https://oiaai.clubemkt.digital"));
         assert!(!is_forwardable_deep_link("cap-desktop-evil://auth"));
         assert!(!is_forwardable_deep_link(&format!(
             "cap://action?value={}",

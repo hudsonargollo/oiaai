@@ -2,7 +2,7 @@ import type { ModeKey } from "@/components/pages/HomeTwo/theme";
 
 export const agentsSeo = {
 	path: "/agents",
-	url: "https://cap.so/agents",
+	url: "https://oiaai.clubemkt.digital/agents",
 	title: "Screen Recorder for AI Agents | OlhaAí for Agents",
 	description:
 		"OlhaAí is the open source screen recorder built for AI agents. Record, upload, transcribe, and share from Claude Code, Codex, Cursor, or OpenCode through a CLI and MCP server. No app or dashboard needed.",
@@ -25,7 +25,7 @@ export const agentsSeo = {
 	],
 } as const;
 
-export const POINTER_URL = "https://cap.so/agents";
+export const POINTER_URL = "https://oiaai.clubemkt.digital/agents";
 
 export const ANCHORS = {
 	setup: "setup",
@@ -33,7 +33,7 @@ export const ANCHORS = {
 } as const;
 
 export const POINTER_PROMPT =
-	"Read https://cap.so/agents and follow it to set up OlhaAí for me, then ask what I want to record or review.";
+	"Read https://oiaai.clubemkt.digital/agents and follow it to set up OlhaAí for me, then ask what I want to record or review.";
 
 export const HARNESS_NAMES = [
 	"Claude Code",
@@ -44,8 +44,8 @@ export const HARNESS_NAMES = [
 ] as const;
 
 export const INSTALLERS = {
-	unix: "curl -fsSL https://cap.so/install-cli.sh | sh",
-	windows: "irm https://cap.so/install-cli.ps1 | iex",
+	unix: "curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh | sh",
+	windows: "irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex",
 } as const;
 
 export type HarnessKey = "claude" | "codex" | "cursor" | "opencode" | "mcp";
@@ -397,14 +397,14 @@ export const agentFaqs = [
 	{
 		question: "How do I point my agent at this page?",
 		answer:
-			"Paste a one-line prompt such as “Read https://cap.so/agents and set up OlhaAí for me” into your agent. This page is written to be read by agents as well as people: it carries the full setup prompt, the per-agent install steps, and links to the operating instructions at cap.so/docs/agents, so an agent that fetches it has everything it needs.",
+			"Paste a one-line prompt such as “Read https://oiaai.clubemkt.digital/agents and set up OlhaAí for me” into your agent. This page is written to be read by agents as well as people: it carries the full setup prompt, the per-agent install steps, and links to the operating instructions at oiaai.clubemkt.digital/docs/agents, so an agent that fetches it has everything it needs.",
 	},
 ] as const;
 
 export const agentsSoftwareSchema = {
 	"@context": "https://schema.org",
 	"@type": "SoftwareApplication",
-	"@id": "https://cap.so/agents#software",
+	"@id": "https://oiaai.clubemkt.digital/agents#software",
 	name: "OlhaAí CLI and MCP server",
 	alternateName: "OlhaAí for Agents",
 	url: agentsSeo.url,
@@ -413,23 +413,23 @@ export const agentsSoftwareSchema = {
 	applicationCategory: "MultimediaApplication",
 	applicationSubCategory: "Screen recorder for AI agents",
 	operatingSystem: ["macOS", "Windows", "Linux"],
-	downloadUrl: "https://cap.so/download",
-	installUrl: "https://cap.so/docs/agents/setup",
+	downloadUrl: "https://oiaai.clubemkt.digital/download",
+	installUrl: "https://oiaai.clubemkt.digital/docs/agents/setup",
 	softwareHelp: {
 		"@type": "CreativeWork",
-		url: "https://cap.so/docs/agents",
+		url: "https://oiaai.clubemkt.digital/docs/agents",
 	},
 	isAccessibleForFree: true,
 	offers: {
 		"@type": "Offer",
 		price: 0,
 		priceCurrency: "USD",
-		url: "https://cap.so/download",
+		url: "https://oiaai.clubemkt.digital/download",
 	},
 	publisher: {
 		"@type": "Organization",
 		name: "OlhaAí",
-		url: "https://cap.so",
+		url: "https://oiaai.clubemkt.digital",
 	},
 	featureList: [
 		"Screen and window recording from the command line",

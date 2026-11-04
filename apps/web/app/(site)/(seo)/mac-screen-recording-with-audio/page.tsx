@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"Record your Mac screen with audio — system sound and microphone — using OlhaAí. Native internal audio capture, no BlackHole and no plugins. Free, open-source, made for macOS.",
 	alternates: {
-		canonical: "https://cap.so/mac-screen-recording-with-audio",
+		canonical: "https://oiaai.clubemkt.digital/mac-screen-recording-with-audio",
 	},
 	openGraph: {
 		title:
 			"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | OlhaAí",
 		description:
 			"Record your Mac screen with system audio and microphone using OlhaAí. Native internal audio capture — no BlackHole, no plugins. Free and open-source for macOS.",
-		url: "https://cap.so/mac-screen-recording-with-audio",
+		url: "https://oiaai.clubemkt.digital/mac-screen-recording-with-audio",
 		siteName: "OlhaAí",
 		images: [
 			{

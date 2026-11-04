@@ -206,11 +206,11 @@ pub fn init(cx: &mut App) {
     cx.on_action(|_: &Changelog, cx: &mut App| {
         app_windows::open_settings(crate::settings_window::Page::Changelog, cx)
     });
-    cx.on_action(|_: &HelpDashboard, cx: &mut App| cx.open_url("https://cap.so/dashboard"));
-    cx.on_action(|_: &HelpDocs, cx: &mut App| cx.open_url("https://cap.so/docs"));
-    cx.on_action(|_: &HelpFaq, cx: &mut App| cx.open_url("https://cap.so/faq"));
-    cx.on_action(|_: &HelpSelfHosting, cx: &mut App| cx.open_url("https://cap.so/self-hosting"));
-    cx.on_action(|_: &HelpCenter, cx: &mut App| cx.open_url("https://help.cap.so/"));
+    cx.on_action(|_: &HelpDashboard, cx: &mut App| cx.open_url("https://oiaai.clubemkt.digital/dashboard"));
+    cx.on_action(|_: &HelpDocs, cx: &mut App| cx.open_url("https://oiaai.clubemkt.digital/docs"));
+    cx.on_action(|_: &HelpFaq, cx: &mut App| cx.open_url("https://oiaai.clubemkt.digital/faq"));
+    cx.on_action(|_: &HelpSelfHosting, cx: &mut App| cx.open_url("https://oiaai.clubemkt.digital/self-hosting"));
+    cx.on_action(|_: &HelpCenter, cx: &mut App| cx.open_url("https://help.oiaai.clubemkt.digital/"));
     cx.on_action(|_: &HelpStatus, cx: &mut App| cx.open_url("https://cap.openstatus.dev/"));
     cx.on_action(|_: &HelpDiscord, cx: &mut App| cx.open_url("https://cap.link/discord"));
     cx.on_action(|_: &HelpFeedback, cx: &mut App| {

@@ -17,14 +17,14 @@ export const metadata: Metadata = {
 	description:
 		"Record your screen in HD on Mac or Windows with OlhaAí. Capture audio, webcam overlay, and share with a link instantly. Free, open-source, no watermarks, no time limits in Studio Mode.",
 	alternates: {
-		canonical: "https://cap.so/record-screen",
+		canonical: "https://oiaai.clubemkt.digital/record-screen",
 	},
 	openGraph: {
 		title:
 			"Record Screen — Free HD Screen Recorder with Instant Sharing | OlhaAí",
 		description:
 			"Record your screen in HD on Mac or Windows. Capture audio and webcam, then share with a link instantly. Free, open-source, no watermarks.",
-		url: "https://cap.so/record-screen",
+		url: "https://oiaai.clubemkt.digital/record-screen",
 		siteName: "OlhaAí",
 		images: [
 			{

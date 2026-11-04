@@ -322,7 +322,7 @@ const CustomDomainDialog = ({
 		const cleanDomain = (input: string) => {
 			if (!input) return "";
 
-			if (input === "cap.so" || input === "cap.link") {
+			if (input === "oiaai.clubemkt.digital" || input === "cap.link") {
 				return "";
 			}
 

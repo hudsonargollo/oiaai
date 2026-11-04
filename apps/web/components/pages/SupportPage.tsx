@@ -34,8 +34,8 @@ const supportChannels: SupportChannel[] = [
 		description:
 			"Have a question, billing issue, or something you'd rather keep private? Send us an email and we'll get back to you.",
 		icon: Mail,
-		href: "mailto:hello@cap.so",
-		cta: "hello@cap.so",
+		href: "mailto:hello@oiaai.clubemkt.digital",
+		cta: "hello@oiaai.clubemkt.digital",
 	},
 	{
 		title: "Read the docs",
@@ -64,7 +64,7 @@ const quickLinks = [
 		href: "https://cap.openstatus.dev/",
 		isExternal: true,
 	},
-	{ label: "Trust portal", href: "https://trust.cap.so", isExternal: true },
+	{ label: "Trust portal", href: "https://trust.oiaai.clubemkt.digital", isExternal: true },
 	{ label: "Download OlhaAí", href: "/download" },
 ];
 

@@ -2196,7 +2196,7 @@ impl OnboardingWindow {
                     .rounded(px(8.))
                     .bg(theme.body_fill(3))
                     .child(
-                        copy("cap.so/s/m4k92x", 11., theme.gray_11)
+                        copy("oiaai.clubemkt.digital/s/m4k92x", 11., theme.gray_11)
                             .flex_1()
                             .min_w_0(),
                     )

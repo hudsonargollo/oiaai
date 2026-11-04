@@ -1,6 +1,6 @@
 # Changelog content
 
-Every file in `desktop/`, `web/`, `mobile/`, or `extension/` becomes an entry on [cap.so/changelog](https://cap.so/changelog), filtered by the folder it lives in. Entries are plain markdown with a small frontmatter block, sorted by `publishedAt` (newest first).
+Every file in `desktop/`, `web/`, `mobile/`, or `extension/` becomes an entry on [oiaai.clubemkt.digital/changelog](https://oiaai.clubemkt.digital/changelog), filtered by the folder it lives in. Entries are plain markdown with a small frontmatter block, sorted by `publishedAt` (newest first).
 
 ## Adding an entry
 

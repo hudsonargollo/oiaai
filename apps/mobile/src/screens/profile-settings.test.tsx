@@ -18,7 +18,7 @@ const profile = {
 	id: "user_123",
 	name: "Richie",
 	lastName: "McIlroy",
-	email: "richie@cap.so",
+	email: "richie@oiaai.clubemkt.digital",
 	imageUrl: null as string | null,
 	activeOrganizationId: "org_123",
 };
@@ -31,7 +31,7 @@ const auth = vi.hoisted(() => ({
 				id: "user_123",
 				name: "Richie",
 				lastName: "McIlroy",
-				email: "richie@cap.so",
+				email: "richie@oiaai.clubemkt.digital",
 				imageUrl: null as string | null,
 				activeOrganizationId: "org_123",
 			},
@@ -200,7 +200,7 @@ describe("ProfileSettingsScreen", () => {
 		auth.value.client.updateProfileImage.mockReset();
 		auth.value.client.updateProfileImage.mockResolvedValue({
 			...profile,
-			imageUrl: "https://cap.so/profile.png",
+			imageUrl: "https://oiaai.clubemkt.digital/profile.png",
 		});
 		auth.value.client.removeProfileImage.mockReset();
 		auth.value.client.removeProfileImage.mockResolvedValue({ ...profile });
@@ -301,7 +301,7 @@ describe("ProfileSettingsScreen", () => {
 	it("removes the current profile image", async () => {
 		auth.value.bootstrap.user = {
 			...profile,
-			imageUrl: "https://cap.so/existing.png",
+			imageUrl: "https://oiaai.clubemkt.digital/existing.png",
 		};
 		const renderer = await renderComponent(
 			React.createElement(ProfileSettingsScreen),

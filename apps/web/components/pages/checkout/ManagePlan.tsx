@@ -124,7 +124,7 @@ export function ManagePlan({
 						<p className="mt-2.5 text-[15px] leading-[1.5] text-[rgba(17,17,17,0.66)]">
 							Your Pro access comes from an organization owner or a separate
 							billing arrangement, so there's nothing to buy here. Ask the
-							person who manages billing to add seats, or email hello@cap.so.
+							person who manages billing to add seats, or email hello@oiaai.clubemkt.digital.
 						</p>
 					</div>
 					<Link

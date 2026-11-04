@@ -378,7 +378,7 @@ export const CapCard = ({
 		!sharedCapCard &&
 		cap.isScreenshot !== true &&
 		!cap.hasActiveUpload &&
-		(cap.source?.type === "desktopMP4" || cap.source?.type === "webMP4") &&
+		(oiaai.clubemkt.digitalurce?.type === "desktopMP4" || oiaai.clubemkt.digitalurce?.type === "webMP4") &&
 		Boolean(cap.duration && cap.duration > 0);
 	const handleEditVideo = () => {
 		if (!canEditVideo) return;

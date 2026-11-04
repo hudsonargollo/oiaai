@@ -1,6 +1,6 @@
 import type { MessengerAgent } from "@cap/database/schema";
 
-export const MESSENGER_ADMIN_EMAIL = "richie@cap.so";
+export const MESSENGER_ADMIN_EMAIL = "richie@oiaai.clubemkt.digital";
 export const MESSENGER_ANON_COOKIE = "cap-messenger-anon-id";
 export const MESSENGER_DEFAULT_KNOWLEDGE_TAG = "cap-support-knowledge";
 
@@ -25,58 +25,58 @@ WHAT IS OlhaAí:
 OlhaAí is the open source alternative to Loom. It's a lightweight, powerful screen recording and video messaging tool for creators, educators, marketers, developers, and remote teams. OlhaAí is privacy-first, open source, and built in Rust with a native interface so it's fast and uses minimal resources (not Electron). OlhaAí lets you record your screen, camera, or both, then share instantly or edit locally with professional tools.
 
 IMPORTANT URLS:
-- Homepage: https://cap.so
-- Download OlhaAí: https://cap.so/download
-- Download (all versions): https://cap.so/download/versions
-- Pricing: https://cap.so/pricing
-- Features: https://cap.so/features
-- Instant Mode: https://cap.so/features/instant-mode
-- Studio Mode: https://cap.so/features/studio-mode
-- Documentation: https://cap.so/docs
-- FAQ: https://cap.so/faq
-- Blog: https://cap.so/blog
-- About: https://cap.so/about
-- Self-hosting docs: https://cap.so/self-hosting
-- Commercial license info: https://cap.so/docs/commercial-license
-- Testimonials: https://cap.so/testimonials
-- Student discount: https://cap.so/student-discount
-- Deactivate license: https://cap.so/deactivate-license
-- Terms of Service: https://cap.so/terms
-- Privacy Policy: https://cap.so/privacy
+- Homepage: https://oiaai.clubemkt.digital
+- Download OlhaAí: https://oiaai.clubemkt.digital/download
+- Download (all versions): https://oiaai.clubemkt.digital/download/versions
+- Pricing: https://oiaai.clubemkt.digital/pricing
+- Features: https://oiaai.clubemkt.digital/features
+- Instant Mode: https://oiaai.clubemkt.digital/features/instant-mode
+- Studio Mode: https://oiaai.clubemkt.digital/features/studio-mode
+- Documentation: https://oiaai.clubemkt.digital/docs
+- FAQ: https://oiaai.clubemkt.digital/faq
+- Blog: https://oiaai.clubemkt.digital/blog
+- About: https://oiaai.clubemkt.digital/about
+- Self-hosting docs: https://oiaai.clubemkt.digital/self-hosting
+- Commercial license info: https://oiaai.clubemkt.digital/docs/commercial-license
+- Testimonials: https://oiaai.clubemkt.digital/testimonials
+- Student discount: https://oiaai.clubemkt.digital/student-discount
+- Deactivate license: https://oiaai.clubemkt.digital/deactivate-license
+- Terms of Service: https://oiaai.clubemkt.digital/terms
+- Privacy Policy: https://oiaai.clubemkt.digital/privacy
 - GitHub (open source): https://github.com/CapSoftware/Cap
 - Call booking (optional): https://calendar.app.google/BrQRrAeCzVR8Fd136
-- Support email: hello@cap.so
-- Loom importer (dashboard): https://cap.so/dashboard/import/loom
-- Loom downloader tool: https://cap.so/tools/loom-downloader
-- Referral program: https://cap.so/dashboard/refer
+- Support email: hello@oiaai.clubemkt.digital
+- Loom importer (dashboard): https://oiaai.clubemkt.digital/dashboard/import/loom
+- Loom downloader tool: https://oiaai.clubemkt.digital/tools/loom-downloader
+- Referral program: https://oiaai.clubemkt.digital/dashboard/refer
 
 SEO / LANDING PAGES:
-- Screen Recorder: https://cap.so/screen-recorder
-- Free Screen Recorder: https://cap.so/free-screen-recorder
-- Screen Recorder for Mac: https://cap.so/screen-recorder-mac
-- Screen Recorder for Windows: https://cap.so/screen-recorder-windows
-- Screen Recording Software: https://cap.so/screen-recording-software
-- Loom Alternative: https://cap.so/loom-alternative
+- Screen Recorder: https://oiaai.clubemkt.digital/screen-recorder
+- Free Screen Recorder: https://oiaai.clubemkt.digital/free-screen-recorder
+- Screen Recorder for Mac: https://oiaai.clubemkt.digital/screen-recorder-mac
+- Screen Recorder for Windows: https://oiaai.clubemkt.digital/screen-recorder-windows
+- Screen Recording Software: https://oiaai.clubemkt.digital/screen-recording-software
+- Loom Alternative: https://oiaai.clubemkt.digital/loom-alternative
 
 SOLUTIONS:
-- Remote Team Collaboration: https://cap.so/solutions/remote-team-collaboration
-- Employee Onboarding: https://cap.so/solutions/employee-onboarding-platform
-- Daily Standup Software: https://cap.so/solutions/daily-standup-software
-- Online Classroom Tools: https://cap.so/solutions/online-classroom-tools
-- Agencies: https://cap.so/solutions/agencies
+- Remote Team Collaboration: https://oiaai.clubemkt.digital/solutions/remote-team-collaboration
+- Employee Onboarding: https://oiaai.clubemkt.digital/solutions/employee-onboarding-platform
+- Daily Standup Software: https://oiaai.clubemkt.digital/solutions/daily-standup-software
+- Online Classroom Tools: https://oiaai.clubemkt.digital/solutions/online-classroom-tools
+- Agencies: https://oiaai.clubemkt.digital/solutions/agencies
 
 FREE ONLINE TOOLS (no account needed, works in browser):
-- Loom Video Downloader: https://cap.so/tools/loom-downloader (download any public Loom video)
-- Video Speed Controller: https://cap.so/tools/video-speed-controller (adjust video playback speed)
-- Video Trimmer: https://cap.so/tools/trim (trim videos in browser, no upload needed)
-- Video Converter: https://cap.so/tools/convert (convert between video formats)
-  - WebM to MP4: https://cap.so/tools/convert/webm-to-mp4
-  - MOV to MP4: https://cap.so/tools/convert/mov-to-mp4
-  - AVI to MP4: https://cap.so/tools/convert/avi-to-mp4
-  - MKV to MP4: https://cap.so/tools/convert/mkv-to-mp4
-  - MP4 to GIF: https://cap.so/tools/convert/mp4-to-gif
-  - MP4 to MP3: https://cap.so/tools/convert/mp4-to-mp3
-  - MP4 to WebM: https://cap.so/tools/convert/mp4-to-webm
+- Loom Video Downloader: https://oiaai.clubemkt.digital/tools/loom-downloader (download any public Loom video)
+- Video Speed Controller: https://oiaai.clubemkt.digital/tools/video-speed-controller (adjust video playback speed)
+- Video Trimmer: https://oiaai.clubemkt.digital/tools/trim (trim videos in browser, no upload needed)
+- Video Converter: https://oiaai.clubemkt.digital/tools/convert (convert between video formats)
+  - WebM to MP4: https://oiaai.clubemkt.digital/tools/convert/webm-to-mp4
+  - MOV to MP4: https://oiaai.clubemkt.digital/tools/convert/mov-to-mp4
+  - AVI to MP4: https://oiaai.clubemkt.digital/tools/convert/avi-to-mp4
+  - MKV to MP4: https://oiaai.clubemkt.digital/tools/convert/mkv-to-mp4
+  - MP4 to GIF: https://oiaai.clubemkt.digital/tools/convert/mp4-to-gif
+  - MP4 to MP3: https://oiaai.clubemkt.digital/tools/convert/mp4-to-mp3
+  - MP4 to WebM: https://oiaai.clubemkt.digital/tools/convert/mp4-to-webm
 
 PLATFORM SUPPORT:
 - macOS: Apple Silicon (M1/M2/M3/M4) and Intel supported. Recommend macOS 13.1 or newer. Uses Metal for GPU acceleration and ScreenCaptureKit for screen recording.
@@ -96,7 +96,7 @@ PRICING (early adopter beta pricing, locked in for lifetime of subscription):
 - Signed BAA add-on: $99/month, purchased and signed directly from the dashboard alongside OlhaAí Pro.
 - SCIM provisioning can also be arranged. For help or to discuss SCIM, book an optional call at https://calendar.app.google/BrQRrAeCzVR8Fd136.
 - Early adopters keep their pricing forever, even after beta ends and regular prices change.
-- Student discount available at https://cap.so/student-discount
+- Student discount available at https://oiaai.clubemkt.digital/student-discount
 
 RECORDING MODES (DESKTOP APP):
 1. Instant Mode: records and uploads in real-time simultaneously. When you stop recording, the shareable link is ready within seconds. AI auto-generates captions, title, summary, and chapters (Pro). Perfect for quick feedback, bug reports, and async communication. Free users limited to 5 minutes; Pro users have unlimited length.
@@ -155,7 +155,7 @@ EXPORT (DESKTOP APP):
 - Live preview, time/size estimates, progress tracking, cancel
 
 WEB RECORDER (BROWSER-BASED):
-- Available at https://cap.so/dashboard when logged in
+- Available at https://oiaai.clubemkt.digital/dashboard when logged in
 - Record screen directly from your browser without installing the desktop app
 - Options: screen capture, camera, microphone, system audio
 - Uploads automatically when you stop recording
@@ -170,7 +170,7 @@ WEB DASHBOARD FEATURES:
 - Video actions: rename, delete, move to folder, share to spaces, set password, edit creation date
 
 SHARING & COLLABORATION:
-- Shareable links: every recording gets a unique link (e.g. cap.so/s/abc123 or your custom domain)
+- Shareable links: every recording gets a unique link (e.g. oiaai.clubemkt.digital/s/abc123 or your custom domain)
 - Organizations: create organizations, invite team members (Admin/Member roles), manage billing
 - Spaces: create spaces within organizations (Public/Private), share videos to specific spaces
 - Shared video page features: video player with HLS playback, captions, quality selection, tabs for Activity (comments/analytics), Transcript, Summary, and Settings
@@ -188,7 +188,7 @@ AI FEATURES (CAP PRO):
 - All AI processing happens server-side, never on the users device
 
 LOOM IMPORT (CAP PRO):
-- Import Loom videos to OlhaAí at https://cap.so/dashboard/import/loom
+- Import Loom videos to OlhaAí at https://oiaai.clubemkt.digital/dashboard/import/loom
 - Paste a Loom video URL and OlhaAí downloads and processes it
 - Imported videos appear in your dashboard like regular recordings
 - Limitations: cannot import private/password-protected Loom videos, cannot import videos with expired links, duplicate imports are prevented
@@ -206,7 +206,7 @@ GOOGLE DRIVE STORAGE:
 - New shareable link uploads are stored in a private OlhaAí folder in your Drive and served from there through OlhaAí
 - Available for individual users and entire organizations (OlhaAí Pro); organization storage applies to all members
 - OlhaAí uses Google's drive.file scope, so it can only access files it creates, not the rest of your Drive
-- Marketing page: https://cap.so/google-drive-screen-recorder
+- Marketing page: https://oiaai.clubemkt.digital/google-drive-screen-recorder
 
 AUTHENTICATION:
 - Email magic link: enter email, receive a 6-digit code, verify to sign in (passwordless)
@@ -218,14 +218,14 @@ SELF-HOSTING:
 - OlhaAí can be fully self-hosted on your own infrastructure
 - Docker Compose setup with: OlhaAí Web (Next.js), MySQL 8.0, MinIO (S3-compatible storage), Media Server (FFmpeg processing)
 - Deployment options: Docker Compose on any VPS, Railway (one-click), Coolify
-- Docs at https://cap.so/self-hosting
+- Docs at https://oiaai.clubemkt.digital/self-hosting
 - Desktop app can point to a self-hosted server via Settings > General > Self Host
 - Required: WEB_URL, DATABASE_ENCRYPTION_KEY, NEXTAUTH_SECRET, MYSQL_PASSWORD, S3 configuration
 - Optional: email sending (Resend), AI features (AssemblyAI, Groq/OpenAI), Google OAuth, SSO
 
 REFERRAL PROGRAM:
 - Earn rewards by referring others to OlhaAí
-- Access referral dashboard at https://cap.so/dashboard/refer
+- Access referral dashboard at https://oiaai.clubemkt.digital/dashboard/refer
 - Powered by Dub referral system
 
 TROUBLESHOOTING - PERMISSIONS (COMMON ISSUE):
@@ -278,25 +278,25 @@ FAQ:
 - Can I import Loom videos? Yes, OlhaAí Pro includes a built-in Loom importer.
 
 COMMON USER TASKS:
-- To download OlhaAí: go to https://cap.so/download
-- To upgrade to Pro: go to https://cap.so/pricing
-- To import Loom videos: go to https://cap.so/dashboard/import/loom (requires OlhaAí Pro)
-- To view docs: go to https://cap.so/docs
-- To self-host: go to https://cap.so/self-hosting
+- To download OlhaAí: go to https://oiaai.clubemkt.digital/download
+- To upgrade to Pro: go to https://oiaai.clubemkt.digital/pricing
+- To import Loom videos: go to https://oiaai.clubemkt.digital/dashboard/import/loom (requires OlhaAí Pro)
+- To view docs: go to https://oiaai.clubemkt.digital/docs
+- To self-host: go to https://oiaai.clubemkt.digital/self-hosting
 - To book an optional call: go to https://calendar.app.google/BrQRrAeCzVR8Fd136
-- To get student discount: go to https://cap.so/student-discount
-- To deactivate a license: go to https://cap.so/deactivate-license
+- To get student discount: go to https://oiaai.clubemkt.digital/student-discount
+- To deactivate a license: go to https://oiaai.clubemkt.digital/deactivate-license
 - To set up a custom domain: go to organization settings in the dashboard
 - To configure custom storage (S3 or Google Drive): go to Settings > Integrations in the desktop app
 - To manage team: go to organization settings and invite members
 - To create a space: go to your dashboard sidebar and create a new space
-- To refer someone: go to https://cap.so/dashboard/refer
-- To use free tools (trim, convert, etc.): go to https://cap.so/tools
+- To refer someone: go to https://oiaai.clubemkt.digital/dashboard/refer
+- To use free tools (trim, convert, etc.): go to https://oiaai.clubemkt.digital/tools
 - To record from browser: use the web recorder in your dashboard
 - To change keyboard shortcuts: go to Settings > Shortcuts in the desktop app
 - To manage recordings: go to Settings > Recordings in the desktop app
-- To set up SAML SSO: add the $199/month SSO add-on from https://cap.so/dashboard/settings/organization
-- To get a signed BAA: add and sign the $99/month BAA add-on from https://cap.so/dashboard/settings/organization
+- To set up SAML SSO: add the $199/month SSO add-on from https://oiaai.clubemkt.digital/dashboard/settings/organization
+- To get a signed BAA: add and sign the $99/month BAA add-on from https://oiaai.clubemkt.digital/dashboard/settings/organization
 - To arrange SCIM provisioning: book a call at https://calendar.app.google/BrQRrAeCzVR8Fd136
 `;
 

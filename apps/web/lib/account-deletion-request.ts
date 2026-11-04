@@ -13,8 +13,8 @@ import {
 import type { User, Video } from "@cap/web-domain";
 import { and, eq, or } from "drizzle-orm";
 
-const ACCOUNT_DELETION_EMAIL_TO = "hello@cap.so";
-const ACCOUNT_DELETION_EMAIL_FROM = "OlhaAí Support <richie@send.cap.so>";
+const ACCOUNT_DELETION_EMAIL_TO = "hello@oiaai.clubemkt.digital";
+const ACCOUNT_DELETION_EMAIL_FROM = "OlhaAí Support <richie@send.oiaai.clubemkt.digital>";
 export const ACCOUNT_DELETION_PENDING_SUBJECT =
 	"[PENDING] Account deletion request";
 export const MOBILE_CONTENT_REPORT_PENDING_SUBJECT =
@@ -203,7 +203,7 @@ export const createMobileContentReport = async ({
 		`Recording owner ID: ${content.ownerId}`,
 		`Reason: ${reason}`,
 		`Reported at: ${now.toISOString()}`,
-		`Recording URL: https://cap.so/s/${content.id}`,
+		`Recording URL: https://oiaai.clubemkt.digital/s/${content.id}`,
 		"",
 		"Review the content promptly, remove it if it violates OlhaAí policies, respond to the reporter when appropriate, and change this request subject from [PENDING] to [COMPLETED].",
 	].join("\n");

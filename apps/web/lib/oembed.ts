@@ -73,7 +73,7 @@ export const parseCapShareUrl = (value: string) => {
 	const segments = url.pathname.split("/").filter(Boolean);
 	let videoId: string | undefined;
 
-	if (hostname === "cap.so" && segments.length === 2 && segments[0] === "s") {
+	if (hostname === "oiaai.clubemkt.digital" && segments.length === 2 && segments[0] === "s") {
 		videoId = segments[1];
 	}
 	if (

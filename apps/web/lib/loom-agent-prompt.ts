@@ -1,6 +1,6 @@
 import { MAX_LOOM_CSV_IMPORT_ROWS } from "@/lib/loom-csv";
 
-const CAP_CLOUD_ORIGIN = "https://cap.so";
+const CAP_CLOUD_ORIGIN = "https://oiaai.clubemkt.digital";
 
 export function buildLoomAgentMigrationPrompt({
 	organizationId,
@@ -27,7 +27,7 @@ OlhaAí import page: ${importPage}
 Do the work yourself. Only stop when I need to sign in, export something from Loom, or approve the import plan.
 
 1. Set up the OlhaAí CLI
-- If \`cap\` is not installed, install it with \`curl -fsSL https://cap.so/install-cli.sh | sh\` on macOS or Linux, or \`irm https://cap.so/install-cli.ps1 | iex\` in Windows PowerShell, then open a new shell.${
+- If \`cap\` is not installed, install it with \`curl -fsSL https://oiaai.clubemkt.digital/install-cli.sh | sh\` on macOS or Linux, or \`irm https://oiaai.clubemkt.digital/install-cli.ps1 | iex\` in Windows PowerShell, then open a new shell.${
 		isCapCloud
 			? ""
 			: `\n- This OlhaAí server is self-hosted. Set \`CAP_SERVER_URL=${serverOrigin}\` for every \`cap\` command.`

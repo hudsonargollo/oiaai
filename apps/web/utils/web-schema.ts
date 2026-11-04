@@ -1,12 +1,12 @@
 export const createOrganizationSchema = () => ({
 	"@context": "https://schema.org",
 	"@type": "Organization",
-	"@id": "https://cap.so/#organization",
+	"@id": "https://oiaai.clubemkt.digital/#organization",
 	name: "OlhaAí",
-	url: "https://cap.so",
+	url: "https://oiaai.clubemkt.digital",
 	logo: {
 		"@type": "ImageObject",
-		url: "https://cap.so/cap-logo.png",
+		url: "https://oiaai.clubemkt.digital/cap-logo.png",
 		width: 1440,
 		height: 480,
 	},
@@ -20,7 +20,7 @@ export const createOrganizationSchema = () => ({
 	],
 	contactPoint: {
 		"@type": "ContactPoint",
-		email: "hello@cap.so",
+		email: "hello@oiaai.clubemkt.digital",
 		contactType: "customer service",
 	},
 });
@@ -28,13 +28,13 @@ export const createOrganizationSchema = () => ({
 export const createWebSiteSchema = () => ({
 	"@context": "https://schema.org",
 	"@type": "WebSite",
-	"@id": "https://cap.so/#website",
-	url: "https://cap.so",
+	"@id": "https://oiaai.clubemkt.digital/#website",
+	url: "https://oiaai.clubemkt.digital",
 	name: "OlhaAí",
 	description:
 		"Beautiful screen recordings, owned by you. The open source alternative to Loom.",
 	publisher: {
-		"@id": "https://cap.so/#organization",
+		"@id": "https://oiaai.clubemkt.digital/#organization",
 	},
 });
 
@@ -77,18 +77,18 @@ export const createSoftwareApplicationSchema = (
 	return {
 		"@context": "https://schema.org",
 		"@type": "SoftwareApplication",
-		"@id": "https://cap.so/#software",
+		"@id": "https://oiaai.clubemkt.digital/#software",
 		name: "OlhaAí",
 		applicationCategory: "MultimediaApplication",
 		operatingSystem: ["macOS", "Windows"],
 		description:
 			"OlhaAí is a powerful, open-source screen recording software that offers instant sharing, studio mode, and privacy-focused features.",
-		url: "https://cap.so",
-		downloadUrl: "https://cap.so/download",
+		url: "https://oiaai.clubemkt.digital",
+		downloadUrl: "https://oiaai.clubemkt.digital/download",
 		screenshot: [
 			{
 				"@type": "ImageObject",
-				url: "https://cap.so/og.png",
+				url: "https://oiaai.clubemkt.digital/og.png",
 				caption: "OlhaAí screen recorder interface",
 			},
 		],
@@ -134,7 +134,7 @@ export const createSoftwareApplicationSchema = (
 		},
 		review: reviews,
 		creator: {
-			"@id": "https://cap.so/#organization",
+			"@id": "https://oiaai.clubemkt.digital/#organization",
 		},
 	};
 };
@@ -169,7 +169,7 @@ export const createVideoObjectSchema = (video: {
 	duration: video.duration || "PT2M",
 	embedUrl: video.embedUrl,
 	publisher: {
-		"@id": "https://cap.so/#organization",
+		"@id": "https://oiaai.clubemkt.digital/#organization",
 	},
 });
 
@@ -276,9 +276,9 @@ export const createLocalBusinessSchema = () => ({
 	"@context": "https://schema.org",
 	"@type": "LocalBusiness",
 	name: "OlhaAí",
-	image: "https://cap.so/og.png",
-	"@id": "https://cap.so",
-	url: "https://cap.so",
+	image: "https://oiaai.clubemkt.digital/og.png",
+	"@id": "https://oiaai.clubemkt.digital",
+	url: "https://oiaai.clubemkt.digital",
 	priceRange: `$0-$${PRICING.pro.annualPerMonth}`,
 	address: {
 		"@type": "PostalAddress",

@@ -5,7 +5,7 @@ import type { Video } from "@cap/web-domain";
 import { eq, sql } from "drizzle-orm";
 import { videoBelongsToOrganization } from "@/lib/cap-analytics-access";
 
-const DEFAULT_HOSTNAMES = ["cap.so", "cap.link", "localhost", "127.0.0.1"];
+const DEFAULT_HOSTNAMES = ["oiaai.clubemkt.digital", "cap.link", "localhost", "127.0.0.1"];
 
 const normalizeHostname = (value: string | null | undefined) => {
 	const first = value?.split(",")[0]?.trim().toLowerCase();

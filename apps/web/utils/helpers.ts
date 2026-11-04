@@ -27,9 +27,9 @@ function isTrustedCredentialedOrigin(origin: string) {
 		return false;
 	}
 
-	if (host === "localhost" || host === "cap.so" || host === "cap.link")
+	if (host === "localhost" || host === "oiaai.clubemkt.digital" || host === "cap.link")
 		return true;
-	if (host.endsWith(".cap.so")) return true;
+	if (host.endsWith(".oiaai.clubemkt.digital")) return true;
 
 	try {
 		if (host === new URL(serverEnv().WEB_URL).hostname) return true;

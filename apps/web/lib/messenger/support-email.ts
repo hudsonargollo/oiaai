@@ -8,8 +8,8 @@ import { messengerSupportEmails, users } from "@cap/database/schema";
 import type { User } from "@cap/web-domain";
 import { and, count, eq, gte } from "drizzle-orm";
 
-const SUPPORT_EMAIL_TO = "hello@cap.so";
-const SUPPORT_EMAIL_FROM = "OlhaAí Support <richie@send.cap.so>";
+const SUPPORT_EMAIL_TO = "hello@oiaai.clubemkt.digital";
+const SUPPORT_EMAIL_FROM = "OlhaAí Support <richie@send.oiaai.clubemkt.digital>";
 export const MESSENGER_SUPPORT_EMAIL_DAILY_LIMIT = 2;
 
 type MessengerSupportUser = {

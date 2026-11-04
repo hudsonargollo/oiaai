@@ -1,4 +1,4 @@
-export const API_DOCS_URL = "https://cap.so/docs/api/rest-api";
+export const API_DOCS_URL = "https://oiaai.clubemkt.digital/docs/api/rest-api";
 export const OPENAPI_SPEC_PATH = "/openapi.json";
 
 export type ApiErrorBody = {
@@ -32,7 +32,7 @@ export const apiInternalErrorBody = () =>
 	apiErrorBody(
 		"internal_error",
 		"Internal server error",
-		"Retry with backoff. If the error persists, contact hello@cap.so.",
+		"Retry with backoff. If the error persists, contact hello@oiaai.clubemkt.digital.",
 	);
 
 export const withJsonNotFound =

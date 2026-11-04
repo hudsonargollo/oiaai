@@ -32,7 +32,7 @@ export const shareUrlWithTimestamp = (url: string, seconds: number): string => {
 
 /**
  * The URL handed to third parties. `cap.link` short links are rewritten to
- * their `cap.so` canonical form: the crawlers behind these previews follow
+ * their `oiaai.clubemkt.digital` canonical form: the crawlers behind these previews follow
  * redirects inconsistently, and an unfurl that resolves to nothing is worse
  * than a longer URL.
  */

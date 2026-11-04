@@ -7,8 +7,8 @@ export const allowedOrigins = [
 	"tauri://localhost",
 	"http://tauri.localhost",
 	"https://tauri.localhost",
-	"https://cap.so",
-	"https://www.cap.so",
+	"https://oiaai.clubemkt.digital",
+	"https://www.oiaai.clubemkt.digital",
 	"https://cap.link",
 	"https://www.cap.link",
 ];

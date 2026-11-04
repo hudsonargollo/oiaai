@@ -18,7 +18,7 @@ export function generateM3U8Playlist(
 		const { url, duration } = segment;
 		m3u8Content += `#EXTINF:${duration},\n${url.replace(
 			"https://capso.s3.us-east-1.amazonaws.com",
-			"https://v.cap.so",
+			"https://v.oiaai.clubemkt.digital",
 		)}\n`;
 	});
 

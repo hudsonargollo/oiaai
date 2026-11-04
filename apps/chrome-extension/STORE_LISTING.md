@@ -4,9 +4,9 @@ Everything below is ready to paste into the Chrome Web Store Developer Dashboard
 
 ## Store Fields
 
-Name: Oiaai - Screen Recorder & Screen Capture
+Name: OlhaAí - Screen Recorder & Screen Capture
 
-Short name: Oiaai
+Short name: OlhaAí
 
 Summary (132 char max, mirrors manifest description): Free, open source screen recorder. Capture your screen, tab, camera & mic in Chrome and share a video link the moment you stop.
 
@@ -22,18 +22,18 @@ Privacy policy: https://cap.so/privacy
 
 ## Detailed Description (paste as plain text)
 
-Oiaai is the open source screen recorder for Chrome. Record your screen, a window, the current browser tab, or camera-only video. Your recording uploads while you record, so a shareable link is ready the moment you stop. No exports, no waiting, no switching tools.
+OlhaAí is the open source screen recorder for Chrome. Record your screen, a window, the current browser tab, or camera-only video. Your recording uploads while you record, so a shareable link is ready the moment you stop. No exports, no waiting, no switching tools.
 
 WHY PEOPLE SWITCH TO CAP
 
-Oiaai is a Loom alternative built on a simple idea: your recordings belong to you. Oiaai is fully open source, lets you connect your own storage, and gives you a fast, lightweight recorder that stays out of your way.
+OlhaAí is a Loom alternative built on a simple idea: your recordings belong to you. OlhaAí is fully open source, lets you connect your own storage, and gives you a fast, lightweight recorder that stays out of your way.
 
 • Truly open source: inspect every line of code, contribute, or self-host the entire stack.
-• Own your recordings: use Oiaai Cloud or connect your own S3 bucket. No vendor lock-in, ever.
+• Own your recordings: use OlhaAí Cloud or connect your own S3 bucket. No vendor lock-in, ever.
 • Instant share links: video uploads as you record, so the link is live the second you stop.
-• Oiaai AI: auto-generated titles, summaries, clickable chapters, and searchable transcripts for every recording.
+• OlhaAí AI: auto-generated titles, summaries, clickable chapters, and searchable transcripts for every recording.
 • Built for teams: comments, reactions, viewer analytics, password-protected shares, custom domains, and team workspaces.
-• Switching from Loom? Import your existing Loom videos directly into Oiaai with the built-in importer.
+• Switching from Loom? Import your existing Loom videos directly into OlhaAí with the built-in importer.
 
 WHAT YOU CAN RECORD
 
@@ -48,17 +48,17 @@ Screen recording for async standups, code reviews, bug reports, product demos, c
 
 HOW IT WORKS
 
-1. Click the Oiaai icon and pick tab, screen, window, or camera.
+1. Click the OlhaAí icon and pick tab, screen, window, or camera.
 2. Choose your microphone and camera, then hit record.
-3. Stop recording. Your video is already uploaded to your Oiaai workspace and the share link is ready.
+3. Stop recording. Your video is already uploaded to your OlhaAí workspace and the share link is ready.
 
 CAP EVERYWHERE
 
-The extension is part of the Oiaai platform: native desktop apps for macOS and Windows, a web recorder, and a shared library at cap.so. Recordings stay connected to your Oiaai account wherever you capture them.
+The extension is part of the OlhaAí platform: native desktop apps for macOS and Windows, a web recorder, and a shared library at cap.so. Recordings stay connected to your OlhaAí account wherever you capture them.
 
-Oiaai is free to get started. Upgrade to Oiaai Pro for unlimited recording length, Oiaai AI, custom domains, custom S3 storage, and team features.
+OlhaAí is free to get started. Upgrade to OlhaAí Pro for unlimited recording length, OlhaAí AI, custom domains, custom S3 storage, and team features.
 
-Open source on GitHub: https://github.com/CapSoftware/Oiaai
+Open source on GitHub: https://github.com/CapSoftware/OlhaAí
 
 ## SEO Positioning
 
@@ -72,7 +72,7 @@ Primary keywords (use naturally in the description, never stuffed):
 - video messaging / async video
 - Loom alternative (used exactly once in the detailed description; never in the name, summary, or screenshot text)
 
-Name strategy: "Oiaai - Screen Recorder & Screen Capture" leads with the brand and covers the two highest-volume queries, matching how the top competitor titles its listing without keyword spam.
+Name strategy: "OlhaAí - Screen Recorder & Screen Capture" leads with the brand and covers the two highest-volume queries, matching how the top competitor titles its listing without keyword spam.
 
 Summary strategy: front-loads "free, open source screen recorder" (differentiator + keyword), lists capture surfaces, and ends on the instant-share-link benefit.
 
@@ -113,7 +113,7 @@ cat > /tmp/cap-fonts.conf <<'EOF'
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-  <dir>/path/to/Oiaai/apps/chrome-extension/public/fonts</dir>
+  <dir>/path/to/OlhaAí/apps/chrome-extension/public/fonts</dir>
   <dir>/System/Library/Fonts</dir>
   <cachedir>/tmp/cap-fc-cache</cachedir>
 </fontconfig>
@@ -131,7 +131,7 @@ Use 1280x800 PNG screenshots, full bleed, square corners, no padding. Capture ag
 2. Recording setup showing microphone and camera selectors plus the system audio toggle.
 3. Recording in progress with the floating recording bar and webcam overlay on a real page.
 4. Upload/completion state with the share-link handoff.
-5. The Oiaai share page (player, transcript/chapters) after a recording is available.
+5. The OlhaAí share page (player, transcript/chapters) after a recording is available.
 
 ## Review Notes: Permission Justifications
 
@@ -139,7 +139,7 @@ Use 1280x800 PNG screenshots, full bleed, square corners, no padding. Capture ag
 - tabCapture: record the current browser tab when the user selects tab recording.
 - offscreen: run capture, encoding, and upload outside the recorder panel so recordings survive closing it.
 - storage: remember account session, selected devices, and recording preferences.
-- identity: sign the user in to their Oiaai account.
+- identity: sign the user in to their OlhaAí account.
 - host permissions: inject the recording overlay and camera preview on pages the user chooses to record.
 
 Submission checklist: icon present (128px padded), summary under 132 chars, at least one 1280x800 screenshot, small promo tile uploaded, privacy policy URL set, permission justifications filled in.

@@ -229,7 +229,7 @@ export function SsoCard({
 					<CardHeader>
 						<CardTitle>SAML SSO</CardTitle>
 						<CardDescription className="max-w-xl">
-							Let your team sign in to Oiaai with your organization's identity
+							Let your team sign in to OlhaAí with your organization's identity
 							provider, including Okta, Microsoft Entra ID, and Google
 							Workspace.
 						</CardDescription>
@@ -250,7 +250,7 @@ export function SsoCard({
 					<span className="font-medium text-gray-12">
 						{settings.organizationName}
 					</span>{" "}
-					as members. Oiaai Pro seats are billed separately from this add-on.
+					as members. OlhaAí Pro seats are billed separately from this add-on.
 				</p>
 
 				{!settings.ssoAvailable && (

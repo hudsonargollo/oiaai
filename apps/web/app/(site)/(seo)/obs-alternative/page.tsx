@@ -12,25 +12,26 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
+	title:
+		"OBS Alternative — Easier Screen Recording with Instant Sharing | OlhaAí",
 	description:
-		"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+		"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 	alternates: {
 		canonical: "https://cap.so/obs-alternative",
 	},
 	openGraph: {
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
+			"OBS Alternative — Easier Screen Recording with Instant Sharing | OlhaAí",
 		description:
-			"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+			"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		url: "https://cap.so/obs-alternative",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: OBS Alternative for Async Screen Recording",
+				alt: "OlhaAí: OBS Alternative for Async Screen Recording",
 			},
 		],
 		locale: "en_US",
@@ -39,9 +40,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
+			"OBS Alternative — Easier Screen Recording with Instant Sharing | OlhaAí",
 		description:
-			"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+			"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		images: [ogImage],
 	},
 };

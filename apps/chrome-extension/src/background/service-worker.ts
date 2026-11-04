@@ -215,7 +215,7 @@ const createOffscreenDocument = () =>
 			{
 				url: OFFSCREEN_URL,
 				reasons: ["USER_MEDIA", "DISPLAY_MEDIA", "BLOBS", "AUDIO_PLAYBACK"],
-				justification: "Record and upload Oiaai videos from an extension page.",
+				justification: "Record and upload OlhaAí videos from an extension page.",
 			},
 			() => {
 				const error = chrome.runtime.lastError;
@@ -563,7 +563,7 @@ const updateActionForStatus = (nextStatus: RecordingStatus) => {
 		setActionPopup(""),
 		setActionBadgeText(isCapturing ? "REC" : ""),
 		setActionTitle(
-			isCapturing ? "Stop Oiaai recording" : "Record your screen with Oiaai",
+			isCapturing ? "Stop OlhaAí recording" : "Record your screen with OlhaAí",
 		),
 	]).then(() => undefined);
 };
@@ -1238,7 +1238,7 @@ const loadSignedInState = async () => {
 const requireSignedInState = async () => {
 	const state = await loadSignedInState();
 	if (!state.auth || !state.bootstrap) {
-		throw new Error("Sign in to Oiaai first");
+		throw new Error("Sign in to OlhaAí first");
 	}
 	return state as {
 		settings: ExtensionSettings;
@@ -1822,7 +1822,7 @@ const handleRequest = async (
 				const status = error instanceof ApiRequestError ? error.status : null;
 				if (status === null || status >= 500) {
 					throw new Error(
-						"Could not reach Oiaai to revoke this sign-in. Check your connection and try again.",
+						"Could not reach OlhaAí to revoke this sign-in. Check your connection and try again.",
 					);
 				}
 			}

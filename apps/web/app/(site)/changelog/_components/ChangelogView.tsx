@@ -362,7 +362,7 @@ export function ChangelogView({
 						Changelog
 					</h1>
 					<p className="mt-3 max-w-md text-[15px] leading-relaxed text-gray-10">
-						New features, improvements, and fixes across the Oiaai desktop app,
+						New features, improvements, and fixes across the OlhaAí desktop app,
 						web, mobile, and browser extension.
 					</p>
 					<FilterTabs active={platform} />

@@ -30,8 +30,8 @@ export function PaymentFailed({
 			<Head />
 			<Preview>
 				{finalAttempt
-					? "Your Oiaai Pro subscription will be canceled unless we can collect payment"
-					: "We could not collect your Oiaai Pro payment. Your access is unaffected while we retry."}
+					? "Your OlhaAí Pro subscription will be canceled unless we can collect payment"
+					: "We could not collect your OlhaAí Pro payment. Your access is unaffected while we retry."}
 			</Preview>
 			<Tailwind>
 				<Body className="mx-auto my-auto bg-gray-1 font-sans">
@@ -41,25 +41,25 @@ export function PaymentFailed({
 								src={CAP_LOGO_URL}
 								width="40"
 								height="40"
-								alt="Oiaai"
+								alt="OlhaAí"
 								className="mx-auto my-0"
 							/>
 						</Section>
 						<Heading className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
 							{finalAttempt
-								? "Last chance to keep Oiaai Pro"
+								? "Last chance to keep OlhaAí Pro"
 								: "Your payment didn't go through"}
 						</Heading>
 						<Text className="text-sm leading-6 text-black">
-							We tried to charge your card for Oiaai Pro but the payment failed.
-							This is usually an expired card or a one-off bank decline.
+							We tried to charge your card for OlhaAí Pro but the payment
+							failed. This is usually an expired card or a one-off bank decline.
 						</Text>
 						{finalAttempt ? (
 							<Text className="text-sm leading-6 text-black">
 								This was our last automatic retry. If the payment can't be
 								collected, your subscription will be canceled and you'll lose
-								Pro features like unlimited recording length, Oiaai AI, and custom
-								domains.
+								Pro features like unlimited recording length, OlhaAí AI, and
+								custom domains.
 							</Text>
 						) : (
 							<Text className="text-sm leading-6 text-black">

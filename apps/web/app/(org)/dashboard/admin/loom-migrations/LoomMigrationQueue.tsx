@@ -274,9 +274,9 @@ function QueueItem({ request }: { request: OperatorLoomMigrationView }) {
 			<div className="mt-5 border-t border-gray-4 pt-5">
 				<h3 className="font-medium text-gray-12">Import a mapped Loom CSV</h3>
 				<p className="mt-1 text-xs text-gray-10">
-					Use loom_video_url,user_email,space_name. The destination is this Oiaai
-					organization; imports run in batches of 10. Started jobs still need
-					terminal processing checks.
+					Use loom_video_url,user_email,space_name. The destination is this
+					OlhaAí organization; imports run in batches of 10. Started jobs still
+					need terminal processing checks.
 				</p>
 				<label
 					className="mt-3 block text-sm text-gray-11"
@@ -361,7 +361,7 @@ function QueueItem({ request }: { request: OperatorLoomMigrationView }) {
 				<p className="text-xs text-gray-10">
 					Use this when the CSV import cannot download a video. Download an MP4
 					from Loom with an account that has permission, then map it to its Loom
-					link and Oiaai owner. Restricted Library videos may need explicit
+					link and OlhaAí owner. Restricted Library videos may need explicit
 					access.
 				</p>
 				<div className="grid gap-3 sm:grid-cols-2">
@@ -386,7 +386,7 @@ function QueueItem({ request }: { request: OperatorLoomMigrationView }) {
 						className="text-sm text-gray-11"
 						htmlFor={`loom-file-owner-${request.id}`}
 					>
-						Oiaai owner email
+						OlhaAí owner email
 						<input
 							className="mt-1 w-full rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-gray-12"
 							id={`loom-file-owner-${request.id}`}
@@ -402,7 +402,7 @@ function QueueItem({ request }: { request: OperatorLoomMigrationView }) {
 						className="text-sm text-gray-11"
 						htmlFor={`loom-file-space-${request.id}`}
 					>
-						Oiaai space (optional)
+						OlhaAí space (optional)
 						<input
 							className="mt-1 w-full rounded-lg border border-gray-6 bg-gray-1 px-3 py-2 text-gray-12"
 							id={`loom-file-space-${request.id}`}
@@ -477,7 +477,7 @@ function QueueItem({ request }: { request: OperatorLoomMigrationView }) {
 				</Button>
 				<p className="text-xs text-gray-10">
 					Process an existing recording after its MP4 has finished uploading to
-					Oiaai storage. Review its Loom URL and owner first.
+					OlhaAí storage. Review its Loom URL and owner first.
 				</p>
 			</form>
 
@@ -643,8 +643,8 @@ export function LoomMigrationQueue() {
 					Loom migration queue
 				</h1>
 				<p className="mt-2 text-sm text-gray-10">
-					Process Oiaai Pro concierge requests, reconcile every import, and update
-					customers here.
+					Process OlhaAí Pro concierge requests, reconcile every import, and
+					update customers here.
 				</p>
 			</div>
 			{queueQuery.isPending && (

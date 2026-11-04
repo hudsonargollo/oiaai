@@ -76,9 +76,9 @@ const options: Array<{
 		pro: true,
 	},
 	{
-		label: "Show Oiaai logo",
+		label: "Show OlhaAí logo",
 		value: "hideShareableLinkCapLogo",
-		description: "Show Oiaai branding at the top of shareable links",
+		description: "Show OlhaAí branding at the top of shareable links",
 		pro: true,
 	},
 ];
@@ -181,8 +181,8 @@ const CapSettingsCard = () => {
 						if (changedKey === "hideShareableLinkCapLogo") {
 							toast.success(
 								debouncedUpdateSettings[changedKey]
-									? "Oiaai logo hidden"
-									: "Oiaai logo shown",
+									? "OlhaAí logo hidden"
+									: "OlhaAí logo shown",
 							);
 						} else {
 							const isDisabled = Boolean(debouncedUpdateSettings[changedKey]);
@@ -250,7 +250,7 @@ const CapSettingsCard = () => {
 	return (
 		<Card className="flex relative flex-col flex-1 gap-6 w-full min-h-fit">
 			<CardHeader>
-				<CardTitle>Oiaai Settings</CardTitle>
+				<CardTitle>OlhaAí Settings</CardTitle>
 				<CardDescription>
 					Enable or disable specific settings for your organization. These
 					settings will be applied as defaults for new recordings.
@@ -299,8 +299,8 @@ const CapSettingsCard = () => {
 						<p className="text-sm text-gray-12">Default playback speed</p>
 					</div>
 					<p className="text-xs text-gray-10">
-						The speed recordings start playing at on shareable links. Viewers can
-						still change it.
+						The speed recordings start playing at on shareable links. Viewers
+						can still change it.
 					</p>
 				</div>
 				<div className="flex flex-wrap gap-1 items-center p-1 rounded-lg border bg-gray-1 border-gray-3">

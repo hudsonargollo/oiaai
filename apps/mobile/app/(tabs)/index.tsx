@@ -97,11 +97,11 @@ const uploadsMatch = (
 const getCapsErrorMessage = (error: unknown) => {
 	if (error instanceof MobileApiError) {
 		if (error.status === 401) return "Your session expired. Sign in again.";
-		return "Oiaai could not load your library. Try again.";
+		return "OlhaAí could not load your library. Try again.";
 	}
 	return error instanceof Error
 		? error.message
-		: "Oiaai could not load your library. Try again.";
+		: "OlhaAí could not load your library. Try again.";
 };
 
 const showPhotosSettingsAlert = () => {
@@ -109,7 +109,7 @@ const showPhotosSettingsAlert = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Oiaai to save videos to Photos from Settings.",
+				message: "Allow OlhaAí to save videos to Photos from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -124,7 +124,7 @@ const showPhotosSettingsAlert = () => {
 
 	Alert.alert(
 		"Photos access needed",
-		"Allow Oiaai to save videos to Photos from Settings.",
+		"Allow OlhaAí to save videos to Photos from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{
@@ -550,8 +550,8 @@ export default function CapsScreen() {
 						cancelButtonIndex: 1,
 						destructiveButtonIndex: 0,
 						message: `${cap.title} will be removed from your library.`,
-						options: ["Delete Oiaai", "Cancel"],
-						title: "Delete Oiaai",
+						options: ["Delete OlhaAí", "Cancel"],
+						title: "Delete OlhaAí",
 						tintColor: colors.blue11,
 						userInterfaceStyle: "light",
 					},
@@ -563,7 +563,7 @@ export default function CapsScreen() {
 			}
 
 			Alert.alert(
-				"Delete Oiaai",
+				"Delete OlhaAí",
 				`${cap.title} will be removed from your library.`,
 				[
 					{ text: "Cancel", style: "cancel" },
@@ -885,11 +885,11 @@ export default function CapsScreen() {
 	const saveDisabledHint =
 		savingId !== null
 			? "Save is in progress"
-			: "Current Oiaai action is in progress";
+			: "Current OlhaAí action is in progress";
 	const visibilityDisabledHint =
 		updatingSharingId !== null
 			? "Sharing update is in progress"
-			: "Current Oiaai action is in progress";
+			: "Current OlhaAí action is in progress";
 	const saveDisabledAccessibilityValue = savingCap
 		? `Saving video for ${savingCap.title}`
 		: undefined;
@@ -1069,7 +1069,7 @@ export default function CapsScreen() {
 								</View>
 								<ActionButton
 									label="Try again"
-									accessibilityHint="Reloads your Oiaai library"
+									accessibilityHint="Reloads your OlhaAí library"
 									onPress={() => {
 										void load();
 									}}
@@ -1132,7 +1132,7 @@ export default function CapsScreen() {
 								</Text>
 								<Text style={styles.emptyText}>
 									{isEmptyMyCaps
-										? "Bring videos into Oiaai and share them instantly."
+										? "Bring videos into OlhaAí and share them instantly."
 										: "recordings added to this space will appear here."}
 								</Text>
 								{isEmptyMyCaps ? (

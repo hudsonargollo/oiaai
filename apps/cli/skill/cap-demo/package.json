@@ -2,7 +2,7 @@
 	"name": "cap-demo",
 	"version": "1.0.0",
 	"type": "module",
-	"description": "Generate a cinematic 3D product-demo video from any URL with Oiaai.",
+	"description": "Generate a cinematic 3D product-demo video from any URL with OlhaAí.",
 	"bin": {
 		"cap-demo": "./cap-demo.mjs"
 	},

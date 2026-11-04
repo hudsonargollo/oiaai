@@ -75,7 +75,7 @@ export default function Devtools() {
 			plugins={[
 				{
 					id: "cap",
-					name: "Oiaai",
+					name: "OlhaAí",
 					render: <CapDevtools />,
 				},
 				{
@@ -91,9 +91,9 @@ export default function Devtools() {
 function CapDevtools() {
 	return (
 		<div className="flex flex-col p-4 space-y-4">
-			<h1 className="text-2xl font-semibold">Oiaai Devtools</h1>
+			<h1 className="text-2xl font-semibold">OlhaAí Devtools</h1>
 			<div className="space-y-2">
-				<h1 className="text-lg font-semibold">Oiaai Pro</h1>
+				<h1 className="text-lg font-semibold">OlhaAí Pro</h1>
 				<p className="text-xs text-muted-foreground">
 					Toggle the current user's Pro status (dev only)
 				</p>

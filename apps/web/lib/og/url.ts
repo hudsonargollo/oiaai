@@ -70,7 +70,7 @@ export const buildMarketingMetadata = ({
 			description,
 			type: "website",
 			...(path && { url: path }),
-			siteName: "Oiaai",
+			siteName: "OlhaAí",
 			images: [image],
 		},
 		twitter: {

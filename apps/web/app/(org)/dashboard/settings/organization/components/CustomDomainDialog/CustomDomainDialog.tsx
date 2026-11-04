@@ -471,7 +471,7 @@ const CustomDomainDialog = ({
 											handleClose();
 										}}
 									>
-										Upgrade to Oiaai Pro
+										Upgrade to OlhaAí Pro
 									</Button>
 								))}
 						</DialogFooter>

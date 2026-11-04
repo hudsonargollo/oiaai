@@ -446,7 +446,7 @@ describe("RecordScreen", () => {
 		expect(renderer.root.findAllByType(CapRecorderView)).toHaveLength(0);
 		expect(uploadState.beginRecording).toHaveBeenCalledWith({
 			fileName: expect.stringMatching(
-				/^Oiaai Recording - \d{1,2} [A-Z][a-z]{2} \d{4} at \d{2}\.\d{2}\.mp4$/,
+				/^OlhaAí Recording - \d{1,2} [A-Z][a-z]{2} \d{4} at \d{2}\.\d{2}\.mp4$/,
 			),
 			width: 720,
 			height: 1280,
@@ -615,7 +615,7 @@ describe("RecordScreen", () => {
 		});
 		expect(uploadState.beginRecording).toHaveBeenCalledWith({
 			fileName: expect.stringMatching(
-				/^Oiaai Recording - \d{1,2} [A-Z][a-z]{2} \d{4} at \d{2}\.\d{2}\.mp4$/,
+				/^OlhaAí Recording - \d{1,2} [A-Z][a-z]{2} \d{4} at \d{2}\.\d{2}\.mp4$/,
 			),
 			width: 720,
 			height: 1280,

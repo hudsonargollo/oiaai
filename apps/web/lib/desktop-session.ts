@@ -64,7 +64,7 @@ export function createDesktopRedirectPage(
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
-		<title>Opening Oiaai</title>
+		<title>Opening OlhaAí</title>
 		<style>
 			@font-face {
 				font-family: "Neue Montreal";
@@ -360,7 +360,7 @@ export function createDesktopRedirectPage(
 	</head>
 	<body>
 		<header>
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 118 40" height="28" role="img" aria-label="Oiaai">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 118 40" height="28" role="img" aria-label="OlhaAí">
 				<path fill="#4785FF" d="M20 36c8.837 0 16-7.163 16-16S28.837 4 20 4 4 11.164 4 20s7.164 16 16 16" />
 				<path fill="#ADC9FF" d="M20 33c7.18 0 13-5.82 13-13S27.18 7 20 7 7 12.82 7 20s5.82 13 13 13" />
 				<path fill="#fff" d="M20 30c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10" />
@@ -391,18 +391,18 @@ export function createDesktopRedirectPage(
 					</g>
 				</g>
 			</svg>
-			<h1>Opening Oiaai</h1>
-			<p class="lede">You're signed in. Oiaai should open in a moment and pick up right where you left off.</p>
+			<h1>Opening OlhaAí</h1>
+			<p class="lede">You're signed in. OlhaAí should open in a moment and pick up right where you left off.</p>
 			<div class="actions">
-				<button id="open-cap" class="cta" type="button">Open Oiaai</button>
+				<button id="open-cap" class="cta" type="button">Open OlhaAí</button>
 				<a id="browser-fallback" class="cta ghost" href="${fallbackHref}">Finish in browser</a>
 			</div>
 			<p class="status">
 				<svg viewBox="0 0 44 12" aria-hidden="true"><path class="soft" d="M 2 6 q 3 -4 6 0 t 6 0 t 6 0 t 6 0 t 6 0 t 6 0 t 6 0" /></svg>
-				<span id="status" role="status">Waiting for Oiaai to open</span>
+				<span id="status" role="status">Waiting for OlhaAí to open</span>
 			</p>
 		</main>
-		<footer>Don't have the app yet? <a href="/download">Download Oiaai</a></footer>
+		<footer>Don't have the app yet? <a href="/download">Download OlhaAí</a></footer>
 		<script>
 			const { primaryUrl, fallbackUrl } = ${state};
 			const status = document.getElementById("status");
@@ -418,7 +418,7 @@ export function createDesktopRedirectPage(
 			};
 
 			const openCap = () => {
-				status.textContent = "Waiting for Oiaai to open";
+				status.textContent = "Waiting for OlhaAí to open";
 				window.location.href = primaryUrl;
 			};
 

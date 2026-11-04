@@ -1,17 +1,17 @@
 ---
 title: "REST API"
-summary: "Programmatic access to Oiaai via the REST API"
+summary: "Programmatic access to OlhaAí via the REST API"
 tags: "API, Integration"
 ---
 
-The Oiaai Developer API provides programmatic access to videos created through your developer apps. It is designed for server-to-server integrations, automated workflows, and building custom recording experiences on top of Oiaai.
+The OlhaAí Developer API provides programmatic access to videos created through your developer apps. It is designed for server-to-server integrations, automated workflows, and building custom recording experiences on top of OlhaAí.
 
 There are two APIs:
 
 - **REST API** (`/api/developer/v1`) -- Server-side management of videos and usage, authenticated with secret keys (`csk_`).
 - **SDK API** (`/api/developer/sdk/v1`) -- Client-side video creation and uploads, authenticated with public keys (`cpk_`).
 
-These keys do not authenticate the Oiaai CLI. For CLI keys (`cap_cli_`), used with `CAP_API_KEY` in headless environments, see [Set Up Your Agent](/docs/agents/setup#headless-environments-ci-containers-and-remote-sandboxes).
+These keys do not authenticate the OlhaAí CLI. For CLI keys (`cap_cli_`), used with `CAP_API_KEY` in headless environments, see [Set Up Your Agent](/docs/agents/setup#headless-environments-ci-containers-and-remote-sandboxes).
 
 ## Authentication
 
@@ -60,7 +60,7 @@ https://cap.so/api/developer/v1
 https://cap.so/api/developer/sdk/v1
 ```
 
-If you are self-hosting Oiaai, replace `cap.so` with your custom domain.
+If you are self-hosting OlhaAí, replace `cap.so` with your custom domain.
 
 ## Error Handling
 
@@ -427,7 +427,7 @@ POST /api/developer/sdk/v1/upload/multipart/complete
 }
 ```
 
-Credits are debited when the upload completes. Oiaai bills 5,000 micro-credits per minute using the greater of the submitted duration and the file-size-based minimum, capped at four hours.
+Credits are debited when the upload completes. OlhaAí bills 5,000 micro-credits per minute using the greater of the submitted duration and the file-size-based minimum, capped at four hours.
 
 #### Abort Upload
 
@@ -456,10 +456,10 @@ POST /api/developer/sdk/v1/upload/multipart/abort
 
 ## SDKs
 
-Oiaai provides official SDK packages to simplify integration:
+OlhaAí provides official SDK packages to simplify integration:
 
 - **`@cap/sdk-recorder`** -- Recording SDK for capturing video in web applications. Includes React bindings.
-- **`@cap/sdk-embed`** -- Embedding SDK for displaying Oiaai videos. Available for React and vanilla JavaScript.
+- **`@cap/sdk-embed`** -- Embedding SDK for displaying OlhaAí videos. Available for React and vanilla JavaScript.
 
 ## Video Object Reference
 

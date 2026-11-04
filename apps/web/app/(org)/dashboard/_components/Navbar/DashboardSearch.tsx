@@ -172,7 +172,7 @@ export function DashboardSearch({
 			{
 				id: "import-video",
 				title: "Import Media",
-				subtitle: "Bring an existing video or image into Oiaai",
+				subtitle: "Bring an existing video or image into OlhaAí",
 				href: loomImportPageHref(loomImportDestinationFromPathname(pathname)),
 				value: "import upload loom video image media file",
 				icon: Upload,
@@ -243,7 +243,7 @@ export function DashboardSearch({
 						},
 						{
 							id: "organization-preferences",
-							title: "Oiaai Settings",
+							title: "OlhaAí Settings",
 							subtitle: "Default summaries, captions, and viewer options",
 							href: "/dashboard/settings/organization/preferences",
 							value:

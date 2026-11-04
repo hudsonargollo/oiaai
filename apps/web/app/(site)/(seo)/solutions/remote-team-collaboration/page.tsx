@@ -11,20 +11,20 @@ export const metadata: Metadata = {
 	title:
 		"Remote Team Collaboration Software: Asynchronous Screen Recording for Distributed Teams",
 	description:
-		"Enhance your remote team collaboration with Oiaai's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
+		"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
 	openGraph: {
 		title:
 			"Remote Team Collaboration Software: Async Screen Recording for Distributed Teams",
 		description:
-			"Enhance your remote team collaboration with Oiaai's secure, open-source screen recording platform. Save time and boost productivity across time zones.",
+			"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time and boost productivity across time zones.",
 		url: "https://cap.so/solutions/remote-team-collaboration",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Remote Team Collaboration Software",
+				alt: "OlhaAí: Remote Team Collaboration Software",
 			},
 		],
 		locale: "en_US",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Remote Team Collaboration Software | Oiaai Screen Recorder",
+		title: "Remote Team Collaboration Software | OlhaAí Screen Recorder",
 		description:
-			"Enhance your remote team collaboration with Oiaai's secure, open-source screen recording platform. Save time and boost productivity.",
+			"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time and boost productivity.",
 		images: [ogImage],
 	},
 	alternates: {

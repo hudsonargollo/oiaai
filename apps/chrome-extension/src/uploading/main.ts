@@ -97,18 +97,18 @@ const syncTabTitle = () => {
 	if (key === lastTitleKey) return;
 	lastTitleKey = key;
 	if (mode === "completed") {
-		document.title = "Ready - Oiaai";
+		document.title = "Ready - OlhaAí";
 		return;
 	}
 	if (mode === "error") {
-		document.title = "Upload needs attention - Oiaai";
+		document.title = "Upload needs attention - OlhaAí";
 		return;
 	}
 	if (mode === "waiting") {
-		document.title = "Uploading - Oiaai";
+		document.title = "Uploading - OlhaAí";
 		return;
 	}
-	document.title = `Uploading ${percent}% - Oiaai`;
+	document.title = `Uploading ${percent}% - OlhaAí`;
 };
 
 const applyPercentDom = () => {
@@ -182,7 +182,7 @@ const renderActiveStatus = (status: ActiveStatus) => {
 		applyStageState(
 			"recording",
 			"Still recording",
-			"Your Oiaai streams to the cloud while you record.",
+			"Your OlhaAí streams to the cloud while you record.",
 		);
 		return;
 	}
@@ -223,7 +223,7 @@ const renderCompleted = (
 	hideErrorActions();
 	targetPercent = 100;
 	setMode("completed");
-	applyStageState("completed", "Your Oiaai is ready", "Taking you there now…");
+	applyStageState("completed", "Your OlhaAí is ready", "Taking you there now…");
 	metaElement.hidden = true;
 	shareLink.href = status.shareUrl;
 	shareLink.hidden = false;
@@ -440,7 +440,7 @@ const pollStatus = async () => {
 		consecutivePollFailures += 1;
 	}
 	if (consecutivePollFailures >= 10 && mode === "waiting") {
-		detailElement.textContent = "Still trying to reach the Oiaai extension…";
+		detailElement.textContent = "Still trying to reach the OlhaAí extension…";
 	}
 };
 

@@ -110,11 +110,13 @@ export async function requireProCustomerMigrationAccess(
 	const user = await requireCustomerMigrationAccess(organizationId);
 	if (!buildEnv.NEXT_PUBLIC_IS_CAP) {
 		throw new LoomMigrationError(
-			"Concierge migration is available on Oiaai Cloud.",
+			"Concierge migration is available on OlhaAí Cloud.",
 		);
 	}
 	if (!(await isOrganizationOwnerPro(organizationId))) {
-		throw new LoomMigrationError("Concierge Loom migration requires Oiaai Pro.");
+		throw new LoomMigrationError(
+			"Concierge Loom migration requires OlhaAí Pro.",
+		);
 	}
 	return user;
 }

@@ -8,28 +8,28 @@ import type { SeoPageContent } from "../../seo/types";
 
 export const loomAlternativeContent: SeoPageContent = {
 	title:
-		"The Ultimate Loom Alternative: Why Oiaai is the Best Open-Source Screen Recorder for Mac & Windows",
+		"The Ultimate Loom Alternative: Why OlhaAí is the Best Open-Source Screen Recorder for Mac & Windows",
 	description:
-		"Looking for the best Loom alternative? Discover Oiaai, the open-source, privacy-focused screen recorder for Mac & Windows with a built-in Loom video importer. See why users are switching today!",
+		"Looking for the best Loom alternative? Discover OlhaAí, the open-source, privacy-focused screen recorder for Mac & Windows with a built-in Loom video importer. See why users are switching today!",
 
-	featuresTitle: "Why Oiaai is the Best Loom Alternative",
+	featuresTitle: "Why OlhaAí is the Best Loom Alternative",
 	featuresDescription:
-		"Oiaai offers everything you need in a privacy-focused, open-source screen recording solution",
+		"OlhaAí offers everything you need in a privacy-focused, open-source screen recording solution",
 
 	features: [
 		{
 			title: "Open-Source Transparency",
 			description:
-				"Oiaai is fully open-source, giving you complete transparency and community-driven development. We believe in building in public and letting users help shape our roadmap. Looking for an <a href='/free-screen-recorder'>open-source screen recorder</a>? Oiaai is your best choice!",
+				"OlhaAí is fully open-source, giving you complete transparency and community-driven development. We believe in building in public and letting users help shape our roadmap. Looking for an <a href='/free-screen-recorder'>open-source screen recorder</a>? OlhaAí is your best choice!",
 		},
 		{
 			title: "Enhanced Privacy & Security",
 			description:
-				"Oiaai prioritizes your privacy with GDPR compliance and the option to use your own Google Drive or S3 storage, ensuring your data remains under your control. Connect your own custom domain for a branded experience while maintaining 100% ownership of your data.",
+				"OlhaAí prioritizes your privacy with GDPR compliance and the option to use your own Google Drive or S3 storage, ensuring your data remains under your control. Connect your own custom domain for a branded experience while maintaining 100% ownership of your data.",
 		},
 		{
 			title: "Half the Price of Loom",
-			description: `Oiaai starts from just $${PRICING.pro.annualPerMonth}/month per user, compared to Loom's $18/month per user. Plus, Oiaai offers a generous free plan that includes Studio mode for personal use.`,
+			description: `OlhaAí starts from just $${PRICING.pro.annualPerMonth}/month per user, compared to Loom's $18/month per user. Plus, OlhaAí offers a generous free plan that includes Studio mode for personal use.`,
 		},
 		{
 			title: "High-Quality Recordings",
@@ -39,24 +39,24 @@ export const loomAlternativeContent: SeoPageContent = {
 		{
 			title: "Collaborative Features",
 			description:
-				"Oiaai includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback on your recordings without switching platforms.",
+				"OlhaAí includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback on your recordings without switching platforms.",
 		},
 		{
 			title: "Cross-Platform Support",
 			description:
-				"Available for both Mac and Windows, Oiaai delivers consistent performance across platforms. A perfect <a href='/screen-recording-software'>screen recording software</a> for all users.",
+				"Available for both Mac and Windows, OlhaAí delivers consistent performance across platforms. A perfect <a href='/screen-recording-software'>screen recording software</a> for all users.",
 		},
 		{
 			title: "Built-In Loom Video Importer",
 			description:
-				"Already using Loom? Oiaai's built-in video importer lets you <a href='/migrate-from-loom'>import your Loom videos into Oiaai</a> from a single share link or a CSV of your whole library. No need to start from scratch — bring all your content with you when you switch. Just need the raw files? Our <a href='/tools/loom-downloader'>free Loom video downloader</a> saves any public Loom as an MP4 in one click.",
+				"Already using Loom? OlhaAí's built-in video importer lets you <a href='/migrate-from-loom'>import your Loom videos into OlhaAí</a> from a single share link or a CSV of your whole library. No need to start from scratch — bring all your content with you when you switch. Just need the raw files? Our <a href='/tools/loom-downloader'>free Loom video downloader</a> saves any public Loom as an MP4 in one click.",
 		},
 	],
 
 	recordingModes: {
-		title: "Two Ways to Record with Oiaai",
+		title: "Two Ways to Record with OlhaAí",
 		description:
-			"Oiaai gives you flexible recording options to match your workflow needs, with both modes available in the free plan",
+			"OlhaAí gives you flexible recording options to match your workflow needs, with both modes available in the free plan",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -79,35 +79,35 @@ export const loomAlternativeContent: SeoPageContent = {
 		],
 	},
 
-	useCasesTitle: "Why Users Choose Oiaai for Screen Recording",
+	useCasesTitle: "Why Users Choose OlhaAí for Screen Recording",
 	useCasesDescription:
-		"Discover the features that make Oiaai a compelling option for screen recording",
+		"Discover the features that make OlhaAí a compelling option for screen recording",
 
 	useCases: [
 		{
 			title: "Budget-Friendly Options",
 			description:
-				"Many screen recording tools have complex pricing structures. Oiaai offers similar functionality with clear, affordable pricing options.",
+				"Many screen recording tools have complex pricing structures. OlhaAí offers similar functionality with clear, affordable pricing options.",
 		},
 		{
 			title: "Complete Data Ownership",
 			description:
-				"Oiaai lets you connect your own Google Drive or S3 storage and custom domain, giving you 100% ownership and control over your content. No more being locked into proprietary platforms.",
+				"OlhaAí lets you connect your own Google Drive or S3 storage and custom domain, giving you 100% ownership and control over your content. No more being locked into proprietary platforms.",
 		},
 		{
 			title: "Community-Driven Development",
 			description:
-				"As an <a href='/screen-recorder'>open-source screen recorder</a>, Oiaai is built in the open with community input. User feedback directly shapes our roadmap and features.",
+				"As an <a href='/screen-recorder'>open-source screen recorder</a>, OlhaAí is built in the open with community input. User feedback directly shapes our roadmap and features.",
 		},
 		{
 			title: "Collaborative Feedback",
 			description:
-				"Oiaai's built-in thread commenting on shareable links makes it easy to collect feedback and collaborate without switching between different tools.",
+				"OlhaAí's built-in thread commenting on shareable links makes it easy to collect feedback and collaborate without switching between different tools.",
 		},
 		{
 			title: "Effortless Migration from Loom",
 			description:
-				"Oiaai's built-in Loom video importer makes switching painless. Import your existing Loom recordings directly into Oiaai and keep all your content organized in one place — no downloads or re-uploads required.",
+				"OlhaAí's built-in Loom video importer makes switching painless. Import your existing Loom recordings directly into OlhaAí and keep all your content organized in one place — no downloads or re-uploads required.",
 		},
 	],
 
@@ -116,37 +116,37 @@ export const loomAlternativeContent: SeoPageContent = {
 		{
 			question: "Is there a free Loom alternative?",
 			answer:
-				"Yes, Oiaai offers a generous free tier that includes all essential screen recording features. You can use Studio mode completely free for personal use, record up to 5-minute shareable links, and record in up to 4K resolution. Oiaai's free plan offers more than Loom's free tier.",
+				"Yes, OlhaAí offers a generous free tier that includes all essential screen recording features. You can use Studio mode completely free for personal use, record up to 5-minute shareable links, and record in up to 4K resolution. OlhaAí's free plan offers more than Loom's free tier.",
 		},
 		{
 			question: "Why choose an open-source screen recorder?",
 			answer:
-				"Open-source screen recorders like Oiaai provide transparency, security, and community-driven development. You can verify the code, contribute improvements, and trust that your data isn't being misused. Oiaai's community focus means features are developed based on real user needs.",
+				"Open-source screen recorders like OlhaAí provide transparency, security, and community-driven development. You can verify the code, contribute improvements, and trust that your data isn't being misused. OlhaAí's community focus means features are developed based on real user needs.",
 		},
 		{
-			question: "How does Oiaai compare in pricing with Loom?",
-			answer: `Oiaai is significantly more affordable at just $${PRICING.pro.annualPerMonth}/month per user when billed annually, compared to Loom's $18/month per user. Oiaai also has a more generous free plan that includes Studio mode for personal use and the ability to record shareable links up to 5 minutes in 4K quality.`,
+			question: "How does OlhaAí compare in pricing with Loom?",
+			answer: `OlhaAí is significantly more affordable at just $${PRICING.pro.annualPerMonth}/month per user when billed annually, compared to Loom's $18/month per user. OlhaAí also has a more generous free plan that includes Studio mode for personal use and the ability to record shareable links up to 5 minutes in 4K quality.`,
 		},
 		{
-			question: "Can I keep full ownership of my recordings with Oiaai?",
+			question: "Can I keep full ownership of my recordings with OlhaAí?",
 			answer:
-				"Absolutely! Oiaai allows you to connect your own Google Drive or S3 storage and custom domain, giving you 100% ownership and control of your content. Your data remains yours, and you're never locked into our platform.",
+				"Absolutely! OlhaAí allows you to connect your own Google Drive or S3 storage and custom domain, giving you 100% ownership and control of your content. Your data remains yours, and you're never locked into our platform.",
 		},
 		{
-			question: "Does Oiaai support collaboration features?",
+			question: "Does OlhaAí support collaboration features?",
 			answer:
-				"Yes, Oiaai includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback directly on your recordings. This keeps all your communication in one place.",
+				"Yes, OlhaAí includes built-in thread commenting on shareable links, making it easy to collaborate with teammates and collect feedback directly on your recordings. This keeps all your communication in one place.",
 		},
 		{
-			question: "Can I import my existing Loom videos into Oiaai?",
+			question: "Can I import my existing Loom videos into OlhaAí?",
 			answer:
-				"Yes! Oiaai Pro includes a built-in Loom video importer. Simply paste your Loom video links and Oiaai will import them directly into your library. It's the easiest way to migrate from Loom without losing any of your existing content. If you'd rather keep local copies, our <a href='/tools/loom-downloader'>Loom video downloader</a> exports any public Loom to MP4, and our <a href='/migrate-from-loom'>migrate from Loom</a> guide covers the full switch.",
+				"Yes! OlhaAí Pro includes a built-in Loom video importer. Simply paste your Loom video links and OlhaAí will import them directly into your library. It's the easiest way to migrate from Loom without losing any of your existing content. If you'd rather keep local copies, our <a href='/tools/loom-downloader'>Loom video downloader</a> exports any public Loom to MP4, and our <a href='/migrate-from-loom'>migrate from Loom</a> guide covers the full switch.",
 		},
 	],
 
 	comparisonTable: {
-		title: "Feature Comparison: Oiaai vs. Loom",
-		headers: ["Feature", "Oiaai", "Loom"],
+		title: "Feature Comparison: OlhaAí vs. Loom",
+		headers: ["Feature", "OlhaAí", "Loom"],
 		rows: [
 			[
 				"Open Source",
@@ -204,13 +204,13 @@ export const loomAlternativeContent: SeoPageContent = {
 		],
 	},
 	migrationGuide: {
-		title: "How to Get Started with Oiaai (Easy Guide)",
+		title: "How to Get Started with OlhaAí (Easy Guide)",
 		steps: [
-			"Download Oiaai for your operating system (Mac or Windows)",
-			"Launch the application and sign in to your Oiaai account",
-			"Import your existing Loom videos using Oiaai's built-in Loom video importer",
+			"Download OlhaAí for your operating system (Mac or Windows)",
+			"Launch the application and sign in to your OlhaAí account",
+			"Import your existing Loom videos using OlhaAí's built-in Loom video importer",
 			"Start recording using either Instant Mode or Studio Mode",
-			"Share your recordings easily with Oiaai's built-in sharing features",
+			"Share your recordings easily with OlhaAí's built-in sharing features",
 			"Optional: Connect your own Google Drive or S3 storage and custom domain for complete data ownership",
 		],
 	},
@@ -218,13 +218,13 @@ export const loomAlternativeContent: SeoPageContent = {
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Oiaai screen recording demo",
+			title: "OlhaAí screen recording demo",
 		},
 	},
 
 	cta: {
-		title: "Ready to Try Oiaai for Your Screen Recording Needs?",
-		buttonText: "Download Oiaai Free",
+		title: "Ready to Try OlhaAí for Your Screen Recording Needs?",
+		buttonText: "Download OlhaAí Free",
 	},
 };
 

@@ -4,11 +4,11 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 export const freeScreenRecorderContent = {
 	title: "Free Screen Recorder: High-Quality Recording at No Cost",
 	description:
-		"Oiaai offers a top-rated, free screen recorder with high-quality video capture, making it perfect for creating tutorials, educational content, and professional demos without any hidden fees.",
+		"OlhaAí offers a top-rated, free screen recorder with high-quality video capture, making it perfect for creating tutorials, educational content, and professional demos without any hidden fees.",
 
-	featuresTitle: "Why Choose Oiaai's Free Screen Recorder?",
+	featuresTitle: "Why Choose OlhaAí's Free Screen Recorder?",
 	featuresDescription:
-		"Oiaai provides all the tools you need for powerful, no-cost screen recording",
+		"OlhaAí provides all the tools you need for powerful, no-cost screen recording",
 
 	features: [
 		{
@@ -24,7 +24,7 @@ export const freeScreenRecorderContent = {
 		{
 			title: "User-Friendly Interface",
 			description:
-				"Designed for ease of use, Oiaai makes it simple to record your screen in just a few clicks.",
+				"Designed for ease of use, OlhaAí makes it simple to record your screen in just a few clicks.",
 		},
 		{
 			title: "Unlimited Recording Time",
@@ -38,9 +38,9 @@ export const freeScreenRecorderContent = {
 		},
 	],
 
-	useCasesTitle: "Popular Uses for Oiaai's Free Screen Recorder",
+	useCasesTitle: "Popular Uses for OlhaAí's Free Screen Recorder",
 	useCasesDescription:
-		"Explore how Oiaai can support your recording needs, all at no cost",
+		"Explore how OlhaAí can support your recording needs, all at no cost",
 
 	useCases: [
 		{
@@ -68,41 +68,41 @@ export const freeScreenRecorderContent = {
 	faqsTitle: "Frequently Asked Questions",
 	faqs: [
 		{
-			question: "Is Oiaai really free?",
+			question: "Is OlhaAí really free?",
 			answer:
-				"Yes, Oiaai is completely free, with no hidden fees. You get access to professional-grade <a href='/screen-recorder'>screen recording</a> tools without a subscription.",
+				"Yes, OlhaAí is completely free, with no hidden fees. You get access to professional-grade <a href='/screen-recorder'>screen recording</a> tools without a subscription.",
 		},
 		{
 			question: "How long can I record for on the free plan?",
 			answer:
-				"Oiaai's free plan allows for unlimited recording time, so you can capture your screen without interruptions. Whether you're on <a href='/screen-recorder-mac'>Mac</a> or <a href='/screen-recorder-windows'>Windows</a>, there are no time limits.",
+				"OlhaAí's free plan allows for unlimited recording time, so you can capture your screen without interruptions. Whether you're on <a href='/screen-recorder-mac'>Mac</a> or <a href='/screen-recorder-windows'>Windows</a>, there are no time limits.",
 		},
 		{
 			question: "Can I store my recordings in the cloud?",
-			answer: `Yes, from just $${PRICING.pro.annualPerMonth}/month, Oiaai offers unlimited cloud storage, making it easy to access and share recordings whenever needed.`,
+			answer: `Yes, from just $${PRICING.pro.annualPerMonth}/month, OlhaAí offers unlimited cloud storage, making it easy to access and share recordings whenever needed.`,
 		},
 		{
-			question: "What makes Oiaai's free screen recorder different?",
+			question: "What makes OlhaAí's free screen recorder different?",
 			answer:
-				"Oiaai offers advanced features for free, such as high-quality video capture, easy sharing options, and an intuitive interface, making it ideal for professional use without any cost.",
+				"OlhaAí offers advanced features for free, such as high-quality video capture, easy sharing options, and an intuitive interface, making it ideal for professional use without any cost.",
 		},
 		{
-			question: "Do I need an account to use Oiaai's free screen recorder?",
+			question: "Do I need an account to use OlhaAí's free screen recorder?",
 			answer:
-				"Yes, creating a free account allows you to access Oiaai 100% free locally.",
+				"Yes, creating a free account allows you to access OlhaAí 100% free locally.",
 		},
 	],
 
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Oiaai screen recording demo",
+			title: "OlhaAí screen recording demo",
 		},
 	},
 
 	cta: {
-		title: "Get Started with Oiaai – Your Free, High-Quality Screen Recorder",
-		buttonText: "Download Oiaai Free",
+		title: "Get Started with OlhaAí – Your Free, High-Quality Screen Recorder",
+		buttonText: "Download OlhaAí Free",
 	},
 };
 

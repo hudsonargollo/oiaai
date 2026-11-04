@@ -40,11 +40,11 @@ const truncate = (value: string, maxLength: number) =>
 	Array.from(value).slice(0, maxLength).join("");
 
 const formatDuration = (duration: number | null) => {
-	if (!duration || duration <= 0) return "Watch this recording on Oiaai";
+	if (!duration || duration <= 0) return "Watch this recording on OlhaAí";
 	const seconds = Math.round(duration);
 	const minutes = Math.floor(seconds / 60);
 	const remainder = seconds % 60;
-	return `Watch this ${minutes}:${remainder.toString().padStart(2, "0")} recording on Oiaai`;
+	return `Watch this ${minutes}:${remainder.toString().padStart(2, "0")} recording on OlhaAí`;
 };
 
 export const buildSlackVideoBlock = ({
@@ -56,7 +56,7 @@ export const buildSlackVideoBlock = ({
 	shareUrl: string;
 	webUrl: string;
 }) => {
-	const title = truncate(video.name.trim() || "Oiaai recording", 199);
+	const title = truncate(video.name.trim() || "OlhaAí recording", 199);
 	const embedUrl = new URL(`/embed/${video.id}`, webUrl);
 	embedUrl.searchParams.set("autoplay", "true");
 	embedUrl.searchParams.set("slack", "true");
@@ -79,7 +79,7 @@ export const buildSlackVideoBlock = ({
 		video_url: embedUrl.toString(),
 		alt_text: truncate(`Watch ${video.name}`, 200),
 		thumbnail_url: thumbnailUrl.toString(),
-		provider_name: "Oiaai",
+		provider_name: "OlhaAí",
 		...(video.ownerName ? { author_name: truncate(video.ownerName, 49) } : {}),
 	};
 };

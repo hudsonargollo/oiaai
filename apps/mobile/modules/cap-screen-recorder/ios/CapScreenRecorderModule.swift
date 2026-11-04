@@ -143,7 +143,7 @@ public final class CapScreenRecorderModule: Module {
           maximumDurationIsValid
     else {
       throw ScreenRecorderException(
-        "Oiaai received an invalid screen recording configuration."
+        "OlhaAí received an invalid screen recording configuration."
       )
     }
 
@@ -391,7 +391,7 @@ public final class CapScreenRecorderModule: Module {
       )
     else {
       throw ScreenRecorderException(
-        "Oiaai could not access screen recording storage."
+        "OlhaAí could not access screen recording storage."
       )
     }
     let root = container.appendingPathComponent(
@@ -451,7 +451,7 @@ public final class CapScreenRecorderModule: Module {
           ) != nil
     else {
       throw ScreenRecorderException(
-        "Oiaai received an invalid screen recording identifier."
+        "OlhaAí received an invalid screen recording identifier."
       )
     }
   }

@@ -499,7 +499,7 @@ pub fn find_incomplete_recordings() -> Vec<IncompleteRecordingItem> {
 
 fn is_recording_after_recovery_cutoff(pretty_name: &str, sort_time_millis: f64) -> bool {
     let Some(date) = pretty_name
-        .strip_prefix("Oiaai ")
+        .strip_prefix("OlhaAí ")
         .or_else(|| pretty_name.strip_prefix("Cap "))
         .and_then(|name| name.split(" at ").next())
         .and_then(|value| chrono::NaiveDate::parse_from_str(value, "%Y-%m-%d").ok())

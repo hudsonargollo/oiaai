@@ -5,7 +5,7 @@ and CLI args changed).
 
 Aligns beats to video, trims, aims 3D shots at landmarks, paints a brand
 background, synthesizes the cursor track from the bundled cursor assets, copies
-music, writes project-config.json, and exports via the Oiaai CLI.
+music, writes project-config.json, and exports via the OlhaAí CLI.
 
 Usage: python3 treat.py <outDir> <slug> [--music ID] [--quality 4k|hd] [--bg-gradient FROM_HEX,TO_HEX]
 """
@@ -23,14 +23,14 @@ ASSETS = os.path.join(SKILL_DIR, "assets")
 
 
 def resolve_cap():
-    """Oiaai binary: env CAP_BIN, else `cap` on PATH, else a clear error."""
+    """OlhaAí binary: env CAP_BIN, else `cap` on PATH, else a clear error."""
     if os.environ.get("CAP_BIN"):
         return os.environ["CAP_BIN"]
     p = shutil.which("cap")
     if p:
         return p
     raise SystemExit(
-        "cap CLI not found on PATH. Install Oiaai Desktop (https://cap.so) or set CAP_BIN."
+        "cap CLI not found on PATH. Install OlhaAí Desktop (https://cap.so) or set CAP_BIN."
     )
 
 
@@ -227,7 +227,7 @@ s3b = props(rotateX=-14.0, zoom=1.6)
 
 # --- synthetic cursor track ----------------------------------------------------
 # The shoot used CDP input only; the on-screen cursor in the final render is
-# drawn from this data. Overwrites any stray real-cursor data Oiaai recorded.
+# drawn from this data. Overwrites any stray real-cursor data OlhaAí recorded.
 # Cursor assets are bundled with the skill (assets/cursor_0.png, cursor_2.png,
 # assets/cursors.json).
 if "cursorLog" in tl:

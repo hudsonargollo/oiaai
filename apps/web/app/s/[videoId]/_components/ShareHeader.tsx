@@ -474,7 +474,7 @@ export const ShareHeader = ({
 	const copyShareLink = (url: string) =>
 		copyRichVideoLink({
 			url,
-			title: displayTitle || "Oiaai Recording",
+			title: displayTitle || "OlhaAí Recording",
 			previewImageUrl: videoPreviewImageUrl(webUrl, data.id),
 		});
 
@@ -687,11 +687,11 @@ export const ShareHeader = ({
 
 		try {
 			await hideShareableLinkCapLogo(data.orgId);
-			toast.success("Oiaai logo hidden");
+			toast.success("OlhaAí logo hidden");
 			refresh();
 		} catch (error) {
 			toast.error(
-				error instanceof Error ? error.message : "Failed to hide Oiaai logo",
+				error instanceof Error ? error.message : "Failed to hide OlhaAí logo",
 			);
 		} finally {
 			setIsHidingBranding(false);
@@ -733,7 +733,7 @@ export const ShareHeader = ({
 
 		return (
 			<nav
-				aria-label="Oiaai"
+				aria-label="OlhaAí"
 				className="flex shrink-0 flex-wrap items-center justify-end gap-x-5 gap-y-2"
 			>
 				<div className="hidden items-center gap-5 md:flex">
@@ -760,7 +760,7 @@ export const ShareHeader = ({
 						href={`/signup?ref=video_${data.id}`}
 						className="h-8 rounded-full px-3 text-xs"
 					>
-						Get Oiaai free
+						Get OlhaAí free
 					</Button>
 				</div>
 			</nav>
@@ -790,7 +790,7 @@ export const ShareHeader = ({
 								<Button
 									variant="gray"
 									size="xs"
-									aria-label="Hide Oiaai logo"
+									aria-label="Hide OlhaAí logo"
 									className="h-7 gap-1 whitespace-nowrap rounded-full px-2 text-[11px]"
 									disabled={isHidingBranding}
 									onClick={handleHideBranding}
@@ -840,7 +840,7 @@ export const ShareHeader = ({
 						size="sm"
 						variant="blue"
 					>
-						Upgrade to Oiaai Pro
+						Upgrade to OlhaAí Pro
 					</Button>
 				</div>
 			)}
@@ -1144,7 +1144,7 @@ export const ShareHeader = ({
 													<Button
 														variant="dark"
 														size="xs"
-														aria-label="Manage Oiaai"
+														aria-label="Manage OlhaAí"
 														className={clsx(ACTION_BAR_BUTTON_CLASS, "sm:px-3")}
 													>
 														<FontAwesomeIcon
@@ -1152,7 +1152,9 @@ export const ShareHeader = ({
 															icon={faEllipsis}
 														/>
 														<span className="truncate sm:hidden">Manage</span>
-														<span className="hidden sm:inline">Manage Oiaai</span>
+														<span className="hidden sm:inline">
+															Manage OlhaAí
+														</span>
 													</Button>
 												</DropdownMenuTrigger>
 												<DropdownMenuContent
@@ -1309,7 +1311,9 @@ export const ShareHeader = ({
 															className="size-3"
 															icon={faTrash}
 														/>
-														<p className="text-sm text-inherit">Delete Oiaai</p>
+														<p className="text-sm text-inherit">
+															Delete OlhaAí
+														</p>
 													</DropdownMenuItem>
 												</DropdownMenuContent>
 											</DropdownMenu>

@@ -103,11 +103,11 @@ fn messages_follow_the_language() {
     );
     assert_eq!(
         localize(&OSPermission::Camera.unavailable_message()),
-        "カメラへのアクセスを利用できません。「システム設定」>「プライバシーとセキュリティ」>「カメラ」でOiaaiを許可してから、デバイスをもう一度選択してください。"
+        "カメラへのアクセスを利用できません。「システム設定」>「プライバシーとセキュリティ」>「カメラ」でOlhaAíを許可してから、デバイスをもう一度選択してください。"
     );
     assert_eq!(
-        localize("Low storage. Your recording files are preserved at /Users/me/Cap/Stop task failed: x. Free up space, then recover the recording in Oiaai."),
-        "ストレージの空き容量が不足しています。録画ファイルは/Users/me/Cap/Stop task failed: xに保持されています。空き容量を確保してから、Oiaaiで録画を復元してください。"
+        localize("Low storage. Your recording files are preserved at /Users/me/Cap/Stop task failed: x. Free up space, then recover the recording in OlhaAí."),
+        "ストレージの空き容量が不足しています。録画ファイルは/Users/me/Cap/Stop task failed: xに保持されています。空き容量を確保してから、OlhaAíで録画を復元してください。"
     );
 
     for (locale, shown) in [

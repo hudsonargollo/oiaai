@@ -249,8 +249,8 @@ export const SettingsDialog = ({
 								)}
 							</div>
 							<p className="text-xs text-gray-10">
-								The speed this recording starts playing at. Viewers can still change
-								it.
+								The speed this recording starts playing at. Viewers can still
+								change it.
 							</p>
 						</div>
 						<div className="flex flex-wrap gap-1 items-center p-1 w-fit rounded-lg border bg-gray-2 border-gray-3">

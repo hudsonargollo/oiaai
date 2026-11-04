@@ -74,7 +74,7 @@ fn english_matches_the_literals_it_replaced() {
         (tr::tray::recording_mode(), "Recording Mode".into()),
         (tr::tray::open_main_window(), "Open Main Window".into()),
         (tr::tray::previous(), "Previous".into()),
-        (tr::tray::quit(), "Quit Oiaai".into()),
+        (tr::tray::quit(), "Quit OlhaAí".into()),
         (tr::tray::record_area(), "Record Area".into()),
         (tr::tray::record_display(), "Record Display".into()),
         (tr::tray::record_window(), "Record Window".into()),
@@ -88,7 +88,7 @@ fn english_matches_the_literals_it_replaced() {
         (tr::tray::select_mode(), "Select Mode".into()),
         (tr::tray::settings(), "Settings".into()),
         (tr::tray::take_screenshot(), "Take a Screenshot".into()),
-        (tr::tray::tooltip_recording(), "Oiaai - Stop Recording".into()),
+        (tr::tray::tooltip_recording(), "OlhaAí - Stop Recording".into()),
         (tr::tray::upload_logs(), "Upload Logs".into()),
         (
             tr::tray::view_all_recordings(),
@@ -116,7 +116,7 @@ fn english_matches_the_literals_it_replaced() {
         (tr::settings::nav::transcription(), "Transcription".into()),
         (
             tr::settings::general::appearance::description(),
-            "Match Oiaai to your system theme or pick a fixed look.".into(),
+            "Match OlhaAí to your system theme or pick a fixed look.".into(),
         ),
         (
             tr::settings::general::appearance::title(),
@@ -127,12 +127,12 @@ fn english_matches_the_literals_it_replaced() {
         (tr::settings::general::appearance::dark(), "Dark".into()),
         (
             tr::settings::general::app::description(),
-            "Choose how Oiaai shows up on your system.".into(),
+            "Choose how OlhaAí shows up on your system.".into(),
         ),
         (tr::settings::general::app::title(), "App".into()),
         (
             tr::settings::general::app::dock_icon::description(),
-            "Keep Oiaai in the dock even when no windows are open.".into(),
+            "Keep OlhaAí in the dock even when no windows are open.".into(),
         ),
         (
             tr::settings::general::app::dock_icon::label(),
@@ -141,7 +141,7 @@ fn english_matches_the_literals_it_replaced() {
         (
             tr::settings::general::app::notifications::description(),
             "Show notifications for clipboard copies, saved files, and more. \
-                             You may need to allow Oiaai in your system's notification settings."
+                             You may need to allow OlhaAí in your system's notification settings."
                 .into(),
         ),
         (
@@ -229,7 +229,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::recording::delete_after_upload::description(),
-            "Oiaai removes the local file once it has uploaded successfully.".into(),
+            "OlhaAí removes the local file once it has uploaded successfully.".into(),
         ),
         (
             tr::settings::general::recording::delete_after_upload::label(),
@@ -337,7 +337,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::storage::description(),
-            "Where Oiaai saves your recordings.".into(),
+            "Where OlhaAí saves your recordings.".into(),
         ),
         (tr::settings::general::storage::title(), "Storage".into()),
         (
@@ -406,7 +406,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::excluded_windows::missing_title(),
-            "Recommended Oiaai windows are not excluded".into(),
+            "Recommended OlhaAí windows are not excluded".into(),
         ),
         (
             tr::settings::general::excluded_windows::restore(),
@@ -418,7 +418,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::updates::description(),
-            "Choose which Oiaai builds you receive.".into(),
+            "Choose which OlhaAí builds you receive.".into(),
         ),
         (
             tr::settings::general::updates::nightly_description(),
@@ -443,7 +443,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::updates::download_policy::description(),
-            "Choose whether Oiaai downloads updates automatically.".into(),
+            "Choose whether OlhaAí downloads updates automatically.".into(),
         ),
         (
             tr::settings::general::updates::download_policy::manual(),
@@ -459,7 +459,7 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::updates::channel::description(),
-            "Which release channel Oiaai updates from.".into(),
+            "Which release channel OlhaAí updates from.".into(),
         ),
         (
             tr::settings::general::updates::channel::label(),
@@ -467,11 +467,11 @@ fn english_matches_the_literals_it_replaced() {
         ),
         (
             tr::settings::general::self_host::description(),
-            "Only change this if you are running your own instance of Oiaai Web.".into(),
+            "Only change this if you are running your own instance of OlhaAí Web.".into(),
         ),
         (
             tr::settings::general::self_host::server_url(),
-            "Oiaai Server URL".into(),
+            "OlhaAí Server URL".into(),
         ),
         (
             tr::settings::general::self_host::title(),
@@ -481,7 +481,7 @@ fn english_matches_the_literals_it_replaced() {
         (tr::settings::general::privacy::title(), "Privacy".into()),
         (
             tr::settings::general::privacy::telemetry::description(),
-            "Oiaai uses anonymous telemetry to improve reliability and fix bugs. We \
+            "OlhaAí uses anonymous telemetry to improve reliability and fix bugs. We \
                          never collect recording contents, window titles, file paths, or \
                          personal information."
                 .into(),
@@ -571,7 +571,7 @@ fn language_picker_english() {
     assert_eq!(tr::settings::general::language::title(), "Language");
     assert_eq!(
         tr::settings::general::language::description(),
-        "Choose the language Oiaai is shown in."
+        "Choose the language OlhaAí is shown in."
     );
     assert_eq!(tr::settings::general::language::label(), "App language");
     assert_eq!(
@@ -804,8 +804,8 @@ fn translations_fit_their_width_budgets() {
 #[test]
 fn english_messages_format_like_the_literals_they_replaced() {
     let version = "0.6.1";
-    assert_eq!(tr::tray::version(version), format!("Oiaai v{version}"));
-    let names = "Oiaai Camera, Oiaai Settings".to_string();
+    assert_eq!(tr::tray::version(version), format!("OlhaAí v{version}"));
+    let names = "OlhaAí Camera, OlhaAí Settings".to_string();
     assert_eq!(
         tr::settings::general::excluded_windows::missing_body(&names),
         format!(

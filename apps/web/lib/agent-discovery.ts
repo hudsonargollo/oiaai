@@ -52,9 +52,9 @@ export const mcpServerCardResponse = (contentType?: string) => {
 			$schema:
 				"https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
 			name: "so.cap/cap",
-			title: "Oiaai",
+			title: "OlhaAí",
 			description:
-				"Read-only access to your Oiaai screen recordings: find recordings by title, get status and share links, and read summaries and timestamped transcripts.",
+				"Read-only access to your OlhaAí screen recordings: find recordings by title, get status and share links, and read summaries and timestamped transcripts.",
 			version: "1.0.0",
 			websiteUrl: `${base}/agents`,
 			repository: {

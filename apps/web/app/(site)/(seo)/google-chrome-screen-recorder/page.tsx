@@ -15,9 +15,9 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Google Chrome Screen Recorder: Record & Share Free | Oiaai",
+	title: "Google Chrome Screen Recorder: Record & Share Free | OlhaAí",
 	description:
-		"Oiaai is a free, open-source screen recorder for Google Chrome. Add the extension, click record, and get an instant shareable link — no downloads, no watermarks, no sign-up.",
+		"OlhaAí is a free, open-source screen recorder for Google Chrome. Add the extension, click record, and get an instant shareable link — no downloads, no watermarks, no sign-up.",
 	keywords: [
 		"google chrome screen recorder",
 		"chrome screen recorder",
@@ -30,17 +30,17 @@ export const metadata: Metadata = {
 		canonical: "https://cap.so/google-chrome-screen-recorder",
 	},
 	openGraph: {
-		title: "Google Chrome Screen Recorder: Record & Share Free | Oiaai",
+		title: "Google Chrome Screen Recorder: Record & Share Free | OlhaAí",
 		description:
-			"Record your screen directly from Google Chrome with Oiaai's free, open-source extension. Instant shareable links, no watermarks, no downloads.",
+			"Record your screen directly from Google Chrome with OlhaAí's free, open-source extension. Instant shareable links, no watermarks, no downloads.",
 		url: "https://cap.so/google-chrome-screen-recorder",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Google Chrome Screen Recorder",
+				alt: "OlhaAí: Google Chrome Screen Recorder",
 			},
 		],
 		locale: "en_US",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Google Chrome Screen Recorder | Oiaai",
+		title: "Google Chrome Screen Recorder | OlhaAí",
 		description:
-			"Record your screen from Google Chrome with Oiaai's free, open-source extension. Instant sharing, no watermarks.",
+			"Record your screen from Google Chrome with OlhaAí's free, open-source extension. Instant sharing, no watermarks.",
 		images: [ogImage],
 	},
 };

@@ -3,11 +3,11 @@ import { buildMarketingMetadata } from "@/lib/og/url";
 import { FeaturesPage } from "./FeaturesPage";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Features - Oiaai",
+	title: "Features - OlhaAí",
 	description:
-		"Discover all the powerful features Oiaai offers for screen recording, sharing, and collaboration. From AI-powered tools to advanced editing capabilities.",
+		"Discover all the powerful features OlhaAí offers for screen recording, sharing, and collaboration. From AI-powered tools to advanced editing capabilities.",
 	path: "/features",
-	ogTitle: "Everything Oiaai can do",
+	ogTitle: "Everything OlhaAí can do",
 	ogDescription:
 		"Screen recording, sharing, and collaboration — from AI-powered tools to advanced editing.",
 	ogTag: "Features",

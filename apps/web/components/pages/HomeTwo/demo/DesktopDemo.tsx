@@ -381,14 +381,14 @@ const TOUR: TourStep[] = [
 	},
 	{ text: "Click Start Recording.", anchor: "overlay-start", bx: 360, by: 645 },
 	{
-		text: "Oiaai uploads while you record. Click Stop to finish.",
+		text: "OlhaAí uploads while you record. Click Stop to finish.",
 		anchor: "toolbar-stop",
 		dim: false,
 		bx: 400,
 		by: 550,
 	},
 	{
-		text: "Oiaai copies a share link when you stop. Click the notification to open the video.",
+		text: "OlhaAí copies a share link when you stop. Click the notification to open the video.",
 		anchor: "notification",
 		bx: 800,
 		by: 170,
@@ -439,7 +439,7 @@ const TOUR: TourStep[] = [
 		by: 620,
 	},
 	{
-		text: "Click Export to finish the demo. In Oiaai, you can save a video file or share a link.",
+		text: "Click Export to finish the demo. In OlhaAí, you can save a video file or share a link.",
 		anchor: "editor-export",
 		bx: 860,
 		by: 230,
@@ -1394,15 +1394,15 @@ export const DesktopDemo = ({
 												Demo complete
 											</span>
 											<h3 className="mt-5 text-[40px] font-normal leading-[1.04] tracking-[-0.03em] text-[#111111]">
-												Try Oiaai for yourself
+												Try OlhaAí for yourself
 											</h3>
 											<p className="mx-auto mt-3 max-w-[380px] text-[16px] leading-normal text-[rgba(17,17,17,0.7)]">
-												Download Oiaai for macOS or Windows to record, edit, and
-												share your screen.
+												Download OlhaAí for macOS or Windows to record, edit,
+												and share your screen.
 											</p>
 											<div className="mt-7 flex items-center justify-center gap-3">
 												<Link href="/download" className={BTN_PRIMARY}>
-													Download Oiaai free
+													Download OlhaAí free
 												</Link>
 												<button
 													type="button"

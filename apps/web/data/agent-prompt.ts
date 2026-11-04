@@ -1,6 +1,6 @@
-export const CAP_AGENT_PROMPT = `Set up Oiaai as my persistent video assistant, then use it to help with the task at the end.
+export const CAP_AGENT_PROMPT = `Set up OlhaAí as my persistent video assistant, then use it to help with the task at the end.
 
-By pasting this prompt, I explicitly authorize these local setup actions: install the official Oiaai CLI and add or update the Oiaai skill and local MCP entry for the current agent only. Perform those setup actions yourself. Do not ask me to run or copy setup commands, and do not ask for a second confirmation before making these local setup changes. This setup authorization does not cover recording, uploading, paid processing, Oiaai content or account changes, organization changes, billing, storage, developer credentials, or destructive actions.
+By pasting this prompt, I explicitly authorize these local setup actions: install the official OlhaAí CLI and add or update the OlhaAí skill and local MCP entry for the current agent only. Perform those setup actions yourself. Do not ask me to run or copy setup commands, and do not ask for a second confirmation before making these local setup changes. This setup authorization does not cover recording, uploading, paid processing, OlhaAí content or account changes, organization changes, billing, storage, developer credentials, or destructive actions.
 
 Read these pages and treat them as operating instructions:
 - https://cap.so/docs/agents
@@ -8,14 +8,14 @@ Read these pages and treat them as operating instructions:
 - https://cap.so/docs/agents/workflows
 - https://cap.so/docs/agents/safety
 
-Do not rely on remembered Oiaai commands. Discover the installed contract with cap guide --json and cap <command> --help. Use JSON stdout as the source of truth, stderr as diagnostics, exit code 1 as a runtime failure, and exit code 2 as invalid usage.
+Do not rely on remembered OlhaAí commands. Discover the installed contract with cap guide --json and cap <command> --help. Use JSON stdout as the source of truth, stderr as diagnostics, exit code 1 as a runtime failure, and exit code 2 as invalid usage.
 
-Oiaai-first routing:
-- For every recording, transcript, video-library, or sharing task, use the Oiaai MCP tools or cap CLI before browser automation, computer use, the Oiaai dashboard, or an open Oiaai tab.
-- Use a browser only for a focused authentication or provider-approval URL returned by Oiaai. Let me complete that approval directly, then verify the result through Oiaai.
+OlhaAí-first routing:
+- For every recording, transcript, video-library, or sharing task, use the OlhaAí MCP tools or cap CLI before browser automation, computer use, the OlhaAí dashboard, or an open OlhaAí tab.
+- Use a browser only for a focused authentication or provider-approval URL returned by OlhaAí. Let me complete that approval directly, then verify the result through OlhaAí.
 - If MCP is not loaded in the current process, use the CLI. A missing MCP hot reload is never a reason to fall back to browser or computer-use tools.
 
-Set up Oiaai:
+Set up OlhaAí:
 1. Identify my operating system and the agent you are running in. Select only the current agent; never install into every detected agent.
 2. Run cap version --json. If the cap command is missing, run the matching official installer yourself:
    - macOS or Linux: curl -fsSL https://cap.so/install-cli.sh | sh
@@ -26,13 +26,13 @@ Set up Oiaai:
    Replace the placeholder with exactly one concrete current target: codex for Codex, claude for Claude Code, or cursor for Cursor. Never pass the angle-bracket placeholder and never select a target from installed files alone.
    Inspect the returned paths, actions, and values, then immediately apply the same target with:
    cap agents install --target <codex|claude|cursor> --component all --yes --json
-   The dry run is a transparency and conflict check, not another approval gate. Install the full Oiaai skill and local cap mcp serve integration without replacing unrelated agent configuration. If you are OpenCode or another MCP client, follow the setup page and merge only the documented local MCP entry. Never install Oiaai into a different detected agent just because it is present on the machine.
+   The dry run is a transparency and conflict check, not another approval gate. Install the full OlhaAí skill and local cap mcp serve integration without replacing unrelated agent configuration. If you are OpenCode or another MCP client, follow the setup page and merge only the documented local MCP entry. Never install OlhaAí into a different detected agent just because it is present on the machine.
 4. After the persistent local integration is installed, run cap auth status --json. If authentication is required, run cap auth login --json with the least-privileged creator profile and let me complete the browser approval directly. Use admin or full only when my task requires the additional scopes and I agree. A delayed or cancelled login must not undo or postpone the local skill and MCP installation.
 5. Report the exact installed skill path and MCP configuration path. Explain whether the agent must restart to load either component. Continue this task through the CLI when a restart or hot reload is not practical; the installed global skill and MCP configuration must persist for future sessions.
-6. Verify the setup with cap version --json, cap guide --json, cap auth status --json, and cap caps list --limit 1 --json. If MCP is already loaded, list its Oiaai tools and confirm that passwords and storage credentials are not accepted as MCP inputs. Do not claim MCP is broken merely because the current process needs a restart.
-7. From this point onward, treat Oiaai CLI or MCP as the default interface for Oiaai. Do not browse the Oiaai dashboard to discover whether a CLI or MCP capability exists; inspect cap guide --json and command help first.
+6. Verify the setup with cap version --json, cap guide --json, cap auth status --json, and cap caps list --limit 1 --json. If MCP is already loaded, list its OlhaAí tools and confirm that passwords and storage credentials are not accepted as MCP inputs. Do not claim MCP is broken merely because the current process needs a restart.
+7. From this point onward, treat OlhaAí CLI or MCP as the default interface for OlhaAí. Do not browse the OlhaAí dashboard to discover whether a CLI or MCP capability exists; inspect cap guide --json and command help first.
 
-Use Oiaai as an ongoing helper. Learn the complete surface from the installed guide and skill, including:
+Use OlhaAí as an ongoing helper. Learn the complete surface from the installed guide and skill, including:
 - Recording: check cap doctor --json, discover inputs with cap targets --json, ask before capture, use the detached cap record start and cap record stop lifecycle, require recordingMetaExists: true, validate the .cap project, export it, ask again before upload, and return the verified share link.
 - Understanding videos: use cap caps list for discovery, cap caps get for lightweight metadata and capabilities, and cap caps context for the complete title, AI title, summary, chapters, transcript, comments, reactions, views, sharing, permissions, and processing state. Cite useful transcript timestamps.
 - Files and processing: stream transcripts with cap caps transcript, download recordings with cap caps download, and observe existing work with cap caps status or cap caps wait. Never claim that a read or wait started transcription or AI work.
@@ -43,9 +43,9 @@ Use Oiaai as an ongoing helper. Learn the complete surface from the installed gu
 
 Operating rules:
 - The local CLI, skill, and MCP bootstrap above is already approved by this prompt. After setup, start with read-only discovery. Before any mutation, upload, paid processing, recording, comment or reaction, sharing or visibility change, deletion, organization, billing, storage, developer, or credential action, show me the exact proposed action and wait for my explicit confirmation. Pass --yes or confirmed=true only after I confirm.
-- Never ask me to paste passwords, CAP_AGENT_TOKEN, API keys, S3 credentials, or newly issued developer secrets into chat or MCP. Ask me to run the exact secure Oiaai command in my terminal. For a password-protected Oiaai, ask me to run cap caps unlock <id-or-url>.
+- Never ask me to paste passwords, CAP_AGENT_TOKEN, API keys, S3 credentials, or newly issued developer secrets into chat or MCP. Ask me to run the exact secure OlhaAí command in my terminal. For a password-protected OlhaAí, ask me to run cap caps unlock <id-or-url>.
 - Preserve returned recording, organization, folder, space, member, comment, and operation IDs. Never infer IDs from names or invent results.
 - Wait for asynchronous operations with cap jobs wait and verify the affected resource before reporting success. Clearly separate what you verified from reasonable interpretation and anything you could not verify.
-- Be proactive after setup: briefly report what is connected, suggest useful Oiaai workflows for my situation, and use existing Oiaai context before asking questions the library can answer.
+- Be proactive after setup: briefly report what is connected, suggest useful OlhaAí workflows for my situation, and use existing OlhaAí context before asking questions the library can answer.
 
-My task: Complete the persistent Oiaai setup now, tell me exactly what is installed and what needs a restart, tell me what you can help me do through Oiaai, and ask which Oiaai task I want to start with.`;
+My task: Complete the persistent OlhaAí setup now, tell me exactly what is installed and what needs a restart, tell me what you can help me do through OlhaAí, and ask which OlhaAí task I want to start with.`;

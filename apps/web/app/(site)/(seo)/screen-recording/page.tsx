@@ -12,24 +12,24 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Screen Recording — Free HD Capture, Instant Sharing | Oiaai",
+	title: "Screen Recording — Free HD Capture, Instant Sharing | OlhaAí",
 	description:
-		"Record your screen in HD with audio and webcam overlay, then share instantly with a link. Oiaai is free, open-source screen recording software for Mac and Windows.",
+		"Record your screen in HD with audio and webcam overlay, then share instantly with a link. OlhaAí is free, open-source screen recording software for Mac and Windows.",
 	alternates: {
 		canonical: "https://cap.so/screen-recording",
 	},
 	openGraph: {
-		title: "Screen Recording — Free HD Capture, Instant Sharing | Oiaai",
+		title: "Screen Recording — Free HD Capture, Instant Sharing | OlhaAí",
 		description:
 			"Record your screen in HD with audio and webcam overlay, then share instantly with a link. Free, open-source, available on Mac and Windows.",
 		url: "https://cap.so/screen-recording",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Screen Recording Software",
+				alt: "OlhaAí: Screen Recording Software",
 			},
 		],
 		locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Screen Recording — Free HD Capture, Instant Sharing | Oiaai",
+		title: "Screen Recording — Free HD Capture, Instant Sharing | OlhaAí",
 		description:
 			"Record your screen in HD with audio and webcam overlay, then share instantly with a link. Free, open-source, available on Mac and Windows.",
 		images: [ogImage],

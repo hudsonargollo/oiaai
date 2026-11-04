@@ -228,8 +228,8 @@ export function MoveItemsDialog({
 					{sharing && (
 						<p className="text-sm text-gray-11">
 							People with access to {selectedGroup?.name} will be able to view
-							these recordings. Existing sharing and their location in My Library will be
-							kept.
+							these recordings. Existing sharing and their location in My
+							Library will be kept.
 						</p>
 					)}
 					<div className="relative shrink-0">

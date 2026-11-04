@@ -391,10 +391,10 @@ describe("CapCard", () => {
 		expect(
 			hasProp(tree, "accessibilityLabel", "More actions for Launch review"),
 		).toBe(true);
-		expect(hasProp(tree, "accessibilityHint", "Opens Oiaai actions")).toBe(true);
+		expect(hasProp(tree, "accessibilityHint", "Opens OlhaAí actions")).toBe(true);
 	});
 
-	it("uses the Oiaai web neutral button surface for card actions", async () => {
+	it("uses the OlhaAí web neutral button surface for card actions", async () => {
 		const renderer = await renderComponent(
 			React.createElement(CapCard, {
 				cap,

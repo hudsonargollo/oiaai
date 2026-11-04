@@ -111,10 +111,10 @@ export const CliApiKeys = ({
 		<Card className="flex flex-col gap-4 mt-6">
 			<div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 				<div className="space-y-1">
-					<CardTitle>Oiaai CLI access</CardTitle>
+					<CardTitle>OlhaAí CLI access</CardTitle>
 					<CardDescription>
-						API keys authenticate the Oiaai CLI in environments without a browser,
-						such as CI runners and remote sandboxes. Keys created by{" "}
+						API keys authenticate the OlhaAí CLI in environments without a
+						browser, such as CI runners and remote sandboxes. Keys created by{" "}
 						<code>cap auth login</code> also appear here.
 					</CardDescription>
 				</div>
@@ -253,7 +253,7 @@ export const CliApiKeys = ({
 				<DialogContent>
 					<DialogHeader
 						icon={<KeyRound className="size-4" />}
-						description="Oiaai stores only a hash of this key, so it cannot be shown again."
+						description="OlhaAí stores only a hash of this key, so it cannot be shown again."
 					>
 						<DialogTitle>Copy your API key</DialogTitle>
 					</DialogHeader>
@@ -263,8 +263,8 @@ export const CliApiKeys = ({
 						)}
 						<p className="text-sm text-gray-11">
 							Set it as <code>CAP_API_KEY</code> (or{" "}
-							<code>CAP_AGENT_TOKEN</code>) in the environment where the Oiaai CLI
-							runs, then verify with <code>cap auth status --json</code>.
+							<code>CAP_AGENT_TOKEN</code>) in the environment where the OlhaAí
+							CLI runs, then verify with <code>cap auth status --json</code>.
 						</p>
 					</div>
 					<DialogFooter>

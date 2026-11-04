@@ -3,9 +3,9 @@ import { PRICING } from "@/data/pricing";
 
 export const homepageSeo = {
 	url: "https://cap.so/",
-	title: "Oiaai — Free Screen Recorder & Open Source Loom Alternative",
+	title: "OlhaAí — Free Screen Recorder & Open Source Loom Alternative",
 	description:
-		"Oiaai is the free, open source screen recorder for Mac, Windows, and Linux. Record, edit, take screenshots, and share videos with a link.",
+		"OlhaAí is the free, open source screen recorder for Mac, Windows, and Linux. Record, edit, take screenshots, and share videos with a link.",
 } as const;
 
 export const homepageSchema = {
@@ -14,7 +14,7 @@ export const homepageSchema = {
 		{
 			"@type": "Organization",
 			"@id": "https://cap.so/#organization",
-			name: "Oiaai",
+			name: "OlhaAí",
 			url: homepageSeo.url,
 			logo: {
 				"@type": "ImageObject",
@@ -36,7 +36,7 @@ export const homepageSchema = {
 		{
 			"@type": "WebSite",
 			"@id": "https://cap.so/#website",
-			name: "Oiaai",
+			name: "OlhaAí",
 			url: homepageSeo.url,
 			publisher: { "@id": "https://cap.so/#organization" },
 			inLanguage: "en",
@@ -54,7 +54,7 @@ export const homepageSchema = {
 		{
 			"@type": "SoftwareApplication",
 			"@id": "https://cap.so/#software",
-			name: "Oiaai",
+			name: "OlhaAí",
 			url: homepageSeo.url,
 			description: homepageSeo.description,
 			applicationCategory: "MultimediaApplication",
@@ -88,7 +88,7 @@ export const homepageSchema = {
 			offers: [
 				{
 					"@type": "Offer",
-					name: "Oiaai Free",
+					name: "OlhaAí Free",
 					price: 0,
 					priceCurrency: "USD",
 					url: "https://cap.so/download",
@@ -104,7 +104,7 @@ export const homepageSchema = {
 				},
 				{
 					"@type": "Offer",
-					name: "Oiaai Pro",
+					name: "OlhaAí Pro",
 					price: PRICING.pro.monthly,
 					priceCurrency: "USD",
 					url: "https://cap.so/pricing",

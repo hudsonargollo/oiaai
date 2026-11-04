@@ -54,7 +54,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "ask",
-				text: "Recorded 0:20 and validated the project. Upload it to Oiaai as “Checkout bug repro”?",
+				text: "Recorded 0:20 and validated the project. Upload it to OlhaAí as “Checkout bug repro”?",
 				reply: "Yes, upload it",
 			},
 			{
@@ -218,7 +218,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Moved and verified. The Oiaai now sits in Product / Releases.",
+				text: "Moved and verified. The OlhaAí now sits in Product / Releases.",
 			},
 		],
 	},
@@ -255,7 +255,7 @@ const TASKS: readonly Task[] = [
 			},
 			{
 				type: "result",
-				text: "Imported and verified. The Oiaai has its title, a transcript, and chapters.",
+				text: "Imported and verified. The OlhaAí has its title, a transcript, and chapters.",
 				card: {
 					kind: "link",
 					title: "Q3 roadmap walkthrough",

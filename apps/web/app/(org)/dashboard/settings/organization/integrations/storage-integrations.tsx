@@ -45,7 +45,7 @@ const s3ProviderOptions = [
 ];
 
 const proRequiredMessage =
-	"Oiaai Pro is required to manage organization integrations";
+	"OlhaAí Pro is required to manage organization integrations";
 
 const getOrganizationId = (settings: OrganizationStorageSettings) =>
 	settings.organization.id as Organisation.OrganisationId;
@@ -746,8 +746,8 @@ export function OrganizationStorageIntegrations({
 						) : (
 							<div className="flex items-center justify-between gap-3">
 								<p className="text-[12px] text-gray-10">
-									Link your Google account to store uploads in a "Oiaai" folder in
-									your Drive. You can change the location after connecting.
+									Link your Google account to store uploads in a "OlhaAí" folder
+									in your Drive. You can change the location after connecting.
 								</p>
 								<Button
 									type="button"

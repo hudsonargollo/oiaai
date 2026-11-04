@@ -55,7 +55,7 @@ export async function GET(request: NextRequest) {
 		headers: {
 			"Content-Type": "application/pdf",
 			"Content-Disposition":
-				'attachment; filename="Oiaai-Software-BAA-Signed.pdf"',
+				'attachment; filename="OlhaAí-Software-BAA-Signed.pdf"',
 			"Cache-Control": "private, no-store",
 		},
 	});

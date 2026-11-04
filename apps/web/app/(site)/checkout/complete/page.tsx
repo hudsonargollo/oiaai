@@ -22,7 +22,7 @@ import { type CheckoutSession, checkoutStripe } from "@/lib/checkout/stripe";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-	title: "Checkout | Oiaai",
+	title: "Checkout | OlhaAí",
 	robots: { index: false, follow: false },
 };
 
@@ -92,8 +92,8 @@ export default async function CheckoutCompletePage(props: {
 	const yearly = lineItem?.price?.recurring?.interval === "year";
 	const state = paid
 		? {
-				title: "You're on Oiaai Pro",
-				subtitle: "Thanks for supporting Oiaai. Your workspace is ready.",
+				title: "You're on OlhaAí Pro",
+				subtitle: "Thanks for supporting OlhaAí. Your workspace is ready.",
 			}
 		: session.status === "complete"
 			? {
@@ -111,7 +111,7 @@ export default async function CheckoutCompletePage(props: {
 			subtitle={state.subtitle}
 			summary={
 				<>
-					<PlanHeading tag={paid ? "Paid" : "Oiaai Pro"} />
+					<PlanHeading tag={paid ? "Paid" : "OlhaAí Pro"} />
 					<dl className="mt-6 flex flex-col gap-2.5 border-t border-[#E1E7EE] pt-5 text-[14px]">
 						<div className="flex items-baseline justify-between gap-4">
 							<dt className="text-[rgba(17,17,17,0.66)]">Seats</dt>
@@ -146,7 +146,7 @@ export default async function CheckoutCompletePage(props: {
 							</h2>
 							<p className="mt-2.5 text-[15px] leading-[1.5] text-[rgba(17,17,17,0.66)]">
 								{email
-									? `Your Oiaai account uses ${email}. Sign in with it to start recording and sharing.`
+									? `Your OlhaAí account uses ${email}. Sign in with it to start recording and sharing.`
 									: "Sign in with the email you paid with to start recording and sharing."}
 							</p>
 						</div>
@@ -160,18 +160,18 @@ export default async function CheckoutCompletePage(props: {
 								href={loginHref}
 								className={classNames(BTN_PRIMARY, "w-full")}
 							>
-								Sign in to Oiaai
+								Sign in to OlhaAí
 							</Link>
 						)}
 					</>
 				) : session.status === "complete" ? (
 					<div>
 						<h2 className="text-[22px] font-normal leading-[1.1] tracking-[-0.02em]">
-							We'll switch Oiaai Pro on automatically
+							We'll switch OlhaAí Pro on automatically
 						</h2>
 						<p className="mt-2.5 text-[15px] leading-[1.5] text-[rgba(17,17,17,0.66)]">
-							As soon as the payment clears, Oiaai Pro turns on and Stripe sends
-							the receipt to {email ?? "your email"}.
+							As soon as the payment clears, OlhaAí Pro turns on and Stripe
+							sends the receipt to {email ?? "your email"}.
 						</p>
 					</div>
 				) : (

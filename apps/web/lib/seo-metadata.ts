@@ -3,9 +3,9 @@ import { ogImageUrl } from "@/lib/og/url";
 export const seoMetadata = {
 	"best-screen-recorder": {
 		title:
-			"Best Screen Recorder in 2026 — Free, No Watermark, 4K Quality | Oiaai",
+			"Best Screen Recorder in 2026 — Free, No Watermark, 4K Quality | OlhaAí",
 		description:
-			"Oiaai is the best screen recorder for Mac and Windows. Record in 4K with audio and webcam overlay, then share instantly. 100% free with no watermarks, no time limits in Studio Mode.",
+			"OlhaAí is the best screen recorder for Mac and Windows. Record in 4K with audio and webcam overlay, then share instantly. 100% free with no watermarks, no time limits in Studio Mode.",
 		keywords: [
 			"best screen recorder",
 			"best free screen recorder",
@@ -20,9 +20,9 @@ export const seoMetadata = {
 		}),
 	},
 	"screen-recorder": {
-		title: "Screen Recorder | Oiaai - Beautiful Screen Recording Software",
+		title: "Screen Recorder | OlhaAí - Beautiful Screen Recording Software",
 		description:
-			"Oiaai is a powerful, user-friendly screen recorder that offers high-quality recordings completely free. Perfect for creating tutorials, capturing gameplay, or recording professional presentations.",
+			"OlhaAí is a powerful, user-friendly screen recorder that offers high-quality recordings completely free. Perfect for creating tutorials, capturing gameplay, or recording professional presentations.",
 		keywords: [
 			"screen recorder",
 			"screen recording",
@@ -35,9 +35,9 @@ export const seoMetadata = {
 		}),
 	},
 	"screen-recorder-mac": {
-		title: "Screen Record on Mac | Oiaai - Best Screen Recorder for macOS",
+		title: "Screen Record on Mac | OlhaAí - Best Screen Recorder for macOS",
 		description:
-			"Oiaai is a powerful, user-friendly screen recorder for Mac, offering high-quality video capture with seamless functionality. Perfect for creating tutorials, presentations, and educational content on macOS.",
+			"OlhaAí is a powerful, user-friendly screen recorder for Mac, offering high-quality video capture with seamless functionality. Perfect for creating tutorials, presentations, and educational content on macOS.",
 		keywords: [
 			"mac screen recorder",
 			"screen recording mac",
@@ -50,9 +50,9 @@ export const seoMetadata = {
 		}),
 	},
 	"screen-recorder-windows": {
-		title: "Best Free Screen Recorder for Windows 10 & 11 | Oiaai",
+		title: "Best Free Screen Recorder for Windows 10 & 11 | OlhaAí",
 		description:
-			"Record your screen on Windows with Oiaai — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+			"Record your screen on Windows with OlhaAí — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 		keywords: [
 			"screen record windows",
 			"screen recorder windows",
@@ -69,9 +69,9 @@ export const seoMetadata = {
 		}),
 	},
 	"free-screen-recorder": {
-		title: "Free Screen Recorder | Oiaai - High-Quality Recording at No Cost",
+		title: "Free Screen Recorder | OlhaAí - High-Quality Recording at No Cost",
 		description:
-			"Oiaai offers a top-rated, free screen recorder with high-quality video capture, making it perfect for creating tutorials, educational content, and professional demos without any hidden fees.",
+			"OlhaAí offers a top-rated, free screen recorder with high-quality video capture, making it perfect for creating tutorials, educational content, and professional demos without any hidden fees.",
 		keywords: [
 			"free screen recorder",
 			"screen recording free",
@@ -84,9 +84,9 @@ export const seoMetadata = {
 		}),
 	},
 	"screen-recording": {
-		title: "Screen Recording — Free HD Capture, Instant Sharing | Oiaai",
+		title: "Screen Recording — Free HD Capture, Instant Sharing | OlhaAí",
 		description:
-			"Record your screen in HD with audio and webcam overlay, then share instantly with a link. Oiaai is free, open-source screen recording software for Mac and Windows.",
+			"Record your screen in HD with audio and webcam overlay, then share instantly with a link. OlhaAí is free, open-source screen recording software for Mac and Windows.",
 		keywords: [
 			"screen recording",
 			"screen record",
@@ -100,9 +100,10 @@ export const seoMetadata = {
 		}),
 	},
 	"screen-recording-software": {
-		title: "Screen Recording Software | Oiaai - Professional Video Capture Tool",
+		title:
+			"Screen Recording Software | OlhaAí - Professional Video Capture Tool",
 		description:
-			"Oiaai is an all-in-one screen recording software offering high-quality video capture with an intuitive interface. Ideal for creating tutorials, presentations, and educational content.",
+			"OlhaAí is an all-in-one screen recording software offering high-quality video capture with an intuitive interface. Ideal for creating tutorials, presentations, and educational content.",
 		keywords: [
 			"screen recording software",
 			"video capture software",
@@ -133,9 +134,9 @@ export const seoMetadata = {
 	},
 	"loom-alternative": {
 		title:
-			"The Ultimate Loom Alternative: Why Oiaai is the Best Open-Source Screen Recorder",
+			"The Ultimate Loom Alternative: Why OlhaAí is the Best Open-Source Screen Recorder",
 		description:
-			"Looking for the best Loom alternative? Discover Oiaai, the open-source, privacy-focused screen recorder for Mac & Windows with a built-in Loom video importer. See why users are switching today!",
+			"Looking for the best Loom alternative? Discover OlhaAí, the open-source, privacy-focused screen recorder for Mac & Windows with a built-in Loom video importer. See why users are switching today!",
 		keywords: [
 			"loom alternative",
 			"best loom alternative",
@@ -152,7 +153,7 @@ export const seoMetadata = {
 		title:
 			"Remote Team Collaboration Software: Asynchronous Screen Recording for Distributed Teams",
 		description:
-			"Enhance your remote team collaboration with Oiaai's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
+			"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
 		keywords: [
 			"remote team collaboration",
 			"async screen recording",
@@ -166,9 +167,10 @@ export const seoMetadata = {
 		}),
 	},
 	"solutions/agencies": {
-		title: "Oiaai for Agencies — Faster Client Updates with Instant Video Links",
+		title:
+			"OlhaAí for Agencies — Faster Client Updates with Instant Video Links",
 		description:
-			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Oiaai for Agencies on macOS & Windows.",
+			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. OlhaAí for Agencies on macOS & Windows.",
 		keywords: [
 			"screen recorder for agencies",
 			"client video updates",
@@ -176,14 +178,14 @@ export const seoMetadata = {
 			"client communication tool",
 		],
 		ogImage: ogImageUrl({
-			title: "Oiaai for agencies",
+			title: "OlhaAí for agencies",
 			tag: "Solutions",
 		}),
 	},
 	"solutions/daily-standup-software": {
-		title: "Daily Standup Software: Streamline Your Agile Meetings with Oiaai",
+		title: "Daily Standup Software: Streamline Your Agile Meetings with OlhaAí",
 		description:
-			"Looking for daily standup software? Discover how Oiaai helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
+			"Looking for daily standup software? Discover how OlhaAí helps remote or hybrid teams run async standups efficiently—no more timezone conflicts!",
 		keywords: [
 			"daily standup software",
 			"async standup",
@@ -197,9 +199,9 @@ export const seoMetadata = {
 	},
 	"solutions/employee-onboarding-platform": {
 		title:
-			"Employee Onboarding Platform: Streamline New-Hire Training with Oiaai",
+			"Employee Onboarding Platform: Streamline New-Hire Training with OlhaAí",
 		description:
-			"Looking for a powerful employee onboarding platform? Discover how Oiaai's open-source screen recorder and asynchronous features simplify new-hire training.",
+			"Looking for a powerful employee onboarding platform? Discover how OlhaAí's open-source screen recorder and asynchronous features simplify new-hire training.",
 		keywords: [
 			"employee onboarding platform",
 			"onboarding software",
@@ -212,9 +214,9 @@ export const seoMetadata = {
 		}),
 	},
 	"solutions/online-classroom-tools": {
-		title: "Online Classroom Tools: Empower Remote Teaching with Oiaai",
+		title: "Online Classroom Tools: Empower Remote Teaching with OlhaAí",
 		description:
-			"Searching for online classroom tools? Learn how Oiaai's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
+			"Searching for online classroom tools? Learn how OlhaAí's screen recorder helps educators create engaging lessons, manage student feedback, and streamline remote learning.",
 		keywords: [
 			"online classroom tools",
 			"remote teaching",
@@ -227,9 +229,10 @@ export const seoMetadata = {
 		}),
 	},
 	"open-source-screen-recorder": {
-		title: "Open Source Screen Recorder — Free, Private, Self-Hostable | Oiaai",
+		title:
+			"Open Source Screen Recorder — Free, Private, Self-Hostable | OlhaAí",
 		description:
-			"Oiaai is the leading open-source screen recorder for Mac and Windows. Audit the code, self-host your recordings, and own your data. AGPLv3 and MIT crates, 4K quality, no watermarks.",
+			"OlhaAí is the leading open-source screen recorder for Mac and Windows. Audit the code, self-host your recordings, and own your data. AGPLv3 and MIT crates, 4K quality, no watermarks.",
 		keywords: [
 			"open source screen recorder",
 			"open source screen recording",
@@ -244,9 +247,10 @@ export const seoMetadata = {
 		}),
 	},
 	"video-recording-software": {
-		title: "Video Recording Software — Free HD Capture, Instant Sharing | Oiaai",
+		title:
+			"Video Recording Software — Free HD Capture, Instant Sharing | OlhaAí",
 		description:
-			"Oiaai is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
+			"OlhaAí is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 		keywords: [
 			"video recording software",
 			"free video recording software",
@@ -261,9 +265,10 @@ export const seoMetadata = {
 		}),
 	},
 	"mac-screen-recording-with-audio": {
-		title: "Mac Screen Recording with Audio — Capture System Sound & Mic | Oiaai",
+		title:
+			"Mac Screen Recording with Audio — Capture System Sound & Mic | OlhaAí",
 		description:
-			"Record your Mac screen with system audio and microphone using Oiaai. No BlackHole, no plugins required. Free, open-source screen recorder for macOS.",
+			"Record your Mac screen with system audio and microphone using OlhaAí. No BlackHole, no plugins required. Free, open-source screen recorder for macOS.",
 		keywords: [
 			"mac screen recording with audio",
 			"screen recording mac with audio",
@@ -279,9 +284,9 @@ export const seoMetadata = {
 	},
 	"obs-alternative": {
 		title:
-			"OBS Alternative — Easier Screen Recording with Instant Sharing | Oiaai",
+			"OBS Alternative — Easier Screen Recording with Instant Sharing | OlhaAí",
 		description:
-			"Oiaai is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
+			"OlhaAí is the modern OBS alternative for async screen sharing. Record in 4K, get a shareable link in seconds, and collaborate with timestamped comments. No configuration required.",
 		keywords: [
 			"obs alternative",
 			"obs studio alternative",
@@ -297,9 +302,9 @@ export const seoMetadata = {
 	},
 	"hipaa-compliant-screen-recording": {
 		title:
-			"HIPAA-Compliant Screen Recording — Secure Healthcare Recordings | Oiaai",
+			"HIPAA-Compliant Screen Recording — Secure Healthcare Recordings | OlhaAí",
 		description:
-			"Oiaai is a HIPAA-compliant screen recorder for healthcare teams. Signed BAAs, SOC 2 Type II and ISO 27001 certified, plus self-hosting to keep PHI on your own storage.",
+			"OlhaAí is a HIPAA-compliant screen recorder for healthcare teams. Signed BAAs, SOC 2 Type II and ISO 27001 certified, plus self-hosting to keep PHI on your own storage.",
 		keywords: [
 			"hipaa compliant screen recording",
 			"hipaa screen recorder",
@@ -315,9 +320,9 @@ export const seoMetadata = {
 	},
 	"self-hosted-screen-recording": {
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Oiaai",
+			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | OlhaAí",
 		description:
-			"Oiaai lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source with most code under AGPLv3, free to use.",
+			"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source with most code under AGPLv3, free to use.",
 		keywords: [
 			"self hosted screen recording",
 			"self hosted screen recorder",
@@ -332,9 +337,10 @@ export const seoMetadata = {
 		}),
 	},
 	"async-video-code-reviews": {
-		title: "Async Video Code Reviews — Ship Faster Without the Meetings | Oiaai",
+		title:
+			"Async Video Code Reviews — Ship Faster Without the Meetings | OlhaAí",
 		description:
-			"Record screen walkthroughs of pull requests and share a timestamped link your team watches on their schedule. Oiaai makes async code reviews faster and calendar-free.",
+			"Record screen walkthroughs of pull requests and share a timestamped link your team watches on their schedule. OlhaAí makes async code reviews faster and calendar-free.",
 		keywords: [
 			"async video code reviews",
 			"async code review",
@@ -350,9 +356,9 @@ export const seoMetadata = {
 	},
 	"developer-documentation-videos": {
 		title:
-			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | Oiaai",
+			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | OlhaAí",
 		description:
-			"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. Oiaai is free, open-source, 4K quality, and built for developers.",
+			"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. OlhaAí is free, open-source, 4K quality, and built for developers.",
 		keywords: [
 			"developer documentation videos",
 			"api demo video",

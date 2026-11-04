@@ -30,7 +30,7 @@ export const isLoomShareUrl = (value: string) => {
 const importErrorMessage = (error: unknown) => {
 	if (error instanceof MobileApiError) {
 		if (error.status === 403) {
-			return "Loom import is available on Oiaai Pro. Your current plan does not include this feature.";
+			return "Loom import is available on OlhaAí Pro. Your current plan does not include this feature.";
 		}
 		if (error.status === 400) {
 			return "That Loom video could not be imported. It may be private, already imported, or temporarily unavailable.";
@@ -108,9 +108,9 @@ export default function LoomImportScreen() {
 					<View style={styles.icon}>
 						<SymbolView name="arrow.down.doc" size={28} tintColor="#625DF5" />
 					</View>
-					<Text style={styles.title}>Bring a Loom video into Oiaai</Text>
+					<Text style={styles.title}>Bring a Loom video into OlhaAí</Text>
 					<Text style={styles.subtitle}>
-						Paste a public Loom share link. The transfer continues on Oiaai’s
+						Paste a public Loom share link. The transfer continues on OlhaAí’s
 						servers, so the video never downloads to your phone.
 					</Text>
 				</View>
@@ -186,7 +186,7 @@ export default function LoomImportScreen() {
 					style={styles.importButton}
 					variant="blue"
 				/>
-				<Text style={styles.proNote}>Loom import requires Oiaai Pro.</Text>
+				<Text style={styles.proNote}>Loom import requires OlhaAí Pro.</Text>
 			</Screen>
 		</>
 	);

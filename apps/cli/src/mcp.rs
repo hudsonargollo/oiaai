@@ -843,7 +843,7 @@ impl CapMcpServer {
                     });
                 }
                 Some("queued" | "running") => {}
-                _ => return Err(Self::invalid("Oiaai returned an invalid operation state")),
+                _ => return Err(Self::invalid("OlhaAí returned an invalid operation state")),
             }
             if tokio::time::Instant::now() >= deadline {
                 return Err(AgentApiError {
@@ -1171,7 +1171,7 @@ impl CapMcpServer {
 
     #[tool(
         name = "account_get",
-        description = "Get the authenticated Oiaai account and explicit account capabilities",
+        description = "Get the authenticated OlhaAí account and explicit account capabilities",
         annotations(
             read_only_hint = true,
             destructive_hint = false,
@@ -1198,7 +1198,7 @@ impl CapMcpServer {
         Parameters(input): Parameters<AccountReferralsInput>,
     ) -> CallToolResult {
         if let Some(result) =
-            Self::require_confirmation(input.confirmed, "open the Oiaai referral portal")
+            Self::require_confirmation(input.confirmed, "open the OlhaAí referral portal")
         {
             return result;
         }
@@ -1350,7 +1350,7 @@ impl CapMcpServer {
 
     #[tool(
         name = "organization_billing_checkout",
-        description = "Create an Oiaai Pro checkout URL after explicit user confirmation; the user completes payment in a browser",
+        description = "Create an OlhaAí Pro checkout URL after explicit user confirmation; the user completes payment in a browser",
         annotations(
             read_only_hint = false,
             destructive_hint = false,
@@ -1363,7 +1363,7 @@ impl CapMcpServer {
         Parameters(input): Parameters<OrganizationBillingCheckoutInput>,
     ) -> CallToolResult {
         if let Some(result) =
-            Self::require_confirmation(input.confirmed, "create an Oiaai Pro checkout")
+            Self::require_confirmation(input.confirmed, "create an OlhaAí Pro checkout")
         {
             return result;
         }
@@ -1405,7 +1405,7 @@ impl CapMcpServer {
         Parameters(input): Parameters<OrganizationActionInput>,
     ) -> CallToolResult {
         if let Some(result) =
-            Self::require_confirmation(input.confirmed, "open the Oiaai billing portal")
+            Self::require_confirmation(input.confirmed, "open the OlhaAí billing portal")
         {
             return result;
         }

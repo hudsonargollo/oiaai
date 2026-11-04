@@ -1,20 +1,20 @@
 ---
 title: "Set Up Your Agent"
-summary: "Install Oiaai, authenticate with least privilege, and connect your preferred agent"
+summary: "Install OlhaAí, authenticate with least privilege, and connect your preferred agent"
 tags: "Agents"
 ---
 
-> **Agent-readable page:** You can send this URL to your agent. Pasting the setup prompt authorizes the official CLI install and the Oiaai skill and MCP configuration for the current agent only. It should perform those local setup steps itself, preserve unrelated configuration, and stop for you only when a browser or secure terminal handoff is required.
+> **Agent-readable page:** You can send this URL to your agent. Pasting the setup prompt authorizes the official CLI install and the OlhaAí skill and MCP configuration for the current agent only. It should perform those local setup steps itself, preserve unrelated configuration, and stop for you only when a browser or secure terminal handoff is required.
 
 <CopyablePrompt />
 
 The prompt above performs the setup itself. You should not need to copy an installer command or approve the same local setup twice. It installs the persistent skill and MCP configuration before starting browser login, so a delayed login does not leave the agent unconfigured. The rest of this page documents the underlying steps for manual installation and troubleshooting.
 
-## Install the Oiaai CLI
+## Install the OlhaAí CLI
 
-The CLI ships with Oiaai Desktop, so both stay on the same version.
+The CLI ships with OlhaAí Desktop, so both stay on the same version.
 
-### From Oiaai Desktop
+### From OlhaAí Desktop
 
 Open **Settings → Command Line → Install CLI**.
 
@@ -30,7 +30,7 @@ curl -fsSL https://cap.so/install-cli.sh | sh
 irm https://cap.so/install-cli.ps1 | iex
 ```
 
-The installer adds `cap` to your PATH and installs Oiaai Desktop when it is missing. Open a new terminal after installation, then verify the binary:
+The installer adds `cap` to your PATH and installs OlhaAí Desktop when it is missing. Open a new terminal after installation, then verify the binary:
 
 ```sh
 cap version --json
@@ -45,7 +45,7 @@ First inspect the current state:
 cap auth status --json
 ```
 
-If authentication is required, authorize Oiaai in your browser:
+If authentication is required, authorize OlhaAí in your browser:
 
 ```sh
 cap auth login --json
@@ -64,15 +64,15 @@ cap auth login --profile admin --json
 cap auth login --profile full --json
 ```
 
-Oiaai CLI credentials are stored by the operating system when available. For machines without a browser, see [Headless environments](#headless-environments-ci-containers-and-remote-sandboxes) below.
+OlhaAí CLI credentials are stored by the operating system when available. For machines without a browser, see [Headless environments](#headless-environments-ci-containers-and-remote-sandboxes) below.
 
 ## Headless environments (CI, containers, and remote sandboxes)
 
-`cap auth login` opens a browser on the same machine, so it does not work on headless runners. Mint an API key from the Oiaai dashboard instead:
+`cap auth login` opens a browser on the same machine, so it does not work on headless runners. Mint an API key from the OlhaAí dashboard instead:
 
-1. Open [Settings, then Account](https://cap.so/dashboard/settings/account) in the Oiaai dashboard and find **Oiaai CLI access**.
+1. Open [Settings, then Account](https://cap.so/dashboard/settings/account) in the OlhaAí dashboard and find **OlhaAí CLI access**.
 2. Choose **Create API key**, then pick a name, an access profile (`creator`, `admin`, or `full`, the same profiles as `cap auth login`), and an expiry.
-3. Copy the key when it is shown. Oiaai stores only a hash, so it cannot be displayed again.
+3. Copy the key when it is shown. OlhaAí stores only a hash, so it cannot be displayed again.
 4. Inject the key into the headless environment as `CAP_API_KEY` or `CAP_AGENT_TOKEN` (both are honored), then verify:
 
 ```sh
@@ -86,7 +86,7 @@ Follow least privilege here as well: prefer the `creator` profile and the shorte
 
 ## Codex
 
-Preview exactly what Oiaai will change:
+Preview exactly what OlhaAí will change:
 
 ```sh
 cap agents install --target codex --component all --dry-run --json
@@ -98,7 +98,7 @@ When using the copied setup prompt, the agent inspects the paths and values and 
 cap agents install --target codex --component all --yes --json
 ```
 
-This installs the Oiaai skill and adds a local `cap mcp serve` entry to Codex's configuration. Restart Codex so it reloads the integration.
+This installs the OlhaAí skill and adds a local `cap mcp serve` entry to Codex's configuration. Restart Codex so it reloads the integration.
 
 ## Claude Code
 
@@ -120,9 +120,9 @@ The copied setup prompt treats the preview as a conflict check and applies it wi
 
 ## OpenCode
 
-OpenCode can use Oiaai immediately through its shell tools: paste the [agent prompt](/docs/agents#the-fastest-way-to-start) and let it call `cap guide --json`.
+OpenCode can use OlhaAí immediately through its shell tools: paste the [agent prompt](/docs/agents#the-fastest-way-to-start) and let it call `cap guide --json`.
 
-To use Oiaai as a local MCP server too, merge this entry into your `opencode.json` configuration:
+To use OlhaAí as a local MCP server too, merge this entry into your `opencode.json` configuration:
 
 ```json
 {
@@ -175,10 +175,10 @@ A correct setup has:
 
 - valid JSON on stdout;
 - a successful authenticated status before account-backed work;
-- either an Oiaai result or an empty list from the library check, not a guessed answer;
+- either an OlhaAí result or an empty list from the library check, not a guessed answer;
 - no secret value printed by `cap auth status`;
 - no changes made during verification.
 
-If MCP is installed, also ask the agent to list the available Oiaai tools. It should find read tools such as `caps_list` and `caps_context`. Passwords and storage credentials should not appear as MCP inputs.
+If MCP is installed, also ask the agent to list the available OlhaAí tools. It should find read tools such as `caps_list` and `caps_context`. Passwords and storage credentials should not appear as MCP inputs.
 
 Continue with [Agent Workflows](/docs/agents/workflows).

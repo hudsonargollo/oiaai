@@ -1,5 +1,5 @@
 ---
-title: Oiaai v0.6 is here
+title: OlhaAí v0.6 is here
 description: A redesigned editor, 3D scenes for beautiful demo videos in minutes, animated text, moving backgrounds, Studio Sound, camera cutouts, faster exports, a sturdier recorder, and a first look at the new native GPUI app.
 publishedAt: "2026-09-15"
 category: Release
@@ -10,11 +10,11 @@ tags: News, Updates, Release
 
 Hey everyone,
 
-Oiaai v0.6 is here. It is the biggest release we have ever shipped, and it is the one that finally makes Oiaai feel like a real video editor, not just a really good screen recorder.
+OlhaAí v0.6 is here. It is the biggest release we have ever shipped, and it is the one that finally makes OlhaAí feel like a real video editor, not just a really good screen recorder.
 
 Here is the release video.
 
-<CapEmbed id="0d5cwrje4tf7h8r" title="Oiaai v0.6 release video" />
+<CapEmbed id="0d5cwrje4tf7h8r" title="OlhaAí v0.6 release video" />
 
 There is a lot in this release, so this post sticks to the things that matter most. The [full changelog](/changelog/desktop) has everything.
 
@@ -32,11 +32,11 @@ We also added the thing people asked for most: you can now record straight into 
 
 Every recording now has a 3D track.
 
-Pick an automatic scene and Oiaai will lay out camera shots across your clip with perspective, easing, and focus blur, previewed right on the timeline. Or build your own: click to add a shot, drag the camera where you want it, and shape the move with the orbit controls.
+Pick an automatic scene and OlhaAí will lay out camera shots across your clip with perspective, easing, and focus blur, previewed right on the timeline. Or build your own: click to add a shot, drag the camera where you want it, and shape the move with the orbit controls.
 
 This is the feature that changes what a recording looks like. A flat screen recording becomes something with depth, and it takes a couple of clicks.
 
-It also means you can make a beautiful product demo without leaving Oiaai. Record your screen, pick a scene, add a moving background and a title, and export. What used to take an afternoon in a motion tool now takes a few minutes, and the result looks like it came from a design team.
+It also means you can make a beautiful product demo without leaving OlhaAí. Record your screen, pick a scene, add a moving background and a title, and export. What used to take an afternoon in a motion tool now takes a few minutes, and the result looks like it came from a design team.
 
 ## Animated text and full-screen cards
 
@@ -79,8 +79,8 @@ Exporting is faster in v0.6, and the export screen now shows measured estimates 
 
 Like every release, a lot of the work went into the parts you should never have to think about.
 
-- **Recording recovery** - Oiaai recovers complete fragments after an interruption and keeps your footage through a failed save.
-- **Low storage** - Oiaai warns you before you run out of disk space and leaves room to finish the recording. Exports are guarded against low disk and low memory too.
+- **Recording recovery** - OlhaAí recovers complete fragments after an interruption and keeps your footage through a failed save.
+- **Low storage** - OlhaAí warns you before you run out of disk space and leaves room to finish the recording. Exports are guarded against low disk and low memory too.
 - **Devices** - Your selected microphone and camera come back after a reconnection, and camera placement stays where you put it.
 - **Recording start** - Capture begins the moment the start sound ends, so the first thing you say is always in the recording.
 - **Edits stay aligned** - Captions, keyboard overlays, zooms, titles, and cursors stay in place after cuts and through export.
@@ -90,9 +90,9 @@ There are also plenty of macOS and Windows fixes in the changelog: picker freeze
 
 ## A first look at the new native app
 
-v0.6 ships with something we have been quietly building for a little while: a new version of Oiaai written entirely in Rust, on top of GPUI, the UI framework behind the Zed editor.
+v0.6 ships with something we have been quietly building for a little while: a new version of OlhaAí written entirely in Rust, on top of GPUI, the UI framework behind the Zed editor.
 
-We are going to write a separate post about it, because it deserves one. The short version is that Oiaai has always rendered its interface in a webview. That has served us well, but there is a ceiling to how fast an editor can feel when the UI and the video pipeline live in two different worlds. The native app removes that ceiling. The window, the timeline, and the preview are all drawn by the same GPU-backed renderer that plays your video.
+We are going to write a separate post about it, because it deserves one. The short version is that OlhaAí has always rendered its interface in a webview. That has served us well, but there is a ceiling to how fast an editor can feel when the UI and the video pipeline live in two different worlds. The native app removes that ceiling. The window, the timeline, and the preview are all drawn by the same GPU-backed renderer that plays your video.
 
 You can feel the difference immediately, and you can measure it. On the same machine, playing back the same recording:
 
@@ -103,9 +103,9 @@ Playback holds a steady 60 frames per second, scrubbing keeps up with you, and t
 
 It is an optional preview for now. Turn it on in **Settings > Experimental**, and your recordings and settings carry over. Some editor features have not made it across yet, and you can switch back at any time while we finish them. The full story of how we built it is coming in its own post soon.
 
-## Try Oiaai v0.6
+## Try OlhaAí v0.6
 
-You can download Oiaai v0.6 at [Cap.so/download](https://cap.so/download), and if you already have Oiaai installed, it will update on its own.
+You can download OlhaAí v0.6 at [Cap.so/download](https://cap.so/download), and if you already have OlhaAí installed, it will update on its own.
 
 We are onboarding bigger teams every week. If you are moving from Loom, our [importer](/migrate-from-loom) brings your whole library across, and we can help with larger migrations at [hello@cap.so](mailto:hello@cap.so).
 
@@ -115,4 +115,4 @@ There is a lot more coming.
 
 Richie McIlroy
 
-Founder of Oiaai
+Founder of OlhaAí

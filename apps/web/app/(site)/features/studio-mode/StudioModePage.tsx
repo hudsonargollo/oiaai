@@ -12,7 +12,7 @@ const studioModeConfig: FeaturePageConfig = {
 			subtitle: "Professional screen recording for creators",
 			description:
 				"Local recording with studio-quality output and precision editing tools. Perfect for content creators, educators, and professionals who need the highest quality recordings.",
-			primaryCta: "Download Oiaai Free",
+			primaryCta: "Download OlhaAí Free",
 			secondaryCta: "Watch Demo",
 			features: [
 				"4K 60fps recording",
@@ -254,12 +254,12 @@ const studioModeConfig: FeaturePageConfig = {
 				{
 					question: "Is Studio Mode available on both Mac and Windows?",
 					answer:
-						"Yes, Studio Mode is available as part of the Oiaai desktop application for both macOS (Intel and Apple Silicon) and Windows.",
+						"Yes, Studio Mode is available as part of the OlhaAí desktop application for both macOS (Intel and Apple Silicon) and Windows.",
 				},
 				{
 					question: "How does pricing work for Studio Mode?",
 					answer:
-						"Studio Mode is completely free for personal usage. For commercial usage, you need the Desktop License, which is included with Oiaai Pro or can be purchased separately.",
+						"Studio Mode is completely free for personal usage. For commercial usage, you need the Desktop License, which is included with OlhaAí Pro or can be purchased separately.",
 				},
 			],
 		},
@@ -267,15 +267,15 @@ const studioModeConfig: FeaturePageConfig = {
 			title: "See Studio Mode in Action",
 			iframe: {
 				src: "https://cap.so/embed/qk8gt56e1q1r735",
-				title: "Studio Mode Demo - Oiaai Screen Recording",
+				title: "Studio Mode Demo - OlhaAí Screen Recording",
 			},
 		},
 		cta: {
 			title: "Start Creating Professional Content Today",
 			description:
-				"Download Oiaai and experience the power of Studio Mode for yourself. Create stunning, professional-quality recordings that engage your audience.",
-			primaryButton: "Download Oiaai Free",
-			secondaryButton: "Upgrade to Oiaai Pro",
+				"Download OlhaAí and experience the power of Studio Mode for yourself. Create stunning, professional-quality recordings that engage your audience.",
+			primaryButton: "Download OlhaAí Free",
+			secondaryButton: "Upgrade to OlhaAí Pro",
 		},
 	},
 	customSections: {

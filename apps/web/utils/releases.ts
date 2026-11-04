@@ -84,7 +84,7 @@ export async function getGitHubReleases(): Promise<Release[]> {
 		{
 			headers: {
 				Accept: "application/vnd.github.v3+json",
-				"User-Agent": "Oiaai-Web",
+				"User-Agent": "OlhaAí-Web",
 			},
 			next: {
 				revalidate: releasesRevalidateSeconds,

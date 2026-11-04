@@ -214,8 +214,8 @@ export function CapSettingsSheet({
 						</Text>
 					</View>
 					<Pressable
-						accessibilityLabel="Close Oiaai settings"
-						accessibilityHint="Dismisses Oiaai settings"
+						accessibilityLabel="Close OlhaAí settings"
+						accessibilityHint="Dismisses OlhaAí settings"
 						accessibilityRole="button"
 						hitSlop={8}
 						onPress={onClose}
@@ -325,7 +325,7 @@ export function CapSettingsSheet({
 					<SettingsRow
 						accessibilityHint="Deletes this recording"
 						danger
-						label="Delete Oiaai"
+						label="Delete OlhaAí"
 						onPress={() => onDelete(cap)}
 						symbol="trash"
 					/>

@@ -369,18 +369,18 @@ function RecorderPanelOverlay({
 			<button
 				type="button"
 				className="cap-extension-panel-backdrop"
-				aria-label="Dismiss Oiaai recorder"
+				aria-label="Dismiss OlhaAí recorder"
 				onClick={onClose}
 			/>
 			<div
 				className="cap-extension-panel"
 				role="dialog"
-				aria-label="Oiaai recorder"
+				aria-label="OlhaAí recorder"
 				style={{ width: `${PANEL_WIDTH}px`, height: `${height}px` }}
 			>
 				<iframe
 					src={PANEL_SRC}
-					title="Oiaai recorder"
+					title="OlhaAí recorder"
 					allow="camera; microphone; autoplay"
 					className="cap-extension-panel-iframe"
 				/>
@@ -1775,7 +1775,7 @@ function OverlayApp() {
 						<iframe
 							ref={iframeRef}
 							src={PREVIEW_SRC}
-							title="Oiaai camera preview"
+							title="OlhaAí camera preview"
 							allow="camera; microphone; autoplay; picture-in-picture"
 							className="cap-extension-camera-iframe"
 							onLoad={handlePreviewLoad}

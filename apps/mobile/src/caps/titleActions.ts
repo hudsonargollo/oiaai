@@ -26,12 +26,12 @@ const saveTitle = async ({
 
 export const showCapTitleActions = (input: CapTitleActionsInput) => {
 	if (Platform.OS !== "ios") {
-		Alert.alert("Rename Oiaai", "Title editing is available on iOS.");
+		Alert.alert("Rename OlhaAí", "Title editing is available on iOS.");
 		return;
 	}
 
 	Alert.prompt(
-		"Rename Oiaai",
+		"Rename OlhaAí",
 		undefined,
 		[
 			{ text: "Cancel", style: "cancel" },

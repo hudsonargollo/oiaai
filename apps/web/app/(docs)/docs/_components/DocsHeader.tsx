@@ -114,7 +114,7 @@ export function DocsHeader() {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex size-8 items-center justify-center rounded-lg text-gray-11 transition-colors hover:bg-gray-3 hover:text-gray-12"
-						aria-label="Oiaai on GitHub"
+						aria-label="OlhaAí on GitHub"
 					>
 						<svg
 							viewBox="0 0 24 24"

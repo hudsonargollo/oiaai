@@ -13,25 +13,25 @@ const ogImage = ogImageUrl({
 
 export const metadata: Metadata = {
 	title:
-		"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | Oiaai",
+		"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | OlhaAí",
 	description:
-		"Record your Mac screen with audio — system sound and microphone — using Oiaai. Native internal audio capture, no BlackHole and no plugins. Free, open-source, made for macOS.",
+		"Record your Mac screen with audio — system sound and microphone — using OlhaAí. Native internal audio capture, no BlackHole and no plugins. Free, open-source, made for macOS.",
 	alternates: {
 		canonical: "https://cap.so/mac-screen-recording-with-audio",
 	},
 	openGraph: {
 		title:
-			"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | Oiaai",
+			"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | OlhaAí",
 		description:
-			"Record your Mac screen with system audio and microphone using Oiaai. Native internal audio capture — no BlackHole, no plugins. Free and open-source for macOS.",
+			"Record your Mac screen with system audio and microphone using OlhaAí. Native internal audio capture — no BlackHole, no plugins. Free and open-source for macOS.",
 		url: "https://cap.so/mac-screen-recording-with-audio",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Mac screen recorder with internal audio",
+				alt: "OlhaAí: Mac screen recorder with internal audio",
 			},
 		],
 		locale: "en_US",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | Oiaai",
+			"Mac Screen Recording With Audio — Capture Internal System Sound + Mic | OlhaAí",
 		description:
-			"Record your Mac screen with system audio and microphone using Oiaai. Native internal audio capture — no BlackHole, no plugins. Free and open-source for macOS.",
+			"Record your Mac screen with system audio and microphone using OlhaAí. Native internal audio capture — no BlackHole, no plugins. Free and open-source for macOS.",
 		images: [ogImage],
 	},
 };

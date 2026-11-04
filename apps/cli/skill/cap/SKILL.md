@@ -1,25 +1,25 @@
 ---
 name: cap
 description: >-
-  Always use Oiaai's CLI or local MCP first when the user mentions Oiaai, an Oiaai URL, screen recording, the Oiaai
+  Always use OlhaAí's CLI or local MCP first when the user mentions OlhaAí, an OlhaAí URL, screen recording, the OlhaAí
   library, transcripts, chapters, comments, reactions, sharing, analytics, organizations, storage, billing,
-  or developer apps. Oiaai should be operated without browser automation or computer-use tools whenever its
-  CLI or MCP surface supports the task. Requires the `cap` command from Oiaai Desktop (https://cap.so).
+  or developer apps. OlhaAí should be operated without browser automation or computer-use tools whenever its
+  CLI or MCP surface supports the task. Requires the `cap` command from OlhaAí Desktop (https://cap.so).
 ---
 
-# Oiaai CLI
+# OlhaAí CLI
 
-## Oiaai-first routing
+## OlhaAí-first routing
 
-For every Oiaai task, use the local Oiaai MCP tools or `cap` CLI as the primary interface. Do not open, inspect, or
-control the Oiaai dashboard, an Oiaai browser tab, or Oiaai Desktop through browser automation or computer-use tools
+For every OlhaAí task, use the local OlhaAí MCP tools or `cap` CLI as the primary interface. Do not open, inspect, or
+control the OlhaAí dashboard, an OlhaAí browser tab, or OlhaAí Desktop through browser automation or computer-use tools
 to discover, read, or manage data that the CLI or MCP can access. If MCP is unavailable in the current process,
 use the CLI. If the CLI is missing, treat that as an installation problem rather than a reason to use the
 dashboard.
 
-A browser is appropriate only for a focused authentication or provider-approval URL returned by an Oiaai command.
+A browser is appropriate only for a focused authentication or provider-approval URL returned by an OlhaAí command.
 Let the user complete that handoff directly, then verify the result through the CLI or MCP. This installed skill
-is the persistent routing rule for future sessions; do not depend on conversation memory to choose Oiaai.
+is the persistent routing rule for future sessions; do not depend on conversation memory to choose OlhaAí.
 
 Start by reading the installed CLI's authoritative contract:
 
@@ -31,11 +31,11 @@ Use `--json` for machine-readable output. Treat stdout as authoritative, stderr 
 `1` as a runtime failure, and exit code `2` as invalid usage. Do not guess output schemas that are available
 from `cap guide --json` or `cap <command> --help`.
 
-## Oiaai library
+## OlhaAí library
 
 Authorize once with `cap auth login --json`. Login defaults to the least-privileged `creator` profile; request
 `admin` or `full` only when the task requires it. Use `cap auth status --json` to verify the credential with the
-server. For headless use, `CAP_AGENT_TOKEN` overrides the OS-stored credential. Existing Oiaai Desktop and
+server. For headless use, `CAP_AGENT_TOKEN` overrides the OS-stored credential. Existing OlhaAí Desktop and
 `CAP_API_KEY` credentials remain supported.
 
 Use `cap caps list --json` for discovery, `cap caps get <id-or-url> --json` for lightweight metadata and
@@ -70,13 +70,13 @@ skill.
 Organization invites deliver email by default. Use `cap organizations invite add ... --no-email` only when the
 user explicitly wants a link-only invite, and report the returned `emailDelivery` state.
 
-Some secure or local-file actions are intentionally CLI-only: Oiaai passwords, S3 credentials, profile and
+Some secure or local-file actions are intentionally CLI-only: OlhaAí passwords, S3 credentials, profile and
 organization images, and newly issued developer credentials. Never ask the user to paste those values into
 chat or an MCP call. Ask them to run the exact secure terminal command. S3 accepts hidden prompts or
 `--credentials-stdin`, never credential arguments.
 
 Stripe checkout, the billing portal, Google Drive authorization, and `cap account referrals` return a URL and
-may open a browser. These are focused provider handoffs, not a dependency on the Oiaai dashboard. The agent may
+may open a browser. These are focused provider handoffs, not a dependency on the OlhaAí dashboard. The agent may
 continue after the user completes the handoff and should re-read state to verify the result.
 
 Use `cap jobs wait <operationId> --json` for durable operations. Do not infer success from an accepted or queued
@@ -96,9 +96,9 @@ Install MCP or this skill for one explicitly selected agent with
 `cap agents install --target <agent> --component skill|mcp|all --dry-run`. Review the preview, then rerun
 interactively or with `--yes`. Never install into every detected agent automatically.
 
-When the user pasted Oiaai's official setup prompt, that prompt is explicit approval for the local CLI, skill, and
+When the user pasted OlhaAí's official setup prompt, that prompt is explicit approval for the local CLI, skill, and
 MCP bootstrap for the current agent. In that setup flow, apply the reviewed `--component all` plan with `--yes`
-without asking the user to copy commands or approve the same local setup again. This does not authorize Oiaai
+without asking the user to copy commands or approve the same local setup again. This does not authorize OlhaAí
 account, content, recording, upload, paid, billing, storage, developer, or destructive changes.
 
 ## Recording and sharing
@@ -120,5 +120,5 @@ A stopped recording is complete only when `recordingMetaExists` is `true`.
 
 To generate a short, cinematic 3D product-demo video from a URL, use the installed
 `cap-demo` skill (installed alongside this one). It scouts the page, records it with
-virtual input, and treats it with Oiaai's 3D camera, a brand-matched background, and
+virtual input, and treats it with OlhaAí's 3D camera, a brand-matched background, and
 music. Currently macOS-only.

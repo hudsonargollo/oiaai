@@ -178,7 +178,7 @@ export async function sendOrganizationInvites(
 			const inviteUrl = `${serverEnv().WEB_URL}/invite/${record.id}`;
 			return sendEmail({
 				email: record.email,
-				subject: `Invitation to join ${organization.name} on Oiaai`,
+				subject: `Invitation to join ${organization.name} on OlhaAí`,
 				react: OrganizationInvite({
 					email: record.email,
 					url: inviteUrl,

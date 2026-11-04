@@ -180,7 +180,7 @@ const sendMobileEmailCode = async (email: string, code: string) => {
 			throw new Error(emailStatus.reason);
 		}
 		console.log("");
-		console.log("Oiaai mobile verification code (email delivery disabled)");
+		console.log("OlhaAí mobile verification code (email delivery disabled)");
 		console.log(emailStatus.reason);
 		console.log(`Email: ${email}`);
 		console.log(`Code: ${code}`);
@@ -191,7 +191,7 @@ const sendMobileEmailCode = async (email: string, code: string) => {
 
 	const delivery = await sendEmail({
 		email,
-		subject: "Your Oiaai Verification Code",
+		subject: "Your OlhaAí Verification Code",
 		react: OTPEmail({ code, email }),
 	});
 	if (delivery?.error) {
@@ -2629,7 +2629,7 @@ const trackMobileCapView = Effect.fn("Mobile.trackCapView")(function* (
 				country: readHeader(request, "x-vercel-ip-country"),
 				region: readHeader(request, "x-vercel-ip-country-region"),
 				city: readHeader(request, "x-vercel-ip-city"),
-				browser: "Oiaai for iOS",
+				browser: "OlhaAí for iOS",
 				device: "mobile",
 				os: "iOS",
 				user_id: user.id,

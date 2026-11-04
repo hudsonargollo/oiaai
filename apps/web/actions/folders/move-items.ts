@@ -94,7 +94,7 @@ function getFolderScope(
 
 function normalizeVideoIds(videoIds: Video.VideoId[]) {
 	const ids = [...new Set(videoIds)];
-	if (ids.length === 0) throw new Error("Select at least one Oiaai to move");
+	if (ids.length === 0) throw new Error("Select at least one OlhaAí to move");
 	if (ids.length > MAX_MOVE_ITEMS) {
 		throw new Error(`You can move up to ${MAX_MOVE_ITEMS} recordings at once`);
 	}

@@ -26,8 +26,8 @@ const DARK = {
 } as const;
 
 const BENEFITS = [
-	"Installs the Oiaai CLI",
-	"Adds the Oiaai skill",
+	"Installs the OlhaAí CLI",
+	"Adds the OlhaAí skill",
 	"Connects local MCP",
 	"Verifies access",
 ];
@@ -46,16 +46,16 @@ export const SetupPrompt = () => {
 					<h2
 						className={`${H_SECTION} mt-6 text-balance text-[clamp(36px,4.6vw,56px)]`}
 					>
-						Set up Oiaai with one paste
+						Set up OlhaAí with one paste
 					</h2>
 					<p
 						className={`${BODY_TEXT} mt-6 max-w-[640px] text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[17.5px]`}
 					>
 						Copy the prompt, paste it into your agent, and let it do the rest.
-						It installs the Oiaai CLI, adds the Oiaai skill and a local MCP server
-						for the agent you are using, signs you in with the least privilege
-						it needs, and verifies everything before it starts. If you would
-						rather not paste anything, just point your agent at this page.
+						It installs the OlhaAí CLI, adds the OlhaAí skill and a local MCP
+						server for the agent you are using, signs you in with the least
+						privilege it needs, and verifies everything before it starts. If you
+						would rather not paste anything, just point your agent at this page.
 					</p>
 				</div>
 
@@ -71,7 +71,7 @@ export const SetupPrompt = () => {
 									"text-[11px] uppercase leading-none tracking-[0.05em] text-[rgba(17,17,17,0.5)]",
 								)}
 							>
-								Oiaai agent setup prompt
+								OlhaAí agent setup prompt
 							</span>
 							<CopyLabelButton
 								text={CAP_AGENT_PROMPT}

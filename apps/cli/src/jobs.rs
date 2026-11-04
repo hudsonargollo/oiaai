@@ -90,7 +90,7 @@ pub async fn wait_operation(
                 _ => {
                     return Err(local_error(
                         "TEMPORARY_UNAVAILABLE",
-                        "Oiaai returned an invalid operation state",
+                        "OlhaAí returned an invalid operation state",
                     ));
                 }
             }

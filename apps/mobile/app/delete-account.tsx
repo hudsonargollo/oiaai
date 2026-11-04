@@ -58,9 +58,9 @@ export default function DeleteAccountScreen() {
 					cancelButtonIndex: 1,
 					destructiveButtonIndex: 0,
 					message:
-						"This starts permanent deletion of your Oiaai account and associated data. This cannot be undone.",
+						"This starts permanent deletion of your OlhaAí account and associated data. This cannot be undone.",
 					options: ["Request permanent deletion", "Cancel"],
-					title: "Delete your Oiaai account?",
+					title: "Delete your OlhaAí account?",
 					tintColor: colors.blue11,
 					userInterfaceStyle: "light",
 				},
@@ -72,8 +72,8 @@ export default function DeleteAccountScreen() {
 		}
 
 		Alert.alert(
-			"Delete your Oiaai account?",
-			"This starts permanent deletion of your Oiaai account and associated data. This cannot be undone.",
+			"Delete your OlhaAí account?",
+			"This starts permanent deletion of your OlhaAí account and associated data. This cannot be undone.",
 			[
 				{ text: "Cancel", style: "cancel" },
 				{
@@ -124,7 +124,7 @@ export default function DeleteAccountScreen() {
 					<Text style={styles.cardTitle}>What will be deleted</Text>
 					<View style={styles.list}>
 						<Text style={styles.listItem}>
-							• Your Oiaai account, profile, and personal data
+							• Your OlhaAí account, profile, and personal data
 						</Text>
 						<Text style={styles.listItem}>
 							• recordings, videos, comments, and other content associated with your
@@ -137,7 +137,7 @@ export default function DeleteAccountScreen() {
 					</View>
 					<Text style={styles.detail}>
 						You will be signed out immediately and cannot sign in while we
-						process deletion. Within 30 days, we cancel any direct Oiaai
+						process deletion. Within 30 days, we cancel any direct OlhaAí
 						subscription and email you when deletion is complete.
 					</Text>
 				</GlassSurface>

@@ -28,7 +28,7 @@ export const Logo = ({
 				fill="none"
 				style={style}
 				role="img"
-				aria-label="Oiaai Logo"
+				aria-label="OlhaAí Logo"
 				className={className}
 			>
 				<GlassMark ids={ids} />

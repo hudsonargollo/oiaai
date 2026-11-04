@@ -35,13 +35,13 @@ const features = [
 		icon: MousePointerClick,
 		title: "Connect Google Drive in two clicks",
 		description:
-			"No access keys, endpoints, or buckets to configure. Sign in with Google once, approve access, and Oiaai is ready to store your recordings in your own Drive.",
+			"No access keys, endpoints, or buckets to configure. Sign in with Google once, approve access, and OlhaAí is ready to store your recordings in your own Drive.",
 	},
 	{
 		icon: HardDriveUpload,
 		title: "Every shareable link lives in your Drive",
 		description:
-			"Once connected, new shareable links upload straight to a private Oiaai folder in your Google Drive. You own the underlying video files, in the account you already trust.",
+			"Once connected, new shareable links upload straight to a private OlhaAí folder in your Google Drive. You own the underlying video files, in the account you already trust.",
 	},
 	{
 		icon: Building2,
@@ -53,26 +53,26 @@ const features = [
 		icon: Link2,
 		title: "Your links keep working exactly the same",
 		description:
-			"Share links stay on Oiaai with comments, viewer analytics, chapters, and password protection intact. The recording is simply streamed from your Google Drive instead of Oiaai Cloud.",
+			"Share links stay on OlhaAí with comments, viewer analytics, chapters, and password protection intact. The recording is simply streamed from your Google Drive instead of OlhaAí Cloud.",
 	},
 	{
 		icon: ArrowLeftRight,
 		title: "Switch storage whenever you want",
 		description:
-			"Keep Oiaai Cloud and your own S3 bucket alongside Drive, then choose the active provider with one toggle. Existing recordings keep the storage they were created with.",
+			"Keep OlhaAí Cloud and your own S3 bucket alongside Drive, then choose the active provider with one toggle. Existing recordings keep the storage they were created with.",
 	},
 	{
 		icon: ShieldCheck,
-		title: "Oiaai only ever touches its own folder",
+		title: "OlhaAí only ever touches its own folder",
 		description:
-			"Oiaai uses Google's drive.file permission, so it can only see and manage the files it creates for you. The rest of your Google Drive stays completely private to Oiaai.",
+			"OlhaAí uses Google's drive.file permission, so it can only see and manage the files it creates for you. The rest of your Google Drive stays completely private to OlhaAí.",
 	},
 ];
 
 const flow = [
 	{
 		icon: <Zap className="size-6" strokeWidth={1.75} />,
-		title: "1. Record in Oiaai",
+		title: "1. Record in OlhaAí",
 		description:
 			"Capture your screen in Instant Mode or Studio Mode on Mac or Windows, at up to 4K and 60fps, with system audio and webcam.",
 	},
@@ -80,13 +80,13 @@ const flow = [
 		icon: <GoogleDriveLogo size={26} />,
 		title: "2. Store in your Drive",
 		description:
-			"When you share, Oiaai uploads the recording to a private Oiaai folder in your connected Google Drive, individually or for your whole organization.",
+			"When you share, OlhaAí uploads the recording to a private OlhaAí folder in your connected Google Drive, individually or for your whole organization.",
 	},
 	{
 		icon: <Link2 className="size-6" strokeWidth={1.75} />,
 		title: "3. Share from your Drive",
 		description:
-			"Copy your recording link. Viewers watch through Oiaai's player while the video is served straight from your own Google Drive after access checks.",
+			"Copy your recording link. Viewers watch through OlhaAí's player while the video is served straight from your own Google Drive after access checks.",
 	},
 ];
 
@@ -94,7 +94,7 @@ const comparisonTable: {
 	headers: string[];
 	rows: (string | ComparisonCell)[][];
 } = {
-	headers: ["Feature", "Oiaai + Google Drive", "Loom", "Vidyard"],
+	headers: ["Feature", "OlhaAí + Google Drive", "Loom", "Vidyard"],
 	rows: [
 		[
 			"Store recordings in your own Google Drive",
@@ -152,9 +152,9 @@ const comparisonTable: {
 
 const steps = [
 	{
-		title: "Upgrade to Oiaai Pro",
+		title: "Upgrade to OlhaAí Pro",
 		description:
-			"Connecting your own Google Drive is an Oiaai Pro feature, available for individual creators and entire organizations.",
+			"Connecting your own Google Drive is an OlhaAí Pro feature, available for individual creators and entire organizations.",
 	},
 	{
 		title: "Open the storage integrations",
@@ -164,7 +164,7 @@ const steps = [
 	{
 		title: "Connect Google Drive",
 		description:
-			"Click Connect Google Drive, sign in, and approve access. Oiaai creates a private Oiaai folder in your Drive for new uploads.",
+			"Click Connect Google Drive, sign in, and approve access. OlhaAí creates a private OlhaAí folder in your Drive for new uploads.",
 	},
 	{
 		title: "Record and share",
@@ -300,7 +300,7 @@ export const GoogleDriveScreenRecorderPage = () => {
 						<span className="flex justify-center items-center rounded-xl border size-11 bg-gray-1 border-gray-4">
 							<Image
 								src="/logos/logo-solo.svg"
-								alt="Oiaai"
+								alt="OlhaAí"
 								width={22}
 								height={22}
 							/>
@@ -328,10 +328,10 @@ export const GoogleDriveScreenRecorderPage = () => {
 						variants={fadeUp}
 						className="mx-auto mt-6 max-w-2xl text-lg leading-7 text-gray-10"
 					>
-						Connect Google Drive to Oiaai and every shareable link uploads to, and
-						is served from, your own Drive. Available for individual creators
-						and entire organizations. Open source, privacy-first, and yours to
-						keep.
+						Connect Google Drive to OlhaAí and every shareable link uploads to,
+						and is served from, your own Drive. Available for individual
+						creators and entire organizations. Open source, privacy-first, and
+						yours to keep.
 					</motion.p>
 
 					<motion.div
@@ -347,7 +347,7 @@ export const GoogleDriveScreenRecorderPage = () => {
 							size="lg"
 							className="w-full font-medium sm:w-auto"
 						>
-							Download Oiaai Free
+							Download OlhaAí Free
 						</Button>
 						<Button
 							variant="white"
@@ -378,8 +378,8 @@ export const GoogleDriveScreenRecorderPage = () => {
 				>
 					<ConnectionDemo />
 					<p className="mx-auto mt-4 text-sm text-center text-gray-9">
-						This is the Google Drive integration inside Oiaai, available on Oiaai
-						Pro.
+						This is the Google Drive integration inside OlhaAí, available on
+						OlhaAí Pro.
 					</p>
 				</motion.div>
 			</div>
@@ -390,8 +390,8 @@ export const GoogleDriveScreenRecorderPage = () => {
 						Your recordings, in the Drive you already own
 					</h2>
 					<p className="text-xl leading-relaxed text-gray-10">
-						Oiaai brings the instant sharing you expect from Loom, while every new
-						recording stays in your own Google Drive.
+						OlhaAí brings the instant sharing you expect from Loom, while every
+						new recording stays in your own Google Drive.
 					</p>
 				</div>
 				<div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -425,10 +425,10 @@ export const GoogleDriveScreenRecorderPage = () => {
 			<div className="px-5 mx-auto mt-32 max-w-[1100px] md:mt-44">
 				<div className="mx-auto mb-16 text-center max-w-[800px]">
 					<h2 className="mb-3 text-3xl font-medium md:text-4xl text-gray-12">
-						How Oiaai and Google Drive work together
+						How OlhaAí and Google Drive work together
 					</h2>
 					<p className="text-xl leading-relaxed text-gray-10">
-						Record once and Oiaai handles the rest, from upload to a shareable
+						Record once and OlhaAí handles the rest, from upload to a shareable
 						link served from your Drive.
 					</p>
 				</div>
@@ -454,14 +454,14 @@ export const GoogleDriveScreenRecorderPage = () => {
 					))}
 				</div>
 				<p className="mx-auto mt-10 max-w-2xl text-center text-gray-10">
-					Prefer object storage instead? Oiaai also lets you{" "}
+					Prefer object storage instead? OlhaAí also lets you{" "}
 					<a
 						href="/self-hosted-screen-recording"
 						className="font-semibold text-blue-500 transition-colors hover:text-blue-600"
 					>
 						connect your own S3-compatible bucket
 					</a>{" "}
-					, or see how Oiaai compares as a{" "}
+					, or see how OlhaAí compares as a{" "}
 					<a
 						href="/loom-alternative"
 						className="font-semibold text-blue-500 transition-colors hover:text-blue-600"
@@ -475,7 +475,7 @@ export const GoogleDriveScreenRecorderPage = () => {
 			<div className="px-5 mx-auto mt-32 max-w-4xl md:mt-44">
 				<div className="mx-auto mb-12 text-center max-w-[800px]">
 					<h2 className="text-3xl font-medium md:text-4xl text-gray-12">
-						Oiaai with Google Drive vs other recorders
+						OlhaAí with Google Drive vs other recorders
 					</h2>
 				</div>
 				<div className="overflow-x-auto">
@@ -521,7 +521,7 @@ export const GoogleDriveScreenRecorderPage = () => {
 			<div className="px-5 mx-auto mt-32 max-w-3xl md:mt-44">
 				<div className="mx-auto mb-12 text-center max-w-[800px]">
 					<h2 className="text-3xl font-medium md:text-4xl text-gray-12">
-						How to record to Google Drive with Oiaai
+						How to record to Google Drive with OlhaAí
 					</h2>
 				</div>
 				<div className="px-6 rounded-2xl border shadow-sm sm:px-8 border-gray-4 bg-gray-1">
@@ -625,8 +625,8 @@ export const GoogleDriveScreenRecorderPage = () => {
 						Keep every recording in your own Google Drive
 					</h2>
 					<p className="mb-8 max-w-xl text-xl text-gray-10">
-						Download Oiaai, upgrade to Pro, and connect Google Drive for yourself
-						or your whole organization in minutes.
+						Download OlhaAí, upgrade to Pro, and connect Google Drive for
+						yourself or your whole organization in minutes.
 					</p>
 					<div className="flex flex-col gap-3 justify-center items-center sm:flex-row sm:gap-4">
 						<Button
@@ -635,7 +635,7 @@ export const GoogleDriveScreenRecorderPage = () => {
 							size="lg"
 							className="w-full font-medium sm:w-auto"
 						>
-							Download Oiaai Free
+							Download OlhaAí Free
 						</Button>
 						<Button
 							variant="white"

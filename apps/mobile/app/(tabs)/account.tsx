@@ -187,7 +187,7 @@ function PlanStatusButton({
 			<View style={styles.planSection}>
 				<Text style={styles.sectionTitle}>Plan</Text>
 				<View
-					accessibilityLabel="Checking Oiaai plan"
+					accessibilityLabel="Checking OlhaAí plan"
 					accessibilityRole="summary"
 					style={styles.planStatusButton}
 				>
@@ -208,8 +208,8 @@ function PlanStatusButton({
 			<View style={styles.planSection}>
 				<Text style={styles.sectionTitle}>Plan</Text>
 				<Pressable
-					accessibilityHint="Checks your Oiaai plan again"
-					accessibilityLabel="Oiaai plan unavailable"
+					accessibilityHint="Checks your OlhaAí plan again"
+					accessibilityLabel="OlhaAí plan unavailable"
 					accessibilityRole="button"
 					accessibilityState={{ disabled }}
 					disabled={disabled}
@@ -259,7 +259,7 @@ function PlanStatusButton({
 			</View>
 			<View style={styles.planStatusText}>
 				<Text style={styles.planStatusTitle}>
-					{isPro ? "Oiaai Pro" : "Free plan"}
+					{isPro ? "OlhaAí Pro" : "Free plan"}
 				</Text>
 				<Text style={styles.planStatusDetail}>
 					{isPro
@@ -274,11 +274,11 @@ function PlanStatusButton({
 		<View style={styles.planSection}>
 			<Text style={styles.sectionTitle}>Plan</Text>
 			<View
-				accessibilityLabel={`Oiaai plan: ${isPro ? "Oiaai Pro" : "Free"}`}
+				accessibilityLabel={`OlhaAí plan: ${isPro ? "OlhaAí Pro" : "Free"}`}
 				accessibilityRole="summary"
 				accessibilityValue={{
 					text: isPro
-						? "Oiaai Pro. Unlimited recording time"
+						? "OlhaAí Pro. Unlimited recording time"
 						: "Free plan. Recordings are limited to 5 minutes",
 				}}
 				style={styles.planStatusButton}
@@ -347,7 +347,7 @@ export default function AccountScreen() {
 				{
 					cancelButtonIndex: 1,
 					destructiveButtonIndex: 0,
-					message: "Remove this Oiaai session from your device?",
+					message: "Remove this OlhaAí session from your device?",
 					options: ["Sign out", "Cancel"],
 					title: "Sign out",
 					tintColor: colors.blue11,
@@ -362,7 +362,7 @@ export default function AccountScreen() {
 			return;
 		}
 
-		Alert.alert("Sign out", "Remove this Oiaai session from your device?", [
+		Alert.alert("Sign out", "Remove this OlhaAí session from your device?", [
 			{ text: "Cancel", style: "cancel" },
 			{
 				text: "Sign out",
@@ -381,7 +381,7 @@ export default function AccountScreen() {
 	if (auth.status === "signedOut") {
 		return (
 			<Screen scroll>
-				<SignInPanel title="Sign in to Oiaai" />
+				<SignInPanel title="Sign in to OlhaAí" />
 			</Screen>
 		);
 	}
@@ -418,7 +418,7 @@ export default function AccountScreen() {
 							<Text numberOfLines={1} style={styles.name}>
 								{[auth.bootstrap.user.name, auth.bootstrap.user.lastName]
 									.filter(Boolean)
-									.join(" ") || "Oiaai user"}
+									.join(" ") || "OlhaAí user"}
 							</Text>
 							<Text numberOfLines={1} style={styles.email}>
 								{auth.bootstrap.user.email}
@@ -510,7 +510,7 @@ export default function AccountScreen() {
 			<SettingsSection title="Session">
 				<SettingsRow
 					accessibilityValueText={
-						accountAction === "signOut" ? "Signing out of Oiaai" : undefined
+						accountAction === "signOut" ? "Signing out of OlhaAí" : undefined
 					}
 					accessibilityHint={accountActionHint ?? "Signs out of this device"}
 					busy={accountAction === "signOut"}
@@ -526,7 +526,7 @@ export default function AccountScreen() {
 			</SettingsSection>
 			<SettingsSection title="Help & Legal">
 				<SettingsRow
-					accessibilityHint="Opens Oiaai help and support"
+					accessibilityHint="Opens OlhaAí help and support"
 					disabled={accountActionDisabled}
 					label="Help & Support"
 					symbol="questionmark.circle"
@@ -536,7 +536,7 @@ export default function AccountScreen() {
 				/>
 				<View style={styles.separator} />
 				<SettingsRow
-					accessibilityHint="Opens the Oiaai privacy policy"
+					accessibilityHint="Opens the OlhaAí privacy policy"
 					disabled={accountActionDisabled}
 					label="Privacy Policy"
 					symbol="hand.raised"
@@ -546,7 +546,7 @@ export default function AccountScreen() {
 				/>
 				<View style={styles.separator} />
 				<SettingsRow
-					accessibilityHint="Opens the Oiaai terms of service"
+					accessibilityHint="Opens the OlhaAí terms of service"
 					disabled={accountActionDisabled}
 					label="Terms of Service"
 					symbol="doc.text"

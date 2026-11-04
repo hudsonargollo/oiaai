@@ -43,7 +43,7 @@ export function ManagePlan({
 	if (plan.type === "setup") {
 		return (
 			<CheckoutShell
-				title="You're on Oiaai Pro"
+				title="You're on OlhaAí Pro"
 				subtitle="Your subscription is active. Set up your workspace to start adding your team."
 				summary={
 					<>
@@ -80,7 +80,7 @@ export function ManagePlan({
 	if (plan.type === "development") {
 		return (
 			<CheckoutShell
-				title="Your Oiaai Pro plan"
+				title="Your OlhaAí Pro plan"
 				subtitle="This account was made Pro from the dev toolbar."
 				summary={
 					<>
@@ -96,7 +96,7 @@ export function ManagePlan({
 					<p className="text-[15px] leading-[1.5] text-[rgba(17,17,17,0.66)]">
 						"Promote to Pro" sets Pro locally without creating a subscription,
 						so there are no seats to add. To try this page, choose "Demote from
-						Pro" in the dev toolbar, then buy Oiaai Pro here with a Stripe test
+						Pro" in the dev toolbar, then buy OlhaAí Pro here with a Stripe test
 						card.
 					</p>
 				</div>
@@ -107,8 +107,8 @@ export function ManagePlan({
 	if (plan.type === "external") {
 		return (
 			<CheckoutShell
-				title="You're on Oiaai Pro"
-				subtitle="Your account already has everything in Oiaai Pro."
+				title="You're on OlhaAí Pro"
+				subtitle="Your account already has everything in OlhaAí Pro."
 				summary={
 					<>
 						<PlanHeading tag="Active" />
@@ -252,7 +252,7 @@ function AddSeats({
 		return (
 			<CheckoutShell
 				title="Seats added"
-				subtitle="Your team can start recording and sharing with Oiaai Pro right away."
+				subtitle="Your team can start recording and sharing with OlhaAí Pro right away."
 				summary={summary}
 			>
 				<div className={classNames(CARD, "flex flex-col gap-6")}>
@@ -281,8 +281,8 @@ function AddSeats({
 
 	return (
 		<CheckoutShell
-			title="Add seats to Oiaai Pro"
-			subtitle="Bring more of your team onto Oiaai Pro. You only pay for what's left of this billing period."
+			title="Add seats to OlhaAí Pro"
+			subtitle="Bring more of your team onto OlhaAí Pro. You only pay for what's left of this billing period."
 			summary={summary}
 		>
 			<div className={classNames(CARD, "flex flex-col")}>
@@ -459,8 +459,8 @@ function PlanUnavailable() {
 
 	return (
 		<CheckoutShell
-			title="Your Oiaai Pro plan"
-			subtitle="Your account is on Oiaai Pro."
+			title="Your OlhaAí Pro plan"
+			subtitle="Your account is on OlhaAí Pro."
 			summary={
 				<>
 					<PlanHeading tag="Active" />

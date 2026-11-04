@@ -24,8 +24,8 @@ const mono = DM_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://status.cap.so"),
-	title: "Oiaai Status — A little peace of mind.",
-	description: "Live service health, uptime, and incident history for Oiaai.",
+	title: "OlhaAí Status — A little peace of mind.",
+	description: "Live service health, uptime, and incident history for OlhaAí.",
 	icons: { icon: "/cap-icon.svg" },
 };
 

@@ -85,8 +85,9 @@ export const StudentDiscountPage = () => {
 						variants={fadeIn}
 						custom={2}
 					>
-						Level up your presentations and portfolio with 30% off Oiaai's premium
-						features. Perfect for students, researchers, and future creators.
+						Level up your presentations and portfolio with 30% off OlhaAí's
+						premium features. Perfect for students, researchers, and future
+						creators.
 					</motion.p>
 
 					{/* Clean Discount Badge */}
@@ -190,7 +191,7 @@ export const StudentDiscountPage = () => {
 							size="lg"
 							className="flex justify-center items-center font-medium"
 						>
-							Download Oiaai Free
+							Download OlhaAí Free
 						</Button>
 					</motion.div>
 				</motion.div>
@@ -221,8 +222,8 @@ export const StudentDiscountPage = () => {
 						</h2>
 						<p className="text-lg text-gray-600 max-w-2xl mx-auto">
 							Whether you're presenting, building your portfolio, or
-							collaborating with classmates, Oiaai helps you create professional
-							content that stands out.
+							collaborating with classmates, OlhaAí helps you create
+							professional content that stands out.
 						</p>
 					</div>
 
@@ -297,8 +298,8 @@ export const StudentDiscountPage = () => {
 								Ready to elevate your student projects?
 							</h2>
 							<p className="text-lg text-gray-10">
-								Join thousands of students already using Oiaai to create amazing
-								content
+								Join thousands of students already using OlhaAí to create
+								amazing content
 							</p>
 						</div>
 						<div className="flex flex-col justify-center items-center space-y-4 w-full sm:flex-row sm:space-y-0 sm:space-x-4">
@@ -316,7 +317,7 @@ export const StudentDiscountPage = () => {
 								size="lg"
 								className="font-medium transform hover:-translate-y-[2px] transition-all duration-300"
 							>
-								Try Oiaai Free First
+								Try OlhaAí Free First
 							</Button>
 						</div>
 					</div>

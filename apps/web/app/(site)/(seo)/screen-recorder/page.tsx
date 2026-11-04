@@ -14,20 +14,20 @@ const ogImage = ogImageUrl({
 export const metadata: Metadata = {
 	title: "Screen Recorder: High-Quality, User-Friendly, and 100% Free Locally",
 	description:
-		"Oiaai is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits. Perfect for team collaboration, creating tutorials, or recording professional presentations.",
+		"OlhaAí is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits. Perfect for team collaboration, creating tutorials, or recording professional presentations.",
 	openGraph: {
 		title:
 			"Screen Recorder: High-Quality, User-Friendly, and 100% Free Locally",
 		description:
-			"Oiaai is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits.",
+			"OlhaAí is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits.",
 		url: "https://cap.so/screen-recorder",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Free Screen Recorder",
+				alt: "OlhaAí: Free Screen Recorder",
 			},
 		],
 		locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		title:
 			"Screen Recorder: High-Quality, User-Friendly, and 100% Free Locally",
 		description:
-			"Oiaai is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits.",
+			"OlhaAí is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits.",
 		images: [ogImage],
 	},
 	alternates: {

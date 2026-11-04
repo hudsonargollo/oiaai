@@ -43,7 +43,7 @@ use crate::{
 /// The first submenu's name. `bundle.macOS.bundleName` in `tauri.conf.json`
 /// sets `CFBundleName` to the same value; `productName` stays `Cap` so the
 /// bundle path and executable every existing install updates into do not move.
-pub const APP_NAME: &str = "Oiaai";
+pub const APP_NAME: &str = "OlhaAí";
 
 struct MenuRegistration(UpdateRow);
 
@@ -1249,19 +1249,19 @@ mod tests {
             menus,
             vec![
                 (
-                    "Oiaai".to_string(),
+                    "OlhaAí".to_string(),
                     vec![
-                        "About Oiaai".to_string(),
+                        "About OlhaAí".to_string(),
                         "Check for Update".into(),
                         "-".into(),
                         tr::menu::app::settings().into(),
                         "-".into(),
                         "Services".into(),
                         "-".into(),
-                        "Hide Oiaai".into(),
+                        "Hide OlhaAí".into(),
                         "Hide Others".into(),
                         "-".into(),
-                        "Quit Oiaai".into(),
+                        "Quit OlhaAí".into(),
                     ]
                 ),
                 ("File".into(), expected_file_items,),

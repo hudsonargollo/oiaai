@@ -3,7 +3,7 @@ import { FaqPage } from "@/components/pages/FaqPage";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "FAQ — Oiaai",
+	title: "FAQ — OlhaAí",
 	path: "/faq",
 	ogTitle: "Frequently asked questions",
 	ogTag: "FAQ",

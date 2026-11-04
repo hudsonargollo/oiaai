@@ -379,7 +379,7 @@ describe("ProfileSettingsScreen", () => {
 		expect(imagePicker.launchImageLibraryAsync).not.toHaveBeenCalled();
 		expect(actionSheet.showActionSheetWithOptions).toHaveBeenLastCalledWith(
 			expect.objectContaining({
-				message: "Allow Oiaai to choose a profile image from Settings.",
+				message: "Allow OlhaAí to choose a profile image from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 			}),

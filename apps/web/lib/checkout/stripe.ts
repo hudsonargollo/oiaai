@@ -9,7 +9,7 @@ let client: Stripe | undefined;
 
 export const checkoutStripe = () => {
 	client ??= new Stripe(serverEnv().STRIPE_SECRET_KEY ?? "", {
-		appInfo: { name: "Oiaai", version: "0.1.0" },
+		appInfo: { name: "OlhaAí", version: "0.1.0" },
 	});
 	return client;
 };

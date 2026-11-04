@@ -463,7 +463,7 @@ const AdminNavItems = ({ toggleMobileNav }: Props) => {
 							</div>
 						)}
 						<p className="mt-2 text-xs text-center truncate text-gray-10">
-							Oiaai Software, Inc. {new Date().getFullYear()}.
+							OlhaAí Software, Inc. {new Date().getFullYear()}.
 						</p>
 					</div>
 				</nav>

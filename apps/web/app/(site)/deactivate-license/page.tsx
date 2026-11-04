@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LicenseDeactivationPage } from "@/components/pages/LicenseDeactivationPage";
 
 export const metadata: Metadata = {
-	title: "Deactivate License — Oiaai",
+	title: "Deactivate License — OlhaAí",
 	description:
-		"Deactivate your Oiaai commercial license from its current device to use it elsewhere.",
+		"Deactivate your OlhaAí commercial license from its current device to use it elsewhere.",
 	alternates: { canonical: "https://cap.so/deactivate-license" },
 };
 

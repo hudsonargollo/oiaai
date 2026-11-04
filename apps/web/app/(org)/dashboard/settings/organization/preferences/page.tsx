@@ -3,7 +3,7 @@ import CapSettingsCard from "../components/CapSettingsCard";
 import { DefaultVideoVisibility } from "../components/DefaultVideoVisibility";
 
 export const metadata: Metadata = {
-	title: "Organization Preferences — Oiaai",
+	title: "Organization Preferences — OlhaAí",
 };
 
 export default function PreferencesPage() {

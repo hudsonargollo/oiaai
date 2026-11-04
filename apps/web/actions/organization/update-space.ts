@@ -76,7 +76,7 @@ export async function updateSpace(formData: FormData) {
 	) {
 		return {
 			success: false,
-			error: "Upgrade to Oiaai Pro to create a public collection link",
+			error: "Upgrade to OlhaAí Pro to create a public collection link",
 		};
 	}
 

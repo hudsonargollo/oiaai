@@ -53,7 +53,7 @@ const showPhotosSettingsAlert = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Oiaai to save videos to Photos from Settings.",
+				message: "Allow OlhaAí to save videos to Photos from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -68,7 +68,7 @@ const showPhotosSettingsAlert = () => {
 
 	Alert.alert(
 		"Photos access needed",
-		"Allow Oiaai to save videos to Photos from Settings.",
+		"Allow OlhaAí to save videos to Photos from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{
@@ -211,12 +211,12 @@ const CommentComposer = memo(function CommentComposer({
 	const commentHint = isPosting
 		? "Comment is being sent"
 		: disabled
-			? "Current Oiaai action is in progress"
+			? "Current OlhaAí action is in progress"
 			: "Add a comment to this recording";
 	const sendCommentHint = isPosting
 		? "Comment is being sent"
 		: disabled
-			? "Current Oiaai action is in progress"
+			? "Current OlhaAí action is in progress"
 			: trimmedComment
 				? "Adds this comment"
 				: "Enter a comment before sending";
@@ -299,7 +299,7 @@ const CommentList = memo(function CommentList({ comments }: CommentListProps) {
 			<View style={styles.commentBody}>
 				<View style={styles.commentMeta}>
 					<Text numberOfLines={1} style={styles.commentAuthor}>
-						{item.author.name ?? "Oiaai user"}
+						{item.author.name ?? "OlhaAí user"}
 					</Text>
 					<Text style={styles.commentDate}>
 						{formatRelativeDate(item.createdAt)}
@@ -523,7 +523,7 @@ export default function CapDetailScreen() {
 	const isPostingComment = activeOperation === "comment";
 	const isSavingVideo = activeOperation === "save";
 	const isUpdatingVisibility = activeOperation === "visibility";
-	const actionInProgressHint = "Current Oiaai action is in progress";
+	const actionInProgressHint = "Current OlhaAí action is in progress";
 	const saveVideoLabel = saved ? "Saved" : "Save video";
 	const saveVideoAccessibilityText =
 		isSavingVideo && detail
@@ -748,9 +748,9 @@ export default function CapDetailScreen() {
 				{
 					cancelButtonIndex: 1,
 					destructiveButtonIndex: 0,
-					message: "This Oiaai will be removed from your library.",
-					options: ["Delete Oiaai", "Cancel"],
-					title: "Delete Oiaai",
+					message: "This OlhaAí will be removed from your library.",
+					options: ["Delete OlhaAí", "Cancel"],
+					title: "Delete OlhaAí",
 					tintColor: colors.blue11,
 					userInterfaceStyle: "light",
 				},
@@ -761,7 +761,7 @@ export default function CapDetailScreen() {
 			return;
 		}
 
-		Alert.alert("Delete Oiaai", "This Oiaai will be removed from your library.", [
+		Alert.alert("Delete OlhaAí", "This OlhaAí will be removed from your library.", [
 			{ text: "Cancel", style: "cancel" },
 			{
 				text: "Delete",
@@ -788,7 +788,7 @@ export default function CapDetailScreen() {
 			await auth.client.reportCap(detail.cap.id, reason);
 			Alert.alert(
 				"Report received",
-				"Oiaai Support will review this content promptly.",
+				"OlhaAí Support will review this content promptly.",
 			);
 		} catch {
 			Alert.alert(
@@ -919,7 +919,7 @@ export default function CapDetailScreen() {
 								accessibilityHint={
 									isActionInProgress
 										? actionInProgressHint
-										: "Opens Oiaai settings"
+										: "Opens OlhaAí settings"
 								}
 								accessibilityState={{ disabled: isActionInProgress }}
 								disabled={isActionInProgress}
@@ -941,7 +941,7 @@ export default function CapDetailScreen() {
 								/>
 							</Pressable>
 						) : null,
-					title: detail?.cap.title ?? "Oiaai",
+					title: detail?.cap.title ?? "OlhaAí",
 				}}
 			/>
 			<Screen
@@ -952,7 +952,7 @@ export default function CapDetailScreen() {
 			>
 				{loadError ? (
 					<View
-						accessibilityLabel={`Oiaai detail error: ${loadError}`}
+						accessibilityLabel={`OlhaAí detail error: ${loadError}`}
 						accessibilityLiveRegion="polite"
 						accessibilityRole="alert"
 						style={styles.errorCard}
@@ -963,7 +963,7 @@ export default function CapDetailScreen() {
 							tintColor={colors.red9}
 							weight="medium"
 						/>
-						<Text style={styles.errorTitle}>Unable to load Oiaai</Text>
+						<Text style={styles.errorTitle}>Unable to load OlhaAí</Text>
 						<Text style={styles.errorBody}>{loadError}</Text>
 						<ActionButton
 							label="Try again"

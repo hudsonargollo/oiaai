@@ -1,6 +1,6 @@
 ---
 title: "Safety & Troubleshooting"
-summary: "The confirmation, secret-handling, permission, and verification rules for Oiaai agents"
+summary: "The confirmation, secret-handling, permission, and verification rules for OlhaAí agents"
 tags: "Agents"
 ---
 
@@ -8,13 +8,13 @@ tags: "Agents"
 
 ## Read first, then propose changes
 
-Pasting Oiaai's official setup prompt is explicit approval for the agent to install the official Oiaai CLI and add or update the Oiaai skill and local MCP entry for the current agent only. The agent should perform that local bootstrap itself after checking the dry-run output. It must not ask the user to run the installer manually, request the same setup approval again, install into other detected agents, or replace unrelated agent configuration.
+Pasting OlhaAí's official setup prompt is explicit approval for the agent to install the official OlhaAí CLI and add or update the OlhaAí skill and local MCP entry for the current agent only. The agent should perform that local bootstrap itself after checking the dry-run output. It must not ask the user to run the installer manually, request the same setup approval again, install into other detected agents, or replace unrelated agent configuration.
 
-That one-time setup approval does not authorize changes to Oiaai data or account state. After setup, an agent should begin with `cap guide --json`, current state, and the narrowest relevant read command. Reads and waits do not need confirmation. Everything that changes Oiaai content, processing, recording, uploads, sharing, library state, organizations, billing, storage, developer resources, credentials, or account state does.
+That one-time setup approval does not authorize changes to OlhaAí data or account state. After setup, an agent should begin with `cap guide --json`, current state, and the narrowest relevant read command. Reads and waits do not need confirmation. Everything that changes OlhaAí content, processing, recording, uploads, sharing, library state, organizations, billing, storage, developer resources, credentials, or account state does.
 
 Before a mutation, the agent must show:
 
-- the exact Oiaai, organization, folder, space, member, developer app, or file involved;
+- the exact OlhaAí, organization, folder, space, member, developer app, or file involved;
 - the current state when it can be read;
 - the exact proposed new state or content;
 - whether the action uploads data, starts paid work, opens a provider handoff, or is destructive;
@@ -41,7 +41,7 @@ Confirmation applies even when a command does not have a `--yes` flag. The agent
 
 Never ask the user to paste any of these into an agent conversation or MCP tool call:
 
-- Oiaai passwords;
+- OlhaAí passwords;
 - `CAP_AGENT_TOKEN`, `CAP_API_KEY`, or another API key;
 - S3 access keys or secret keys;
 - newly issued developer credentials;
@@ -49,13 +49,13 @@ Never ask the user to paste any of these into an agent conversation or MCP tool 
 
 Use the exact secure CLI flow instead. Password and S3 commands accept hidden interactive input or stdin where supported. MCP intentionally does not expose those secret fields.
 
-For a password-protected Oiaai, the agent should ask the user to run:
+For a password-protected OlhaAí, the agent should ask the user to run:
 
 ```sh
 cap caps unlock <id-or-url>
 ```
 
-The short-lived unlock grant can then be used by subsequent Oiaai commands without putting the password into chat, arguments, JSON, or logs.
+The short-lived unlock grant can then be used by subsequent OlhaAí commands without putting the password into chat, arguments, JSON, or logs.
 
 ## Use the least-privileged login
 
@@ -94,7 +94,7 @@ For recording, require the stopped event to report `recordingMetaExists: true`, 
 - Use `--json` for machine-readable stdout.
 - Treat stdout as the authoritative result and stderr as diagnostics.
 - Recording and export emit newline-delimited JSON events, not one JSON document.
-- Exit code `1` is a runtime failure; inspect the JSON `error` field or the structured `code` and `message` fields returned by Oiaai's account API.
+- Exit code `1` is a runtime failure; inspect the JSON `error` field or the structured `code` and `message` fields returned by OlhaAí's account API.
 - Exit code `2` is invalid command usage; inspect `cap <command> --help` instead of retrying guessed flags.
 - Diagnostic commands may exit successfully while reporting an unavailable capability. Branch on fields such as `ok`, `captureReady`, or `valid`.
 
@@ -105,7 +105,7 @@ CLI login, Stripe checkout and billing portal flows, Google Drive authorization,
 1. explain which provider flow is opening;
 2. let the user complete it directly;
 3. never ask for provider credentials;
-4. re-read Oiaai state afterward to verify the result.
+4. re-read OlhaAí state afterward to verify the result.
 
 ## Troubleshooting checklist
 
@@ -115,7 +115,7 @@ When running the official setup prompt, the agent should select and run the plat
 
 ### Authentication fails
 
-Run `cap auth status --json`. If needed, use `cap auth login --json` and complete the browser approval. For self-hosted Oiaai, make sure `CAP_SERVER_URL` points to the intended server before login.
+Run `cap auth status --json`. If needed, use `cap auth login --json` and complete the browser approval. For self-hosted OlhaAí, make sure `CAP_SERVER_URL` points to the intended server before login.
 
 ### The agent guesses a flag or output shape
 
@@ -144,4 +144,4 @@ Keep the operation or recording ID, use the relevant wait command with a bounded
 
 Read the returned permissions or capabilities. Re-authenticate with a broader profile only if the task truly needs it and the user agrees. Do not work around a server-enforced denial.
 
-Return to the [Oiaai for Agents overview](/docs/agents) or choose a tested [Agent Workflow](/docs/agents/workflows).
+Return to the [OlhaAí for Agents overview](/docs/agents) or choose a tested [Agent Workflow](/docs/agents/workflows).

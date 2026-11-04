@@ -181,7 +181,8 @@ async function loadEditableVideo(
 ) {
 	const user = await getCurrentUser();
 	if (!user) throw new Error("Unauthorized");
-	if (!userIsPro(user)) throw new Error("Oiaai Pro is required to edit videos");
+	if (!userIsPro(user))
+		throw new Error("OlhaAí Pro is required to edit videos");
 
 	const [video] = await db()
 		.select()

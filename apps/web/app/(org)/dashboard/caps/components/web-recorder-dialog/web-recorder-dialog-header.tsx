@@ -46,9 +46,9 @@ export const WebRecorderDialogHeader = ({
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 118 40"
-						aria-label="Oiaai Logo"
+						aria-label="OlhaAí Logo"
 					>
-						<title>Oiaai Logo</title>
+						<title>OlhaAí Logo</title>
 						<rect
 							width="39.5"
 							height="39.5"

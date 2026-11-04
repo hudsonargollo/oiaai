@@ -19,7 +19,7 @@ const { commercial, pro, subtitle, lovedBy } = homepageCopy.pricing;
 
 const BLURB = {
 	commercial:
-		"A commercial licence for the Oiaai desktop app, with unlimited local recording and editing.",
+		"A commercial licence for the OlhaAí desktop app, with unlimited local recording and editing.",
 	pro: "Everything in Desktop plus unlimited cloud features for sharing and collaboration.",
 };
 

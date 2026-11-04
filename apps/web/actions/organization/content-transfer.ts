@@ -339,7 +339,7 @@ async function buildTransferState({
 				{
 					videoId: membership.videoId,
 					name: membership.name,
-					reason: "The Oiaai belongs to another organization",
+					reason: "The OlhaAí belongs to another organization",
 				},
 			];
 		}
@@ -348,7 +348,7 @@ async function buildTransferState({
 				{
 					videoId: membership.videoId,
 					name: membership.name,
-					reason: `The Oiaai upload is ${membership.uploadPhase.replaceAll("_", " ")}`,
+					reason: `The OlhaAí upload is ${membership.uploadPhase.replaceAll("_", " ")}`,
 				},
 			];
 		}
@@ -370,7 +370,9 @@ async function buildTransferState({
 	});
 	const blockedReasons = [
 		...(memberships.length > MAX_CONTENT_TRANSFER_VIDEOS
-			? [`A transfer can include up to ${MAX_CONTENT_TRANSFER_VIDEOS} Recordings`]
+			? [
+					`A transfer can include up to ${MAX_CONTENT_TRANSFER_VIDEOS} Recordings`,
+				]
 			: []),
 		...(duplicateVideoIds.length > 0
 			? [

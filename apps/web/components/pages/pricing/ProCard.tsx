@@ -84,7 +84,7 @@ export const ProCard = ({ collapsed, onToggle }: PlanToggle) => {
 				return;
 			}
 			if (data.subscription === true) {
-				toast.success("You are already on the Oiaai Pro plan");
+				toast.success("You are already on the OlhaAí Pro plan");
 			}
 			if (data.url) {
 				window.location.href = data.url;
@@ -125,7 +125,7 @@ export const ProCard = ({ collapsed, onToggle }: PlanToggle) => {
 			controls={
 				<>
 					<Segmented
-						ariaLabel="Billing cycle for Oiaai Pro"
+						ariaLabel="Billing cycle for OlhaAí Pro"
 						value={annual ? "annual" : "monthly"}
 						onChange={(value) => setAnnual(value === "annual")}
 						options={[
@@ -167,7 +167,7 @@ export const ProCard = ({ collapsed, onToggle }: PlanToggle) => {
 						"w-full disabled:cursor-not-allowed disabled:opacity-60",
 					)}
 				>
-					{loading ? "Opening checkout..." : "Get Oiaai Pro"}
+					{loading ? "Opening checkout..." : "Get OlhaAí Pro"}
 				</button>
 			}
 			ctaNote="Cancel anytime. Your recordings stay yours."

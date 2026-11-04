@@ -12,7 +12,7 @@ const SubscribeContent = () => {
 					transition={{ duration: 0.3, ease: "easeOut" }}
 					className="text-lg text-center text-gray-12"
 				>
-					This feature requires Oiaai Pro
+					This feature requires OlhaAí Pro
 				</motion.p>
 				<motion.p
 					initial={{ y: -10, filter: "blur(5px)", opacity: 0 }}

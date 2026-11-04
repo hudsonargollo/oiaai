@@ -239,7 +239,7 @@ describe("RecordingUploadProvider", () => {
 			await mountRecoveryProvider();
 			await act(async () => {
 				await recordingUploads?.beginRecording({
-					fileName: "Oiaai Recording.mp4",
+					fileName: "OlhaAí Recording.mp4",
 					width: 720,
 					height: 1280,
 					fps: 30,
@@ -472,7 +472,7 @@ describe("RecordingUploadProvider", () => {
 
 		await act(async () => {
 			await recordingUploadActions?.beginRecording({
-				fileName: "Oiaai Recording.mp4",
+				fileName: "OlhaAí Recording.mp4",
 				width: 720,
 				height: 1280,
 				fps: 30,
@@ -524,7 +524,7 @@ describe("RecordingUploadProvider", () => {
 
 		await act(async () => {
 			await recordingUploads?.beginRecording({
-				fileName: "Oiaai Recording.mp4",
+				fileName: "OlhaAí Recording.mp4",
 				width: 720,
 				height: 1280,
 				fps: 30,
@@ -621,7 +621,7 @@ describe("RecordingUploadProvider", () => {
 
 			await act(async () => {
 				await recordingUploads?.beginRecording({
-					fileName: "Oiaai Recording.mp4",
+					fileName: "OlhaAí Recording.mp4",
 					width: 720,
 					height: 1280,
 					fps: 30,
@@ -689,7 +689,7 @@ describe("RecordingUploadProvider", () => {
 
 		await act(async () => {
 			await recordingUploads?.beginRecording({
-				fileName: "Oiaai Screen Recording.mp4",
+				fileName: "OlhaAí Screen Recording.mp4",
 				width: 720,
 				height: 1280,
 				fps: 30,
@@ -748,7 +748,7 @@ describe("RecordingUploadProvider", () => {
 
 			await act(async () => {
 				await recordingUploads?.beginRecording({
-					fileName: "Oiaai Screen Recording.mp4",
+					fileName: "OlhaAí Screen Recording.mp4",
 					width: 720,
 					height: 1280,
 					fps: 30,
@@ -917,7 +917,7 @@ describe("RecordingUploadProvider", () => {
 
 		await act(async () => {
 			await recordingUploadActions?.beginRecording({
-				fileName: "Oiaai Recording.mp4",
+				fileName: "OlhaAí Recording.mp4",
 				width: 720,
 				height: 1280,
 				fps: 30,
@@ -985,7 +985,7 @@ describe("RecordingUploadProvider", () => {
 
 		await act(async () => {
 			await recordingUploads?.beginRecording({
-				fileName: "Oiaai Recording.mp4",
+				fileName: "OlhaAí Recording.mp4",
 				width: 720,
 				height: 1280,
 				fps: 30,

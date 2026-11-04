@@ -1,7 +1,7 @@
 //! Resolves the credentials `cap upload` needs without making an agent hunt for an API key.
 //!
 //! Priority: explicit `CAP_API_KEY`/`CAP_SERVER_URL` env vars (for CI/headless), then the login the
-//! desktop app already stored. The CLI is the same product as Oiaai Desktop, so if the user is signed
+//! desktop app already stored. The CLI is the same product as OlhaAí Desktop, so if the user is signed
 //! in there, `cap upload` just works — no key to copy, no env var to set. The desktop persists its
 //! auth as a plain JSON store file, so we read it directly.
 
@@ -26,7 +26,7 @@ const DESKTOP_BUNDLE_IDS: [&str; 2] = ["so.cap.desktop", "so.cap.desktop.dev"];
 pub enum CredentialSource {
     /// CAP_API_KEY env var.
     Env,
-    /// The login stored by Oiaai Desktop.
+    /// The login stored by OlhaAí Desktop.
     Desktop,
 }
 
@@ -76,23 +76,23 @@ fn normalize_server(server: String) -> String {
 
 fn validate_agent_server(server: String) -> Result<String, String> {
     let server = normalize_server(server);
-    let url = url::Url::parse(&server).map_err(|_| "The Oiaai server URL is invalid".to_string())?;
+    let url = url::Url::parse(&server).map_err(|_| "The OlhaAí server URL is invalid".to_string())?;
     if !url.username().is_empty()
         || url.password().is_some()
         || url.query().is_some()
         || url.fragment().is_some()
     {
         return Err(
-            "The Oiaai server URL cannot include credentials, a query, or a fragment".to_string(),
+            "The OlhaAí server URL cannot include credentials, a query, or a fragment".to_string(),
         );
     }
     let hostname = url
         .host_str()
-        .ok_or_else(|| "The Oiaai server URL must include a host".to_string())?;
+        .ok_or_else(|| "The OlhaAí server URL must include a host".to_string())?;
     let is_loopback = matches!(hostname, "localhost" | "127.0.0.1" | "::1" | "[::1]");
     if url.scheme() != "https" && !(url.scheme() == "http" && is_loopback) {
         return Err(
-            "Oiaai CLI agent credentials require HTTPS. HTTP is allowed only for loopback development servers."
+            "OlhaAí CLI agent credentials require HTTPS. HTTP is allowed only for loopback development servers."
                 .to_string(),
         );
     }
@@ -467,8 +467,8 @@ pub fn resolve() -> Result<Credentials, String> {
     }
 
     Err(
-        "Not signed in. Run `cap auth login` (needs a browser), sign in to Oiaai Desktop (the CLI \
-         reuses its login), or create a CLI API key in the Oiaai dashboard under Settings -> Account \
+        "Not signed in. Run `cap auth login` (needs a browser), sign in to OlhaAí Desktop (the CLI \
+         reuses its login), or create a CLI API key in the OlhaAí dashboard under Settings -> Account \
          and set it as CAP_API_KEY."
             .to_string(),
     )
@@ -567,7 +567,7 @@ async fn verify_agent_status(credentials: &AgentCredentials) -> AgentVerificatio
                 expires_at: None,
                 scopes: None,
                 hint: Some(
-                    "The credential is present, but the Oiaai server could not be reached"
+                    "The credential is present, but the OlhaAí server could not be reached"
                         .to_string(),
                 ),
             };
@@ -581,7 +581,7 @@ async fn verify_agent_status(credentials: &AgentCredentials) -> AgentVerificatio
             expires_at: None,
             scopes: None,
             hint: Some(
-                "The Oiaai server rejected this credential. Run `cap auth login` again".to_string(),
+                "The OlhaAí server rejected this credential. Run `cap auth login` again".to_string(),
             ),
         };
     }
@@ -593,7 +593,7 @@ async fn verify_agent_status(credentials: &AgentCredentials) -> AgentVerificatio
             expires_at: None,
             scopes: None,
             hint: Some(format!(
-                "The credential is present, but Oiaai could not verify it (HTTP {})",
+                "The credential is present, but OlhaAí could not verify it (HTTP {})",
                 response.status()
             )),
         };
@@ -607,7 +607,7 @@ async fn verify_agent_status(credentials: &AgentCredentials) -> AgentVerificatio
                 status: AuthVerificationStatus::Unavailable,
                 expires_at: None,
                 scopes: None,
-                hint: Some("Oiaai returned an invalid authentication status".to_string()),
+                hint: Some("OlhaAí returned an invalid authentication status".to_string()),
             };
         }
     };
@@ -622,7 +622,7 @@ async fn verify_agent_status(credentials: &AgentCredentials) -> AgentVerificatio
         expires_at: status.expires_at,
         scopes: Some(status.scopes),
         hint: (!status.authenticated).then(|| {
-            "The Oiaai server rejected this credential. Run `cap auth login` again".to_string()
+            "The OlhaAí server rejected this credential. Run `cap auth login` again".to_string()
         }),
     }
 }
@@ -721,7 +721,7 @@ pub async fn status(format: OutputFormat) -> Result<(), String> {
                     AuthStatusSource::Env => "environment credential",
                     AuthStatusSource::Keyring => "OS credential store",
                     AuthStatusSource::File => "permission-restricted file",
-                    AuthStatusSource::Desktop => "Oiaai Desktop login",
+                    AuthStatusSource::Desktop => "OlhaAí Desktop login",
                     AuthStatusSource::None => "none",
                 };
                 println!("authenticated: yes (via {source})");

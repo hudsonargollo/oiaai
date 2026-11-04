@@ -713,7 +713,7 @@ fn create_d3d_capturer(
             if inner.code() == windows::Win32::Foundation::E_ACCESSDENIED =>
         {
             anyhow!(
-                "Windows denied Oiaai access to screen capture. Check that screen capture is allowed for desktop apps in Windows privacy settings and that no security software is blocking it ({error})"
+                "Windows denied OlhaAí access to screen capture. Check that screen capture is allowed for desktop apps in Windows privacy settings and that no security software is blocking it ({error})"
             )
         }
         _ => anyhow!("{error}"),

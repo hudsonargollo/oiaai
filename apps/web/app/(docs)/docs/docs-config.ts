@@ -19,7 +19,7 @@ export const docsConfig = {
 			],
 		},
 		{
-			title: "Oiaai for Agents",
+			title: "OlhaAí for Agents",
 			items: [
 				{ title: "Overview", slug: "agents" },
 				{ title: "Set Up Your Agent", slug: "agents/setup" },
@@ -32,7 +32,7 @@ export const docsConfig = {
 			items: [
 				{ title: "Working With Your Team", slug: "teams" },
 				{ title: "Google Drive", slug: "teams/google-drive" },
-				{ title: "Migrating to Oiaai", slug: "migrating-to-cap" },
+				{ title: "Migrating to OlhaAí", slug: "migrating-to-cap" },
 			],
 		},
 		{

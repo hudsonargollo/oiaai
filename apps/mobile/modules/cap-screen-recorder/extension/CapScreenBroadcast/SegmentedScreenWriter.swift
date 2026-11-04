@@ -81,7 +81,7 @@ enum ScreenRecordingStore {
 
 private final class ScreenWriterUnavailableError: LocalizedError {
   var errorDescription: String? {
-    "Oiaai could not encode the screen recording."
+    "OlhaAí could not encode the screen recording."
   }
 }
 

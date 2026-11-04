@@ -140,7 +140,7 @@ export function StatusPage() {
 				Skip to service status
 			</a>
 			<header className="site-header">
-				<a className="brand" href="https://cap.so" aria-label="Oiaai home">
+				<a className="brand" href="https://cap.so" aria-label="OlhaAí home">
 					<Image
 						src="/cap-icon.svg"
 						width={34}
@@ -148,12 +148,12 @@ export function StatusPage() {
 						alt=""
 						unoptimized
 					/>
-					<span>Oiaai</span>
+					<span>OlhaAí</span>
 					<span className="brand-divider" />
 					<span className="brand-context">Status</span>
 				</a>
 				<a className="back-link" href="https://cap.so">
-					Back to Oiaai <Arrow diagonal />
+					Back to OlhaAí <Arrow diagonal />
 				</a>
 			</header>
 			<main>

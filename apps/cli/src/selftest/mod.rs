@@ -1,4 +1,4 @@
-//! `cap selftest` — diagnostics that verify Oiaai works correctly on this
+//! `cap selftest` — diagnostics that verify OlhaAí works correctly on this
 //! machine, starting with an end-to-end A/V sync test: record a known
 //! flash+beep pattern through the real capture pipeline, then measure the
 //! flash-to-beep offset in both the raw recording and an export of it.
@@ -426,7 +426,7 @@ async fn run_av_sync_inner(
         0
     };
 
-    reporter.log("Oiaai A/V sync self-test");
+    reporter.log("OlhaAí A/V sync self-test");
     reporter.log(&format!(
         "This will take about {} seconds.",
         (estimate_secs as f64 / 10.0).round() as u64 * 10
@@ -866,7 +866,7 @@ async fn start_recording(
         .map_err(|e| {
             format!(
                 "screen recording permission unavailable: {e}. \
-                 Grant Oiaai screen recording access in System Settings and retry."
+                 Grant OlhaAí screen recording access in System Settings and retry."
             )
         })
         .map(cap_recording::SendableShareableContent::from)?;

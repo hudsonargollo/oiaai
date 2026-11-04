@@ -129,7 +129,7 @@ final class SampleHandler: RPBroadcastSampleHandler {
         domain: "so.cap.mobile.screen-recorder",
         code: 1,
         userInfo: [
-          NSLocalizedDescriptionKey: "Oiaai could not access the screen recording."
+          NSLocalizedDescriptionKey: "OlhaAí could not access the screen recording."
         ]
       )
     }

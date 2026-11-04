@@ -430,7 +430,7 @@ const SharePage = ({
 									</p>
 									<span className="flex items-center gap-1 rounded-full bg-[#EFE7FD] px-1.5 py-[2px] text-[9.5px] font-medium text-[#7B5FD0]">
 										<Sparkles className="size-2.5" />
-										Oiaai AI
+										OlhaAí AI
 									</span>
 								</div>
 								<p className="mt-1.5 min-h-[62px] text-[12px] leading-[1.45] text-[#202020]">

@@ -13,25 +13,25 @@ const ogImage = ogImageUrl({
 
 export const metadata: Metadata = {
 	title:
-		"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Oiaai",
+		"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | OlhaAí",
 	description:
-		"Oiaai lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source with most code under AGPLv3, free to use.",
+		"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source with most code under AGPLv3, free to use.",
 	alternates: {
 		canonical: "https://cap.so/self-hosted-screen-recording",
 	},
 	openGraph: {
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Oiaai",
+			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | OlhaAí",
 		description:
-			"Oiaai lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source and free.",
+			"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, or MinIO — recordings go directly to your infrastructure. Open source and free.",
 		url: "https://cap.so/self-hosted-screen-recording",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Self-Hosted Screen Recording",
+				alt: "OlhaAí: Self-Hosted Screen Recording",
 			},
 		],
 		locale: "en_US",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | Oiaai",
+			"Self-Hosted Screen Recording — Own Your Data, No Vendor Lock-In | OlhaAí",
 		description:
-			"Oiaai lets you self-host screen recordings on your own S3-compatible storage. AWS S3, Cloudflare R2, MinIO — your infrastructure, instant shareable links.",
+			"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. AWS S3, Cloudflare R2, MinIO — your infrastructure, instant shareable links.",
 		images: [ogImage],
 	},
 };

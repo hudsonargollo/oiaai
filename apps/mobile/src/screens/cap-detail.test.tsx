@@ -402,7 +402,7 @@ vi.mock("@/components/Screen", async () => {
 	};
 });
 
-describe("Oiaai detail screen", () => {
+describe("OlhaAí detail screen", () => {
 	beforeEach(() => {
 		vi.clearAllMocks();
 		videoViewState.renderCount = 0;
@@ -410,7 +410,7 @@ describe("Oiaai detail screen", () => {
 		authState.value = createAuth();
 	});
 
-	it("announces Oiaai detail load errors with a retry action", async () => {
+	it("announces OlhaAí detail load errors with a retry action", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.reject(new Error("Network unavailable")),
@@ -423,7 +423,7 @@ describe("Oiaai detail screen", () => {
 		const tree = renderer.toJSON();
 		const text = getTextNodes(tree);
 
-		expect(text).toContain("Unable to load Oiaai");
+		expect(text).toContain("Unable to load OlhaAí");
 		expect(text).toContain("Network unavailable");
 		expect(hasProp(tree, "accessibilityRole", "alert")).toBe(true);
 		expect(hasProp(tree, "accessibilityLiveRegion", "polite")).toBe(true);
@@ -431,7 +431,7 @@ describe("Oiaai detail screen", () => {
 			hasProp(
 				tree,
 				"accessibilityLabel",
-				"Oiaai detail error: Network unavailable",
+				"OlhaAí detail error: Network unavailable",
 			),
 		).toBe(true);
 
@@ -439,7 +439,7 @@ describe("Oiaai detail screen", () => {
 			accessibilityLabel: "Try again",
 		});
 		if (!retryButton)
-			throw new Error("Oiaai detail retry action was not rendered");
+			throw new Error("OlhaAí detail retry action was not rendered");
 		expect(retryButton.props.accessibilityHint).toBe("Reloads this recording");
 
 		await act(async () => {
@@ -517,7 +517,7 @@ describe("Oiaai detail screen", () => {
 		});
 	});
 
-	it("keeps another space member's Oiaai controls read-only", async () => {
+	it("keeps another space member's OlhaAí controls read-only", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.resolve({
@@ -587,7 +587,7 @@ describe("Oiaai detail screen", () => {
 		);
 	});
 
-	it("blocks another Oiaai owner from the content safety menu", async () => {
+	it("blocks another OlhaAí owner from the content safety menu", async () => {
 		const auth = createAuth();
 		auth.client.getCap = vi.fn(() =>
 			Promise.resolve({
@@ -702,7 +702,7 @@ describe("Oiaai detail screen", () => {
 		expect(headerAction.props.accessibilityState).toEqual({
 			disabled: false,
 		});
-		expect(headerAction.props.accessibilityHint).toBe("Opens Oiaai settings");
+		expect(headerAction.props.accessibilityHint).toBe("Opens OlhaAí settings");
 		expect(headerAction.props.hitSlop).toBe(10);
 		expect(resolveStyle(headerAction.props.style, true)).toMatchObject({
 			backgroundColor: "#f0f0f0",
@@ -924,7 +924,7 @@ describe("Oiaai detail screen", () => {
 		);
 		expect(sheet?.props.visibilityDisabled).toBe(true);
 		expect(sheet?.props.visibilityDisabledHint).toBe(
-			"Current Oiaai action is in progress",
+			"Current OlhaAí action is in progress",
 		);
 		expect(sheet?.props.visibilityDisabledValue).toBeUndefined();
 
@@ -977,7 +977,7 @@ describe("Oiaai detail screen", () => {
 		expect(saveButton.props.loading).toBe(false);
 		expect(saveButton.props.disabled).toBe(true);
 		expect(saveButton.props.accessibilityHint).toBe(
-			"Current Oiaai action is in progress",
+			"Current OlhaAí action is in progress",
 		);
 		expect(getTextNodes(renderer.toJSON())).not.toContain("Saving...");
 
@@ -1006,7 +1006,7 @@ describe("Oiaai detail screen", () => {
 		const [sheet] = renderer.root.findAllByProps({
 			testID: "cap-settings-sheet",
 		});
-		if (!sheet) throw new Error("Oiaai settings sheet was not rendered");
+		if (!sheet) throw new Error("OlhaAí settings sheet was not rendered");
 
 		await act(async () => {
 			sheet.props.onVisibilityChange(detail.cap, false);
@@ -1050,7 +1050,7 @@ describe("Oiaai detail screen", () => {
 	});
 });
 
-describe("overlapping Oiaai settings changes", () => {
+describe("overlapping OlhaAí settings changes", () => {
 	beforeEach(() => {
 		vi.clearAllMocks();
 	});

@@ -34,14 +34,14 @@ export const RecorderHeader = ({
 					type="button"
 					onClick={onClose}
 					disabled={isBusy}
-					title="Close Oiaai"
+					title="Close OlhaAí"
 					className={clsx(
 						"flex size-4 items-center justify-center rounded-full bg-[#FF5F57] border border-[#E0443E]/60 p-0",
 						isBusy
 							? "opacity-50 cursor-not-allowed"
 							: "cursor-pointer transition-transform hover:scale-110",
 					)}
-					aria-label="Close Oiaai and hide all recorder UI"
+					aria-label="Close OlhaAí and hide all recorder UI"
 				>
 					<X
 						size={10}
@@ -61,9 +61,9 @@ export const RecorderHeader = ({
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 118 40"
-							aria-label="Oiaai Logo"
+							aria-label="OlhaAí Logo"
 						>
-							<title>Oiaai Logo</title>
+							<title>OlhaAí Logo</title>
 							<rect
 								width="39.5"
 								height="39.5"

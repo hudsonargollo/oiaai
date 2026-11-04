@@ -33,7 +33,7 @@ export function FirstShareableLink({
 								src={CAP_LOGO_URL}
 								width="40"
 								height="40"
-								alt="Oiaai"
+								alt="OlhaAí"
 								className="mx-auto my-0"
 							/>
 						</Section>
@@ -44,14 +44,15 @@ export function FirstShareableLink({
 							Your video "{videoName}" is now ready to share with anyone.
 						</Text>
 						<Text className="text-sm leading-6 text-black">
-							Click the button below to view your recording and share it with others.
+							Click the button below to view your recording and share it with
+							others.
 						</Text>
 						<Section className="my-8 text-center">
 							<Link
 								className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
 								href={url}
 							>
-								View Your Oiaai
+								View Your OlhaAí
 							</Link>
 						</Section>
 						<Text className="text-sm leading-6 text-black">
@@ -61,7 +62,7 @@ export function FirstShareableLink({
 							{url.replace(/^https?:\/\//, "")}
 						</Text>
 						<Text className="text-sm leading-6 text-black mt-6">
-							With Oiaai, you can easily share your screen recordings, get
+							With OlhaAí, you can easily share your screen recordings, get
 							feedback, and collaborate with others. We're excited to see what
 							you create!
 						</Text>

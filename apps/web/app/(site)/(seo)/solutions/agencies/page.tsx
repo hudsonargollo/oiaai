@@ -8,9 +8,9 @@ import { ogImageUrl } from "@/lib/og/url";
 const createFaqStructuredData = () => {
 	const faqs = [
 		{
-			question: "Does Oiaai work on both macOS and Windows?",
+			question: "Does OlhaAí work on both macOS and Windows?",
 			answer:
-				"Yes. Oiaai supports both macOS and Windows with desktop apps, so your entire team can use the same workflow regardless of their platform preference.",
+				"Yes. OlhaAí supports both macOS and Windows with desktop apps, so your entire team can use the same workflow regardless of their platform preference.",
 		},
 		{
 			question: "Can clients view videos without installing anything?",
@@ -24,21 +24,21 @@ const createFaqStructuredData = () => {
 		},
 		{
 			question: "How long can we record on the free version?",
-			answer: `The free version supports recordings up to 5 minutes. For longer client presentations and unlimited recording time, upgrade to Oiaai Pro at $${PRICING.pro.annualPerMonth}/month (billed annually).`,
+			answer: `The free version supports recordings up to 5 minutes. For longer client presentations and unlimited recording time, upgrade to OlhaAí Pro at $${PRICING.pro.annualPerMonth}/month (billed annually).`,
 		},
 		{
-			question: "Is Oiaai secure enough for confidential client work?",
+			question: "Is OlhaAí secure enough for confidential client work?",
 			answer:
-				"Yes. Oiaai is open-source and privacy-first. You can connect your own S3 storage, use a custom domain for share links, and password-protect sensitive videos. This gives you complete control over client data.",
+				"Yes. OlhaAí is open-source and privacy-first. You can connect your own S3 storage, use a custom domain for share links, and password-protect sensitive videos. This gives you complete control over client data.",
 		},
 		{
-			question: "Can we use our own branding with Oiaai?",
+			question: "Can we use our own branding with OlhaAí?",
 			answer:
-				"Yes. Oiaai Pro includes custom domain support (cap.yourdomain.com) so share links reflect your agency's brand. You can also use your own S3 storage for complete data ownership.",
+				"Yes. OlhaAí Pro includes custom domain support (cap.yourdomain.com) so share links reflect your agency's brand. You can also use your own S3 storage for complete data ownership.",
 		},
 		{
-			question: "How does Oiaai pricing work for agency teams?",
-			answer: `Oiaai Pro is $${PRICING.pro.annualPerMonth}/month per user (billed annually) and includes unlimited cloud storage, custom domains, team workspaces, and all collaboration features. Volume discounts are available for teams over 10 users.`,
+			question: "How does OlhaAí pricing work for agency teams?",
+			answer: `OlhaAí Pro is $${PRICING.pro.annualPerMonth}/month per user (billed annually) and includes unlimited cloud storage, custom domains, team workspaces, and all collaboration features. Volume discounts are available for teams over 10 users.`,
 		},
 	];
 
@@ -63,14 +63,14 @@ const createSoftwareStructuredData = () => {
 	const softwareStructuredData = {
 		"@context": "https://schema.org",
 		"@type": "SoftwareApplication",
-		name: "Oiaai — Screen Recorder",
+		name: "OlhaAí — Screen Recorder",
 		operatingSystem: ["macOS", "Windows"],
 		applicationCategory: "BusinessApplication",
 		description:
 			"Open-source, privacy-first screen recorder for agencies. Instant share links and studio-quality local recording with editing.",
 		publisher: {
 			"@type": "Organization",
-			name: "Oiaai",
+			name: "OlhaAí",
 		},
 		offers: {
 			"@type": "Offer",
@@ -84,26 +84,27 @@ const createSoftwareStructuredData = () => {
 };
 
 const ogImage = ogImageUrl({
-	title: "Oiaai for agencies",
+	title: "OlhaAí for agencies",
 	tag: "Solutions",
 });
 
 export const metadata: Metadata = {
-	title: "Oiaai for Agencies — Faster Client Updates with Instant Video Links",
+	title: "OlhaAí for Agencies — Faster Client Updates with Instant Video Links",
 	description:
-		"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Oiaai for Agencies on macOS & Windows.",
+		"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. OlhaAí for Agencies on macOS & Windows.",
 	openGraph: {
-		title: "Oiaai for Agencies — Faster Client Updates with Instant Video Links",
+		title:
+			"OlhaAí for Agencies — Faster Client Updates with Instant Video Links",
 		description:
-			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Oiaai for Agencies on macOS & Windows.",
+			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. OlhaAí for Agencies on macOS & Windows.",
 		url: "https://cap.so/solutions/agencies",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai for Agencies",
+				alt: "OlhaAí for Agencies",
 			},
 		],
 		locale: "en_US",
@@ -111,9 +112,10 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Oiaai for Agencies — Faster Client Updates with Instant Video Links",
+		title:
+			"OlhaAí for Agencies — Faster Client Updates with Instant Video Links",
 		description:
-			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. Oiaai for Agencies on macOS & Windows.",
+			"Send clearer client updates in minutes. Share instant links with comments, or craft polished walkthroughs. OlhaAí for Agencies on macOS & Windows.",
 		images: [ogImage],
 	},
 	alternates: {

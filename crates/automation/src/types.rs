@@ -151,7 +151,7 @@ fn default_post() -> String {
 }
 
 fn default_notify_title() -> String {
-    "Oiaai Automation".to_string()
+    "OlhaAí Automation".to_string()
 }
 
 #[derive(Serialize, Deserialize, Type, Debug, Clone, Copy, PartialEq, Eq, Default)]

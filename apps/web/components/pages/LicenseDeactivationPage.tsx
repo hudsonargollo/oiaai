@@ -54,7 +54,7 @@ export const LicenseDeactivationPage = () => {
 			<div className="mb-14 text-center page-intro">
 				<h1>Deactivate License</h1>
 				<p className="mt-4 text-lg text-gray-10">
-					Enter your license key and purchase email to deactivate your Oiaai
+					Enter your license key and purchase email to deactivate your OlhaAí
 					commercial license from its current device.
 				</p>
 			</div>

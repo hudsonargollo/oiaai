@@ -12,14 +12,14 @@ export const recordScreenMacContent = {
 	gradientColors: ["#fed7aa", "#fdba74", "#fb923c"], // pastel oranges/yellows for macOS Big Sur
 
 	heroTLDR:
-		"macOS won't record internal audio on its own — Cmd+Shift+5 and QuickTime only capture your mic. The quickest fix is Oiaai: toggle on system audio, hit record, and you're capturing screen and sound in two clicks. No BlackHole, no Terminal, free.",
+		"macOS won't record internal audio on its own — Cmd+Shift+5 and QuickTime only capture your mic. The quickest fix is OlhaAí: toggle on system audio, hit record, and you're capturing screen and sound in two clicks. No BlackHole, no Terminal, free.",
 
 	comparisonTable: {
 		title: "4 Ways to Record System Audio on a Mac",
 		headers: ["Method", "Price", "Setup", "Notes"],
 		rows: [
 			[
-				"<strong>Oiaai</strong>",
+				"<strong>OlhaAí</strong>",
 				"Free (open-source)",
 				'<span className="rating">★☆☆☆☆</span> (2 clicks)',
 				"Captures system audio + mic natively. Works on the latest macOS and every Apple Silicon Mac.",
@@ -47,32 +47,32 @@ export const recordScreenMacContent = {
 
 	methods: [
 		{
-			title: "Method 1: Record Mac Screen + Audio With Oiaai (2 Clicks)",
+			title: "Method 1: Record Mac Screen + Audio With OlhaAí (2 Clicks)",
 			description:
-				"Oiaai captures internal audio on macOS natively, so there's nothing to route and nothing to install beyond the app itself.",
+				"OlhaAí captures internal audio on macOS natively, so there's nothing to route and nothing to install beyond the app itself.",
 			steps: [
 				{
-					title: "Step 1: Install Oiaai",
+					title: "Step 1: Install OlhaAí",
 					content:
-						'Download Oiaai from <a href="/download">cap.so/download</a> and drag it into Applications. The first time you record, macOS asks for Screen Recording and Microphone permissions in System Settings → Privacy & Security — grant both so Oiaai can capture your display and audio.',
+						'Download OlhaAí from <a href="/download">cap.so/download</a> and drag it into Applications. The first time you record, macOS asks for Screen Recording and Microphone permissions in System Settings → Privacy & Security — grant both so OlhaAí can capture your display and audio.',
 				},
 				{
 					title: "Step 2: Turn on system audio and record",
 					content: `
             <ol>
-              <li>Click the Oiaai icon in your menu bar.</li>
+              <li>Click the OlhaAí icon in your menu bar.</li>
               <li>Switch the audio control from "No System Audio" to "Record System Audio". Leave your microphone on too if you want to narrate.</li>
               <li>Pick what to capture — the full screen, a single window, or a region you draw.</li>
               <li>Hit Start Recording.</li>
             </ol>
-            <p>That's the whole setup. Oiaai records everything coming out of your speakers — app sounds, a video playing in your browser, a call — alongside your voice, with no BlackHole and no Audio MIDI Setup.</p>
-            <p><strong>Good to know:</strong> Oiaai runs without kernel extensions and works on the latest macOS releases and Apple Silicon (M1 through M4). If you only want a landing page for this workflow, the <a href="/mac-screen-recording-with-audio">Mac screen recorder with internal audio</a> page covers it too.</p>
+            <p>That's the whole setup. OlhaAí records everything coming out of your speakers — app sounds, a video playing in your browser, a call — alongside your voice, with no BlackHole and no Audio MIDI Setup.</p>
+            <p><strong>Good to know:</strong> OlhaAí runs without kernel extensions and works on the latest macOS releases and Apple Silicon (M1 through M4). If you only want a landing page for this workflow, the <a href="/mac-screen-recording-with-audio">Mac screen recorder with internal audio</a> page covers it too.</p>
           `,
 				},
 				{
 					title: "Step 3: Trim, level, and share",
 					content: `
-            <p>When you stop, Oiaai hands you a shareable link right away, or you can open the recording in the editor first:</p>
+            <p>When you stop, OlhaAí hands you a shareable link right away, or you can open the recording in the editor first:</p>
             <ul>
               <li>Trim the dead air off the front and back.</li>
               <li>Balance the two audio tracks — mic and system audio are separate, so you can raise a quiet voiceover or pull down loud app sound independently.</li>
@@ -97,7 +97,7 @@ export const recordScreenMacContent = {
               <li>In QuickTime, choose <strong>File → New Screen Recording</strong>, click the chevron next to the record button, and pick <strong>BlackHole</strong> as the input.</li>
               <li>Record. When you're done, switch your output back to your speakers — otherwise your Mac stays silent.</li>
             </ol>
-            <p>The catch: BlackHole routes system audio into the "microphone" slot, so recording your voice <strong>and</strong> system sound together means stacking an Aggregate Device on top of all this — the multi-step dance Oiaai skips entirely. <a href="/screen-recorder-mac">See how Oiaai compares as a Mac screen recorder</a>.</p>
+            <p>The catch: BlackHole routes system audio into the "microphone" slot, so recording your voice <strong>and</strong> system sound together means stacking an Aggregate Device on top of all this — the multi-step dance OlhaAí skips entirely. <a href="/screen-recorder-mac">See how OlhaAí compares as a Mac screen recorder</a>.</p>
           `,
 				},
 			],
@@ -129,27 +129,27 @@ export const recordScreenMacContent = {
 			{
 				question: "My recording has no system audio at all",
 				answer:
-					"With Oiaai, make sure the menu-bar control is set to \"Record System Audio\" before you start — it's off by default. With QuickTime or OBS, this almost always means your system output isn't pointed at the Multi-Output Device that includes BlackHole.",
+					"With OlhaAí, make sure the menu-bar control is set to \"Record System Audio\" before you start — it's off by default. With QuickTime or OBS, this almost always means your system output isn't pointed at the Multi-Output Device that includes BlackHole.",
 			},
 			{
 				question: "I hear an echo or doubled audio",
 				answer:
-					"That happens when your mic is picking up the same sound your speakers are playing. Use headphones, or in Oiaai turn the microphone off and keep only system audio if you don't need narration.",
+					"That happens when your mic is picking up the same sound your speakers are playing. Use headphones, or in OlhaAí turn the microphone off and keep only system audio if you don't need narration.",
 			},
 			{
 				question: "My microphone is being recorded but app sound isn't",
 				answer:
-					"Oiaai records both at once — toggle System Audio and Microphone on in the recording menu. If you're on QuickTime, it can only listen to one input, which is why capturing voice and system sound together needs an Aggregate Device.",
+					"OlhaAí records both at once — toggle System Audio and Microphone on in the recording menu. If you're on QuickTime, it can only listen to one input, which is why capturing voice and system sound together needs an Aggregate Device.",
 			},
 			{
 				question: "FaceTime or Zoom audio isn't captured",
 				answer:
-					'Some apps apply extra privacy protection to their audio. In Oiaai, choose "Record entire screen" rather than a single window to capture protected app audio reliably.',
+					'Some apps apply extra privacy protection to their audio. In OlhaAí, choose "Record entire screen" rather than a single window to capture protected app audio reliably.',
 			},
 			{
 				question: "System audio recording broke after a macOS update",
 				answer:
-					"Major macOS updates can reset screen recording permissions. Open System Settings → Privacy & Security → Screen Recording and confirm Oiaai is still enabled, then relaunch it.",
+					"Major macOS updates can reset screen recording permissions. Open System Settings → Privacy & Security → Screen Recording and confirm OlhaAí is still enabled, then relaunch it.",
 			},
 		],
 	},
@@ -165,12 +165,12 @@ export const recordScreenMacContent = {
 			{
 				title: "Record at 60 FPS for motion",
 				description:
-					"If you're demoing animations, transitions, or anything that scrolls fast, bump the frame rate up in Oiaai's settings — 60 FPS keeps it smooth.",
+					"If you're demoing animations, transitions, or anything that scrolls fast, bump the frame rate up in OlhaAí's settings — 60 FPS keeps it smooth.",
 			},
 			{
 				title: "Let captions do the work",
 				description:
-					"Oiaai can auto-generate captions from the audio it just recorded, which makes tutorials watchable on mute and more accessible without extra effort.",
+					"OlhaAí can auto-generate captions from the audio it just recorded, which makes tutorials watchable on mute and more accessible without extra effort.",
 			},
 			{
 				title: "Use a custom domain for client work",
@@ -188,46 +188,46 @@ export const recordScreenMacContent = {
 
 	faqs: [
 		{
-			question: "Can Oiaai record internal audio on a Mac without BlackHole?",
+			question: "Can OlhaAí record internal audio on a Mac without BlackHole?",
 			answer:
-				'Yes. Oiaai captures macOS system audio natively, so you don\'t need BlackHole, Loopback, or any virtual audio driver. Turn on "Record System Audio" and everything playing through your Mac is captured with the screen.',
+				'Yes. OlhaAí captures macOS system audio natively, so you don\'t need BlackHole, Loopback, or any virtual audio driver. Turn on "Record System Audio" and everything playing through your Mac is captured with the screen.',
 		},
 		{
 			question: "Why can't QuickTime or Cmd+Shift+5 record system audio?",
 			answer:
-				"Apple restricts internal audio capture on macOS for privacy and copyright reasons, so the built-in tools only record your microphone. To capture the sound your apps are playing, you need either a virtual audio device or an app like Oiaai that handles it natively.",
+				"Apple restricts internal audio capture on macOS for privacy and copyright reasons, so the built-in tools only record your microphone. To capture the sound your apps are playing, you need either a virtual audio device or an app like OlhaAí that handles it natively.",
 		},
 		{
 			question: "Does this work on M1, M2, M3, and M4 Macs?",
 			answer:
-				"Yes. Oiaai is built for Apple Silicon and runs natively on every M-series chip, as well as the latest versions of macOS.",
+				"Yes. OlhaAí is built for Apple Silicon and runs natively on every M-series chip, as well as the latest versions of macOS.",
 		},
 		{
 			question: "Is there a time limit on recordings?",
 			answer:
-				"Oiaai's Studio Mode records locally with no time limit — record for as long as you need and export the full length. On the free plan, Instant Mode (the instantly shareable links) is capped at 5 minutes per recording; upgrading lifts that cap.",
+				"OlhaAí's Studio Mode records locally with no time limit — record for as long as you need and export the full length. On the free plan, Instant Mode (the instantly shareable links) is capped at 5 minutes per recording; upgrading lifts that cap.",
 		},
 		{
 			question: "Can I record system audio and my microphone at the same time?",
 			answer:
-				"Yes, and Oiaai keeps them on separate tracks so you can adjust each one in the editor. That's ideal for narrating a tutorial while the app you're demoing still makes its own sounds.",
+				"Yes, and OlhaAí keeps them on separate tracks so you can adjust each one in the editor. That's ideal for narrating a tutorial while the app you're demoing still makes its own sounds.",
 		},
 		{
 			question: "Can I record the audio from just one app?",
 			answer:
-				"macOS doesn't expose a per-app audio API, so Oiaai records all system audio together. The simplest workaround is to quit noisy background apps before recording, or trim unwanted sections out afterward.",
+				"macOS doesn't expose a per-app audio API, so OlhaAí records all system audio together. The simplest workaround is to quit noisy background apps before recording, or trim unwanted sections out afterward.",
 		},
 		{
 			question: "Will recording system audio slow my Mac down?",
 			answer:
-				"Not noticeably. Oiaai is lightweight and built natively for macOS, so even recording a high-resolution screen with audio leaves plenty of headroom on a modern Mac.",
+				"Not noticeably. OlhaAí is lightweight and built natively for macOS, so even recording a high-resolution screen with audio leaves plenty of headroom on a modern Mac.",
 		},
 	],
 	cta: {
 		title: "Record Your Mac Screen With Audio — Free",
 		description:
-			"Skip the BlackHole setup. Oiaai captures system sound and your mic on macOS natively, then hands you a shareable link the moment you stop.",
-		buttonText: "Download Oiaai",
+			"Skip the BlackHole setup. OlhaAí captures system sound and your mic on macOS natively, then hands you a shareable link the moment you stop.",
+		buttonText: "Download OlhaAí",
 		buttonLink: "/download",
 		subtitle:
 			"Free and open-source • Captures internal audio natively • No BlackHole or Terminal required",
@@ -247,7 +247,7 @@ export const recordScreenMacContent = {
 			url: "/how-to-screen-record",
 		},
 		{
-			text: "Oiaai vs Loom",
+			text: "OlhaAí vs Loom",
 			url: "/loom-alternative",
 		},
 	],

@@ -1,6 +1,6 @@
 ---
 title: "Agent Workflows"
-summary: "Practical Oiaai scenarios with safe prompts, expected actions, and success checks"
+summary: "Practical OlhaAí scenarios with safe prompts, expected actions, and success checks"
 tags: "Agents"
 ---
 
@@ -10,7 +10,7 @@ tags: "Agents"
 
 **Ask your agent:**
 
-> Summarize this recording for someone who missed the meeting. Include decisions, owners, action items, open questions, and useful timestamps: `<Oiaai URL>`.
+> Summarize this recording for someone who missed the meeting. Include decisions, owners, action items, open questions, and useful timestamps: `<OlhaAí URL>`.
 
 The agent should:
 
@@ -84,7 +84,7 @@ cap upload bug-repro.mp4 --json
 
 **Ask your agent:**
 
-> Upload `demo.mp4` to Oiaai with the title “July product demo” and give me the link. Show me the exact file and title before uploading.
+> Upload `demo.mp4` to OlhaAí with the title “July product demo” and give me the link. Show me the exact file and title before uploading.
 
 After confirmation:
 
@@ -150,7 +150,7 @@ Read [Google Drive](/docs/teams/google-drive) for the complete workflow and roll
 
 **Ask your agent:**
 
-> Import this Loom URL into our organization, assign it to the confirmed owner email and Oiaai space name, and wait for the migration to finish. Preview the exact mapping before starting.
+> Import this Loom URL into our organization, assign it to the confirmed owner email and OlhaAí space name, and wait for the migration to finish. Preview the exact mapping before starting.
 
 After checking organization, member, and space state, the agent should show the mapping and get confirmation. A confirmed import can be run as:
 
@@ -163,11 +163,11 @@ The import command also supports `--wait`. For a batch migration, process one ex
 
 **Success check:** Every source row has a terminal job result and a verified destination. An accepted or queued response is not treated as complete.
 
-For CSV limits, owner and space mapping, large-batch controls, and source-unavailable handling, read [Migrating to Oiaai](/docs/migrating-to-cap).
+For CSV limits, owner and space mapping, large-batch controls, and source-unavailable handling, read [Migrating to OlhaAí](/docs/migrating-to-cap).
 
-## Use Oiaai for administration or development
+## Use OlhaAí for administration or development
 
-Oiaai also exposes account, organization, notification, storage, billing, and developer workflows. Ask the agent to discover the current surface rather than copying commands from an old prompt:
+OlhaAí also exposes account, organization, notification, storage, billing, and developer workflows. Ask the agent to discover the current surface rather than copying commands from an old prompt:
 
 ```sh
 cap guide --json

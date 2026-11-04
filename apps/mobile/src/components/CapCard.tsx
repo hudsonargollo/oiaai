@@ -251,7 +251,7 @@ export const CapCard = memo(function CapCard({
 							<Pressable
 								accessibilityRole="button"
 								accessibilityLabel={`More actions for ${cap.title}`}
-								accessibilityHint="Opens Oiaai actions"
+								accessibilityHint="Opens OlhaAí actions"
 								hitSlop={compactHitSlop}
 								onPress={(event) => {
 									event.stopPropagation();

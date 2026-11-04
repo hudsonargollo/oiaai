@@ -8,21 +8,21 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "Best Free Screen Recorder for Windows 10 & 11 | Oiaai",
+	title: "Best Free Screen Recorder for Windows 10 & 11 | OlhaAí",
 	description:
-		"Record your screen on Windows with Oiaai — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+		"Record your screen on Windows with OlhaAí — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 	openGraph: {
-		title: "Best Free Screen Recorder for Windows 10 & 11 | Oiaai",
+		title: "Best Free Screen Recorder for Windows 10 & 11 | OlhaAí",
 		description:
-			"Record your screen on Windows with Oiaai — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
+			"Record your screen on Windows with OlhaAí — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks. Works on Windows 10 & 11.",
 		url: "https://cap.so/screen-recorder-windows",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Best Free Screen Recorder for Windows",
+				alt: "OlhaAí: Best Free Screen Recorder for Windows",
 			},
 		],
 		locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Free Screen Recorder for Windows 10 & 11 | Oiaai",
+		title: "Best Free Screen Recorder for Windows 10 & 11 | OlhaAí",
 		description:
-			"Record your screen on Windows with Oiaai — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks.",
+			"Record your screen on Windows with OlhaAí — free, open-source screen recorder with HD video, audio, webcam overlay, and instant sharing. No watermarks.",
 		images: [ogImage],
 	},
 	alternates: {

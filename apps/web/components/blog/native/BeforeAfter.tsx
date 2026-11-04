@@ -336,7 +336,7 @@ export function BeforeAfter() {
 				ref={stageRef}
 				role="slider"
 				tabIndex={0}
-				aria-label="Compare Oiaai 0.6.0 and Oiaai 0.6.1"
+				aria-label="Compare OlhaAí 0.6.0 and OlhaAí 0.6.1"
 				aria-valuemin={0}
 				aria-valuemax={100}
 				aria-valuenow={50}
@@ -395,7 +395,7 @@ export function BeforeAfter() {
 						<Image
 							ref={side.key === "before" ? windowRef : undefined}
 							src={side.window}
-							alt={`Oiaai's main window in ${side.version}, built with ${side.stack}`}
+							alt={`OlhaAí's main window in ${side.version}, built with ${side.stack}`}
 							width={WINDOW_WIDTH}
 							height={side.height}
 							sizes="(min-width: 1200px) 26rem, 40vw"
@@ -418,7 +418,7 @@ export function BeforeAfter() {
 				/>
 			</div>
 			<figcaption className="mx-auto mt-4 max-w-[40rem] px-2 text-center text-[14px] leading-relaxed text-gray-10">
-				Oiaai's main window in 0.6.0 on the left and 0.6.1 on the right. Move
+				OlhaAí's main window in 0.6.0 on the left and 0.6.1 on the right. Move
 				across it to compare.
 			</figcaption>
 		</figure>

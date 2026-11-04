@@ -248,7 +248,10 @@ export const CollectionShareDialog = ({
 
 							<FieldGroup title="Layout">
 								<div className="divide-y divide-gray-4">
-									<SettingRow label="Style" description="How recordings are arranged">
+									<SettingRow
+										label="Style"
+										description="How recordings are arranged"
+									>
 										<Select
 											size="sm"
 											value={settings.layout}

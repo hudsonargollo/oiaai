@@ -21,7 +21,7 @@ const footerLinks = {
 		{ label: "Blog", href: "/blog" },
 		{ label: "Changelog", href: "/changelog" },
 		{ label: "Docs", href: "/docs" },
-		{ label: "Oiaai for Agents", href: "/agents" },
+		{ label: "OlhaAí for Agents", href: "/agents" },
 		{ label: "Pricing", href: "/pricing" },
 		{ label: "Download", href: "/download" },
 		{
@@ -107,7 +107,7 @@ const footerLinks = {
 			label: "Google Drive Screen Recorder",
 			href: "/google-drive-screen-recorder",
 		},
-		{ label: "Oiaai vs Loom", href: "/loom-alternative" },
+		{ label: "OlhaAí vs Loom", href: "/loom-alternative" },
 		{ label: "Student Discount", href: "/student-discount" },
 	] as FooterLink[],
 };
@@ -117,7 +117,7 @@ const socialLinks: {
 	href: string;
 	icon: ComponentProps<typeof FontAwesomeIcon>["icon"];
 }[] = [
-	{ label: "X (@Oiaai)", href: "https://x.com/cap", icon: faXTwitter },
+	{ label: "X (@OlhaAí)", href: "https://x.com/cap", icon: faXTwitter },
 	{
 		label: "Discord",
 		href: "https://discord.gg/y8gdQ3WRN3",
@@ -210,7 +210,7 @@ const ComplianceBadges = () => (
 					target="_blank"
 					rel="noopener noreferrer"
 					title={`${label} — ${status}`}
-					aria-label={`${label} ${status}. View Oiaai's Trust Portal`}
+					aria-label={`${label} ${status}. View OlhaAí's Trust Portal`}
 					className="transition-colors text-gray-9 hover:text-gray-12"
 				>
 					<svg
@@ -349,7 +349,7 @@ export const Footer = () => {
 								title="Additional Links"
 								links={footerLinks.additional}
 							/>
-							<FooterColumn title="Oiaai" links={footerLinks.help} />
+							<FooterColumn title="OlhaAí" links={footerLinks.help} />
 							<FooterColumn title="Use Cases" links={footerLinks.useCases} />
 							<FooterColumn
 								title="Tools"
@@ -363,7 +363,7 @@ export const Footer = () => {
 						<div className="flex flex-col gap-4">
 							<ComplianceBadges />
 							<p className="text-sm text-gray-9">
-								© Oiaai Software, Inc. {new Date().getFullYear()}.
+								© OlhaAí Software, Inc. {new Date().getFullYear()}.
 							</p>
 						</div>
 						<div className="flex flex-wrap gap-x-8 gap-y-2">

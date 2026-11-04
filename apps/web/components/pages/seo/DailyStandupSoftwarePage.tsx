@@ -4,13 +4,13 @@ import { SeoPageTemplate } from "@/components/seo/SeoPageTemplate";
 import type { SeoPageContent } from "@/components/seo/types";
 
 export const dailyStandupSoftwareContent: SeoPageContent = {
-	title: "Daily Standup Software: Streamline Your Agile Meetings with Oiaai",
+	title: "Daily Standup Software: Streamline Your Agile Meetings with OlhaAí",
 	description:
-		"Looking for daily standup software? Discover how Oiaai helps remote or hybrid teams run async standups efficiently. No more timezone conflicts!",
+		"Looking for daily standup software? Discover how OlhaAí helps remote or hybrid teams run async standups efficiently. No more timezone conflicts!",
 
-	featuresTitle: "Why Oiaai is the Ideal Daily Standup Software",
+	featuresTitle: "Why OlhaAí is the Ideal Daily Standup Software",
 	featuresDescription:
-		"Oiaai provides everything Agile teams need for efficient, asynchronous daily standups",
+		"OlhaAí provides everything Agile teams need for efficient, asynchronous daily standups",
 
 	features: [
 		{
@@ -26,7 +26,7 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 		{
 			title: "Security & Privacy",
 			description:
-				"Ensure sensitive project discussions remain confidential with Oiaai's open-source approach and custom S3 storage options for complete data ownership and NDA compliance.",
+				"Ensure sensitive project discussions remain confidential with OlhaAí's open-source approach and custom S3 storage options for complete data ownership and NDA compliance.",
 		},
 		{
 			title: "Time-Saving Daily Updates",
@@ -48,7 +48,7 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Recording Modes for Efficient Standups",
 		description:
-			"Oiaai adapts to your team's Agile workflow with flexible recording options",
+			"OlhaAí adapts to your team's Agile workflow with flexible recording options",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -71,7 +71,7 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 		],
 	},
 
-	useCasesTitle: "How Agile Teams Use Oiaai for Daily Standups",
+	useCasesTitle: "How Agile Teams Use OlhaAí for Daily Standups",
 	useCasesDescription: "Real solutions for common standup meeting challenges",
 
 	useCases: [
@@ -107,17 +107,17 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 		{
 			question: "How long should each standup recording be?",
 			answer:
-				"We recommend keeping recordings under 3 minutes per person, focusing on the classic standup format: what was accomplished, what's planned for today, and any blockers. Oiaai's Instant Mode is perfectly optimized for these quick updates, while Studio Mode offers more flexibility for complex situations.",
+				"We recommend keeping recordings under 3 minutes per person, focusing on the classic standup format: what was accomplished, what's planned for today, and any blockers. OlhaAí's Instant Mode is perfectly optimized for these quick updates, while Studio Mode offers more flexibility for complex situations.",
 		},
 		{
-			question: "Can we integrate Oiaai with our project management tools?",
+			question: "Can we integrate OlhaAí with our project management tools?",
 			answer:
-				"Oiaai provides easy-to-share links that work seamlessly with all major project management and communication platforms including Jira, Trello, Slack, Microsoft Teams, and more. Simply copy the link to your standup recording and paste it into your team's preferred tools.",
+				"OlhaAí provides easy-to-share links that work seamlessly with all major project management and communication platforms including Jira, Trello, Slack, Microsoft Teams, and more. Simply copy the link to your standup recording and paste it into your team's preferred tools.",
 		},
 		{
 			question: "What if someone misses recording their standup?",
 			answer:
-				"Oiaai's flexibility is perfect for occasional missed standups. Team members can record updates when they're available, and others can easily access the recording later. This is actually an advantage over traditional standups, where missing the meeting means missing the information completely.",
+				"OlhaAí's flexibility is perfect for occasional missed standups. Team members can record updates when they're available, and others can easily access the recording later. This is actually an advantage over traditional standups, where missing the meeting means missing the information completely.",
 		},
 		{
 			question: "How do async standups help with meeting fatigue?",
@@ -127,8 +127,13 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 	],
 
 	comparisonTable: {
-		title: "Oiaai vs. Traditional Standup Methods",
-		headers: ["Feature", "Oiaai", "Video Meetings", "Text-Based Standup Tools"],
+		title: "OlhaAí vs. Traditional Standup Methods",
+		headers: [
+			"Feature",
+			"OlhaAí",
+			"Video Meetings",
+			"Text-Based Standup Tools",
+		],
 		rows: [
 			[
 				"Time Zone Flexibility",
@@ -179,9 +184,9 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 	},
 
 	migrationGuide: {
-		title: "How to Implement Oiaai for Your Daily Standups",
+		title: "How to Implement OlhaAí for Your Daily Standups",
 		steps: [
-			"Download Oiaai for all team members (available on Mac and Windows)",
+			"Download OlhaAí for all team members (available on Mac and Windows)",
 			"Set up shared S3 storage (optional) for secure standup content",
 			"Create standup guidelines (recommended length, format, etc.)",
 			"Decide on a consistent time window for recording daily updates",
@@ -193,13 +198,13 @@ export const dailyStandupSoftwareContent: SeoPageContent = {
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Oiaai screen recording demo",
+			title: "OlhaAí screen recording demo",
 		},
 	},
 
 	cta: {
 		title: "Ready to Transform Your Daily Standups?",
-		buttonText: "Download Oiaai Free",
+		buttonText: "Download OlhaAí Free",
 	},
 };
 

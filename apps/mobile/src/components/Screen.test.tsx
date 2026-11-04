@@ -136,7 +136,7 @@ const findNodeByType = (
 };
 
 describe("Screen", () => {
-	it("uses the Oiaai web subtitle scale", async () => {
+	it("uses the OlhaAí web subtitle scale", async () => {
 		const tree = await renderTree();
 		const subtitle = findTextByValue(
 			tree,
@@ -150,7 +150,7 @@ describe("Screen", () => {
 		expect(hasStyle(tree, { paddingBottom: 32 })).toBe(true);
 	});
 
-	it("shows the animated Oiaai logo while loading", async () => {
+	it("shows the animated OlhaAí logo while loading", async () => {
 		const tree = await renderTree(<Screen loading />);
 
 		expect(findNodeByType(tree, "CapLoadingIndicator")).not.toBeNull();

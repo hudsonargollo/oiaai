@@ -5,7 +5,7 @@
 	<key>CapScreenRecordingAppGroup</key>
 	<string>__APP_GROUP__</string>
 	<key>CFBundleDisplayName</key>
-	<string>Oiaai Screen Recording</string>
+	<string>OlhaAí Screen Recording</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

@@ -13,8 +13,8 @@ export const TestimonialsPage = ({ amount }: TestimonialsPageProps) => {
 			<div className="py-32 md:py-40 wrapper">
 				<Testimonials
 					amount={amount}
-					title="Teams & creators love Oiaai"
-					subtitle="Don't just take our word for it. Here's what our users are saying about their experience with Oiaai."
+					title="Teams & creators love OlhaAí"
+					subtitle="Don't just take our word for it. Here's what our users are saying about their experience with OlhaAí."
 				/>
 			</div>
 			<div className="pb-28 wrapper">

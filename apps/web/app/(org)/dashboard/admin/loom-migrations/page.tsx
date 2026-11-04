@@ -4,7 +4,7 @@ import { requireMigrationOperator } from "@/lib/loom-concierge";
 import { LoomMigrationQueue } from "./LoomMigrationQueue";
 
 export const metadata: Metadata = {
-	title: "Loom Migration Queue — Oiaai",
+	title: "Loom Migration Queue — OlhaAí",
 };
 
 export default async function Page() {

@@ -21,7 +21,7 @@ type Status = "idle" | "requesting" | "ready" | "error";
 const headlines: Record<Status, { title: string; lede: string }> = {
 	idle: {
 		title: "Camera & microphone access",
-		lede: "Allow access once so Oiaai can show your camera preview and record your voice.",
+		lede: "Allow access once so OlhaAí can show your camera preview and record your voice.",
 	},
 	requesting: {
 		title: "Waiting for Chrome",
@@ -29,11 +29,11 @@ const headlines: Record<Status, { title: string; lede: string }> = {
 	},
 	ready: {
 		title: "You're all set",
-		lede: "Pick the camera Oiaai should use. It's remembered for every recording.",
+		lede: "Pick the camera OlhaAí should use. It's remembered for every recording.",
 	},
 	error: {
-		title: "Oiaai needs access",
-		lede: "Allow access once so Oiaai can show your camera preview and record your voice.",
+		title: "OlhaAí needs access",
+		lede: "Allow access once so OlhaAí can show your camera preview and record your voice.",
 	},
 };
 
@@ -235,7 +235,7 @@ function App() {
 				{status === "ready" && devices.length > 0 && (
 					<div className="card device-card">
 						<label className="field">
-							<span>Camera Oiaai should use</span>
+							<span>Camera OlhaAí should use</span>
 							<select
 								value={selectedDeviceId}
 								onChange={(event) =>
@@ -302,7 +302,7 @@ function App() {
 				</svg>
 			</main>
 			<p className="footnote">
-				Chrome remembers this. Oiaai only uses your camera while you record.
+				Chrome remembers this. OlhaAí only uses your camera while you record.
 			</p>
 		</>
 	);

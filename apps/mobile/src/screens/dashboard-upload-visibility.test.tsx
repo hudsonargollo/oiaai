@@ -1011,7 +1011,7 @@ describe("upload and dashboard visibility", () => {
 		expect(showActionSheetWithOptions).toHaveBeenCalledWith(
 			expect.objectContaining({
 				cancelButtonIndex: 1,
-				message: "Allow Oiaai to read videos from Photos before uploading.",
+				message: "Allow OlhaAí to read videos from Photos before uploading.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 			}),
@@ -1021,7 +1021,7 @@ describe("upload and dashboard visibility", () => {
 			"Upload source unavailable",
 		);
 		expect(getTextNodes(renderer.toJSON())).toContain(
-			"Allow Oiaai to read videos from Photos before uploading.",
+			"Allow OlhaAí to read videos from Photos before uploading.",
 		);
 		const [failedUploadSource] = renderer.root.findAllByProps({
 			accessibilityLabel: "Upload source unavailable",
@@ -1034,13 +1034,13 @@ describe("upload and dashboard visibility", () => {
 		if (!retryPhotosButton)
 			throw new Error("Retry Photos button was not rendered");
 		expect(failedUploadSource.props.accessibilityValue).toEqual({
-			text: "Allow Oiaai to read videos from Photos before uploading.",
+			text: "Allow OlhaAí to read videos from Photos before uploading.",
 		});
 		expect(retryPhotosButton.props.accessibilityHint).toBe(
-			"Allow Oiaai to read videos from Photos before uploading.",
+			"Allow OlhaAí to read videos from Photos before uploading.",
 		);
 		expect(retryPhotosButton.props.accessibilityValue).toEqual({
-			text: "Allow Oiaai to read videos from Photos before uploading.",
+			text: "Allow OlhaAí to read videos from Photos before uploading.",
 		});
 		expect(retryPhotosButton.props.disabled).toBe(false);
 	});
@@ -1592,7 +1592,7 @@ describe("upload and dashboard visibility", () => {
 				},
 			}),
 		).toBe(true);
-		expect(viewButton.props.accessibilityHint).toBe("Opens the uploaded Oiaai");
+		expect(viewButton.props.accessibilityHint).toBe("Opens the uploaded OlhaAí");
 	});
 
 	it("shows queued upload rows without premature progress", async () => {
@@ -2230,7 +2230,7 @@ describe("upload and dashboard visibility", () => {
 		).toBeGreaterThan(0);
 		expect(hasStyle(tree, { marginBottom: 40 })).toBe(true);
 		expect(text).toContain("Welcome! Record or Import your first recording");
-		expect(hasProp(tree, "accessibilityLabel", "Oiaai logo")).toBe(true);
+		expect(hasProp(tree, "accessibilityLabel", "OlhaAí logo")).toBe(true);
 		expect(
 			hasProps(tree, {
 				accessibilityHint: "Opens import options",
@@ -2364,7 +2364,7 @@ describe("upload and dashboard visibility", () => {
 		auth.bootstrap.spaces = [
 			{
 				id: "org_123",
-				name: "All Oiaai",
+				name: "All OlhaAí",
 				iconUrl: null,
 				kind: "organization",
 				privacy: "Public",
@@ -2414,7 +2414,7 @@ describe("upload and dashboard visibility", () => {
 		const [options, select] = showActionSheetWithOptions.mock.calls[0] ?? [];
 		expect(options).toMatchObject({
 			disabledButtonIndices: [0],
-			options: ["My Library", "All Oiaai · Owner", "Product · Member", "Cancel"],
+			options: ["My Library", "All OlhaAí · Owner", "Product · Member", "Cancel"],
 			title: "Space",
 		});
 		if (!select) throw new Error("Space action callback was not registered");
@@ -2476,7 +2476,7 @@ describe("upload and dashboard visibility", () => {
 		if (!retryButton)
 			throw new Error("Dashboard retry action was not rendered");
 		expect(retryButton.props.accessibilityHint).toBe(
-			"Reloads your Oiaai library",
+			"Reloads your OlhaAí library",
 		);
 
 		await act(async () => {
@@ -2503,7 +2503,7 @@ describe("upload and dashboard visibility", () => {
 			const firstPage = (upload: typeof processing | null) => ({
 				caps: Array.from({ length: 30 }, (_, index) => ({
 					id: `cap_${index + 1}`,
-					title: `Oiaai ${index + 1}`,
+					title: `OlhaAí ${index + 1}`,
 					upload: index === 0 ? upload : null,
 				})),
 				folders: [],
@@ -2525,7 +2525,7 @@ describe("upload and dashboard visibility", () => {
 				listCaps.mockRejectedValueOnce(new Error("Refresh unavailable"));
 			listCaps.mockResolvedValue({
 				...firstPage(null),
-				caps: [{ id: "cap_31", title: "Oiaai 31", upload: null }],
+				caps: [{ id: "cap_31", title: "OlhaAí 31", upload: null }],
 				hasMore: false,
 				page: 2,
 			});
@@ -2583,7 +2583,7 @@ describe("upload and dashboard visibility", () => {
 				caps: [
 					{
 						id: input?.page === 2 ? "cap_2" : "cap_1",
-						title: input?.page === 2 ? "Second Oiaai" : "First Oiaai",
+						title: input?.page === 2 ? "Second OlhaAí" : "First OlhaAí",
 						upload: null,
 					},
 				],
@@ -2635,7 +2635,7 @@ describe("upload and dashboard visibility", () => {
 			caps: [
 				{
 					id: "cap_123",
-					title: "Oiaai Recording",
+					title: "OlhaAí Recording",
 					upload,
 				},
 			],
@@ -2820,7 +2820,7 @@ describe("upload and dashboard visibility", () => {
 			await Promise.resolve();
 		});
 		const [capCard] = renderer.root.findAllByProps({ cap });
-		if (!capCard) throw new Error("Oiaai card was not rendered");
+		if (!capCard) throw new Error("OlhaAí card was not rendered");
 
 		const { ActionSheetIOS } = await import("react-native");
 		const showActionSheetWithOptions = vi.mocked(
@@ -2841,7 +2841,7 @@ describe("upload and dashboard visibility", () => {
 		});
 
 		const [busyCard] = renderer.root.findAllByProps({ cap });
-		if (!busyCard) throw new Error("Busy Oiaai card was not rendered");
+		if (!busyCard) throw new Error("Busy OlhaAí card was not rendered");
 
 		expect(auth.client.updateCapSharing).toHaveBeenCalledWith("video_123", {
 			public: false,
@@ -2898,7 +2898,7 @@ describe("upload and dashboard visibility", () => {
 		authState.value = auth;
 		const renderer = await renderComponent(React.createElement(CapsScreen));
 		const [capCard] = renderer.root.findAllByProps({ cap });
-		if (!capCard) throw new Error("Oiaai card was not rendered");
+		if (!capCard) throw new Error("OlhaAí card was not rendered");
 
 		expect(capCard.props.onCopyPress).toEqual(expect.any(Function));
 		expect(capCard.props.onSharePress).toEqual(expect.any(Function));
@@ -3098,7 +3098,7 @@ describe("upload and dashboard visibility", () => {
 			authState.value = auth;
 			const renderer = await renderComponent(React.createElement(CapsScreen));
 			const card = renderer.root.findAllByProps({ cap })[0];
-			if (!card) throw new Error("Oiaai card missing");
+			if (!card) throw new Error("OlhaAí card missing");
 			await act(async () => card.props.onMenuPress(cap));
 			const sheet = () => renderer.root.findByType(CapSettingsSheet);
 			const rename = () => {

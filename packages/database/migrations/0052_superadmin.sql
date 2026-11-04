@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `globalAdmin` boolean DEFAULT false NOT NULL;

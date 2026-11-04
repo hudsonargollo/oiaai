@@ -1,7 +1,7 @@
 {
 	"name": "@cap/sdk-embed",
 	"version": "0.1.0",
-	"description": "Oiaai Embedding SDK for third-party integrations",
+	"description": "OlhaAí Embedding SDK for third-party integrations",
 	"type": "module",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",

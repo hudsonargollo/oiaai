@@ -1,10 +1,10 @@
 ---
 title: "Working With Your Team"
-summary: "Organize people, recordings, permissions, and feedback in Oiaai"
+summary: "Organize people, recordings, permissions, and feedback in OlhaAí"
 tags: "Teams, Organizations, Collaboration"
 ---
 
-Oiaai organizations give a team one place to manage members, recordings, storage, and reporting. Within an organization, spaces and folders keep work organized while roles control who can change settings.
+OlhaAí organizations give a team one place to manage members, recordings, storage, and reporting. Within an organization, spaces and folders keep work organized while roles control who can change settings.
 
 ## Start with an organization
 
@@ -16,13 +16,13 @@ An organization has three member roles:
 | Admin | Day-to-day administration, member management, and organization-wide workflows |
 | Member | Creating, viewing, and collaborating on content they can access |
 
-Owners and admins can invite people from the organization settings. Invitations can be prepared in batches, and Oiaai also creates missing organization users during a mapped Loom migration without sending an unexpected invitation email.
+Owners and admins can invite people from the organization settings. Invitations can be prepared in batches, and OlhaAí also creates missing organization users during a mapped Loom migration without sending an unexpected invitation email.
 
 ## Organize work with spaces and folders
 
 Use spaces for durable team areas such as Product, Support, Sales, or Onboarding. Add the organization members who should work in each space; space members can be admins or members. A Pro space can also publish a collection link where anyone with the link can browse the public recordings in that space, and a space can require a password for its recordings.
 
-Folders provide another level of organization inside a space or in a personal library. An Oiaai can be moved between supported organization, space, and folder locations without changing the recording itself.
+Folders provide another level of organization inside a space or in a personal library. An OlhaAí can be moved between supported organization, space, and folder locations without changing the recording itself.
 
 A practical structure is:
 
@@ -34,7 +34,7 @@ A practical structure is:
 
 Public recordings can be watched by anyone with the link. Private recordings require an authorized signed-in viewer, and password-protected recordings prompt for the password before playback.
 
-Signed-in viewers can add timestamped comments, replies, and emoji reactions when the organization and Oiaai settings allow them. Comment authors can delete their own comments. New-comment notifications can appear in Oiaai and by email, depending on notification preferences.
+Signed-in viewers can add timestamped comments, replies, and emoji reactions when the organization and OlhaAí settings allow them. Comment authors can delete their own comments. New-comment notifications can appear in OlhaAí and by email, depending on notification preferences.
 
 Organization settings can disable comments, reactions, transcripts, captions, summaries, or chapters for the whole organization. They can also set branding, a custom domain, an allowed email domain, a default playback speed, and an AI language.
 
@@ -48,20 +48,20 @@ Analytics are aggregate. They are useful for understanding reach and engagement,
 
 ## Use your own storage
 
-An organization can manage storage centrally. Oiaai currently supports Oiaai-managed storage, Google Drive, and S3-compatible storage. When storage is managed by the organization, individual members cannot override that choice in Oiaai Desktop.
+An organization can manage storage centrally. OlhaAí currently supports OlhaAí-managed storage, Google Drive, and S3-compatible storage. When storage is managed by the organization, individual members cannot override that choice in OlhaAí Desktop.
 
 Read [Google Drive](/docs/teams/google-drive) for the Drive workflow, or the [S3 guides](/docs/s3-config/aws-s3) for S3-compatible storage.
 
 ## Work with an agent
 
-Oiaai's CLI and MCP surface can inspect organizations, members, spaces, folders, recordings, comments, and analytics. Start by asking the agent to run `cap guide --json` so it uses the command contract installed on your machine.
+OlhaAí's CLI and MCP surface can inspect organizations, members, spaces, folders, recordings, comments, and analytics. Start by asking the agent to run `cap guide --json` so it uses the command contract installed on your machine.
 
 For example:
 
-> Inspect our Oiaai organization, members, spaces, and folders. Propose a structure for Product, Support, and Sales, including the exact moves you would make. Do not create, invite, or move anything until I approve the full plan.
+> Inspect our OlhaAí organization, members, spaces, and folders. Propose a structure for Product, Support, and Sales, including the exact moves you would make. Do not create, invite, or move anything until I approve the full plan.
 
 The agent should discover IDs rather than infer them from names, remain read-only while planning, and request confirmation before every invitation, role change, content move, storage change, or other mutation. See [Agent Workflows](/docs/agents/workflows) for tested patterns.
 
 ## Bringing an existing team over
 
-For a small Loom library, use Oiaai's importer directly. For a larger organization, map owners and spaces before starting and verify every import reaches a terminal result. The full process is in [Migrating to Oiaai](/docs/migrating-to-cap).
+For a small Loom library, use OlhaAí's importer directly. For a larger organization, map owners and spaces before starting and verify every import reaches a terminal result. The full process is in [Migrating to OlhaAí](/docs/migrating-to-cap).

@@ -212,7 +212,7 @@ export const CapWordmark = ({ height = 52 }: { height?: number }) => {
 const CapFullLogo = ({ height, color }: { height: number; color: string }) => (
 	<svg
 		role="img"
-		aria-label="Oiaai"
+		aria-label="OlhaAí"
 		width={Math.round((height * 118) / 40)}
 		height={height}
 		viewBox="0 0 118 40"
@@ -825,7 +825,7 @@ const MenuBar = () => (
 		})}
 	>
 		<AppleGlyph size={15} />
-		<span style={{ fontWeight: 600 }}>Oiaai</span>
+		<span style={{ fontWeight: 600 }}>OlhaAí</span>
 		<span style={{ fontWeight: 400 }}>File</span>
 		<span style={{ fontWeight: 400 }}>Edit</span>
 		<span style={{ fontWeight: 400 }}>View</span>
@@ -1006,7 +1006,7 @@ export const PricingArt = ({
 	<MeshFrame mesh={mesh} width={500} height={620} padding={10} radius={30}>
 		<PlanCardArt
 			width={480}
-			name="Oiaai Pro"
+			name="OlhaAí Pro"
 			chip="Most popular"
 			chipBg="#DCEBFC"
 			chipColor="#2F62D4"
@@ -1056,7 +1056,7 @@ export const PricingArt = ({
 					boxShadow: "0 10px 24px -10px rgba(120,178,240,0.55)",
 				})}
 			>
-				Get Oiaai Pro
+				Get OlhaAí Pro
 			</div>
 		</PlanCardArt>
 	</MeshFrame>

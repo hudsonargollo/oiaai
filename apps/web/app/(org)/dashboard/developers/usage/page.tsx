@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { UsageClient } from "./UsageClient";
 
 export const metadata: Metadata = {
-	title: "Developer Usage — Oiaai",
+	title: "Developer Usage — OlhaAí",
 };
 
 export default async function UsagePage() {

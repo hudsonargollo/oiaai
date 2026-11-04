@@ -24,13 +24,13 @@ function Install-CapDesktop {
 	$installerPath = Join-Path ([System.IO.Path]::GetTempPath()) ("Cap-" + [System.Guid]::NewGuid().ToString("N") + ".exe")
 
 	try {
-		Write-Host "Downloading Oiaai Desktop..."
+		Write-Host "Downloading OlhaAí Desktop..."
 		Invoke-WebRequest -UseBasicParsing -Uri $downloadUrl -OutFile $installerPath
-		Write-Host "Installing Oiaai Desktop..."
+		Write-Host "Installing OlhaAí Desktop..."
 		$process = Start-Process -FilePath $installerPath -ArgumentList "/S" -Wait -PassThru
 
 		if ($process.ExitCode -ne 0) {
-			Write-Error "Oiaai Desktop installer failed with exit code $($process.ExitCode)."
+			Write-Error "OlhaAí Desktop installer failed with exit code $($process.ExitCode)."
 			exit 1
 		}
 	} finally {
@@ -44,7 +44,7 @@ $forceDesktopInstall = $env:CAP_DESKTOP_FORCE_INSTALL
 if (-not $appPath) {
 	$appPath = Find-CapAppPath
 } elseif (-not (Test-Path $appPath)) {
-	Write-Error "Oiaai Desktop was not found at $appPath."
+	Write-Error "OlhaAí Desktop was not found at $appPath."
 	exit 1
 }
 
@@ -53,7 +53,7 @@ if (-not $appPath) {
 	$appPath = Find-CapAppPath
 
 	if (-not $appPath) {
-		Write-Error "Oiaai Desktop was installed, but Cap.exe was not found. Open Oiaai Desktop once, then run this script again."
+		Write-Error "OlhaAí Desktop was installed, but Cap.exe was not found. Open OlhaAí Desktop once, then run this script again."
 		exit 1
 	}
 }
@@ -63,7 +63,7 @@ if ($forceDesktopInstall) {
 	$appPath = Find-CapAppPath
 
 	if (-not $appPath) {
-		Write-Error "Oiaai Desktop was installed, but Cap.exe was not found. Open Oiaai Desktop once, then run this script again."
+		Write-Error "OlhaAí Desktop was installed, but Cap.exe was not found. Open OlhaAí Desktop once, then run this script again."
 		exit 1
 	}
 }
@@ -77,12 +77,12 @@ if ((Get-Item $appPath).PSIsContainer) {
 $cliTarget = Join-Path $appDir "cap-cli.exe"
 
 if (-not (Test-Path $cliTarget)) {
-	Write-Host "This Oiaai Desktop install does not include the CLI. Reinstalling Oiaai Desktop..."
+	Write-Host "This OlhaAí Desktop install does not include the CLI. Reinstalling OlhaAí Desktop..."
 	Install-CapDesktop
 	$appPath = Find-CapAppPath
 
 	if (-not $appPath) {
-		Write-Error "Oiaai Desktop was installed, but Cap.exe was not found. Open Oiaai Desktop once, then run this script again."
+		Write-Error "OlhaAí Desktop was installed, but Cap.exe was not found. Open OlhaAí Desktop once, then run this script again."
 		exit 1
 	}
 
@@ -95,7 +95,7 @@ if (-not (Test-Path $cliTarget)) {
 	$cliTarget = Join-Path $appDir "cap-cli.exe"
 
 	if (-not (Test-Path $cliTarget)) {
-		Write-Error "This Oiaai Desktop install does not include the CLI."
+		Write-Error "This OlhaAí Desktop install does not include the CLI."
 		exit 1
 	}
 }
@@ -127,8 +127,8 @@ New-Item -ItemType Directory -Force -Path $installDir | Out-Null
 
 if (Test-Path $shimPath) {
 	$contents = Get-Content $shimPath -Raw
-	if (-not ($contents.Contains($cliTarget) -or $contents.Contains($shimTarget) -or $contents -match '\\Oiaai\\cap-cli\.exe')) {
-		Write-Error "$shimPath already exists and is not managed by Oiaai. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again."
+	if (-not ($contents.Contains($cliTarget) -or $contents.Contains($shimTarget) -or $contents -match '\\OlhaAí\\cap-cli\.exe')) {
+		Write-Error "$shimPath already exists and is not managed by OlhaAí. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again."
 		exit 1
 	}
 }

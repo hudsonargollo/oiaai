@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ApiKeysClient } from "./ApiKeysClient";
 
 export const metadata: Metadata = {
-	title: "API Keys — Oiaai",
+	title: "API Keys — OlhaAí",
 };
 
 export default async function ApiKeysPage() {

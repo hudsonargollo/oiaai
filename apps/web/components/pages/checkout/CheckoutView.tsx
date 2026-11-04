@@ -139,7 +139,7 @@ function CheckoutSession(
 		<CheckoutShell {...copy} summary={<SummarySkeleton />}>
 			{failure === "already_pro" ? (
 				<Notice
-					title="You're already on Oiaai Pro"
+					title="You're already on OlhaAí Pro"
 					body="Your subscription is active, so there's nothing to pay."
 					action={
 						<Link

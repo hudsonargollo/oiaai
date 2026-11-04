@@ -3,11 +3,11 @@ import { UpdatesPage } from "@/components/pages/UpdatesPage";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Blog — Oiaai",
+	title: "Blog — OlhaAí",
 	description:
-		"Product updates, guides, and insights from the team building Oiaai.",
+		"Product updates, guides, and insights from the team building OlhaAí.",
 	path: "/blog",
-	ogTitle: "The Oiaai blog",
+	ogTitle: "The OlhaAí blog",
 	ogTag: "Blog",
 });
 

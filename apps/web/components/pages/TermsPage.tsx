@@ -17,20 +17,20 @@ export const TermsPage = () => {
 						<li>
 							<h3>Introduction</h3>
 							<br />
-							Welcome to Oiaai Software, Inc. ("Oiaai," "we," "us," or "our"). These
-							Terms of Service ("Terms") govern your access to and use of our
-							website, software, and services (collectively, the "Services"). By
-							accessing or using our Services, you agree to be bound by these
-							Terms. If you do not agree to these Terms, you may not access or
-							use our Services.
+							Welcome to OlhaAí Software, Inc. ("OlhaAí," "we," "us," or "our").
+							These Terms of Service ("Terms") govern your access to and use of
+							our website, software, and services (collectively, the
+							"Services"). By accessing or using our Services, you agree to be
+							bound by these Terms. If you do not agree to these Terms, you may
+							not access or use our Services.
 						</li>
 						<li>
 							<h3>Services</h3>
 							<br />
-							Oiaai provides a platform that allows users to record their screen
-							and webcam, edit their recordings, generate shareable links, and
-							collaborate with others through "Spaces." We offer a free plan
-							with usage limits and a paid "Oiaai Pro" plan.
+							OlhaAí provides a platform that allows users to record their
+							screen and webcam, edit their recordings, generate shareable
+							links, and collaborate with others through "Spaces." We offer a
+							free plan with usage limits and a paid "OlhaAí Pro" plan.
 						</li>
 						<li>
 							<h3>User Accounts</h3>
@@ -48,7 +48,7 @@ export const TermsPage = () => {
 							You are solely responsible for the content you record, upload, or
 							otherwise make available through our Services ("User Content"). By
 							making any User Content available through our Services, you grant
-							to Oiaai a non-exclusive, transferable, sublicensable, worldwide,
+							to OlhaAí a non-exclusive, transferable, sublicensable, worldwide,
 							royalty-free license to use, copy, modify, create derivative works
 							based upon, distribute, publicly display, and publicly perform
 							your User Content in connection with operating and providing our
@@ -58,12 +58,12 @@ export const TermsPage = () => {
 							<h3>Intellectual Property</h3>
 							<br />
 							Our Services and their original content, features, and
-							functionality are owned by Oiaai and are protected by international
-							copyright, trademark, patent, trade secret, and other intellectual
-							property or proprietary rights laws. You may not copy, modify,
-							distribute, sell, or lease any part of our Services, nor may you
-							reverse engineer or attempt to extract the source code of our
-							software.
+							functionality are owned by OlhaAí and are protected by
+							international copyright, trademark, patent, trade secret, and
+							other intellectual property or proprietary rights laws. You may
+							not copy, modify, distribute, sell, or lease any part of our
+							Services, nor may you reverse engineer or attempt to extract the
+							source code of our software.
 						</li>
 						<li>
 							<h3>User Conduct</h3>
@@ -87,9 +87,9 @@ export const TermsPage = () => {
 						<li>
 							<h3>Use of Company Logos</h3>
 							<br />
-							By using our Services, you agree that Oiaai may use your company’s
-							name and logo for marketing and promotional purposes, including
-							but not limited to displaying your logo on our website,
+							By using our Services, you agree that OlhaAí may use your
+							company’s name and logo for marketing and promotional purposes,
+							including but not limited to displaying your logo on our website,
 							presentations, and promotional materials, to indicate you as a
 							user or customer of our Services. If you do not wish for your
 							company’s name or logo to be used for such purposes, you may opt
@@ -122,7 +122,7 @@ export const TermsPage = () => {
 						<li>
 							<h3>Limitation of Liability</h3>
 							<br />
-							To the fullest extent permitted by law, Oiaai shall not be liable
+							To the fullest extent permitted by law, OlhaAí shall not be liable
 							for any indirect, incidental, special, consequential, or punitive
 							damages, or any loss of profits or revenues, whether incurred
 							directly or indirectly, or any loss of data, use, goodwill, or
@@ -131,7 +131,7 @@ export const TermsPage = () => {
 						<li>
 							<h3>Indemnification</h3>
 							<br />
-							You agree to defend, indemnify, and hold harmless Oiaai and its
+							You agree to defend, indemnify, and hold harmless OlhaAí and its
 							affiliates, officers, agents, and employees from and against any
 							claims, damages, obligations, losses, liabilities, costs, or debt,
 							and expenses (including but not limited to attorney's fees)

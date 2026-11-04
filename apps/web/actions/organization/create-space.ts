@@ -87,7 +87,7 @@ export async function createSpace(
 		) {
 			return {
 				success: false,
-				error: "Upgrade to Oiaai Pro to create a public collection link",
+				error: "Upgrade to OlhaAí Pro to create a public collection link",
 			};
 		}
 

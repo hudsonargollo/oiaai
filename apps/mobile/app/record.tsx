@@ -90,7 +90,7 @@ const createRecordingFileName = (recordedAt: Date) => {
 	const month = recordingMonthNames[recordedAt.getMonth()];
 	const hours = String(recordedAt.getHours()).padStart(2, "0");
 	const minutes = String(recordedAt.getMinutes()).padStart(2, "0");
-	return `Oiaai Recording - ${recordedAt.getDate()} ${month} ${recordedAt.getFullYear()} at ${hours}.${minutes}.mp4`;
+	return `OlhaAí Recording - ${recordedAt.getDate()} ${month} ${recordedAt.getFullYear()} at ${hours}.${minutes}.mp4`;
 };
 
 const screenModeContent = (
@@ -109,7 +109,7 @@ const screenModeContent = (
 	if (phase === "recording") {
 		return {
 			title: "Recording your screen",
-			text: "Oiaai is returning Home. Stop from the red screen-sharing indicator or Control Center.",
+			text: "OlhaAí is returning Home. Stop from the red screen-sharing indicator or Control Center.",
 		};
 	}
 	if (phase === "finishing") {
@@ -121,18 +121,18 @@ const screenModeContent = (
 	if (phase === "starting") {
 		return {
 			title: "Getting your recording ready",
-			text: "Oiaai is preparing a smooth, upload-ready screen recording.",
+			text: "OlhaAí is preparing a smooth, upload-ready screen recording.",
 		};
 	}
 	if (prepared) {
 		return {
 			title: "Ready to record",
-			text: "Tap record, then confirm Start Broadcast. Oiaai returns Home as soon as recording begins.",
+			text: "Tap record, then confirm Start Broadcast. OlhaAí returns Home as soon as recording begins.",
 		};
 	}
 	return {
 		title: "Record your screen",
-		text: "Oiaai records your screen and microphone, then uploads automatically when you stop.",
+		text: "OlhaAí records your screen and microphone, then uploads automatically when you stop.",
 	};
 };
 
@@ -562,7 +562,7 @@ export default function RecordScreen() {
 			setError(
 				recordingError instanceof Error
 					? recordingError.message
-					: "Oiaai could not start the camera recording.",
+					: "OlhaAí could not start the camera recording.",
 			);
 			setPhase("ready");
 		}
@@ -622,7 +622,7 @@ export default function RecordScreen() {
 			setError(
 				recordingError instanceof Error
 					? recordingError.message
-					: "Oiaai could not start the screen recording.",
+					: "OlhaAí could not start the screen recording.",
 			);
 		}
 	}, [
@@ -725,7 +725,7 @@ export default function RecordScreen() {
 			setError(
 				recordingError instanceof Error
 					? recordingError.message
-					: "Oiaai could not read the screen recording.",
+					: "OlhaAí could not read the screen recording.",
 			);
 		} finally {
 			screenUpdateInFlight.current = false;
@@ -866,7 +866,7 @@ export default function RecordScreen() {
 					{
 						cancelButtonIndex: 0,
 						message:
-							"Use the red screen-sharing indicator or Control Center to stop. Oiaai will finish the upload in the background.",
+							"Use the red screen-sharing indicator or Control Center to stop. OlhaAí will finish the upload in the background.",
 						options: ["Keep recording"],
 						title: "Screen recording is active",
 						userInterfaceStyle: "dark",
@@ -986,7 +986,7 @@ export default function RecordScreen() {
 					<Text style={styles.permissionTitle}>Use a physical iPhone</Text>
 					<Text style={styles.permissionText}>
 						Camera and microphone recording is unavailable in iOS Simulator. Run
-						Oiaai on an iPhone to preview and record video.
+						OlhaAí on an iPhone to preview and record video.
 					</Text>
 				</View>
 			</View>
@@ -1020,7 +1020,7 @@ export default function RecordScreen() {
 					</View>
 					<Text style={styles.permissionTitle}>Camera and microphone</Text>
 					<Text style={styles.permissionText}>
-						Oiaai needs camera and microphone access for camera recordings. You
+						OlhaAí needs camera and microphone access for camera recordings. You
 						can still switch to Screen below.
 					</Text>
 					{waitingForPermission ? (

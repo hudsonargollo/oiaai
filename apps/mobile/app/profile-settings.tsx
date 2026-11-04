@@ -43,7 +43,7 @@ const openPhotoSettings = () => {
 		ActionSheetIOS.showActionSheetWithOptions(
 			{
 				cancelButtonIndex: 1,
-				message: "Allow Oiaai to choose a profile image from Settings.",
+				message: "Allow OlhaAí to choose a profile image from Settings.",
 				options: ["Open Settings", "Cancel"],
 				title: "Photos access needed",
 				tintColor: colors.blue11,
@@ -58,7 +58,7 @@ const openPhotoSettings = () => {
 
 	Alert.alert(
 		"Photos access needed",
-		"Allow Oiaai to choose a profile image from Settings.",
+		"Allow OlhaAí to choose a profile image from Settings.",
 		[
 			{ text: "Cancel", style: "cancel" },
 			{ text: "Open Settings", onPress: () => void Linking.openSettings() },

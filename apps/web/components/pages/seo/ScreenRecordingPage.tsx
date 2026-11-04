@@ -4,13 +4,14 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const screenRecordingContent: SeoPageContent = {
-	title: "Screen Recording — Capture, Share & Collaborate Instantly with Oiaai",
+	title:
+		"Screen Recording — Capture, Share & Collaborate Instantly with OlhaAí",
 	description:
-		"Oiaai makes screen recording effortless. Record your screen in HD with audio and webcam overlay, then share instantly with a link. Free, open-source, and available on Mac and Windows.",
+		"OlhaAí makes screen recording effortless. Record your screen in HD with audio and webcam overlay, then share instantly with a link. Free, open-source, and available on Mac and Windows.",
 
 	featuresTitle: "Everything You Need for Professional Screen Recording",
 	featuresDescription:
-		"Oiaai delivers a complete screen recording experience from capture to sharing — no extra tools required",
+		"OlhaAí delivers a complete screen recording experience from capture to sharing — no extra tools required",
 
 	features: [
 		{
@@ -31,7 +32,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "System Audio and Microphone",
 			description:
-				"Capture both system audio and microphone input in your screen recordings. Narrate as you go or let the original audio play through — Oiaai records both tracks cleanly.",
+				"Capture both system audio and microphone input in your screen recordings. Narrate as you go or let the original audio play through — OlhaAí records both tracks cleanly.",
 		},
 		{
 			title: "AI-Powered Captions",
@@ -41,12 +42,12 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Open Source and Privacy-First",
 			description:
-				"Oiaai is fully open-source and lets you connect your own S3-compatible storage for complete data ownership. Your screen recordings stay under your control — always.",
+				"OlhaAí is fully open-source and lets you connect your own S3-compatible storage for complete data ownership. Your screen recordings stay under your control — always.",
 		},
 		{
 			title: "Free with No Watermarks",
 			description:
-				"Oiaai's <a href='/free-screen-recorder'>free screen recorder</a> produces clean, professional recordings with no watermarks, no time limits in Studio Mode, and no hidden fees.",
+				"OlhaAí's <a href='/free-screen-recorder'>free screen recorder</a> produces clean, professional recordings with no watermarks, no time limits in Studio Mode, and no hidden fees.",
 		},
 		{
 			title: "Thread Comments on Recordings",
@@ -58,7 +59,7 @@ export const screenRecordingContent: SeoPageContent = {
 	recordingModes: {
 		title: "Two Recording Modes Built for Every Workflow",
 		description:
-			"Oiaai adapts to how you work — whether you need a quick share or a polished production",
+			"OlhaAí adapts to how you work — whether you need a quick share or a polished production",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -83,33 +84,33 @@ export const screenRecordingContent: SeoPageContent = {
 
 	comparisonTitle: "Screen Recording Tools Compared",
 	comparisonDescription:
-		"How Oiaai stacks up against the most popular screen recording options",
+		"How OlhaAí stacks up against the most popular screen recording options",
 
 	comparison: [
 		{
-			title: "Oiaai vs Loom",
-			description: `Oiaai is significantly more affordable than Loom, starting at $${PRICING.pro.annualPerMonth}/month compared to Loom's $18/month. Oiaai is also open-source, supports custom S3 storage, and offers Studio Mode on the free plan. <a href='/loom-alternative'>See the full Oiaai vs Loom comparison</a>.`,
+			title: "OlhaAí vs Loom",
+			description: `OlhaAí is significantly more affordable than Loom, starting at $${PRICING.pro.annualPerMonth}/month compared to Loom's $18/month. OlhaAí is also open-source, supports custom S3 storage, and offers Studio Mode on the free plan. <a href='/loom-alternative'>See the full OlhaAí vs Loom comparison</a>.`,
 		},
 		{
-			title: "Oiaai vs OBS Studio",
+			title: "OlhaAí vs OBS Studio",
 			description:
-				"OBS is a powerful open-source recorder built for streamers, but it requires significant configuration. Oiaai is designed for simplicity — start recording in seconds with instant sharing, cloud storage, and a clean interface that anyone can use.",
+				"OBS is a powerful open-source recorder built for streamers, but it requires significant configuration. OlhaAí is designed for simplicity — start recording in seconds with instant sharing, cloud storage, and a clean interface that anyone can use.",
 		},
 		{
-			title: "Oiaai vs macOS Built-in Recorder",
+			title: "OlhaAí vs macOS Built-in Recorder",
 			description:
-				"macOS Cmd+Shift+5 lacks system audio capture, webcam overlay, and instant sharing. Oiaai adds all of these natively with no extensions required. <a href='/screen-recorder-mac'>Learn more about screen recording on Mac</a>.",
+				"macOS Cmd+Shift+5 lacks system audio capture, webcam overlay, and instant sharing. OlhaAí adds all of these natively with no extensions required. <a href='/screen-recorder-mac'>Learn more about screen recording on Mac</a>.",
 		},
 		{
-			title: "Oiaai vs Windows Game Bar",
+			title: "OlhaAí vs Windows Game Bar",
 			description:
-				"Xbox Game Bar only records the active window and cannot capture your full desktop. Oiaai records your entire screen, any window, or a custom region, with full audio support. <a href='/screen-recorder-windows'>Learn more about screen recording on Windows</a>.",
+				"Xbox Game Bar only records the active window and cannot capture your full desktop. OlhaAí records your entire screen, any window, or a custom region, with full audio support. <a href='/screen-recorder-windows'>Learn more about screen recording on Windows</a>.",
 		},
 	],
 
 	useCasesTitle: "How Teams and Creators Use Screen Recording",
 	useCasesDescription:
-		"From quick async updates to polished training content — Oiaai fits every screen recording use case",
+		"From quick async updates to polished training content — OlhaAí fits every screen recording use case",
 
 	useCases: [
 		{
@@ -130,7 +131,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Client Presentations and Demos",
 			description:
-				"Record product demos and polished walkthroughs for clients or prospects. Share instantly without scheduling a live call and collect feedback through Oiaai's thread commenting.",
+				"Record product demos and polished walkthroughs for clients or prospects. Share instantly without scheduling a live call and collect feedback through OlhaAí's thread commenting.",
 		},
 		{
 			title: "Training and Onboarding",
@@ -140,7 +141,7 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			title: "Educational Content",
 			description:
-				"Educators and course creators use Oiaai to produce high-quality lecture recordings and screen tutorials. <a href='/solutions/online-classroom-tools'>Learn how Oiaai supports online teaching</a>.",
+				"Educators and course creators use OlhaAí to produce high-quality lecture recordings and screen tutorials. <a href='/solutions/online-classroom-tools'>Learn how OlhaAí supports online teaching</a>.",
 		},
 	],
 
@@ -149,42 +150,42 @@ export const screenRecordingContent: SeoPageContent = {
 		{
 			question: "What is screen recording?",
 			answer:
-				"Screen recording is the process of capturing the visual output of your computer display as a video file. Modern screen recording tools like Oiaai also capture audio — both system sounds and microphone input — alongside optional webcam footage. The result is a complete video that shows exactly what happened on screen, ideal for tutorials, demos, bug reports, and async communication.",
+				"Screen recording is the process of capturing the visual output of your computer display as a video file. Modern screen recording tools like OlhaAí also capture audio — both system sounds and microphone input — alongside optional webcam footage. The result is a complete video that shows exactly what happened on screen, ideal for tutorials, demos, bug reports, and async communication.",
 		},
 		{
-			question: "Is Oiaai's screen recording free?",
+			question: "Is OlhaAí's screen recording free?",
 			answer:
-				"Yes. Oiaai's Studio Mode is completely free for personal use with unlimited recording time and no watermarks. Instant Mode on the free plan supports recordings up to 5 minutes with shareable links and thread commenting. <a href='/free-screen-recorder'>Download Oiaai's free screen recorder</a> to get started today.",
+				"Yes. OlhaAí's Studio Mode is completely free for personal use with unlimited recording time and no watermarks. Instant Mode on the free plan supports recordings up to 5 minutes with shareable links and thread commenting. <a href='/free-screen-recorder'>Download OlhaAí's free screen recorder</a> to get started today.",
 		},
 		{
 			question: "Does screen recording capture audio?",
 			answer:
-				"Oiaai captures both system audio and microphone input simultaneously during screen recording. You can narrate your recording while system sounds play through, or record microphone-only for clean voiceovers. Both audio tracks are captured and synchronized automatically.",
+				"OlhaAí captures both system audio and microphone input simultaneously during screen recording. You can narrate your recording while system sounds play through, or record microphone-only for clean voiceovers. Both audio tracks are captured and synchronized automatically.",
 		},
 		{
 			question: "Can I record my screen and webcam at the same time?",
 			answer:
-				"Yes. Oiaai records your screen and webcam simultaneously with a picture-in-picture overlay. In Studio Mode, screen and webcam are saved as separate tracks, giving you full editing control in post-production.",
+				"Yes. OlhaAí records your screen and webcam simultaneously with a picture-in-picture overlay. In Studio Mode, screen and webcam are saved as separate tracks, giving you full editing control in post-production.",
 		},
 		{
 			question: "What is the best screen recording software?",
 			answer:
-				"The best screen recording software depends on your needs. For simplicity and instant sharing, Oiaai is the top choice — it is free, open-source, and produces professional results without any setup. For advanced streaming, OBS is powerful but complex. For team sharing, Oiaai's built-in link sharing and thread comments make it the best option for async collaboration. <a href='/screen-recording-software'>See a full comparison of screen recording software</a>.",
+				"The best screen recording software depends on your needs. For simplicity and instant sharing, OlhaAí is the top choice — it is free, open-source, and produces professional results without any setup. For advanced streaming, OBS is powerful but complex. For team sharing, OlhaAí's built-in link sharing and thread comments make it the best option for async collaboration. <a href='/screen-recording-software'>See a full comparison of screen recording software</a>.",
 		},
 		{
 			question: "How do I start screen recording on Mac?",
 			answer:
-				"To start screen recording on Mac with Oiaai, download the app, click the Oiaai icon in your menu bar, choose your recording region, and hit record. You can also use the macOS built-in recorder with Cmd+Shift+5, but it lacks system audio capture and instant sharing. <a href='/screen-recorder-mac'>Learn more about screen recording on Mac</a>.",
+				"To start screen recording on Mac with OlhaAí, download the app, click the OlhaAí icon in your menu bar, choose your recording region, and hit record. You can also use the macOS built-in recorder with Cmd+Shift+5, but it lacks system audio capture and instant sharing. <a href='/screen-recorder-mac'>Learn more about screen recording on Mac</a>.",
 		},
 		{
 			question: "How do I start screen recording on Windows?",
 			answer:
-				"Download Oiaai for Windows and launch it from the system tray to start screen recording in seconds. Oiaai records your full screen, a specific window, or a custom region with audio. The built-in Windows Game Bar alternative only captures the active window. <a href='/screen-recorder-windows'>Learn more about screen recording on Windows</a>.",
+				"Download OlhaAí for Windows and launch it from the system tray to start screen recording in seconds. OlhaAí records your full screen, a specific window, or a custom region with audio. The built-in Windows Game Bar alternative only captures the active window. <a href='/screen-recorder-windows'>Learn more about screen recording on Windows</a>.",
 		},
 		{
-			question: "Does Oiaai screen recording have a time limit?",
+			question: "Does OlhaAí screen recording have a time limit?",
 			answer:
-				"Studio Mode in Oiaai has no time limit on recordings — record as long as you need. Instant Mode on the free plan supports recordings up to 5 minutes. Oiaai Pro removes this limit for Instant Mode recordings as well.",
+				"Studio Mode in OlhaAí has no time limit on recordings — record as long as you need. Instant Mode on the free plan supports recordings up to 5 minutes. OlhaAí Pro removes this limit for Instant Mode recordings as well.",
 		},
 	],
 
@@ -192,13 +193,13 @@ export const screenRecordingContent: SeoPageContent = {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
 			title:
-				"Oiaai screen recording demo showing HD capture, webcam overlay, and instant sharing",
+				"OlhaAí screen recording demo showing HD capture, webcam overlay, and instant sharing",
 		},
 	},
 
 	cta: {
-		title: "Start Screen Recording for Free with Oiaai",
-		buttonText: "Download Oiaai Free",
+		title: "Start Screen Recording for Free with OlhaAí",
+		buttonText: "Download OlhaAí Free",
 		secondaryButtonText: "Try Instant Mode in Browser",
 	},
 };

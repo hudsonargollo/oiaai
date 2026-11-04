@@ -396,7 +396,7 @@ export const LinkNotification = ({
 					<span className="flex items-center gap-2">
 						<CapLogoMark className="size-4 shrink-0" />
 						<span className="text-[12px]" style={{ color: "#5c5c5c" }}>
-							Oiaai
+							OlhaAí
 						</span>
 						<span className="flex-1" />
 						<span className="text-[12px]" style={{ color: "#5c5c5c" }}>

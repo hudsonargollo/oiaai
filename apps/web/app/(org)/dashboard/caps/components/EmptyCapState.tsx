@@ -35,7 +35,7 @@ export const EmptyCapState: React.FC<EmptyCapStateProps> = ({ userName }) => {
 						Hey{userName ? ` ${userName}` : ""}! Record your first video
 					</p>
 					<p className="max-w-md text-gray-10 text-md">
-						Craft your narrative with Oiaai - get projects done quicker.
+						Craft your narrative with OlhaAí - get projects done quicker.
 					</p>
 				</div>
 				<div className="flex flex-wrap gap-3 justify-center items-center mt-4">
@@ -45,7 +45,7 @@ export const EmptyCapState: React.FC<EmptyCapStateProps> = ({ userName }) => {
 						variant="primary"
 					>
 						<FontAwesomeIcon className="size-3.5" icon={faDownload} />
-						Download Oiaai
+						Download OlhaAí
 					</Button>
 					<p className="text-sm text-gray-10">or</p>
 					<WebRecorderDialog />

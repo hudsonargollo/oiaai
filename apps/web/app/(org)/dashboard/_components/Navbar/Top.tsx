@@ -74,7 +74,7 @@ const Top = () => {
 		"/dashboard/spaces/browse": "Browse Spaces",
 		"/dashboard/analytics": "Analytics",
 		[`/dashboard/folder/${params.id}`]: "Recordings",
-		[`/dashboard/analytics/s/${params.id}`]: "Analytics: Oiaai video title",
+		[`/dashboard/analytics/s/${params.id}`]: "Analytics: OlhaAí video title",
 		"/dashboard/developers": "Developers",
 		"/dashboard/developers/apps": "Developer Apps",
 		"/dashboard/developers/usage": "Developer Usage",

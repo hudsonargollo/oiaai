@@ -1,5 +1,5 @@
 ---
-title: Oiaai v0.5 is here
+title: OlhaAí v0.5 is here
 description: Our biggest desktop release yet, with Google Drive storage, merged recordings, screenshot OCR, camera background blur, organization branding, and a much sturdier recorder.
 publishedAt: "2026-05-27"
 category: Release
@@ -10,19 +10,19 @@ tags: News, Updates, Release
 
 Hey everyone,
 
-Oiaai v0.5 is here, and it is easily the biggest desktop release we have shipped so far.
+OlhaAí v0.5 is here, and it is easily the biggest desktop release we have shipped so far.
 
-We did not just want this release to be a pile of features. We wanted the everyday parts of Oiaai to feel better: recording, editing, sharing, and deciding where your videos live.
+We did not just want this release to be a pile of features. We wanted the everyday parts of OlhaAí to feel better: recording, editing, sharing, and deciding where your videos live.
 
 v0.5 is a big step in that direction.
 
 It brings Google Drive storage, merged recordings, screenshot OCR, camera background blur, organization branding, desktop backgrounds, better quality controls, and a long list of fixes to the recording, export, audio, camera, upload, and recovery pipelines.
 
-This is not a tiny version bump. It is a serious upgrade to how Oiaai works, and to where we are taking the product next.
+This is not a tiny version bump. It is a serious upgrade to how OlhaAí works, and to where we are taking the product next.
 
 Some of it is obvious the moment you open the app. Some of it is less glamorous, but just as important.
 
-Oiaai is supposed to disappear while you work. You should be able to hit record, explain the thing, clean it up, and share it without wondering whether the audio drifted, the export stalled, the camera preview froze, or the recording can be recovered if something goes wrong.
+OlhaAí is supposed to disappear while you work. You should be able to hit record, explain the thing, clean it up, and share it without wondering whether the audio drifted, the export stalled, the camera preview froze, or the recording can be recovered if something goes wrong.
 
 That is the shape of v0.5: bigger features on top, and a less fragile core underneath.
 
@@ -30,19 +30,19 @@ That is the shape of v0.5: bigger features on top, and a less fragile core under
 
 You can now connect Google Drive from `Settings > Integrations` and use it as a storage option for new shareable recordings.
 
-If you record in Instant Mode, or create a shareable link from Studio Mode, Oiaai can upload and serve that video from your connected Google Drive.
+If you record in Instant Mode, or create a shareable link from Studio Mode, OlhaAí can upload and serve that video from your connected Google Drive.
 
-This is a big step toward giving you more control over where your recordings live. We have always wanted Oiaai to feel local-first and user-owned, and storage choice is part of that.
+This is a big step toward giving you more control over where your recordings live. We have always wanted OlhaAí to feel local-first and user-owned, and storage choice is part of that.
 
 ## Merge recordings and import local videos
 
 Studio Mode is now more flexible.
 
-You can bring previous Studio recordings into the editor and merge them with your current project. You can also import local videos, add media from the tray or the main window, open things from recording settings, or just drag and drop a file into Oiaai.
+You can bring previous Studio recordings into the editor and merge them with your current project. You can also import local videos, add media from the tray or the main window, open things from recording settings, or just drag and drop a file into OlhaAí.
 
 Studio Mode is much more useful for real workflows now. Record a quick intro, bring in an older clip, stitch together a demo, trim the rough edges, then export or share it.
 
-It sounds small, but it changes how Oiaai feels. Recordings are no longer isolated sessions. They can become projects you build on.
+It sounds small, but it changes how OlhaAí feels. Recordings are no longer isolated sessions. They can become projects you build on.
 
 ## Screenshot OCR and image importing
 
@@ -58,13 +58,13 @@ This is useful for error messages, invoices, docs, dashboards, snippets from a c
 
 Camera recordings now support background blur in both the live preview and the final export.
 
-You can choose the blur strength from camera controls or from the editor sidebar. Oiaai will use GPU acceleration where it can, with Core ML on macOS and DirectML on Windows, and fall back to CPU when needed.
+You can choose the blur strength from camera controls or from the editor sidebar. OlhaAí will use GPU acceleration where it can, with Core ML on macOS and DirectML on Windows, and fall back to CPU when needed.
 
 You can get a cleaner camera recording without setting up a perfect room before every video.
 
 ## Organization branding in the editor
 
-If you use Oiaai with an organization, the editor can now pull in your brand colors and logos.
+If you use OlhaAí with an organization, the editor can now pull in your brand colors and logos.
 
 Pick an organization in the editor and use its branding across backgrounds, gradients, captions, keyboard overlays, and exports. You can also manage brand colors and logos from the new organization dropdown.
 
@@ -74,7 +74,7 @@ This is the first step toward deeper organization support inside the editor. Soo
 
 Studio Mode now has Compatibility, Balanced, and Ultra profiles.
 
-Compatibility mode lowers bitrate and capture pressure for older or lower-power machines. Balanced is the default path for most people. Ultra is there when you want the highest quality Oiaai can push.
+Compatibility mode lowers bitrate and capture pressure for older or lower-power machines. Balanced is the default path for most people. Ultra is there when you want the highest quality OlhaAí can push.
 
 Instant Mode also has clearer quality controls now, so picking upload resolution is less ambiguous.
 
@@ -82,7 +82,7 @@ Instant Mode also has clearer quality controls now, so picking upload resolution
 
 This is the part of the release I care about most.
 
-We tightened a lot of the recording pipeline. Oiaai now does better disk-space checks before recording, tracks recording health while capture is running, and can recover more sessions after a crash or forced quit.
+We tightened a lot of the recording pipeline. OlhaAí now does better disk-space checks before recording, tracks recording health while capture is running, and can recover more sessions after a crash or forced quit.
 
 Microphone and camera handling should also feel less fragile. Saved devices restore more reliably, microphone selection is locked during recording start, mic preview comes back more consistently after recording, and camera setup timeouts no longer block the recorder indefinitely.
 
@@ -92,7 +92,7 @@ We also fixed a nasty class of audio issues caused by some microphone drivers mi
 
 Long Studio Mode recordings should keep audio locked to video more reliably now.
 
-Oiaai now reconciles late or overlapping microphone audio against the capture clock instead of accidentally layering in duplicate silence. It also handles unexpected gaps, cancelled capture pipelines, Windows system audio, microphone resampling, decoded sources, and surround downmixing more carefully.
+OlhaAí now reconciles late or overlapping microphone audio against the capture clock instead of accidentally layering in duplicate silence. It also handles unexpected gaps, cancelled capture pipelines, Windows system audio, microphone resampling, decoded sources, and surround downmixing more carefully.
 
 That is a lot of technical detail, but the user-facing version is simple: your voice and your screen should stay together.
 
@@ -116,24 +116,24 @@ None of this is complicated, but it makes the app feel more finished.
 
 v0.5 includes a long list of platform-specific fixes as well.
 
-On macOS, Oiaai excludes more Oiaai-owned windows from recordings by default, including Tauri webviews and overlays. We also fixed duplicate Dock icons, app switcher persistence, panel focus issues, and the hide Dock icon setting.
+On macOS, OlhaAí excludes more OlhaAí-owned windows from recordings by default, including Tauri webviews and overlays. We also fixed duplicate Dock icons, app switcher persistence, panel focus issues, and the hide Dock icon setting.
 
 On Windows, exports and playback should be more stable, graphics adapter selection is safer, and text scaling issues that could make controls render at the wrong size have been addressed.
 
-## Try Oiaai v0.5
+## Try OlhaAí v0.5
 
-You can download Oiaai v0.5 at [Cap.so/download](https://cap.so/download).
+You can download OlhaAí v0.5 at [Cap.so/download](https://cap.so/download).
 
-This release has a lot in it, and not all of it is visible on the surface. That is intentional. We want Oiaai to feel faster, calmer, and more dependable every time you record.
+This release has a lot in it, and not all of it is visible on the surface. That is intentional. We want OlhaAí to feel faster, calmer, and more dependable every time you record.
 
 Every day, we are onboarding bigger and bigger teams. If you are moving a large team from Loom, we offer bulk discounts and can help with the migration.
 
 You can reach us at [hello@cap.so](mailto:hello@cap.so), or use our [direct Loom importer](/dashboard/import/loom) with a CSV to migrate all of your workspace at once.
 
-As always, thank you to everyone using Oiaai, testing builds, sending crash reports, opening issues, and telling us where the app still feels rough.
+As always, thank you to everyone using OlhaAí, testing builds, sending crash reports, opening issues, and telling us where the app still feels rough.
 
 There is a lot more coming.
 
 Richie McIlroy
 
-Founder of Oiaai
+Founder of OlhaAí

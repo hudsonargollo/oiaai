@@ -31,7 +31,7 @@ const ProRiveArt = ({ onReady }: { onReady: (rive: Rive | null) => void }) => {
 };
 
 const UpgradeToPro = ({
-	text = "Upgrade to Oiaai Pro",
+	text = "Upgrade to OlhaAí Pro",
 	onClick,
 }: {
 	text?: string;

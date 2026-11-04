@@ -6,27 +6,27 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 export const screenRecordMacContent = {
 	title: "Best Screen Recorder for Mac | High-Quality, Free & Easy (2026)",
 	description:
-		"Oiaai is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
+		"OlhaAí is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
 
-	featuresTitle: "Why Oiaai is the Best Screen Recorder for Mac",
+	featuresTitle: "Why OlhaAí is the Best Screen Recorder for Mac",
 	featuresDescription:
-		"Oiaai provides all the features Mac users need for stunning, high-quality screen recordings",
+		"OlhaAí provides all the features Mac users need for stunning, high-quality screen recordings",
 
 	features: [
 		{
 			title: "Optimized for macOS",
 			description:
-				"Oiaai is fully optimized for Mac, delivering smooth performance and seamless integration with macOS. Looking for a <a href='/free-screen-recorder'>free screen recorder for Mac</a>? Oiaai is your best choice!",
+				"OlhaAí is fully optimized for Mac, delivering smooth performance and seamless integration with macOS. Looking for a <a href='/free-screen-recorder'>free screen recorder for Mac</a>? OlhaAí is your best choice!",
 		},
 		{
 			title: "High-Quality Video Capture",
 			description:
-				"Record clear, high-definition video with synced audio, perfect for professional use. Experience why users rate Oiaai as the best screen recorder for Mac.",
+				"Record clear, high-definition video with synced audio, perfect for professional use. Experience why users rate OlhaAí as the best screen recorder for Mac.",
 		},
 		{
 			title: "User-Friendly Interface",
 			description:
-				"Designed for ease of use on Mac, Oiaai offers an intuitive setup and simple recording options. Follow our <a href='/how-to-screen-record'>step-by-step screen recording guide</a> to start capturing your screen in minutes.",
+				"Designed for ease of use on Mac, OlhaAí offers an intuitive setup and simple recording options. Follow our <a href='/how-to-screen-record'>step-by-step screen recording guide</a> to start capturing your screen in minutes.",
 		},
 		{
 			title: "No Time Limit in Studio Mode",
@@ -36,7 +36,7 @@ export const screenRecordMacContent = {
 		{
 			title: "Easy Export and Sharing",
 			description:
-				"Save and share your recordings effortlessly with Oiaai's built-in export options for Mac.",
+				"Save and share your recordings effortlessly with OlhaAí's built-in export options for Mac.",
 		},
 		{
 			title: "Professional Tools",
@@ -47,7 +47,7 @@ export const screenRecordMacContent = {
 
 	useCasesTitle: "Popular Uses for the Best Screen Recorder for Mac",
 	useCasesDescription:
-		"Explore how Oiaai's screen recorder enhances productivity on macOS",
+		"Explore how OlhaAí's screen recorder enhances productivity on macOS",
 
 	useCases: [
 		{
@@ -75,42 +75,42 @@ export const screenRecordMacContent = {
 	faqsTitle: "Frequently Asked Questions",
 	faqs: [
 		{
-			question: "Is Oiaai compatible with macOS?",
+			question: "Is OlhaAí compatible with macOS?",
 			answer:
-				"Yes, Oiaai is fully compatible with macOS and optimized to work seamlessly on Mac devices. If you're looking for a <a href='/free-screen-recorder'>free screen recorder</a>, Oiaai is perfect for Mac users.",
+				"Yes, OlhaAí is fully compatible with macOS and optimized to work seamlessly on Mac devices. If you're looking for a <a href='/free-screen-recorder'>free screen recorder</a>, OlhaAí is perfect for Mac users.",
 		},
 		{
 			question: "Can I record my screen with audio on Mac?",
 			answer:
-				"Yes. Oiaai records system audio and your microphone together on macOS natively — no BlackHole or extra drivers needed. See <a href='/mac-screen-recording-with-audio'>Mac screen recording with audio</a>, or follow our <a href='/blog/record-screen-mac-system-audio'>step-by-step guide</a>.",
+				"Yes. OlhaAí records system audio and your microphone together on macOS natively — no BlackHole or extra drivers needed. See <a href='/mac-screen-recording-with-audio'>Mac screen recording with audio</a>, or follow our <a href='/blog/record-screen-mac-system-audio'>step-by-step guide</a>.",
 		},
 		{
-			question: "How do I export recordings from Oiaai on my Mac?",
+			question: "How do I export recordings from OlhaAí on my Mac?",
 			answer:
-				"Oiaai offers easy export options, allowing you to save your recordings in various formats directly from your Mac.",
+				"OlhaAí offers easy export options, allowing you to save your recordings in various formats directly from your Mac.",
 		},
 		{
-			question: "Can I use Oiaai for free on Mac?",
+			question: "Can I use OlhaAí for free on Mac?",
 			answer:
-				"Yes. Oiaai is free for Mac, including Studio Mode recording with no time limit and high-quality capture. Free Instant Mode share links are capped at 5 minutes per recording.",
+				"Yes. OlhaAí is free for Mac, including Studio Mode recording with no time limit and high-quality capture. Free Instant Mode share links are capped at 5 minutes per recording.",
 		},
 		{
-			question: "What are the best uses for Oiaai on Mac?",
+			question: "What are the best uses for OlhaAí on Mac?",
 			answer:
-				"Oiaai is ideal for creating tutorials, recording presentations, producing educational content, and supporting remote collaboration.",
+				"OlhaAí is ideal for creating tutorials, recording presentations, producing educational content, and supporting remote collaboration.",
 		},
 	],
 
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Oiaai screen recording demo",
+			title: "OlhaAí screen recording demo",
 		},
 	},
 
 	cta: {
-		title: "Get Started with Oiaai – The Best Screen Recorder for Mac",
-		buttonText: "Download Oiaai Free for Mac",
+		title: "Get Started with OlhaAí – The Best Screen Recorder for Mac",
+		buttonText: "Download OlhaAí Free for Mac",
 	},
 };
 

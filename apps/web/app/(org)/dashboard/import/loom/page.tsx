@@ -6,7 +6,7 @@ import {
 import { ImportLoomPage } from "./ImportLoomPage";
 
 export const metadata: Metadata = {
-	title: "Import from Loom — Oiaai",
+	title: "Import from Loom — OlhaAí",
 };
 
 export default async function Page({

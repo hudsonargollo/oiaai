@@ -280,7 +280,7 @@ app.get(
 
 			const videoName =
 				name ??
-				`Oiaai ${isScreenshot ? "Screenshot" : "Recording"} - ${formattedDate}`;
+				`OlhaAí ${isScreenshot ? "Screenshot" : "Recording"} - ${formattedDate}`;
 			const metadata: VideoMetadata | undefined = name
 				? { sourceName: name }
 				: undefined;

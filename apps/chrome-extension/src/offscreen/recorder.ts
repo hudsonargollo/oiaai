@@ -1568,7 +1568,7 @@ const runFailedUploadRetry = async (
 
 	const [settings, auth] = await Promise.all([loadSettings(), loadAuth()]);
 	if (!auth) {
-		throw new Error("Sign in to Oiaai to retry this upload.");
+		throw new Error("Sign in to OlhaAí to retry this upload.");
 	}
 
 	const typedVideoId = failed.videoId as VideoId;

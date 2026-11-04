@@ -33,20 +33,20 @@ const failure = (error: unknown) => ({
 				error instanceof Error &&
 				/^(Invalid cursor|Search must|Query must)/.test(error.message)
 					? error.message
-					: "Oiaai could not complete this request",
+					: "OlhaAí could not complete this request",
 		},
 	],
 	isError: true,
 });
 
 export const createCapMcpServer = (userId: User.UserId) => {
-	const server = new McpServer({ name: "Oiaai", version: "1.0.0" });
+	const server = new McpServer({ name: "OlhaAí", version: "1.0.0" });
 	server.registerTool(
 		"caps_list",
 		{
-			title: "List Oiaai recordings",
+			title: "List OlhaAí recordings",
 			description:
-				"Find recordings in your owned Oiaai library by title. Returns up to 20 recordings and a cursor for the next page.",
+				"Find recordings in your owned OlhaAí library by title. Returns up to 20 recordings and a cursor for the next page.",
 			inputSchema: fromJsonSchema<{ search?: string; cursor?: string }>({
 				type: "object",
 				properties: {
@@ -55,7 +55,7 @@ export const createCapMcpServer = (userId: User.UserId) => {
 				},
 				additionalProperties: false,
 			}),
-			annotations: { ...readOnly, title: "List Oiaai recordings" },
+			annotations: { ...readOnly, title: "List OlhaAí recordings" },
 		},
 		async (input) => {
 			try {
@@ -69,7 +69,7 @@ export const createCapMcpServer = (userId: User.UserId) => {
 	server.registerTool(
 		"caps_get",
 		{
-			title: "Get an Oiaai recording",
+			title: "Get an OlhaAí recording",
 			description:
 				"Get title, duration, status, and share URL for one recording you own.",
 			inputSchema: fromJsonSchema<{ id: string }>({
@@ -78,13 +78,13 @@ export const createCapMcpServer = (userId: User.UserId) => {
 				required: ["id"],
 				additionalProperties: false,
 			}),
-			annotations: { ...readOnly, title: "Get an Oiaai recording" },
+			annotations: { ...readOnly, title: "Get an OlhaAí recording" },
 		},
 		async ({ id }) => {
 			try {
 				const { getMcpCap } = await import("./mcp-data");
 				const cap = await getMcpCap(userId, id);
-				return cap ? result(cap) : failure(new Error("Oiaai not found"));
+				return cap ? result(cap) : failure(new Error("OlhaAí not found"));
 			} catch (error) {
 				return failure(error);
 			}
@@ -94,7 +94,7 @@ export const createCapMcpServer = (userId: User.UserId) => {
 		server,
 		"caps_context",
 		{
-			title: "Read an Oiaai recording",
+			title: "Read an OlhaAí recording",
 			description:
 				"Read the summary and up to 30 timestamped transcript cues from one recording you own. Optional query filters cues in that recording.",
 			inputSchema: fromJsonSchema<{ id: string; query?: string }>({
@@ -106,34 +106,42 @@ export const createCapMcpServer = (userId: User.UserId) => {
 				required: ["id"],
 				additionalProperties: false,
 			}),
-			annotations: { ...readOnly, title: "Read an Oiaai recording" },
+			annotations: { ...readOnly, title: "Read an OlhaAí recording" },
 			_meta: { ui: { resourceUri: cardUri }, "openai/outputTemplate": cardUri },
 		},
 		async ({ id, query }) => {
 			try {
 				const { getMcpCapContext } = await import("./mcp-data");
 				const context = await getMcpCapContext(userId, id, query);
-				return context ? result(context) : failure(new Error("Oiaai not found"));
+				return context
+					? result(context)
+					: failure(new Error("OlhaAí not found"));
 			} catch (error) {
 				return failure(error);
 			}
 		},
 	);
-	registerAppResource(server, "Oiaai recording card", cardUri, {}, async () => {
-		const { default: card } = await import("./mcp-card-html.json");
-		return {
-			contents: [
-				{ uri: cardUri, mimeType: RESOURCE_MIME_TYPE, text: card.html },
-			],
-		};
-	});
+	registerAppResource(
+		server,
+		"OlhaAí recording card",
+		cardUri,
+		{},
+		async () => {
+			const { default: card } = await import("./mcp-card-html.json");
+			return {
+				contents: [
+					{ uri: cardUri, mimeType: RESOURCE_MIME_TYPE, text: card.html },
+				],
+			};
+		},
+	);
 	return server;
 };
 
 export const capMcpHandler = createMcpHandler(
 	({ authInfo }) => {
 		const userId = authInfo?.extra?.userId;
-		if (typeof userId !== "string") throw new Error("Missing Oiaai user");
+		if (typeof userId !== "string") throw new Error("Missing OlhaAí user");
 		return createCapMcpServer(userId as User.UserId);
 	},
 	{ maxSubscriptions: 0 },

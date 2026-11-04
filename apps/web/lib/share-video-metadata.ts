@@ -90,8 +90,8 @@ export const buildShareVideoMetadata = ({
 		webUrl,
 		canonicalWebUrl,
 	});
-	const title = `${name} | Oiaai Recording`;
-	const description = "Watch this video on Oiaai";
+	const title = `${name} | OlhaAí Recording`;
+	const description = "Watch this video on OlhaAí";
 	const hasDimensions =
 		width != null && height != null && width > 0 && height > 0;
 	const playerWidth = hasDimensions ? width : PLAYER_WIDTH;
@@ -128,7 +128,7 @@ export const buildShareVideoMetadata = ({
 		openGraph: {
 			type: "video.other",
 			url: urls.shareUrl,
-			siteName: "Oiaai",
+			siteName: "OlhaAí",
 			title,
 			description,
 			ttl: 300,

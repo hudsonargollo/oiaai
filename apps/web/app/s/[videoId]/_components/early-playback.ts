@@ -36,9 +36,9 @@ export function parseEarlyPlaybackStatus(response: {
 }): EarlyPlaybackStatus | null {
 	if (response.status !== 204) return null;
 	return {
-		ready: readSeconds(response.headers.get("X-Oiaai-Ready-Duration")),
-		recorded: readSeconds(response.headers.get("X-Oiaai-Recorded-Duration")),
-		uploadComplete: response.headers.get("X-Oiaai-Recording-Complete") === "1",
+		ready: readSeconds(response.headers.get("X-OlhaAí-Ready-Duration")),
+		recorded: readSeconds(response.headers.get("X-OlhaAí-Recorded-Duration")),
+		uploadComplete: response.headers.get("X-OlhaAí-Recording-Complete") === "1",
 	};
 }
 

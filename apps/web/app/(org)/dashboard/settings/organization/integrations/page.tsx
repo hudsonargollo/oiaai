@@ -7,7 +7,7 @@ import { SlackIntegration } from "./slack-integration";
 import { OrganizationStorageIntegrations } from "./storage-integrations";
 
 export const metadata: Metadata = {
-	title: "Organization Integrations — Oiaai",
+	title: "Organization Integrations — OlhaAí",
 };
 
 export default async function OrganizationIntegrationsPage({

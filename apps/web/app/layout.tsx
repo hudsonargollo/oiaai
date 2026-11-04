@@ -44,30 +44,30 @@ const defaultFont = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://cap.so"),
-	title: "Oiaai — Check this out.",
+	title: "OlhaAí — Check this out.",
 	description:
-		"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
+		"OlhaAí is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 	openGraph: {
-		title: "Oiaai — Check this out.",
+		title: "OlhaAí — Check this out.",
 		description:
-			"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
+			"OlhaAí is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 		type: "website",
 		url: "https://cap.so",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: "/api/og",
 				width: 1200,
 				height: 630,
-				alt: "Oiaai — Check this out.",
+				alt: "OlhaAí — Check this out.",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Oiaai — Check this out.",
+		title: "OlhaAí — Check this out.",
 		description:
-			"Oiaai is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
+			"OlhaAí is the open source screen recorder. Oiaaí — Brazilian slang for “check this out” — record your screen and share a link in seconds.",
 		images: ["/api/og"],
 	},
 };

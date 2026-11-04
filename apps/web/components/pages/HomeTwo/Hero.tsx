@@ -96,7 +96,7 @@ const AltIcon = ({
 }) => (
 	<Link
 		href="/download"
-		aria-label={`Download Oiaai: ${label}`}
+		aria-label={`Download OlhaAí: ${label}`}
 		title={label}
 		className="grid size-7 place-items-center rounded-[7px] text-[rgba(17,17,17,0.45)] transition-colors duration-200 hover:bg-[#E7EDF3] hover:text-[#111111] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#111111]"
 	>
@@ -140,7 +140,7 @@ export const Hero = () => {
 					>
 						New
 					</span>
-					<span className="truncate">Oiaai's migration to GPUI</span>
+					<span className="truncate">OlhaAí's migration to GPUI</span>
 					<span className="hidden text-white/60 transition-colors duration-200 group-hover:text-white sm:inline">
 						Read the deep dive
 					</span>
@@ -199,7 +199,7 @@ export const Hero = () => {
 						}}
 						className={`${BTN_SECONDARY} group cursor-pointer gap-2.5`}
 					>
-						See how Oiaai works
+						See how OlhaAí works
 						<span className="grid size-6 place-items-center rounded-full bg-[#E7EDF3] text-[rgba(17,17,17,0.65)] transition-colors duration-200 group-hover:bg-[#DCE4EC] group-hover:text-[#111111]">
 							<ArrowDown className="size-3.5 transition-transform duration-200 group-hover:translate-y-[2px]" />
 						</span>

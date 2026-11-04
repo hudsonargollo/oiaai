@@ -81,7 +81,7 @@ export async function toggleProSeat(
 			});
 			if (!seatProvider) {
 				throw new Error(
-					"An active Oiaai Pro subscription is required before assigning seats.",
+					"An active OlhaAí Pro subscription is required before assigning seats.",
 				);
 			}
 

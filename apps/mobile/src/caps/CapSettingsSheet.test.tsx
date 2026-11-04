@@ -110,7 +110,7 @@ const cap: MobileCapSummary = {
 };
 
 describe("CapSettingsSheet", () => {
-	it("renders native settings rows for Oiaai actions", async () => {
+	it("renders native settings rows for OlhaAí actions", async () => {
 		const renderer = await renderComponent(
 			<CapSettingsSheet
 				cap={cap}
@@ -139,7 +139,7 @@ describe("CapSettingsSheet", () => {
 				"Copy link",
 				"Share",
 				"Save video",
-				"Delete Oiaai",
+				"Delete OlhaAí",
 			]),
 		);
 		expect(
@@ -150,9 +150,9 @@ describe("CapSettingsSheet", () => {
 				.allowSwipeDismissal,
 		).toBe(true);
 		const closeButton = renderer.root.findByProps({
-			accessibilityLabel: "Close Oiaai settings",
+			accessibilityLabel: "Close OlhaAí settings",
 		});
-		expect(closeButton.props.accessibilityHint).toBe("Dismisses Oiaai settings");
+		expect(closeButton.props.accessibilityHint).toBe("Dismisses OlhaAí settings");
 		expect(closeButton.props.hitSlop).toBe(8);
 		expect(
 			renderer.root.findByProps({ accessibilityHint: "Renames this recording" }),

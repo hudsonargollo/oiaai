@@ -30,7 +30,7 @@ const auth = vi.hoisted(() => ({
 				{
 					id: "org_123",
 					iconUrl: null,
-					name: "Oiaai",
+					name: "OlhaAí",
 					role: "owner",
 				},
 			],
@@ -213,7 +213,7 @@ describe("AccountScreen", () => {
 		const renderer = await renderComponent(React.createElement(AccountScreen));
 		const text = getTextNodes(renderer.toJSON());
 		const [freePlan] = renderer.root.findAllByProps({
-			accessibilityLabel: "Oiaai plan: Free",
+			accessibilityLabel: "OlhaAí plan: Free",
 		});
 
 		expect(freePlan).toBeDefined();
@@ -221,7 +221,7 @@ describe("AccountScreen", () => {
 		expect(text).toContain("Free plan · Recordings are limited to 5 minutes");
 		expect(
 			renderer.root.findAllByProps({
-				accessibilityLabel: "Upgrade to Oiaai Pro",
+				accessibilityLabel: "Upgrade to OlhaAí Pro",
 			}),
 		).toHaveLength(0);
 		expect(billing.getProPlan).toHaveBeenCalledWith({
@@ -230,7 +230,7 @@ describe("AccountScreen", () => {
 		});
 	});
 
-	it("shows existing Oiaai Pro access without a purchase action", async () => {
+	it("shows existing OlhaAí Pro access without a purchase action", async () => {
 		billing.getProPlan.mockResolvedValueOnce({
 			upgraded: true,
 			stripeSubscriptionStatus: "active",
@@ -239,9 +239,9 @@ describe("AccountScreen", () => {
 		const text = getTextNodes(renderer.toJSON());
 
 		expect(
-			renderer.root.findAllByProps({ accessibilityLabel: "Oiaai plan: Oiaai Pro" }),
+			renderer.root.findAllByProps({ accessibilityLabel: "OlhaAí plan: OlhaAí Pro" }),
 		).not.toHaveLength(0);
-		expect(text).toContain("Oiaai Pro");
+		expect(text).toContain("OlhaAí Pro");
 		expect(text).toContain("Unlimited recording time");
 	});
 
@@ -249,7 +249,7 @@ describe("AccountScreen", () => {
 		billing.getProPlan.mockRejectedValueOnce(new Error("offline"));
 		const renderer = await renderComponent(React.createElement(AccountScreen));
 		const [unavailable] = renderer.root.findAllByProps({
-			accessibilityLabel: "Oiaai plan unavailable",
+			accessibilityLabel: "OlhaAí plan unavailable",
 		});
 
 		expect(unavailable).toBeDefined();

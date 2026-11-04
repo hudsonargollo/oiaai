@@ -3,9 +3,9 @@ import { TestimonialsPage } from "@/components/pages/TestimonialsPage";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Testimonials — Oiaai",
+	title: "Testimonials — OlhaAí",
 	description:
-		"Don't just take our word for it. Here's what our users are saying about their experience with Oiaai.",
+		"Don't just take our word for it. Here's what our users are saying about their experience with OlhaAí.",
 	path: "/testimonials",
 	ogTitle: "Loved by teams everywhere",
 	ogTag: "Testimonials",

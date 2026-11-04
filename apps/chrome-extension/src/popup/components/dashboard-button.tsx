@@ -10,7 +10,7 @@ export const DashboardButton = ({ onClick }: DashboardButtonProps) => (
 		type="button"
 		variant="outline"
 		size="icon"
-		aria-label="Open Oiaai dashboard"
+		aria-label="Open OlhaAí dashboard"
 		className="!p-0"
 		onClick={onClick}
 	>

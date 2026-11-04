@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Data Processing Agreement - Oiaai",
+	title: "Data Processing Agreement - OlhaAí",
 	description:
-		"Oiaai's Data Processing Agreement for GDPR, UK GDPR, and related data protection laws.",
+		"OlhaAí's Data Processing Agreement for GDPR, UK GDPR, and related data protection laws.",
 	path: "/dpa",
 	ogTitle: "Data processing agreement",
 	ogTag: "Legal",
@@ -18,28 +18,28 @@ export default function DataProcessingAgreementPage() {
 					Data Processing Agreement
 				</h1>
 				<p className="pb-10 mx-auto max-w-lg text-lg text-gray-10 fade-in-down animate-delay-2">
-					This Data Processing Agreement covers how Oiaai handles Customer
-					Personal Data when customers use Oiaai for recording, sharing, storage,
-					AI, and collaboration.
+					This Data Processing Agreement covers how OlhaAí handles Customer
+					Personal Data when customers use OlhaAí for recording, sharing,
+					storage, AI, and collaboration.
 				</p>
 				<div className="text-left legal-body fade-in-up animate-delay-2">
 					<p>
 						This Data Processing Agreement ("DPA") forms part of the Services
-						Agreement between Oiaai Software, Inc. ("Oiaai," "we," "us," or "our")
-						and the customer using Oiaai's services ("Customer," "you," or
-						"your"). Customer agrees to this DPA by entering into the Services
-						Agreement or by using the Services where Oiaai processes personal data
-						on Customer's behalf. This DPA applies to Oiaai's website, desktop
-						application, hosted services, recording and sharing workflows, team
-						workspaces, APIs, integrations, support, and related services
-						(collectively, the "Services").
+						Agreement between OlhaAí Software, Inc. ("OlhaAí," "we," "us," or
+						"our") and the customer using OlhaAí's services ("Customer," "you,"
+						or "your"). Customer agrees to this DPA by entering into the
+						Services Agreement or by using the Services where OlhaAí processes
+						personal data on Customer's behalf. This DPA applies to OlhaAí's
+						website, desktop application, hosted services, recording and sharing
+						workflows, team workspaces, APIs, integrations, support, and related
+						services (collectively, the "Services").
 					</p>
 					<p>
 						This DPA is designed to meet Article 28 of the GDPR, the UK GDPR,
 						and similar processor contract requirements under applicable Data
 						Protection Laws. If Customer has a separate signed data processing
-						agreement with Oiaai, that signed agreement controls to the extent of
-						any conflict.
+						agreement with OlhaAí, that signed agreement controls to the extent
+						of any conflict.
 					</p>
 					<ol>
 						<li>
@@ -47,9 +47,9 @@ export default function DataProcessingAgreementPage() {
 							<br />
 							"DPA" means this Data Processing Agreement, including its annexes.
 							<br />
-							"Services Agreement" means Oiaai's Terms of Service, an order form,
-							a subscription agreement, or any other written agreement governing
-							Customer's use of the Services.
+							"Services Agreement" means OlhaAí's Terms of Service, an order
+							form, a subscription agreement, or any other written agreement
+							governing Customer's use of the Services.
 							<br />
 							"Customer Content" means recordings, screen content, webcam video,
 							audio, transcripts, captions, titles, summaries, comments,
@@ -58,80 +58,80 @@ export default function DataProcessingAgreementPage() {
 							Customer.
 							<br />
 							"Customer Personal Data" means personal data contained in Customer
-							Content or otherwise processed by Oiaai on Customer's behalf as a
+							Content or otherwise processed by OlhaAí on Customer's behalf as a
 							processor or subprocessor under the Services Agreement.
 							<br />
 							"Data Protection Laws" means all privacy and data protection laws
-							applicable to Oiaai's processing of Customer Personal Data under the
-							Services Agreement, including Regulation (EU) 2016/679, the UK
+							applicable to OlhaAí's processing of Customer Personal Data under
+							the Services Agreement, including Regulation (EU) 2016/679, the UK
 							GDPR, the Swiss Federal Act on Data Protection, the California
 							Consumer Privacy Act, and any implementing or supplemental laws.
 							<br />
-							"Security Incident" means a confirmed breach of security of Oiaai's
-							systems that leads to accidental or unlawful destruction, loss,
-							alteration, unauthorized disclosure of, or access to Customer
-							Personal Data.
+							"Security Incident" means a confirmed breach of security of
+							OlhaAí's systems that leads to accidental or unlawful destruction,
+							loss, alteration, unauthorized disclosure of, or access to
+							Customer Personal Data.
 							<br />
-							"Subprocessor" means a third party engaged by Oiaai to process
-							Customer Personal Data on Oiaai's behalf.
+							"Subprocessor" means a third party engaged by OlhaAí to process
+							Customer Personal Data on OlhaAí's behalf.
 						</li>
 						<li>
 							<h3>Roles of the Parties</h3>
 							<br />
-							For Customer Personal Data, Customer is the controller and Oiaai is
-							the processor. If Customer acts as a processor for another
-							controller, Oiaai acts as Customer's subprocessor and Customer is
-							responsible for ensuring that its instructions to Oiaai are
+							For Customer Personal Data, Customer is the controller and OlhaAí
+							is the processor. If Customer acts as a processor for another
+							controller, OlhaAí acts as Customer's subprocessor and Customer is
+							responsible for ensuring that its instructions to OlhaAí are
 							authorized by the relevant controller.
 							<br />
-							Oiaai acts as an independent controller for personal data that Oiaai
-							processes for its own business purposes rather than on Customer's
-							behalf, including account administration, billing, sales,
-							marketing, website analytics, security, fraud prevention, product
-							analytics, and legal compliance. Oiaai's Privacy Policy governs that
-							processing.
+							OlhaAí acts as an independent controller for personal data that
+							OlhaAí processes for its own business purposes rather than on
+							Customer's behalf, including account administration, billing,
+							sales, marketing, website analytics, security, fraud prevention,
+							product analytics, and legal compliance. OlhaAí's Privacy Policy
+							governs that processing.
 							<br />
 							Customer decides what to record, upload, share, transcribe, store,
-							delete, or otherwise process through the Services. Oiaai does not
+							delete, or otherwise process through the Services. OlhaAí does not
 							decide the purpose of Customer's recordings or what personal data
 							Customer includes in Customer Content.
 						</li>
 						<li>
 							<h3>Customer Instructions</h3>
 							<br />
-							Oiaai will process Customer Personal Data only on Customer's
+							OlhaAí will process Customer Personal Data only on Customer's
 							documented instructions, including the Services Agreement, this
 							DPA, Customer's product settings, Customer's use of the Services,
 							and written instructions submitted through support or other agreed
 							channels.
 							<br />
-							Customer instructs Oiaai to process Customer Personal Data to
+							Customer instructs OlhaAí to process Customer Personal Data to
 							provide, secure, maintain, support, troubleshoot, and improve the
 							Services for Customer, including their functionality, safety,
 							reliability, and performance; to prevent abuse; to comply with
-							law; and as otherwise described in Annex I. Oiaai will notify
-							Customer if Oiaai believes an instruction violates Data Protection
-							Laws, unless legally prohibited from doing so.
+							law; and as otherwise described in Annex I. OlhaAí will notify
+							Customer if OlhaAí believes an instruction violates Data
+							Protection Laws, unless legally prohibited from doing so.
 						</li>
 						<li>
 							<h3>Customer Content and AI</h3>
 							<br />
-							Oiaai will not use Customer Content to train general-purpose AI
+							OlhaAí will not use Customer Content to train general-purpose AI
 							models or third-party AI models unless Customer expressly enables
 							a feature that permits that training, provides documented
 							instructions, or the data has been aggregated or de-identified so
 							that it is no longer Customer Personal Data.
 							<br />
 							Optional AI features may process Customer Personal Data through
-							Subprocessors listed in Oiaai's trust portal. Customer decides
+							Subprocessors listed in OlhaAí's trust portal. Customer decides
 							whether to use those workflows and whether they are appropriate
 							for Customer's data and compliance needs.
 							<br />
-							Oiaai may use telemetry, metadata, usage information, and aggregated
-							or de-identified information to operate, secure, analyze, and
-							improve the Services. Oiaai does not use Customer Content in
-							identifiable form to train generalized models except as described
-							in this section.
+							OlhaAí may use telemetry, metadata, usage information, and
+							aggregated or de-identified information to operate, secure,
+							analyze, and improve the Services. OlhaAí does not use Customer
+							Content in identifiable form to train generalized models except as
+							described in this section.
 						</li>
 						<li>
 							<h3>Customer Responsibilities</h3>
@@ -143,7 +143,7 @@ export default function DataProcessingAgreementPage() {
 							ensuring that Customer Content is lawful.
 							<br />
 							Customer is responsible for configuring the Services for its
-							compliance needs, including whether to use Oiaai Cloud storage, a
+							compliance needs, including whether to use OlhaAí Cloud storage, a
 							custom S3-compatible bucket, a self-hosted deployment,
 							password-protected sharing, restricted access, optional AI
 							features, retention settings, or other available controls.
@@ -159,110 +159,111 @@ export default function DataProcessingAgreementPage() {
 							<br />
 							To the extent Customer Personal Data is personal information
 							governed by U.S. state privacy laws and Customer is a business or
-							controller under those laws, Oiaai will process that information as
-							a service provider, contractor, or processor for the limited and
-							specified business purposes described in this DPA and the Services
-							Agreement.
+							controller under those laws, OlhaAí will process that information
+							as a service provider, contractor, or processor for the limited
+							and specified business purposes described in this DPA and the
+							Services Agreement.
 							<br />
-							Oiaai will not sell or share Customer Personal Data, retain, use, or
-							disclose Customer Personal Data outside the business purposes
+							OlhaAí will not sell or share Customer Personal Data, retain, use,
+							or disclose Customer Personal Data outside the business purposes
 							described in this DPA and the Services Agreement, or combine
 							Customer Personal Data with personal information from other
 							sources, except as permitted by applicable U.S. state privacy
 							laws.
 							<br />
-							Oiaai will provide the level of privacy protection required of
+							OlhaAí will provide the level of privacy protection required of
 							service providers, contractors, or processors under applicable
-							U.S. state privacy laws and will notify Customer if Oiaai determines
-							it can no longer meet those obligations.
+							U.S. state privacy laws and will notify Customer if OlhaAí
+							determines it can no longer meet those obligations.
 						</li>
 						<li>
 							<h3>Confidentiality</h3>
 							<br />
-							Oiaai will ensure that personnel authorized to process Customer
+							OlhaAí will ensure that personnel authorized to process Customer
 							Personal Data are bound by confidentiality obligations or are
-							subject to an appropriate statutory duty of confidentiality. Oiaai
-							will limit access to Customer Personal Data to personnel who need
-							access to provide, secure, support, or maintain the Services.
+							subject to an appropriate statutory duty of confidentiality.
+							OlhaAí will limit access to Customer Personal Data to personnel
+							who need access to provide, secure, support, or maintain the
+							Services.
 						</li>
 						<li>
 							<h3>Security Measures</h3>
 							<br />
-							Oiaai will maintain appropriate technical and organizational
+							OlhaAí will maintain appropriate technical and organizational
 							measures designed to protect Customer Personal Data against
 							accidental or unlawful destruction, loss, alteration, unauthorized
 							disclosure, or access. These measures are described in Annex II.
 							<br />
 							Customer acknowledges that security measures may evolve over time,
-							provided that Oiaai does not materially decrease the overall
+							provided that OlhaAí does not materially decrease the overall
 							security of the Services during the applicable subscription term.
 						</li>
 						<li>
 							<h3>Subprocessors</h3>
 							<br />
-							Customer grants Oiaai general written authorization to engage
-							Subprocessors to process Customer Personal Data. Oiaai will require
-							each Subprocessor to protect Customer Personal Data under written
-							terms that are at least as protective as the applicable
+							Customer grants OlhaAí general written authorization to engage
+							Subprocessors to process Customer Personal Data. OlhaAí will
+							require each Subprocessor to protect Customer Personal Data under
+							written terms that are at least as protective as the applicable
 							data-processing obligations in this DPA.
 							<br />
-							Oiaai remains responsible for each Subprocessor's performance of its
-							data-processing obligations. Oiaai maintains its current
-							Subprocessor list through Oiaai's trust portal at{" "}
+							OlhaAí remains responsible for each Subprocessor's performance of
+							its data-processing obligations. OlhaAí maintains its current
+							Subprocessor list through OlhaAí's trust portal at{" "}
 							<a href="https://trust.cap.so" rel="noreferrer" target="_blank">
 								trust.cap.so
 							</a>{" "}
 							which may require access approval, or makes it available on
-							request. That list is the source of truth for Oiaai Subprocessor
+							request. That list is the source of truth for OlhaAí Subprocessor
 							names, service categories, processing purposes, processing
 							locations, and related transfer information.
 							<br />
-							Oiaai will provide notice of new or replacement Subprocessors by
+							OlhaAí will provide notice of new or replacement Subprocessors by
 							updating the trust portal, through trust portal notifications
 							where available, by account or email notice, or through another
 							reasonable notice mechanism. Customer may object to a new or
 							replacement Subprocessor within 30 days after notice if Customer
-							has reasonable data protection grounds for the objection. Oiaai will
-							use reasonable efforts to address the objection. If Oiaai cannot
-							reasonably address the objection, Customer's sole remedy is to
-							stop using the affected Service feature or terminate the affected
-							portion of the Services before the new or replacement Subprocessor
-							is used for Customer Personal Data.
+							has reasonable data protection grounds for the objection. OlhaAí
+							will use reasonable efforts to address the objection. If OlhaAí
+							cannot reasonably address the objection, Customer's sole remedy is
+							to stop using the affected Service feature or terminate the
+							affected portion of the Services before the new or replacement
+							Subprocessor is used for Customer Personal Data.
 							<br />
 							Providers selected, contracted, or configured directly by
 							Customer, including Customer's own S3-compatible storage provider,
 							identity provider, cloud account, or self-hosted infrastructure
-							provider, are not Oiaai Subprocessors.
+							provider, are not OlhaAí Subprocessors.
 						</li>
 						<li>
 							<h3>International Transfers</h3>
 							<br />
-							Oiaai Software, Inc. is established in the United States. Customer
-							authorizes Oiaai and its Subprocessors to process Customer Personal
-							Data in the United States and other locations where Oiaai or its
-							Subprocessors maintain operations, subject to this DPA and Data
-							Protection Laws.
+							OlhaAí Software, Inc. is established in the United States.
+							Customer authorizes OlhaAí and its Subprocessors to process
+							Customer Personal Data in the United States and other locations
+							where OlhaAí or its Subprocessors maintain operations, subject to
+							this DPA and Data Protection Laws.
 							<br />
 							Where Data Protection Laws require a transfer mechanism for a
 							transfer of Customer Personal Data from the European Economic
 							Area, the United Kingdom, or Switzerland to a country that has not
 							been found to provide an adequate level of protection, the parties
 							agree to use the applicable Standard Contractual Clauses, the
-							EU-U.S. Data Privacy Framework to the extent Oiaai is certified and
-							the framework applies, or another valid transfer mechanism.
+							EU-U.S. Data Privacy Framework to the extent OlhaAí is certified
+							and the framework applies, or another valid transfer mechanism.
 							<br />
 							For EEA transfers, the Standard Contractual Clauses adopted by the
 							European Commission under Implementing Decision (EU) 2021/914
 							apply as follows: Module Two applies where Customer is a
-							controller and Oiaai is a processor; Module Three applies where
-							Customer is a processor and Oiaai is a subprocessor; Clause 7 is
+							controller and OlhaAí is a processor; Module Three applies where
+							Customer is a processor and OlhaAí is a subprocessor; Clause 7 is
 							deemed omitted; Clause 9 uses general written authorization with
 							the notice period in Section 7; Clause 11 optional language is
 							omitted; and the annexes are completed by Annexes I, II, and III
 							of this DPA.
 							<br />
 							For the Standard Contractual Clauses, Customer is the data
-							exporter and Oiaai is the data importer. The parties' contact
+							exporter and OlhaAí is the data importer. The parties' contact
 							details are the contact details in the Services Agreement, the
 							applicable account, or the order document. The competent
 							supervisory authority, governing law, and competent courts are
@@ -275,63 +276,65 @@ export default function DataProcessingAgreementPage() {
 							For UK transfers, the UK International Data Transfer Addendum to
 							the EU Standard Contractual Clauses applies as required by UK Data
 							Protection Laws, with its tables completed by the Services
-							Agreement, this DPA, and Oiaai's trust portal. For Swiss transfers,
-							references to the GDPR are deemed to include the Swiss Federal Act
-							on Data Protection, references to EU supervisory authorities are
-							deemed to include the Swiss Federal Data Protection and
-							Information Commissioner, and data subjects in Switzerland may
-							exercise and enforce their rights as required by Swiss law.
+							Agreement, this DPA, and OlhaAí's trust portal. For Swiss
+							transfers, references to the GDPR are deemed to include the Swiss
+							Federal Act on Data Protection, references to EU supervisory
+							authorities are deemed to include the Swiss Federal Data
+							Protection and Information Commissioner, and data subjects in
+							Switzerland may exercise and enforce their rights as required by
+							Swiss law.
 							<br />
-							Oiaai will provide reasonable information available to it, including
-							information in Oiaai's trust portal, to help Customer assess
-							transfer risks and safeguards. Customer remains responsible for
-							determining whether its use of the Services satisfies Customer's
-							transfer obligations. Oiaai will notify Customer if Oiaai determines
-							it can no longer comply with an applicable transfer mechanism.
+							OlhaAí will provide reasonable information available to it,
+							including information in OlhaAí's trust portal, to help Customer
+							assess transfer risks and safeguards. Customer remains responsible
+							for determining whether its use of the Services satisfies
+							Customer's transfer obligations. OlhaAí will notify Customer if
+							OlhaAí determines it can no longer comply with an applicable
+							transfer mechanism.
 						</li>
 						<li>
 							<h3>Data Subject Requests</h3>
 							<br />
-							Oiaai will, taking into account the nature of the processing,
+							OlhaAí will, taking into account the nature of the processing,
 							provide reasonable assistance to help Customer respond to requests
 							from data subjects exercising rights under Data Protection Laws.
-							If Oiaai receives a request directly from a data subject regarding
-							Customer Personal Data, Oiaai will either direct the data subject to
-							Customer or notify Customer, unless legally prohibited from doing
-							so.
+							If OlhaAí receives a request directly from a data subject
+							regarding Customer Personal Data, OlhaAí will either direct the
+							data subject to Customer or notify Customer, unless legally
+							prohibited from doing so.
 							<br />
 							Customer is responsible for responding to data subject requests.
-							Oiaai will not independently respond to a request for Customer
+							OlhaAí will not independently respond to a request for Customer
 							Personal Data except to confirm that the request relates to
 							Customer or as legally required.
 						</li>
 						<li>
 							<h3>Assistance With Compliance</h3>
 							<br />
-							Oiaai will provide reasonable assistance, taking into account the
-							nature of the processing and the information available to Oiaai, to
-							help Customer meet Customer's obligations relating to security,
+							OlhaAí will provide reasonable assistance, taking into account the
+							nature of the processing and the information available to OlhaAí,
+							to help Customer meet Customer's obligations relating to security,
 							personal data breach notification, data protection impact
 							assessments, and prior consultation with supervisory authorities.
-							Oiaai may charge a reasonable fee for assistance that requires
+							OlhaAí may charge a reasonable fee for assistance that requires
 							material effort beyond standard product functionality or support.
 						</li>
 						<li>
 							<h3>Security Incident Notification</h3>
 							<br />
-							Oiaai will notify Customer without undue delay after becoming aware
-							of a Security Incident affecting Customer Personal Data and, where
-							feasible, within 72 hours after becoming aware of the Security
-							Incident. Oiaai's notification will include information reasonably
-							available to Oiaai, which may include the nature of the incident,
-							affected data categories, affected data subjects, likely
-							consequences, measures taken or proposed, and a contact point for
-							follow-up.
+							OlhaAí will notify Customer without undue delay after becoming
+							aware of a Security Incident affecting Customer Personal Data and,
+							where feasible, within 72 hours after becoming aware of the
+							Security Incident. OlhaAí's notification will include information
+							reasonably available to OlhaAí, which may include the nature of
+							the incident, affected data categories, affected data subjects,
+							likely consequences, measures taken or proposed, and a contact
+							point for follow-up.
 							<br />
-							Oiaai will take reasonable steps to contain, investigate, remediate,
-							and mitigate the effects of a Security Incident. Oiaai's
-							notification of or response to a Security Incident is not an
-							admission of fault or liability.
+							OlhaAí will take reasonable steps to contain, investigate,
+							remediate, and mitigate the effects of a Security Incident.
+							OlhaAí's notification of or response to a Security Incident is not
+							an admission of fault or liability.
 						</li>
 						<li>
 							<h3>Return and Deletion</h3>
@@ -339,14 +342,14 @@ export default function DataProcessingAgreementPage() {
 							During the term of the Services Agreement, Customer may access,
 							export, or delete Customer Personal Data using the functionality
 							made available in the Services. After termination or expiration of
-							the Services Agreement, Oiaai will delete or return Customer
+							the Services Agreement, OlhaAí will delete or return Customer
 							Personal Data in accordance with the Services Agreement and
 							Customer's documented instructions, unless retention is required
 							by law.
 							<br />
 							Deleted Customer Personal Data may remain in backups, logs, or
 							archives for a limited period until overwritten or deleted through
-							Oiaai's normal retention cycles. During that period, Oiaai will
+							OlhaAí's normal retention cycles. During that period, OlhaAí will
 							protect the retained data under this DPA and use it only for
 							backup, recovery, security, legal compliance, or as otherwise
 							required by law.
@@ -359,49 +362,49 @@ export default function DataProcessingAgreementPage() {
 						<li>
 							<h3>Audits and Information</h3>
 							<br />
-							Oiaai will make available information reasonably necessary to
+							OlhaAí will make available information reasonably necessary to
 							demonstrate compliance with this DPA, including security
 							documentation, product information, Subprocessor information, and
-							other materials available through Oiaai's trust portal, public
+							other materials available through OlhaAí's trust portal, public
 							documentation, or support channels.
 							<br />
 							If that information is not enough to demonstrate compliance with
 							this DPA, Customer may request an audit no more than once per
 							calendar year, unless Data Protection Laws require more frequent
-							access or the request follows a Security Incident. Oiaai may require
-							the audit to begin as a remote documentation-based review. Any
-							audit must be conducted during normal business hours, with
+							access or the request follows a Security Incident. OlhaAí may
+							require the audit to begin as a remote documentation-based review.
+							Any audit must be conducted during normal business hours, with
 							reasonable advance notice, by Customer or an independent auditor
 							bound by confidentiality, and in a way that does not compromise
-							the security, availability, confidentiality, or privacy of Oiaai,
+							the security, availability, confidentiality, or privacy of OlhaAí,
 							the Services, or any other customer.
 							<br />
 							Customer will bear its audit costs unless the audit reveals a
-							material breach of this DPA by Oiaai. Customer may not conduct
+							material breach of this DPA by OlhaAí. Customer may not conduct
 							penetration tests, vulnerability scans, social engineering, or
-							physical security reviews without Oiaai's prior written approval.
+							physical security reviews without OlhaAí's prior written approval.
 						</li>
 						<li>
 							<h3>Government and Third-Party Requests</h3>
 							<br />
-							If Oiaai receives a legally binding request from a government,
+							If OlhaAí receives a legally binding request from a government,
 							regulator, court, or law enforcement authority for Customer
-							Personal Data, Oiaai will notify Customer before disclosure unless
-							legally prohibited or unless notice would create a risk of harm.
-							Oiaai will review the request and, where appropriate, seek to limit
-							or challenge it.
+							Personal Data, OlhaAí will notify Customer before disclosure
+							unless legally prohibited or unless notice would create a risk of
+							harm. OlhaAí will review the request and, where appropriate, seek
+							to limit or challenge it.
 							<br />
-							Oiaai will not voluntarily disclose Customer Personal Data to a
+							OlhaAí will not voluntarily disclose Customer Personal Data to a
 							government authority except as required by law or with Customer's
 							instructions.
 						</li>
 						<li>
 							<h3>Records</h3>
 							<br />
-							Oiaai will maintain records of processing activities as required by
-							Data Protection Laws. Customer is responsible for maintaining its
-							own records of processing, including its purposes, legal bases,
-							categories of data subjects, categories of personal data,
+							OlhaAí will maintain records of processing activities as required
+							by Data Protection Laws. Customer is responsible for maintaining
+							its own records of processing, including its purposes, legal
+							bases, categories of data subjects, categories of personal data,
 							retention periods, recipients, and transfer mechanisms.
 						</li>
 						<li>
@@ -425,26 +428,26 @@ export default function DataProcessingAgreementPage() {
 						<li>
 							<h3>Changes to This DPA</h3>
 							<br />
-							Oiaai may update this DPA from time to time, provided that updates
-							do not materially reduce Oiaai's obligations for Customer Personal
-							Data during an active subscription term unless required by law or
-							agreed by Customer. Oiaai will post the updated DPA and update the
-							"Last Updated" date.
+							OlhaAí may update this DPA from time to time, provided that
+							updates do not materially reduce OlhaAí's obligations for Customer
+							Personal Data during an active subscription term unless required
+							by law or agreed by Customer. OlhaAí will post the updated DPA and
+							update the "Last Updated" date.
 						</li>
 						<li>
 							<h3>Contact</h3>
 							<br />
 							For questions about this DPA, data protection, or Subprocessor
-							information, contact Oiaai at hello@cap.so.
+							information, contact OlhaAí at hello@cap.so.
 						</li>
 						<li>
 							<h3>Annex I: Details of Processing</h3>
 							<br />
-							Subject matter: Oiaai's provision of the Services under the Services
-							Agreement.
+							Subject matter: OlhaAí's provision of the Services under the
+							Services Agreement.
 							<br />
 							Duration: The term of the Services Agreement and any period during
-							which Oiaai processes Customer Personal Data under Customer's
+							which OlhaAí processes Customer Personal Data under Customer's
 							documented instructions or as required by law.
 							<br />
 							Nature and purpose: Providing, operating, hosting, storing,
@@ -474,7 +477,7 @@ export default function DataProcessingAgreementPage() {
 							encrypted storage configuration details where Customer uses
 							bring-your-own-storage features.
 							<br />
-							Special categories of data: Oiaai does not intentionally request
+							Special categories of data: OlhaAí does not intentionally request
 							special categories of personal data. Customer Content may contain
 							special categories of personal data if Customer chooses to record,
 							upload, share, transcribe, or otherwise process that information
@@ -487,60 +490,60 @@ export default function DataProcessingAgreementPage() {
 						<li>
 							<h3>Annex II: Technical and Organizational Measures</h3>
 							<br />
-							Access controls: Oiaai uses access controls designed to limit access
-							to Customer Personal Data to authorized personnel, systems, and
-							Subprocessors with a need to access it.
+							Access controls: OlhaAí uses access controls designed to limit
+							access to Customer Personal Data to authorized personnel, systems,
+							and Subprocessors with a need to access it.
 							<br />
-							Authentication and authorization: Oiaai supports account-based
+							Authentication and authorization: OlhaAí supports account-based
 							access to the Services and uses authorization controls designed to
 							restrict access to workspaces, recordings, settings, and sharing
 							features.
 							<br />
-							Encryption: Oiaai uses encrypted transport for data transmitted to
-							and from the Services and uses encryption or equivalent safeguards
-							for managed storage and sensitive configuration values where
-							appropriate.
+							Encryption: OlhaAí uses encrypted transport for data transmitted
+							to and from the Services and uses encryption or equivalent
+							safeguards for managed storage and sensitive configuration values
+							where appropriate.
 							<br />
-							Storage control: Oiaai supports local recording workflows,
+							Storage control: OlhaAí supports local recording workflows,
 							Customer-controlled S3-compatible storage, and self-hosted
 							deployments so Customer can choose where recording content is
 							stored when those features are available and configured.
 							<br />
-							Sharing controls: Oiaai provides controls such as share links,
+							Sharing controls: OlhaAí provides controls such as share links,
 							password protection, workspace access controls, signed storage
 							URLs, and custom domain configuration where available and
 							configured by Customer.
 							<br />
-							Data minimization: Oiaai processes Customer Personal Data for the
+							Data minimization: OlhaAí processes Customer Personal Data for the
 							purposes described in this DPA and supports product controls that
 							allow Customer to limit sharing, disable optional AI workflows,
 							use Customer-controlled storage, delete content, and export
 							content.
 							<br />
-							Availability and resilience: Oiaai uses operational safeguards
+							Availability and resilience: OlhaAí uses operational safeguards
 							designed to support the availability and resilience of the
 							Services, including monitoring, backups, recovery processes, and
 							incident response practices appropriate to the nature of the
 							Services.
 							<br />
-							Development and change management: Oiaai uses development practices
-							designed to reduce security and privacy risk, including source
-							control, code review, testing, dependency management, and
+							Development and change management: OlhaAí uses development
+							practices designed to reduce security and privacy risk, including
+							source control, code review, testing, dependency management, and
 							deployment controls.
 							<br />
-							Logging and monitoring: Oiaai uses logs and monitoring designed to
-							help secure the Services, troubleshoot issues, detect abuse,
+							Logging and monitoring: OlhaAí uses logs and monitoring designed
+							to help secure the Services, troubleshoot issues, detect abuse,
 							investigate incidents, and maintain reliability.
 							<br />
-							Personnel and vendor controls: Oiaai requires personnel with access
-							to Customer Personal Data to protect it and evaluates
+							Personnel and vendor controls: OlhaAí requires personnel with
+							access to Customer Personal Data to protect it and evaluates
 							Subprocessors before authorizing them to process Customer Personal
 							Data.
 						</li>
 						<li>
 							<h3>Annex III: Subprocessors</h3>
 							<br />
-							Customer authorizes Oiaai to use Subprocessors for the following
+							Customer authorizes OlhaAí to use Subprocessors for the following
 							categories of services: cloud hosting, database infrastructure,
 							object storage, content delivery, email delivery, authentication,
 							payment processing, customer support, analytics, error monitoring,
@@ -548,8 +551,8 @@ export default function DataProcessingAgreementPage() {
 							workflow automation, and other infrastructure or service providers
 							needed to provide the Services.
 							<br />
-							Oiaai's current Subprocessor list is maintained through Oiaai's trust
-							portal at{" "}
+							OlhaAí's current Subprocessor list is maintained through OlhaAí's
+							trust portal at{" "}
 							<a href="https://trust.cap.so" rel="noreferrer" target="_blank">
 								trust.cap.so
 							</a>{" "}
@@ -561,10 +564,10 @@ export default function DataProcessingAgreementPage() {
 							Customer-controlled providers, including Customer's own
 							S3-compatible storage provider, identity provider, cloud account,
 							or self-hosted infrastructure provider, are selected by Customer
-							and are not Oiaai Subprocessors.
+							and are not OlhaAí Subprocessors.
 						</li>
 					</ol>
-					<p>Data Processing Agreement for Oiaai Software, Inc.</p>
+					<p>Data Processing Agreement for OlhaAí Software, Inc.</p>
 					<p>Last Updated: 8 May 2026</p>
 				</div>
 			</div>

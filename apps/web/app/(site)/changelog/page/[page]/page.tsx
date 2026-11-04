@@ -23,11 +23,11 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 	if (page <= 1) return {};
 
 	return buildMarketingMetadata({
-		title: `Changelog — Page ${page} — Oiaai`,
+		title: `Changelog — Page ${page} — OlhaAí`,
 		description:
-			"New features, improvements, and fixes across the Oiaai desktop app, web, mobile, and browser extension.",
+			"New features, improvements, and fixes across the OlhaAí desktop app, web, mobile, and browser extension.",
 		path: `/changelog/page/${page}`,
-		ogTitle: "Oiaai Changelog",
+		ogTitle: "OlhaAí Changelog",
 		ogTag: "Changelog",
 	});
 }

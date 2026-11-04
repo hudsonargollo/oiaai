@@ -44,7 +44,7 @@ pub fn run(format: OutputFormat) -> Result<(), String> {
                 installer: installer_url(),
             }),
             OutputFormat::Text => {
-                println!("Oiaai update started. It will continue after this command exits.");
+                println!("OlhaAí update started. It will continue after this command exits.");
                 Ok(())
             }
         }
@@ -54,7 +54,7 @@ pub fn run(format: OutputFormat) -> Result<(), String> {
     {
         let output = update_command()?
             .output()
-            .map_err(|e| format!("Could not start Oiaai update installer: {e}"))?;
+            .map_err(|e| format!("Could not start OlhaAí update installer: {e}"))?;
 
         if !output.status.success() {
             return Err(update_error(&output));
@@ -97,12 +97,12 @@ fn start_windows_update() -> Result<(), String> {
     command
         .spawn()
         .map(|_| ())
-        .map_err(|e| format!("Could not start Oiaai update installer: {e}"))
+        .map_err(|e| format!("Could not start OlhaAí update installer: {e}"))
 }
 
 #[cfg(not(any(target_os = "macos", windows)))]
 fn update_command() -> Result<Command, String> {
-    Err("Oiaai Desktop updates are only supported on macOS and Windows".to_string())
+    Err("OlhaAí Desktop updates are only supported on macOS and Windows".to_string())
 }
 
 #[cfg(target_os = "macos")]
@@ -132,7 +132,7 @@ fn update_error(output: &Output) -> String {
         return stdout.trim().to_string();
     }
 
-    format!("Oiaai update installer exited with {}", output.status)
+    format!("OlhaAí update installer exited with {}", output.status)
 }
 
 #[cfg(not(windows))]

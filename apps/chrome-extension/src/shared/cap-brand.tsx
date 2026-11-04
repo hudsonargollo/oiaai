@@ -6,10 +6,10 @@ export const CapBrand = (props: SVGProps<SVGSVGElement>) => (
 		xmlns="http://www.w3.org/2000/svg"
 		fill="none"
 		viewBox="0 0 118 40"
-		aria-label="Oiaai"
+		aria-label="OlhaAí"
 		{...props}
 	>
-		<title>Oiaai</title>
+		<title>OlhaAí</title>
 		<path
 			fill="#4785FF"
 			d="M20 36c8.837 0 16-7.163 16-16S28.837 4 20 4 4 11.164 4 20s7.164 16 16 16"

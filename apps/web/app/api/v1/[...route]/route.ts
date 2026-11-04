@@ -293,7 +293,7 @@ const commonError = (requestId: string, message: string) => ({
 });
 
 const AGENT_UPLOAD_PLAN_LIMIT_MESSAGE =
-	"Free plan uploads require a recording duration of 5 minutes or less. Upgrade to Oiaai Pro to upload longer recordings.";
+	"Free plan uploads require a recording duration of 5 minutes or less. Upgrade to OlhaAí Pro to upload longer recordings.";
 const AGENT_UPLOAD_PENDING_FILE_NAME = "agent-upload.mp4";
 const AGENT_UPLOAD_REJECTION_ERROR = "AGENT_UPLOAD_DURATION_LIMIT_EXCEEDED";
 
@@ -330,7 +330,7 @@ const passwordRequired = (requestId: string) =>
 	new Agent.AgentForbiddenError({
 		...commonError(
 			requestId,
-			"This Oiaai must be unlocked before it can be read",
+			"This OlhaAí must be unlocked before it can be read",
 		),
 		code: "PASSWORD_REQUIRED",
 	});
@@ -343,7 +343,7 @@ const contentDisabled = (requestId: string, content: string) =>
 
 const notFound = (requestId: string) =>
 	new Agent.AgentNotFoundError({
-		...commonError(requestId, "Oiaai not found"),
+		...commonError(requestId, "OlhaAí not found"),
 		code: "NOT_FOUND",
 	});
 
@@ -393,17 +393,20 @@ const withMappedErrors = <A, E, R>(
 		Effect.catchTags({
 			DatabaseError: () =>
 				Effect.fail(
-					temporarilyUnavailable(requestId, "The Oiaai library is unavailable"),
+					temporarilyUnavailable(
+						requestId,
+						"The OlhaAí library is unavailable",
+					),
 				),
 			NoSuchElementException: () => Effect.fail(notFound(requestId)),
 			PolicyDenied: () => Effect.fail(forbidden(requestId)),
 			S3Error: () =>
 				Effect.fail(
-					temporarilyUnavailable(requestId, "Oiaai storage is unavailable"),
+					temporarilyUnavailable(requestId, "OlhaAí storage is unavailable"),
 				),
 			StorageError: () =>
 				Effect.fail(
-					temporarilyUnavailable(requestId, "Oiaai storage is unavailable"),
+					temporarilyUnavailable(requestId, "OlhaAí storage is unavailable"),
 				),
 			UnknownException: () =>
 				Effect.fail(
@@ -1101,7 +1104,10 @@ const unlockCap = Effect.fn("Agent.unlockCap")(function* (
 		Effect.catchTag("VerifyVideoPasswordError", () => Effect.succeed(true)),
 	);
 	if (!requiresPassword) {
-		return yield* badRequest(requestId, "This Oiaai does not require a password");
+		return yield* badRequest(
+			requestId,
+			"This OlhaAí does not require a password",
+		);
 	}
 
 	const database = yield* Database;
@@ -1442,7 +1448,7 @@ const testAgentS3Config = Effect.fn("Agent.testS3Config")(function* (
 		catch: () =>
 			badRequest(
 				requestId,
-				"Oiaai could not access the S3 bucket with this configuration",
+				"OlhaAí could not access the S3 bucket with this configuration",
 			),
 	});
 });
@@ -1607,7 +1613,7 @@ const requireAgentStorageManager = Effect.fn("Agent.requireStorageManager")(
 		if (!account || !userIsPro(account)) {
 			return yield* forbidden(
 				requestId,
-				"Oiaai Pro is required to manage storage integrations",
+				"OlhaAí Pro is required to manage storage integrations",
 			);
 		}
 	},
@@ -1668,7 +1674,7 @@ const updateAgentImage = Effect.fn("Agent.updateImage")(function* (input: {
 		if (organization.billing.plan !== "pro") {
 			return yield* forbidden(
 				input.requestId,
-				"Oiaai Pro is required for collection branding",
+				"OlhaAí Pro is required for collection branding",
 			);
 		}
 	}
@@ -1760,7 +1766,7 @@ const updateAgentImage = Effect.fn("Agent.updateImage")(function* (input: {
 					) {
 						return yield* forbidden(
 							input.requestId,
-							"Oiaai Pro is required for shareable link branding",
+							"OlhaAí Pro is required for shareable link branding",
 						);
 					}
 					const existing =
@@ -1918,7 +1924,7 @@ const updateAgentCollectionPublicPage = Effect.fn(
 		if (organization.billing.plan !== "pro") {
 			return yield* forbidden(
 				input.requestId,
-				"Oiaai Pro is required for public collection customization",
+				"OlhaAí Pro is required for public collection customization",
 			);
 		}
 	}
@@ -2285,7 +2291,7 @@ const queueAgentLoomImport = Effect.fn("Agent.queueLoomImport")(
 		if (!userIsPro(account)) {
 			return yield* forbidden(
 				input.requestId,
-				"Importing from Loom requires Oiaai Pro",
+				"Importing from Loom requires OlhaAí Pro",
 			);
 		}
 		const request = yield* HttpServerRequest.HttpServerRequest;
@@ -3409,7 +3415,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 						if (!account || !userIsPro(account)) {
 							return yield* forbidden(
 								requestId,
-								"Oiaai Pro is required to manage storage integrations",
+								"OlhaAí Pro is required to manage storage integrations",
 							);
 						}
 						const drive = yield* getAgentOrganizationDrive(path.organizationId);
@@ -4392,7 +4398,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 						if (userIsPro(account)) {
 							return yield* badRequest(
 								requestId,
-								"The organization owner already has Oiaai Pro",
+								"The organization owner already has OlhaAí Pro",
 							);
 						}
 						const quantity =
@@ -4930,7 +4936,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 									try: async () => {
 										const delivery = await sendEmail({
 											email,
-											subject: `Invitation to join ${organization.name} on Oiaai`,
+											subject: `Invitation to join ${organization.name} on OlhaAí`,
 											react: OrganizationInvite({
 												email,
 												url: invitation.inviteUrl,
@@ -5560,7 +5566,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 						if (!apiKey) {
 							return yield* forbidden(
 								requestId,
-								"Oiaai referrals are not available on this server",
+								"OlhaAí referrals are not available on this server",
 							);
 						}
 						const database = yield* Database;
@@ -6566,7 +6572,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 							videoId,
 						);
 						const fileTitle = payload.fileName.replace(/\.[^/.]+$/, "").trim();
-						const title = payload.title?.trim() || fileTitle || "Oiaai Upload";
+						const title = payload.title?.trim() || fileTitle || "OlhaAí Upload";
 						if (title.length > 255) {
 							return yield* badRequest(requestId, "Upload title is too long");
 						}
@@ -6896,7 +6902,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 												Effect.fail(
 													temporarilyUnavailable(
 														requestId,
-														"Oiaai could not verify the uploaded recording duration. Retry the completion request.",
+														"OlhaAí could not verify the uploaded recording duration. Retry the completion request.",
 													),
 												),
 											),
@@ -8164,7 +8170,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 							if (organization.billing.plan !== "pro") {
 								return yield* forbidden(
 									requestId,
-									"Oiaai Pro is required for public collections",
+									"OlhaAí Pro is required for public collections",
 								);
 							}
 						}
@@ -8251,7 +8257,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 							if (organization.billing.plan !== "pro") {
 								return yield* forbidden(
 									requestId,
-									"Oiaai Pro is required for public collections",
+									"OlhaAí Pro is required for public collections",
 								);
 							}
 						}
@@ -8502,7 +8508,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 						) {
 							return yield* forbidden(
 								requestId,
-								"Oiaai Pro is required for these space settings",
+								"OlhaAí Pro is required for these space settings",
 							);
 						}
 						return yield* runAgentMutation({
@@ -8619,7 +8625,7 @@ const AgentManagementHandlersLive = HttpApiBuilder.group(
 						) {
 							return yield* forbidden(
 								requestId,
-								"Oiaai Pro is required for these space settings",
+								"OlhaAí Pro is required for these space settings",
 							);
 						}
 						return yield* runAgentMutation({

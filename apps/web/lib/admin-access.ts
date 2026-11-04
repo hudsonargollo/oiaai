@@ -10,6 +10,14 @@ export async function requireAdmin() {
 	return user;
 }
 
+export async function requireSuperadmin() {
+	const user = await getCurrentUser();
+	if (!user || !user.globalAdmin) {
+		throw new Error("Unauthorized");
+	}
+	return user;
+}
+
 export function parseAdminVideoId(input: string) {
 	const trimmed = input.trim();
 	if (!trimmed) {

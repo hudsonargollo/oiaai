@@ -1,3 +1,3 @@
-NSCameraUsageDescription = "Oiaai usa tu cámara para grabarte en tus grabaciones.";
-NSMicrophoneUsageDescription = "Oiaai usa tu micrófono para grabarte en tus grabaciones.";
-NSScreenCaptureUsageDescription = "Oiaai graba tu pantalla para crear tus grabaciones.";
+NSCameraUsageDescription = "OlhaAí usa tu cámara para grabarte en tus grabaciones.";
+NSMicrophoneUsageDescription = "OlhaAí usa tu micrófono para grabarte en tus grabaciones.";
+NSScreenCaptureUsageDescription = "OlhaAí graba tu pantalla para crear tus grabaciones.";

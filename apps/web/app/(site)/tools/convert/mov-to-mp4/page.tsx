@@ -11,7 +11,7 @@ const ogImage = ogImageUrl({
 });
 
 export const metadata: Metadata = {
-	title: "MOV to MP4 Converter — Free Online Video Converter | Oiaai",
+	title: "MOV to MP4 Converter — Free Online Video Converter | OlhaAí",
 	description:
 		"Convert Apple QuickTime MOV videos to MP4 format directly in your browser. Free, private, no upload needed. Works with iPhone recordings, screen captures, and any MOV file.",
 	keywords: [
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
 		"browser mov converter",
 	],
 	openGraph: {
-		title: "MOV to MP4 Converter — Free Online Video Converter | Oiaai",
+		title: "MOV to MP4 Converter — Free Online Video Converter | OlhaAí",
 		description:
 			"Convert MOV videos to the universally compatible MP4 format directly in your browser. No uploads, no installs, 100% private. Works with iPhone recordings and QuickTime files.",
 		url: "https://cap.so/tools/convert/mov-to-mp4",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "MOV to MP4 Converter — Free Online Video Converter | Oiaai",
+		title: "MOV to MP4 Converter — Free Online Video Converter | OlhaAí",
 		description:
 			"Convert MOV to MP4 directly in your browser. No uploads, no installs, 100% private.",
 		images: [ogImage],
@@ -56,7 +56,7 @@ const faqs = [
 	{
 		question: "How do I convert MOV to MP4 online?",
 		answer:
-			"Open Oiaai's MOV to MP4 converter, drag and drop your MOV file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
+			"Open OlhaAí's MOV to MP4 converter, drag and drop your MOV file (or click to browse), then click Convert. The entire process runs in your browser — your file never leaves your device. Once complete, click Download to save the MP4 file.",
 	},
 	{
 		question: "Is the MOV to MP4 converter free?",
@@ -81,7 +81,7 @@ const faqs = [
 	{
 		question: "Does this work with iPhone MOV files?",
 		answer:
-			"Yes. iPhones and iPads record video in the MOV (QuickTime) container using HEVC or H.264. Oiaai's converter handles both formats and outputs a widely compatible MP4 file you can share, upload, or play on any device.",
+			"Yes. iPhones and iPads record video in the MOV (QuickTime) container using HEVC or H.264. OlhaAí's converter handles both formats and outputs a widely compatible MP4 file you can share, upload, or play on any device.",
 	},
 	{
 		question: "Does the converter work on mobile?",
@@ -98,7 +98,7 @@ const faqs = [
 const howToSteps = [
 	{
 		name: "Upload your MOV file",
-		text: "Open Oiaai's MOV to MP4 converter and drag and drop your MOV file into the upload area, or click to browse your files. Supports QuickTime MOV files up to 500 MB.",
+		text: "Open OlhaAí's MOV to MP4 converter and drag and drop your MOV file into the upload area, or click to browse your files. Supports QuickTime MOV files up to 500 MB.",
 	},
 	{
 		name: "Start the conversion",
@@ -128,7 +128,7 @@ const howToStructuredData = {
 	"@type": "HowTo",
 	name: "How to Convert MOV to MP4 Online",
 	description:
-		"Convert Apple QuickTime MOV video files to MP4 format for free using Oiaai's browser-based converter. No upload required.",
+		"Convert Apple QuickTime MOV video files to MP4 format for free using OlhaAí's browser-based converter. No upload required.",
 	step: howToSteps.map((step, index) => ({
 		"@type": "HowToStep",
 		position: index + 1,
@@ -193,10 +193,10 @@ export default function MOVToMP4Page() {
 		],
 		faqs,
 		cta: {
-			title: "Oiaai is the open source Loom alternative",
+			title: "OlhaAí is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Oiaai. 100% open source and privacy focused. Records directly to MP4 — no conversion needed.",
-			buttonText: "Download Oiaai Free",
+				"Record, edit, and share video messages with OlhaAí. 100% open source and privacy focused. Records directly to MP4 — no conversion needed.",
+			buttonText: "Download OlhaAí Free",
 		},
 	};
 

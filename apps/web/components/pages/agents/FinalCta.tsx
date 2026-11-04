@@ -22,14 +22,14 @@ export const FinalCta = () => (
 			<h2
 				className={`${H_HERO} mt-6 text-balance text-[clamp(44px,6.4vw,78px)]`}
 			>
-				Point your agent at Oiaai.
+				Point your agent at OlhaAí.
 			</h2>
 			<p
 				className={`${BODY_TEXT} mt-7 max-w-[560px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[18px]`}
 			>
 				One paste and your agent has an open source screen recorder it can run
-				end to end: record, share, and manage everything in Oiaai on Mac, Windows,
-				and Linux.
+				end to end: record, share, and manage everything in OlhaAí on Mac,
+				Windows, and Linux.
 			</p>
 			<div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
 				<CopyLabelButton

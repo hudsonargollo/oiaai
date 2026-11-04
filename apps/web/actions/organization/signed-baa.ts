@@ -458,7 +458,7 @@ async function completeSignedBaa(
 			!ownerCanPurchaseSignedBaa(user)
 		) {
 			throw new SignedBaaError(
-				"Your organization needs an active Oiaai Pro subscription before adding the Signed BAA add-on.",
+				"Your organization needs an active OlhaAí Pro subscription before adding the Signed BAA add-on.",
 			);
 		}
 
@@ -469,7 +469,7 @@ async function completeSignedBaa(
 			);
 		} catch {
 			throw new SignedBaaError(
-				"Your organization needs an active Oiaai Pro subscription before adding the Signed BAA add-on.",
+				"Your organization needs an active OlhaAí Pro subscription before adding the Signed BAA add-on.",
 			);
 		}
 		if (
@@ -477,7 +477,7 @@ async function completeSignedBaa(
 			!isProSubscription(liveProSubscription)
 		) {
 			throw new SignedBaaError(
-				"Your organization needs an active Oiaai Pro subscription before adding the Signed BAA add-on.",
+				"Your organization needs an active OlhaAí Pro subscription before adding the Signed BAA add-on.",
 			);
 		}
 	}
@@ -691,7 +691,7 @@ async function completeSignedBaa(
 	}
 	if (!(await ensureBaaHasPro(user, subscription, recordIdentity))) {
 		throw new SignedBaaError(
-			"Oiaai Pro ended before the BAA could be signed. The BAA subscription has been canceled; please contact support about your payment.",
+			"OlhaAí Pro ended before the BAA could be signed. The BAA subscription has been canceled; please contact support about your payment.",
 		);
 	}
 
@@ -728,17 +728,17 @@ async function completeSignedBaa(
 						? [details.noticesEmail]
 						: []),
 				],
-				subject: "Your signed BAA with Oiaai",
+				subject: "Your signed BAA with OlhaAí",
 				react: SignedBaa({
 					email: user.email,
 					entityName: details.entityName,
 					effectiveDate: formatBaaDate(signedAt),
 				}),
-				fromOverride: "Oiaai Software <richie@send.cap.so>",
+				fromOverride: "OlhaAí Software <richie@send.cap.so>",
 				replyTo: BAA_NOTICE_EMAIL,
 				attachments: [
 					{
-						filename: "Oiaai-Software-BAA-Signed.pdf",
+						filename: "OlhaAí-Software-BAA-Signed.pdf",
 						content: Buffer.from(pdf),
 						contentType: "application/pdf",
 					},

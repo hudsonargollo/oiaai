@@ -105,7 +105,7 @@ export async function getSubscriptionDetails(
 		interval === "year" ? unitAmount / 100 / 12 : unitAmount / 100;
 
 	return {
-		planName: "Oiaai Pro",
+		planName: "OlhaAí Pro",
 		status: subscription.status,
 		billingInterval: interval,
 		pricePerSeat,

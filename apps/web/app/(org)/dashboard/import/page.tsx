@@ -6,7 +6,7 @@ import {
 import { ImportPage } from "./ImportPage";
 
 export const metadata: Metadata = {
-	title: "Import — Oiaai",
+	title: "Import — OlhaAí",
 };
 
 export default async function Page({

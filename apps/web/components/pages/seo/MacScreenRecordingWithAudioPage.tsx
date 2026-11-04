@@ -5,27 +5,27 @@ import type { SeoPageContent } from "../../seo/types";
 export const macScreenRecordingWithAudioContent: SeoPageContent = {
 	title: "Record Your Mac Screen With Audio — System Sound and Mic, Built In",
 	description:
-		"Record your Mac screen with both system audio and microphone using Oiaai. The free, open-source fix for macOS's missing internal audio recording. No plugins, no setup — just press record.",
+		"Record your Mac screen with both system audio and microphone using OlhaAí. The free, open-source fix for macOS's missing internal audio recording. No plugins, no setup — just press record.",
 
 	featuresTitle: "Everything You Need for Mac Screen Recording with Audio",
 	featuresDescription:
-		"Oiaai solves the biggest frustration with Mac screen recording — capturing internal audio — and adds professional features on top",
+		"OlhaAí solves the biggest frustration with Mac screen recording — capturing internal audio — and adds professional features on top",
 
 	features: [
 		{
 			title: "System Audio Capture Built In",
 			description:
-				"macOS does not capture internal audio by default. Oiaai solves this natively — no BlackHole, no Loopback, no virtual audio drivers required. Enable system audio in Oiaai's settings and it records app sounds, music, and notification audio alongside your screen without any extra configuration.",
+				"macOS does not capture internal audio by default. OlhaAí solves this natively — no BlackHole, no Loopback, no virtual audio drivers required. Enable system audio in OlhaAí's settings and it records app sounds, music, and notification audio alongside your screen without any extra configuration.",
 		},
 		{
 			title: "Microphone and System Audio Simultaneously",
 			description:
-				"Oiaai records your microphone and system audio at the same time in a single recording. Narrate your screen while keeping all the original application sounds — perfect for software tutorials, walkthroughs, and presentation recordings on Mac.",
+				"OlhaAí records your microphone and system audio at the same time in a single recording. Narrate your screen while keeping all the original application sounds — perfect for software tutorials, walkthroughs, and presentation recordings on Mac.",
 		},
 		{
 			title: "Up to 4K at 60fps on macOS",
 			description:
-				"Oiaai is natively optimized for macOS and records at resolutions up to 4K at 60 frames per second. Every screen recording is sharp, smooth, and professional — ideal for Retina displays on MacBook Pro and iMac.",
+				"OlhaAí is natively optimized for macOS and records at resolutions up to 4K at 60 frames per second. Every screen recording is sharp, smooth, and professional — ideal for Retina displays on MacBook Pro and iMac.",
 		},
 		{
 			title: "Webcam Overlay While Recording",
@@ -35,29 +35,29 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Instant Shareable Links",
 			description:
-				"Stop recording on your Mac and Oiaai generates a shareable link immediately. No uploading, no file transfers. Paste the link anywhere and your viewers get instant access to the full recording with audio.",
+				"Stop recording on your Mac and OlhaAí generates a shareable link immediately. No uploading, no file transfers. Paste the link anywhere and your viewers get instant access to the full recording with audio.",
 		},
 		{
 			title: "Free with No Watermarks",
 			description:
-				"Oiaai's Studio Mode is completely free for personal use on Mac with no watermarks, no time limits, and no hidden fees. <a href='/free-screen-recorder'>Download Oiaai's free screen recorder</a> to start recording with audio on Mac today.",
+				"OlhaAí's Studio Mode is completely free for personal use on Mac with no watermarks, no time limits, and no hidden fees. <a href='/free-screen-recorder'>Download OlhaAí's free screen recorder</a> to start recording with audio on Mac today.",
 		},
 		{
 			title: "AI-Generated Captions from Your Audio",
 			description:
-				"Oiaai automatically transcribes your screen recording audio into accurate captions. Whether you are recording a tutorial narration or capturing a presentation, captions are generated automatically — no manual effort required.",
+				"OlhaAí automatically transcribes your screen recording audio into accurate captions. Whether you are recording a tutorial narration or capturing a presentation, captions are generated automatically — no manual effort required.",
 		},
 		{
 			title: "Open Source and Privacy-First",
 			description:
-				"Oiaai is fully open-source and supports your own S3-compatible storage for complete data ownership. Your Mac screen recordings with audio stay private and under your control — always. <a href='/open-source-screen-recorder'>Learn more about Oiaai as open-source software</a>.",
+				"OlhaAí is fully open-source and supports your own S3-compatible storage for complete data ownership. Your Mac screen recordings with audio stay private and under your control — always. <a href='/open-source-screen-recorder'>Learn more about OlhaAí as open-source software</a>.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Ways to Record Your Mac Screen with Audio",
 		description:
-			"Oiaai adapts to whether you need a quick share or a polished production",
+			"OlhaAí adapts to whether you need a quick share or a polished production",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -84,7 +84,7 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		title: "Mac Screen Recording with Audio: Tool Comparison",
 		headers: [
 			"Feature",
-			"Oiaai",
+			"OlhaAí",
 			"macOS Cmd+Shift+5",
 			"QuickTime Player",
 			"OBS Studio",
@@ -149,40 +149,40 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		],
 	},
 
-	comparisonTitle: "Oiaai vs Built-in Mac Recorders for Audio",
+	comparisonTitle: "OlhaAí vs Built-in Mac Recorders for Audio",
 	comparisonDescription:
-		"Understand why the built-in macOS tools fall short for audio recording and how Oiaai fills the gap",
+		"Understand why the built-in macOS tools fall short for audio recording and how OlhaAí fills the gap",
 
 	comparison: [
 		{
-			title: "Oiaai vs macOS Cmd+Shift+5",
+			title: "OlhaAí vs macOS Cmd+Shift+5",
 			description:
-				"The macOS built-in screenshot toolbar (Cmd+Shift+5) can record your screen but cannot capture system audio. It records microphone only. Oiaai captures both system audio and microphone natively on macOS without any additional tools — making it the far superior choice for anyone who needs audio in their Mac screen recordings. <a href='/screen-recorder-mac'>See all reasons to use Oiaai on Mac</a>.",
+				"The macOS built-in screenshot toolbar (Cmd+Shift+5) can record your screen but cannot capture system audio. It records microphone only. OlhaAí captures both system audio and microphone natively on macOS without any additional tools — making it the far superior choice for anyone who needs audio in their Mac screen recordings. <a href='/screen-recorder-mac'>See all reasons to use OlhaAí on Mac</a>.",
 		},
 		{
-			title: "Oiaai vs QuickTime Player",
+			title: "OlhaAí vs QuickTime Player",
 			description:
-				"QuickTime Player's screen recording feature also lacks internal audio capture on modern versions of macOS. Like Cmd+Shift+5, it can only record the microphone. Oiaai removes this limitation entirely, capturing system audio natively alongside microphone input in every recording.",
+				"QuickTime Player's screen recording feature also lacks internal audio capture on modern versions of macOS. Like Cmd+Shift+5, it can only record the microphone. OlhaAí removes this limitation entirely, capturing system audio natively alongside microphone input in every recording.",
 		},
 		{
-			title: "Oiaai vs OBS Studio for Mac",
+			title: "OlhaAí vs OBS Studio for Mac",
 			description:
-				"OBS Studio can record Mac screen with audio, but it requires installing and configuring a virtual audio device like BlackHole to capture system sound — a multi-step process that is easy to get wrong. Oiaai handles all audio routing automatically with zero configuration. <a href='/screen-recording-software'>Compare all screen recording software</a>.",
+				"OBS Studio can record Mac screen with audio, but it requires installing and configuring a virtual audio device like BlackHole to capture system sound — a multi-step process that is easy to get wrong. OlhaAí handles all audio routing automatically with zero configuration. <a href='/screen-recording-software'>Compare all screen recording software</a>.",
 		},
 		{
-			title: "Oiaai vs Loom on Mac",
+			title: "OlhaAí vs Loom on Mac",
 			description:
-				"Loom records Mac screen with audio and is a popular tool for async video, but it charges $18/month for professional use and adds watermarks on the free plan. Oiaai is significantly more affordable, fully open-source, and offers Studio Mode completely free with no watermarks. <a href='/loom-alternative'>See the full Oiaai vs Loom comparison</a>.",
+				"Loom records Mac screen with audio and is a popular tool for async video, but it charges $18/month for professional use and adds watermarks on the free plan. OlhaAí is significantly more affordable, fully open-source, and offers Studio Mode completely free with no watermarks. <a href='/loom-alternative'>See the full OlhaAí vs Loom comparison</a>.",
 		},
 	],
 
 	migrationGuide: {
-		title: "How to Record Your Mac Screen with Audio Using Oiaai",
+		title: "How to Record Your Mac Screen with Audio Using OlhaAí",
 		steps: [
-			"Download Oiaai for free from cap.so/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted — these are needed to capture your display and audio.",
-			"Open Oiaai from your menu bar. In the recording settings, toggle on Microphone and System Audio. You can enable one or both depending on whether you want narration, app sounds, or both in your recording.",
+			"Download OlhaAí for free from cap.so/download and install it on your Mac. Grant the required Screen Recording and Microphone permissions when prompted — these are needed to capture your display and audio.",
+			"Open OlhaAí from your menu bar. In the recording settings, toggle on Microphone and System Audio. You can enable one or both depending on whether you want narration, app sounds, or both in your recording.",
 			"Choose your recording source — full screen, a specific window, or a custom region. Click the record button to begin capturing your Mac screen with audio immediately.",
-			"When you are done, click Stop. Oiaai processes your recording and gives you a shareable link instantly, or you can export it as an MP4 file for use in editing software or local storage.",
+			"When you are done, click Stop. OlhaAí processes your recording and gives you a shareable link instantly, or you can export it as an MP4 file for use in editing software or local storage.",
 		],
 	},
 
@@ -194,12 +194,12 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Software Tutorials and Walkthroughs",
 			description:
-				"Create step-by-step tutorials where narration and application sounds both matter. Oiaai records your Mac screen with microphone and system audio so viewers hear exactly what you hear as you demonstrate software. New to it? Our <a href='/blog/record-screen-mac-system-audio'>step-by-step guide to screen recording on Mac with audio</a> walks through every click.",
+				"Create step-by-step tutorials where narration and application sounds both matter. OlhaAí records your Mac screen with microphone and system audio so viewers hear exactly what you hear as you demonstrate software. New to it? Our <a href='/blog/record-screen-mac-system-audio'>step-by-step guide to screen recording on Mac with audio</a> walks through every click.",
 		},
 		{
 			title: "Recording Video Calls and Presentations",
 			description:
-				"Capture Zoom calls, Google Meet sessions, or Keynote presentations in full — screen and audio together. Oiaai records system audio natively on Mac, so you never miss a word from participants or presenter.",
+				"Capture Zoom calls, Google Meet sessions, or Keynote presentations in full — screen and audio together. OlhaAí records system audio natively on Mac, so you never miss a word from participants or presenter.",
 		},
 		{
 			title: "Bug Reports with Sound Context",
@@ -209,17 +209,17 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			title: "Async Team Communication",
 			description:
-				"Replace status meetings with short video updates recorded on your Mac. Share the link in Slack or email so your team can watch with full audio context on their own schedule. <a href='/solutions/remote-team-collaboration'>Learn how Oiaai supports remote teams</a>.",
+				"Replace status meetings with short video updates recorded on your Mac. Share the link in Slack or email so your team can watch with full audio context on their own schedule. <a href='/solutions/remote-team-collaboration'>Learn how OlhaAí supports remote teams</a>.",
 		},
 		{
 			title: "Course and Educational Content",
 			description:
-				"Educators and course creators need Mac screen recordings with both narration and application audio for engaging lessons. Oiaai's Studio Mode is free for personal use with no time limits. <a href='/solutions/online-classroom-tools'>Learn how Oiaai supports educators</a>.",
+				"Educators and course creators need Mac screen recordings with both narration and application audio for engaging lessons. OlhaAí's Studio Mode is free for personal use with no time limits. <a href='/solutions/online-classroom-tools'>Learn how OlhaAí supports educators</a>.",
 		},
 		{
 			title: "Product Demos for Clients",
 			description:
-				"Record polished product walkthroughs with voiceover narration on your Mac and share them as links. Clients can watch with full audio and leave timestamped comments via Oiaai's built-in thread commenting.",
+				"Record polished product walkthroughs with voiceover narration on your Mac and share them as links. Clients can watch with full audio and leave timestamped comments via OlhaAí's built-in thread commenting.",
 		},
 	],
 
@@ -228,43 +228,43 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		{
 			question: "Why doesn't macOS record internal audio by default?",
 			answer:
-				"Apple restricts internal audio capture on macOS for privacy and copyright protection reasons. The built-in recorder (Cmd+Shift+5) and QuickTime Player can only record your microphone — not sounds playing from apps or the system. To capture internal audio on Mac, you either need a third-party audio routing tool like BlackHole or an app like Oiaai that handles system audio capture natively without any extra configuration.",
+				"Apple restricts internal audio capture on macOS for privacy and copyright protection reasons. The built-in recorder (Cmd+Shift+5) and QuickTime Player can only record your microphone — not sounds playing from apps or the system. To capture internal audio on Mac, you either need a third-party audio routing tool like BlackHole or an app like OlhaAí that handles system audio capture natively without any extra configuration.",
 		},
 		{
 			question: "How do I record my Mac screen with internal audio?",
 			answer:
-				"The easiest way to record your Mac screen with internal audio is to use Oiaai. Download the app, enable System Audio in the recording settings, and click record. Oiaai captures all sounds playing on your Mac alongside your screen recording without requiring any audio routing extensions or virtual sound cards. The macOS built-in tools cannot capture internal audio, so a dedicated app like Oiaai is the practical solution.",
+				"The easiest way to record your Mac screen with internal audio is to use OlhaAí. Download the app, enable System Audio in the recording settings, and click record. OlhaAí captures all sounds playing on your Mac alongside your screen recording without requiring any audio routing extensions or virtual sound cards. The macOS built-in tools cannot capture internal audio, so a dedicated app like OlhaAí is the practical solution.",
 		},
 		{
 			question:
 				"Can I record Mac screen with both microphone and system audio?",
 			answer:
-				"Yes — with Oiaai you can record both microphone and system audio simultaneously on Mac. Before starting a recording, enable both audio sources in Oiaai's settings. Oiaai mixes or captures both tracks and includes them in your recording. This is ideal for tutorials where you narrate while application sounds play, or for recording video calls where you want to capture all participants.",
+				"Yes — with OlhaAí you can record both microphone and system audio simultaneously on Mac. Before starting a recording, enable both audio sources in OlhaAí's settings. OlhaAí mixes or captures both tracks and includes them in your recording. This is ideal for tutorials where you narrate while application sounds play, or for recording video calls where you want to capture all participants.",
 		},
 		{
-			question: "Does Oiaai require BlackHole or Loopback for audio on Mac?",
+			question: "Does OlhaAí require BlackHole or Loopback for audio on Mac?",
 			answer:
-				"No. Oiaai handles Mac system audio capture natively without requiring BlackHole, Loopback, or any virtual audio driver. This is one of the key advantages of Oiaai over OBS Studio and other screen recorders that depend on third-party audio routing tools on macOS.",
+				"No. OlhaAí handles Mac system audio capture natively without requiring BlackHole, Loopback, or any virtual audio driver. This is one of the key advantages of OlhaAí over OBS Studio and other screen recorders that depend on third-party audio routing tools on macOS.",
 		},
 		{
 			question: "Is there a free way to record Mac screen with audio?",
 			answer:
-				"Yes. Oiaai is completely free for Mac screen recording with audio. Studio Mode has no time limits, no watermarks, and no fees. Instant Mode on the free plan supports recordings up to 5 minutes with shareable links. <a href='/free-screen-recorder'>Download Oiaai free</a> and start recording your Mac with audio today.",
+				"Yes. OlhaAí is completely free for Mac screen recording with audio. Studio Mode has no time limits, no watermarks, and no fees. Instant Mode on the free plan supports recordings up to 5 minutes with shareable links. <a href='/free-screen-recorder'>Download OlhaAí free</a> and start recording your Mac with audio today.",
 		},
 		{
-			question: "Does Oiaai record Mac screen with audio in 4K?",
+			question: "Does OlhaAí record Mac screen with audio in 4K?",
 			answer:
-				"Yes. Oiaai records your Mac screen at up to 4K resolution at 60fps while simultaneously capturing system audio and microphone input. This makes it suitable for professional tutorial creation, high-quality demos, and content production on Retina-display Macs.",
+				"Yes. OlhaAí records your Mac screen at up to 4K resolution at 60fps while simultaneously capturing system audio and microphone input. This makes it suitable for professional tutorial creation, high-quality demos, and content production on Retina-display Macs.",
 		},
 		{
 			question: "How do I share a Mac screen recording with audio?",
 			answer:
-				"With Oiaai, sharing is automatic. When you stop recording, Oiaai processes your Mac screen recording with audio and generates a shareable link in seconds. Copy the link and paste it anywhere — Slack, email, Notion, or a browser. Viewers get instant access without needing to download anything.",
+				"With OlhaAí, sharing is automatic. When you stop recording, OlhaAí processes your Mac screen recording with audio and generates a shareable link in seconds. Copy the link and paste it anywhere — Slack, email, Notion, or a browser. Viewers get instant access without needing to download anything.",
 		},
 		{
 			question: "Can I record a specific app window with audio on Mac?",
 			answer:
-				"Yes. Oiaai lets you record a specific application window on Mac while capturing that app's system audio along with your microphone. This is perfect for recording a single app's behavior without showing your full desktop, while still including all the relevant audio from that application.",
+				"Yes. OlhaAí lets you record a specific application window on Mac while capturing that app's system audio along with your microphone. This is perfect for recording a single app's behavior without showing your full desktop, while still including all the relevant audio from that application.",
 		},
 	],
 
@@ -272,13 +272,13 @@ export const macScreenRecordingWithAudioContent: SeoPageContent = {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
 			title:
-				"Oiaai recording Mac screen with system audio and microphone simultaneously",
+				"OlhaAí recording Mac screen with system audio and microphone simultaneously",
 		},
 	},
 
 	cta: {
 		title: "Record Your Mac Screen with Audio — Free",
-		buttonText: "Download Oiaai Free for Mac",
+		buttonText: "Download OlhaAí Free for Mac",
 		secondaryButtonText: "Try Instant Mode in Browser",
 	},
 };

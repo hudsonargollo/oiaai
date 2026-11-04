@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 		title: migrateFromLoomSeo.title,
 		description: migrateFromLoomSeo.description,
 		path: migrateFromLoomSeo.path,
-		ogTitle: "Import your Loom videos into Oiaai",
-		ogDescription: "Paste a link or upload a CSV. Oiaai does the rest.",
+		ogTitle: "Import your Loom videos into OlhaAí",
+		ogDescription: "Paste a link or upload a CSV. OlhaAí does the rest.",
 		ogTag: "Migrate",
 	}),
 	keywords: [...migrateFromLoomSeo.keywords],
@@ -41,9 +41,9 @@ const schemas = [
 		{ name: "Migrate from Loom", url: migrateFromLoomSeo.url },
 	]),
 	createHowToSchema({
-		name: "How to import Loom videos into Oiaai",
+		name: "How to import Loom videos into OlhaAí",
 		description:
-			"Move a single Loom video or your whole Loom library into Oiaai with the built-in importer.",
+			"Move a single Loom video or your whole Loom library into OlhaAí with the built-in importer.",
 		totalTime: "PT5M",
 		steps: importSteps.map((step) => ({ name: step.name, text: step.text })),
 	}),

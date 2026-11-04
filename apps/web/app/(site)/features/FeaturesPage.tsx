@@ -232,7 +232,7 @@ const features: Feature[] = [
 		icon: faShieldAlt,
 		title: "Local Recording",
 		description:
-			"Record and store everything locally with Oiaai Studio Mode - your data never leaves your device",
+			"Record and store everything locally with OlhaAí Studio Mode - your data never leaves your device",
 		category: "privacy",
 		size: "medium",
 	},
@@ -247,7 +247,8 @@ const features: Feature[] = [
 	{
 		icon: faServer,
 		title: "Self-Hosting",
-		description: "Deploy Oiaai on your own infrastructure for ultimate control",
+		description:
+			"Deploy OlhaAí on your own infrastructure for ultimate control",
 		category: "privacy",
 	},
 
@@ -255,7 +256,7 @@ const features: Feature[] = [
 		icon: faDownload,
 		title: "Loom Video Importer",
 		description:
-			"Switching from Loom? Import your existing Loom recordings directly into Oiaai and keep all your content in one place",
+			"Switching from Loom? Import your existing Loom recordings directly into OlhaAí and keep all your content in one place",
 		category: "platform",
 		size: "medium",
 	},
@@ -295,7 +296,7 @@ const features: Feature[] = [
 	{
 		icon: faInfinity,
 		title: "No Watermarks",
-		description: "Your recordings are yours - no Oiaai watermarks ever",
+		description: "Your recordings are yours - no OlhaAí watermarks ever",
 		category: "editing",
 	},
 
@@ -310,7 +311,7 @@ const features: Feature[] = [
 		icon: faServer,
 		title: "Webhooks & API",
 		description:
-			"Integrate Oiaai into your workflow with webhooks and API access",
+			"Integrate OlhaAí into your workflow with webhooks and API access",
 		category: "platform",
 		isPro: true,
 		isComingSoon: true,
@@ -355,7 +356,7 @@ export const FeaturesPage = () => {
 						<span className="text-gray-11">teams and creators</span>
 					</h1>
 					<p className="mx-auto mb-8 max-w-3xl text-md sm:text-xl text-gray-10">
-						Whether you're a solo creator or a global agency, Oiaai scales with
+						Whether you're a solo creator or a global agency, OlhaAí scales with
 						you. Record in 4K, collaborate seamlessly, maintain brand
 						consistency, and ship content faster. All while keeping full control
 						of your data.
@@ -368,7 +369,7 @@ export const FeaturesPage = () => {
 							size="lg"
 							className="flex justify-center items-center w-full font-medium text-md sm:w-auto"
 						>
-							Download Oiaai Free
+							Download OlhaAí Free
 						</Button>
 						<Button
 							href="/pricing"
@@ -376,7 +377,7 @@ export const FeaturesPage = () => {
 							size="lg"
 							className="flex justify-center items-center w-full font-medium text-md sm:w-auto"
 						>
-							Upgrade to Oiaai Pro
+							Upgrade to OlhaAí Pro
 						</Button>
 					</div>
 				</div>
@@ -419,7 +420,7 @@ export const FeaturesPage = () => {
 											href="/pricing"
 											className="inline-flex items-center px-2 py-1 ml-2 text-xs font-medium text-white bg-gradient-to-br from-blue-400 to-blue-600 rounded-full transition-all duration-200 hover:from-blue-500 hover:to-blue-700"
 										>
-											Oiaai Pro
+											OlhaAí Pro
 										</Link>
 									)}
 									{feature.isComingSoon && (
@@ -451,7 +452,7 @@ export const FeaturesPage = () => {
 					<h2 className="mb-4 text-3xl font-medium">Ready to get started?</h2>
 					<p className="mx-auto mb-8 max-w-2xl text-lg text-gray-10">
 						Join thousands of users who are already creating better recordings
-						with Oiaai.
+						with OlhaAí.
 					</p>
 					<div className="flex flex-col gap-4 justify-center sm:flex-row">
 						<Button
@@ -460,7 +461,7 @@ export const FeaturesPage = () => {
 							size="lg"
 							className="font-medium"
 						>
-							Download Oiaai Free
+							Download OlhaAí Free
 						</Button>
 						<Button
 							href="/pricing"

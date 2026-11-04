@@ -30,7 +30,7 @@ export function FirstView({
 	return (
 		<Html>
 			<Head />
-			<Preview>Your Oiaai "{videoName}" just got its first view!</Preview>
+			<Preview>Your OlhaAí "{videoName}" just got its first view!</Preview>
 			<Tailwind>
 				<Body className="mx-auto my-auto bg-gray-1 font-sans">
 					<Container className="mx-auto my-10 max-w-[500px] rounded border border-solid border-gray-200 px-10 py-5">
@@ -39,12 +39,12 @@ export function FirstView({
 								src={CAP_LOGO_URL}
 								width="40"
 								height="40"
-								alt="Oiaai"
+								alt="OlhaAí"
 								className="mx-auto my-0"
 							/>
 						</Section>
 						<Heading className="mx-0 my-7 p-0 text-center text-xl font-semibold text-black">
-							Your Oiaai just got its first view!
+							Your OlhaAí just got its first view!
 						</Heading>
 						<Text className="text-sm leading-6 text-black">
 							Your video "{videoName}" was just viewed by{" "}
@@ -58,7 +58,7 @@ export function FirstView({
 								className="rounded-full bg-black px-6 py-3 text-center text-[12px] font-semibold text-white no-underline"
 								href={url}
 							>
-								View Your Oiaai
+								View Your OlhaAí
 							</Link>
 						</Section>
 						<Text className="text-sm leading-6 text-black">

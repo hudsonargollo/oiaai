@@ -10,19 +10,19 @@ const ogImage = ogImageUrl({
 export const metadata: Metadata = {
 	title: "Best Screen Recorder for Mac | High-Quality, Free & Easy (2026)",
 	description:
-		"Oiaai is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
+		"OlhaAí is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
 	openGraph: {
 		title: "Best Screen Recorder for Mac | High-Quality, Free & Easy (2026)",
 		description:
-			"Oiaai is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
+			"OlhaAí is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
 		url: "https://cap.so/screen-recorder-mac",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Best Screen Recorder for Mac",
+				alt: "OlhaAí: Best Screen Recorder for Mac",
 			},
 		],
 		locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Best Screen Recorder for Mac | Oiaai",
+		title: "Best Screen Recorder for Mac | OlhaAí",
 		description:
-			"Oiaai is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
+			"OlhaAí is the best free screen recorder for Mac, with HD quality, no time limit in Studio Mode, and easy export. Ideal for tutorials, presentations, and educational videos.",
 		images: [ogImage],
 	},
 	alternates: {

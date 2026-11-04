@@ -43,12 +43,14 @@ const NOTIFICATION_TYPES: {
 	{
 		key: "pauseViews",
 		title: "Views",
-		description: "Alert when a signed-in viewer watches one of your recordings.",
+		description:
+			"Alert when a signed-in viewer watches one of your recordings.",
 	},
 	{
 		key: "pauseAnonViews",
 		title: "Anonymous views",
-		description: "Alert when an anonymous viewer watches one of your recordings.",
+		description:
+			"Alert when an anonymous viewer watches one of your recordings.",
 	},
 	{
 		key: "pauseReactions",

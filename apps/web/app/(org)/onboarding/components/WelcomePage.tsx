@@ -37,7 +37,7 @@ export function WelcomePage() {
 
 	return (
 		<Base
-			title="Welcome to Oiaai"
+			title="Welcome to OlhaAí"
 			description="Let's get you started"
 			hideBackButton
 		>

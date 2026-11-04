@@ -5,9 +5,9 @@ import { nativeDesktopReleaseIsLive } from "@/utils/native-release";
 import { getGitHubReleases } from "@/utils/releases";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Download — Oiaai",
+	title: "Download — OlhaAí",
 	path: "/download",
-	ogTitle: "Download Oiaai for macOS, Windows, Linux & Chrome",
+	ogTitle: "Download OlhaAí for macOS, Windows, Linux & Chrome",
 	ogTag: "Download",
 });
 

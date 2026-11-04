@@ -135,7 +135,7 @@ describe("LoomImportScreen", () => {
 		expect(isLoomShareUrl("https://www.loom.com/share/short")).toBe(false);
 	});
 
-	it("starts the server import and opens the new Oiaai", async () => {
+	it("starts the server import and opens the new OlhaAí", async () => {
 		const renderer = await renderComponent(
 			React.createElement(LoomImportScreen),
 		);
@@ -168,7 +168,7 @@ describe("LoomImportScreen", () => {
 		});
 	});
 
-	it("opens the imported Oiaai even when account refresh fails", async () => {
+	it("opens the imported OlhaAí even when account refresh fails", async () => {
 		auth.value.refresh.mockRejectedValueOnce(new Error("Refresh unavailable"));
 		const renderer = await renderComponent(
 			React.createElement(LoomImportScreen),
@@ -228,7 +228,7 @@ describe("LoomImportScreen", () => {
 
 		const text = JSON.stringify(renderer.toJSON());
 		expect(text).toContain(
-			"Loom import is available on Oiaai Pro. Your current plan does not include this feature.",
+			"Loom import is available on OlhaAí Pro. Your current plan does not include this feature.",
 		);
 		expect(text).not.toContain("Upgrade on the web");
 	});

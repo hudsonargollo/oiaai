@@ -36,7 +36,7 @@ export const EnterpriseCard = () => {
 
 			<div className="flex gap-1.5 items-baseline mt-6">
 				<span className="text-4xl font-semibold tracking-tight text-gray-12">
-					Oiaai Pro
+					OlhaAí Pro
 				</span>
 			</div>
 			<p className="mt-1 text-sm text-gray-10">with optional add-ons</p>

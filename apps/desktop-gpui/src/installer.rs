@@ -192,7 +192,7 @@ impl<'a> Verifier<'a> {
         match key.verify_stream(signature) {
             Ok(verifier) => Ok(Self::Stream(Box::new(verifier))),
             Err(minisign_verify::Error::UnsupportedLegacyMode) => Ok(Self::Buffered),
-            Err(error) => Err(format!("The update was not signed by Oiaai: {error}")),
+            Err(error) => Err(format!("The update was not signed by OlhaAí: {error}")),
         }
     }
 
@@ -240,7 +240,7 @@ pub(crate) fn check_artifact_kind(file: &Path, kind: ArtifactKind) -> Result<(),
     if kind.matches(&header[..read]) {
         Ok(())
     } else {
-        Err("The downloaded file is not an Oiaai package for this platform".to_string())
+        Err("The downloaded file is not an OlhaAí package for this platform".to_string())
     }
 }
 
@@ -522,7 +522,7 @@ fn replace_directory_with_privileges(new: &Path, destination: &Path) -> Result<(
         Ok(())
     } else {
         Err(format!(
-            "Oiaai couldn't replace {}. {}",
+            "OlhaAí couldn't replace {}. {}",
             destination.display(),
             String::from_utf8_lossy(&output.stderr).trim()
         ))

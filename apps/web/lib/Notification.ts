@@ -476,7 +476,7 @@ export async function sendFirstViewEmail(
 
 		await sendEmail({
 			email: videoWithOwner.ownerEmail,
-			subject: `Your Oiaai "${displayName}" just got its first view!`,
+			subject: `Your OlhaAí "${displayName}" just got its first view!`,
 			react: FirstView({
 				email: videoWithOwner.ownerEmail,
 				url: videoUrl,

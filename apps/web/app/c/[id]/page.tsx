@@ -44,10 +44,10 @@ export async function generateMetadata(
 	const description =
 		collection.publicPage.subtitle.trim() ||
 		collection.description?.trim() ||
-		`View public videos in ${title} on Oiaai.`;
+		`View public videos in ${title} on OlhaAí.`;
 
 	return {
-		title: `${title} | Oiaai Collection`,
+		title: `${title} | OlhaAí Collection`,
 		description,
 		robots: "noindex, nofollow",
 	};
@@ -174,7 +174,7 @@ export default async function PublicCollectionPage(
 					<div className="flex justify-between items-center px-4 mx-auto max-w-7xl h-16 sm:px-6 lg:px-8">
 						{branding ? (
 							branding.type === "cap" ? (
-								<Link href="/?ref=collection" aria-label="Oiaai home">
+								<Link href="/?ref=collection" aria-label="OlhaAí home">
 									<BrandingMark branding={branding} />
 								</Link>
 							) : (

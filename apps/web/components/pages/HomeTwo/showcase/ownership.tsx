@@ -26,7 +26,7 @@ const DESTINATIONS: Destination[] = [
 	{
 		key: "cloud",
 		label: copyOf(STORAGE_COPY, "cloud").label,
-		name: "Oiaai Cloud",
+		name: "OlhaAí Cloud",
 		path: "cap.so/s/m4k8x2qz",
 		note: "Encrypted, shareable the second it lands",
 		icon: <CapLogoMark className="size-7" />,
@@ -57,7 +57,7 @@ const DESTINATIONS: Destination[] = [
 		key: "drive",
 		label: copyOf(STORAGE_COPY, "drive").label,
 		name: "Google Drive",
-		path: "My Drive / Oiaai",
+		path: "My Drive / OlhaAí",
 		note: "A folder your team already uses",
 		icon: (
 			<Image
@@ -75,7 +75,7 @@ const DESTINATIONS: Destination[] = [
 	{
 		key: "self",
 		label: copyOf(STORAGE_COPY, "self").label,
-		name: "Oiaai on your servers",
+		name: "OlhaAí on your servers",
 		path: "recordings.acme.internal",
 		note: "The whole platform, on your servers",
 		icon: <Server className="size-6 text-[#111111]" />,

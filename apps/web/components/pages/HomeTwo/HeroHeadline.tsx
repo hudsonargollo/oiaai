@@ -307,8 +307,8 @@ export const HeroHeadline = () => {
 				className={`ht-rise ht-rise-soft [--d:0.1s] ${H_HERO} max-w-[15ch] text-balance text-[clamp(34px,4.4vw,60px)] sm:max-w-none`}
 			>
 				<span className="sr-only">
-					The open source screen recorder for everyone. Oiaai has three recording
-					modes: Instant, Studio, and Screenshot.
+					The open source screen recorder for everyone. OlhaAí has three
+					recording modes: Instant, Studio, and Screenshot.
 				</span>
 				<span aria-hidden="true" className="ht-headline block">
 					<span className="block">The open source screen recorder</span>

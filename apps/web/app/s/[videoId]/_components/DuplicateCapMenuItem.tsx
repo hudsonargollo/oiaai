@@ -26,10 +26,10 @@ export default function DuplicateCapMenuItem({
 		mutationKey: ["videoDuplicate", videoId],
 		mutationFn: () => rpc.VideoDuplicate(videoId),
 		onSuccess: () => {
-			toast.success("Oiaai duplicated successfully");
+			toast.success("OlhaAí duplicated successfully");
 		},
 		onError: () => {
-			toast.error("Failed to duplicate Oiaai");
+			toast.error("Failed to duplicate OlhaAí");
 		},
 	});
 	// Read pending state through the cache, not the hook instance: the menu
@@ -46,7 +46,7 @@ export default function DuplicateCapMenuItem({
 		>
 			<FontAwesomeIcon className="size-3" icon={faCopy} />
 			<p className="text-sm text-gray-12">
-				{isDuplicating ? "Duplicating..." : "Duplicate Oiaai"}
+				{isDuplicating ? "Duplicating..." : "Duplicate OlhaAí"}
 			</p>
 		</DropdownMenuItem>
 	);

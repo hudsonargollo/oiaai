@@ -3,9 +3,9 @@ import { buildMarketingMetadata } from "@/lib/og/url";
 import { StudioModePage } from "./StudioModePage";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Studio Mode - Professional Screen Recording | Oiaai",
+	title: "Studio Mode - Professional Screen Recording | OlhaAí",
 	description:
-		"Create professional-quality screen recordings with Oiaai Studio Mode. Local recording, 4K 60fps quality, precision editing tools, and complete privacy control.",
+		"Create professional-quality screen recordings with OlhaAí Studio Mode. Local recording, 4K 60fps quality, precision editing tools, and complete privacy control.",
 	path: "/features/studio-mode",
 	ogTitle: "Studio Mode — pro-quality recordings",
 	ogDescription:

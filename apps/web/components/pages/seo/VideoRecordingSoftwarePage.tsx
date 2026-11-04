@@ -4,11 +4,12 @@ import { SeoPageTemplate } from "../../seo/SeoPageTemplate";
 import type { SeoPageContent } from "../../seo/types";
 
 export const videoRecordingSoftwareContent: SeoPageContent = {
-	title: "Video Recording Software — Free, HD Quality, Instant Sharing | Oiaai",
+	title:
+		"Video Recording Software — Free, HD Quality, Instant Sharing | OlhaAí",
 	description:
-		"Oiaai is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
+		"OlhaAí is free video recording software for Mac and Windows. Record your screen, webcam, and audio in HD, then share instantly with a link. Open-source, no watermarks, no time limits in Studio Mode.",
 
-	featuresTitle: "Why Oiaai is the Best Video Recording Software",
+	featuresTitle: "Why OlhaAí is the Best Video Recording Software",
 	featuresDescription:
 		"Everything you need to capture, share, and collaborate on video recordings — completely free and open-source",
 
@@ -16,7 +17,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "HD Video Capture Up to 4K at 60fps",
 			description:
-				"Record crystal-clear video at up to 4K resolution and 60 frames per second. Oiaai captures every detail of your screen with smooth motion and sharp text, delivering professional output without professional pricing.",
+				"Record crystal-clear video at up to 4K resolution and 60 frames per second. OlhaAí captures every detail of your screen with smooth motion and sharp text, delivering professional output without professional pricing.",
 		},
 		{
 			title: "Screen, Webcam, and Audio Together",
@@ -26,17 +27,17 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "Instant Shareable Links",
 			description:
-				"Stop recording and Oiaai generates a shareable link in seconds. No uploading, no waiting, no file transfers. Paste the link in Slack, email, or Notion and your viewers get instant access. <a href='/screen-recording'>Learn more about screen recording with Oiaai</a>.",
+				"Stop recording and OlhaAí generates a shareable link in seconds. No uploading, no waiting, no file transfers. Paste the link in Slack, email, or Notion and your viewers get instant access. <a href='/screen-recording'>Learn more about screen recording with OlhaAí</a>.",
 		},
 		{
 			title: "Completely Free, No Watermarks",
 			description:
-				"Oiaai's Studio Mode is 100% free for personal use with no watermarks, no time limits, and no hidden fees. Unlike most video recording software, Oiaai never adds branding overlays to your recordings. <a href='/free-screen-recorder'>Download Oiaai's free recorder</a> today.",
+				"OlhaAí's Studio Mode is 100% free for personal use with no watermarks, no time limits, and no hidden fees. Unlike most video recording software, OlhaAí never adds branding overlays to your recordings. <a href='/free-screen-recorder'>Download OlhaAí's free recorder</a> today.",
 		},
 		{
 			title: "Open Source and Auditable",
 			description:
-				"Oiaai is open source on GitHub, with most code under AGPLv3 and specified Rust crates under MIT. Inspect every line of code, verify how your recordings are handled, and contribute features back to the community. No black boxes, no vendor lock-in. <a href='/open-source-screen-recorder'>Learn more about Oiaai as open-source software</a>.",
+				"OlhaAí is open source on GitHub, with most code under AGPLv3 and specified Rust crates under MIT. Inspect every line of code, verify how your recordings are handled, and contribute features back to the community. No black boxes, no vendor lock-in. <a href='/open-source-screen-recorder'>Learn more about OlhaAí as open-source software</a>.",
 		},
 		{
 			title: "Separate Screen and Webcam Tracks",
@@ -46,19 +47,19 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			title: "AI-Powered Captions",
 			description:
-				"Automatically generate accurate captions from your video recordings with zero manual effort. Oiaai's built-in transcription makes content accessible, searchable, and more engaging without requiring a separate transcription service.",
+				"Automatically generate accurate captions from your video recordings with zero manual effort. OlhaAí's built-in transcription makes content accessible, searchable, and more engaging without requiring a separate transcription service.",
 		},
 		{
 			title: "Built-In Thread Commenting",
 			description:
-				"Viewers can leave timestamped comments directly on your video recordings. Collect structured feedback without long email threads or follow-up calls — collaboration is built into every recording Oiaai shares.",
+				"Viewers can leave timestamped comments directly on your video recordings. Collect structured feedback without long email threads or follow-up calls — collaboration is built into every recording OlhaAí shares.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Video Recording Modes for Every Workflow",
 		description:
-			"Oiaai adapts to whether you need a quick share or a polished professional video",
+			"OlhaAí adapts to whether you need a quick share or a polished professional video",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -83,7 +84,7 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 
 	comparisonTable: {
 		title: "Video Recording Software Compared",
-		headers: ["Feature", "Oiaai", "Loom", "Camtasia", "OBS Studio"],
+		headers: ["Feature", "OlhaAí", "Loom", "Camtasia", "OBS Studio"],
 		rows: [
 			[
 				"Price",
@@ -147,66 +148,66 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		],
 	},
 
-	comparisonTitle: "How Oiaai Compares to Other Video Recording Software",
+	comparisonTitle: "How OlhaAí Compares to Other Video Recording Software",
 	comparisonDescription:
-		"The best video recording software for your workflow depends on what you need — here's how Oiaai stacks up",
+		"The best video recording software for your workflow depends on what you need — here's how OlhaAí stacks up",
 
 	comparison: [
 		{
-			title: "Oiaai vs Loom",
-			description: `Oiaai starts at $${PRICING.pro.annualPerMonth}/month versus Loom's $18/month, and Oiaai's Studio Mode is completely free with no watermarks. Oiaai records at up to 4K, is open-source, and supports custom S3 storage — quality and flexibility that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full Oiaai vs Loom comparison</a>.`,
+			title: "OlhaAí vs Loom",
+			description: `OlhaAí starts at $${PRICING.pro.annualPerMonth}/month versus Loom's $18/month, and OlhaAí's Studio Mode is completely free with no watermarks. OlhaAí records at up to 4K, is open-source, and supports custom S3 storage — quality and flexibility that Loom's free and paid plans don't match. <a href='/loom-alternative'>See the full OlhaAí vs Loom comparison</a>.`,
 		},
 		{
-			title: "Oiaai vs Camtasia",
+			title: "OlhaAí vs Camtasia",
 			description:
-				"Camtasia costs $299.99 and is built around editing rather than instant sharing. Oiaai is free and covers the full workflow from video recording to sharing — making it the better choice for users who want professional results without enterprise pricing.",
+				"Camtasia costs $299.99 and is built around editing rather than instant sharing. OlhaAí is free and covers the full workflow from video recording to sharing — making it the better choice for users who want professional results without enterprise pricing.",
 		},
 		{
-			title: "Oiaai vs OBS Studio",
+			title: "OlhaAí vs OBS Studio",
 			description:
-				"OBS is also open-source and free, but it requires significant configuration and is designed for live streaming rather than async video sharing. Oiaai delivers instant shareable links, built-in commenting, and a clean interface with no setup overhead. <a href='/screen-recording-software'>Compare screen recording software in detail</a>.",
+				"OBS is also open-source and free, but it requires significant configuration and is designed for live streaming rather than async video sharing. OlhaAí delivers instant shareable links, built-in commenting, and a clean interface with no setup overhead. <a href='/screen-recording-software'>Compare screen recording software in detail</a>.",
 		},
 		{
-			title: "Oiaai vs Built-in OS Recorders",
+			title: "OlhaAí vs Built-in OS Recorders",
 			description:
-				"macOS and Windows built-in recorders lack system audio, webcam overlay, and instant sharing. Oiaai adds all of these natively with no extra plugins required. <a href='/screen-recorder-mac'>Learn more about video recording on Mac</a> or <a href='/screen-recorder-windows'>Windows</a>.",
+				"macOS and Windows built-in recorders lack system audio, webcam overlay, and instant sharing. OlhaAí adds all of these natively with no extra plugins required. <a href='/screen-recorder-mac'>Learn more about video recording on Mac</a> or <a href='/screen-recorder-windows'>Windows</a>.",
 		},
 	],
 
-	useCasesTitle: "Who Uses Oiaai as Their Video Recording Software",
+	useCasesTitle: "Who Uses OlhaAí as Their Video Recording Software",
 	useCasesDescription:
-		"From solo developers to enterprise teams — Oiaai fits every workflow that needs fast, professional video recordings",
+		"From solo developers to enterprise teams — OlhaAí fits every workflow that needs fast, professional video recordings",
 
 	useCases: [
 		{
 			title: "Software Tutorials and Documentation",
 			description:
-				"Developers and product teams record step-by-step tutorials and feature walkthroughs with Oiaai. HD quality and instant shareable links make it easy to publish documentation or share onboarding guides without any video hosting setup.",
+				"Developers and product teams record step-by-step tutorials and feature walkthroughs with OlhaAí. HD quality and instant shareable links make it easy to publish documentation or share onboarding guides without any video hosting setup.",
 		},
 		{
 			title: "Async Team Communication",
 			description:
-				"Replace synchronous meetings with short video recordings. Record a walkthrough, share the link in Slack, and let your team watch asynchronously. <a href='/solutions/remote-team-collaboration'>Learn how Oiaai supports remote teams</a>.",
+				"Replace synchronous meetings with short video recordings. Record a walkthrough, share the link in Slack, and let your team watch asynchronously. <a href='/solutions/remote-team-collaboration'>Learn how OlhaAí supports remote teams</a>.",
 		},
 		{
 			title: "Bug Reports and QA",
 			description:
-				"Recording a bug is faster and clearer than writing a description. Oiaai's Instant Mode captures exactly what went wrong and delivers a shareable link in seconds so engineers can reproduce and fix issues immediately.",
+				"Recording a bug is faster and clearer than writing a description. OlhaAí's Instant Mode captures exactly what went wrong and delivers a shareable link in seconds so engineers can reproduce and fix issues immediately.",
 		},
 		{
 			title: "Client Demos and Presentations",
 			description:
-				"Record polished product demos and share them as links without scheduling a live call. Oiaai's built-in thread commenting lets clients leave structured feedback directly on the recording.",
+				"Record polished product demos and share them as links without scheduling a live call. OlhaAí's built-in thread commenting lets clients leave structured feedback directly on the recording.",
 		},
 		{
 			title: "Employee Training and Onboarding",
 			description:
-				"Build a library of training videos that new hires can access on-demand. AI-powered captions make every recording searchable and accessible. <a href='/solutions/employee-onboarding-platform'>Learn how Oiaai supports employee onboarding</a>.",
+				"Build a library of training videos that new hires can access on-demand. AI-powered captions make every recording searchable and accessible. <a href='/solutions/employee-onboarding-platform'>Learn how OlhaAí supports employee onboarding</a>.",
 		},
 		{
 			title: "Education and Course Content",
 			description:
-				"Educators record lectures, screen walkthroughs, and instructional content with Studio Mode at no cost. <a href='/solutions/online-classroom-tools'>Learn how Oiaai supports online classrooms</a>.",
+				"Educators record lectures, screen walkthroughs, and instructional content with Studio Mode at no cost. <a href='/solutions/online-classroom-tools'>Learn how OlhaAí supports online classrooms</a>.",
 		},
 	],
 
@@ -215,41 +216,41 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		{
 			question: "What is video recording software?",
 			answer:
-				"Video recording software captures the visual and audio output from your computer as a video file. This includes screen recording software that records your display, as well as tools that capture webcam footage, system audio, and microphone input simultaneously. Oiaai is video recording software that records your screen and webcam in up to 4K, generates instant shareable links, and stores recordings in the cloud.",
+				"Video recording software captures the visual and audio output from your computer as a video file. This includes screen recording software that records your display, as well as tools that capture webcam footage, system audio, and microphone input simultaneously. OlhaAí is video recording software that records your screen and webcam in up to 4K, generates instant shareable links, and stores recordings in the cloud.",
 		},
 		{
 			question: "What is the best free video recording software?",
 			answer:
-				"Oiaai is the best free video recording software for most users. Studio Mode is 100% free for personal use with no watermarks, no time limits, and up to 4K recording quality. Instant Mode supports recordings up to 5 minutes on the free plan with instant shareable links. <a href='/free-screen-recorder'>Download Oiaai's free recorder</a> to get started.",
+				"OlhaAí is the best free video recording software for most users. Studio Mode is 100% free for personal use with no watermarks, no time limits, and up to 4K recording quality. Instant Mode supports recordings up to 5 minutes on the free plan with instant shareable links. <a href='/free-screen-recorder'>Download OlhaAí's free recorder</a> to get started.",
 		},
 		{
-			question: "Is Oiaai video recording software free?",
-			answer: `Yes. Oiaai's Studio Mode is completely free for personal use with no time limits, no watermarks, and no hidden fees. Instant Mode is free for recordings up to 5 minutes. Oiaai Pro at $${PRICING.pro.annualPerMonth}/month removes Instant Mode limits and adds team features — but the core video recording software is free to use forever.`,
+			question: "Is OlhaAí video recording software free?",
+			answer: `Yes. OlhaAí's Studio Mode is completely free for personal use with no time limits, no watermarks, and no hidden fees. Instant Mode is free for recordings up to 5 minutes. OlhaAí Pro at $${PRICING.pro.annualPerMonth}/month removes Instant Mode limits and adds team features — but the core video recording software is free to use forever.`,
 		},
 		{
-			question: "Does Oiaai video recording software work on Mac and Windows?",
+			question: "Does OlhaAí video recording software work on Mac and Windows?",
 			answer:
-				"Yes. Oiaai is available as a native desktop app for both macOS and Windows. Both versions support up to 4K recording, system audio capture, webcam overlay, and instant sharing. <a href='/screen-recorder-mac'>Learn more about video recording on Mac</a> or <a href='/screen-recorder-windows'>video recording on Windows</a>.",
+				"Yes. OlhaAí is available as a native desktop app for both macOS and Windows. Both versions support up to 4K recording, system audio capture, webcam overlay, and instant sharing. <a href='/screen-recorder-mac'>Learn more about video recording on Mac</a> or <a href='/screen-recorder-windows'>video recording on Windows</a>.",
 		},
 		{
 			question: "Can video recording software capture system audio?",
 			answer:
-				"Yes. Oiaai captures both system audio and microphone input simultaneously in every recording. You can narrate live while application sounds and system audio play through, creating a complete and synchronized video recording without any additional setup.",
+				"Yes. OlhaAí captures both system audio and microphone input simultaneously in every recording. You can narrate live while application sounds and system audio play through, creating a complete and synchronized video recording without any additional setup.",
 		},
 		{
 			question: "What video recording software has no watermark?",
 			answer:
-				"Oiaai has no watermark on any recording, including the free plan. Every video recording produced by Oiaai is completely clean with no branding overlays or watermarks. This makes Oiaai the best free video recording software without watermarks on Mac and Windows.",
+				"OlhaAí has no watermark on any recording, including the free plan. Every video recording produced by OlhaAí is completely clean with no branding overlays or watermarks. This makes OlhaAí the best free video recording software without watermarks on Mac and Windows.",
 		},
 		{
-			question: "Can I self-host my video recordings with Oiaai?",
+			question: "Can I self-host my video recordings with OlhaAí?",
 			answer:
-				"Yes. Oiaai supports any S3-compatible storage provider including AWS S3, Cloudflare R2, and self-hosted MinIO. Configure your own storage bucket and your video recordings are stored entirely within your own infrastructure. Oiaai's servers never see your content unless you choose the default cloud storage option.",
+				"Yes. OlhaAí supports any S3-compatible storage provider including AWS S3, Cloudflare R2, and self-hosted MinIO. Configure your own storage bucket and your video recordings are stored entirely within your own infrastructure. OlhaAí's servers never see your content unless you choose the default cloud storage option.",
 		},
 		{
-			question: "Is Oiaai open-source video recording software?",
+			question: "Is OlhaAí open-source video recording software?",
 			answer:
-				"Yes. Oiaai is open source, with most code under AGPLv3 and specified Rust crates under MIT. The complete codebase — desktop app, web app, and media processing pipeline — is publicly available on GitHub. You can audit every line of code, fork the project, and contribute back to the community. <a href='/open-source-screen-recorder'>Learn more about Oiaai as open-source software</a>.",
+				"Yes. OlhaAí is open source, with most code under AGPLv3 and specified Rust crates under MIT. The complete codebase — desktop app, web app, and media processing pipeline — is publicly available on GitHub. You can audit every line of code, fork the project, and contribute back to the community. <a href='/open-source-screen-recorder'>Learn more about OlhaAí as open-source software</a>.",
 		},
 	],
 
@@ -257,13 +258,13 @@ export const videoRecordingSoftwareContent: SeoPageContent = {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
 			title:
-				"Oiaai video recording software demo showing HD screen capture, webcam overlay, and instant sharing",
+				"OlhaAí video recording software demo showing HD screen capture, webcam overlay, and instant sharing",
 		},
 	},
 
 	cta: {
-		title: "Start Recording Video for Free with Oiaai",
-		buttonText: "Download Oiaai Free",
+		title: "Start Recording Video for Free with OlhaAí",
+		buttonText: "Download OlhaAí Free",
 		secondaryButtonText: "Try Instant Mode in Browser",
 	},
 };

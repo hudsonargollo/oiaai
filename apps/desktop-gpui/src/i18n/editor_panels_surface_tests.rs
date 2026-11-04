@@ -152,7 +152,7 @@ fn editor_panels_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::panel::text_preset::sample::title(),
-            "Introducing Oiaai",
+            "Introducing OlhaAí",
         ),
         (
             tr::editor::panel::text_preset::sample::headline(),
@@ -172,7 +172,7 @@ fn editor_panels_match_the_literals_they_replaced() {
         ),
         (
             tr::editor::panel::text_preset::sample::caption(),
-            "Recorded with Oiaai",
+            "Recorded with OlhaAí",
         ),
         (
             tr::editor::panel::text_preset::sample::kicker(),

@@ -178,7 +178,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::dialog::delete_recording::finishing_body(),
-            "Oiaai is waiting for recording cleanup to finish before completing this deletion.",
+            "OlhaAí is waiting for recording cleanup to finish before completing this deletion.",
         ),
         (
             tr::dialog::delete_recording::finishing_title(),
@@ -198,7 +198,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::dialog::capture::approve_shortcut(),
-            "Approve a recording shortcut, or activate the Oiaai Stop tray icon when it appears. Recording has not started.",
+            "Approve a recording shortcut, or activate the OlhaAí Stop tray icon when it appears. Recording has not started.",
         ),
         (
             tr::dialog::capture::area_unavailable(),
@@ -210,11 +210,11 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::dialog::capture::camera_notice(),
-            "Oiaai will hide its camera preview and recording controls. Any selected camera will keep recording as a separate editable track.",
+            "OlhaAí will hide its camera preview and recording controls. Any selected camera will keep recording as a separate editable track.",
         ),
         (
             tr::dialog::capture::camera_notice_instant(),
-            "Oiaai will hide its preview and controls. Any selected camera will appear at its preview position with the selected shape and effects. Keep the whole preview inside the capture area. Opening Oiaai will stop this Instant recording before showing its controls.",
+            "OlhaAí will hide its preview and controls. Any selected camera will appear at its preview position with the selected shape and effects. Keep the whole preview inside the capture area. Opening OlhaAí will stop this Instant recording before showing its controls.",
         ),
         (
             tr::dialog::capture::camera_outside_area(),
@@ -234,15 +234,15 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::dialog::capture::shortcut_conflict(),
-            "Ctrl+Shift+F9 is assigned to another Oiaai action. Change that shortcut before recording.",
+            "Ctrl+Shift+F9 is assigned to another OlhaAí action. Change that shortcut before recording.",
         ),
         (
             tr::dialog::capture::shortcut_description(),
-            "Start or stop this Oiaai recording",
+            "Start or stop this OlhaAí recording",
         ),
         (
             tr::dialog::capture::tray_stop_hint(),
-            "Activate the Oiaai Stop tray icon to start. Activate the same icon again to stop. Recording will not start until you use that control.",
+            "Activate the OlhaAí Stop tray icon to start. Activate the same icon again to stop. Recording will not start until you use that control.",
         ),
         (
             tr::dialog::capture::window_unavailable(),
@@ -277,7 +277,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::dialog::file::unconfirmed(),
-            "Oiaai could not confirm that the file dialog closed. Close any remaining file dialog and restart Oiaai before trying again.",
+            "OlhaAí could not confirm that the file dialog closed. Close any remaining file dialog and restart OlhaAí before trying again.",
         ),
         (
             tr::dialog::storage::stopped_kept(),
@@ -294,7 +294,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         (tr::dialog::teleprompter::cue_markers(), "Cue markers"),
         (
             tr::dialog::teleprompter::hidden(),
-            "This window is hidden from Oiaai recordings",
+            "This window is hidden from OlhaAí recordings",
         ),
         (tr::dialog::teleprompter::mirror(), "Mirror text"),
         (
@@ -388,7 +388,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::overlay::window::size_needs_accessibility_body(),
-            "Turn on Accessibility for Oiaai in System Settings to resize other apps' windows.",
+            "Turn on Accessibility for OlhaAí in System Settings to resize other apps' windows.",
         ),
         (
             tr::overlay::window::size_unavailable_title(),
@@ -485,7 +485,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         (tr::permission::onboarding::skip(), "Skip for now"),
         (
             tr::permission::onboarding::switch_on_title(),
-            "Switch Oiaai on in System Settings",
+            "Switch OlhaAí on in System Settings",
         ),
         (
             tr::permission::onboarding::accessibility::allow(),
@@ -493,7 +493,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::accessibility::body(),
-            "Accessibility lets Oiaai see your clicks and cursor, on this Mac only, so auto zoom knows where to look.",
+            "Accessibility lets OlhaAí see your clicks and cursor, on this Mac only, so auto zoom knows where to look.",
         ),
         (
             tr::permission::onboarding::accessibility::done_body(),
@@ -505,15 +505,15 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::accessibility::title(),
-            "Let Oiaai follow your cursor",
+            "Let OlhaAí follow your cursor",
         ),
         (
             tr::permission::onboarding::all_set::body(),
-            "Oiaai has everything it needs. Next, a quick look at what it can do.",
+            "OlhaAí has everything it needs. Next, a quick look at what it can do.",
         ),
         (
             tr::permission::onboarding::all_set::regained(),
-            "Thanks. Oiaai can record again.",
+            "Thanks. OlhaAí can record again.",
         ),
         (
             tr::permission::onboarding::all_set::title(),
@@ -534,7 +534,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::camera::title(),
-            "Let Oiaai see you",
+            "Let OlhaAí see you",
         ),
         (
             tr::permission::onboarding::checklist::lede(),
@@ -546,31 +546,31 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::checklist::regained_title(),
-            "Oiaai needs a permission back",
+            "OlhaAí needs a permission back",
         ),
         (
             tr::permission::onboarding::checklist::title(),
-            "Let's get Oiaai ready",
+            "Let's get OlhaAí ready",
         ),
         (
             tr::permission::onboarding::hint::drag_into_list(),
-            "Drag Oiaai from the panel under System Settings into the list. Already listed? Just switch it on.",
+            "Drag OlhaAí from the panel under System Settings into the list. Already listed? Just switch it on.",
         ),
         (
             tr::permission::onboarding::hint::find_in_list(),
-            "Find Oiaai in the list and switch it on. If macOS asked first, choose Open System Settings.",
+            "Find OlhaAí in the list and switch it on. If macOS asked first, choose Open System Settings.",
         ),
         (
             tr::permission::onboarding::hint::no_prompt(),
-            "No prompt showed up? Switch Oiaai on in System Settings.",
+            "No prompt showed up? Switch OlhaAí on in System Settings.",
         ),
         (
             tr::permission::onboarding::hint::open_settings(),
-            "Open System Settings, find Oiaai in the list and switch it on.",
+            "Open System Settings, find OlhaAí in the list and switch it on.",
         ),
         (
             tr::permission::onboarding::hint::turned_off(),
-            "It was turned off earlier, so switch Oiaai on in System Settings. Or skip it for now.",
+            "It was turned off earlier, so switch OlhaAí on in System Settings. Or skip it for now.",
         ),
         (
             tr::permission::onboarding::microphone::allow(),
@@ -590,20 +590,20 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::microphone::title(),
-            "Let Oiaai hear you",
+            "Let OlhaAí hear you",
         ),
         (
             tr::permission::onboarding::relaunch::body(),
-            "macOS turns on screen recording once Oiaai restarts. You'll pick up right here.",
+            "macOS turns on screen recording once OlhaAí restarts. You'll pick up right here.",
         ),
         (tr::permission::onboarding::relaunch::button(), "Relaunch"),
         (
             tr::permission::onboarding::relaunch::hint(),
-            "Switched on but still waiting? Restart Oiaai to apply it.",
+            "Switched on but still waiting? Restart OlhaAí to apply it.",
         ),
         (
             tr::permission::onboarding::relaunch::later(),
-            "macOS applies it after Oiaai restarts. You can do that once you're done here.",
+            "macOS applies it after OlhaAí restarts. You can do that once you're done here.",
         ),
         (
             tr::permission::onboarding::relaunch::title(),
@@ -615,11 +615,11 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::screen::body(),
-            "Screen Recording lets Oiaai capture your displays, windows and system audio.",
+            "Screen Recording lets OlhaAí capture your displays, windows and system audio.",
         ),
         (
             tr::permission::onboarding::screen::done_body(),
-            "Oiaai can capture your screen.",
+            "OlhaAí can capture your screen.",
         ),
         (
             tr::permission::onboarding::screen::done_title(),
@@ -627,7 +627,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::permission::onboarding::screen::title(),
-            "Let Oiaai see your screen",
+            "Let OlhaAí see your screen",
         ),
         (tr::permission::onboarding::status::allowed(), "Allowed"),
         (
@@ -656,7 +656,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
             tr::permission::guide::screen_body(),
             "Drop it on the Screen & System Audio Recording list above, then make sure its switch is on.",
         ),
-        (tr::permission::guide::title(), "Drag Oiaai into the list"),
+        (tr::permission::guide::title(), "Drag OlhaAí into the list"),
         (tr::permission::name::accessibility(), "Accessibility"),
         (tr::permission::name::camera(), "Camera"),
         (tr::permission::name::microphone(), "Microphone"),
@@ -728,7 +728,7 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::screenshot_editor::error::sign_in_to_share(),
-            "Sign in to Oiaai in your browser, then share again",
+            "Sign in to OlhaAí in your browser, then share again",
         ),
         (
             tr::screenshot_editor::error::upgrade_required(),
@@ -831,25 +831,25 @@ fn dialog_surfaces_match_the_literals_they_replaced() {
             tr::transcription::error::unsupported_language(),
             "The Recommended and High Accuracy models only transcribe English and 24 other European languages. Download the Small or Medium model to caption this language",
         ),
-        (tr::dialog::quit::still_open(), "Oiaai is still open"),
+        (tr::dialog::quit::still_open(), "OlhaAí is still open"),
         (
             tr::dialog::quit::pending(),
-            "Quit canceled because recording shutdown is still pending. Oiaai will stay open. Use Stop once available, then try Quit again.",
+            "Quit canceled because recording shutdown is still pending. OlhaAí will stay open. Use Stop once available, then try Quit again.",
         ),
         (
             tr::dialog::quit::unconfirmed(),
-            "Quit canceled because recording shutdown could not be confirmed. Oiaai will stay open. Use Stop, then try Quit again.",
+            "Quit canceled because recording shutdown could not be confirmed. OlhaAí will stay open. Use Stop, then try Quit again.",
         ),
-        (tr::dialog::update::title(), "Update Oiaai"),
-        (tr::dialog::update::busy_title(), "Oiaai is busy"),
+        (tr::dialog::update::title(), "Update OlhaAí"),
+        (tr::dialog::update::busy_title(), "OlhaAí is busy"),
         (
             tr::dialog::update::busy(),
-            "Finish your recording, export, upload, import, or transcription task before updating Oiaai.",
+            "Finish your recording, export, upload, import, or transcription task before updating OlhaAí.",
         ),
         (tr::dialog::update::no_update_title(), "No Update Available"),
         (
             tr::dialog::update::no_update(),
-            "You're already using the latest version of Oiaai.",
+            "You're already using the latest version of OlhaAí.",
         ),
         (tr::dialog::update::download(), "Download"),
         (tr::dialog::update::not_now(), "Not Now"),
@@ -1134,17 +1134,17 @@ fn update_and_quit_messages_format_like_the_code_they_replaced() {
         (
             tr::dialog::quit::canceled(error),
             format!(
-                "Quit canceled: {error}. Oiaai will stay open so you can finish or recover the recording."
+                "Quit canceled: {error}. OlhaAí will stay open so you can finish or recover the recording."
             ),
         ),
         (
             tr::dialog::update::already_getting(&version),
-            format!("Oiaai is already getting version {version} ready."),
+            format!("OlhaAí is already getting version {version} ready."),
         ),
         (
             tr::dialog::update::available(&version),
             format!(
-                "Version {version} of Oiaai is available. Oiaai will download it in the background and let you know when it's ready to install."
+                "Version {version} of OlhaAí is available. OlhaAí will download it in the background and let you know when it's ready to install."
             ),
         ),
         (
@@ -1161,7 +1161,7 @@ fn update_and_quit_messages_format_like_the_code_they_replaced() {
         ),
         (
             tr::dialog::update::ready(&version),
-            format!("Oiaai {version} is ready. Restart Oiaai to finish updating."),
+            format!("OlhaAí {version} is ready. Restart OlhaAí to finish updating."),
         ),
         (
             tr::dialog::update::failed(error),

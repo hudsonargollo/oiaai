@@ -21,7 +21,7 @@
 		"createUpdaterArtifacts": true,
 		"targets": "all",
 		"category": "Video",
-		"longDescription": "Oiaai is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
+		"longDescription": "OlhaAí is the open source alternative to Loom. Lightweight, powerful, and cross-platform. Record and share in seconds.",
 		"externalBin": ["binaries/cap-muxer", "binaries/cap-cli"],
 		"icon": [
 			"icons/32x32.png",
@@ -42,13 +42,13 @@
 		"fileAssociations": [
 			{
 				"ext": ["cap"],
-				"name": "Oiaai Project",
+				"name": "OlhaAí Project",
 				"mimeType": "application/x-cap-project",
 				"role": "Editor"
 			}
 		],
 		"macOS": {
-			"bundleName": "Oiaai",
+			"bundleName": "OlhaAí",
 			"minimumSystemVersion": "12.3",
 			"entitlements": "packaging/macos/Entitlements.plist",
 			"frameworks": ["../../target/native-deps/Spacedrive.framework"],

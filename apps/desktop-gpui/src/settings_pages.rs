@@ -2700,7 +2700,7 @@ impl SettingsWindow {
 /// Written into the diagnostic report, which stays English; the page shows
 /// `settings.feedback.diagnostic.no_cli_sync` in its place.
 const NO_SELFTEST_BINARY: &str =
-    "The Oiaai command-line tool was not found next to this build, so the sync test could not run.";
+    "The OlhaAí command-line tool was not found next to this build, so the sync test could not run.";
 
 impl SettingsWindow {
     /// The page's two one-shot probes: the OS string and whether there is a
@@ -3925,14 +3925,14 @@ impl SettingsWindow {
         let pro = auth.is_upgraded();
         let license = store::commercial_license();
         let (name, description) = if pro {
-            ("Oiaai Pro", tr::settings::license::pro_description())
+            ("OlhaAí Pro", tr::settings::license::pro_description())
         } else if license.is_some() {
             (
                 tr::settings::license::desktop_name(),
                 tr::settings::license::desktop_description(),
             )
         } else {
-            ("Oiaai Free", tr::settings::license::free_description())
+            ("OlhaAí Free", tr::settings::license::free_description())
         };
         let mut content = vec![
             self.section(
@@ -5878,7 +5878,7 @@ fn default_action(kind: ActionType) -> Action {
         },
         ActionType::RecognizeTextToClipboard => Action::RecognizeTextToClipboard,
         ActionType::Notify => Action::Notify {
-            title_template: "Oiaai".to_string(),
+            title_template: "OlhaAí".to_string(),
             body_template: String::new(),
         },
         ActionType::OpenEditor => Action::OpenEditor,
@@ -6176,7 +6176,7 @@ const TEMPLATES: [Template; 8] = [
                 tr::settings::automations::template::notify_upload::name(),
                 Trigger::UploadCompleted,
                 vec![Action::Notify {
-                    title_template: "Oiaai".to_string(),
+                    title_template: "OlhaAí".to_string(),
                     body_template: tr::settings::automations::template::notify_upload::body()
                         .to_string(),
                 }],

@@ -204,7 +204,7 @@ export default function AnalyticsScreen() {
 			<Screen scroll safeEdges={["left", "right", "bottom"]}>
 				<View style={styles.heading}>
 					<Text numberOfLines={2} style={styles.title}>
-						{data?.capName ?? "Oiaai analytics"}
+						{data?.capName ?? "OlhaAí analytics"}
 					</Text>
 					<Text style={styles.subtitle}>
 						Views and engagement for this recording.
@@ -252,7 +252,7 @@ export default function AnalyticsScreen() {
 						/>
 						<Text style={styles.stateTitle}>Analytics unavailable</Text>
 						<Text style={styles.stateText}>
-							{error ?? "This Oiaai could not be identified."}
+							{error ?? "This OlhaAí could not be identified."}
 						</Text>
 						{capId ? (
 							<ActionButton

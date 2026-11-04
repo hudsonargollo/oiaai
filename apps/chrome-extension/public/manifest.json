@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
-	"name": "Oiaai - Screen Recorder & Screen Capture",
-	"short_name": "Oiaai",
+	"name": "OlhaAí - Screen Recorder & Screen Capture",
+	"short_name": "OlhaAí",
 	"description": "Free, open source screen recorder. Capture your screen, tab, camera & mic in Chrome and share a video link the moment you stop.",
 	"version": "1.0.4",
 	"homepage_url": "https://cap.so",
@@ -13,7 +13,7 @@
 		"128": "icons/icon-128.png"
 	},
 	"action": {
-		"default_title": "Record your screen with Oiaai",
+		"default_title": "Record your screen with OlhaAí",
 		"default_icon": {
 			"16": "icons/icon-16.png",
 			"32": "icons/icon-32.png",

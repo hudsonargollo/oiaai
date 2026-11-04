@@ -6,39 +6,39 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 	title:
 		"Self-Hosted Screen Recording — Own Your Data, Own Your Infrastructure",
 	description:
-		"Oiaai lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, MinIO, or Backblaze and every recording goes directly to your infrastructure. Open source, no vendor lock-in, full data sovereignty.",
+		"OlhaAí lets you self-host screen recordings on your own S3-compatible storage. Connect AWS S3, Cloudflare R2, MinIO, or Backblaze and every recording goes directly to your infrastructure. Open source, no vendor lock-in, full data sovereignty.",
 
 	badge: "Self-Hosting",
 
 	featuresTitle: "Everything You Need in a Self-Hosted Screen Recorder",
 	featuresDescription:
-		"Oiaai gives teams complete control over where recordings are stored, without sacrificing the instant sharing experience",
+		"OlhaAí gives teams complete control over where recordings are stored, without sacrificing the instant sharing experience",
 
 	features: [
 		{
 			title: "Connect Any S3-Compatible Storage",
 			description:
-				"Oiaai supports AWS S3, Cloudflare R2, Backblaze B2, MinIO, Wasabi, and any other S3-compatible object storage. Configure your bucket credentials once in Oiaai's settings and every recording uploads directly to your infrastructure, not Oiaai's cloud. Prefer a consumer cloud? Oiaai also connects to your own <a href='/google-drive-screen-recorder'>Google Drive</a>.",
+				"OlhaAí supports AWS S3, Cloudflare R2, Backblaze B2, MinIO, Wasabi, and any other S3-compatible object storage. Configure your bucket credentials once in OlhaAí's settings and every recording uploads directly to your infrastructure, not OlhaAí's cloud. Prefer a consumer cloud? OlhaAí also connects to your own <a href='/google-drive-screen-recorder'>Google Drive</a>.",
 		},
 		{
 			title: "Recordings Never Touch Third-Party Servers",
 			description:
-				"With self-hosted storage configured, video files travel from the Oiaai desktop app directly to your storage bucket. No recording data passes through Oiaai's servers. You maintain full custody and chain of possession for every file.",
+				"With self-hosted storage configured, video files travel from the OlhaAí desktop app directly to your storage bucket. No recording data passes through OlhaAí's servers. You maintain full custody and chain of possession for every file.",
 		},
 		{
-			title: "Self-Host the Entire Oiaai Platform",
+			title: "Self-Host the Entire OlhaAí Platform",
 			description:
-				"Go beyond storage — deploy the complete Oiaai web platform on your own infrastructure. The dashboard, sharing layer, API, and all services run within your network perimeter. Full control over the entire recording and sharing pipeline.",
+				"Go beyond storage — deploy the complete OlhaAí web platform on your own infrastructure. The dashboard, sharing layer, API, and all services run within your network perimeter. Full control over the entire recording and sharing pipeline.",
 		},
 		{
 			title: "Open Source and Auditable",
 			description:
-				"Oiaai is open source on GitHub, with most code under AGPLv3 and specified Rust crates under MIT. Your security team can audit every line of code that handles recording, uploading, and sharing. No black-box behavior, no undisclosed data flows — complete transparency for enterprise security reviews.",
+				"OlhaAí is open source on GitHub, with most code under AGPLv3 and specified Rust crates under MIT. Your security team can audit every line of code that handles recording, uploading, and sharing. No black-box behavior, no undisclosed data flows — complete transparency for enterprise security reviews.",
 		},
 		{
 			title: "Instant Shareable Links from Your Own Storage",
 			description:
-				"Self-hosted storage doesn't mean sacrificing the instant sharing experience. Stop recording, get a shareable link immediately — but the video is served from your S3 bucket, not Oiaai's CDN. Your infrastructure, your links, Oiaai's instant-share UX.",
+				"Self-hosted storage doesn't mean sacrificing the instant sharing experience. Stop recording, get a shareable link immediately — but the video is served from your S3 bucket, not OlhaAí's CDN. Your infrastructure, your links, OlhaAí's instant-share UX.",
 		},
 		{
 			title: "Password-Protected Sharing",
@@ -48,19 +48,19 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		{
 			title: "4K Recording at 60fps",
 			description:
-				"Self-hosting doesn't mean downgrading quality. Oiaai records your screen at up to 4K resolution and 60 frames per second with system audio and webcam overlay. High-quality recordings stored exactly where you want them.",
+				"Self-hosting doesn't mean downgrading quality. OlhaAí records your screen at up to 4K resolution and 60 frames per second with system audio and webcam overlay. High-quality recordings stored exactly where you want them.",
 		},
 		{
 			title: "Custom Domain Support",
 			description:
-				"Serve Oiaai's sharing pages from your own custom domain. Combined with self-hosted storage, recordings are fully within your brand and infrastructure — from the video file in your S3 bucket to the sharing link your viewers click.",
+				"Serve OlhaAí's sharing pages from your own custom domain. Combined with self-hosted storage, recordings are fully within your brand and infrastructure — from the video file in your S3 bucket to the sharing link your viewers click.",
 		},
 	],
 
 	recordingModes: {
 		title: "Two Self-Hostable Recording Modes",
 		description:
-			"Both Oiaai recording modes work fully with self-hosted storage — choose the right workflow for your team",
+			"Both OlhaAí recording modes work fully with self-hosted storage — choose the right workflow for your team",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -84,8 +84,8 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 	},
 
 	comparisonTable: {
-		title: "Self-Hosted Oiaai vs Other Screen Recorders",
-		headers: ["Feature", "Oiaai (Self-Hosted)", "Loom", "Vidyard", "Panopto"],
+		title: "Self-Hosted OlhaAí vs Other Screen Recorders",
+		headers: ["Feature", "OlhaAí (Self-Hosted)", "Loom", "Vidyard", "Panopto"],
 		rows: [
 			[
 				"Self-hosted storage",
@@ -146,127 +146,127 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		],
 	},
 
-	comparisonTitle: "Why Self-Host Your Screen Recordings with Oiaai",
+	comparisonTitle: "Why Self-Host Your Screen Recordings with OlhaAí",
 	comparisonDescription:
-		"Most screen recorders lock your data to their cloud — Oiaai is built from the ground up to run entirely on your own infrastructure",
+		"Most screen recorders lock your data to their cloud — OlhaAí is built from the ground up to run entirely on your own infrastructure",
 
 	comparison: [
 		{
-			title: "Oiaai vs Loom for Self-Hosting",
+			title: "OlhaAí vs Loom for Self-Hosting",
 			description:
-				"Loom offers no self-hosting option. Every recording is stored on Loom's servers, and if Loom changes pricing or shuts down, your video library is at risk. Oiaai supports custom S3 storage so your recordings live in your bucket forever, regardless of what happens to Oiaai's cloud offering. <a href='/loom-alternative'>See the full Oiaai vs Loom comparison</a>.",
+				"Loom offers no self-hosting option. Every recording is stored on Loom's servers, and if Loom changes pricing or shuts down, your video library is at risk. OlhaAí supports custom S3 storage so your recordings live in your bucket forever, regardless of what happens to OlhaAí's cloud offering. <a href='/loom-alternative'>See the full OlhaAí vs Loom comparison</a>.",
 		},
 		{
-			title: "Oiaai vs Panopto for Self-Hosting",
+			title: "OlhaAí vs Panopto for Self-Hosting",
 			description:
-				"Panopto offers on-premise deployment for enterprise customers at significant cost. Oiaai's self-hosting is available to any team — configure your S3 bucket in minutes, or deploy the full platform from the open-source repository. No enterprise contract required.",
+				"Panopto offers on-premise deployment for enterprise customers at significant cost. OlhaAí's self-hosting is available to any team — configure your S3 bucket in minutes, or deploy the full platform from the open-source repository. No enterprise contract required.",
 		},
 		{
-			title: "Oiaai vs OBS for Self-Hosted Recording",
+			title: "OlhaAí vs OBS for Self-Hosted Recording",
 			description:
-				"OBS records locally but lacks any sharing or collaboration layer. Oiaai gives you OBS-level data control — recordings stay on your infrastructure — combined with async sharing links, thread commenting, and a web dashboard your team can actually use.",
+				"OBS records locally but lacks any sharing or collaboration layer. OlhaAí gives you OBS-level data control — recordings stay on your infrastructure — combined with async sharing links, thread commenting, and a web dashboard your team can actually use.",
 		},
 		{
-			title: "Oiaai for Regulated Industries",
+			title: "OlhaAí for Regulated Industries",
 			description:
-				"Healthcare, finance, legal, and government teams face strict data residency requirements. Oiaai with self-hosted S3 storage keeps recordings within your regulated environment. Combined with open-source auditability, Oiaai satisfies the compliance requirements that closed-source SaaS tools can't meet. <a href='/hipaa-compliant-screen-recording'>Learn about HIPAA-compliant recording with Oiaai</a>.",
+				"Healthcare, finance, legal, and government teams face strict data residency requirements. OlhaAí with self-hosted S3 storage keeps recordings within your regulated environment. Combined with open-source auditability, OlhaAí satisfies the compliance requirements that closed-source SaaS tools can't meet. <a href='/hipaa-compliant-screen-recording'>Learn about HIPAA-compliant recording with OlhaAí</a>.",
 		},
 	],
 
 	useCasesTitle: "Who Uses Self-Hosted Screen Recording",
 	useCasesDescription:
-		"Teams across industries choose Oiaai's self-hosted storage when data residency, compliance, or cost control matters",
+		"Teams across industries choose OlhaAí's self-hosted storage when data residency, compliance, or cost control matters",
 
 	useCases: [
 		{
 			title: "Enterprise IT and Security Teams",
 			description:
-				"Organizations with strict data governance policies use Oiaai with self-hosted S3 to ensure recording content never leaves their cloud environment. Security teams can audit Oiaai's open-source codebase to verify exactly what data is transmitted and where it goes.",
+				"Organizations with strict data governance policies use OlhaAí with self-hosted S3 to ensure recording content never leaves their cloud environment. Security teams can audit OlhaAí's open-source codebase to verify exactly what data is transmitted and where it goes.",
 		},
 		{
 			title: "Healthcare Organizations",
 			description:
-				"Oiaai with AWS S3 self-hosting keeps recorded content within HIPAA-eligible infrastructure. Clinical training videos, EHR walkthroughs, and patient education recordings stay on your AWS account — covered by your existing BAA. <a href='/hipaa-compliant-screen-recording'>Learn more about HIPAA-compliant recording</a>.",
+				"OlhaAí with AWS S3 self-hosting keeps recorded content within HIPAA-eligible infrastructure. Clinical training videos, EHR walkthroughs, and patient education recordings stay on your AWS account — covered by your existing BAA. <a href='/hipaa-compliant-screen-recording'>Learn more about HIPAA-compliant recording</a>.",
 		},
 		{
 			title: "Financial Services and Legal Teams",
 			description:
-				"Banks, law firms, and financial institutions with data residency or jurisdiction requirements deploy Oiaai with S3-compatible storage in their approved regions. Recordings never traverse unapproved infrastructure, satisfying regulatory and legal hold requirements.",
+				"Banks, law firms, and financial institutions with data residency or jurisdiction requirements deploy OlhaAí with S3-compatible storage in their approved regions. Recordings never traverse unapproved infrastructure, satisfying regulatory and legal hold requirements.",
 		},
 		{
 			title: "Developer and Engineering Teams",
 			description:
-				"Engineers who want to verify what software does with their data run Oiaai with self-hosted storage. Record bug reports, architecture walkthroughs, and code reviews — all stored in your team's S3 bucket. Open-source code means the data handling is verifiable, not just promised.",
+				"Engineers who want to verify what software does with their data run OlhaAí with self-hosted storage. Record bug reports, architecture walkthroughs, and code reviews — all stored in your team's S3 bucket. Open-source code means the data handling is verifiable, not just promised.",
 		},
 		{
 			title: "Agencies and Client Services Teams",
 			description:
-				"Agencies handling client work use Oiaai with self-hosted storage to keep client recording content isolated per project or client bucket. No client data commingles with other customers on a shared SaaS platform.",
+				"Agencies handling client work use OlhaAí with self-hosted storage to keep client recording content isolated per project or client bucket. No client data commingles with other customers on a shared SaaS platform.",
 		},
 		{
 			title: "Self-Hosting Enthusiasts and Privacy Advocates",
 			description:
-				"Individuals and teams who prefer to own their tools deploy the full Oiaai platform — web app, API, and storage — on their own VPS or cloud account. The repository LICENSE explains the terms for modifying and deploying the code.",
+				"Individuals and teams who prefer to own their tools deploy the full OlhaAí platform — web app, API, and storage — on their own VPS or cloud account. The repository LICENSE explains the terms for modifying and deploying the code.",
 		},
 	],
 
 	migrationGuide: {
-		title: "How to Set Up Self-Hosted Screen Recording with Oiaai",
+		title: "How to Set Up Self-Hosted Screen Recording with OlhaAí",
 		steps: [
 			"Create an S3-compatible bucket — AWS S3, Cloudflare R2, Backblaze B2, or a self-hosted MinIO instance all work",
 			"Generate access credentials for your bucket with read/write permissions",
-			"Download Oiaai for Mac or Windows — installation takes under 2 minutes",
-			"Open Oiaai settings and navigate to the storage configuration section",
+			"Download OlhaAí for Mac or Windows — installation takes under 2 minutes",
+			"Open OlhaAí settings and navigate to the storage configuration section",
 			"Enter your bucket name, region, access key, secret key, and optional custom endpoint",
 			"Record a test video — verify the file appears in your bucket directly after stopping",
 			"Share the recording link — the video is now served from your own storage",
-			"Optionally deploy the full Oiaai web platform for complete infrastructure ownership",
+			"Optionally deploy the full OlhaAí web platform for complete infrastructure ownership",
 		],
 	},
 
 	faqsTitle: "Frequently Asked Questions About Self-Hosted Screen Recording",
 	faqs: [
 		{
-			question: "Can Oiaai be self-hosted?",
+			question: "Can OlhaAí be self-hosted?",
 			answer:
-				"Yes. Oiaai supports two levels of self-hosting. First, you can configure Oiaai to use your own S3-compatible storage bucket — recordings upload directly to your infrastructure. Second, you can deploy the entire Oiaai platform (web dashboard, API, sharing layer) on your own servers using the open-source repository. Both options are available to all users with no enterprise contract required.",
+				"Yes. OlhaAí supports two levels of self-hosting. First, you can configure OlhaAí to use your own S3-compatible storage bucket — recordings upload directly to your infrastructure. Second, you can deploy the entire OlhaAí platform (web dashboard, API, sharing layer) on your own servers using the open-source repository. Both options are available to all users with no enterprise contract required.",
 		},
 		{
-			question: "What storage providers does Oiaai support for self-hosting?",
+			question: "What storage providers does OlhaAí support for self-hosting?",
 			answer:
-				"Oiaai supports any S3-compatible object storage provider, including AWS S3, Cloudflare R2, Backblaze B2, Wasabi, MinIO, DigitalOcean Spaces, and Linode Object Storage. If the provider supports the S3 API with a custom endpoint, Oiaai can use it.",
+				"OlhaAí supports any S3-compatible object storage provider, including AWS S3, Cloudflare R2, Backblaze B2, Wasabi, MinIO, DigitalOcean Spaces, and Linode Object Storage. If the provider supports the S3 API with a custom endpoint, OlhaAí can use it.",
 		},
 		{
 			question:
-				"Do recordings touch Oiaai's servers when using self-hosted storage?",
+				"Do recordings touch OlhaAí's servers when using self-hosted storage?",
 			answer:
-				"No. When self-hosted storage is configured, the Oiaai desktop app uploads recordings directly to your S3 bucket. Recording content does not pass through Oiaai's servers. The Oiaai web app creates and manages the sharing links, but the video files are served from your storage.",
+				"No. When self-hosted storage is configured, the OlhaAí desktop app uploads recordings directly to your S3 bucket. Recording content does not pass through OlhaAí's servers. The OlhaAí web app creates and manages the sharing links, but the video files are served from your storage.",
 		},
 		{
-			question: "How do I configure self-hosted storage in Oiaai?",
+			question: "How do I configure self-hosted storage in OlhaAí?",
 			answer:
-				"Open Oiaai's settings, navigate to the storage section, and enter your S3 bucket name, region, access key, secret key, and optional custom endpoint URL. Save the settings and your next recording will upload directly to your bucket. You can verify this by checking your bucket after a test recording.",
+				"Open OlhaAí's settings, navigate to the storage section, and enter your S3 bucket name, region, access key, secret key, and optional custom endpoint URL. Save the settings and your next recording will upload directly to your bucket. You can verify this by checking your bucket after a test recording.",
 		},
 		{
-			question: "Can I self-host the entire Oiaai platform, not just storage?",
+			question: "Can I self-host the entire OlhaAí platform, not just storage?",
 			answer:
-				"Yes. Oiaai is open source, with most code under AGPLv3 and specified Rust crates under MIT. You can deploy the complete Oiaai platform — including the Next.js web application, API, and all services — on your own infrastructure. See Oiaai's self-hosting documentation for deployment instructions and configuration options.",
+				"Yes. OlhaAí is open source, with most code under AGPLv3 and specified Rust crates under MIT. You can deploy the complete OlhaAí platform — including the Next.js web application, API, and all services — on your own infrastructure. See OlhaAí's self-hosting documentation for deployment instructions and configuration options.",
 		},
 		{
-			question: "Is self-hosted Oiaai suitable for HIPAA compliance?",
+			question: "Is self-hosted OlhaAí suitable for HIPAA compliance?",
 			answer:
-				"Yes. Oiaai is HIPAA compliant, and self-hosting adds an extra layer of control. With self-hosted AWS S3 storage (covered under your AWS BAA), no recording content passes through Oiaai's servers, keeping PHI within your HIPAA-covered infrastructure. AI auto-captions can be disabled if your policies restrict external audio transcription. See our dedicated HIPAA-compliant screen recording guide for full details.",
+				"Yes. OlhaAí is HIPAA compliant, and self-hosting adds an extra layer of control. With self-hosted AWS S3 storage (covered under your AWS BAA), no recording content passes through OlhaAí's servers, keeping PHI within your HIPAA-covered infrastructure. AI auto-captions can be disabled if your policies restrict external audio transcription. See our dedicated HIPAA-compliant screen recording guide for full details.",
 		},
 		{
 			question:
 				"Does self-hosted storage still give me instant shareable links?",
 			answer:
-				"Yes. The instant sharing experience works the same way with self-hosted storage. Stop recording and Oiaai generates a shareable link immediately. The difference is that the link points to video content in your S3 bucket rather than Oiaai's CDN. Your infrastructure, same instant-share experience.",
+				"Yes. The instant sharing experience works the same way with self-hosted storage. Stop recording and OlhaAí generates a shareable link immediately. The difference is that the link points to video content in your S3 bucket rather than OlhaAí's CDN. Your infrastructure, same instant-share experience.",
 		},
 		{
 			question: "What is the best self-hosted screen recorder?",
 			answer:
-				"Oiaai is the best self-hosted screen recorder for teams that need both data control and a modern async video experience. It combines S3-compatible custom storage, instant shareable links, webcam overlay, AI captions, and thread commenting in an open-source package with most code under AGPLv3. Unlike local-only recorders, Oiaai gives you the collaboration layer. Unlike closed-source SaaS tools, Oiaai gives you full data ownership.",
+				"OlhaAí is the best self-hosted screen recorder for teams that need both data control and a modern async video experience. It combines S3-compatible custom storage, instant shareable links, webcam overlay, AI captions, and thread commenting in an open-source package with most code under AGPLv3. Unlike local-only recorders, OlhaAí gives you the collaboration layer. Unlike closed-source SaaS tools, OlhaAí gives you full data ownership.",
 		},
 	],
 
@@ -274,13 +274,13 @@ export const selfHostedScreenRecordingContent: SeoPageContent = {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
 			title:
-				"Oiaai self-hosted screen recording demo showing S3 storage configuration and instant sharing",
+				"OlhaAí self-hosted screen recording demo showing S3 storage configuration and instant sharing",
 		},
 	},
 
 	cta: {
-		title: "Start Self-Hosting Your Screen Recordings with Oiaai",
-		buttonText: "Download Oiaai Free",
+		title: "Start Self-Hosting Your Screen Recordings with OlhaAí",
+		buttonText: "Download OlhaAí Free",
 		secondaryButtonText: "View Self-Hosting Docs",
 	},
 };

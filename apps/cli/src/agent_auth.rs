@@ -120,7 +120,7 @@ fn api_error(status: reqwest::StatusCode, body: &str) -> String {
         .and_then(serde_json::Value::as_str);
     match (code, message) {
         (Some(code), Some(message)) => format!("{code}: {message}"),
-        _ => format!("Oiaai returned HTTP {status}"),
+        _ => format!("OlhaAí returned HTTP {status}"),
     }
 }
 
@@ -282,7 +282,7 @@ impl LoginArgs {
             .append_pair("scope", self.profile.scopes());
 
         if self.no_open {
-            eprintln!("Open this URL to authorize Oiaai CLI:\n{authorize_url}");
+            eprintln!("Open this URL to authorize OlhaAí CLI:\n{authorize_url}");
         } else if let Err(error) = open::that(authorize_url.as_str()) {
             eprintln!("Could not open a browser ({error}). Open this URL:\n{authorize_url}");
         } else {
@@ -310,7 +310,7 @@ impl LoginArgs {
             return Err(api_error(status, &body));
         }
         let token: TokenResponse =
-            serde_json::from_str(&body).map_err(|_| "Oiaai returned an invalid token".to_string())?;
+            serde_json::from_str(&body).map_err(|_| "OlhaAí returned an invalid token".to_string())?;
         let storage = credentials::store_agent(
             &StoredAgentCredential {
                 access_token: token.access_token.clone(),
@@ -341,7 +341,7 @@ impl LoginArgs {
         match format {
             OutputFormat::Json => write_json(&result),
             OutputFormat::Text => {
-                println!("Oiaai CLI is authorized.");
+                println!("OlhaAí CLI is authorized.");
                 println!("server: {}", result.server);
                 println!("expires: {}", result.expires_at);
                 Ok(())
@@ -366,7 +366,7 @@ impl LogoutArgs {
         let credentials = credentials::resolve_agent()?;
         if !is_agent_credential_source(credentials.source) {
             return Err(
-                "No Oiaai CLI agent credential is stored. A legacy CAP_API_KEY and Oiaai Desktop login are not changed by `cap auth logout`."
+                "No OlhaAí CLI agent credential is stored. A legacy CAP_API_KEY and OlhaAí Desktop login are not changed by `cap auth logout`."
                     .to_string(),
             );
         }
@@ -377,12 +377,12 @@ impl LogoutArgs {
                 .bearer_auth(&credentials.access_token)
                 .send()
                 .await
-                .map_err(|error| format!("Failed to revoke the Oiaai credential: {error}"))?;
+                .map_err(|error| format!("Failed to revoke the OlhaAí credential: {error}"))?;
             if response.status().is_success() {
                 response
                     .json::<RevokeResponse>()
                     .await
-                    .map_err(|_| "Oiaai returned an invalid revocation response".to_string())?
+                    .map_err(|_| "OlhaAí returned an invalid revocation response".to_string())?
                     .revoked
             } else if response.status() == reqwest::StatusCode::UNAUTHORIZED {
                 false
@@ -405,14 +405,14 @@ impl LogoutArgs {
             OutputFormat::Json => write_json(&result),
             OutputFormat::Text => {
                 if credentials.source == AgentCredentialSource::Env {
-                    println!("Oiaai CLI environment credential revoked.");
+                    println!("OlhaAí CLI environment credential revoked.");
                     if std::io::stdin().is_terminal() {
                         let variable =
                             credentials::agent_env_var_name().unwrap_or("CAP_AGENT_TOKEN");
                         println!("Unset {variable} to remove it from this shell.");
                     }
                 } else {
-                    println!("Oiaai CLI credential removed.");
+                    println!("OlhaAí CLI credential removed.");
                 }
                 Ok(())
             }
@@ -446,7 +446,7 @@ mod tests {
     #[test]
     fn errors_never_echo_unknown_response_bodies() {
         let error = api_error(reqwest::StatusCode::BAD_GATEWAY, "secret upstream body");
-        assert_eq!(error, "Oiaai returned HTTP 502 Bad Gateway");
+        assert_eq!(error, "OlhaAí returned HTTP 502 Bad Gateway");
         assert!(!error.contains("secret"));
     }
 

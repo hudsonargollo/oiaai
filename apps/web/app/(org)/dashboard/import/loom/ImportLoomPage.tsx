@@ -722,8 +722,8 @@ export const ImportLoomPage = ({
 						</h1>
 						<p className="mt-1 max-w-xl text-sm text-gray-10">
 							{canUseCsvImport
-								? "Bring a single Loom video into Oiaai, or bulk import recordings for organization members and new users from a CSV."
-								: "Paste a Loom share link to bring it into Oiaai."}
+								? "Bring a single Loom video into OlhaAí, or bulk import recordings for organization members and new users from a CSV."
+								: "Paste a Loom share link to bring it into OlhaAí."}
 						</p>
 					</div>
 				</div>

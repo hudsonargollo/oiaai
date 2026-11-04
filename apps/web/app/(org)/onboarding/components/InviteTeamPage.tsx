@@ -87,7 +87,7 @@ export function InviteTeamPage() {
 			}
 			const data = await response.json();
 			if (data.subscription === true) {
-				toast.success("You are already on the Oiaai Pro plan");
+				toast.success("You are already on the OlhaAí Pro plan");
 				return;
 			}
 

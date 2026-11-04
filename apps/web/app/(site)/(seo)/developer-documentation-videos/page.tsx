@@ -13,25 +13,25 @@ const ogImage = ogImageUrl({
 
 export const metadata: Metadata = {
 	title:
-		"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | Oiaai",
+		"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | OlhaAí",
 	description:
-		"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. Oiaai is free, open-source, 4K quality, and built for developers.",
+		"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. OlhaAí is free, open-source, 4K quality, and built for developers.",
 	alternates: {
 		canonical: "https://cap.so/developer-documentation-videos",
 	},
 	openGraph: {
 		title:
-			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | Oiaai",
+			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | OlhaAí",
 		description:
 			"Create professional developer documentation videos with screen recording. Record API demos, SDK walkthroughs, and technical tutorials instantly. Free, open-source, and built for developers.",
 		url: "https://cap.so/developer-documentation-videos",
-		siteName: "Oiaai",
+		siteName: "OlhaAí",
 		images: [
 			{
 				url: ogImage,
 				width: 1200,
 				height: 630,
-				alt: "Oiaai: Developer Documentation Videos",
+				alt: "OlhaAí: Developer Documentation Videos",
 			},
 		],
 		locale: "en_US",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | Oiaai",
+			"Developer Documentation Videos — Record API Demos and SDK Walkthroughs | OlhaAí",
 		description:
 			"Record API demos, SDK walkthroughs, and changelog videos instantly. Share a link, embed in your docs, get AI transcripts. Free and open-source.",
 		images: [ogImage],

@@ -26,7 +26,12 @@ import { SignedImageUrl } from "@/components/SignedImageUrl";
 import { useEffectMutation, useRpcClient } from "@/lib/EffectRuntime";
 import { useDashboardContext } from "../../Contexts";
 import { ProfileImage } from "./components/ProfileImage";
-import { patchAccountSettings, signOutAllDevices } from "./server";
+import {
+	grantSuperadmin,
+	patchAccountSettings,
+	revokeSuperadmin,
+	signOutAllDevices,
+} from "./server";
 
 export const Settings = () => {
 	const router = useRouter();
@@ -37,6 +42,8 @@ export const Settings = () => {
 		Organisation.OrganisationId | undefined
 	>(user?.defaultOrgId || undefined);
 	const [signOutAllDevicesOpen, setSignOutAllDevicesOpen] = useState(false);
+	const [superadminEmail, setSuperadminEmail] = useState("");
+	const [superadminError, setSuperadminError] = useState<string | null>(null);
 	const firstNameId = useId();
 	const lastNameId = useId();
 	const contactEmailId = useId();
@@ -174,6 +181,36 @@ export const Settings = () => {
 		removeProfileImageMutation.mutate();
 	};
 
+	const grantSuperadminMutation = useMutation({
+		mutationFn: () => grantSuperadmin(superadminEmail.trim()),
+		onSuccess: () => {
+			toast.success("Superadmin granted");
+			setSuperadminEmail("");
+			setSuperadminError(null);
+			router.refresh();
+		},
+		onError: (error: unknown) => {
+			toast.error(
+				error instanceof Error ? error.message : "Failed to grant superadmin",
+			);
+		},
+	});
+
+	const revokeSuperadminMutation = useMutation({
+		mutationFn: () => revokeSuperadmin(superadminEmail.trim()),
+		onSuccess: () => {
+			toast.success("Superadmin revoked");
+			setSuperadminEmail("");
+			setSuperadminError(null);
+			router.refresh();
+		},
+		onError: (error: unknown) => {
+			toast.error(
+				error instanceof Error ? error.message : "Failed to revoke superadmin",
+			);
+		},
+	});
+
 	return (
 		<>
 			<form
@@ -235,7 +272,7 @@ export const Settings = () => {
 						<div className="space-y-1">
 							<CardTitle>Contact email address</CardTitle>
 							<CardDescription>
-								This is the email address you used to sign up to Oiaai with.
+								This is the email address you used to sign up to OlhaAí with.
 							</CardDescription>
 						</div>
 						<Input
@@ -294,8 +331,8 @@ export const Settings = () => {
 				<div className="space-y-1">
 					<CardTitle>Sign out of all devices</CardTitle>
 					<CardDescription>
-						Invalidate every Oiaai web session, desktop app authentication token,
-						and CLI API key connected to your account.
+						Invalidate every OlhaAí web session, desktop app authentication
+						token, and CLI API key connected to your account.
 					</CardDescription>
 				</div>
 				<Button
@@ -315,7 +352,7 @@ export const Settings = () => {
 				<DialogContent>
 					<DialogHeader
 						icon={<LogOut className="size-4" />}
-						description="This will immediately invalidate existing Oiaai web sessions, desktop session tokens, desktop API keys, and CLI API keys for your account."
+						description="This will immediately invalidate existing OlhaAí web sessions, desktop session tokens, desktop API keys, and CLI API keys for your account."
 					>
 						<DialogTitle>Sign out of all devices?</DialogTitle>
 					</DialogHeader>
@@ -324,8 +361,8 @@ export const Settings = () => {
 							You will be signed out of this browser after the reset completes.
 						</p>
 						<p>
-							The Oiaai desktop app may need you to click Sign out, then sign in
-							again before uploads and settings sync work.
+							The OlhaAí desktop app may need you to click Sign out, then sign
+							in again before uploads and settings sync work.
 						</p>
 					</div>
 					<DialogFooter>
@@ -353,6 +390,59 @@ export const Settings = () => {
 					</DialogFooter>
 				</DialogContent>
 			</Dialog>
+			<Card className="mt-6">
+				<div className="space-y-1">
+					<CardTitle>Superadmin</CardTitle>
+					<CardDescription>
+						Gives this account global admin access across the platform. Only an
+						existing superadmin may grant or revoke this flag, and only on your
+						own account.
+					</CardDescription>
+				</div>
+				<div className="flex flex-col gap-3">
+					<div className="flex flex-wrap items-center gap-2">
+						<Input
+							placeholder="Email address to grant (only your own)"
+							value={superadminEmail}
+							onChange={(e) => setSuperadminEmail(e.target.value)}
+							disabled={grantSuperadminMutation.isPending}
+							className="max-w-md"
+						/>
+						<Button
+							type="button"
+							size="sm"
+							variant="secondary"
+							onClick={() => grantSuperadminMutation.mutate()}
+							disabled={!superadminEmail || grantSuperadminMutation.isPending}
+							loading={grantSuperadminMutation.isPending}
+						>
+							Grant superadmin
+						</Button>
+					</div>
+					<div className="flex flex-wrap items-center gap-2">
+						<Input
+							placeholder="Email address to revoke (only your own)"
+							value={superadminEmail}
+							onChange={(e) => setSuperadminEmail(e.target.value)}
+							disabled={revokeSuperadminMutation.isPending}
+							className="max-w-md"
+						/>
+						<Button
+							type="button"
+							size="sm"
+							variant="secondary"
+							onClick={() => revokeSuperadminMutation.mutate()}
+							disabled={!superadminEmail || revokeSuperadminMutation.isPending}
+							loading={revokeSuperadminMutation.isPending}
+						>
+							Revoke superadmin
+						</Button>
+					</div>
+					{superadminError && (
+						<p className="text-sm text-amber-600">{superadminError}</p>
+					)}
+				</div>
+			</Card>
 		</>
 	);
 };

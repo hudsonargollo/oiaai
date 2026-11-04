@@ -7,7 +7,7 @@ import { DevelopersProvider } from "./DevelopersContext";
 import { getDeveloperApps } from "./developer-data";
 
 export const metadata: Metadata = {
-	title: "Developers — Oiaai",
+	title: "Developers — OlhaAí",
 };
 
 export default async function DevelopersLayout({

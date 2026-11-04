@@ -198,7 +198,7 @@ export async function createVideoAndGetUploadUrl({
 
 		const idToUse = Video.VideoId.make(videoId || nanoId());
 		if (folderId) await requirePersonalFolder(user.id, orgId, folderId);
-		const videoTitle = `Oiaai ${
+		const videoTitle = `OlhaAí ${
 			isScreenshot ? "Screenshot" : isUpload ? "Upload" : "Recording"
 		} - ${formattedDate}`;
 

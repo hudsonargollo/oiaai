@@ -55,7 +55,7 @@ export const SignInView = ({
 			</h1>
 			<p className="cap-signin-lede cap-fade-up cap-fade-up-3">
 				{authPending
-					? "Complete sign-in in the Oiaai window. This panel updates automatically."
+					? "Complete sign-in in the OlhaAí window. This panel updates automatically."
 					: "Record your tab, screen or camera. Your video uploads while you record."}
 			</p>
 			{authPending ? (
@@ -63,7 +63,7 @@ export const SignInView = ({
 					<svg viewBox="0 0 24 24" aria-hidden="true">
 						<circle pathLength={1} cx="12" cy="12" r="9" />
 					</svg>
-					Waiting for the Oiaai sign-in window…
+					Waiting for the OlhaAí sign-in window…
 				</p>
 			) : null}
 			<button
@@ -76,7 +76,7 @@ export const SignInView = ({
 				disabled={busy}
 				onClick={onSignIn}
 			>
-				{authPending ? "Open the sign-in window again" : "Sign in to Oiaai"}
+				{authPending ? "Open the sign-in window again" : "Sign in to OlhaAí"}
 			</button>
 			<p
 				className={

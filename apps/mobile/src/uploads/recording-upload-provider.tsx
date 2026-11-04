@@ -512,7 +512,7 @@ export function RecordingUploadProvider({ children }: { children: ReactNode }) {
 							error:
 								upload.processingError ??
 								upload.processingMessage ??
-								"Oiaai could not finish processing this recording.",
+								"OlhaAí could not finish processing this recording.",
 						});
 						libraryChanged = true;
 						continue;
@@ -584,7 +584,7 @@ export function RecordingUploadProvider({ children }: { children: ReactNode }) {
 						batch.map(async (segment, index) => {
 							const subpath = subpaths[index];
 							const target = subpath ? uploads[subpath] : undefined;
-							if (!target) throw new Error("Oiaai could not prepare the upload.");
+							if (!target) throw new Error("OlhaAí could not prepare the upload.");
 							await uploadToTarget(target, {
 								uri: segment.uri,
 								name: subpath,

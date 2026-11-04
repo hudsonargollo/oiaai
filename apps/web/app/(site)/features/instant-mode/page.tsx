@@ -3,9 +3,9 @@ import { buildMarketingMetadata } from "@/lib/og/url";
 import { InstantModePage } from "./InstantModePage";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Instant Mode - Quick Screen Recording & Sharing | Oiaai",
+	title: "Instant Mode - Quick Screen Recording & Sharing | OlhaAí",
 	description:
-		"Record and share instantly with Oiaai's cloud-powered Instant Mode. Get automatic transcriptions, collaborative comments, shareable links, and team workspaces for fast feedback loops.",
+		"Record and share instantly with OlhaAí's cloud-powered Instant Mode. Get automatic transcriptions, collaborative comments, shareable links, and team workspaces for fast feedback loops.",
 	path: "/features/instant-mode",
 	ogTitle: "Instant Mode — record & share in seconds",
 	ogDescription:

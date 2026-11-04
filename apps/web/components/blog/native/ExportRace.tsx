@@ -99,12 +99,12 @@ export function ExportRace() {
 				/>
 				<div>
 					<BarRow
-						name="Oiaai 0.6.0"
+						name="OlhaAí 0.6.0"
 						value={formatSeconds(run.before)}
 						share={1}
 					/>
 					<BarRow
-						name="Oiaai 0.6.1"
+						name="OlhaAí 0.6.1"
 						value={formatSeconds(run.after)}
 						share={run.after / run.before}
 						highlight

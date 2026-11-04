@@ -430,13 +430,13 @@ fn main() {
                     titlebar: None,
                     #[cfg(target_os = "windows")]
                     titlebar: Some(gpui::TitlebarOptions {
-                        title: Some("Oiaai".into()),
+                        title: Some("OlhaAí".into()),
                         appears_transparent: true,
                         ..Default::default()
                     }),
                     #[cfg(target_os = "linux")]
                     titlebar: Some(gpui::TitlebarOptions {
-                        title: Some("Oiaai".into()),
+                        title: Some("OlhaAí".into()),
                         ..Default::default()
                     }),
                     #[cfg(target_os = "linux")]

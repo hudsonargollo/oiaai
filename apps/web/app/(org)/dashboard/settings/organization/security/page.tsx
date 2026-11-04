@@ -7,7 +7,7 @@ import { ComplianceCard } from "../components/ComplianceCard";
 import { SsoCard } from "../components/SsoCard";
 
 export const metadata: Metadata = {
-	title: "Security & Compliance — Oiaai",
+	title: "Security & Compliance — OlhaAí",
 };
 
 export default async function OrganizationSecurityPage({
@@ -34,7 +34,7 @@ export default async function OrganizationSecurityPage({
 							Choose the organization you were setting up from the organization
 							switcher, then reload this page to refresh its payment and SSO
 							status. If you are already in the correct organization, contact
-							Oiaai support.
+							OlhaAí support.
 						</CardDescription>
 					</CardHeader>
 				</Card>

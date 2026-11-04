@@ -146,7 +146,7 @@ const sections: FeatureSection[] = [
 const BUTTON_TEXT: Record<PlanKey, string> = {
 	free: "Download",
 	desktop: "Get license",
-	pro: "Get Oiaai Pro",
+	pro: "Get OlhaAí Pro",
 };
 
 const BTN_BASE =
@@ -249,7 +249,7 @@ export const ComparePlans = () => {
 			},
 			{
 				key: "pro",
-				name: "Oiaai Pro",
+				name: "OlhaAí Pro",
 				short: "Pro",
 				price: `${symbol}${PRICING.pro.monthly} per user / mo`,
 				compactPrice: `${symbol}${PRICING.pro.monthly}/user/mo`,
@@ -294,7 +294,7 @@ export const ComparePlans = () => {
 			return;
 		}
 		if (data.subscription === true) {
-			toast.success("You are already on the Oiaai Pro plan");
+			toast.success("You are already on the OlhaAí Pro plan");
 			return;
 		}
 		if (data.url) {
@@ -364,7 +364,7 @@ export const ComparePlans = () => {
 						className={`${BODY_TEXT} mt-6 max-w-[520px] text-balance text-[16.5px] leading-[1.5] text-[rgba(17,17,17,0.78)] sm:text-[17.5px]`}
 					>
 						Free covers personal use with no time limit on local recordings.
-						Paid plans add commercial rights, and Oiaai Pro adds the cloud.
+						Paid plans add commercial rights, and OlhaAí Pro adds the cloud.
 					</p>
 				</div>
 

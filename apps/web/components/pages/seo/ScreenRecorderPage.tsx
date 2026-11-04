@@ -4,7 +4,7 @@ import type { SeoPageContent } from "../../seo/types";
 export const screenRecorderContent: SeoPageContent = {
 	title: "Screen Recorder: High-Quality, User-Friendly, and 100% Free Locally",
 	description:
-		"Oiaai is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits. Perfect for team collaboration, creating tutorials, or recording professional presentations with ease and precision.",
+		"OlhaAí is a powerful, user-friendly screen recorder and is 100% free locally with no usage limits. Perfect for team collaboration, creating tutorials, or recording professional presentations with ease and precision.",
 
 	featuresTitle: "Key Features",
 	featuresDescription:
@@ -24,7 +24,7 @@ export const screenRecorderContent: SeoPageContent = {
 		{
 			title: "Cross-Platform Support",
 			description:
-				"Whether you need to <a href='/screen-recorder-mac'>screen record on Mac</a> or use a <a href='/screen-recorder-windows'>Windows screen recorder</a>, Oiaai works perfectly on both platforms.",
+				"Whether you need to <a href='/screen-recorder-mac'>screen record on Mac</a> or use a <a href='/screen-recorder-windows'>Windows screen recorder</a>, OlhaAí works perfectly on both platforms.",
 		},
 		{
 			title: "Completely Free",
@@ -44,13 +44,13 @@ export const screenRecorderContent: SeoPageContent = {
 		{
 			title: "Professional Software",
 			description:
-				"Oiaai is professional-grade <a href='/screen-recording-software'>screen recording software</a> that's both powerful and easy to use.",
+				"OlhaAí is professional-grade <a href='/screen-recording-software'>screen recording software</a> that's both powerful and easy to use.",
 		},
 	],
 
 	useCasesTitle: "Popular Uses",
 	useCasesDescription:
-		"Explore how Oiaai can support your team's productivity and streamline your workflow",
+		"Explore how OlhaAí can support your team's productivity and streamline your workflow",
 
 	useCases: [
 		{
@@ -78,29 +78,29 @@ export const screenRecorderContent: SeoPageContent = {
 	faqsTitle: "Frequently Asked Questions",
 	faqs: [
 		{
-			question: "Is Oiaai a free screen recorder?",
+			question: "Is OlhaAí a free screen recorder?",
 			answer:
-				"Yes, Oiaai offers a powerful free version, making it one of the best free screen recorders available. The local version is 100% free with no usage limits, but Oiaai Pro is available for users who need additional features.",
+				"Yes, OlhaAí offers a powerful free version, making it one of the best free screen recorders available. The local version is 100% free with no usage limits, but OlhaAí Pro is available for users who need additional features.",
 		},
 		{
-			question: "How does Oiaai compare to OBS?",
+			question: "How does OlhaAí compare to OBS?",
 			answer:
-				"Oiaai is designed to be highly user-friendly while delivering high recording quality. It’s a simpler, yet powerful, alternative to OBS for users seeking an intuitive experience.",
+				"OlhaAí is designed to be highly user-friendly while delivering high recording quality. It’s a simpler, yet powerful, alternative to OBS for users seeking an intuitive experience.",
 		},
 		{
-			question: "Can I download Oiaai on multiple devices?",
+			question: "Can I download OlhaAí on multiple devices?",
 			answer:
-				"Yes, Oiaai is cross-platform and can be downloaded on macOS and Windows, allowing you to use it across multiple devices.",
+				"Yes, OlhaAí is cross-platform and can be downloaded on macOS and Windows, allowing you to use it across multiple devices.",
 		},
 		{
-			question: "What platforms does Oiaai support?",
+			question: "What platforms does OlhaAí support?",
 			answer:
-				"Oiaai is compatible with <a href='/screen-recorder-mac'>macOS</a> and <a href='/screen-recorder-windows'>Windows</a>, making it versatile for any user or team. Our <a href='/free-screen-recorder'>free screen recorder</a> works great on both platforms.",
+				"OlhaAí is compatible with <a href='/screen-recorder-mac'>macOS</a> and <a href='/screen-recorder-windows'>Windows</a>, making it versatile for any user or team. Our <a href='/free-screen-recorder'>free screen recorder</a> works great on both platforms.",
 		},
 		{
-			question: "How does Oiaai improve team productivity?",
+			question: "How does OlhaAí improve team productivity?",
 			answer:
-				"Oiaai’s advanced collaboration features make it easy to share, review, and provide feedback on screen recordings, helping teams work more effectively together.",
+				"OlhaAí’s advanced collaboration features make it easy to share, review, and provide feedback on screen recordings, helping teams work more effectively together.",
 		},
 	],
 
@@ -108,14 +108,14 @@ export const screenRecorderContent: SeoPageContent = {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
 			title:
-				"Oiaai screen recorder demo showing high-quality and user-friendly features",
+				"OlhaAí screen recorder demo showing high-quality and user-friendly features",
 		},
 	},
 
 	cta: {
 		title:
-			"Get Started with Oiaai – The Easy, High-Quality, and Free Screen Recorder",
-		buttonText: "Download Oiaai Free",
+			"Get Started with OlhaAí – The Easy, High-Quality, and Free Screen Recorder",
+		buttonText: "Download OlhaAí Free",
 	},
 };
 

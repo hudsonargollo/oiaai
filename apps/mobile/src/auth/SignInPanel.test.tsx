@@ -212,11 +212,11 @@ describe("SignInPanel", () => {
 		authFns.signInWithSso.mockResolvedValue(undefined);
 	});
 
-	it("renders the Oiaai web login surface", async () => {
+	it("renders the OlhaAí web login surface", async () => {
 		const tree = await renderTree(React.createElement(SignInPanel));
 		const text = getTextNodes(tree);
 
-		expect(text).toContain("Sign in to Oiaai");
+		expect(text).toContain("Sign in to OlhaAí");
 		expect(text).toContain("Your videos, organized and ready to share.");
 		expect(hasProp(tree, "viewBox", "0 0 40 40")).toBe(true);
 		expect(hasProp(tree, "rx", 8)).toBe(true);
@@ -900,7 +900,7 @@ describe("SignInPanel", () => {
 		});
 
 		expect(getTextNodes(renderer.toJSON())).toContain(
-			"This email cannot be used to sign in to Oiaai.",
+			"This email cannot be used to sign in to OlhaAí.",
 		);
 		const [emailInputAfterError] = renderer.root.findAllByProps({
 			accessibilityLabel: "Email address",
@@ -909,16 +909,16 @@ describe("SignInPanel", () => {
 			accessibilityRole: "alert",
 		});
 		expect(emailInputAfterError?.props.accessibilityHint).toBe(
-			"This email cannot be used to sign in to Oiaai.",
+			"This email cannot be used to sign in to OlhaAí.",
 		);
 		const [emailButtonAfterError] = renderer.root.findAllByProps({
 			accessibilityLabel: "Login with email",
 		});
 		expect(emailButtonAfterError?.props.accessibilityValue).toEqual({
-			text: "This email cannot be used to sign in to Oiaai.",
+			text: "This email cannot be used to sign in to OlhaAí.",
 		});
 		expect(errorAlert?.props.accessibilityLabel).toBe(
-			"Sign-in error: This email cannot be used to sign in to Oiaai.",
+			"Sign-in error: This email cannot be used to sign in to OlhaAí.",
 		);
 		expect(errorAlert?.props.accessibilityLiveRegion).toBe("polite");
 		expect(

@@ -623,11 +623,11 @@ impl AgentClient {
 
     pub fn new(server: String, access_token: String) -> Result<Self, AgentApiError> {
         let parsed = Url::parse(&server)
-            .map_err(|_| AgentApiError::local("INVALID_REQUEST", "Invalid Oiaai server URL"))?;
+            .map_err(|_| AgentApiError::local("INVALID_REQUEST", "Invalid OlhaAí server URL"))?;
         if parsed.scheme() != "http" && parsed.scheme() != "https" {
             return Err(AgentApiError::local(
                 "INVALID_REQUEST",
-                "Oiaai server URL must use HTTP or HTTPS",
+                "OlhaAí server URL must use HTTP or HTTPS",
             ));
         }
         let http = reqwest::Client::builder()
@@ -662,7 +662,7 @@ impl AgentClient {
                 } else {
                     "TEMPORARY_UNAVAILABLE"
                 },
-                format!("Oiaai returned HTTP {status}"),
+                format!("OlhaAí returned HTTP {status}"),
             )
         })
     }
@@ -691,13 +691,13 @@ impl AgentClient {
                 None => {}
             }
             if let Some(grant) = self.access_grant_for_path(path) {
-                request = request.header("X-Oiaai-Access-Grant", grant);
+                request = request.header("X-OlhaAí-Access-Grant", grant);
             }
             if let Some(key) = idempotency_key {
                 request = request.header("Idempotency-Key", key);
             }
             if user_confirmed {
-                request = request.header("X-Oiaai-Confirmation", "user");
+                request = request.header("X-OlhaAí-Confirmation", "user");
             }
             let response = match request.send().await {
                 Ok(response) => response,
@@ -866,10 +866,10 @@ impl AgentClient {
 pub fn cap_id(value: &str) -> Result<String, AgentApiError> {
     let id = if value.starts_with("http://") || value.starts_with("https://") {
         let url = Url::parse(value)
-            .map_err(|_| AgentApiError::local("INVALID_REQUEST", "Invalid Oiaai URL"))?;
+            .map_err(|_| AgentApiError::local("INVALID_REQUEST", "Invalid OlhaAí URL"))?;
         let segments = url
             .path_segments()
-            .ok_or_else(|| AgentApiError::local("INVALID_REQUEST", "Invalid Oiaai URL"))?
+            .ok_or_else(|| AgentApiError::local("INVALID_REQUEST", "Invalid OlhaAí URL"))?
             .filter(|segment| !segment.is_empty())
             .collect::<Vec<_>>();
         match segments.as_slice() {
@@ -982,7 +982,7 @@ fn wait_complete(status: &Value, wait_for: WaitFor) -> Result<bool, AgentApiErro
         Some(_) => Ok(false),
         None => Err(AgentApiError::local(
             "TEMPORARY_UNAVAILABLE",
-            "Oiaai returned an invalid status",
+            "OlhaAí returned an invalid status",
         )),
     };
     match wait_for {
@@ -1076,7 +1076,7 @@ async fn run_cap_operation(
         .await?;
     let value = if args.wait {
         let operation_id = value.get("id").and_then(Value::as_str).ok_or_else(|| {
-            AgentApiError::local("TEMPORARY_UNAVAILABLE", "Oiaai returned an invalid operation")
+            AgentApiError::local("TEMPORARY_UNAVAILABLE", "OlhaAí returned an invalid operation")
         })?;
         crate::jobs::wait_operation(client, operation_id, args.timeout).await?
     } else {
@@ -1180,7 +1180,7 @@ impl CapsArgs {
                     let caps = value.get("caps").and_then(Value::as_array).ok_or_else(|| {
                         AgentApiError::local(
                             "TEMPORARY_UNAVAILABLE",
-                            "Oiaai returned an invalid list",
+                            "OlhaAí returned an invalid list",
                         )
                     })?;
                     for cap in caps {
@@ -1288,7 +1288,7 @@ impl CapsArgs {
                         if args.owner_email.is_some() || args.space.is_some() {
                             "Import the Loom video and apply the requested organization assignment"
                         } else {
-                            "Import the Loom video into Oiaai"
+                            "Import the Loom video into OlhaAí"
                         },
                     )
                     .map_err(|message| AgentApiError::local("INVALID_REQUEST", message))?;
@@ -1309,7 +1309,7 @@ impl CapsArgs {
                             value.get("id").and_then(Value::as_str).ok_or_else(|| {
                                 AgentApiError::local(
                                     "TEMPORARY_UNAVAILABLE",
-                                    "Oiaai returned an invalid Loom import operation",
+                                    "OlhaAí returned an invalid Loom import operation",
                                 )
                             })?;
                         crate::jobs::wait_operation(&client, operation_id, args.timeout).await?
@@ -1394,7 +1394,7 @@ impl CapsArgs {
                 let url = info.get("url").and_then(Value::as_str).ok_or_else(|| {
                     AgentApiError::local(
                         "TEMPORARY_UNAVAILABLE",
-                        "Oiaai returned an invalid download",
+                        "OlhaAí returned an invalid download",
                     )
                 })?;
                 let response = client.http.get(url).send().await.map_err(|error| {
@@ -1463,7 +1463,7 @@ impl CapsArgs {
                     .ok_or_else(|| {
                         AgentApiError::local(
                             "TEMPORARY_UNAVAILABLE",
-                            "Oiaai returned an invalid access grant",
+                            "OlhaAí returned an invalid access grant",
                         )
                     })?;
                 let expires_at = response
@@ -1472,7 +1472,7 @@ impl CapsArgs {
                     .ok_or_else(|| {
                         AgentApiError::local(
                             "TEMPORARY_UNAVAILABLE",
-                            "Oiaai returned an invalid access grant expiry",
+                            "OlhaAí returned an invalid access grant expiry",
                         )
                     })?;
                 credentials::store_agent_access_grant(

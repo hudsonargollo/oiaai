@@ -221,3 +221,45 @@ export async function signOutAllDevices() {
 			);
 	});
 }
+
+export async function grantSuperadmin(email: string) {
+	const currentUser = await getCurrentUser();
+	if (!currentUser) throw new Error("Unauthorized");
+
+	const [admin] = await db()
+		.select({ globalAdmin: users.globalAdmin })
+		.from(users)
+		.where(eq(users.email, currentUser.email))
+		.limit(1);
+
+	if (!admin || !admin.globalAdmin) {
+		throw new Error("Only a superadmin can grant superadmin");
+	}
+
+	await db()
+		.update(users)
+		.set({ globalAdmin: true })
+		.where(eq(users.email, email));
+}
+
+export async function revokeSuperadmin(email: string) {
+	const currentUser = await getCurrentUser();
+	if (!currentUser) throw new Error("Unauthorized");
+
+	const [admin] = await db()
+		.select({ globalAdmin: users.globalAdmin })
+		.from(users)
+		.where(eq(users.email, currentUser.email))
+		.limit(1);
+
+	if (!admin || !admin.globalAdmin) {
+		throw new Error("Only a superadmin can revoke superadmin");
+	}
+
+	await db()
+		.update(users)
+		.set({ globalAdmin: false })
+		.where(eq(users.email, email));
+}
+
+export { signOutAllDevices };

@@ -52,7 +52,7 @@ describe("showCapTitleActions", () => {
 		});
 
 		expect(reactNativeMock.Alert.prompt).toHaveBeenCalledWith(
-			"Rename Oiaai",
+			"Rename OlhaAí",
 			undefined,
 			expect.any(Array),
 			"plain-text",
@@ -71,7 +71,7 @@ describe("showCapTitleActions", () => {
 		expect(onUpdated).toHaveBeenCalledWith(updated);
 	});
 
-	it("rejects blank Oiaai titles before calling the API", () => {
+	it("rejects blank OlhaAí titles before calling the API", () => {
 		const updateCapTitle = vi.fn();
 
 		showCapTitleActions({

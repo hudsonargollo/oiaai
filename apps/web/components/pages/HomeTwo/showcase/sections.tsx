@@ -107,7 +107,7 @@ export const InstantSection = () => (
 				{
 					lead: "Custom domains.",
 					icon: <Globe />,
-					body: "Share from cap.yourcompany.com instead of cap.so on Oiaai Pro.",
+					body: "Share from cap.yourcompany.com instead of cap.so on OlhaAí Pro.",
 				},
 				{
 					lead: "Embed anywhere.",
@@ -234,7 +234,7 @@ export const AiSection = () => (
 	<Section anchor="ai" tone={TONES.ai}>
 		<SectionHead
 			title="Every recording, understood"
-			badge={<Badge icon={<ScrollText />}>Oiaai AI</Badge>}
+			badge={<Badge icon={<ScrollText />}>OlhaAí AI</Badge>}
 		>
 			Titles, summaries, chapters, and a transcript arrive with every recording,
 			right on the share page, so{" "}
@@ -268,7 +268,7 @@ export const AiSection = () => (
 				{
 					lead: "Readable by your AI agents.",
 					icon: <Bot />,
-					body: "Transcripts and summaries come back as data from the Oiaai CLI and MCP server.",
+					body: "Transcripts and summaries come back as data from the OlhaAí CLI and MCP server.",
 				},
 				{
 					lead: "Works with imported Loom videos.",
@@ -286,9 +286,9 @@ export const OwnershipSection = () => (
 			title="Your recordings. Actually yours."
 			badge={<Badge icon={<HardDrive />}>Storage you own</Badge>}
 		>
-			Oiaai is open source, and every recording goes{" "}
-			<Em>exactly where you say</Em>. Use Oiaai Cloud, point it at your own bucket
-			or Drive, or self host the whole thing.
+			OlhaAí is open source, and every recording goes{" "}
+			<Em>exactly where you say</Em>. Use OlhaAí Cloud, point it at your own
+			bucket or Drive, or self host the whole thing.
 		</SectionHead>
 		<Stage
 			name="ownership"
@@ -308,7 +308,7 @@ export const OwnershipSection = () => (
 				{
 					lead: "SOC 2 Type II and ISO 27001.",
 					icon: <ShieldCheck />,
-					body: "Independently audited controls behind Oiaai Cloud.",
+					body: "Independently audited controls behind OlhaAí Cloud.",
 				},
 				{
 					lead: "HIPAA compliant.",
@@ -329,9 +329,9 @@ export const AgentsSection = () => (
 	<Section anchor="agents" tone={TONES.agents}>
 		<SectionHead
 			title="Your agent can record, share, and read recordings"
-			badge={<Badge icon={<SquareTerminal />}>Oiaai for Agents</Badge>}
+			badge={<Badge icon={<SquareTerminal />}>OlhaAí for Agents</Badge>}
 		>
-			Oiaai ships a CLI and a local MCP server, so{" "}
+			OlhaAí ships a CLI and a local MCP server, so{" "}
 			<Em>Claude Code, Cursor, Codex, or any shell capable agent</Em> can record
 			your screen, upload it, and read back the transcript.
 		</SectionHead>
@@ -348,7 +348,7 @@ export const AgentsSection = () => (
 				{
 					lead: "One prompt setup.",
 					icon: <Wand />,
-					body: "Your agent installs the CLI, the Oiaai skill, and the MCP server for Claude Code, Cursor, or Codex.",
+					body: "Your agent installs the CLI, the OlhaAí skill, and the MCP server for Claude Code, Cursor, or Codex.",
 				},
 				{
 					lead: "JSON output on every command.",
@@ -369,7 +369,7 @@ export const AgentsSection = () => (
 		/>
 		<div className="mt-10 flex justify-center">
 			<Link href="/agents" className={classNames(BTN_SECONDARY, "gap-2")}>
-				Explore Oiaai for Agents
+				Explore OlhaAí for Agents
 				<ArrowUpRight className="size-4" />
 			</Link>
 		</div>

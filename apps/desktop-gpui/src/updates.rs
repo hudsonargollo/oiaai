@@ -838,7 +838,7 @@ fn apply_package(
     let bundle = executable
         .ancestors()
         .find(|path| path.extension().is_some_and(|extension| extension == "app"))
-        .ok_or_else(|| "This copy of Oiaai isn't running from an app bundle".to_string())?;
+        .ok_or_else(|| "This copy of OlhaAí isn't running from an app bundle".to_string())?;
     installer::install_app_bundle(package, bundle)?;
     Ok(Some(executable))
 }
@@ -865,7 +865,7 @@ fn apply_package(package: &std::path::Path, kind: ArtifactKind) -> Result<Option
             let image = std::env::var_os("APPIMAGE")
                 .map(PathBuf::from)
                 .filter(|path| path.is_absolute())
-                .ok_or_else(|| "This copy of Oiaai isn't running from an AppImage".to_string())?;
+                .ok_or_else(|| "This copy of OlhaAí isn't running from an AppImage".to_string())?;
             installer::install_appimage(package, &image)?;
             Ok(Some(image))
         }

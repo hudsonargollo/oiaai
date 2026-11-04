@@ -24,7 +24,7 @@ export async function generateMetadata(
 
 	if (!CONVERSION_CONFIGS[conversionPath]) {
 		return {
-			title: "Conversion Not Supported | Oiaai",
+			title: "Conversion Not Supported | OlhaAí",
 			description:
 				"This conversion type is not supported by our free online tools.",
 		};
@@ -40,7 +40,7 @@ export async function generateMetadata(
 	});
 
 	return {
-		title: `${sourceUpper} to ${targetUpper} Converter | Free Online Tool | Oiaai`,
+		title: `${sourceUpper} to ${targetUpper} Converter | Free Online Tool | OlhaAí`,
 		description: `${config.description(
 			sourceFormat,
 			targetFormat,
@@ -120,10 +120,10 @@ export default async function ConversionPage(props: ConversionPageProps) {
 			},
 		],
 		cta: {
-			title: "Oiaai is the open source Loom alternative",
+			title: "OlhaAí is the open source Loom alternative",
 			description:
-				"Record, edit, and share video messages with Oiaai. 100% open source and privacy focused.",
-			buttonText: "Download Oiaai Free",
+				"Record, edit, and share video messages with OlhaAí. 100% open source and privacy focused.",
+			buttonText: "Download OlhaAí Free",
 		},
 	};
 

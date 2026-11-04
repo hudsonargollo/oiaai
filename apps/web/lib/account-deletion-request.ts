@@ -14,7 +14,7 @@ import type { User, Video } from "@cap/web-domain";
 import { and, eq, or } from "drizzle-orm";
 
 const ACCOUNT_DELETION_EMAIL_TO = "hello@cap.so";
-const ACCOUNT_DELETION_EMAIL_FROM = "Oiaai Support <richie@send.cap.so>";
+const ACCOUNT_DELETION_EMAIL_FROM = "OlhaAí Support <richie@send.cap.so>";
 export const ACCOUNT_DELETION_PENDING_SUBJECT =
 	"[PENDING] Account deletion request";
 export const MOBILE_CONTENT_REPORT_PENDING_SUBJECT =
@@ -28,13 +28,13 @@ type AccountDeletionUser = {
 
 const createRequestMessage = (user: AccountDeletionUser, now: Date) =>
 	[
-		"An account deletion request was initiated and confirmed inside the Oiaai mobile app.",
+		"An account deletion request was initiated and confirmed inside the OlhaAí mobile app.",
 		"",
 		`User ID: ${user.id}`,
 		`Email: ${user.email}`,
 		`Requested at: ${now.toISOString()}`,
 		"",
-		"Complete permanent deletion of the account and associated personal data, recordings, videos, comments, profile data, and organizations owned solely by this user within 30 days. Cancel any direct Oiaai subscription that remains active. Confirm completion to the user by email, then change this request subject from [PENDING] to [COMPLETED].",
+		"Complete permanent deletion of the account and associated personal data, recordings, videos, comments, profile data, and organizations owned solely by this user within 30 days. Cancel any direct OlhaAí subscription that remains active. Confirm completion to the user by email, then change this request subject from [PENDING] to [COMPLETED].",
 	].join("\n");
 
 export const hasPendingAccountDeletion = async ({
@@ -205,7 +205,7 @@ export const createMobileContentReport = async ({
 		`Reported at: ${now.toISOString()}`,
 		`Recording URL: https://cap.so/s/${content.id}`,
 		"",
-		"Review the content promptly, remove it if it violates Oiaai policies, respond to the reporter when appropriate, and change this request subject from [PENDING] to [COMPLETED].",
+		"Review the content promptly, remove it if it violates OlhaAí policies, respond to the reporter when appropriate, and change this request subject from [PENDING] to [COMPLETED].",
 	].join("\n");
 	const request = await db().transaction(async (tx) => {
 		const [lockedUser] = await tx

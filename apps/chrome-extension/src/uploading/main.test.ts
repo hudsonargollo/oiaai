@@ -162,7 +162,7 @@ it("still updates and completes the matching recording", () => {
 		shareUrl: "https://cap.test/s/video-a",
 	});
 	expect(document.getElementById("upload-title")?.textContent).toBe(
-		"Your Oiaai is ready",
+		"Your OlhaAí is ready",
 	);
 	expect(document.getElementById("share-link")?.getAttribute("href")).toBe(
 		"https://cap.test/s/video-a",

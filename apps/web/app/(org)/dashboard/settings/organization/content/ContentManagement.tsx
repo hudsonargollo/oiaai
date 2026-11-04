@@ -411,7 +411,7 @@ export function ContentManagement({
 										<p className="mt-1 text-xs leading-5 text-gray-10">
 											Ownership and media paths will change. Existing links,
 											metadata, comments, and analytics remain attached to each
-											Oiaai.
+											OlhaAí.
 										</p>
 									</div>
 								</div>

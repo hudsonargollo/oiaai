@@ -3,9 +3,9 @@ import { PricingPage } from "@/components/pages/pricing/PricingPage";
 import { buildMarketingMetadata } from "@/lib/og/url";
 
 export const metadata: Metadata = buildMarketingMetadata({
-	title: "Pricing — Oiaai",
+	title: "Pricing — OlhaAí",
 	description:
-		"Self-serve Oiaai Pro for organizations with thousands of members, with SOC 2 Type II, ISO 27001 & HIPAA compliance. Add SAML SSO ($199/mo) or a signed BAA ($99/mo) from your dashboard. SCIM can be arranged.",
+		"Self-serve OlhaAí Pro for organizations with thousands of members, with SOC 2 Type II, ISO 27001 & HIPAA compliance. Add SAML SSO ($199/mo) or a signed BAA ($99/mo) from your dashboard. SCIM can be arranged.",
 	path: "/pricing",
 	ogTitle: "Simple, honest pricing",
 	ogDescription:

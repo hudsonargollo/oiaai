@@ -643,7 +643,7 @@ export function RecordingBarOverlay({
 						isDragging && "is-dragging",
 					)}
 					role="toolbar"
-					aria-label="Oiaai recording controls"
+					aria-label="OlhaAí recording controls"
 					style={{
 						left: `${position?.x ?? EDGE_PADDING}px`,
 						top: position ? `${position.y}px` : "50%",
@@ -688,7 +688,7 @@ export function RecordingBarOverlay({
 										? "Choose what to share"
 										: startError !== null
 											? startError
-											: "Oiaai"}
+											: "OlhaAí"}
 								</span>
 							</span>
 						</div>

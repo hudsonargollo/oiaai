@@ -905,15 +905,15 @@ impl WindowExclusion {
 /// `DEFAULT_EXCLUDED_WINDOW_TITLES` in `general_settings.rs`, which is what
 /// the page's Reset button asks the backend for.
 pub const DEFAULT_EXCLUDED_WINDOW_TITLES: &[&str] = &[
-    "Oiaai",
-    "Oiaai Settings",
-    "Oiaai Recording Controls",
-    "Oiaai Camera",
-    "Oiaai Window Capture Occluder",
-    "Oiaai Capture Area",
-    "Oiaai Mode Selection",
-    "Oiaai Recordings Overlay",
-    "Oiaai Teleprompter",
+    "OlhaAí",
+    "OlhaAí Settings",
+    "OlhaAí Recording Controls",
+    "OlhaAí Camera",
+    "OlhaAí Window Capture Occluder",
+    "OlhaAí Capture Area",
+    "OlhaAí Mode Selection",
+    "OlhaAí Recordings Overlay",
+    "OlhaAí Teleprompter",
 ];
 
 pub fn default_excluded_windows() -> Vec<WindowExclusion> {
@@ -1560,7 +1560,7 @@ pub fn hotkey_from_value(value: &Value) -> Option<Hotkey> {
 
 /// `DEFAULT_TRANSCRIPTION_HINTS` (`apps/desktop/src/utils/general-settings.ts`).
 pub const DEFAULT_TRANSCRIPTION_HINTS: &[&str] =
-    &["Oiaai", "TypeScript", "My Brand Name", "mywebsite.com"];
+    &["OlhaAí", "TypeScript", "My Brand Name", "mywebsite.com"];
 
 /// `normalizeTranscriptionHints`: strip NULs, trim, drop empties and
 /// duplicates, first occurrence wins.
@@ -1923,7 +1923,7 @@ fn default_post() -> String {
 }
 
 fn default_notify_title() -> String {
-    "Oiaai Automation".to_string()
+    "OlhaAí Automation".to_string()
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -3271,7 +3271,7 @@ mod tests {
             window_title: Some("Cap Camera".into()),
             ..Default::default()
         };
-        assert!(title.matches(None, None, Some("Oiaai Camera")));
+        assert!(title.matches(None, None, Some("OlhaAí Camera")));
         assert!(!title.matches(None, None, Some("Other Window")));
         assert!(!title.matches(None, None, None));
 
@@ -3294,10 +3294,10 @@ mod tests {
             window_title: Some("Cap Camera".into()),
             ..Default::default()
         };
-        assert!(owner_and_title.matches(None, Some("Cap"), Some("Oiaai Camera")));
+        assert!(owner_and_title.matches(None, Some("Cap"), Some("OlhaAí Camera")));
         assert!(!owner_and_title.matches(None, Some("Cap"), Some("Wrong Title")));
-        assert!(!owner_and_title.matches(None, Some("Wrong Owner"), Some("Oiaai Camera")));
-        assert!(!owner_and_title.matches(None, None, Some("Oiaai Camera")));
+        assert!(!owner_and_title.matches(None, Some("Wrong Owner"), Some("OlhaAí Camera")));
+        assert!(!owner_and_title.matches(None, None, Some("OlhaAí Camera")));
 
         let empty = WindowExclusion::default();
         assert!(!empty.matches(None, None, None));
@@ -3321,7 +3321,7 @@ mod tests {
             absent
                 .excluded_windows
                 .iter()
-                .any(|e| e.window_title.as_deref() == Some("Oiaai Camera"))
+                .any(|e| e.window_title.as_deref() == Some("OlhaAí Camera"))
         );
 
         let mut general = Map::new();

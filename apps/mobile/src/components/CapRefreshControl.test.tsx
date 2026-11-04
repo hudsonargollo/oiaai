@@ -60,7 +60,7 @@ vi.mock("./CapLoadingIndicator", async () => {
 });
 
 describe("CapRefreshControl", () => {
-	it("hides the native iOS spinner so the Oiaai overlay can replace it", async () => {
+	it("hides the native iOS spinner so the OlhaAí overlay can replace it", async () => {
 		const onRefresh = vi.fn();
 		const renderer = await renderComponent(
 			<CapRefreshControl refreshing onRefresh={onRefresh} />,
@@ -76,7 +76,7 @@ describe("CapRefreshControl", () => {
 });
 
 describe("CapRefreshOverlay", () => {
-	it("shows the compact Oiaai loader while refreshing", async () => {
+	it("shows the compact OlhaAí loader while refreshing", async () => {
 		const renderer = await renderComponent(<CapRefreshOverlay refreshing />);
 		const loader = renderer.root.findByProps({ size: 32 });
 

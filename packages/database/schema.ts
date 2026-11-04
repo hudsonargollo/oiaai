@@ -133,6 +133,7 @@ export const users = mysqlTable(
 		defaultOrgId:
 			nanoIdNullable("defaultOrgId").$type<Organisation.OrganisationId>(),
 		authSessionVersion: int("authSessionVersion").notNull().default(0),
+		globalAdmin: boolean("globalAdmin").notNull().default(false),
 		marketingOrigin: varchar("marketingOrigin", { length: 20 })
 			.notNull()
 			.default("unknown"),

@@ -1,6 +1,6 @@
 # cap-rendering-skia
 
-A new rendering backend for Oiaai using Skia, designed to replace the current wgpu-based renderer.
+A new rendering backend for OlhaAí using Skia, designed to replace the current wgpu-based renderer.
 
 ## Status
 

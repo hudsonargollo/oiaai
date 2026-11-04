@@ -57,7 +57,7 @@ linux_require_supported_arch() {
 		x86_64|amd64)
 			;;
 		*)
-			echo "Oiaai for Linux currently ships x86_64 desktop builds. Unsupported architecture: $(uname -m)" >&2
+			echo "OlhaAí for Linux currently ships x86_64 desktop builds. Unsupported architecture: $(uname -m)" >&2
 			exit 1
 			;;
 	esac
@@ -100,7 +100,7 @@ find_cli_in_dir() {
 }
 
 find_linux_system_cli() {
-	for root in /usr/bin /usr/local/bin /usr/lib/cap /usr/lib/Oiaai /usr/lib64/cap /opt/Oiaai /opt/cap /usr/share/cap /usr/share/Oiaai; do
+	for root in /usr/bin /usr/local/bin /usr/lib/cap /usr/lib/OlhaAí /usr/lib64/cap /opt/OlhaAí /opt/cap /usr/share/cap /usr/share/OlhaAí; do
 		if find_cli_in_dir "$root"; then
 			return 0
 		fi
@@ -173,7 +173,7 @@ install_cap_desktop_macos() {
 
 	trap cleanup_desktop_install EXIT HUP INT TERM
 
-	echo "Downloading Oiaai Desktop..."
+	echo "Downloading OlhaAí Desktop..."
 	curl -fL "$DOWNLOAD_URL" -o "$DMG_PATH"
 	hdiutil attach "$DMG_PATH" -nobrowse -quiet -mountpoint "$MOUNT_DIR"
 	MOUNTED=1
@@ -187,11 +187,11 @@ install_cap_desktop_macos() {
 	done
 
 	if [ -z "$SOURCE_APP" ]; then
-		echo "Downloaded Oiaai Desktop image did not contain Cap.app." >&2
+		echo "Downloaded OlhaAí Desktop image did not contain Cap.app." >&2
 		exit 1
 	fi
 
-	echo "Installing Oiaai Desktop to $APP_PATH..."
+	echo "Installing OlhaAí Desktop to $APP_PATH..."
 	rm -rf "$APP_TMP"
 	ditto "$SOURCE_APP" "$APP_TMP"
 	rm -rf "$APP_PATH"
@@ -210,7 +210,7 @@ install_cap_desktop_linux_deb() {
 	DEB_PATH="$TMP_ROOT/Cap.deb"
 	trap cleanup_desktop_install EXIT HUP INT TERM
 
-	echo "Downloading Oiaai Desktop Debian package..."
+	echo "Downloading OlhaAí Desktop Debian package..."
 	curl --proto '=https' --tlsv1.2 --retry 3 --retry-delay 1 -fL "https://cap.so/download/linux-deb" -o "$DEB_PATH"
 
 	if command -v apt-get >/dev/null 2>&1; then
@@ -218,7 +218,7 @@ install_cap_desktop_linux_deb() {
 	elif command -v dpkg >/dev/null 2>&1; then
 		run_as_root dpkg -i "$DEB_PATH"
 	else
-		echo "Could not find apt-get or dpkg. Oiaai for Linux currently ships as a Debian package." >&2
+		echo "Could not find apt-get or dpkg. OlhaAí for Linux currently ships as a Debian package." >&2
 		exit 1
 	fi
 
@@ -227,7 +227,7 @@ install_cap_desktop_linux_deb() {
 	trap - EXIT HUP INT TERM
 
 	if ! find_linux_cli_target; then
-		echo "This Oiaai Desktop package does not include the CLI." >&2
+		echo "This OlhaAí Desktop package does not include the CLI." >&2
 		exit 1
 	fi
 }
@@ -258,7 +258,7 @@ install_cap_desktop() {
 			install_cap_desktop_linux
 			;;
 		*)
-			echo "Oiaai Desktop auto-install is only supported on macOS and Linux. Install Oiaai from https://cap.so/download, then run this script again." >&2
+			echo "OlhaAí Desktop auto-install is only supported on macOS and Linux. Install OlhaAí from https://cap.so/download, then run this script again." >&2
 			exit 1
 			;;
 	esac
@@ -272,7 +272,7 @@ resolve_cli_target() {
 					install_cap_desktop
 				fi
 			elif [ ! -d "$APP_PATH" ]; then
-				echo "Oiaai Desktop was not found at $APP_PATH." >&2
+				echo "OlhaAí Desktop was not found at $APP_PATH." >&2
 				exit 1
 			fi
 
@@ -283,7 +283,7 @@ resolve_cli_target() {
 			CLI_TARGET="$APP_PATH/Contents/MacOS/cap-cli"
 
 			if [ ! -x "$CLI_TARGET" ]; then
-				echo "This Oiaai Desktop install does not include the CLI. Reinstalling Oiaai Desktop..."
+				echo "This OlhaAí Desktop install does not include the CLI. Reinstalling OlhaAí Desktop..."
 				install_cap_desktop
 				CLI_TARGET="$APP_PATH/Contents/MacOS/cap-cli"
 			fi
@@ -302,7 +302,7 @@ resolve_cli_target() {
 	esac
 
 	if [ ! -x "$CLI_TARGET" ]; then
-		echo "This Oiaai Desktop install does not include the CLI." >&2
+		echo "This OlhaAí Desktop install does not include the CLI." >&2
 		exit 1
 	fi
 }
@@ -327,7 +327,7 @@ mkdir -p "$INSTALL_DIR"
 
 if [ -e "$SHIM_PATH" ] || [ -L "$SHIM_PATH" ]; then
 	if [ ! -L "$SHIM_PATH" ]; then
-		echo "$SHIM_PATH already exists and is not managed by Oiaai. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again." >&2
+		echo "$SHIM_PATH already exists and is not managed by OlhaAí. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again." >&2
 		exit 1
 	fi
 
@@ -337,7 +337,7 @@ if [ -e "$SHIM_PATH" ] || [ -L "$SHIM_PATH" ]; then
 		"$CLI_TARGET"|*/Cap.app/Contents/MacOS/cap-cli|*/cap-cli|*/cap-cli-*linux*)
 			;;
 		*)
-			echo "$SHIM_PATH already exists and is not managed by Oiaai. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again." >&2
+			echo "$SHIM_PATH already exists and is not managed by OlhaAí. Remove it or set CAP_CLI_INSTALL_DIR, then run this script again." >&2
 			exit 1
 			;;
 	esac
@@ -368,7 +368,7 @@ case ":$PATH:" in
 
 			if [ -f "$PROFILE" ] && grep -qsF "$INSTALL_DIR" "$PROFILE"; then
 				echo "cap is on your PATH via $PROFILE; restart your terminal to use it."
-			elif printf '\n# Added by the Oiaai CLI installer\n%s\n' "$EXPORT_LINE" >> "$PROFILE" 2>/dev/null; then
+			elif printf '\n# Added by the OlhaAí CLI installer\n%s\n' "$EXPORT_LINE" >> "$PROFILE" 2>/dev/null; then
 				echo "Added cap to your PATH in $PROFILE."
 				echo "Restart your terminal, or run: $EXPORT_LINE"
 			else

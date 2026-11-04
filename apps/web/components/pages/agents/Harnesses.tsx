@@ -115,9 +115,9 @@ export const Harnesses = () => {
 
 				<div className="mt-12 rounded-[20px] p-5 lg:p-8" style={grainBg(BAND)}>
 					<div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-10">
-						<StepLabel step="Step 1" title="Install the Oiaai CLI">
-							Adds cap to your PATH and brings Oiaai Desktop with it. Open a new
-							terminal afterwards.
+						<StepLabel step="Step 1" title="Install the OlhaAí CLI">
+							Adds cap to your PATH and brings OlhaAí Desktop with it. Open a
+							new terminal afterwards.
 						</StepLabel>
 						<div>
 							<div className={PILL_GROUP}>
@@ -152,7 +152,7 @@ export const Harnesses = () => {
 
 					<div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-10">
 						<StepLabel step="Step 2" title="Connect your agent">
-							A skill that routes Oiaai tasks through the CLI and MCP, plus a
+							A skill that routes OlhaAí tasks through the CLI and MCP, plus a
 							local MCP server entry. Nothing else in your config is touched.
 						</StepLabel>
 						<div>

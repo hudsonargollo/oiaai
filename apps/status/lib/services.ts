@@ -4,7 +4,7 @@ export const SERVICES: ServiceDefinition[] = [
 	{
 		id: "website",
 		name: "Website",
-		description: "The Oiaai website and downloads.",
+		description: "The OlhaAí website and downloads.",
 		env: "STATUS_WEBSITE_URL",
 		defaultUrl: "https://cap.so",
 		method: "HEAD",
@@ -12,7 +12,7 @@ export const SERVICES: ServiceDefinition[] = [
 	{
 		id: "api",
 		name: "API & authentication",
-		description: "Availability of Oiaai’s authentication API.",
+		description: "Availability of OlhaAí’s authentication API.",
 		env: "STATUS_API_URL",
 		defaultUrl: "https://cap.so/api/auth/providers",
 		method: "GET",
@@ -28,7 +28,7 @@ export const SERVICES: ServiceDefinition[] = [
 	{
 		id: "storage",
 		name: "Storage & delivery",
-		description: "Access to recordings on Oiaai’s storage and CDN.",
+		description: "Access to recordings on OlhaAí’s storage and CDN.",
 		env: "STATUS_STORAGE_URL",
 		method: "HEAD",
 	},

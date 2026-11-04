@@ -27,16 +27,18 @@ export async function generateMetadata(
 	// "/docs" resolves to the Introduction doc, but "Introduction" makes a
 	// meaningless share card — present the landing page as the docs home.
 	const isDocsHome = slug === "introduction";
-	const pageTitle = isDocsHome ? "Oiaai Documentation" : `${title} - Oiaai Docs`;
+	const pageTitle = isDocsHome
+		? "OlhaAí Documentation"
+		: `${title} - OlhaAí Docs`;
 	const docPath = isDocsHome ? "/docs" : `/docs/${slug}`;
 	const description = summary || title;
 	const ogImage = image
 		? `${buildEnv.NEXT_PUBLIC_WEB_URL}${image}`
 		: ogImageUrl({
-				title: isDocsHome ? "Oiaai Documentation" : title,
+				title: isDocsHome ? "OlhaAí Documentation" : title,
 				tag: "Docs",
 				description: isDocsHome
-					? "Guides for recording, editing, sharing, and self-hosting Oiaai."
+					? "Guides for recording, editing, sharing, and self-hosting OlhaAí."
 					: summary || undefined,
 			});
 

@@ -22,7 +22,7 @@ import {
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-	title: "Checkout | Oiaai",
+	title: "Checkout | OlhaAí",
 	robots: { index: false, follow: false },
 };
 

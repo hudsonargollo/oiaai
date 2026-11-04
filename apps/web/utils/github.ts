@@ -6,7 +6,7 @@ export async function getGitHubStars(): Promise<number> {
 	const response = await fetch("https://api.github.com/repos/CapSoftware/Cap", {
 		headers: {
 			Accept: "application/vnd.github.v3+json",
-			"User-Agent": "Oiaai-Web",
+			"User-Agent": "OlhaAí-Web",
 		},
 		next: {
 			revalidate: 172800,

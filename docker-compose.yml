@@ -32,6 +32,9 @@ services:
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
       APPLE_CLIENT_ID: ${APPLE_CLIENT_ID:-}
       APPLE_CLIENT_SECRET: ${APPLE_CLIENT_SECRET:-}
+      TRUSTED_PROXY_AUTH_HEADER: x-forwarded-proto
+      TRUSTED_PROXY_AUTH_EMAIL: hudsonargollo3@gmail.com
+      TRUSTED_PROXY_AUTH_SECRET: 3a54cdcb435d3133a968c0149af6270ec10e41ed03ffa9ef4d28b13ccea2069a
       MEDIA_SERVER_URL: http://media-server:3456
       MEDIA_SERVER_WEBHOOK_URL: http://cap-web:3000
     ports:

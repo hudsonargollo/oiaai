@@ -41,7 +41,7 @@ async function attempt(
 			cache: "no-store",
 			signal: AbortSignal.timeout(8_000),
 			headers: {
-				"User-Agent": "Oiaai-Status/1.0",
+				"User-Agent": "OlhaAí-Status/1.0",
 				Accept: service.validation ? "application/json" : "*/*",
 			},
 		});

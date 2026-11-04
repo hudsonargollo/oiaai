@@ -194,7 +194,7 @@ export const ComparePlans = () => {
 			},
 			{
 				key: "pro",
-				name: "Oiaai Pro",
+				name: "OlhaAí Pro",
 				short: "Pro",
 				price: `${symbol}${PRICING.pro.annualPerMonth}/user/mo`,
 			},
@@ -267,7 +267,7 @@ export const ComparePlans = () => {
 			}
 
 			if (data.subscription === true) {
-				toast.success("You are already on the Oiaai Pro plan");
+				toast.success("You are already on the OlhaAí Pro plan");
 				return;
 			}
 
@@ -337,7 +337,7 @@ export const ComparePlans = () => {
 				Compare plans
 			</h2>
 			<p className="mx-auto mb-12 max-w-md text-center text-gray-10">
-				Everything you get with Free, Desktop License, and Oiaai Pro.
+				Everything you get with Free, Desktop License, and OlhaAí Pro.
 			</p>
 
 			<div className="hidden p-4 rounded-2xl border shadow-sm md:block bg-gray-1 border-gray-5">

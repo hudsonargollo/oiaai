@@ -31,10 +31,10 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 	if (!platform) return {};
 
 	return buildMarketingMetadata({
-		title: `${PLATFORM_TITLES[platform]} Changelog — Oiaai`,
-		description: `New features, improvements, and fixes in Oiaai for ${PLATFORM_TITLES[platform].toLowerCase()}.`,
+		title: `${PLATFORM_TITLES[platform]} Changelog — OlhaAí`,
+		description: `New features, improvements, and fixes in OlhaAí for ${PLATFORM_TITLES[platform].toLowerCase()}.`,
 		path: `/changelog/${platform}`,
-		ogTitle: `Oiaai ${PLATFORM_TITLES[platform]} Changelog`,
+		ogTitle: `OlhaAí ${PLATFORM_TITLES[platform]} Changelog`,
 		ogTag: "Changelog",
 	});
 }

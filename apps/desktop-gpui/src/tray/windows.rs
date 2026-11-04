@@ -96,7 +96,7 @@ fn create_tray(mode: Mode, entries: &[Entry]) -> anyhow::Result<Tray> {
     let native_menu = build_native_menu(entries)?;
     let icon = TrayIconBuilder::new()
         .with_id(TRAY_ID)
-        .with_tooltip("Oiaai")
+        .with_tooltip("OlhaAí")
         .with_icon(decode_tray_icon(DEFAULT_ICON)?)
         .with_menu(Box::new(native_menu.menu.clone()))
         .build()?;
@@ -233,7 +233,7 @@ pub fn set_recording(recording: bool, cx: &mut App) {
     let tooltip = if recording {
         tr::tray::tooltip_recording()
     } else {
-        "Oiaai"
+        "OlhaAí"
     };
     if let Err(error) = tray.icon.set_tooltip(Some(tooltip)) {
         tracing::warn!("failed to update the Windows tray tooltip: {error}");

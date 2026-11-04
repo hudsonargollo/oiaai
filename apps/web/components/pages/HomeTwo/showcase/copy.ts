@@ -37,7 +37,7 @@ export const STUDIO_COPY: StageCopy[] = [
 		key: "zoom",
 		label: "Zoom",
 		lead: "Automatic zoom.",
-		body: "Oiaai zooms in on every click and follows your cursor with the same spring physics as the editor, then eases back out.",
+		body: "OlhaAí zooms in on every click and follows your cursor with the same spring physics as the editor, then eases back out.",
 	},
 	{
 		key: "layouts",
@@ -49,7 +49,7 @@ export const STUDIO_COPY: StageCopy[] = [
 		key: "captions",
 		label: "Captions",
 		lead: "Automatic captions.",
-		body: "Oiaai transcribes your voice on your own machine in 19 languages and shows each word as you say it.",
+		body: "OlhaAí transcribes your voice on your own machine in 19 languages and shows each word as you say it.",
 	},
 	{
 		key: "blur",
@@ -61,7 +61,7 @@ export const STUDIO_COPY: StageCopy[] = [
 		key: "background",
 		label: "Background",
 		lead: "Backgrounds and padding.",
-		body: "Pick a wallpaper, gradient, or color, and Oiaai adds padding, rounded corners, and a shadow.",
+		body: "Pick a wallpaper, gradient, or color, and OlhaAí adds padding, rounded corners, and a shadow.",
 	},
 ];
 
@@ -70,7 +70,7 @@ export const AI_COPY: StageCopy[] = [
 		key: "summary",
 		label: "Summary",
 		lead: "AI titles and summaries.",
-		body: "Oiaai renames the recording and writes a summary as soon as you stop, so viewers know what it covers before pressing play.",
+		body: "OlhaAí renames the recording and writes a summary as soon as you stop, so viewers know what it covers before pressing play.",
 	},
 	{
 		key: "chapters",
@@ -89,8 +89,8 @@ export const AI_COPY: StageCopy[] = [
 export const STORAGE_COPY: StageCopy[] = [
 	{
 		key: "cloud",
-		label: "Oiaai Cloud",
-		lead: "Oiaai Cloud.",
+		label: "OlhaAí Cloud",
+		lead: "OlhaAí Cloud.",
 		body: "Zero setup. Encrypted, and shareable the second you stop.",
 	},
 	{
@@ -109,7 +109,7 @@ export const STORAGE_COPY: StageCopy[] = [
 		key: "self",
 		label: "Self hosted",
 		lead: "Self hosting.",
-		body: "Run the whole Oiaai platform on your own infrastructure.",
+		body: "Run the whole OlhaAí platform on your own infrastructure.",
 	},
 ];
 

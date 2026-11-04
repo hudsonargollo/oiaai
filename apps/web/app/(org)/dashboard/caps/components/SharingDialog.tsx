@@ -468,7 +468,7 @@ export const SharingDialog: React.FC<SharingDialogProps> = ({
 									</Button>
 								</div>
 								<p className="mt-1 mb-2 text-xs text-gray-10">
-									Invite someone by email. They can view with an Oiaai account
+									Invite someone by email. They can view with an OlhaAí account
 									using that address.
 								</p>
 								<div className="flex gap-2">

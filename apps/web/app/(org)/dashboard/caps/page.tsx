@@ -27,7 +27,7 @@ import { runPromise } from "@/lib/server";
 import { Caps } from "./Caps";
 
 export const metadata: Metadata = {
-	title: "My Library — Oiaai",
+	title: "My Library — OlhaAí",
 };
 
 // Helper function to fetch shared spaces data for videos

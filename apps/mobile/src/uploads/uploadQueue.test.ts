@@ -72,7 +72,7 @@ describe("uploadQueueReducer", () => {
 		expect(retrying.items[0]?.rawFileKey).toBeNull();
 	});
 
-	it("keeps the created Oiaai id after upload completion", () => {
+	it("keeps the created OlhaAí id after upload completion", () => {
 		const queued = uploadQueueReducer(emptyUploadQueue, {
 			type: "enqueue",
 			item,

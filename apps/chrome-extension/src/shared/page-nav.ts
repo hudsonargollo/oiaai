@@ -23,7 +23,7 @@ export const mountPageNav = (active: PageNavId) => {
 
 	const nav = document.createElement("nav");
 	nav.className = "page-nav";
-	nav.setAttribute("aria-label", "Oiaai extension pages");
+	nav.setAttribute("aria-label", "OlhaAí extension pages");
 
 	const inner = document.createElement("div");
 	inner.className = "page-nav-inner";
@@ -31,7 +31,7 @@ export const mountPageNav = (active: PageNavId) => {
 	const brand = document.createElement("a");
 	brand.className = "page-nav-brand";
 	brand.href = "welcome.html";
-	brand.setAttribute("aria-label", "Oiaai");
+	brand.setAttribute("aria-label", "OlhaAí");
 	brand.innerHTML = CAP_LOGO_SVG;
 
 	const links = document.createElement("div");

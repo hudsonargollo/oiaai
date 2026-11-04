@@ -374,8 +374,9 @@ export async function renderVideoOg(variant: VideoOgVariant) {
 			case "locked":
 				return statusLayout(
 					{
-						heading: "This Oiaai is private",
-						subline: "Ask the owner for access, or sign in to watch it on Oiaai.",
+						heading: "This OlhaAí is private",
+						subline:
+							"Ask the owner for access, or sign in to watch it on OlhaAí.",
 						icon: "lock",
 					},
 					assets,
@@ -383,8 +384,8 @@ export async function renderVideoOg(variant: VideoOgVariant) {
 			case "password":
 				return statusLayout(
 					{
-						heading: "This Oiaai is password protected",
-						subline: "Enter the password on Oiaai to watch this recording.",
+						heading: "This OlhaAí is password protected",
+						subline: "Enter the password on OlhaAí to watch this recording.",
 						icon: "lock",
 					},
 					assets,
@@ -392,7 +393,7 @@ export async function renderVideoOg(variant: VideoOgVariant) {
 			case "not-found":
 				return statusLayout(
 					{
-						heading: "This Oiaai doesn't exist",
+						heading: "This OlhaAí doesn't exist",
 						subline:
 							"The recording you're looking for has moved or was deleted.",
 						icon: "search",

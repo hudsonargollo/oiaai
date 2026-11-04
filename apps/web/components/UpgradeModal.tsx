@@ -90,7 +90,7 @@ const PRO_FEATURES = [
 	},
 	{
 		icon: <Sparkles className={iconStyling} />,
-		title: "Oiaai AI",
+		title: "OlhaAí AI",
 		description: "Automatic titles, summaries, chapters & more",
 	},
 	{
@@ -188,7 +188,7 @@ const UpgradeModalImpl = ({
 			}
 
 			if (data.subscription === true) {
-				toast.success("You are already on the Oiaai Pro plan");
+				toast.success("You are already on the OlhaAí Pro plan");
 				onOpenChange(false);
 			}
 
@@ -258,7 +258,7 @@ const UpgradeModalImpl = ({
 								<div className="flex relative flex-col flex-1 justify-center items-center px-4 py-6 w-full">
 									<div className="flex flex-col items-center">
 										<h1 className="text-2xl font-medium sm:text-3xl text-gray-12">
-											Upgrade to Oiaai Pro
+											Upgrade to OlhaAí Pro
 										</h1>
 									</div>
 									<p className="mt-1 text-base text-center sm:text-lg text-gray-11">
@@ -355,7 +355,9 @@ const UpgradeModalImpl = ({
 											"Loading..."
 										) : (
 											<>
-												<span className="leading-none">Upgrade to Oiaai Pro</span>
+												<span className="leading-none">
+													Upgrade to OlhaAí Pro
+												</span>
 												<span className="hidden gap-1 items-center sm:flex text-[10px] font-normal text-white/70">
 													or,
 													<kbd className="flex justify-center items-center px-1 rounded border bg-white/15 border-white/25 h-[14px] text-[9px] font-medium text-white/80">

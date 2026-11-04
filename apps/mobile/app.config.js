@@ -18,8 +18,8 @@ const ios = {
 	usesAppleSignIn: true,
 	infoPlist: {
 		NSPhotoLibraryUsageDescription:
-			"Oiaai imports videos from Photos for upload.",
-		NSPhotoLibraryAddUsageDescription: "Oiaai saves downloaded videos to Photos.",
+			"OlhaAí imports videos from Photos for upload.",
+		NSPhotoLibraryAddUsageDescription: "OlhaAí saves downloaded videos to Photos.",
 	},
 };
 
@@ -29,7 +29,7 @@ if (associatedDomains.length > 0) {
 
 module.exports = ({ config }) => ({
 	...config,
-	name: "Oiaai",
+	name: "OlhaAí",
 	slug: "cap-mobile",
 	scheme: "cap",
 	owner: "cap-software-inc",
@@ -72,9 +72,9 @@ module.exports = ({ config }) => ({
 			"expo-camera",
 			{
 				barcodeScannerEnabled: false,
-				cameraPermission: "Allow Oiaai to use your camera to record videos.",
+				cameraPermission: "Allow OlhaAí to use your camera to record videos.",
 				microphonePermission:
-					"Allow Oiaai to use your microphone while recording videos.",
+					"Allow OlhaAí to use your microphone while recording videos.",
 			},
 		],
 		[
@@ -99,7 +99,7 @@ module.exports = ({ config }) => ({
 		[
 			"expo-secure-store",
 			{
-				faceIDPermission: "Allow Oiaai to protect your account key.",
+				faceIDPermission: "Allow OlhaAí to protect your account key.",
 			},
 		],
 		"expo-sharing",

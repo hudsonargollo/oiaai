@@ -24,7 +24,7 @@ export default function VideoNotFound() {
 		>
 			<PaperActions>
 				<a className={styles.cta} href={homeHref}>
-					Go to Oiaai
+					Go to OlhaAí
 				</a>
 			</PaperActions>
 		</PaperState>

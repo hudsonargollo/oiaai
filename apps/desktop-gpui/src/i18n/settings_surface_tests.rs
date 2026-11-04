@@ -189,7 +189,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::quality::instant::free_plan(),
-            "720p on the free plan. Oiaai Pro records up to 4K.",
+            "720p on the free plan. OlhaAí Pro records up to 4K.",
         ),
         (
             tr::settings::quality::instant::res_720p(),
@@ -242,7 +242,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
             tr::settings::options::post_studio::open_editor(),
             "Open editor",
         ),
-        (tr::settings::options::post_studio::show_cap(), "Show Oiaai"),
+        (tr::settings::options::post_studio::show_cap(), "Show OlhaAí"),
         (
             tr::settings::options::post_studio::do_nothing(),
             "Do nothing",
@@ -282,7 +282,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::shortcuts::recording_title(), "Recording"),
         (
             tr::settings::shortcuts::recording_description(),
-            "Start a recording without opening Oiaai first.",
+            "Start a recording without opening OlhaAí first.",
         ),
         (
             tr::settings::shortcuts::while_recording_title(),
@@ -294,7 +294,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::shortcuts::after_screenshot::hint(),
-            "For every screenshot, from a shortcut or from Oiaai",
+            "For every screenshot, from a shortcut or from OlhaAí",
         ),
         (
             tr::settings::shortcuts::after_studio::title(),
@@ -351,7 +351,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::shortcuts::outcome::studio_show_cap(),
-            "Show Oiaai",
+            "Show OlhaAí",
         ),
         (
             tr::settings::shortcuts::outcome::studio_show_cap_hint(),
@@ -371,7 +371,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::shortcuts::outcome::instant_show_cap(),
-            "Show Oiaai",
+            "Show OlhaAí",
         ),
         (
             tr::settings::shortcuts::outcome::instant_show_cap_hint(),
@@ -464,7 +464,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::cli::title(), "Command Line"),
         (
             tr::settings::cli::description(),
-            "Install the Oiaai command for terminals, agents, scripts, and local automation.",
+            "Install the OlhaAí command for terminals, agents, scripts, and local automation.",
         ),
         (tr::settings::cli::retry(), "Retry"),
         (tr::settings::cli::repairing(), "Repairing..."),
@@ -513,11 +513,11 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::feedback::title(), "Feedback"),
         (
             tr::settings::feedback::description(),
-            "Help us improve Oiaai by submitting feedback or reporting bugs. We'll get right on it.",
+            "Help us improve OlhaAí by submitting feedback or reporting bugs. We'll get right on it.",
         ),
         (
             tr::settings::feedback::placeholder(),
-            "Tell us what you think about Oiaai...",
+            "Tell us what you think about OlhaAí...",
         ),
         (
             tr::settings::feedback::submit_failed(),
@@ -535,13 +535,13 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::feedback::community_description(),
-            "Have questions, want to share ideas, or just hang out? Join the Oiaai Discord community.",
+            "Have questions, want to share ideas, or just hang out? Join the OlhaAí Discord community.",
         ),
         (tr::settings::feedback::join_discord(), "Join Discord"),
         (tr::settings::feedback::debug_title(), "Debug Information"),
         (
             tr::settings::feedback::debug_description(),
-            "Upload your logs to help us diagnose issues with Oiaai. No personal information is included.",
+            "Upload your logs to help us diagnose issues with OlhaAí. No personal information is included.",
         ),
         (tr::settings::feedback::uploading(), "Uploading..."),
         (tr::settings::feedback::upload_logs(), "Upload Logs"),
@@ -583,11 +583,11 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::feedback::diagnostic::run(), "Run Diagnostic"),
         (
             tr::settings::feedback::diagnostic::no_cli(),
-            "The Oiaai command-line tool was not found next to this build, so the report will cover your environment only.",
+            "The OlhaAí command-line tool was not found next to this build, so the report will cover your environment only.",
         ),
         (
             tr::settings::feedback::diagnostic::no_cli_sync(),
-            "The Oiaai command-line tool was not found next to this build, so the sync test could not run.",
+            "The OlhaAí command-line tool was not found next to this build, so the sync test could not run.",
         ),
         (
             tr::settings::feedback::diagnostic::warning_title(),
@@ -595,7 +595,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::feedback::diagnostic::warning_body(),
-            "A fullscreen window flashes black and white while 1kHz beeps play through your speakers, and Oiaai records it and measures how far the picture and the sound have drifted apart. Leave the machine alone while it runs. Both modes together take a couple of minutes.",
+            "A fullscreen window flashes black and white while 1kHz beeps play through your speakers, and OlhaAí records it and measures how far the picture and the sound have drifted apart. Leave the machine alone while it runs. Both modes together take a couple of minutes.",
         ),
         (
             tr::settings::feedback::diagnostic::mode_label(),
@@ -614,7 +614,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
             "Also record your microphone and check that it hears the beeps in time. Needs speakers the mic can actually hear.",
         ),
         (tr::settings::feedback::diagnostic::sending(), "Sending..."),
-        (tr::settings::feedback::diagnostic::send(), "Send to Oiaai"),
+        (tr::settings::feedback::diagnostic::send(), "Send to OlhaAí"),
         (tr::settings::feedback::diagnostic::show_file(), "Show File"),
         (tr::settings::feedback::diagnostic::run_again(), "Run Again"),
         (tr::settings::feedback::diagnostic::try_again(), "Try Again"),
@@ -643,7 +643,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::license::title(), "Plan & license"),
         (
             tr::settings::license::description(),
-            "Your Oiaai plan and desktop license, in one place.",
+            "Your OlhaAí plan and desktop license, in one place.",
         ),
         (tr::settings::license::plan_title(), "Your plan"),
         (
@@ -653,7 +653,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::license::desktop_name(), "Desktop License"),
         (
             tr::settings::license::desktop_description(),
-            "Your desktop license covers commercial recording and editing. Oiaai Pro adds cloud sharing and collaboration features.",
+            "Your desktop license covers commercial recording and editing. OlhaAí Pro adds cloud sharing and collaboration features.",
         ),
         (
             tr::settings::license::free_description(),
@@ -667,7 +667,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::license::sign_in_hint(),
-            "Already have Oiaai Pro? Sign in with your account from the sidebar.",
+            "Already have OlhaAí Pro? Sign in with your account from the sidebar.",
         ),
         (tr::settings::license::explore_title(), "Explore plans"),
         (
@@ -680,7 +680,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::license::explore_pro(),
-            "Oiaai Pro · A desktop license, plus cloud sharing, AI features and collaboration.",
+            "OlhaAí Pro · A desktop license, plus cloud sharing, AI features and collaboration.",
         ),
         (
             tr::settings::license::view_pricing(),
@@ -706,11 +706,11 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::integrations::title(), "Integrations"),
         (
             tr::settings::integrations::description(),
-            "Configure integrations to extend Oiaai's functionality and connect with third-party services.",
+            "Configure integrations to extend OlhaAí's functionality and connect with third-party services.",
         ),
         (
             tr::settings::integrations::google_drive_description(),
-            "Connect Google Drive for new shareable link uploads. Oiaai stores new videos in a private Oiaai folder in your Drive and continues serving them through Oiaai after normal access checks.",
+            "Connect Google Drive for new shareable link uploads. OlhaAí stores new videos in a private OlhaAí folder in your Drive and continues serving them through OlhaAí after normal access checks.",
         ),
         (tr::settings::integrations::s3_name(), "S3 Config"),
         (
@@ -797,7 +797,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::integrations::gdrive::connection_description(),
-            "Google Drive stores new uploads in a private Oiaai folder in your Drive. Existing Oiaai-hosted and S3 videos keep using their current storage.",
+            "Google Drive stores new uploads in a private OlhaAí folder in your Drive. Existing OlhaAí-hosted and S3 videos keep using their current storage.",
         ),
         (
             tr::settings::integrations::gdrive::active_for_uploads(),
@@ -872,7 +872,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::automations::title(), "Automations"),
         (
             tr::settings::automations::description(),
-            "Rules are shared with the Oiaai CLI. Oiaai saves these rules but does not run automations yet.",
+            "Rules are shared with the OlhaAí CLI. OlhaAí saves these rules but does not run automations yet.",
         ),
         (tr::settings::automations::templates_title(), "Templates"),
         (
@@ -926,11 +926,11 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         (tr::settings::automations::delete(), "Delete"),
         (
             tr::settings::automations::dangerous(),
-            "In the Oiaai CLI, this automation runs commands or sends network requests with your permissions. Only use values you trust.",
+            "In the OlhaAí CLI, this automation runs commands or sends network requests with your permissions. Only use values you trust.",
         ),
         (
             tr::settings::automations::compatibility_checked(),
-            "Compatibility checked: this automation doesn't run in Oiaai yet. Saved rules remain available to the Oiaai CLI. No actions were run.",
+            "Compatibility checked: this automation doesn't run in OlhaAí yet. Saved rules remain available to the OlhaAí CLI. No actions were run.",
         ),
         (
             tr::settings::automations::condition_never_matches(),
@@ -1285,7 +1285,7 @@ fn settings_surfaces_match_the_literals_they_replaced() {
         ),
         (
             tr::settings::automations::template::ocr_screenshot::description(),
-            "Oiaai reads the text in your screenshot and copies it for you.",
+            "OlhaAí reads the text in your screenshot and copies it for you.",
         ),
         (
             tr::settings::automations::template::save_screenshot::name(),
@@ -1471,7 +1471,7 @@ fn settings_surface_messages_format_like_the_code_they_replaced() {
         guide.split_once(marker),
         Some((
             "It should take under 10 minutes to set up and connect your storage \
-             bucket to Oiaai. View the\u{a0}",
+             bucket to OlhaAí. View the\u{a0}",
             "\u{a0}to get started."
         ))
     );
@@ -1486,7 +1486,7 @@ fn settings_surface_messages_format_like_the_code_they_replaced() {
     assert_eq!(
         tr::settings::feedback::diagnostic::confirm_body(crate::diagnostics::DEFAULT_DURATION_SECS),
         format!(
-            "Oiaai will take over your screen with a flashing pattern and play loud beeps for \
+            "OlhaAí will take over your screen with a flashing pattern and play loud beeps for \
              about {} seconds per pipeline. Take your headphones off, leave the volume \
              audible, and leave the machine alone until it finishes.",
             crate::diagnostics::DEFAULT_DURATION_SECS

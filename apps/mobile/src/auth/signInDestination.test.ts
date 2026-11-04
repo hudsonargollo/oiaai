@@ -7,6 +7,6 @@ describe("signInTitleForSegments", () => {
 			"Sign in to import",
 		);
 		expect(signInTitleForSegments(["caps", "[id]"])).toBe("Sign in to view");
-		expect(signInTitleForSegments(["(tabs)"])).toBe("Sign in to Oiaai");
+		expect(signInTitleForSegments(["(tabs)"])).toBe("Sign in to OlhaAí");
 	});
 });

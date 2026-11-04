@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Oiaai CLI",
+	title: "OlhaAí CLI",
 };
 
 type PageProps = {
@@ -26,7 +26,7 @@ export default async function CliCompletePage({ searchParams }: PageProps) {
 				<p className="mt-2 text-sm leading-6 text-gray-10">
 					{cancelled
 						? "No changes were made. You can close this window and return to your terminal."
-						: "You can close this window and return to your terminal. Oiaai CLI can now continue."}
+						: "You can close this window and return to your terminal. OlhaAí CLI can now continue."}
 				</p>
 			</div>
 		</main>

@@ -7,11 +7,11 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 	title:
 		"Remote Team Collaboration Software: Asynchronous Screen Recording for Distributed Teams",
 	description:
-		"Enhance your remote team collaboration with Oiaai's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
+		"Enhance your remote team collaboration with OlhaAí's secure, open-source screen recording platform. Save time, improve clarity, and boost productivity across time zones.",
 
-	featuresTitle: "Why Oiaai is Perfect for Remote Team Collaboration",
+	featuresTitle: "Why OlhaAí is Perfect for Remote Team Collaboration",
 	featuresDescription:
-		"Oiaai provides everything distributed teams need for seamless async communication and collaboration",
+		"OlhaAí provides everything distributed teams need for seamless async communication and collaboration",
 
 	features: [
 		{
@@ -22,7 +22,7 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 		{
 			title: "Secure & Private by Design",
 			description:
-				"Share sensitive information with confidence. Oiaai's open-source nature and custom S3 storage options ensure your team's communications remain private and secure at all times.",
+				"Share sensitive information with confidence. OlhaAí's open-source nature and custom S3 storage options ensure your team's communications remain private and secure at all times.",
 		},
 		{
 			title: "Simple Onboarding for Remote Teams",
@@ -47,9 +47,9 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 	],
 
 	recordingModes: {
-		title: "Two Ways to Record with Oiaai",
+		title: "Two Ways to Record with OlhaAí",
 		description:
-			"Oiaai gives you flexible recording options to match your workflow needs, with both modes available in the free plan",
+			"OlhaAí gives you flexible recording options to match your workflow needs, with both modes available in the free plan",
 		modes: [
 			{
 				icon: <Zap fill="yellow" className="mb-4 size-8" strokeWidth={1.5} />,
@@ -71,7 +71,7 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 			},
 		],
 	},
-	useCasesTitle: "How Remote Teams Use Oiaai",
+	useCasesTitle: "How Remote Teams Use OlhaAí",
 	useCasesDescription:
 		"Real solutions for common remote collaboration challenges",
 
@@ -101,37 +101,43 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 	faqsTitle: "Remote Team Collaboration FAQs",
 	faqs: [
 		{
-			question: "How does Oiaai help remote teams collaborate more effectively?",
+			question:
+				"How does OlhaAí help remote teams collaborate more effectively?",
 			answer:
-				"Oiaai enables asynchronous visual communication that eliminates time zone constraints. Team members can record detailed screen captures with webcam overlay, share them instantly, and collect feedback through threaded comments—all without scheduling meetings. This typically saves teams 30+ minutes per person daily and improves information clarity.",
+				"OlhaAí enables asynchronous visual communication that eliminates time zone constraints. Team members can record detailed screen captures with webcam overlay, share them instantly, and collect feedback through threaded comments—all without scheduling meetings. This typically saves teams 30+ minutes per person daily and improves information clarity.",
 		},
 		{
 			question:
-				"Can my entire remote team use Oiaai on different operating systems?",
+				"Can my entire remote team use OlhaAí on different operating systems?",
 			answer:
-				"Yes, Oiaai works seamlessly across both Mac and Windows, ensuring your entire distributed team can collaborate regardless of their device preferences. The experience remains consistent across platforms with the same features available to everyone.",
+				"Yes, OlhaAí works seamlessly across both Mac and Windows, ensuring your entire distributed team can collaborate regardless of their device preferences. The experience remains consistent across platforms with the same features available to everyone.",
 		},
 		{
 			question:
 				"How secure are the recordings for sensitive company information?",
 			answer:
-				"Oiaai prioritizes security and privacy with its open-source approach, allowing for complete transparency about how your data is handled. You can connect your own S3 storage and custom domain for complete data ownership, ensuring sensitive company information remains under your control.",
+				"OlhaAí prioritizes security and privacy with its open-source approach, allowing for complete transparency about how your data is handled. You can connect your own S3 storage and custom domain for complete data ownership, ensuring sensitive company information remains under your control.",
 		},
 		{
-			question: "Does Oiaai integrate with other remote collaboration tools?",
+			question: "Does OlhaAí integrate with other remote collaboration tools?",
 			answer:
-				"Oiaai provides easy-to-share links that work with all major communication platforms like Slack, Microsoft Teams, Notion, Trello, and more. Simply copy the link to your recording and paste it into your team's preferred tools for seamless workflow integration.",
+				"OlhaAí provides easy-to-share links that work with all major communication platforms like Slack, Microsoft Teams, Notion, Trello, and more. Simply copy the link to your recording and paste it into your team's preferred tools for seamless workflow integration.",
 		},
 		{
 			question: "Can I track who has viewed my team's recordings?",
 			answer:
-				"Yes, Oiaai's paid plans include view tracking and analytics, allowing team leads to see who has watched each recording and for how long. This helps ensure important information is reaching all team members and identifies content that may need follow-up.",
+				"Yes, OlhaAí's paid plans include view tracking and analytics, allowing team leads to see who has watched each recording and for how long. This helps ensure important information is reaching all team members and identifies content that may need follow-up.",
 		},
 	],
 
 	comparisonTable: {
-		title: "Oiaai vs. Traditional Remote Collaboration Methods",
-		headers: ["Feature", "Oiaai", "Video Meetings", "Text-Based Communication"],
+		title: "OlhaAí vs. Traditional Remote Collaboration Methods",
+		headers: [
+			"Feature",
+			"OlhaAí",
+			"Video Meetings",
+			"Text-Based Communication",
+		],
 		rows: [
 			[
 				"Time Zone Flexibility",
@@ -179,13 +185,13 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 	},
 
 	migrationGuide: {
-		title: "How to Implement Oiaai for Your Remote Team",
+		title: "How to Implement OlhaAí for Your Remote Team",
 		steps: [
-			"Download Oiaai for all team members' operating systems (Mac and Windows)",
+			"Download OlhaAí for all team members' operating systems (Mac and Windows)",
 			"Set up shared S3 storage (optional) for complete data ownership",
 			"Create a quick getting-started recording to onboard your team",
 			"Establish guidelines for when to use Instant vs. Studio recording modes",
-			"Integrate Oiaai links into your existing workflow tools (Slack, Teams, etc.)",
+			"Integrate OlhaAí links into your existing workflow tools (Slack, Teams, etc.)",
 			"Start replacing some synchronous meetings with async recordings",
 		],
 	},
@@ -193,13 +199,13 @@ export const remoteTeamCollaborationContent: SeoPageContent = {
 	video: {
 		iframe: {
 			src: "https://www.rend.so/embed/10512af0-b922-4efa-8974-f8f14fc1886a?accent=3e63dd",
-			title: "Oiaai screen recording demo",
+			title: "OlhaAí screen recording demo",
 		},
 	},
 
 	cta: {
 		title: "Ready to Transform Your Remote Team Communication?",
-		buttonText: "Download Oiaai Free",
+		buttonText: "Download OlhaAí Free",
 	},
 };
 
